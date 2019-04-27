@@ -1,5 +1,5 @@
 baseurl = "https://www.portfolio-geek.com"
-title = "Kiera"
+title = "Portfolio Geek"
 copyright = "Copyright &copy; 2017 - Portfolio Geek"
 canonifyurls = true
 theme = "kiera"
