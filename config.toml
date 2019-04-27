@@ -20,7 +20,7 @@ pygmentsCodeFences = true
     instagram = ""
 
 [params]
-    tagline = "A Hugo theme for creative and technical writing"
+    tagline = "Day to day notebook of a Quant"
 
 [[menu.main]]
     name = "Home" #Name in the navigation bar
