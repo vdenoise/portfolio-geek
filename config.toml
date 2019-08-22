@@ -10,6 +10,16 @@ summaryLength = 30
 enableEmoji = true
 pygmentsCodeFences = true
 
+[languages]
+  [languages.en]
+    contentDir = "content/english"
+    languageName = "English"
+    weight = 10
+  [languages.fr]
+    contentDir = "content/french"
+    languageName = "Français"
+    weight = 20
+
 [author]
     name = ""
     github = ""
