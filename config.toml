@@ -1,6 +1,6 @@
-baseurl = "http://www.example.com"
+baseurl = "https://portfolio-geek.com"
 languageCode = "en-us"
-title = "Saito Boilerplate"
+title = "Technology and Portfolio Construction"
 theme = "saito"
 
 canonifyurls = true
