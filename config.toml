@@ -1,3 +1,32 @@
 baseurl = "https://portfolio-geek.com"
 languageCode = "en-us"
 title = "Technology and Portfolio Construction"
+
+[params]
+    dateFormat = "Jan 2, 2006"
+    homeText = "You just made a Hugo blog from scratch."
+
+[permalinks]
+    blog = "/:filename/"
+
+[taxonomies]
+    tag = "tags"
+
+# See https://feathericons.com/
+# The value of pre is the icon name
+[menu]
+    [[menu.main]]
+        name = "Home"
+        pre = "home"
+        url = "/"
+        weight = 1
+    [[menu.main]]
+        name = "Blog"
+        pre = "edit"
+        url = "/blog/"
+        weight = 2
+    [[menu.main]]
+        name = "Tags"
+        pre = "tag"
+        url = "/tags/"
+        weight = 3
