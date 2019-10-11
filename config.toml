@@ -1,32 +1,34 @@
-baseurl = "https://www.portfolio-geek.com"
-title = "Portfolio Geek"
-copyright = "Copyright &copy; 2017 - Portfolio Geek"
-canonifyurls = true
-theme = "kiera"
-
-paginate = 3
-
-summaryLength = 30
-enableEmoji = true
-pygmentsCodeFences = true
-
-[author]
-    name = ""
-    github = ""
-    gitlab = ""
-    linkedin = ""
-    facebook = ""
-    twitter = ""
-    instagram = ""
+baseurl = "https://portfolio-geek.com"
+languageCode = "en-us"
+title = "Technology and Portfolio Construction"
+pygmentsCodefences = true
+pygmentsStyle = "pygments"
 
 [params]
-    tagline = "Day to day notebook of a Quant"
+    dateFormat = "Jan 2, 2006"
+    homeText =  "Notepad of a geek in finance"
 
-[[menu.main]]
-    name = "Home" #Name in the navigation bar
-    weight = 10 #The larger the weight, the more on the right this item will be
-    url = "/" #URL address
-[[menu.main]]
-    name = "Posts"
-    weight = 20
-    url = "/posts/"
+[permalinks]
+    blog = "/:filename/"
+
+[taxonomies]
+    tag = "tags"
+
+# See https://feathericons.com/
+# The value of pre is the icon name
+[menu]
+    [[menu.main]]
+        name = "Home"
+        pre = "home"
+        url = "/"
+        weight = 1
+    [[menu.main]]
+        name = "Blog"
+        pre = "edit"
+        url = "/blog/"
+        weight = 2
+    [[menu.main]]
+        name = "Tags"
+        pre = "tag"
+        url = "/tags/"
+        weight = 3
