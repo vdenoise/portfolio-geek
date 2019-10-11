@@ -1,10 +1,12 @@
 baseurl = "https://portfolio-geek.com"
 languageCode = "en-us"
 title = "Technology and Portfolio Construction"
+pygmentsCodefences = true
+pygmentsStyle = "pygments"
 
 [params]
     dateFormat = "Jan 2, 2006"
-    homeText = "You just made a Hugo blog from scratch."
+    homeText =  "Notepad of a geek in finance"
 
 [permalinks]
     blog = "/:filename/"
