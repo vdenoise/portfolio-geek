@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "portfolio-geek"
+  title: "Portfolio Geek"
   navbar:
     right:
       - about.qmd
@@ -13,7 +13,7 @@ website:
         href: https://twitter.com
 format:
   html:
-    theme: cosmo
+    theme: marquee
     css: styles.css
 
 
