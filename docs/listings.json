@@ -8,5 +8,23 @@
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html"
     ]
+  },
+  {
+    "listing": "/index_old.html",
+    "items": [
+      "/posts/2022-02-17-gathering_etf_and_stock_historical_data.html",
+      "/posts/2022-03-07-optimise-portfolios-with-python.html",
+      "/posts/2022-09-19-estimating-portfolio-risk.html",
+      "/posts/post-with-code/index.html",
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/all_posts.html",
+    "items": [
+      "/posts/2022-02-17-gathering_etf_and_stock_historical_data.html",
+      "/posts/2022-03-07-optimise-portfolios-with-python.html",
+      "/posts/2022-09-19-estimating-portfolio-risk.html"
+    ]
   }
 ]

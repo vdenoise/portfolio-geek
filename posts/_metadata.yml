@@ -5,4 +5,9 @@
 freeze: true
 
 # Enable banner style title blocks
-title-block-banner: true
+title-block-banner: false
+
+# Author name of all blog posts
+author: 'Vincent D.'
+
+page-layout: article

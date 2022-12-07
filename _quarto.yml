@@ -6,14 +6,15 @@ website:
   title: "Portfolio Geek"
   navbar:
     right:
-      - about.qmd
+      - text: Blog
+        href: all_posts.qmd
       - icon: github
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
 format:
   html:
-    theme: sandstone
+    theme: lumen
     css: styles.css
 
 
