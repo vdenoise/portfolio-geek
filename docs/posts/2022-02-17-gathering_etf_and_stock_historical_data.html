@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Portfolio Geek – gathering_etf_and_stock_historical_data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Portfolio Geek</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+<section id="visualizing-historical-data" class="level1">
+<h1>Visualizing historical data</h1>
+<blockquote class="blockquote">
+<p>“A quick introduction on how to gather data using Python, Pandas and Pandas_DataReader in order to easily gather historical times from Yahoo Finance.”</p>
+</blockquote>
+<ul>
+<li>toc: false</li>
+<li>badges: true</li>
+<li>comments: false</li>
+<li>author: Vincent D.</li>
+<li>categories: [data-gathering]</li>
+<li>tags: [data, time series, yahoo, pandas]</li>
+<li>image: images/laptop-data.png</li>
+<li>series: “Finance and Markets with Python and Jupyter: a step-by-step tutorial”</li>
+</ul>
+<p><img src="photos/banner-data-ipad.png" class="img-fluid"></p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>{% series_list%}</p>
+<p>To start our data analysis and portfolio construction journey, we will perform the basic - but essential - task of <strong>getting access</strong> to <strong>time series</strong> and plot them using pandas.</p>
+<blockquote class="blockquote">
+<p>Tip: This article is written as a Jupyter Notebook. It has been published using <a href="https://portfolio-geek.com/blogging/publishing/workflow/2022/03/06/write-articles-with-jupyter-fastpages.html">Fastpages</a>. The Jupyter notebook is available on GitHub and if you want to, you can run it directly using the provided Binder link displayed at the top of the article.</p>
+</blockquote>
+</section>
+<section id="load-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
+<p>A key benefit of <strong>Python</strong> is the sheer number of libraries we can leverage to perform a particular task. Choosing the right library might look a bit overwhelming, and one the goals of this blog is actually to provide the reader my honest view on what makes most sense to perform the usual tasks in my daily work.</p>
+<p>The key module for this article is <strong><a href="https://pandas-datareader.readthedocs.io/en/latest/index.html">pandas_datareader</a></strong>, a fantastic data gathering library that you can find <a href="https://github.com/pydata/pandas-datareader">here</a> on GitHub.</p>
+<p>Another one performing a similar job with Yahoo Finance would be <a href="https://github.com/ranaroussi/yfinance">Yfinance</a>. I will write an article on this later.</p>
+<div class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas_datareader.data <span class="im">as</span> web_reader</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that this change the decimals places inside Jupyter, but not on the website</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>pd.options.display.float_format <span class="op">=</span> <span class="st">'{:,.1f}'</span>.<span class="bu">format</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="get-historical-data" class="level2">
+<h2 class="anchored" data-anchor-id="get-historical-data">Get historical data</h2>
+<p>Let’s get ready, and gather some historical data for, say, 4 <strong>Exchange Traded Funds</strong> (ie “ETFs”, still commonly referred to as “trackers” in France): - SPY: <strong>S&amp;P 500</strong> - GLD: <strong>Gold</strong> - AGG: <strong>US Aggregate (US Bonds)</strong> - CAC.PA: <strong>CAC 40 (French Equity Index)</strong></p>
+<p>You might wonder what the first 3 letters actually correspond to? They are the usual identifier for each ETF on the markets, and are often called the <strong>ticker</strong>of the ETF.</p>
+<p>To gather data, you must <em>de facto</em> provide one ticker for each security, but if you forgot the ticker, Google is usually your friend!</p>
+<p>We will need define to find a few more <strong>parameters</strong>: - The 2 variables start_date and end_date to keep some flexibility, - The variable <em>tickers</em> will store our ticker list, and pass it as a parameter to Yahoo, in order to specify our query.</p>
+<div class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>start_date <span class="op">=</span> <span class="st">'2015-01-01'</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>end_date <span class="op">=</span> <span class="st">'2022-05-14'</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>tickers <span class="op">=</span> [<span class="st">'SPY'</span>, <span class="st">'GLD'</span>, <span class="st">'AGG'</span>, <span class="st">'CAC.PA'</span>]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> web_reader.DataReader(tickers, <span class="st">'yahoo'</span>, start<span class="op">=</span>start_date, end<span class="op">=</span>end_date)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># This ones keep the decimals to one on the website. </span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># This is especially useful to print dataframes.</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="visual-data-check" class="level2">
+<h2 class="anchored" data-anchor-id="visual-data-check">Visual data check</h2>
+<p>By default, Yahoo Finance provides us with several fields, not all of them will be useful in this introduction, and we will perform some further filtering below.</p>
+<p>To quickly check the status of what we now have, note the use of the <strong>tail()</strong> function below.</p>
+<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.tail.html">Pandas tail() function</a></p>
+<div class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="28">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th>Attributes</th>
+      <th colspan="4" halign="left">Adj Close</th>
+      <th colspan="4" halign="left">Close</th>
+      <th colspan="2" halign="left">High</th>
+      <th>...</th>
+      <th colspan="2" halign="left">Low</th>
+      <th colspan="4" halign="left">Open</th>
+      <th colspan="4" halign="left">Volume</th>
+    </tr>
+    <tr>
+      <th>Symbols</th>
+      <th>SPY</th>
+      <th>GLD</th>
+      <th>AGG</th>
+      <th>CAC.PA</th>
+      <th>SPY</th>
+      <th>GLD</th>
+      <th>AGG</th>
+      <th>CAC.PA</th>
+      <th>SPY</th>
+      <th>GLD</th>
+      <th>...</th>
+      <th>AGG</th>
+      <th>CAC.PA</th>
+      <th>SPY</th>
+      <th>GLD</th>
+      <th>AGG</th>
+      <th>CAC.PA</th>
+      <th>SPY</th>
+      <th>GLD</th>
+      <th>AGG</th>
+      <th>CAC.PA</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2022-05-11</th>
+      <td>392.8</td>
+      <td>172.8</td>
+      <td>102.8</td>
+      <td>62.6</td>
+      <td>392.8</td>
+      <td>172.8</td>
+      <td>102.8</td>
+      <td>62.6</td>
+      <td>404.0</td>
+      <td>173.3</td>
+      <td>...</td>
+      <td>102.0</td>
+      <td>61.3</td>
+      <td>398.1</td>
+      <td>172.5</td>
+      <td>102.1</td>
+      <td>61.7</td>
+      <td>142,361,000.0</td>
+      <td>9,179,600.0</td>
+      <td>16,462,000.0</td>
+      <td>45,387.0</td>
+    </tr>
+    <tr>
+      <th>2022-05-12</th>
+      <td>392.3</td>
+      <td>170.2</td>
+      <td>103.0</td>
+      <td>62.0</td>
+      <td>392.3</td>
+      <td>170.2</td>
+      <td>103.0</td>
+      <td>62.0</td>
+      <td>395.8</td>
+      <td>172.4</td>
+      <td>...</td>
+      <td>102.9</td>
+      <td>60.9</td>
+      <td>389.4</td>
+      <td>172.1</td>
+      <td>102.9</td>
+      <td>61.4</td>
+      <td>125,090,800.0</td>
+      <td>11,626,800.0</td>
+      <td>9,015,300.0</td>
+      <td>62,497.0</td>
+    </tr>
+    <tr>
+      <th>2022-05-13</th>
+      <td>401.7</td>
+      <td>168.8</td>
+      <td>102.5</td>
+      <td>63.5</td>
+      <td>401.7</td>
+      <td>168.8</td>
+      <td>102.5</td>
+      <td>63.5</td>
+      <td>403.2</td>
+      <td>169.6</td>
+      <td>...</td>
+      <td>102.5</td>
+      <td>62.3</td>
+      <td>396.7</td>
+      <td>168.3</td>
+      <td>102.8</td>
+      <td>62.4</td>
+      <td>104,029,300.0</td>
+      <td>13,026,000.0</td>
+      <td>6,715,600.0</td>
+      <td>77,603.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>3 rows × 24 columns</p>
+</div>
+</div>
+</div>
+<p>The <strong>Adjusted Close</strong> field is returned by Yahoo Finance and is exactly what we are looking for.</p>
+<p>Adjusted Close corresponds to the time series containing what we usually call the <em>total return</em>, typically <strong>compounding the dividends</strong> with the <strong>price returns</strong>.</p>
+<p>This reflects the total return delivered by the ETF, should the investor reinvest systematically the dividend paid by the ETF by buying more this ETF. This is probably the most useful field when we aim to assess the <strong>long term returns of an asset class</strong>.</p>
+<p>To quickly check the status of what we now have, note the use of the <strong>tail()</strong> function below, which get the last <em>n</em> rows of the dataset. Combined with Jupyter’s power in printing data, it’s probably the fastest way to navigate and check a particular dataset.</p>
+<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.tail.html">Pandas tail() function</a></p>
+<div class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'Adj Close'</span>].tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="24">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th>Symbols</th>
+      <th>SPY</th>
+      <th>GLD</th>
+      <th>AGG</th>
+      <th>CAC.PA</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2022-05-11</th>
+      <td>392.8</td>
+      <td>172.8</td>
+      <td>102.8</td>
+      <td>62.6</td>
+    </tr>
+    <tr>
+      <th>2022-05-12</th>
+      <td>392.3</td>
+      <td>170.2</td>
+      <td>103.0</td>
+      <td>62.0</td>
+    </tr>
+    <tr>
+      <th>2022-05-13</th>
+      <td>401.7</td>
+      <td>168.8</td>
+      <td>102.5</td>
+      <td>63.5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="plot-the-raw-time-series-using-the-seaborn-library" class="level2">
+<h2 class="anchored" data-anchor-id="plot-the-raw-time-series-using-the-seaborn-library">Plot the raw time series using the seaborn library</h2>
+<p>To quickly check that we got the right data, let’s visualise it.</p>
+<div class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply the default theme</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">'whitegrid'</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>df[<span class="st">'Adj Close'</span>])</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>p.set_ylabel(<span class="st">"Close Price"</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-02-17-gathering_etf_and_stock_historical_data_files/figure-html/cell-6-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="plot-the-normalised-the-time-series" class="level2">
+<h2 class="anchored" data-anchor-id="plot-the-normalised-the-time-series">Plot the normalised the time series</h2>
+<p>The chart above is useful, but the vast difference between the ETFs’ values makes it a bit hard to actually track each respective time series.</p>
+<p>It would be more effective to <strong>normalise the data</strong>. It’s often referred to as “rebasing”, ie making each time series starting at 100, this will make it much easier to compare.</p>
+<div class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>normalised_ts <span class="op">=</span> (df[<span class="st">'Adj Close'</span>]<span class="op">/</span>df[<span class="st">'Adj Close'</span>].iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>normalised_ts)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-02-17-gathering_etf_and_stock_historical_data_files/figure-html/cell-7-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="rolling-window-cumulated-returns" class="level2">
+<h2 class="anchored" data-anchor-id="rolling-window-cumulated-returns">Rolling window cumulated returns</h2>
+<p>It’s often easy to get ‘seduced’ by the compelling long term returns, especially about Equities. And indeed, it was a good thing to be invested in Equities in the long run !</p>
+<p>But 1y returns are usually a good way to keep track of the portfolio, and moreover to see how these returns have developed over time. With a 1y return chart, the notion of risk, ie either fast-changing returns, or - even worse - consistently negative returns, quickly becomes apparent.</p>
+<div class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We use pct_change() to calculate the one year return</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ts_1y_returns <span class="op">=</span> df[<span class="st">'Adj Close'</span>].pct_change(periods<span class="op">=</span><span class="dv">252</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>ts_1y_returns)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-02-17-gathering_etf_and_stock_historical_data_files/figure-html/cell-8-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="smoother-returns" class="level2">
+<h2 class="anchored" data-anchor-id="smoother-returns">Smoother returns</h2>
+<p>The chart above is great, but a bit too busy for my taste. Whilst accurate, there is too much info going on, the noise might reduce our ability to spot real medium terms or breakouts.</p>
+<p>This is where <strong>pandas</strong> starts to be really powerful. The <em>rolling()</em> function essentially captures sub-series, with a defined length (here 21 days). By <em>chaining</em> the results of rolling() with the <em>mean</em> function, ie calculating the arithmetic average, this will provide us in a one-liner with a new series. This generated dataframe contains the time series of the moving average (21 days) for each of our time series.</p>
+<p>Whilst this “chaining” approach might initially sound obscure, this is <strong>extremely powerful</strong>, especially when factoring in the fact that you just need to change the tickers of the ETFs in the beginning of the article to entirely update the whole analysis … your turn!</p>
+<div class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>ts_1y_returns <span class="op">=</span> df[<span class="st">'Adj Close'</span>].pct_change(periods<span class="op">=</span><span class="dv">252</span>).rolling(window<span class="op">=</span><span class="dv">21</span>).mean()</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>ts_1y_returns)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-02-17-gathering_etf_and_stock_historical_data_files/figure-html/cell-9-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>So that’s it for this short intro on data gathering and visualising. In this article, we have gathered, checked, normalised and plot close prices for different ETFs.</p>
+<p>The next step will be to use these function to generate some returns and risk statistics, and start exploring portfolio construction.</p>
+<p>See you in the next article, and stay safe.</p>
+</section>
+<section id="useful-related-links" class="level2">
+<h2 class="anchored" data-anchor-id="useful-related-links">Useful Related Links</h2>
+<p>{% series_list %}</p>
+<p>There is no such thing as “full tutorial on something”, <strong>knowledge is everywhere</strong>. I found these tutorials pretty handy, check them out too!</p>
+<ul>
+<li><a href="http://seaborn.pydata.org/introduction.html#:~:text=Seaborn%20is%20a%20library%20for,explore%20and%20understand%20your%20data.">Seaborn Tutorial</a></li>
+<li><a href="https://www.datacamp.com/community/tutorials/f-string-formatting-in-python">Tutorial on F-Strings</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

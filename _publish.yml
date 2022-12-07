@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 9408b89f-75fa-4277-82ce-ada91cbec49f
+      url: 'https://inspiring-fairy-91a956.netlify.app'
