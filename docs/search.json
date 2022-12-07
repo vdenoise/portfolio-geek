@@ -60,6 +60,27 @@
     "href": "all_posts.html",
     "title": "Portfolio Geek",
     "section": "",
-    "text": "Visualizing historical data\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
+    "text": "Visualizing historical data\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeries: Tutorials: Estimating Risk and Return\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "archive.html",
+    "href": "archive.html",
+    "title": "Archive",
+    "section": "",
+    "text": "Series: Tutorials: Estimating Risk and Return\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/risk_and_return.html",
+    "href": "posts/risk_and_return.html",
+    "title": "Series: Tutorials: Estimating Risk and Return",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "posts/risk_and_return/estimating_risk.html",
+    "href": "posts/risk_and_return/estimating_risk.html",
+    "title": "Getting Started: measuring volatility",
+    "section": "",
+    "text": "import pandas\n\n\nGetting Started: Measuring Volatility"
   }
 ]

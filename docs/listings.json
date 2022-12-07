@@ -23,8 +23,20 @@
     "listing": "/all_posts.html",
     "items": [
       "/posts/2022-02-17-gathering_etf_and_stock_historical_data.html",
+      "/posts/risk_and_return/estimating_risk.html",
       "/posts/2022-03-07-optimise-portfolios-with-python.html",
-      "/posts/2022-09-19-estimating-portfolio-risk.html"
+      "/posts/2022-09-19-estimating-portfolio-risk.html",
+      "/posts/risk_and_return.html"
     ]
+  },
+  {
+    "listing": "/archive.html",
+    "items": [
+      "/posts/risk_and_return.html"
+    ]
+  },
+  {
+    "listing": "/posts/risk_and_return.html",
+    "items": []
   }
 ]

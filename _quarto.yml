@@ -12,6 +12,8 @@ website:
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
+      - text: Archive
+        href: archive.qmd
 format:
   html:
     theme: lumen
