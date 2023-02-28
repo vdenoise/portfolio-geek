@@ -21,48 +21,6 @@
     "text": "{% series_list%}"
   },
   {
-    "objectID": "posts/2022-09-19-estimating-portfolio-risk.html",
-    "href": "posts/2022-09-19-estimating-portfolio-risk.html",
-    "title": "Estimate Financial Risk",
-    "section": "",
-    "text": "In today’s session, we will\n\nimport pandas as pd\nimport matplotlib\nimport matplotlib.pyplot as plt\nimport pandas_datareader as web_reader\nimport matplotx\nimport matplotlib.dates as mdates\nimport seaborn as sns\nimport numpy as np\nfrom scipy.stats import norm\nimport math\nimport seaborn as sns\n\ntickers = ['SPY']\n\nstart_date = '2010-09-14'\nend_date = '2022-09-14'\ntickers = ['SPY', 'AGG']\n\ndf = web_reader.DataReader(tickers, 'yahoo', start=start_date, end=end_date)\ndata = df.Close.SPY.resample(\"B\").last().fillna(method=\"bfill\")\ndata_agg = df.Close.AGG.resample(\"B\").last().fillna(method=\"bfill\")"
-  },
-  {
-    "objectID": "posts/risk_and_return.html",
-    "href": "posts/risk_and_return.html",
-    "title": "Series: Tutorials: Estimating Risk and Return",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "archive.html",
-    "href": "archive.html",
-    "title": "Archive",
-    "section": "",
-    "text": "Series: Tutorials: Estimating Risk and Return\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About",
-    "section": "",
-    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have pretty much worked across the entire value chain of the asset management and capital markets industry.\nIn my different roles, I have developed and implemented a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\nFind me on Linkedin\n\nWhy this blog?\nWhat struck me the most when I started my career in finance was the knowledge asymetry between finance professional and end clients. Just to clarify, I don’t mean IQ asymmetry, only a difference in knowledge (e.g. data, jargon, formulas, etc.). Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts might still sound fairly exotic or technical to many investors.\nHere, I will try to demystify financial analysis and provide ideas and starting points in order to put theory into practice.\nIn most articles, you should be able to copy, run and modify the code behind the analysis. This should help you to directly use many of the tools presented.\n\n\nMain Publications\nBelow are the main research papers I have published or participated to in the last few years, feel free to take a look."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have pretty much worked across the entire value chain of the asset management and capital markets industry.\nIn my different roles, I have developed and implemented a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\nFind me on Linkedin\n\nWhy this blog?\nWhat struck me the most when I started my career in finance was the knowledge asymetry between finance professional and end clients. Just to clarify, I don’t mean IQ asymmetry, only a difference in knowledge (e.g. data, jargon, formulas, etc.). Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts might still sound fairly exotic or technical to many investors.\nHere, I will try to demystify financial analysis and provide ideas and starting points in order to put theory into practice.\nIn most articles, you should be able to copy, run and modify the code behind the analysis. This should help you to directly use many of the tools presented.\n\n\nMain Publications\nBelow are the main research papers I have published or participated to in the last few years, feel free to take a look."
-  },
-  {
-    "objectID": "all_posts.html",
-    "href": "all_posts.html",
-    "title": "Portfolio Geek",
-    "section": "",
-    "text": "Visualizing historical data\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-optimisation\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeries: Tutorials: Estimating Risk and Return\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "posts/2022-03-07-optimise-portfolios-with-python.html#introduction",
     "href": "posts/2022-03-07-optimise-portfolios-with-python.html#introduction",
     "title": "Portfolio optimisation with Python",
@@ -126,11 +84,11 @@
     "text": "Resources\n{{ ‘Portfolio Selection, Henri Markowitz, 1952’ | fndetail: 1 }}\n{{ ‘PyportfolioOpt, Robert Andrew Martin, 2018’ | fndetail: 2}}\n{{ ‘Pandas’ | fndetail: 3 }}\n{{ ‘Numpy’ | fndetail: 4 }}\n{{ ‘Matplolib’ | fndetail: 5}}\n{{ ‘Pandas_datareader’ | fndetail: 6}}\n{{ ‘US News, 7 Best Long-Term ETFs to Buy and Hold, 25 Feb 2022’ | fndetail: 7}}\n{{ ‘ETF.com’ | fndetail: 8}}\n{{ ‘Wikipedia.com / Wiener Processes’ | fndetail: 9}}"
   },
   {
-    "objectID": "posts/2022-09-19-estimating-portfolio-risk.html#introduction",
-    "href": "posts/2022-09-19-estimating-portfolio-risk.html#introduction",
-    "title": "Portfolio Geek",
-    "section": "Introduction",
-    "text": "Introduction\nIn today’s session, we will\n\nimport pandas as pd\nimport matplotlib\nimport matplotlib.pyplot as plt\nimport pandas_datareader as web_reader\nimport matplotx\nimport matplotlib.dates as mdates\nimport seaborn as sns\nimport numpy as np\nfrom scipy.stats import norm\nimport math\nimport seaborn as sns\n\ntickers = ['SPY']\n\nstart_date = '2010-09-14'\nend_date = '2022-09-14'\ntickers = ['SPY', 'AGG']\n\ndf = web_reader.DataReader(tickers, 'yahoo', start=start_date, end=end_date)\ndata = df.Close.SPY.resample(\"B\").last().fillna(method=\"bfill\")\ndata_agg = df.Close.AGG.resample(\"B\").last().fillna(method=\"bfill\")"
+    "objectID": "posts/2022-09-19-estimating-portfolio-risk.html",
+    "href": "posts/2022-09-19-estimating-portfolio-risk.html",
+    "title": "Estimate Financial Risk",
+    "section": "",
+    "text": "In today’s session, we will\n\nimport pandas as pd\nimport matplotlib\nimport matplotlib.pyplot as plt\nimport pandas_datareader as web_reader\nimport matplotx\nimport matplotlib.dates as mdates\nimport seaborn as sns\nimport numpy as np\nfrom scipy.stats import norm\nimport math\nimport seaborn as sns\n\ntickers = ['SPY']\n\nstart_date = '2010-09-14'\nend_date = '2022-09-14'\ntickers = ['SPY', 'AGG']\n\ndf = web_reader.DataReader(tickers, 'yahoo', start=start_date, end=end_date)\ndata = df.Close.SPY.resample(\"B\").last().fillna(method=\"bfill\")\ndata_agg = df.Close.AGG.resample(\"B\").last().fillna(method=\"bfill\")"
   },
   {
     "objectID": "posts/2022-09-19-estimating-portfolio-risk.html#plot-historical-close-price",
@@ -166,5 +124,40 @@
     "title": "Estimate Financial Risk",
     "section": "Historical Volatility",
     "text": "Historical Volatility\n\nplt.figure(figsize=(8, 6))\nplt.savefig(\"output/wealth_curve_spy.png\" );\ndata.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=True)\nmatplotx.line_labels() \nplt.savefig(\"output/wealth_curve_spy_with_vol.png\" );\n\n\n\n\n\nplt.figure(figsize=(8, 6))\ndata.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=False)\nmatplotx.line_labels()\nplt.savefig(\"output/vol_spy.png\" );\ndata_agg.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=False)\nmatplotx.line_labels()\nplt.savefig(\"output/vol_spy_with_agg.png\" );"
+  },
+  {
+    "objectID": "posts/risk_and_return.html",
+    "href": "posts/risk_and_return.html",
+    "title": "Series: Tutorials: Estimating Risk and Return",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "archive.html",
+    "href": "archive.html",
+    "title": "Archive",
+    "section": "",
+    "text": "Series: Tutorials: Estimating Risk and Return\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have pretty much worked across the entire value chain of the asset management and capital markets industry.\nIn my different roles, I have developed and implemented a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\nFind me on Linkedin\n\nWhy this blog?\nWhat struck me the most when I started my career in finance was the knowledge asymetry between finance professional and end clients. Just to clarify, I don’t mean IQ asymmetry, only a difference in knowledge (e.g. data, jargon, formulas, etc.). Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts might still sound fairly exotic or technical to many investors.\nHere, I will try to demystify financial analysis and provide ideas and starting points in order to put theory into practice.\nIn most articles, you should be able to copy, run and modify the code behind the analysis. This should help you to directly use many of the tools presented.\n\n\nMain Publications\nBelow are the main research papers I have published or participated to in the last few years, feel free to take a look."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have pretty much worked across the entire value chain of the asset management and capital markets industry.\nIn my different roles, I have developed and implemented a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\nFind me on Linkedin\n\nWhy this blog?\nWhat struck me the most when I started my career in finance was the knowledge asymetry between finance professional and end clients. Just to clarify, I don’t mean IQ asymmetry, only a difference in knowledge (e.g. data, jargon, formulas, etc.). Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts might still sound fairly exotic or technical to many investors.\nHere, I will try to demystify financial analysis and provide ideas and starting points in order to put theory into practice.\nIn most articles, you should be able to copy, run and modify the code behind the analysis. This should help you to directly use many of the tools presented.\n\n\nMain Publications\nBelow are the main research papers I have published or participated to in the last few years, feel free to take a look."
+  },
+  {
+    "objectID": "all_posts.html",
+    "href": "all_posts.html",
+    "title": "Portfolio Geek",
+    "section": "",
+    "text": "Visualizing historical data\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-optimisation\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeries: Tutorials: Estimating Risk and Return\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
   }
 ]
