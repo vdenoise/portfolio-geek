@@ -88,14 +88,14 @@
     "href": "posts/2022-09-19-estimating-portfolio-risk.html",
     "title": "Estimate Financial Risk",
     "section": "",
-    "text": "In today’s session, we will\n\nimport pandas as pd\nimport matplotlib\nimport matplotlib.pyplot as plt\nimport pandas_datareader as web_reader\nimport matplotx\nimport matplotlib.dates as mdates\nimport seaborn as sns\nimport numpy as np\nfrom scipy.stats import norm\nimport math\nimport seaborn as sns\n\ntickers = ['SPY']\n\nstart_date = '2018-09-14'\nend_date = '2022-09-14'\ntickers = ['SPY', 'AGG']\n\ndf = web_reader.DataReader(tickers, 'yahoo', start=start_date, end=end_date)\ndata = df.Close.SPY.resample(\"B\").last().fillna(method=\"bfill\")\ndata_agg = df.Close.AGG.resample(\"B\").last().fillna(method=\"bfill\")\n\nTypeError: string indices must be integers"
+    "text": "In today’s session, we will\n\nimport pandas as pd\nimport matplotlib\nimport matplotlib.pyplot as plt\n#import pandas_datareader as web_reader\nfrom pandas_datareader import data as pdr\nimport yfinance as yf\n\n\nimport matplotx\nimport matplotlib.dates as mdates\nimport seaborn as sns\nimport numpy as np\nfrom scipy.stats import norm\nimport math\nimport seaborn as sns\n\ntickers = ['SPY']\n\nstart_date = '2018-09-14'\nend_date = '2022-09-14'\ntickers = ['SPY', 'AGG']\n#yf.pdr_override(tickers)\ndf = yf.download(tickers,  start=start_date, end=end_date)\ndata = df.Close.SPY.resample(\"B\").last().fillna(method=\"bfill\")\ndata_agg = df.Close.AGG.resample(\"B\").last().fillna(method=\"bfill\")\n\n[*********************100%***********************]  2 of 2 completed"
   },
   {
     "objectID": "posts/2022-09-19-estimating-portfolio-risk.html#plot-historical-close-price",
     "href": "posts/2022-09-19-estimating-portfolio-risk.html#plot-historical-close-price",
     "title": "Estimate Financial Risk",
     "section": "Plot Historical Close Price",
-    "text": "Plot Historical Close Price\n\nplt.style.use(\"./stylesheets/dracula_slide.mplstyle\")\ndata.resample(\"W\").last().plot(figsize=(4,6));\nplt.ylabel(\"Wealth Curve\")  \nmatplotx.line_labels() \nmatplotx.xlabels() \n\nplt.savefig(\"output/wealth_curve_spy.png\" );\n\nAttributeError: module 'matplotx' has no attribute 'xlabels'"
+    "text": "Plot Historical Close Price\n\nplt.style.use(\"./stylesheets/dracula_slide.mplstyle\")\ndata.resample(\"W\").last().plot(figsize=(4,6));\nplt.ylabel(\"Wealth Curve\")  \nmatplotx.line_labels()  \n\nplt.savefig(\"output/wealth_curve_spy.png\" );"
   },
   {
     "objectID": "posts/2022-09-19-estimating-portfolio-risk.html#plot-historical-returns",
@@ -109,7 +109,7 @@
     "href": "posts/2022-09-19-estimating-portfolio-risk.html#sorted-weekly-returns",
     "title": "Estimate Financial Risk",
     "section": "Sorted Weekly Returns",
-    "text": "Sorted Weekly Returns\n\nsorted_returns.plot(figsize=(8, 6));\nplt.savefig(\"output/sorted_weekly_returns_spy.png\" );"
+    "text": "Sorted Weekly Returns\n\nsorted_returns = data.resample(\"W\").last().pct_change().multiply(100).sort_values()\nsorted_returns.plot(figsize=(8, 6));\nplt.savefig(\"output/sorted_weekly_returns_spy.png\" );"
   },
   {
     "objectID": "posts/2022-09-19-estimating-portfolio-risk.html#return-distribution",
