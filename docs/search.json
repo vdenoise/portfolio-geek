@@ -88,7 +88,7 @@
     "href": "posts/2022-09-19-estimating-portfolio-risk.html",
     "title": "Estimate Financial Risk",
     "section": "",
-    "text": "In today’s session, we will\n\nimport pandas as pd\nimport matplotlib\nimport matplotlib.pyplot as plt\nimport pandas_datareader as web_reader\nimport matplotx\nimport matplotlib.dates as mdates\nimport seaborn as sns\nimport numpy as np\nfrom scipy.stats import norm\nimport math\nimport seaborn as sns\n\ntickers = ['SPY']\n\nstart_date = '2010-09-14'\nend_date = '2022-09-14'\ntickers = ['SPY', 'AGG']\n\ndf = web_reader.DataReader(tickers, 'yahoo', start=start_date, end=end_date)\ndata = df.Close.SPY.resample(\"B\").last().fillna(method=\"bfill\")\ndata_agg = df.Close.AGG.resample(\"B\").last().fillna(method=\"bfill\")"
+    "text": "In today’s session, we will\n\nimport pandas as pd\nimport matplotlib\nimport matplotlib.pyplot as plt\nimport pandas_datareader as web_reader\nimport matplotx\nimport matplotlib.dates as mdates\nimport seaborn as sns\nimport numpy as np\nfrom scipy.stats import norm\nimport math\nimport seaborn as sns\n\ntickers = ['SPY']\n\nstart_date = '2018-09-14'\nend_date = '2022-09-14'\ntickers = ['SPY', 'AGG']\n\ndf = web_reader.DataReader(tickers, 'yahoo', start=start_date, end=end_date)\ndata = df.Close.SPY.resample(\"B\").last().fillna(method=\"bfill\")\ndata_agg = df.Close.AGG.resample(\"B\").last().fillna(method=\"bfill\")\n\nTypeError: string indices must be integers"
   },
   {
     "objectID": "posts/2022-09-19-estimating-portfolio-risk.html#plot-historical-close-price",
