@@ -128,7 +128,7 @@
   {
     "objectID": "posts/risk_and_return.html",
     "href": "posts/risk_and_return.html",
-    "title": "Series: Tutorials: Estimating Risk and Return",
+    "title": "Series: Estimating Risk and Return",
     "section": "",
     "text": "No matching items"
   },
@@ -137,14 +137,14 @@
     "href": "archive.html",
     "title": "Archive",
     "section": "",
-    "text": "Series: Tutorials: Estimating Risk and Return\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+    "text": "No matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About",
+    "title": "Portfolio Geek",
     "section": "",
-    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have pretty much worked across the entire value chain of the asset management and capital markets industry.\nIn my different roles, I have developed and implemented a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\nFind me on Linkedin\n\nWhy this blog?\nWhat struck me the most when I started my career in finance was the knowledge asymetry between finance professional and end clients. Just to clarify, I don’t mean IQ asymmetry, only a difference in knowledge (e.g. data, jargon, formulas, etc.). Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts might still sound fairly exotic or technical to many investors.\nHere, I will try to demystify financial analysis and provide ideas and starting points in order to put theory into practice.\nIn most articles, you should be able to copy, run and modify the code behind the analysis. This should help you to directly use many of the tools presented.\n\n\nMain Publications\nBelow are the main research papers I have published or participated to in the last few years, feel free to take a look."
+    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the entire value chain of the asset management and financial markets industry.\nIn this blog, I will document here my findings and experiments, notably in Python, Jupyter and along themes like portfolio optimisation and reproducible research.\nIn my different roles, I have developed and implemented a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\n\n\n\n\nBlog post 1\nBlog post 2\nBlog post 3\n\n\n\n\n\nThis div…\n…required…\n…no offset (it’s still in the first row)"
   },
   {
     "objectID": "about.html",
@@ -158,6 +158,111 @@
     "href": "all_posts.html",
     "title": "Portfolio Geek",
     "section": "",
-    "text": "Visualizing historical data\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-optimisation\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeries: Tutorials: Estimating Risk and Return\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
+    "text": "Estimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-optimisation\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nVisualizing historical data\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/risk_and_return/2022-09-19-estimating-portfolio-risk.html",
+    "href": "posts/risk_and_return/2022-09-19-estimating-portfolio-risk.html",
+    "title": "Estimate Financial Risk",
+    "section": "",
+    "text": "In today’s session, we will\n\nimport pandas as pd\nimport matplotlib\nimport matplotlib.pyplot as plt\n#import pandas_datareader as web_reader\nfrom pandas_datareader import data as pdr\nimport yfinance as yf\n\n\nimport matplotx\nimport matplotlib.dates as mdates\nimport seaborn as sns\nimport numpy as np\nfrom scipy.stats import norm\nimport math\nimport seaborn as sns\n\ntickers = ['SPY']\n\nstart_date = '2018-09-14'\nend_date = '2022-09-14'\ntickers = ['SPY', 'AGG']\n#yf.pdr_override(tickers)\ndf = yf.download(tickers,  start=start_date, end=end_date)\ndata = df.Close.SPY.resample(\"B\").last().fillna(method=\"bfill\")\ndata_agg = df.Close.AGG.resample(\"B\").last().fillna(method=\"bfill\")\n\n[*********************100%***********************]  2 of 2 completed"
+  },
+  {
+    "objectID": "posts/risk_and_return/2022-09-19-estimating-portfolio-risk.html#plot-historical-close-price",
+    "href": "posts/risk_and_return/2022-09-19-estimating-portfolio-risk.html#plot-historical-close-price",
+    "title": "Estimate Financial Risk",
+    "section": "Plot Historical Close Price",
+    "text": "Plot Historical Close Price\n\nplt.style.use(\"./stylesheets/dracula_slide.mplstyle\")\ndata.resample(\"W\").last().plot(figsize=(4,6));\nplt.ylabel(\"Wealth Curve\")  \nmatplotx.line_labels()  \n\nplt.savefig(\"output/wealth_curve_spy.png\" );"
+  },
+  {
+    "objectID": "posts/risk_and_return/2022-09-19-estimating-portfolio-risk.html#plot-historical-returns",
+    "href": "posts/risk_and_return/2022-09-19-estimating-portfolio-risk.html#plot-historical-returns",
+    "title": "Estimate Financial Risk",
+    "section": "Plot Historical Returns",
+    "text": "Plot Historical Returns\n\nplt.figure(figsize=(8, 6))\ndata_bar = data.resample(\"W\").last().pct_change().multiply(100)\nindex = data_bar.index\nindex = [pd.to_datetime(date, format='%Y-%m-%d').date() for date in index]\ndata_bar.index = index\nax = data_bar.plot.bar()\nplt.ylabel(\"Weekly Return (%)\")\nax.xaxis.set_major_locator(mdates.MonthLocator(interval=3))\nplt.gcf().autofmt_xdate()\nplt.savefig(\"output/weekly_returns_spy.png\" );"
+  },
+  {
+    "objectID": "posts/risk_and_return/2022-09-19-estimating-portfolio-risk.html#sorted-weekly-returns",
+    "href": "posts/risk_and_return/2022-09-19-estimating-portfolio-risk.html#sorted-weekly-returns",
+    "title": "Estimate Financial Risk",
+    "section": "Sorted Weekly Returns",
+    "text": "Sorted Weekly Returns\n\nsorted_returns = data.resample(\"W\").last().pct_change().multiply(100).sort_values()\nsorted_returns.plot(figsize=(8, 6));\nplt.savefig(\"output/sorted_weekly_returns_spy.png\" );"
+  },
+  {
+    "objectID": "posts/risk_and_return/2022-09-19-estimating-portfolio-risk.html#return-distribution",
+    "href": "posts/risk_and_return/2022-09-19-estimating-portfolio-risk.html#return-distribution",
+    "title": "Estimate Financial Risk",
+    "section": "Return Distribution",
+    "text": "Return Distribution\n\ndata_bar.hist(bins=100, figsize=(8,6));\n\n\n\n\n\nplt.figure(figsize=(8, 6))\nax = sns.kdeplot(data_bar)\nmean = data_bar.mean()\nstd = data_bar.std()\nN = 10\nfor i in [1, 2, 3]:\n    x1 = np.linspace(mean - i*std, mean - (i - 1)*std, N)\n    x2 = np.linspace(mean - (i - 1)*std, mean + (i - 1)*std, N)\n    x3 = np.linspace(mean + (i - 1)*std, mean + i*std, N)\n    x = np.concatenate((x1, x2, x3))\n    x = np.where((mean - (i - 1)*std < x) & (x < mean + (i - 1)*std), np.nan, x)\n    y = norm.pdf(x, mean, std)\n    ax.fill_between(x, y, alpha=0.5)\n\nplt.xlabel(\"SPY Weekly Returns (in %, US Dollar)\")\nplt.ylabel(\"Probability Density Function\")\n#plt.xticks(ticks=range(0, 10))\nplt.grid()\n\nplt.show()"
+  },
+  {
+    "objectID": "posts/risk_and_return/2022-09-19-estimating-portfolio-risk.html#historical-volatility",
+    "href": "posts/risk_and_return/2022-09-19-estimating-portfolio-risk.html#historical-volatility",
+    "title": "Estimate Financial Risk",
+    "section": "Historical Volatility",
+    "text": "Historical Volatility\n\nplt.figure(figsize=(8, 6))\nplt.savefig(\"output/wealth_curve_spy.png\" );\ndata.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=True)\nmatplotx.line_labels() \nplt.savefig(\"output/wealth_curve_spy_with_vol.png\" );\n\n\n\n\n\nplt.figure(figsize=(8, 6))\ndata.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=False)\nmatplotx.line_labels()\nplt.savefig(\"output/vol_spy.png\" );\ndata_agg.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=False)\nmatplotx.line_labels()\nplt.savefig(\"output/vol_spy_with_agg.png\" );"
+  },
+  {
+    "objectID": "posts/blog.html",
+    "href": "posts/blog.html",
+    "title": "Portfolio Geek",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "risk_and_return.html",
+    "href": "risk_and_return.html",
+    "title": "Series: Estimating Risk and Return",
+    "section": "",
+    "text": "Estimate Financial Risk\n\n\n\n\n\n\n\n\n\n\n\n\n0 min\n\n\n\n\n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html",
+    "href": "posts/risk_and_return/estimating-portfolio-risk.html",
+    "title": "Estimate Financial Risk",
+    "section": "",
+    "text": "In today’s session, we will\n\nimport pandas as pd\nimport matplotlib\nimport matplotlib.pyplot as plt\n#import pandas_datareader as web_reader\nfrom pandas_datareader import data as pdr\nimport yfinance as yf\n\n\nimport matplotx\nimport matplotlib.dates as mdates\nimport seaborn as sns\nimport numpy as np\nfrom scipy.stats import norm\nimport math\nimport seaborn as sns\n\ntickers = ['SPY']\n\nstart_date = '2018-09-14'\nend_date = '2022-09-14'\ntickers = ['SPY', 'AGG']\n#yf.pdr_override(tickers)\ndf = yf.download(tickers,  start=start_date, end=end_date)\ndata = df.Close.SPY.resample(\"B\").last().fillna(method=\"bfill\")\ndata_agg = df.Close.AGG.resample(\"B\").last().fillna(method=\"bfill\")\n\n[*********************100%***********************]  2 of 2 completed"
+  },
+  {
+    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#plot-historical-close-price",
+    "href": "posts/risk_and_return/estimating-portfolio-risk.html#plot-historical-close-price",
+    "title": "Estimate Financial Risk",
+    "section": "Plot Historical Close Price",
+    "text": "Plot Historical Close Price\n\nplt.style.use(\"./stylesheets/dracula_slide.mplstyle\")\ndata.resample(\"W\").last().plot(figsize=(4,6));\nplt.ylabel(\"Wealth Curve\")  \nmatplotx.line_labels()  \n\nplt.savefig(\"output/wealth_curve_spy.png\" );"
+  },
+  {
+    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#plot-historical-returns",
+    "href": "posts/risk_and_return/estimating-portfolio-risk.html#plot-historical-returns",
+    "title": "Estimate Financial Risk",
+    "section": "Plot Historical Returns",
+    "text": "Plot Historical Returns\n\nplt.figure(figsize=(8, 6))\ndata_bar = data.resample(\"W\").last().pct_change().multiply(100)\nindex = data_bar.index\nindex = [pd.to_datetime(date, format='%Y-%m-%d').date() for date in index]\ndata_bar.index = index\nax = data_bar.plot.bar()\nplt.ylabel(\"Weekly Return (%)\")\nax.xaxis.set_major_locator(mdates.MonthLocator(interval=3))\nplt.gcf().autofmt_xdate()\nplt.savefig(\"output/weekly_returns_spy.png\" );"
+  },
+  {
+    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#sorted-weekly-returns",
+    "href": "posts/risk_and_return/estimating-portfolio-risk.html#sorted-weekly-returns",
+    "title": "Estimate Financial Risk",
+    "section": "Sorted Weekly Returns",
+    "text": "Sorted Weekly Returns\n\nsorted_returns = data.resample(\"W\").last().pct_change().multiply(100).sort_values()\nsorted_returns.plot(figsize=(8, 6));\nplt.savefig(\"output/sorted_weekly_returns_spy.png\" );"
+  },
+  {
+    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#return-distribution",
+    "href": "posts/risk_and_return/estimating-portfolio-risk.html#return-distribution",
+    "title": "Estimate Financial Risk",
+    "section": "Return Distribution",
+    "text": "Return Distribution\n\ndata_bar.hist(bins=100, figsize=(8,6));\n\n\n\n\n\nplt.figure(figsize=(8, 6))\nax = sns.kdeplot(data_bar)\nmean = data_bar.mean()\nstd = data_bar.std()\nN = 10\nfor i in [1, 2, 3]:\n    x1 = np.linspace(mean - i*std, mean - (i - 1)*std, N)\n    x2 = np.linspace(mean - (i - 1)*std, mean + (i - 1)*std, N)\n    x3 = np.linspace(mean + (i - 1)*std, mean + i*std, N)\n    x = np.concatenate((x1, x2, x3))\n    x = np.where((mean - (i - 1)*std < x) & (x < mean + (i - 1)*std), np.nan, x)\n    y = norm.pdf(x, mean, std)\n    ax.fill_between(x, y, alpha=0.5)\n\nplt.xlabel(\"SPY Weekly Returns (in %, US Dollar)\")\nplt.ylabel(\"Probability Density Function\")\n#plt.xticks(ticks=range(0, 10))\nplt.grid()\n\nplt.show()"
+  },
+  {
+    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#historical-volatility",
+    "href": "posts/risk_and_return/estimating-portfolio-risk.html#historical-volatility",
+    "title": "Estimate Financial Risk",
+    "section": "Historical Volatility",
+    "text": "Historical Volatility\n\nplt.figure(figsize=(8, 6))\nplt.savefig(\"output/wealth_curve_spy.png\" );\ndata.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=True)\nmatplotx.line_labels() \nplt.savefig(\"output/wealth_curve_spy_with_vol.png\" );\n\n\n\n\n\nplt.figure(figsize=(8, 6))\ndata.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=False)\nmatplotx.line_labels()\nplt.savefig(\"output/vol_spy.png\" );\ndata_agg.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=False)\nmatplotx.line_labels()\nplt.savefig(\"output/vol_spy_with_agg.png\" );"
+  },
+  {
+    "objectID": "index_bak.html",
+    "href": "index_bak.html",
+    "title": "About",
+    "section": "",
+    "text": "CONTENT"
   }
 ]

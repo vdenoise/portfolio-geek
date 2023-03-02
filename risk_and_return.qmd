@@ -1,5 +1,5 @@
 ---
-title: "Series: Tutorials: Estimating Risk and Return"
+title: "Series: Estimating Risk and Return"
 listing:
   contents: posts/risk_and_return
   sort: "date desc"

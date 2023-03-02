@@ -1,0 +1,19 @@
+---
+listing:
+  contents: posts/**/*.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [date, title, reading-time, description, categories]
+  feed: true
+page-layout: full
+title-block-banner: false
+---
+
+# Series
+
+##### [Risk and Return](risk_and_return.qmd)
+This series contains a great deal of tips, tricks and packages 
+that you can use to level up your ggplot game.

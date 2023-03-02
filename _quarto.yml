@@ -14,9 +14,19 @@ website:
         href: https://twitter.com
       - text: Archive
         href: archive.qmd
+      - text: Ressources
+        menu: 
+          - text: Risk and Return 101
+            href: risk_and_return.qmd
+          - text: R Weekly
+            href: https://rweekly.org/
+          - text: R Bloggers
+            href: https://www.r-bloggers.com/
+      - text: Archive
+        href: archive.qmd
 format:
   html:
-    theme: lumen
+    theme: yeti
     css: styles.css
 
 
