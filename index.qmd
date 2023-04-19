@@ -20,19 +20,19 @@ In my different roles, I have developed and implemented a wide range range of in
 :::
 
 ::: {.g-col-12 .g-col-md-5 .g-start-md-2}
-# Data Visualization
+# Portfolio Construction
 
 - Portfolio Optimisation with Python
-- Blog post 2
-- Blog post 3
+- Risks and Returns 101
+- Good Finance DataSources available to everyone
 :::
 
 ::: {.g-col-12 .g-col-md-5}
-# Stats/ML
+# Fast an Efficient Presentations
 
-- This div...
-- ...required...
-- ...no offset (it's still in the first row)
+- Blogging with Quarto
+- Automating Powerpoint 
+- Nice Pictures with Python
 
 :::
 
