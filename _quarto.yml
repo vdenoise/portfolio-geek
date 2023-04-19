@@ -4,10 +4,13 @@ project:
 
 website:
   title: "Portfolio Geek"
+  site-url: "portfolio-geek.com"
   navbar:
     right:
       - text: Blog
         href: all_posts.qmd
+      - text: About
+        href: about.qmd
       - icon: github
         href: https://github.com/
       - icon: twitter

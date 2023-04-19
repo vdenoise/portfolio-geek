@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/posts/risk_and_return.html",
+    "listing": "/posts/blog.html",
     "items": []
   },
   {
@@ -18,10 +18,6 @@
       "/posts/visualizing-historical-data.html",
       "/posts/blog.html"
     ]
-  },
-  {
-    "listing": "/posts/blog.html",
-    "items": []
   },
   {
     "listing": "/risk_and_return.html",

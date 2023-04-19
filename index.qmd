@@ -1,5 +1,6 @@
 ---
 page-layout: full
+
 ---
 
 ::: {.grid}
@@ -21,7 +22,7 @@ In my different roles, I have developed and implemented a wide range range of in
 ::: {.g-col-12 .g-col-md-5 .g-start-md-2}
 # Data Visualization
 
-- Blog post 1
+- Portfolio Optimisation with Python
 - Blog post 2
 - Blog post 3
 :::
@@ -36,3 +37,4 @@ In my different roles, I have developed and implemented a wide range range of in
 :::
 
 :::
+
