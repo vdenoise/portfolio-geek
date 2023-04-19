@@ -28,7 +28,7 @@ In my different roles, I have developed and implemented a wide range range of in
 :::
 
 ::: {.g-col-12 .g-col-md-5}
-# Fast an Efficient Presentations
+# Fast and Efficient Presentations
 
 - Blogging with Quarto
 - Automating Powerpoint 
