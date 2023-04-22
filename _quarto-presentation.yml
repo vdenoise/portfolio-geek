@@ -1,0 +1,13 @@
+project:
+  type: default
+
+  render: 
+    - posts/video/fr/*.qmd
+    - posts/video/fr/*.ipynb
+    - posts/video/en/*.qmd
+    - posts/video/en/*.ipynb
+
+format: 
+  revealjs:
+    theme: dark
+    menu: false

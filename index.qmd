@@ -19,7 +19,7 @@ In this blog, I will document here my findings and experiments, notably in **Pyt
 In my different roles, I have developed and implemented a wide range range of investment solutions, ranging from **Exchange Traded Funds (ETFs)**, **derivatives** and **investment mandates** across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.
 :::
 
-::: {.g-col-12 .g-col-md-5 .g-start-md-2}
+::: {.g-col-12 .g-col-md-5}
 # Portfolio Construction
 
 - Portfolio Optimisation with Python
@@ -28,9 +28,24 @@ In my different roles, I have developed and implemented a wide range range of in
 :::
 
 ::: {.g-col-12 .g-col-md-5}
-# Fast and Efficient Presentations
+# Modern Presentations
 
-- Blogging with Quarto
+- Automating Powerpoint 
+- Nice Pictures with Python
+
+:::
+
+::: {.g-col-12 .g-col-md-5}
+# Efficient Blogging
+
+- Automating Powerpoint 
+- Nice Pictures with Python
+
+:::
+
+::: {.g-col-12 .g-col-md-5}
+# Performance & Reporting
+
 - Automating Powerpoint 
 - Nice Pictures with Python
 

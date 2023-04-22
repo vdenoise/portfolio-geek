@@ -1,0 +1,14 @@
+---
+title: Getting Started
+badges: True
+comments: false
+author: Vincent D.
+categories: [tutoriel, en]
+tags: [tutorial, markowitz, optimisation, portfolio, construction]
+series: Finance and Markets with Python and Jupyter a step-by-step tutorial
+---
+
+
+# test title
+
+

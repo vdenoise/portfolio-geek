@@ -27,6 +27,7 @@ website:
             href: https://www.r-bloggers.com/
       - text: Archive
         href: archive.qmd
+
 format:
   html:
     theme: yeti
