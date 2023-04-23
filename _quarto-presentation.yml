@@ -11,5 +11,4 @@ project:
 
 format:
   revealjs:
-    execute: True
     theme: [simple, preso-backbboard-halfwidth.scss]
