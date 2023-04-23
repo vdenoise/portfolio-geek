@@ -1,0 +1,45 @@
+lines.color: F8F8F2
+patch.edgecolor: F8F8F2
+text.color: F8F8F2
+
+#Font
+font.size: 16
+xtick.labelcolor: 8be9fd
+ytick.labelcolor: 8be9fd
+axes.labelcolor: 8be9fd
+
+# AXES
+axes.titlesize : 16
+axes.labelsize : 16
+axes.facecolor: 000000
+axes.edgecolor: 000000
+
+axes.prop_cycle: cycler('color', ['8be9fd', 'ff79c6', '50fa7b', 'bd93f9', 'ffb86c', 'ff5555', 'f1fa8c', '6272a4'])
+lines.linewidth : 4
+lines.markeredgewidth : 0.0
+
+xtick.color: F8F8F2
+ytick.color: F8F8F2
+
+legend.framealpha: 0.9
+legend.edgecolor: 44475A
+
+figure.facecolor: 000000
+figure.edgecolor: 000000
+
+savefig.facecolor: 000000
+savefig.edgecolor: 000000
+
+### Boxplots
+boxplot.boxprops.color: F8F8F2
+boxplot.capprops.color: F8F8F2
+boxplot.flierprops.color: F8F8F2
+boxplot.flierprops.markeredgecolor: F8F8F2
+boxplot.whiskerprops.color: F8F8F2
+
+# GRID
+axes.grid : False
+grid.alpha : 0.7
+grid.linestyle : --
+grid.linewidth : 1
+grid.color: F8F8F2

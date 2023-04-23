@@ -1,5 +1,7 @@
 project:
   type: default
+  output-dir: presos
+  
 
   render: 
     - posts/video/fr/*.qmd
@@ -7,7 +9,7 @@ project:
     - posts/video/en/*.qmd
     - posts/video/en/*.ipynb
 
-format: 
+format:
   revealjs:
-    theme: dark
-    menu: false
+    execute: True
+    theme: [simple, preso-backbboard-halfwidth.scss]

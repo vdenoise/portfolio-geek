@@ -12,7 +12,7 @@ axes.spines.right : False
 axes.spines.bottom : True
 axes.spines.left : True
 
-# GRID
+# GRID 
 axes.grid : True
 grid.alpha : 0.7
 grid.linestyle : --

@@ -2,9 +2,13 @@ project:
   type: website
   output-dir: docs
 
+profile:
+  default: website
+
 website:
   title: "Portfolio Geek"
   site-url: "portfolio-geek.com"
+
   navbar:
     right:
       - text: Blog
@@ -30,6 +34,7 @@ website:
 
 format:
   html:
+    author: Vincent D.
     theme: yeti
     css: styles.css
 
