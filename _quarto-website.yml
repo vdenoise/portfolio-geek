@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+
+format:
+  html:
+    author: Vincent D.
+    theme: yeti
+    css: styles.css
+
+website:
+  title: "Portfolio Geek"
+  site-url: "portfolio-geek.com"
+
+  navbar:
+    right:
+      - text: Blog
+        href: all_posts.qmd
+      - text: About
+        href: about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+      - text: Archive
+        href: archive.qmd
+      - text: Ressources
+        menu: 
+          - text: Risk and Return 101
+            href: risk_and_return.qmd
+          - text: R Weekly
+            href: https://rweekly.org/
+          - text: R Bloggers
+            href: https://www.r-bloggers.com/
+      - text: Archive
+        href: archive.qmd

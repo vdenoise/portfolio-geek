@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "posts/video/fr/demarrer.html#slide-1",
+    "href": "posts/video/fr/demarrer.html#slide-1",
+    "title": "Démarrer",
+    "section": "Slide 1",
+    "text": "Slide 1\n\n\n\n\nplt.style.use(f\"{mpl_tpl_path}/dracula_slide.mplstyle\")\ndata.resample(\"W\").last().plot();\nplt.ylabel(\"Wealth Curve\")  \nmatplotx.line_labels()"
+  },
+  {
+    "objectID": "posts/video/fr/demarrer.html#titre-1",
+    "href": "posts/video/fr/demarrer.html#titre-1",
+    "title": "Démarrer",
+    "section": "Titre 1",
+    "text": "Titre 1\n\n\n\nPret ou pas pret, Il faut bien démarrer quelque part!"
+  },
+  {
+    "objectID": "posts/video/fr/demarrer.html#main-title",
+    "href": "posts/video/fr/demarrer.html#main-title",
+    "title": "Démarrer",
+    "section": "Main Title",
+    "text": "Main Title\n\n\n\nTest Bullet a Gauche\nTest Bullet a Gauche\nTest Bullet a Gauche\n\n\n\n\nBonjour a tous, et merci de nous accompagner pour ce premier épisode! Dans cette vidéo nous allons faire un tour d’horizon sur l’analyse de données financières. Ce sera uniquement un tour d’horizon, et aucune connaissance préalable n’est requise pour suivre cette vidéo.\nL’objectif est clair et simple: savoir suivre la performance de différents actifs financiers. Pour ceci, nous allons nous intéresser a la performance de certains indices, dont nous allons approximer la performance par celle d’ETFs, qui sont progressivement devenus des outils indispensable pour de nombreux investisseurs. Petit rappel nécessaire, je ne suis pas conseiller financier, je ne donne aucune recommendation ni conseil, mon seul objectif ici est d’utiliser des informations pour analyser les marchés."
+  },
+  {
+    "objectID": "posts/video/fr/demarrer.html#titre-2",
+    "href": "posts/video/fr/demarrer.html#titre-2",
+    "title": "Démarrer",
+    "section": "Titre 2",
+    "text": "Titre 2"
+  },
+  {
+    "objectID": "posts/video/fr/demarrer.html#titre-3",
+    "href": "posts/video/fr/demarrer.html#titre-3",
+    "title": "Démarrer",
+    "section": "Titre 3",
+    "text": "Titre 3"
+  },
+  {
     "objectID": "posts/video/en/start.html",
     "href": "posts/video/en/start.html",
     "title": "Getting Started",
