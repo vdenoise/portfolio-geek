@@ -6,10 +6,10 @@
       version="2.0">
 <channel>
 <title>Portfolio Geek</title>
-<link>portfolio-geek.com/posts/videos_fr.html</link>
-<atom:link href="portfolio-geek.com/posts/videos_fr.xml" rel="self" type="application/rss+xml"/>
+<link>portfolio-geek.com/posts/blog.html</link>
+<atom:link href="portfolio-geek.com/posts/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.2.269</generator>
-<lastBuildDate>Sun, 23 Apr 2023 14:30:42 GMT</lastBuildDate>
+<lastBuildDate>Sun, 23 Apr 2023 14:32:42 GMT</lastBuildDate>
 </channel>
 </rss>
