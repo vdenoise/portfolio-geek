@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -248,7 +248,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="loading-libraries" class="level3">
 <h3 class="anchored" data-anchor-id="loading-libraries">Loading Libraries</h3>
 <p>The main library to load here is indeed <strong>PyPortfolioOpt</strong>{% fn 2%}, and we will rely extensively on it in this article.</p>
-<p>We need the following tools as well: - <strong>Pandas</strong>{% fn 3%}: load, filter, sort and pretty much all data wrangling operations; - <strong>Numpy</strong>{% fn 4%}: provides most matrix and advanced numerical operations; this library is the calculation backbone for pandas; - <strong>Matplotlib</strong>{% fn 5%}: the <em>de facto</em> reference library to draw scientific charts; - <strong>Pandas_datareader</strong>{% fn 6%}: a very handy library to access many different online databases, including Yahoo Finance.</p>
+<p>We need the following tools as well: - <strong>Pandas</strong>{% fn 3%}: load, filter, sort and pretty much all data wrangling operations; - <strong>Numpy</strong>{% fn 4%}: provides most matrix and advanced numerical operations; this library is the calculation backbone for pandas; - <strong>Matplotlib</strong>{% fn 5%}: the <em>de facto</em> reference library to draw scientific charts; - <strong>yfinance</strong>{% fn 6%}: a very handy library to access many different online databases, including Yahoo Finance.</p>
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
@@ -257,9 +257,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pypfopt.efficient_frontier <span class="im">import</span> EfficientFrontier</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pypfopt <span class="im">import</span> risk_models</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pypfopt <span class="im">import</span> expected_returns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pypfopt.efficient_frontier <span class="im">import</span> EfficientFrontier</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pypfopt <span class="im">import</span> risk_models</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pypfopt <span class="im">import</span> expected_returns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="misc-parameters" class="level3">
@@ -324,18 +326,54 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>investable_universe_tickers <span class="op">=</span> [<span class="st">'IVV'</span>, <span class="st">'SCHA'</span>, <span class="st">'IJH'</span>, <span class="st">'SCHD'</span>, <span class="st">'VTI'</span>, <span class="st">'VXUS'</span>, <span class="st">'EEM'</span>, <span class="st">'VCLT'</span>, <span class="st">'AGG'</span>, <span class="st">'GOVT'</span>,<span class="st">'PDBC'</span>,<span class="st">'GLD'</span>]</span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Get Historical Data</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> web_reader.DataReader(investable_universe_tickers, <span class="st">'yahoo'</span>, start<span class="op">=</span>start_date, end<span class="op">=</span>end_date)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> yf.download(investable_universe_tickers, start<span class="op">=</span>start_date, end<span class="op">=</span>end_date)</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[<span class="st">'Adj Close'</span>]</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># This is required to round the blog's table into 2 decimals, Jupyter's formatting does not apply on the published website</span></span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[                       0%                       ]</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[********              17%                       ]  2 of 12 completed</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[************          25%                       ]  3 of 12 completed</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[************          25%                       ]  3 of 12 completed</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[********************  42%                       ]  5 of 12 completed[********************  42%                       ]  5 of 12 completed</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[********************  42%                       ]  5 of 12 completed</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[**********************67%*******                ]  8 of 12 completed</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[**********************67%*******                ]  8 of 12 completed</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[**********************83%***************        ]  10 of 12 completed</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[**********************92%*******************    ]  11 of 12 completed</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[*********************100%***********************]  12 of 12 completed</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code></code></pre>
+</div>
 </div>
 <section id="data-gathering-results" class="level3">
 <h3 class="anchored" data-anchor-id="data-gathering-results">Data gathering: <strong>results</strong></h3>
 <p>The request above delivered a <strong>pandas data_frame</strong>, and here is a snapshot of the last 5 rows:</p>
 <div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 
 <div>
@@ -343,19 +381,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <table class="dataframe table table-sm table-striped">
   <thead>
     <tr>
-      <th>Symbols</th>
-      <th>IVV</th>
-      <th>SCHA</th>
+      <th></th>
+      <th>AGG</th>
+      <th>EEM</th>
+      <th>GLD</th>
+      <th>GOVT</th>
       <th>IJH</th>
+      <th>IVV</th>
+      <th>PDBC</th>
+      <th>SCHA</th>
       <th>SCHD</th>
+      <th>VCLT</th>
       <th>VTI</th>
       <th>VXUS</th>
-      <th>EEM</th>
-      <th>VCLT</th>
-      <th>AGG</th>
-      <th>GOVT</th>
-      <th>PDBC</th>
-      <th>GLD</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -375,49 +413,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </thead>
   <tbody>
     <tr>
+      <th>2022-02-24</th>
+      <td>106.4</td>
+      <td>45.4</td>
+      <td>177.1</td>
+      <td>25.0</td>
+      <td>253.0</td>
+      <td>421.6</td>
+      <td>14.3</td>
+      <td>45.0</td>
+      <td>72.0</td>
+      <td>90.5</td>
+      <td>212.3</td>
+      <td>57.5</td>
+    </tr>
+    <tr>
       <th>2022-02-25</th>
-      <td>438.2</td>
-      <td>46.8</td>
-      <td>264.9</td>
-      <td>76.9</td>
-      <td>220.7</td>
-      <td>60.7</td>
-      <td>47.3</td>
-      <td>94.8</td>
-      <td>109.1</td>
-      <td>25.5</td>
-      <td>15.9</td>
+      <td>106.5</td>
+      <td>46.2</td>
       <td>176.6</td>
+      <td>25.0</td>
+      <td>260.3</td>
+      <td>430.9</td>
+      <td>14.0</td>
+      <td>46.1</td>
+      <td>74.2</td>
+      <td>91.0</td>
+      <td>217.0</td>
+      <td>58.8</td>
     </tr>
     <tr>
       <th>2022-02-28</th>
-      <td>437.3</td>
-      <td>47.0</td>
-      <td>264.9</td>
-      <td>76.6</td>
-      <td>220.5</td>
-      <td>59.9</td>
-      <td>46.7</td>
-      <td>96.3</td>
-      <td>109.8</td>
-      <td>25.7</td>
-      <td>16.2</td>
+      <td>107.2</td>
+      <td>45.6</td>
       <td>178.4</td>
-    </tr>
-    <tr>
-      <th>2022-03-01</th>
-      <td>430.5</td>
-      <td>46.1</td>
-      <td>259.7</td>
-      <td>75.2</td>
-      <td>217.0</td>
-      <td>58.8</td>
-      <td>46.1</td>
-      <td>96.3</td>
-      <td>110.5</td>
-      <td>25.9</td>
-      <td>16.9</td>
-      <td>181.6</td>
+      <td>25.2</td>
+      <td>260.3</td>
+      <td>430.0</td>
+      <td>14.3</td>
+      <td>46.3</td>
+      <td>73.9</td>
+      <td>92.4</td>
+      <td>216.8</td>
+      <td>58.0</td>
     </tr>
   </tbody>
 </table>
@@ -430,9 +468,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>A table like the above is not very useful: in the absence a of particle knowledge of the ETFs’ values, we have no way of knowing if a value is “high” or “low”, hence apart from telling us that the value is a number we have now way to let’s try to make this table a bit more insightful.</p>
 <p>The request above delivered a data_frame, and here is a snapshot of the last 5 rows:</p>
 <div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Same table, but this time, normalised</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>(df<span class="op">/</span>df.iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">1</span>).tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Same table, but this time, normalised</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>(df<span class="op">/</span>df.iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">1</span>).tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 
 <div>
@@ -440,19 +478,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <table class="dataframe table table-sm table-striped">
   <thead>
     <tr>
-      <th>Symbols</th>
-      <th>IVV</th>
-      <th>SCHA</th>
+      <th></th>
+      <th>AGG</th>
+      <th>EEM</th>
+      <th>GLD</th>
+      <th>GOVT</th>
       <th>IJH</th>
+      <th>IVV</th>
+      <th>PDBC</th>
+      <th>SCHA</th>
       <th>SCHD</th>
+      <th>VCLT</th>
       <th>VTI</th>
       <th>VXUS</th>
-      <th>EEM</th>
-      <th>VCLT</th>
-      <th>AGG</th>
-      <th>GOVT</th>
-      <th>PDBC</th>
-      <th>GLD</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -472,49 +510,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </thead>
   <tbody>
     <tr>
+      <th>2022-02-24</th>
+      <td>116.9</td>
+      <td>132.4</td>
+      <td>153.1</td>
+      <td>112.6</td>
+      <td>189.5</td>
+      <td>229.6</td>
+      <td>136.2</td>
+      <td>175.8</td>
+      <td>228.6</td>
+      <td>135.1</td>
+      <td>224.2</td>
+      <td>141.6</td>
+    </tr>
+    <tr>
       <th>2022-02-25</th>
-      <td>234.7</td>
-      <td>180.0</td>
-      <td>194.9</td>
-      <td>235.9</td>
-      <td>229.2</td>
-      <td>144.9</td>
-      <td>134.8</td>
-      <td>135.8</td>
-      <td>117.1</td>
-      <td>112.8</td>
-      <td>133.6</td>
+      <td>117.0</td>
+      <td>134.7</td>
       <td>152.6</td>
+      <td>112.6</td>
+      <td>195.0</td>
+      <td>234.7</td>
+      <td>133.3</td>
+      <td>180.1</td>
+      <td>235.6</td>
+      <td>135.8</td>
+      <td>229.1</td>
+      <td>144.8</td>
     </tr>
     <tr>
       <th>2022-02-28</th>
-      <td>234.2</td>
-      <td>180.8</td>
-      <td>194.9</td>
-      <td>235.0</td>
-      <td>229.0</td>
-      <td>143.0</td>
-      <td>133.0</td>
-      <td>138.0</td>
       <td>117.8</td>
-      <td>113.7</td>
-      <td>136.1</td>
+      <td>132.9</td>
       <td>154.2</td>
-    </tr>
-    <tr>
-      <th>2022-03-01</th>
-      <td>230.6</td>
-      <td>177.3</td>
-      <td>191.1</td>
-      <td>230.7</td>
-      <td>225.3</td>
-      <td>140.3</td>
-      <td>131.3</td>
-      <td>138.0</td>
-      <td>118.6</td>
-      <td>114.6</td>
-      <td>142.0</td>
-      <td>157.0</td>
+      <td>113.5</td>
+      <td>195.0</td>
+      <td>234.2</td>
+      <td>136.2</td>
+      <td>180.9</td>
+      <td>234.6</td>
+      <td>137.9</td>
+      <td>228.9</td>
+      <td>142.9</td>
     </tr>
   </tbody>
 </table>
@@ -528,25 +566,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3 class="anchored" data-anchor-id="visualise-asset-classes-returns">Visualise asset classes’ returns</h3>
 <p>Being able to sanity check the data is very important, and it’s often more efficient with a quick chart.</p>
 <div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Normalise to 100</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>normalised_data <span class="op">=</span> (df<span class="op">/</span>df.iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># A bit of data wrangling</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>transposed_data <span class="op">=</span> normalised_data.tail(<span class="dv">1</span>).reset_index().transpose()</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>transposed_data <span class="op">=</span> transposed_data.iloc[<span class="dv">1</span>:<span class="bu">len</span>(transposed_data)]</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>transposed_data <span class="op">=</span> transposed_data.rename(columns<span class="op">=</span>{<span class="dv">0</span>: <span class="st">"Last Value"</span>})</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co"># We want a bar chart sorted by decreaseing values</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>transposed_data <span class="op">=</span> transposed_data.sort_values(by<span class="op">=</span><span class="st">"Last Value"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Theming Seaborn results</span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>sns.set_theme()</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw</span></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>transposed_data.plot.bar(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Normalise to 100</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>normalised_data <span class="op">=</span> (df<span class="op">/</span>df.iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="co"># A bit of data wrangling</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>transposed_data <span class="op">=</span> normalised_data.tail(<span class="dv">1</span>).reset_index().transpose()</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>transposed_data <span class="op">=</span> transposed_data.iloc[<span class="dv">1</span>:<span class="bu">len</span>(transposed_data)]</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>transposed_data <span class="op">=</span> transposed_data.rename(columns<span class="op">=</span>{<span class="dv">0</span>: <span class="st">"Last Value"</span>})</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="co"># We want a bar chart sorted by decreaseing values</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>transposed_data <span class="op">=</span> transposed_data.sort_values(by<span class="op">=</span><span class="st">"Last Value"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Theming Seaborn results</span></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>sns.set_theme()</span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw</span></span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>transposed_data.plot.bar(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-7-output-1.png" class="img-fluid"></p>
 </div>
@@ -558,18 +596,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>A very common issue when charting multiple time series is the very different stock levels, and this can make the chart hard to read.</p>
 <p>This is why we will once again normalise the data.</p>
 <div class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Theming Seaborn results</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>sns.set_theme()</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the time series</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Legends and Axis titles</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>normalised_data)</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Theming Seaborn results</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>sns.set_theme()</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the time series</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Legends and Axis titles</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>normalised_data)</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-8-output-1.png" class="img-fluid"></p>
 </div>
@@ -587,8 +625,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Practitioners often use <strong>weekly returns</strong> to alleviate this issue, and we will do the same here, and as such calculate the returns using a <em>resampled</em> time series. To calculate the <strong>annualized volatility</strong> requires an additional factor in this case the square root of 52. Why this?</p>
 <p>Volatility is essential to option traders, and when pricing options, practitioners often model asset prices as <strong>Wiener processes</strong>(number of weeks in a year) {% fn 9 %}. The variance of a Wiener process is proportional to the time, and the volatility is the square root of the the variance, which gives us that to convert standard deviation of weekly returns into an <em>annualized</em> figure, we need to multiply our results by the square root of the number of weeks in a year (more on Wiener processes here {% fn 9 %}).</p>
 <div class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>weekly_returns <span class="op">=</span> df.resample(<span class="st">"W"</span>).last().pct_change()</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>((weekly_returns.std()<span class="op">*</span>math.sqrt(<span class="dv">52</span>)<span class="op">*</span><span class="dv">100</span>).sort_values()).plot.bar()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>weekly_returns <span class="op">=</span> df.resample(<span class="st">"W"</span>).last().pct_change()</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>((weekly_returns.std()<span class="op">*</span>math.sqrt(<span class="dv">52</span>)<span class="op">*</span><span class="dv">100</span>).sort_values()).plot.bar()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-9-output-1.png" class="img-fluid"></p>
 </div>
@@ -599,21 +637,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="correlation" class="level2">
 <h2 class="anchored" data-anchor-id="correlation">Correlation</h2>
 <div class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sns.heatmap(weekly_returns.corr())<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>sns.heatmap(weekly_returns.corr())<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-tags="[]" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pypfopt <span class="im">import</span> risk_models</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pypfopt <span class="im">import</span> plotting</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate expected returns and sample covariance</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>mu <span class="op">=</span> expected_returns.mean_historical_return(df)</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>sample_cov <span class="op">=</span> risk_models.sample_cov(df, frequency<span class="op">=</span><span class="dv">252</span>)</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>S <span class="op">=</span> risk_models.CovarianceShrinkage(df).ledoit_wolf()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pypfopt <span class="im">import</span> risk_models</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pypfopt <span class="im">import</span> plotting</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate expected returns and sample covariance</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>mu <span class="op">=</span> expected_returns.mean_historical_return(df)</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>sample_cov <span class="op">=</span> risk_models.sample_cov(df, frequency<span class="op">=</span><span class="dv">252</span>)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>S <span class="op">=</span> risk_models.CovarianceShrinkage(df).ledoit_wolf()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="the-main-results-efficient-frontier-maximum-sharpe-portfolio" class="level2">
@@ -623,15 +661,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>With expected returns and risk estimated, we are ready to utilise PyPortfolioOpt’s optimiser to draw the <strong>efficient frontier</strong>.</p>
 <p>The idea behind the efficient frontier{% fn 1 %} is relatively simple: - For <strong>each level of investor’s risk</strong>, there is an optimal portfolio which is expected to deliver the <strong>highest level of return</strong>; or conversely - For <strong>each level of investor’s return</strong>, there is an optimal portfolio which is expected to deliver the <strong>lowest level of return</strong>.</p>
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-tags="[]" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>ef <span class="op">=</span> EfficientFrontier(mu, sample_cov)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># We create 2 efficient frontiers</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>plotting.plot_efficient_frontier(ef, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Asset Classes &amp; Efficient Frontier"</span>)</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>ef <span class="op">=</span> EfficientFrontier(mu, sample_cov)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="co"># We create 2 efficient frontiers</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>plotting.plot_efficient_frontier(ef, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Asset Classes &amp; Efficient Frontier"</span>)</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-12-output-1.png" class="img-fluid"></p>
 </div>
@@ -640,20 +678,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="add-the-maximum-sharpe-portfolio" class="level3">
 <h3 class="anchored" data-anchor-id="add-the-maximum-sharpe-portfolio">Add the Maximum Sharpe portfolio</h3>
 <div class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Find and plot the tangency portfolio</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>ef2 <span class="op">=</span> EfficientFrontier(mu, S) </span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>plotting.plot_efficient_frontier(ef2, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>ef3 <span class="op">=</span> EfficientFrontier(mu, S) </span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>ef3.max_sharpe()</span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>ret_tangent, std_tangent, _ <span class="op">=</span> ef3.portfolio_performance()</span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>ax.scatter(std_tangent, ret_tangent, marker<span class="op">=</span><span class="st">"*"</span>, s<span class="op">=</span><span class="dv">100</span>, c<span class="op">=</span><span class="st">"r"</span>, label<span class="op">=</span><span class="st">"Max Sharpe"</span>)</span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Asset Classes, Efficient Frontier &amp; Max Sharpe portfolio"</span>)</span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Find and plot the tangency portfolio</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>ef2 <span class="op">=</span> EfficientFrontier(mu, S) </span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>plotting.plot_efficient_frontier(ef2, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>ef3 <span class="op">=</span> EfficientFrontier(mu, S) </span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>ef3.max_sharpe()</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>ret_tangent, std_tangent, _ <span class="op">=</span> ef3.portfolio_performance()</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>ax.scatter(std_tangent, ret_tangent, marker<span class="op">=</span><span class="st">"*"</span>, s<span class="op">=</span><span class="dv">100</span>, c<span class="op">=</span><span class="st">"r"</span>, label<span class="op">=</span><span class="st">"Max Sharpe"</span>)</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Asset Classes, Efficient Frontier &amp; Max Sharpe portfolio"</span>)</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
 </div>
@@ -662,22 +700,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="calculate-random-portfolios" class="level3">
 <h3 class="anchored" data-anchor-id="calculate-random-portfolios">Calculate random portfolios</h3>
 <div class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot random portfolios</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>n_samples <span class="op">=</span> <span class="dv">10000</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> np.random.dirichlet(np.ones(<span class="bu">len</span>(mu)), n_samples)</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>rets <span class="op">=</span> w.dot(mu)</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>stds <span class="op">=</span> np.sqrt((w.T <span class="op">*</span> (S <span class="op">@</span> w.T)).<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>))</span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>sharpes <span class="op">=</span> rets <span class="op">/</span> stds</span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>ax.scatter(stds, rets, marker<span class="op">=</span><span class="st">"."</span>, c<span class="op">=</span>sharpes, cmap<span class="op">=</span><span class="st">"viridis_r"</span>)</span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Format</span></span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Random portfolios, based on the same asset classes"</span>)</span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="co">#ax.legend()</span></span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot random portfolios</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>n_samples <span class="op">=</span> <span class="dv">10000</span></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> np.random.dirichlet(np.ones(<span class="bu">len</span>(mu)), n_samples)</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>rets <span class="op">=</span> w.dot(mu)</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>stds <span class="op">=</span> np.sqrt((w.T <span class="op">*</span> (S <span class="op">@</span> w.T)).<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>))</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>sharpes <span class="op">=</span> rets <span class="op">/</span> stds</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>ax.scatter(stds, rets, marker<span class="op">=</span><span class="st">"."</span>, c<span class="op">=</span>sharpes, cmap<span class="op">=</span><span class="st">"viridis_r"</span>)</span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Format</span></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Random portfolios, based on the same asset classes"</span>)</span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a><span class="co">#ax.legend()</span></span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
 </div>

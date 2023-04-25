@@ -2,11 +2,15 @@ project:
   type: website
   output-dir: docs
 
+execute:
+  freeze: true
+
 format:
   html:
     author: Vincent D.
     theme: yeti
     css: styles.css
+    execute: True
 
 website:
   title: "Portfolio Geek"
