@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>portfolio-geek.com/posts/video/fr/demarrer.html</loc>
-    <lastmod>2023-04-25T05:35:43.149Z</lastmod>
+    <lastmod>2023-04-25T05:40:01.367Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/video/en/start.html</loc>
-    <lastmod>2023-04-25T05:35:43.548Z</lastmod>
+    <lastmod>2023-04-25T05:40:01.765Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/estimating-portfolio-risk.html</loc>
-    <lastmod>2023-04-25T05:35:44.032Z</lastmod>
+    <lastmod>2023-04-25T05:40:02.272Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/posts/risk_and_return/optimise-portfolios-with-python.html</loc>
+    <lastmod>2023-04-25T05:40:17.372Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/estimating_risk.html</loc>
-    <lastmod>2023-04-25T05:35:44.409Z</lastmod>
+    <lastmod>2023-04-25T05:40:17.744Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/optimise-portfolios-with-python.html</loc>
-    <lastmod>2023-04-25T05:35:45.074Z</lastmod>
-  </url>
-  <url>
-    <loc>portfolio-geek.com/posts/visualizing-historical-data.html</loc>
-    <lastmod>2023-04-25T05:35:55.559Z</lastmod>
+    <loc>portfolio-geek.com/posts/publication-workflow/visualizing-historical-data.html</loc>
+    <lastmod>2023-04-25T05:40:29.629Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/videos_fr.html</loc>
-    <lastmod>2023-04-25T05:35:55.987Z</lastmod>
+    <lastmod>2023-04-25T05:40:30.067Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/blog.html</loc>
-    <lastmod>2023-04-25T05:35:56.399Z</lastmod>
+    <lastmod>2023-04-25T05:40:30.482Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/archive.html</loc>
-    <lastmod>2023-04-25T05:35:57.086Z</lastmod>
+    <lastmod>2023-04-25T05:40:31.050Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/index.html</loc>
-    <lastmod>2023-04-25T05:35:57.473Z</lastmod>
+    <lastmod>2023-04-25T05:40:31.433Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/about.html</loc>
-    <lastmod>2023-04-25T05:35:57.870Z</lastmod>
+    <lastmod>2023-04-25T05:40:31.863Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/all_posts.html</loc>
-    <lastmod>2023-04-25T05:35:58.911Z</lastmod>
+    <lastmod>2023-04-25T05:40:32.950Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/risk_and_return.html</loc>
-    <lastmod>2023-04-25T05:35:59.388Z</lastmod>
+    <lastmod>2023-04-25T05:40:33.512Z</lastmod>
   </url>
 </urlset>

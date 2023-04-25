@@ -21,9 +21,9 @@
       "/posts/video/fr/demarrer.html",
       "/posts/video/en/start.html",
       "/posts/risk_and_return/estimating-portfolio-risk.html",
+      "/posts/risk_and_return/optimise-portfolios-with-python.html",
       "/posts/risk_and_return/estimating_risk.html",
-      "/posts/optimise-portfolios-with-python.html",
-      "/posts/visualizing-historical-data.html",
+      "/posts/publication-workflow/visualizing-historical-data.html",
       "/posts/videos_fr.html",
       "/posts/blog.html"
     ]
@@ -32,6 +32,7 @@
     "listing": "/risk_and_return.html",
     "items": [
       "/posts/risk_and_return/estimating-portfolio-risk.html",
+      "/posts/risk_and_return/optimise-portfolios-with-python.html",
       "/posts/risk_and_return/estimating_risk.html"
     ]
   }
