@@ -11,19 +11,21 @@
     "listing": "/archive.html",
     "items": [
       "/posts/blog.html",
-      "/posts/video/en/start.html",
+      "/posts/tutorials/en/start-check-list-roadmap.html",
       "/posts/videos_fr.html"
     ]
   },
   {
     "listing": "/all_posts.html",
     "items": [
-      "/posts/video/fr/demarrer.html",
-      "/posts/video/en/start.html",
       "/posts/risk_and_return/estimating-portfolio-risk.html",
       "/posts/risk_and_return/optimise-portfolios-with-python.html",
       "/posts/risk_and_return/estimating_risk.html",
       "/posts/publication-workflow/visualizing-historical-data.html",
+      "/posts/tutorials/fr/demarrer.html",
+      "/posts/tutorials/en/shiller-data-python.html",
+      "/posts/tutorials/en/setting-up-a-python-workstation.html",
+      "/posts/tutorials/en/start-check-list-roadmap.html",
       "/posts/videos_fr.html",
       "/posts/blog.html"
     ]

@@ -1,55 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>portfolio-geek.com/posts/video/fr/demarrer.html</loc>
-    <lastmod>2023-04-25T05:40:01.367Z</lastmod>
-  </url>
-  <url>
-    <loc>portfolio-geek.com/posts/video/en/start.html</loc>
-    <lastmod>2023-04-25T05:40:01.765Z</lastmod>
-  </url>
-  <url>
     <loc>portfolio-geek.com/posts/risk_and_return/estimating-portfolio-risk.html</loc>
-    <lastmod>2023-04-25T05:40:02.272Z</lastmod>
+    <lastmod>2023-04-29T14:11:11.191Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/optimise-portfolios-with-python.html</loc>
-    <lastmod>2023-04-25T05:40:17.372Z</lastmod>
+    <lastmod>2023-04-29T14:11:11.918Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/estimating_risk.html</loc>
-    <lastmod>2023-04-25T05:40:17.744Z</lastmod>
+    <lastmod>2023-04-29T14:11:12.291Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/publication-workflow/visualizing-historical-data.html</loc>
-    <lastmod>2023-04-25T05:40:29.629Z</lastmod>
+    <lastmod>2023-04-29T14:11:12.857Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/posts/tutorials/fr/demarrer.html</loc>
+    <lastmod>2023-04-29T14:11:13.266Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/posts/tutorials/en/shiller-data-python.html</loc>
+    <lastmod>2023-04-29T14:11:21.284Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation.html</loc>
+    <lastmod>2023-04-29T14:11:21.641Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/posts/tutorials/en/start-check-list-roadmap.html</loc>
+    <lastmod>2023-04-29T14:11:22.002Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/videos_fr.html</loc>
-    <lastmod>2023-04-25T05:40:30.067Z</lastmod>
+    <lastmod>2023-04-29T14:11:22.441Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/blog.html</loc>
-    <lastmod>2023-04-25T05:40:30.482Z</lastmod>
+    <lastmod>2023-04-29T14:11:22.860Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/archive.html</loc>
-    <lastmod>2023-04-25T05:40:31.050Z</lastmod>
+    <lastmod>2023-04-29T14:11:23.456Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/index.html</loc>
-    <lastmod>2023-04-25T05:40:31.433Z</lastmod>
+    <lastmod>2023-04-29T14:11:23.826Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/about.html</loc>
-    <lastmod>2023-04-25T05:40:31.863Z</lastmod>
+    <lastmod>2023-04-29T14:11:24.216Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/all_posts.html</loc>
-    <lastmod>2023-04-25T05:40:32.950Z</lastmod>
+    <lastmod>2023-04-29T14:11:25.414Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/risk_and_return.html</loc>
-    <lastmod>2023-04-25T05:40:33.512Z</lastmod>
+    <lastmod>2023-04-29T14:11:25.957Z</lastmod>
   </url>
 </urlset>

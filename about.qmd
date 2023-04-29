@@ -16,7 +16,7 @@ about:
 
 ---
 
-With 20 years of experience in **portfolio construction, asset allocation and quantitative research**, I have pretty much worked across the entire value chain of the **asset management** and **capital markets** industry.  
+With 20 years of experience in **portfolio construction, asset allocation and quantitative research**, I have worked across  the **asset management** and **capital markets** industry's the value chain.  
 
 In my different roles, I have developed and implemented a wide range range of investment solutions, ranging from **Exchange Traded Funds (ETFs)**, **derivatives** and **investment mandates** across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.
 
@@ -24,15 +24,9 @@ In my different roles, I have developed and implemented a wide range range of in
 **[Find me on Linkedin](https://www.linkedin.com/in/vdenoiseux/)**
 
 # Why this blog? 
-What struck me the most when I started my career in finance was the **knowledge asymetry** between finance professional and end clients. 
-Just to clarify, I don't mean IQ asymmetry, only a difference in knowledge (e.g. data, jargon, formulas, etc.).
-Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts might still sound fairly exotic or technical to many investors. 
+What struck me the most when I started my career in finance was the **knowledge asymetry** between finance professionals and end clients. Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts  still sound fairly exotic or technical to many investors. 
 
 Here, I will try to **demystify** financial analysis and **provide ideas and starting points** in order to put **theory into practice**.
 
-In most articles, you should be able to **copy, run and modify** the code behind the analysis. This should help you to directly use many of the tools presented.
+In most articles, you should be able to **copy, run and modify** the code behind the analysis. This should help you to directly use many of the tools presented. The entire source is available on [Github](https://github.com/vdenoise/portfolio-geek)
 
-
-# Main Publications
-
-Below are the main research papers I have published or participated to in the last few years, feel free to take a look.
