@@ -2,12 +2,12 @@
 title: "All Posts"
 listing:
   contents: posts
-  sort: "date desc"
   categories: true
   sort-ui: false
   filter-ui: false
 page-layout: full
 title-block-banner: true
+code-tools: false
 ---
 
 

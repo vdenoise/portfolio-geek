@@ -6,14 +6,14 @@
   {
     "listing": "/all_posts.html",
     "items": [
-      "/posts/risk_and_return/estimating-portfolio-risk.html",
-      "/posts/risk_and_return/optimise-portfolios-with-python.html",
-      "/posts/risk_and_return/estimating_risk.html",
-      "/posts/publication-workflow/visualizing-historical-data.html",
       "/posts/tutorials/en/shiller-data-python.html",
-      "/posts/tutorials/en/setting-up-a-python-workstation.html",
+      "/posts/tutorials/fr/demarrer.html",
+      "/posts/risk_and_return/estimating-portfolio-risk.html",
       "/posts/tutorials/en/getting-started-checklist.html",
-      "/posts/tutorials/fr/demarrer.html"
+      "/posts/risk_and_return/estimating_risk.html",
+      "/posts/risk_and_return/optimise-portfolios-with-python.html",
+      "/posts/tutorials/en/setting-up-a-python-workstation.html",
+      "/posts/publication-workflow/visualizing-historical-data.html"
     ]
   },
   {
