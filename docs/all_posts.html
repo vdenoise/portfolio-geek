@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -191,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="101">101 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="data-gathering">data-gathering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="en">en <span class="quarto-category-count">(2)</span></div><div class="category" data-category="fr">fr <span class="quarto-category-count">(1)</span></div><div class="category" data-category="portfolio-optimisation">portfolio-optimisation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="publication-workflow">publication-workflow <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tutorial">tutorial <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tutoriel">tutoriel <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="101">101 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="data-gathering">data-gathering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="en">en <span class="quarto-category-count">(2)</span></div><div class="category" data-category="fr">fr <span class="quarto-category-count">(1)</span></div><div class="category" data-category="portfolio-construction">portfolio-construction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="publication-workflow">publication-workflow <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tutorial">tutorial <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tutoriel">tutoriel <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -204,9 +204,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="data-gathering" data-listing-file-modified-sort="1682356918310" data-listing-reading-time-sort="0.105">
+<div class="quarto-post image-right" data-index="0" data-categories="data-gathering" data-listing-file-modified-sort="1682863177806" data-listing-reading-time-sort="0.105">
 <div class="thumbnail">
-<p><a href="./posts/risk_and_return/estimating-portfolio-risk.html"> <img src="./posts/risk_and_return/pictures/laptop-data.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/risk_and_return/estimating-portfolio-risk.html"> <img src="./pictures/laptop-data.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/risk_and_return/estimating-portfolio-risk.html">
@@ -224,7 +224,7 @@ data-gathering
 </div>
 <a href="./posts/risk_and_return/estimating-portfolio-risk.html">
 <div class="listing-description">
-In today’s session, we will
+ ## Introduction In today’s session, we will
 </div>
 </a>
 </div>
@@ -236,9 +236,9 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="portfolio-optimisation" data-listing-file-modified-sort="1682849360521" data-listing-reading-time-sort="7.795">
+<div class="quarto-post image-right" data-index="1" data-categories="portfolio-construction" data-listing-file-modified-sort="1682863498034" data-listing-reading-time-sort="7.57">
 <div class="thumbnail">
-<p><a href="./posts/risk_and_return/optimise-portfolios-with-python.html"> <img src="./posts/risk_and_return/pictures/portfolio-optimisation-banner.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/risk_and_return/optimise-portfolios-with-python.html"> <img src="./pictures/portfolio-optimisation.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/risk_and_return/optimise-portfolios-with-python.html">
@@ -250,13 +250,13 @@ Portfolio optimisation with Python
 </div>
 </a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('portfolio-optimisation'); return false;">
-portfolio-optimisation
+<div class="listing-category" onclick="window.quartoListingCategory('portfolio-construction'); return false;">
+portfolio-construction
 </div>
 </div>
 <a href="./posts/risk_and_return/optimise-portfolios-with-python.html">
 <div class="listing-description">
-Tip: This article is written as a Jupyter Notebook. It has been published using Fastpages. The Jupyter notebook is available on GitHub and if you want to, you…
+<strong>Harry Markowitz</strong> is one of the (if not “the”) fathers of modern portfolio construction and his seminal paper Portfolio Selection{% fn 1 %} has driven an entire research stream.
 </div>
 </a>
 </div>
@@ -268,7 +268,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1682854710467" data-listing-reading-time-sort="0.005">
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1682863193026" data-listing-reading-time-sort="0.005">
 <div class="thumbnail">
 <p><a href="./posts/risk_and_return/estimating_risk.html"> <img src="./pictures/market-volatility-with-technical-chart.png" class="thumnail-image"> </a></p>
 </div>
@@ -281,7 +281,7 @@ Getting Started: measuring volatility
 
 </div>
 <div class="listing-description">
-
+ # Getting Started: Measuring Volatility
 </div>
 </a>
 </div>
@@ -293,7 +293,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="publication-workflow" data-listing-file-modified-sort="1682849724569" data-listing-reading-time-sort="4.46">
+<div class="quarto-post image-right" data-index="3" data-categories="publication-workflow" data-listing-file-modified-sort="1682863199326" data-listing-reading-time-sort="4.46">
 <div class="thumbnail">
 <p><a href="./posts/publication-workflow/visualizing-historical-data.html"> <img src="./pictures/chart-preview.png" class="thumnail-image"> </a></p>
 </div>
@@ -325,49 +325,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="tutoriel,101,fr" data-listing-file-modified-sort="1682630372363" data-listing-reading-time-sort="0.79">
-<div class="thumbnail">
-<a href="./posts/tutorials/fr/demarrer.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/tutorials/fr/demarrer.html"></a></p>
-</div>
-<div class="body">
-<a href="./posts/tutorials/fr/demarrer.html">
-<h3 class="no-anchor listing-title">
-Démarrer
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('tutoriel'); return false;">
-tutoriel
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('101'); return false;">
-101
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('fr'); return false;">
-fr
-</div>
-</div>
-<a href="./posts/tutorials/fr/demarrer.html">
-<div class="listing-description">
-Bonjour a tous, et merci de nous accompagner pour ce premier épisode! Dans cette vidéo nous…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/tutorials/fr/demarrer.html">
-<div class="listing-author">
-Vincent D.
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="tutorial,101,en" data-listing-file-modified-sort="1682849151526" data-listing-reading-time-sort="0.975">
+<div class="quarto-post image-right" data-index="4" data-categories="tutorial,101,en" data-listing-file-modified-sort="1682863210996" data-listing-reading-time-sort="0.975">
 <div class="thumbnail">
 <p><a href="./posts/tutorials/en/shiller-data-python.html"> <img src="./pictures/time-horizon-paper.png" class="thumnail-image"> </a></p>
 </div>
@@ -405,7 +363,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-listing-file-modified-sort="1682491684440" data-listing-reading-time-sort="0">
+<div class="quarto-post image-right" data-index="5" data-listing-file-modified-sort="1682491684440" data-listing-reading-time-sort="0">
 <div class="thumbnail">
 <a href="./posts/tutorials/en/setting-up-a-python-workstation.html">
 <div class="thumbnail-image">
@@ -433,18 +391,14 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="tutoriel,101,en" data-listing-file-modified-sort="1682405498415" data-listing-reading-time-sort="0.005">
+<div class="quarto-post image-right" data-index="6" data-categories="tutoriel,101,en" data-listing-file-modified-sort="1682863214595" data-listing-reading-time-sort="0.005">
 <div class="thumbnail">
-<a href="./posts/tutorials/en/start-check-list-roadmap.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/tutorials/en/start-check-list-roadmap.html"></a></p>
+<p><a href="./posts/tutorials/en/getting-started-checklist.html"> <img src="./pictures/paraglider-starting-takeoff.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
-<a href="./posts/tutorials/en/start-check-list-roadmap.html">
+<a href="./posts/tutorials/en/getting-started-checklist.html">
 <h3 class="no-anchor listing-title">
-Getting Started
+Getting Started - a checklist
 </h3>
 <div class="listing-subtitle">
 
@@ -461,71 +415,55 @@ tutoriel
 en
 </div>
 </div>
-<a href="./posts/tutorials/en/start-check-list-roadmap.html">
+<a href="./posts/tutorials/en/getting-started-checklist.html">
 <div class="listing-description">
 
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/tutorials/en/start-check-list-roadmap.html">
+<a href="./posts/tutorials/en/getting-started-checklist.html">
 <div class="listing-author">
 Vincent D.
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-listing-file-modified-sort="1682148357950" data-listing-reading-time-sort="0.005">
+<div class="quarto-post image-right" data-index="7" data-categories="tutoriel,101,fr" data-listing-date-sort="1677628800000" data-listing-file-modified-sort="1682863204695" data-listing-reading-time-sort="0.79">
 <div class="thumbnail">
-<a href="./posts/videos_fr.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/videos_fr.html"></a></p>
+<p><a href="./posts/tutorials/fr/demarrer.html"> <img src="./pictures/paraglider-starting-takeoff.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
-<a href="./posts/videos_fr.html">
+<a href="./posts/tutorials/fr/demarrer.html">
 <h3 class="no-anchor listing-title">
-test title
+Démarrer
 </h3>
 <div class="listing-subtitle">
 
 </div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('tutoriel'); return false;">
+tutoriel
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('101'); return false;">
+101
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('fr'); return false;">
+fr
+</div>
+</div>
+<a href="./posts/tutorials/fr/demarrer.html">
 <div class="listing-description">
-
+Bonjour a tous, et merci de nous accompagner pour ce premier épisode! Dans cette vidéo nous…
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/videos_fr.html">
-<div class="listing-author">
-Vincent D.
+<a href="./posts/tutorials/fr/demarrer.html">
+<div class="listing-date">
+Mar 1, 2023
 </div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-listing-file-modified-sort="1681887203998" data-listing-reading-time-sort="0.005">
-<div class="thumbnail">
-<a href="./posts/blog.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/blog.html"></a></p>
-</div>
-<div class="body">
-<a href="./posts/blog.html">
-<h3 class="no-anchor listing-title">
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/blog.html">
 <div class="listing-author">
 Vincent D.
 </div>

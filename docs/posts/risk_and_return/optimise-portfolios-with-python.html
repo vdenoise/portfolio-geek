@@ -209,7 +209,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">Portfolio optimisation with Python</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/risk_and_return/optimise-portfolios-with-python.ipynb">View Source</a></li></ul></div></div>
   <div class="quarto-categories">
-    <div class="quarto-category">portfolio-optimisation</div>
+    <div class="quarto-category">portfolio-construction</div>
   </div>
   </div>
 
@@ -231,11 +231,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p><img src="pictures/portfolio-optimisation-banner.png" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>Tip: This article is written as a Jupyter Notebook. It has been published using <a href="https://portfolio-geek.com/blogging/publishing/workflow/2022/03/06/write-articles-with-jupyter-fastpages.html">Fastpages</a>. The Jupyter notebook is available on GitHub and if you want to, you can run it directly using the provided Binder link displayed at the top of the article.</p>
-</blockquote>
-<p>{% series_list%}</p>
+<p><img src="../../pictures/portfolio-optimisation.png" class="img-fluid"></p>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p><strong>Harry Markowitz</strong> is one of the (if not “the”) fathers of modern portfolio construction and his seminal paper Portfolio Selection{% fn 1 %} has driven an entire research stream.</p>
@@ -341,28 +337,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-14"><a href="#cb3-14"></a>df <span class="op">=</span> df.<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[                       0%                       ]</code></pre>
+<pre><code>[                       0%                       ][                       0%                       ]</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[********              17%                       ]  2 of 12 completed</code></pre>
+<pre><code>[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[********              17%                       ]  2 of 12 completed</code></pre>
+<pre><code>[********************  42%                       ]  5 of 12 completed[********************  42%                       ]  5 of 12 completed</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[********              17%                       ]  2 of 12 completed</code></pre>
+<pre><code>[********************  42%                       ]  5 of 12 completed</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[********              17%                       ]  2 of 12 completed[********              17%                       ]  2 of 12 completed</code></pre>
+<pre><code>[**********************67%*******                ]  8 of 12 completed</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[********              17%                       ]  2 of 12 completed</code></pre>
+<pre><code>[**********************67%*******                ]  8 of 12 completed</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[********              17%                       ]  2 of 12 completed[********              17%                       ]  2 of 12 completed</code></pre>
+<pre><code>[**********************83%***************        ]  10 of 12 completed</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[********              17%                       ]  2 of 12 completed[********              17%                       ]  2 of 12 completed</code></pre>
+<pre><code>[**********************83%***************        ]  10 of 12 completed</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[*********************100%***********************]  12 of 12 completed</code></pre>
@@ -380,7 +376,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">#collapse-hide</span></span>
 <span id="cb14-2"><a href="#cb14-2"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="30">
 
 <div>
 
@@ -480,7 +476,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb15-2"><a href="#cb15-2"></a><span class="co"># Same table, but this time, normalised</span></span>
 <span id="cb15-3"><a href="#cb15-3"></a>(df<span class="op">/</span>df.iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">1</span>).tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="5">
+<div class="cell-output cell-output-display" data-execution_count="31">
 
 <div>
 
@@ -598,7 +594,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb16-19"><a href="#cb16-19"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-7-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-7-output-1.png" width="800" height="508"></p>
 </div>
 </div>
 </section>
@@ -624,7 +620,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb17-12"><a href="#cb17-12"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-8-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-8-output-1.png" width="969" height="501"></p>
 </div>
 </div>
 </section>
@@ -646,7 +642,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb18-2"><a href="#cb18-2"></a>((weekly_returns.std()<span class="op">*</span>math.sqrt(<span class="dv">52</span>)<span class="op">*</span><span class="dv">100</span>).sort_values()).plot.bar()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-9-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-9-output-1.png" width="569" height="436"></p>
 </div>
 </div>
 <p>As one could have guessed, on the left of the chart above, we can find the low volatility asset classes (e.g.&nbsp;Government Bonds, Investment Grade Bonds), whereas on the right we have high volatility asset classes (Mid Cap and Small Cap Equities).</p>
@@ -660,7 +656,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1"></a>sns.heatmap(weekly_returns.corr())<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-10-output-1.png" width="576" height="441"></p>
 </div>
 </div>
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-tags="[]" data-execution_count="10">
@@ -698,7 +694,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb21-9"><a href="#cb21-9"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-12-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-12-output-1.png" width="655" height="484"></p>
 </div>
 </div>
 </section>
@@ -723,7 +719,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb22-14"><a href="#cb22-14"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-13-output-1.png" width="655" height="484"></p>
 </div>
 </div>
 </section>
@@ -750,7 +746,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb23-16"><a href="#cb23-16"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-14-output-1.png" width="657" height="464"></p>
 </div>
 </div>
 </section>

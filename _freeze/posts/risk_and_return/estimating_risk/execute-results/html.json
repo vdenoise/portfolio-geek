@@ -1,7 +1,7 @@
 {
-  "hash": "0d147a6cba24f0256f6f55f9ea1c261b",
+  "hash": "41d0fd03fef469530536acca1592682c",
   "result": {
-    "markdown": "---\ntitle: \"Getting Started: measuring volatility\"\n---\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nimport pandas\n```\n:::\n\n\n# Getting Started: Measuring Volatility\n\n\n",
+    "markdown": "---\ntitle: \"Getting Started: measuring volatility\"\n---\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nimport pandas\n```\n:::\n\n\n![](/pictures/market-volatility-with-technical-chart.png)\n# Getting Started: Measuring Volatility\n\n\n",
     "supporting": [
       "estimating_risk_files"
     ],

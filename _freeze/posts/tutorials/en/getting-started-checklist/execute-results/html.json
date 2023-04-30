@@ -1,0 +1,11 @@
+{
+  "hash": "afe55e84dfab946685f70f90ceefe4af",
+  "result": {
+    "markdown": "---\ntitle: Getting Started - a checklist\nbadges: True\ncomments: false\nauthor: Vincent D.\ncategories: [tutoriel, 101, en]\n---\n\n\n![](/pictures/paraglider-starting-takeoff.png)\n\n# test title\n\n",
+    "supporting": [
+      "getting-started-checklist_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
