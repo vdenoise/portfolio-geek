@@ -10,7 +10,7 @@ page-layout: full
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-## Hello, and Welcome to Portfolio Geek
+## Welcome to Portfolio Geek
 
 With 20 years of experience in **portfolio construction, asset allocation and quantitative research**, I have worked across the entire value chain of the **asset management** and **financial markets** industry.  
 
