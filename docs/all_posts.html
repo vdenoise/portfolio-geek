@@ -167,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">All Posts</h1>
+      <div class="quarto-title-block"><div><h1 class="title">All Posts</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/all_posts.qmd"><i class="bi"></i> Code</button></div></div>
                       </div>
   </div>
     
@@ -236,9 +236,9 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="portfolio-optimisation" data-listing-file-modified-sort="1682491061098" data-listing-reading-time-sort="7.795">
+<div class="quarto-post image-right" data-index="1" data-categories="portfolio-optimisation" data-listing-file-modified-sort="1682849360521" data-listing-reading-time-sort="7.795">
 <div class="thumbnail">
-<p><a href="./posts/risk_and_return/optimise-portfolios-with-python.html"> <img src="./posts/risk_and_return/pictures/portfolio-optimisation.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/risk_and_return/optimise-portfolios-with-python.html"> <img src="./posts/risk_and_return/pictures/portfolio-optimisation-banner.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/risk_and_return/optimise-portfolios-with-python.html">
@@ -268,7 +268,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1682356923613" data-listing-reading-time-sort="0.005">
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1682849672156" data-listing-reading-time-sort="0.005">
 <div class="thumbnail">
 <a href="./posts/risk_and_return/estimating_risk.html">
 <div class="thumbnail-image">
@@ -297,9 +297,9 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="publication-workflow" data-listing-file-modified-sort="1682405370211" data-listing-reading-time-sort="4.46">
+<div class="quarto-post image-right" data-index="3" data-categories="publication-workflow" data-listing-file-modified-sort="1682849724569" data-listing-reading-time-sort="4.46">
 <div class="thumbnail">
-<p><a href="./posts/publication-workflow/visualizing-historical-data.html"> <img src="./posts/publication-workflow/pictures/chart-preview.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/publication-workflow/visualizing-historical-data.html"> <img src="./pictures/chart-preview.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/publication-workflow/visualizing-historical-data.html">
@@ -371,13 +371,9 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="tutorial,101,en" data-listing-file-modified-sort="1682778792803" data-listing-reading-time-sort="0.975">
+<div class="quarto-post image-right" data-index="5" data-categories="tutorial,101,en" data-listing-file-modified-sort="1682849151526" data-listing-reading-time-sort="0.975">
 <div class="thumbnail">
-<a href="./posts/tutorials/en/shiller-data-python.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/tutorials/en/shiller-data-python.html"></a></p>
+<p><a href="./posts/tutorials/en/shiller-data-python.html"> <img src="./pictures/time-horizon-paper.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/tutorials/en/shiller-data-python.html">
@@ -610,6 +606,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,

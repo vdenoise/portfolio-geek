@@ -11,11 +11,17 @@ format:
     theme: yeti
     css: styles.css
     execute: True
+    code-fold: true
+    code-line-numbers: true
+    code-tools:
+      source: repo
+    highlight-style: dracula
 
 website:
   title: "Portfolio Geek"
   site-url: "portfolio-geek.com"
-
+  repo-url: "https://github.com/vdenoise/portfolio-geek/"
+  repo-branch: "master"
   navbar:
     right:
       - text: Blog

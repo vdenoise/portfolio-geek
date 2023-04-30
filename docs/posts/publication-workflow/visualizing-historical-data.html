@@ -207,7 +207,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Visualising Historical Data</h1>
+<div class="quarto-title-block"><div><h1 class="title">Visualising Historical Data</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/publication-workflow/visualizing-historical-data.ipynb">View Source</a></li></ul></div></div>
   <div class="quarto-categories">
     <div class="quarto-category">publication-workflow</div>
   </div>
@@ -249,14 +249,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>A key benefit of <strong>Python</strong> is the sheer number of libraries we can leverage to perform a particular task. Choosing the right library might look a bit overwhelming, and one the goals of this blog is actually to provide the reader my honest view on what makes most sense to perform the usual tasks in my daily work.</p>
 <p>The key module for this article is <strong><a href="https://github.com/ranaroussi/yfinance">yfinance</a></strong>, a fantastic data gathering library that you can find <a href="https://github.com/ranaroussi/yfinance">here</a> on GitHub.</p>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that this change the decimals places inside Jupyter, but not on the website</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>pd.options.display.float_format <span class="op">=</span> <span class="st">'{:,.1f}'</span>.<span class="bu">format</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co"># Note that this change the decimals places inside Jupyter, but not on the website</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>pd.options.display.float_format <span class="op">=</span> <span class="st">'{:,.1f}'</span>.<span class="bu">format</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 <section id="get-historical-data" class="level2">
@@ -266,17 +269,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>To gather data, you must <em>de facto</em> provide one ticker for each security, but if you forgot the ticker, Google is usually your friend!</p>
 <p>We will need define to find a few more <strong>parameters</strong>: - The 2 variables start_date and end_date to keep some flexibility, - The variable <em>tickers</em> will store our ticker list, and pass it as a parameter to Yahoo, in order to specify our query.</p>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>start_date <span class="op">=</span> <span class="st">'2015-01-01'</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>end_date <span class="op">=</span> <span class="st">'2022-05-14'</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>tickers <span class="op">=</span> [<span class="st">'SPY'</span>, <span class="st">'GLD'</span>, <span class="st">'AGG'</span>, <span class="st">'CAC.PA'</span>]</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> yf.download(tickers,  start<span class="op">=</span>start_date, end<span class="op">=</span>end_date)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># This ones keep the decimals to one on the website. </span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># This is especially useful to print dataframes.</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>start_date <span class="op">=</span> <span class="st">'2015-01-01'</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>end_date <span class="op">=</span> <span class="st">'2022-05-14'</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>tickers <span class="op">=</span> [<span class="st">'SPY'</span>, <span class="st">'GLD'</span>, <span class="st">'AGG'</span>, <span class="st">'CAC.PA'</span>]</span>
+<span id="cb2-6"><a href="#cb2-6"></a>df <span class="op">=</span> yf.download(tickers,  start<span class="op">=</span>start_date, end<span class="op">=</span>end_date)</span>
+<span id="cb2-7"><a href="#cb2-7"></a></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="co"># This ones keep the decimals to one on the website. </span></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="co"># This is especially useful to print dataframes.</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a>df <span class="op">=</span> df.<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb2-11"><a href="#cb2-11"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[                       0%                       ]</code></pre>
 </div>
@@ -300,7 +306,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>To quickly check the status of what we now have, note the use of the <strong>tail()</strong> function below.</p>
 <p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.tail.html">Pandas tail() function</a></p>
 <div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display" data-execution_count="3">
 
 <div>
@@ -451,7 +460,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>To quickly check the status of what we now have, note the use of the <strong>tail()</strong> function below, which get the last <em>n</em> rows of the dataset. Combined with Jupyter’s power in printing data, it’s probably the fastest way to navigate and check a particular dataset.</p>
 <p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.tail.html">Pandas tail() function</a></p>
 <div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'Adj Close'</span>].tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>df[<span class="st">'Adj Close'</span>].tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display" data-execution_count="4">
 
 <div>
@@ -505,16 +517,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="plot-the-raw-time-series-using-the-seaborn-library">Plot the raw time series using the seaborn library</h2>
 <p>To quickly check that we got the right data, let’s visualise it.</p>
 <div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply the default theme</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">'whitegrid'</span>)</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>df[<span class="st">'Adj Close'</span>])</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>p.set_ylabel(<span class="st">"Close Price"</span>)</span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb10-3"><a href="#cb10-3"></a></span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="co"># Apply the default theme</span></span>
+<span id="cb10-5"><a href="#cb10-5"></a>sns.set_style(<span class="st">'whitegrid'</span>)</span>
+<span id="cb10-6"><a href="#cb10-6"></a></span>
+<span id="cb10-7"><a href="#cb10-7"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb10-8"><a href="#cb10-8"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>df[<span class="st">'Adj Close'</span>])</span>
+<span id="cb10-9"><a href="#cb10-9"></a>p.set_ylabel(<span class="st">"Close Price"</span>)</span>
+<span id="cb10-10"><a href="#cb10-10"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display">
 <p><img src="visualizing-historical-data_files/figure-html/cell-6-output-1.png" class="img-fluid"></p>
 </div>
@@ -525,14 +540,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The chart above is useful, but the vast difference between the ETFs’ values makes it a bit hard to actually track each respective time series.</p>
 <p>It would be more effective to <strong>normalise the data</strong>. It’s often referred to as “rebasing”, ie making each time series starting at 100, this will make it much easier to compare.</p>
 <div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>normalised_ts <span class="op">=</span> (df[<span class="st">'Adj Close'</span>]<span class="op">/</span>df[<span class="st">'Adj Close'</span>].iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>)</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>normalised_ts)</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a></span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="co"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
+<span id="cb11-4"><a href="#cb11-4"></a>normalised_ts <span class="op">=</span> (df[<span class="st">'Adj Close'</span>]<span class="op">/</span>df[<span class="st">'Adj Close'</span>].iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>)</span>
+<span id="cb11-5"><a href="#cb11-5"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb11-6"><a href="#cb11-6"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>normalised_ts)</span>
+<span id="cb11-7"><a href="#cb11-7"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb11-8"><a href="#cb11-8"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display">
 <p><img src="visualizing-historical-data_files/figure-html/cell-7-output-1.png" class="img-fluid"></p>
 </div>
@@ -543,12 +561,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>It’s often easy to get ‘seduced’ by the compelling long term returns, especially about Equities. And indeed, it was a good thing to be invested in Equities in the long run !</p>
 <p>But 1y returns are usually a good way to keep track of the portfolio, and moreover to see how these returns have developed over time. With a 1y return chart, the notion of risk, ie either fast-changing returns, or - even worse - consistently negative returns, quickly becomes apparent.</p>
 <div class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We use pct_change() to calculate the one year return</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>ts_1y_returns <span class="op">=</span> df[<span class="st">'Adj Close'</span>].pct_change(periods<span class="op">=</span><span class="dv">252</span>)</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>ts_1y_returns)</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># We use pct_change() to calculate the one year return</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a>ts_1y_returns <span class="op">=</span> df[<span class="st">'Adj Close'</span>].pct_change(periods<span class="op">=</span><span class="dv">252</span>)</span>
+<span id="cb12-3"><a href="#cb12-3"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb12-4"><a href="#cb12-4"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>ts_1y_returns)</span>
+<span id="cb12-5"><a href="#cb12-5"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb12-6"><a href="#cb12-6"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display">
 <p><img src="visualizing-historical-data_files/figure-html/cell-8-output-1.png" class="img-fluid"></p>
 </div>
@@ -560,12 +581,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>This is where <strong>pandas</strong> starts to be really powerful. The <em>rolling()</em> function essentially captures sub-series, with a defined length (here 21 days). By <em>chaining</em> the results of rolling() with the <em>mean</em> function, ie calculating the arithmetic average, this will provide us in a one-liner with a new series. This generated dataframe contains the time series of the moving average (21 days) for each of our time series.</p>
 <p>Whilst this “chaining” approach might initially sound obscure, this is <strong>extremely powerful</strong>, especially when factoring in the fact that you just need to change the tickers of the ETFs in the beginning of the article to entirely update the whole analysis … your turn!</p>
 <div class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>ts_1y_returns <span class="op">=</span> df[<span class="st">'Adj Close'</span>].pct_change(periods<span class="op">=</span><span class="dv">252</span>).rolling(window<span class="op">=</span><span class="dv">21</span>).mean()</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>ts_1y_returns)</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="co"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>ts_1y_returns <span class="op">=</span> df[<span class="st">'Adj Close'</span>].pct_change(periods<span class="op">=</span><span class="dv">252</span>).rolling(window<span class="op">=</span><span class="dv">21</span>).mean()</span>
+<span id="cb13-3"><a href="#cb13-3"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb13-4"><a href="#cb13-4"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>ts_1y_returns)</span>
+<span id="cb13-5"><a href="#cb13-5"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb13-6"><a href="#cb13-6"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display">
 <p><img src="visualizing-historical-data_files/figure-html/cell-9-output-1.png" class="img-fluid"></p>
 </div>
@@ -656,6 +680,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
