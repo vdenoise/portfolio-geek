@@ -1,0 +1,207 @@
+aiohttp==3.8.4
+aiosignal==1.3.1
+alabaster==0.7.12
+alembic==1.7.6
+alpha-vantage==2.3.1
+alphalens==0.4.0
+anyio==3.5.0
+appnope==0.1.2
+argon2-cffi==21.3.0
+argon2-cffi-bindings==21.2.0
+arrow==1.2.2
+asttokens==2.0.5
+async-timeout==4.0.2
+attrs==21.4.0
+Babel==2.9.1
+backcall==0.2.0
+backtrader==1.9.76.123
+bcolz-zipline==1.2.4
+beautifulsoup4==4.10.0
+binaryornot==0.4.4
+bleach==4.1.0
+Bottleneck==1.3.4
+brotlipy @ file:///Users/runner/miniforge3/conda-bld/brotlipy_1648854211613/work
+certifi==2022.5.18.1
+cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1636046181956/work
+chardet==4.0.0
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1644853463426/work
+click==8.0.4
+colorama==0.4.4
+cookiecutter==1.7.3
+cryptography @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_b470f7cb-c8f1-42c9-b84f-23789ea77e7c9difcqh4/croots/recipe/cryptography_1652101134392/work
+cvxpy==1.2.0
+cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1635519461629/work
+debugpy==1.5.1
+decorator==5.1.1
+defusedxml==0.7.1
+docutils==0.16
+ecos==2.0.10
+empyrical==0.5.5
+empyrical-reloaded==0.5.8
+entrypoints==0.4
+exchange-calendars==3.3
+executing==0.8.3
+fonttools @ file:///Users/runner/miniforge3/conda-bld/fonttools_1651018187296/work
+frozenlist==1.3.3
+ghp-import==2.0.2
+gitdb==4.0.9
+GitPython==3.1.27
+graphviz==0.19.1
+greenlet==1.1.2
+h5py==3.6.0
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1642433548627/work
+imagesize==1.3.0
+importlib-metadata==6.6.0
+intervaltree==3.1.0
+ipykernel==6.9.1
+ipython==8.1.1
+ipython-genutils==0.2.0
+ipywidgets==7.7.0
+iso3166==2.0.2
+iso4217==1.8.20211001
+jaraco.classes==3.2.3
+jedi==0.18.1
+Jinja2==3.0.3
+jinja2-time==0.2.0
+joblib==1.1.0
+json5==0.9.6
+jsonschema==3.2.0
+jupyter-book==0.12.2
+jupyter-cache==0.4.3
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+jupyter-server==1.13.5
+jupyter-server-mathjax==0.2.5
+jupyter-sphinx==0.3.2
+jupyterlab==3.3.1
+jupyterlab-pygments==0.1.2
+jupyterlab-server==2.10.3
+jupyterlab-widgets==1.1.0
+jupytext==1.11.5
+keyring==23.13.1
+kiwisolver @ file:///Users/runner/miniforge3/conda-bld/kiwisolver_1648854450204/work
+korean-lunar-calendar==0.2.1
+latexcodec==2.0.1
+linkify-it-py==1.0.3
+Logbook==1.5.3
+lru-dict==1.1.7
+lxml @ file:///Users/runner/miniforge3/conda-bld/lxml_1649637462921/work
+Mako==1.2.0
+markdown-it-py==1.1.0
+MarkupSafe==2.1.0
+matplotlib @ file:///Users/runner/miniforge3/conda-bld/matplotlib-suite_1651609662464/work
+matplotlib-inline==0.1.3
+matplotx==0.3.10
+mdit-py-plugins==0.2.8
+mistune==0.8.4
+more-itertools==9.1.0
+multidict==6.0.4
+multipledispatch==0.6.0
+multitasking==0.0.10
+munkres==1.1.4
+myst-nb==0.13.2
+myst-parser==0.15.2
+nbclassic==0.3.6
+nbclient==0.5.13
+nbconvert==6.4.4
+nbdime==3.1.1
+nbformat==5.2.0
+nest-asyncio==1.5.4
+networkx==2.7.1
+notebook==6.4.8
+notebook-shim==0.1.0
+numexpr==2.8.1
+numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1653325363988/work
+osqp==0.6.2.post5
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1637239678211/work
+pandas==1.4.2
+pandas-datareader==0.10.0
+pandocfilters==1.5.0
+parso==0.8.3
+patsy @ file:///home/conda/feedstock_root/build_artifacts/patsy_1632667180946/work
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1652815291513/work
+plotly==5.6.0
+poyo==0.5.0
+prometheus-client==0.13.1
+prompt-toolkit==3.0.28
+ptyprocess==0.7.0
+pure-eval==0.2.2
+pybtex==0.24.0
+pybtex-docutils==1.0.1
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
+pydata-sphinx-theme==0.7.2
+Pygments==2.11.2
+pyluach==1.4.0
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1643496850550/work
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1652235407899/work
+pyportfolioopt==1.5.1
+pyrsistent==0.18.1
+PySocks @ file:///Users/runner/miniforge3/conda-bld/pysocks_1648857336012/work
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
+python-interface==1.6.1
+python-slugify==6.1.1
+pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1647961439546/work
+PyYAML==6.0
+pyzmq==22.3.0
+qdldl==0.1.5.post0
+QuantStats @ file:///home/conda/feedstock_root/build_artifacts/quantstats_1651682804045/work
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1641580202195/work
+scikit-learn==1.0.2
+scipy @ file:///Users/runner/miniforge3/conda-bld/scipy_1653073922144/work
+scs==3.2.0
+seaborn @ file:///home/conda/feedstock_root/build_artifacts/seaborn-split_1629095986539/work
+Send2Trash==1.8.0
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+sklearn==0.0
+smmap==5.0.0
+sniffio==1.2.0
+snowballstemmer==2.2.0
+sortedcontainers==2.4.0
+soupsieve==2.3.1
+Sphinx==4.4.0
+sphinx-book-theme==0.1.10
+sphinx-comments==0.0.3
+sphinx-copybutton==0.5.0
+sphinx-external-toc==0.2.4
+sphinx-jupyterbook-latex==0.4.6
+sphinx-multitoc-numbering==0.1.3
+sphinx-panels==0.6.0
+sphinx-thebe==0.1.1
+sphinx-togglebutton==0.3.1
+sphinxcontrib-applehelp==1.0.2
+sphinxcontrib-bibtex==2.4.1
+sphinxcontrib-devhelp==1.0.2
+sphinxcontrib-htmlhelp==2.0.0
+sphinxcontrib-jsmath==1.0.1
+sphinxcontrib-qthelp==1.0.3
+sphinxcontrib-serializinghtml==1.1.5
+SQLAlchemy==1.4.32
+stack-data==0.2.0
+statsmodels @ file:///Users/runner/miniforge3/conda-bld/statsmodels_1644535636111/work
+TA-Lib==0.4.24
+tables==3.7.0
+tabulate @ file:///home/conda/feedstock_root/build_artifacts/tabulate_1614001031686/work
+tenacity==8.0.1
+terminado==0.13.3
+testpath==0.6.0
+text-unidecode==1.3
+threadpoolctl==3.1.0
+toml==0.10.2
+toolz==0.11.2
+tornado==6.1
+trading-calendars==2.1.1
+traitlets==5.1.1
+uc-micro-py==1.0.1
+unicodedata2 @ file:///Users/runner/miniforge3/conda-bld/unicodedata2_1649111971119/work
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1647489083693/work
+wcwidth==0.2.5
+webencodings==0.5.1
+websocket-client==1.3.1
+widgetsnbextension==3.6.0
+xlrd==2.0.1
+yarl==1.9.2
+yfinance @ file:///home/conda/feedstock_root/build_artifacts/yfinance_1643553533366/work
+zipline-reloaded==2.2.0
+zipp==3.7.0

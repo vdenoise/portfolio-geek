@@ -2,54 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/estimating-portfolio-risk.html</loc>
-    <lastmod>2023-04-30T15:41:54.839Z</lastmod>
+    <lastmod>2023-05-01T07:10:57.982Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/optimise-portfolios-with-python.html</loc>
-    <lastmod>2023-04-30T15:41:55.332Z</lastmod>
+    <lastmod>2023-05-01T07:10:58.479Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/estimating_risk.html</loc>
-    <lastmod>2023-04-30T15:41:55.607Z</lastmod>
+    <lastmod>2023-05-01T07:10:58.785Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/publication-workflow/visualizing-historical-data.html</loc>
-    <lastmod>2023-04-30T15:41:56.009Z</lastmod>
+    <lastmod>2023-05-01T07:10:59.208Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/fr/demarrer.html</loc>
-    <lastmod>2023-04-30T15:41:56.318Z</lastmod>
+    <lastmod>2023-05-01T07:10:59.516Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/posts/tutorials/fr/valorisation-secteurs.html</loc>
+    <lastmod>2023-05-01T07:10:59.832Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/en/shiller-data-python.html</loc>
-    <lastmod>2023-04-30T15:41:56.642Z</lastmod>
+    <lastmod>2023-05-01T07:11:00.143Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation.html</loc>
-    <lastmod>2023-04-30T15:41:56.901Z</lastmod>
+    <lastmod>2023-05-01T07:11:00.400Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/en/getting-started-checklist.html</loc>
-    <lastmod>2023-04-30T15:41:57.170Z</lastmod>
+    <lastmod>2023-05-01T07:11:00.674Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/archive.html</loc>
-    <lastmod>2023-04-30T15:41:57.447Z</lastmod>
+    <lastmod>2023-05-01T07:11:00.954Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/index.html</loc>
-    <lastmod>2023-04-30T15:41:57.711Z</lastmod>
+    <lastmod>2023-05-01T07:11:01.219Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/about.html</loc>
-    <lastmod>2023-04-30T15:41:57.984Z</lastmod>
+    <lastmod>2023-05-01T07:11:01.497Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/all_posts.html</loc>
-    <lastmod>2023-04-30T15:41:58.703Z</lastmod>
+    <lastmod>2023-05-01T07:11:02.269Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/risk_and_return.html</loc>
-    <lastmod>2023-04-30T15:41:59.104Z</lastmod>
+    <lastmod>2023-05-01T07:11:02.662Z</lastmod>
   </url>
 </urlset>
