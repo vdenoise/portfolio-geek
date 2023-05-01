@@ -217,32 +217,67 @@
     "text": "Titre 3"
   },
   {
-    "objectID": "posts/tutorials/fr/valorisation-secteurs.html",
-    "href": "posts/tutorials/fr/valorisation-secteurs.html",
+    "objectID": "posts/tutorials/fr/valorisation-pe.html#le-price-to-earnings-ratio-per",
+    "href": "posts/tutorials/fr/valorisation-pe.html#le-price-to-earnings-ratio-per",
     "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
-    "section": "",
-    "text": "Dans cet article, nous allons vous montrer comment récupérer le Price to Earnings Ratio (PER) de plusieurs actions en utilisant Python, la librairie Alpha Vantage et la bibliothèque de visualisation de données Matplotlib. Le PER est un indicateur financier qui permet d’évaluer la valorisation d’une action.\n\n\nLe Price to Earnings Ratio (PER) est un ratio financier utilisé pour évaluer la valorisation d’une action par rapport à ses bénéfices. Il est calculé en divisant le prix actuel de l’action par le bénéfice par action (EPS) sur une période donnée, généralement sur les 12 derniers mois. La formule est la suivante :\n\\[\nPER = \\frac{Prix\\ de\\ l'action}{Bénéfice\\ par\\ action}\n\\]\nUn PER élevé indique que les investisseurs sont prêts à payer davantage pour les bénéfices futurs de l’entreprise, tandis qu’un PER faible suggère que les investisseurs estiment que l’action est sous-évaluée ou que l’entreprise a des perspectives de croissance limitées.\n\n\n\nAlpha Vantage est une plateforme de données financières qui fournit des API pour accéder à diverses informations sur le marché, telles que les cours des actions, les indicateurs techniques, les données sur les devises, les cryptomonnaies et bien d’autres. La librairie Python alpha_vantage permet d’interagir facilement avec ces API.\nLa licence gratuite d’Alpha Vantage permet d’accéder à la plupart des données sans frais. Toutefois, elle est soumise à certaines restrictions, notamment un nombre limité de requêtes par minute et par jour. Pour des usages plus intensifs, des plans payants sont disponibles."
+    "section": "Le Price to Earnings Ratio (“PER”)",
+    "text": "Le Price to Earnings Ratio (“PER”)\nLe Price to Earnings Ratio (PER) est un ratio financier utilisé pour évaluer la valorisation d’une action par rapport à ses bénéfices. Il est calculé en divisant le prix actuel de l’action par le bénéfice par action (EPS) sur une période donnée, généralement sur les 12 derniers mois. La formule est la suivante :\n\\[\nPER = \\frac{Prix\\ de\\ l'action}{Bénéfice\\ par\\ action}\n\\]\nUn PER élevé indique que les investisseurs sont prêts à payer davantage pour les bénéfices futurs de l’entreprise, tandis qu’un PER faible suggère que les investisseurs estiment que l’action est sous-évaluée ou que l’entreprise a des perspectives de croissance limitées."
   },
   {
-    "objectID": "posts/tutorials/fr/valorisation-secteurs.html#code-source",
-    "href": "posts/tutorials/fr/valorisation-secteurs.html#code-source",
+    "objectID": "posts/tutorials/fr/valorisation-pe.html#la-librairie-alpha-vantage",
+    "href": "posts/tutorials/fr/valorisation-pe.html#la-librairie-alpha-vantage",
+    "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
+    "section": "La librairie Alpha Vantage",
+    "text": "La librairie Alpha Vantage\nAlpha Vantage est une plateforme de données financières qui fournit des API pour accéder à diverses informations sur le marché, telles que les cours des actions, les indicateurs techniques, les données sur les devises, les cryptomonnaies et bien d’autres. La librairie Python alpha_vantage permet d’interagir facilement avec ces API.\nLa licence gratuite d’Alpha Vantage permet d’accéder à la plupart des données sans frais. Toutefois, elle est soumise à certaines restrictions, notamment un nombre limité de requêtes par minute et par jour. Pour des usages plus intensifs, des plans payants sont disponibles."
+  },
+  {
+    "objectID": "posts/tutorials/fr/valorisation-pe.html#code-source",
+    "href": "posts/tutorials/fr/valorisation-pe.html#code-source",
     "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
     "section": "Code Source",
-    "text": "Code Source\nVoici un exemple de programme Python qui utilise la bibliothèque yfinance pour récupérer les valorisations des ETFs secteurs en Europe. Dans cet exemple, je vais utiliser quelques ETFs populaires en Europe pour illustrer le processus. Vous pouvez ajouter ou modifier les symboles d’ETFs dans la liste etfs pour récupérer les valorisations des ETFs que vous souhaitez.\n\n\nCode\nimport os, sys\nnew_path = os.path.join(sys.path[0],'..','..', '..')\nprint(new_path)\nsys.path.append(new_path)\n\nimport website\n\ntpl_path = \"https://github.com/vdenoise/templates/raw/master\"\nmpl_tpl_path = f\"{tpl_path}/matplotlib\"\n\n\n/Users/vincent/dev/portfolio-geek/posts/tutorials/fr/../../..\n\n\n\n\nCode\n\nimport keyring\nimport matplotlib.pyplot as plt\nfrom alpha_vantage.fundamentaldata import FundamentalData\n\n\n\n# Remplacez 'your_api_key' par votre clé API Alpha Vantage\napi_key = keyring.get_password(\"alpha_vantage_api_key\", \"email@email.com\")\nfd = FundamentalData(key=api_key)\n\n# Fonction pour récupérer le Price to Earnings Ratio (P/E Ratio)\ndef get_price_to_earnings_ratio(symbol):\n    data, _ = fd.get_company_overview(symbol)\n    pe_ratio = float(data[\"PERatio\"])\n    return pe_ratio\n\n# Récupérer et afficher les P/E Ratios\nsymbols = [\"AAPL\", \"MSFT\", \"IBM\"]\npe_ratios = [get_price_to_earnings_ratio(symbol) for symbol in symbols]\n\n\nplt.style.use(f\"{mpl_tpl_path}/pacoty.mplstyle\")\n\nplt.bar(symbols, pe_ratios)\nplt.xlabel(\"Symboles\")\nplt.ylabel(\"Price to Earnings Ratio\")\nplt.title(\"Comparaison des PER de différentes actions\")\nplt.show()\n\n\n\n\n\n\nNotez que les tickers d’ETFs dans etf_tickers sont des exemples. Vous devrez remplacer cette liste par les tickers des ETFs de secteurs en Europe que vous souhaitez analyser. Ce programme récupère le P/E Ratio pour chaque ETF et affiche les résultats à l’écran."
+    "text": "Code Source\nVoici un exemple de programme Python qui utilise la bibliothèque yfinance pour récupérer les valorisations des ETFs secteurs en Europe. Dans cet exemple, je vais utiliser quelques ETFs populaires en Europe pour illustrer le processus. Vous pouvez ajouter ou modifier les symboles d’ETFs dans la liste etfs pour récupérer les valorisations des ETFs que vous souhaitez.\n\n\nCode\nimport os, sys\nroot_path = os.path.join(sys.path[0],'..','..', '..')\nsys.path.append(root_path)\nimport blog_utils\n\ntpl_path = \"https://github.com/vdenoise/templates/raw/master\"\nmpl_tpl_path = f\"{tpl_path}/matplotlib\"\n\n\n\n\nCode\n\nimport keyring\nimport matplotlib\nimport matplotlib.pyplot as plt\nfrom alpha_vantage.fundamentaldata import FundamentalData\n\n# Remplacez 'your_api_key' par votre clé API Alpha Vantage\napi_key = keyring.get_password(\"alpha_vantage_api_key\", \"email@email.com\")\nfd = FundamentalData(key=api_key)\n\n# Fonction pour récupérer le Price to Earnings Ratio (P/E Ratio)\ndef get_price_to_earnings_ratio(symbol):\n    data, _ = fd.get_company_overview(symbol)\n    pe_ratio = float(data[\"PERatio\"])\n    return pe_ratio\n\n# Récupérer et afficher les P/E Ratios\nsymbols = [\"AAPL\", \"MSFT\", \"IBM\"]\npe_ratios = [get_price_to_earnings_ratio(symbol) for symbol in symbols]\n\nmatplotlib.rcdefaults() \nblog_utils.apply_right_style()\nplt.bar(symbols, pe_ratios)\nplt.xlabel(\"Symboles\")\nplt.ylabel(\"Price to Earnings Ratio\")\nplt.title(\"Comparaison des PER de différentes actions\")\nplt.show()\n\n\n\nNone\n\n\n\n\n\nNotez que les tickers d’ETFs dans etf_tickers sont des exemples. Vous devrez remplacer cette liste par les tickers des ETFs de secteurs en Europe que vous souhaitez analyser. Ce programme récupère le P/E Ratio pour chaque ETF et affiche les résultats à l’écran."
   },
   {
-    "objectID": "posts/tutorials/fr/valorisation-secteurs.html#conclusion",
-    "href": "posts/tutorials/fr/valorisation-secteurs.html#conclusion",
+    "objectID": "posts/tutorials/fr/valorisation-pe.html#conclusion",
+    "href": "posts/tutorials/fr/valorisation-pe.html#conclusion",
     "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
     "section": "Conclusion",
     "text": "Conclusion\nEn résumé, dans cet article tres court, nous avons montré comment récupérer le Price to Earnings Ratio (PER) de plusieurs actions en utilisant Python, la librairie Alpha Vantage et la bibliothèque de visualisation de données Matplotlib. Le PER est un indicateur financier clé pour évaluer la valorisation d’une action et comparer différentes entreprises."
   },
   {
-    "objectID": "posts/tutorials/fr/valorisation-secteurs.html#sources-de-référence",
-    "href": "posts/tutorials/fr/valorisation-secteurs.html#sources-de-référence",
+    "objectID": "posts/tutorials/fr/valorisation-pe.html#sources-de-référence",
+    "href": "posts/tutorials/fr/valorisation-pe.html#sources-de-référence",
     "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
     "section": "Sources de référence",
     "text": "Sources de référence\nPour en savoir plus sur Alpha Vantage, la valorisation des actions et l’utilisation du Price to Earnings Ratio dans l’analyse financière, consultez les sources suivantes :\n\nSite officiel d’AlphaVantage : https://www.alphavantage.co/\nDocumentation de la librairie Python alpha_vantage : https://alpha-vantage.readthedocs.io/\nInvestopedia, “Price-to-Earnings Ratio – P/E Ratio” : https://www.investopedia.com/terms/p/price-earningsratio.asp\nCorporate Finance Institute, “Price Earnings Ratio (P/E Ratio)” : https://corporatefinanceinstitute.com/resources/knowledge/valuation/price-earnings-ratio/\nMatplotlib, documentation officielle : https://matplotlib.org/"
+  },
+  {
+    "objectID": "posts/tutorials/en/getting-started-with-eurostat-api.html",
+    "href": "posts/tutorials/en/getting-started-with-eurostat-api.html",
+    "title": "Getting Started with Eurostat API",
+    "section": "",
+    "text": "# Connect to Eurostat API with Python using their REST API\nEurostat, the statistical office of the European Union, provides access to a wealth of data on various aspects of the European economy, environment, and society. One way to access this data is through their REST API, which can be easily connected to and queried using Python.\nIn this article, we will walk you through the steps needed to connect to the Eurostat API using Python and build a function to show the connection status to the API. By the end, you’ll be able to retrieve data from Eurostat in a structured and efficient manner."
+  },
+  {
+    "objectID": "posts/tutorials/en/getting-started-with-eurostat-api.html#prerequisites",
+    "href": "posts/tutorials/en/getting-started-with-eurostat-api.html#prerequisites",
+    "title": "Getting Started with Eurostat API",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nBefore we begin, make sure you have Python installed on your system. You can check whether you have Python installed and which version you’re using by running the following command in your terminal:\npython --version\nIf you don’t have Python installed, you can download it from the official Python website.\nNext, you will need to install the requests library, which allows you to make HTTP requests in Python. To do this, open your terminal and run:\npip install requests"
+  },
+  {
+    "objectID": "posts/tutorials/en/getting-started-with-eurostat-api.html#connecting-to-the-eurostat-api",
+    "href": "posts/tutorials/en/getting-started-with-eurostat-api.html#connecting-to-the-eurostat-api",
+    "title": "Getting Started with Eurostat API",
+    "section": "Connecting to the Eurostat API",
+    "text": "Connecting to the Eurostat API\nTo connect to the Eurostat API, you need to send HTTP requests to their API endpoints. The base URL for the Eurostat API is:\nhttps://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/\nYou can append the relevant endpoint to this base URL to access specific datasets or services.\nFor example, to access the dataset on GDP per capita, you would send a request to:\nhttps://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/nama_10_pc?format=sdmx-compact-2.1\nHere’s a Python function that sends a request to the Eurostat API and checks the connection status:\n\n\nCode\nimport requests\n\ndef check_connection_status(endpoint):\n    response = requests.get(endpoint)\n    status_code = response.status_code\n    \n    if status_code == 200:\n        print(\"Connection Successful! (Status Code: 200)\")\n    elif status_code == 404:\n        print(\"Error: Dataset not found (Status Code: 404)\")\n    else:\n        print(f\"Error: Connection failed (Status Code: {status_code})\")\n\n# Test the function with the base URL\napi_base_url = \"https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/sdmx-rest.wadl\"\ncheck_connection_status(api_base_url)\n\n\nConnection Successful! (Status Code: 200)\n\n\nThis function sends an HTTP GET request to the specified api_url and checks the response’s status code. If the status code is 200, the connection is successful. If the status code is anything other than 200, the connection has failed, and the function raises an exception with the corresponding error message.\nTo use this function, replace api_url with the desired Eurostat API endpoint."
+  },
+  {
+    "objectID": "posts/tutorials/en/getting-started-with-eurostat-api.html#conclusion",
+    "href": "posts/tutorials/en/getting-started-with-eurostat-api.html#conclusion",
+    "title": "Getting Started with Eurostat API",
+    "section": "Conclusion",
+    "text": "Conclusion\nIn this article, we demonstrated how to connect to the Eurostat API using Python and their REST API. We also showed you how to create a simple function to check the connection status to the API.\nWith these tools in hand, you can now access a wide variety of European statistical data and use it in your data analysis or visualization projects. Happy coding!"
   },
   {
     "objectID": "posts/tutorials/en/shiller-data-python.html#introduction",
@@ -298,7 +333,7 @@
     "href": "all_posts.html",
     "title": "All Posts",
     "section": "",
-    "text": "Analyzing Equity long Term Returns with Python\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nDémarrer\n\n\n\n\n\n\n\ntutoriel\n\n\n101\n\n\nfr\n\n\n\n\n\n\n\n\n\n\n\nMar 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started - a checklist\n\n\n\n\n\n\n\ntutoriel\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObtenir la valorisation de plusieurs titres avec Python et Alpha Vantage\n\n\n\n\n\n\n\nfr\n\n\nvaluation\n\n\nfundamental\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-construction\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nSetting up a python development workstation\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 5, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nVisualising Historical Data\n\n\n\n\n\n\n\npublication-workflow\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
+    "text": "Analyzing Equity long Term Returns with Python\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nDémarrer\n\n\n\n\n\n\n\ntutoriel\n\n\n101\n\n\nfr\n\n\n\n\n\n\n\n\n\n\n\nMar 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started - a checklist\n\n\n\n\n\n\n\ntutoriel\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started with Eurostat API\n\n\n\n\n\n\n\n\n\n\n\n\nApr 15, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nObtenir la valorisation de plusieurs titres avec Python et Alpha Vantage\n\n\n\n\n\n\n\nfr\n\n\nvaluation\n\n\nfundamental\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-construction\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nSetting up a python development workstation\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 5, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nVisualising Historical Data\n\n\n\n\n\n\n\npublication-workflow\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "risk_and_return.html",

@@ -15,8 +15,6 @@ def set_video_style():
 
 def apply_right_style():
     CURR_PROJECT = os.getenv("CURR_PROJECT")
+    print(CURR_PROJECT)
 
-    if CURR_PROJECT == "website":
-        set_website_style()
-    else:
-        set_video_style()
+    set_video_style()

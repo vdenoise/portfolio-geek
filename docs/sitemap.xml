@@ -2,58 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/estimating-portfolio-risk.html</loc>
-    <lastmod>2023-05-01T07:10:57.982Z</lastmod>
+    <lastmod>2023-05-01T10:44:06.583Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/optimise-portfolios-with-python.html</loc>
-    <lastmod>2023-05-01T07:10:58.479Z</lastmod>
+    <lastmod>2023-05-01T10:44:07.344Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/estimating_risk.html</loc>
-    <lastmod>2023-05-01T07:10:58.785Z</lastmod>
+    <lastmod>2023-05-01T10:44:07.739Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/publication-workflow/visualizing-historical-data.html</loc>
-    <lastmod>2023-05-01T07:10:59.208Z</lastmod>
+    <lastmod>2023-05-01T10:44:08.333Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/fr/demarrer.html</loc>
-    <lastmod>2023-05-01T07:10:59.516Z</lastmod>
+    <lastmod>2023-05-01T10:44:08.826Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/tutorials/fr/valorisation-secteurs.html</loc>
-    <lastmod>2023-05-01T07:10:59.832Z</lastmod>
+    <loc>portfolio-geek.com/posts/tutorials/fr/valorisation-pe.html</loc>
+    <lastmod>2023-05-01T10:44:09.316Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/posts/tutorials/en/getting-started-with-eurostat-api.html</loc>
+    <lastmod>2023-05-01T10:44:16.520Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/en/shiller-data-python.html</loc>
-    <lastmod>2023-05-01T07:11:00.143Z</lastmod>
+    <lastmod>2023-05-01T10:44:16.987Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation.html</loc>
-    <lastmod>2023-05-01T07:11:00.400Z</lastmod>
+    <lastmod>2023-05-01T10:44:17.405Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/en/getting-started-checklist.html</loc>
-    <lastmod>2023-05-01T07:11:00.674Z</lastmod>
+    <lastmod>2023-05-01T10:44:17.784Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/archive.html</loc>
-    <lastmod>2023-05-01T07:11:00.954Z</lastmod>
+    <lastmod>2023-05-01T10:44:18.203Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/index.html</loc>
-    <lastmod>2023-05-01T07:11:01.219Z</lastmod>
+    <lastmod>2023-05-01T10:44:18.590Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/about.html</loc>
-    <lastmod>2023-05-01T07:11:01.497Z</lastmod>
+    <lastmod>2023-05-01T10:44:18.999Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/all_posts.html</loc>
-    <lastmod>2023-05-01T07:11:02.269Z</lastmod>
+    <lastmod>2023-05-01T10:44:20.227Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/risk_and_return.html</loc>
-    <lastmod>2023-05-01T07:11:02.662Z</lastmod>
+    <lastmod>2023-05-01T10:44:20.868Z</lastmod>
   </url>
 </urlset>

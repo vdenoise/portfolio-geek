@@ -206,7 +206,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/fr/valorisation-secteurs.ipynb">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/fr/valorisation-pe.ipynb">View Source</a></li></ul></div></div>
   <div class="quarto-categories">
     <div class="quarto-category">fr</div>
     <div class="quarto-category">valuation</div>
@@ -238,6 +238,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
+<p><img src="../../../pictures/stock-valuation.png" class="img-fluid"></p>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>Dans cet article, nous allons vous montrer comment récupérer le Price to Earnings Ratio (PER) de plusieurs actions en utilisant Python, la librairie Alpha Vantage et la bibliothèque de visualisation de données Matplotlib. Le PER est un indicateur financier qui permet d’évaluer la valorisation d’une action.</p>
@@ -270,55 +271,51 @@ PER = \frac{Prix\ de\ l'action}{Bénéfice\ par\ action}
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> os, sys</span>
-<span id="cb1-2"><a href="#cb1-2"></a>new_path <span class="op">=</span> os.path.join(sys.path[<span class="dv">0</span>],<span class="st">'..'</span>,<span class="st">'..'</span>, <span class="st">'..'</span>)</span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="bu">print</span>(new_path)</span>
-<span id="cb1-4"><a href="#cb1-4"></a>sys.path.append(new_path)</span>
+<span id="cb1-2"><a href="#cb1-2"></a>root_path <span class="op">=</span> os.path.join(sys.path[<span class="dv">0</span>],<span class="st">'..'</span>,<span class="st">'..'</span>, <span class="st">'..'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a>sys.path.append(root_path)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="im">import</span> blog_utils</span>
 <span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="im">import</span> website</span>
-<span id="cb1-7"><a href="#cb1-7"></a></span>
-<span id="cb1-8"><a href="#cb1-8"></a>tpl_path <span class="op">=</span> <span class="st">"https://github.com/vdenoise/templates/raw/master"</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>mpl_tpl_path <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>tpl_path<span class="sc">}</span><span class="ss">/matplotlib"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6"></a>tpl_path <span class="op">=</span> <span class="st">"https://github.com/vdenoise/templates/raw/master"</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>mpl_tpl_path <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>tpl_path<span class="sc">}</span><span class="ss">/matplotlib"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>/Users/vincent/dev/portfolio-geek/posts/tutorials/fr/../../..</code></pre>
-</div>
 </div>
 <div class="cell" data-execution_count="2">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="im">import</span> keyring</span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="im">from</span> alpha_vantage.fundamentaldata <span class="im">import</span> FundamentalData</span>
-<span id="cb3-5"><a href="#cb3-5"></a></span>
-<span id="cb3-6"><a href="#cb3-6"></a></span>
-<span id="cb3-7"><a href="#cb3-7"></a></span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="co"># Remplacez 'your_api_key' par votre clé API Alpha Vantage</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a>api_key <span class="op">=</span> keyring.get_password(<span class="st">"alpha_vantage_api_key"</span>, <span class="st">"email@email.com"</span>)</span>
-<span id="cb3-10"><a href="#cb3-10"></a>fd <span class="op">=</span> FundamentalData(key<span class="op">=</span>api_key)</span>
-<span id="cb3-11"><a href="#cb3-11"></a></span>
-<span id="cb3-12"><a href="#cb3-12"></a><span class="co"># Fonction pour récupérer le Price to Earnings Ratio (P/E Ratio)</span></span>
-<span id="cb3-13"><a href="#cb3-13"></a><span class="kw">def</span> get_price_to_earnings_ratio(symbol):</span>
-<span id="cb3-14"><a href="#cb3-14"></a>    data, _ <span class="op">=</span> fd.get_company_overview(symbol)</span>
-<span id="cb3-15"><a href="#cb3-15"></a>    pe_ratio <span class="op">=</span> <span class="bu">float</span>(data[<span class="st">"PERatio"</span>])</span>
-<span id="cb3-16"><a href="#cb3-16"></a>    <span class="cf">return</span> pe_ratio</span>
-<span id="cb3-17"><a href="#cb3-17"></a></span>
-<span id="cb3-18"><a href="#cb3-18"></a><span class="co"># Récupérer et afficher les P/E Ratios</span></span>
-<span id="cb3-19"><a href="#cb3-19"></a>symbols <span class="op">=</span> [<span class="st">"AAPL"</span>, <span class="st">"MSFT"</span>, <span class="st">"IBM"</span>]</span>
-<span id="cb3-20"><a href="#cb3-20"></a>pe_ratios <span class="op">=</span> [get_price_to_earnings_ratio(symbol) <span class="cf">for</span> symbol <span class="kw">in</span> symbols]</span>
-<span id="cb3-21"><a href="#cb3-21"></a></span>
-<span id="cb3-22"><a href="#cb3-22"></a></span>
-<span id="cb3-23"><a href="#cb3-23"></a>plt.style.use(<span class="ss">f"</span><span class="sc">{</span>mpl_tpl_path<span class="sc">}</span><span class="ss">/pacoty.mplstyle"</span>)</span>
-<span id="cb3-24"><a href="#cb3-24"></a></span>
-<span id="cb3-25"><a href="#cb3-25"></a>plt.bar(symbols, pe_ratios)</span>
-<span id="cb3-26"><a href="#cb3-26"></a>plt.xlabel(<span class="st">"Symboles"</span>)</span>
-<span id="cb3-27"><a href="#cb3-27"></a>plt.ylabel(<span class="st">"Price to Earnings Ratio"</span>)</span>
-<span id="cb3-28"><a href="#cb3-28"></a>plt.title(<span class="st">"Comparaison des PER de différentes actions"</span>)</span>
-<span id="cb3-29"><a href="#cb3-29"></a>plt.show()</span>
-<span id="cb3-30"><a href="#cb3-30"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="im">import</span> keyring</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="im">import</span> matplotlib</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="im">from</span> alpha_vantage.fundamentaldata <span class="im">import</span> FundamentalData</span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="co"># Remplacez 'your_api_key' par votre clé API Alpha Vantage</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>api_key <span class="op">=</span> keyring.get_password(<span class="st">"alpha_vantage_api_key"</span>, <span class="st">"email@email.com"</span>)</span>
+<span id="cb2-9"><a href="#cb2-9"></a>fd <span class="op">=</span> FundamentalData(key<span class="op">=</span>api_key)</span>
+<span id="cb2-10"><a href="#cb2-10"></a></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="co"># Fonction pour récupérer le Price to Earnings Ratio (P/E Ratio)</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="kw">def</span> get_price_to_earnings_ratio(symbol):</span>
+<span id="cb2-13"><a href="#cb2-13"></a>    data, _ <span class="op">=</span> fd.get_company_overview(symbol)</span>
+<span id="cb2-14"><a href="#cb2-14"></a>    pe_ratio <span class="op">=</span> <span class="bu">float</span>(data[<span class="st">"PERatio"</span>])</span>
+<span id="cb2-15"><a href="#cb2-15"></a>    <span class="cf">return</span> pe_ratio</span>
+<span id="cb2-16"><a href="#cb2-16"></a></span>
+<span id="cb2-17"><a href="#cb2-17"></a><span class="co"># Récupérer et afficher les P/E Ratios</span></span>
+<span id="cb2-18"><a href="#cb2-18"></a>symbols <span class="op">=</span> [<span class="st">"AAPL"</span>, <span class="st">"MSFT"</span>, <span class="st">"IBM"</span>]</span>
+<span id="cb2-19"><a href="#cb2-19"></a>pe_ratios <span class="op">=</span> [get_price_to_earnings_ratio(symbol) <span class="cf">for</span> symbol <span class="kw">in</span> symbols]</span>
+<span id="cb2-20"><a href="#cb2-20"></a></span>
+<span id="cb2-21"><a href="#cb2-21"></a>matplotlib.rcdefaults() </span>
+<span id="cb2-22"><a href="#cb2-22"></a>blog_utils.apply_right_style()</span>
+<span id="cb2-23"><a href="#cb2-23"></a>plt.bar(symbols, pe_ratios)</span>
+<span id="cb2-24"><a href="#cb2-24"></a>plt.xlabel(<span class="st">"Symboles"</span>)</span>
+<span id="cb2-25"><a href="#cb2-25"></a>plt.ylabel(<span class="st">"Price to Earnings Ratio"</span>)</span>
+<span id="cb2-26"><a href="#cb2-26"></a>plt.title(<span class="st">"Comparaison des PER de différentes actions"</span>)</span>
+<span id="cb2-27"><a href="#cb2-27"></a>plt.show()</span>
+<span id="cb2-28"><a href="#cb2-28"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
+<div class="cell-output cell-output-stdout">
+<pre><code>None</code></pre>
+</div>
 <div class="cell-output cell-output-display">
-<p><img src="valorisation-secteurs_files/figure-html/cell-3-output-1.png" width="577" height="435"></p>
+<p><img src="valorisation-pe_files/figure-html/cell-3-output-2.png" class="img-fluid"></p>
 </div>
 </div>
 <p>Notez que les tickers d’ETFs dans etf_tickers sont des exemples. Vous devrez remplacer cette liste par les tickers des ETFs de secteurs en Europe que vous souhaitez analyser. Ce programme récupère le P/E Ratio pour chaque ETF et affiche les résultats à l’écran.</p>
