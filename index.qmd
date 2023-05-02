@@ -6,7 +6,7 @@ page-layout: full
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6}
-![](/pictures/laptop.png)
+![](pictures/laptop.png)
 :::
 
 ::: {.g-col-12 .g-col-md-6}
