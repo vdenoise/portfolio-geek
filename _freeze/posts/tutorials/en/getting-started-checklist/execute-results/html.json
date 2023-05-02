@@ -1,7 +1,7 @@
 {
-  "hash": "5595783fbf1a7b6049a6dbb8a1de8638",
+  "hash": "849d807c765cf3cc49e1cc5c14f4710f",
   "result": {
-    "markdown": "---\ntitle: Getting Started - a checklist\ncomments: false\ncategories: [tutoriel, 101, en]\nname: test\ncode-tools: false\n---\n\n\n![](/pictures/paraglider-starting-takeoff.png)\n\n# test title\n\n",
+    "markdown": "---\ntitle: Getting Started - a checklist\ncategories: [101, en]\ndraft: true\ncode-tools: false\n---\n\n\n# test title\n\n",
     "supporting": [
       "getting-started-checklist_files"
     ],

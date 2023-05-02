@@ -21,6 +21,7 @@ website:
   title: "Portfolio Geek"
   site-url: "portfolio-geek.com"
   repo-url: "https://github.com/vdenoise/portfolio-geek/"
+  description: "Finance, Research and the Tech required to Fuel them"
   repo-branch: "master"
   navbar:
     right:

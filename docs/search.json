@@ -252,41 +252,6 @@
     "text": "Useful Related Links\n{% series_list %}\nThere is no such thing as “full tutorial on something”, knowledge is everywhere. I found these tutorials pretty handy, check them out too!\n\nSeaborn Tutorial\nTutorial on F-Strings"
   },
   {
-    "objectID": "posts/tutorials/fr/demarrer.html#slide-1",
-    "href": "posts/tutorials/fr/demarrer.html#slide-1",
-    "title": "Démarrer",
-    "section": "Slide 1",
-    "text": "Slide 1\n\n\n\n\nCode\n\nplt.style.use(f\"{mpl_tpl_path}/dracula_slide.mplstyle\")\ndata.resample(\"W\").last().plot();\nplt.ylabel(\"Wealth Curve\")  \n\n\nText(0, 0.5, 'Wealth Curve')"
-  },
-  {
-    "objectID": "posts/tutorials/fr/demarrer.html#titre-1",
-    "href": "posts/tutorials/fr/demarrer.html#titre-1",
-    "title": "Démarrer",
-    "section": "Titre 1",
-    "text": "Titre 1\n\n\n\nPret ou pas pret, Il faut bien démarrer quelque part!"
-  },
-  {
-    "objectID": "posts/tutorials/fr/demarrer.html#main-title",
-    "href": "posts/tutorials/fr/demarrer.html#main-title",
-    "title": "Démarrer",
-    "section": "Main Title",
-    "text": "Main Title\n\n\n\nTest Bullet a Gauche\nTest Bullet a Gauche\nTest Bullet a Gauche\n\n\n\n\nBonjour a tous, et merci de nous accompagner pour ce premier épisode! Dans cette vidéo nous allons faire un tour d’horizon sur l’analyse de données financières. Ce sera uniquement un tour d’horizon, et aucune connaissance préalable n’est requise pour suivre cette vidéo.\nL’objectif est clair et simple: savoir suivre la performance de différents actifs financiers. Pour ceci, nous allons nous intéresser a la performance de certains indices, dont nous allons approximer la performance par celle d’ETFs, qui sont progressivement devenus des outils indispensable pour de nombreux investisseurs. Petit rappel nécessaire, je ne suis pas conseiller financier, je ne donne aucune recommendation ni conseil, mon seul objectif ici est d’utiliser des informations pour analyser les marchés."
-  },
-  {
-    "objectID": "posts/tutorials/fr/demarrer.html#titre-2",
-    "href": "posts/tutorials/fr/demarrer.html#titre-2",
-    "title": "Démarrer",
-    "section": "Titre 2",
-    "text": "Titre 2"
-  },
-  {
-    "objectID": "posts/tutorials/fr/demarrer.html#titre-3",
-    "href": "posts/tutorials/fr/demarrer.html#titre-3",
-    "title": "Démarrer",
-    "section": "Titre 3",
-    "text": "Titre 3"
-  },
-  {
     "objectID": "posts/tutorials/fr/valorisation-pe.html#le-price-to-earnings-ratio-per",
     "href": "posts/tutorials/fr/valorisation-pe.html#le-price-to-earnings-ratio-per",
     "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
@@ -371,13 +336,6 @@
     "text": "## Introduction"
   },
   {
-    "objectID": "posts/tutorials/en/getting-started-checklist.html",
-    "href": "posts/tutorials/en/getting-started-checklist.html",
-    "title": "Getting Started - a checklist",
-    "section": "",
-    "text": "test title"
-  },
-  {
     "objectID": "archive.html",
     "href": "archive.html",
     "title": "Archive",
@@ -403,7 +361,7 @@
     "href": "all_posts.html",
     "title": "All Posts",
     "section": "",
-    "text": "10 formules les plus utilisées en finance de marché\n\n\n\n\n\n\n\nfr\n\n\nfinance\n\n\ntutorial\n\n\n101\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nAnalyzing Equity long Term Returns with Python\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nDémarrer\n\n\n\n\n\n\n\ntutoriel\n\n\n101\n\n\nfr\n\n\n\n\n\n\n\n\n\n\n\nMar 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started - a checklist\n\n\n\n\n\n\n\ntutoriel\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started with Eurostat API\n\n\n\n\n\n\n\n\n\n\n\n\nApr 15, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nObtenir la valorisation de plusieurs titres avec Python et Alpha Vantage\n\n\n\n\n\n\n\nfr\n\n\nvaluation\n\n\nfundamental\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-construction\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nSetting up a python development workstation\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 5, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nVisualising Historical Data\n\n\n\n\n\n\n\npublication-workflow\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
+    "text": "10 formules les plus utilisées en finance de marché\n\n\n\n\n\n\n\nfr\n\n\nfinance\n\n\ntutorial\n\n\n101\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nAnalyzing Equity long Term Returns with Python\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started with Eurostat API\n\n\n\n\n\n\n\nen\n\n\n101\n\n\ndata\n\n\napi\n\n\n\n\n\n\n\n\n\n\n\nApr 15, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nObtenir la valorisation de plusieurs titres avec Python et Alpha Vantage\n\n\n\n\n\n\n\nfr\n\n\nvaluation\n\n\nfundamental\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-construction\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nSetting up a python development workstation\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 5, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nVisualising Historical Data\n\n\n\n\n\n\n\npublication-workflow\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "risk_and_return.html",
