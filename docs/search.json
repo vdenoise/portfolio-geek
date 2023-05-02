@@ -182,34 +182,6 @@
     "text": "Code\nimport pandas\n\n\n # Getting Started: Measuring Volatility"
   },
   {
-    "objectID": "posts/portfolio-construction/black-litterman.html",
-    "href": "posts/portfolio-construction/black-litterman.html",
-    "title": "Implementing the Black-Litterman Approach with PyPortfolioOpt",
-    "section": "",
-    "text": "In this article, we will demonstrate how to use the PyPortfolioOpt library to implement the Black-Litterman approach on a portfolio consisting of 3 ETFs: US Equity, Europe Equity, and Japan Equity. We will estimate future risks using their historical volatility, and determine their equilibrium weights based on the respective share of their country to the world GDP. Long-term return views will be based on the 5-year GDP growth as provided by the IMF through their Python API.\nWe will fetch historical data using the yfinance library. At the end of the article, we will present the following results:\n\nA pie chart showing the weights\nA Matplotlib chart illustrating the performance of a portfolio using these weights over the last 10 years, with annual rebalancing, using the Zipline library\n\nWe will use the ggplot style sheet for all Matplotlib charts.\n\n\nFirst, let’s import the necessary libraries and set up the ggplot style.\n\n\nCode\nimport yfinance as yf\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pypfopt\nfrom pypfopt import black_litterman, risk_models, plotting, EfficientFrontier\nfrom pypfopt.black_litterman import BlackLittermanModel\nfrom pypfopt.expected_returns import mean_historical_return\n\nplt.style.use('ggplot')\n\n\n\n\n\nWe will fetch the historical data for the 3 ETFs using the yfinance library.\n\n\nCode\ntickers = ['SPY', 'IEUR', 'EWJ']  # US Equity, Europe Equity, Japan Equity\nstart_date = '2011-01-01'\nend_date = '2021-01-01'\n\nprices = yf.download(tickers, start=start_date, end=end_date)['Adj Close']\n\n\n[*********************100%***********************]  3 of 3 completed\n\n\n\n\n\nWe will use the historical volatility as the future risk estimate.\n\n\nCode\nvolatility = risk_models.sample_cov(prices)\n\n\n\n\n\nWe will obtain the 5-year GDP growth data from the IMF Python API.\n\n\nCode\n\nus_share = 0.60\neurope_share = 0.25\njapan_share = 0.15\n\n\n\n\n\nWe will determine the equilibrium weights based on the respective share of their country to the world GDP.\n\n\nCode\nweights_eq = np.array([us_share, europe_share, japan_share])"
-  },
-  {
-    "objectID": "posts/portfolio-construction/black-litterman.html#implementing-the-black-litterman-model",
-    "href": "posts/portfolio-construction/black-litterman.html#implementing-the-black-litterman-model",
-    "title": "Implementing the Black-Litterman Approach with PyPortfolioOpt",
-    "section": "Implementing the Black-Litterman Model",
-    "text": "Implementing the Black-Litterman Model\n\n\nCode\nbl = BlackLittermanModel(volatility, weights_eq, absolute_views=views)\n\n# Calculate the posterior estimate of returns\nposterior_estimates = bl.bl_returns()\n\n\nValueError: Providing a view on an asset not in the universe\n\n\n\n\n\n```python"
-  },
-  {
-    "objectID": "posts/portfolio-construction/black-litterman.html#optimizing-the-portfolio",
-    "href": "posts/portfolio-construction/black-litterman.html#optimizing-the-portfolio",
-    "title": "Implementing the Black-Litterman Approach with PyPortfolioOpt",
-    "section": "Optimizing the Portfolio",
-    "text": "Optimizing the Portfolio\nef = EfficientFrontier(posterior_estimates, volatility)\nweights_optimized = ef.max_sharpe()"
-  },
-  {
-    "objectID": "posts/portfolio-construction/black-litterman.html#visualizing-the-results",
-    "href": "posts/portfolio-construction/black-litterman.html#visualizing-the-results",
-    "title": "Implementing the Black-Litterman Approach with PyPortfolioOpt",
-    "section": "Visualizing the Results",
-    "text": "Visualizing the Results\n\nPie Chart of Weights\nplotting.plot_pie(weights_optimized)\nplt.show()\n\n\nPortfolio Performance over the Last 10 Years\nWe will use the Zipline library to backtest our strategy with annual reb"
-  },
-  {
     "objectID": "posts/publication-workflow/visualizing-historical-data.html#introduction",
     "href": "posts/publication-workflow/visualizing-historical-data.html#introduction",
     "title": "Visualising Historical Data",
@@ -431,7 +403,7 @@
     "href": "all_posts.html",
     "title": "All Posts",
     "section": "",
-    "text": "10 formules les plus utilisées en finance de marché\n\n\n\n\n\n\n\nfr\n\n\nfinance\n\n\ntutorial\n\n\n101\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nAnalyzing Equity long Term Returns with Python\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nDémarrer\n\n\n\n\n\n\n\ntutoriel\n\n\n101\n\n\nfr\n\n\n\n\n\n\n\n\n\n\n\nMar 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started - a checklist\n\n\n\n\n\n\n\ntutoriel\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started with Eurostat API\n\n\n\n\n\n\n\n\n\n\n\n\nApr 15, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImplementing the Black-Litterman Approach with PyPortfolioOpt\n\n\n\n\n\n\n\n\n\n\n\n\nMay 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nObtenir la valorisation de plusieurs titres avec Python et Alpha Vantage\n\n\n\n\n\n\n\nfr\n\n\nvaluation\n\n\nfundamental\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-construction\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nSetting up a python development workstation\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 5, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nVisualising Historical Data\n\n\n\n\n\n\n\npublication-workflow\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
+    "text": "10 formules les plus utilisées en finance de marché\n\n\n\n\n\n\n\nfr\n\n\nfinance\n\n\ntutorial\n\n\n101\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nAnalyzing Equity long Term Returns with Python\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nDémarrer\n\n\n\n\n\n\n\ntutoriel\n\n\n101\n\n\nfr\n\n\n\n\n\n\n\n\n\n\n\nMar 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started - a checklist\n\n\n\n\n\n\n\ntutoriel\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started with Eurostat API\n\n\n\n\n\n\n\n\n\n\n\n\nApr 15, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nObtenir la valorisation de plusieurs titres avec Python et Alpha Vantage\n\n\n\n\n\n\n\nfr\n\n\nvaluation\n\n\nfundamental\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-construction\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nSetting up a python development workstation\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 5, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nVisualising Historical Data\n\n\n\n\n\n\n\npublication-workflow\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "risk_and_return.html",
