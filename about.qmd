@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: "london-stpaul.png"
+image: london-stpaul.png
 code-tools: false
 about:
   template: jolla
