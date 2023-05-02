@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: stpaul.jpg
+image: profile.jpg
 code-tools: false
 about:
   template: jolla
