@@ -29,19 +29,15 @@ website:
         href: all_posts.qmd
       - text: About
         href: about.qmd
+      - icon: linkedin
+        href: https://www.linkedin.com/in/vdenoiseux/
       - icon: github
-        href: https://github.com/
+        href: https://github.com/vdenoise 
       - icon: twitter
         href: https://twitter.com
-      - text: Archive
-        href: archive.qmd
       - text: Ressources
         menu: 
-          - text: Risk and Return 101
+          - text: Portfolio Construction
             href: risk_and_return.qmd
-          - text: R Weekly
-            href: https://rweekly.org/
-          - text: R Bloggers
-            href: https://www.r-bloggers.com/
-      - text: Archive
-        href: archive.qmd
+          - text: Real Python
+            href: https://realpython.com/
