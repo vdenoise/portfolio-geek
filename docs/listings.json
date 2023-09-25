@@ -1,9 +1,7 @@
 [
   {
     "listing": "/archive.html",
-    "items": [
-      "/posts/risk_and_return/test.html"
-    ]
+    "items": []
   },
   {
     "listing": "/all_posts.html",
@@ -27,7 +25,6 @@
       "/posts/risk_and_return/estimating-portfolio-risk.html",
       "/posts/risk_and_return/10-formules-importantes-finance-marche.html",
       "/posts/risk_and_return/optimise-portfolios-with-python.html",
-      "/posts/risk_and_return/test.html",
       "/posts/risk_and_return/estimating_risk.html"
     ]
   }

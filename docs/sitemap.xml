@@ -2,70 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/estimating-portfolio-risk.html</loc>
-    <lastmod>2023-05-02T07:49:35.527Z</lastmod>
+    <lastmod>2023-09-25T21:03:51.936Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/10-formules-importantes-finance-marche.html</loc>
-    <lastmod>2023-05-02T07:49:36.064Z</lastmod>
+    <lastmod>2023-09-25T21:03:52.665Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/optimise-portfolios-with-python.html</loc>
-    <lastmod>2023-05-02T07:49:37.002Z</lastmod>
+    <lastmod>2023-09-25T21:03:53.841Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/risk_and_return/estimating_risk.html</loc>
-    <lastmod>2023-06-09T21:48:05.496Z</lastmod>
-  </url>
-  <url>
-    <loc>portfolio-geek.com/posts/publication-workflow/visualizing-historical-data.html</loc>
-    <lastmod>2023-05-02T07:49:38.586Z</lastmod>
-  </url>
-  <url>
-    <loc>portfolio-geek.com/posts/tutorials/fr/valorisation-pe.html</loc>
-    <lastmod>2023-05-02T07:49:39.423Z</lastmod>
-  </url>
-  <url>
-    <loc>portfolio-geek.com/posts/tutorials/en/getting-started-with-eurostat-api.html</loc>
-    <lastmod>2023-05-02T07:49:39.834Z</lastmod>
-  </url>
-  <url>
-    <loc>portfolio-geek.com/posts/tutorials/en/shiller-data-python.html</loc>
-    <lastmod>2023-05-02T07:49:40.591Z</lastmod>
-  </url>
-  <url>
-    <loc>portfolio-geek.com/archive.html</loc>
-    <lastmod>2023-06-09T21:48:40.843Z</lastmod>
-  </url>
-  <url>
-    <loc>portfolio-geek.com/index.html</loc>
-    <lastmod>2023-06-28T05:46:49.111Z</lastmod>
-  </url>
-  <url>
-    <loc>portfolio-geek.com/about.html</loc>
-    <lastmod>2023-06-09T21:48:21.134Z</lastmod>
-  </url>
-  <url>
-    <loc>portfolio-geek.com/all_posts.html</loc>
-    <lastmod>2023-06-28T05:51:10.950Z</lastmod>
-  </url>
-  <url>
-    <loc>portfolio-geek.com/risk_and_return.html</loc>
-    <lastmod>2023-06-09T21:48:43.819Z</lastmod>
-  </url>
-  <url>
-    <loc>portfolio-geek.com/posts/risk_and_return/test.html</loc>
-    <lastmod>2023-06-09T21:48:40.265Z</lastmod>
+    <lastmod>2023-09-25T21:03:54.252Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/data-and-apis/exploring-worldbank-api.html</loc>
-    <lastmod>2023-06-28T05:46:39.679Z</lastmod>
+    <lastmod>2023-09-25T21:03:54.724Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/data-and-apis/test_wb.html</loc>
-    <lastmod>2023-06-28T05:45:49.714Z</lastmod>
+    <lastmod>2023-09-25T21:03:55.234Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/posts/publication-workflow/visualizing-historical-data.html</loc>
+    <lastmod>2023-09-25T21:03:56.692Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/posts/tutorials/fr/valorisation-pe.html</loc>
+    <lastmod>2023-09-25T21:03:57.776Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/posts/tutorials/en/getting-started-with-eurostat-api.html</loc>
+    <lastmod>2023-09-25T21:03:58.287Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/posts/tutorials/en/shiller-data-python.html</loc>
+    <lastmod>2023-09-25T21:03:59.255Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation.html</loc>
-    <lastmod>2023-06-28T05:51:08.652Z</lastmod>
+    <lastmod>2023-09-25T21:03:59.873Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/archive.html</loc>
+    <lastmod>2023-09-25T21:04:00.734Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/index.html</loc>
+    <lastmod>2023-09-25T21:04:01.184Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/about.html</loc>
+    <lastmod>2023-09-25T21:04:01.626Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/all_posts.html</loc>
+    <lastmod>2023-09-25T21:04:03.874Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/risk_and_return.html</loc>
+    <lastmod>2023-09-25T21:04:04.724Z</lastmod>
   </url>
 </urlset>

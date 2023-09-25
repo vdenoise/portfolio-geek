@@ -182,6 +182,55 @@
     "text": "Code\nimport pandas\n\n\n # Getting Started: Measuring Volatility"
   },
   {
+    "objectID": "posts/data-and-apis/exploring-worldbank-api.html",
+    "href": "posts/data-and-apis/exploring-worldbank-api.html",
+    "title": "Exploring the Worldbank API (WBGAPI)",
+    "section": "",
+    "text": "Code\nimport wbgapi as wb\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\n\n\nCode\nincomes = wb.income.list()\ndata = wb.data.fetch('SP.POP.TOTL', 'USA', 2000, 2020)\n\n\n\n\nCode\ndata\n\n\n&lt;generator object fetch at 0x7fcd1d5f7dd0&gt;"
+  },
+  {
+    "objectID": "posts/data-and-apis/test_wb.html",
+    "href": "posts/data-and-apis/test_wb.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "posts/data-and-apis/test_wb.html#installation",
+    "href": "posts/data-and-apis/test_wb.html#installation",
+    "title": "",
+    "section": "Installation",
+    "text": "Installation\nTo start, ensure that you have the WBGAPI library installed. If not, you can do so using pip:\npip install wbgapi"
+  },
+  {
+    "objectID": "posts/data-and-apis/test_wb.html#setting-the-stage",
+    "href": "posts/data-and-apis/test_wb.html#setting-the-stage",
+    "title": "",
+    "section": "Setting the Stage",
+    "text": "Setting the Stage\nFirstly, we need to import the necessary libraries. WBGAPI will be used to gather data, pandas for data manipulation, and matplotlib for visualisation.\nimport wbgapi as wb\nimport pandas as pd\nimport matplotlib.pyplot as plt"
+  },
+  {
+    "objectID": "posts/data-and-apis/test_wb.html#use-case-1-gdp-evolution-of-emerging-vs-developed-markets",
+    "href": "posts/data-and-apis/test_wb.html#use-case-1-gdp-evolution-of-emerging-vs-developed-markets",
+    "title": "",
+    "section": "Use Case 1: GDP Evolution of Emerging vs Developed Markets",
+    "text": "Use Case 1: GDP Evolution of Emerging vs Developed Markets\nGross Domestic Product (GDP) serves as a broad measure for a country’s overall economic activity. It represents the monetary value of all finished goods and services produced within a country’s borders in a specific time period.\nHere is how we can fetch the data:\n# Get income level codes for \"High income\" (developed markets) and \"Lower middle income\" and \"Upper middle income\" (emerging markets)\nincome_levels = wb.income.list().set_index('id')['name']\ndeveloped = [code for code, name in income_levels.items() if 'High income' in name]\nemerging = [code for code, name in income_levels.items() if 'middle income' in name]\n\n# Fetch GDP data (NY.GDP.MKTP.CD) for the last 30 years\nyears = list(range(1994, 2024))\ngdp_developed = wb.data.DataFrame('NY.GDP.MKTP.CD', country=developed, time=years).mean(axis=1)\ngdp_emerging = wb.data.DataFrame('NY.GDP.MKTP.CD', country=emerging, time=years).mean(axis=1)\n\n# Create a DataFrame\ndf_gdp = pd.DataFrame({'Developed Markets': gdp_developed, 'Emerging Markets': gdp_emerging})\nWe can now visualise the data:\ndf_gdp.plot(kind='line')\nplt.title('GDP Evolution: Developed vs Emerging Markets (1994-2024)')\nplt.xlabel('Year')\nplt.ylabel('GDP (Current US$)')\nplt.show()"
+  },
+  {
+    "objectID": "posts/data-and-apis/test_wb.html#use-case-2-gdp-per-capita-evolution-for-selected-countries",
+    "href": "posts/data-and-apis/test_wb.html#use-case-2-gdp-per-capita-evolution-for-selected-countries",
+    "title": "",
+    "section": "Use Case 2: GDP per Capita Evolution for Selected Countries",
+    "text": "Use Case 2: GDP per Capita Evolution for Selected Countries\nGDP per capita is a measure of the total output of a country that takes the GDP and divides it by the number of people in that country. The countries we will focus on are the USA, France, Germany, Japan, China, and India.\nFetching the data is straightforward:\n# Specify countries and fetch data for GDP per capita (NY.GDP.PCAP.CD)\ncountries = ['USA', 'FRA', 'DEU', 'JPN', 'CHN', 'IND']\ndf_gdp_pc = wb.data.DataFrame('NY.GDP.PCAP.CD', country=countries, time=years)\nAnd let’s visualise this:\ndf_gdp_pc.plot(kind='line')\nplt.title('GDP per Capita\n\n Evolution: USA, France, Germany, Japan, China, India (1994-2024)')\nplt.xlabel('Year')\nplt.ylabel('GDP per Capita (Current US$)')\nplt.show()"
+  },
+  {
+    "objectID": "posts/data-and-apis/test_wb.html#conclusion",
+    "href": "posts/data-and-apis/test_wb.html#conclusion",
+    "title": "",
+    "section": "Conclusion",
+    "text": "Conclusion\nWorld Bank data provides invaluable insight into the world’s economic trends, and the WBGAPI library is an incredibly useful tool for extracting this data in an easy and efficient manner. It enables researchers, analysts, and policymakers to gauge economic performance, identify trends, and make evidence-based decisions.\nWhether you are a student, economist, or data enthusiast, the potential of such data is boundless. By coupling World Bank data with Python’s analytical and visualisation capabilities, you can make economic trends come alive, allowing for more profound, insightful analysis and decision-making."
+  },
+  {
     "objectID": "posts/publication-workflow/visualizing-historical-data.html#introduction",
     "href": "posts/publication-workflow/visualizing-historical-data.html#introduction",
     "title": "Visualising Historical Data",
@@ -329,118 +378,6 @@
     "text": "Visualizing the Data with Matplotlib and Pacoty\nNext, we will create a chart comparing the nominal equity returns, real equity returns, and real GDP growth using Matplotlib and the Pacoty stylesheet: python\n\n\nCode\ndata\n\n\n\n\n\n\n\n\n\nDate\nP\nD\nE\nCPI\nFraction\nRate GS10\nPrice\nDividend\nPrice.1\n...\nCAPE\nUnnamed: 13\nTR CAPE\nUnnamed: 15\nYield\nReturns\nReturns.1\nReal Return\nReal Return.1\nReturns.2\n\n\n\n\n0\n1871.01\n4.44\n0.26\n0.4\n12.464061\n1871.041667\n5.32\n107.612654\n6.301642\n1.076127e+02\n...\nNaN\nNaN\nNaN\nNaN\nNaN\n1.004177\n1.000000\n0.130609\n0.092504\n0.038106\n\n\n1\n1871.02\n4.5\n0.26\n0.4\n12.844641\n1871.125000\n5.323333\n105.835283\n6.114927\n1.063449e+02\n...\nNaN\nNaN\nNaN\nNaN\nNaN\n1.004180\n0.974424\n0.130858\n0.094635\n0.036224\n\n\n2\n1871.03\n4.61\n0.26\n0.4\n13.034972\n1871.208333\n5.326667\n106.839235\n6.025640\n1.078582e+02\n...\nNaN\nNaN\nNaN\nNaN\nNaN\n1.004183\n0.964209\n0.130951\n0.096186\n0.034765\n\n\n3\n1871.04\n4.74\n0.26\n0.4\n12.559226\n1871.291667\n5.33\n114.013268\n6.253892\n1.156268e+02\n...\nNaN\nNaN\nNaN\nNaN\nNaN\n1.004185\n1.004919\n0.122056\n0.090972\n0.031084\n\n\n4\n1871.05\n4.86\n0.26\n0.4\n12.273812\n1871.375000\n5.333333\n119.618062\n6.399320\n1.218517e+02\n...\nNaN\nNaN\nNaN\nNaN\nNaN\n1.004188\n1.032591\n0.122638\n0.089488\n0.033150\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n1824\n2023.01\n3960.6565\n67.35\nNaN\n299.17\n2023.041667\n3.53\n3999.346939\n68.007921\n2.604715e+06\n...\n28.334813\nNaN\n30.691634\nNaN\n0.026509\n0.984746\n41.286210\nNaN\nNaN\nNaN\n\n\n1825\n2023.02\n4079.684737\n67.78\nNaN\n300.84\n2023.125000\n3.75\n4096.669862\n68.062191\n2.671794e+06\n...\n28.977514\nNaN\n31.409746\nNaN\n0.023261\n1.010600\n40.430726\nNaN\nNaN\nNaN\n\n\n1826\n2023.03\n3968.55913\n68.21\nNaN\n301.675\n2023.208333\n3.66\n3974.051377\n68.304399\n2.595537e+06\n...\n28.063455\nNaN\n30.441826\nNaN\n0.025301\n1.022361\n40.746209\nNaN\nNaN\nNaN\n\n\n1827\n2023.04\n4100.6\nNaN\nNaN\n302.0925\n2023.291667\n3.43\n4100.600000\nNaN\n2.678188e+06\n...\n28.908607\nNaN\n31.337301\nNaN\n0.026808\nNaN\n41.599762\nNaN\nNaN\nNaN\n\n\n1828\nNaN\nApr price is Apr 4th close\nNaN\nDec Estimated\nMar/Apr CPI estimated\nNaN\nApr GS10 is Apr 4th value\nNaN\nNaN\nNaN\n...\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n\n\n1829 rows × 22 columns\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Set the Pacoty stylesheet\n#plt.style.use('pacoty')\n\n# Create a figure and axis\nfig, ax = plt.subplots()\n\n# Extract the data we need\nyears = data['Date']\nnominal_returns = data['Price.1']\n#real_returns = data['Real S&P Equity Index']\n#gdp_growth = data['Real GDP Growth']\n\n# Plot the data on a logarithmic scale\nax.semilogy(years, nominal_returns, label='Nominal Equity Returns')\n\n# Customize the chart\nax.set_xlabel('Years')\nax.set_ylabel('Returns')\nax.set_title('S&P Equity Index: Nominal Returns, Real Returns, and Real GDP Growth')\nax.legend()\n\n# Show the chart\nplt.show()\n\n\n\n\n\nThis code snippet creates a chart with a logarithmic scale, comparing nominal equity returns, real equity returns, and real GDP growth over time.\nConclusion\nThe resulting chart demonstrates the power of compounded returns and the equity risk premium that has rewarded long-term shareholders. By using Python libraries like requests, pandas, and Matplotlib, we can easily download, process, and visualize financial data to better understand market trends and investment strategies."
   },
   {
-    "objectID": "archive.html",
-    "href": "archive.html",
-    "title": "Archive",
-    "section": "",
-    "text": "Bla bla\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Portfolio Construction",
-    "section": "",
-    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the entire asset management and financial markets industry’s value chain.\nIn this blog, I will document here my findings and experiments, notably in Python, Jupyter and along themes like portfolio optimisation and reproducible research.\nIn my different roles, I have developed and deployed a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\n\n\n\n\nPortfolio Optimisation with Python\nRisks and Returns 101\nGood Finance DataSources available to everyone\n\n\n\n\n\nAutomating Powerpoint\nNice Pictures with Python\n\n\n\n\n\nAutomating Powerpoint\nNice Pictures with Python\n\n\n\n\n\nAutomating Powerpoint\nNice Pictures with Python"
-  },
-  {
-    "objectID": "index.html#welcome-to-portfolio-geek",
-    "href": "index.html#welcome-to-portfolio-geek",
-    "title": "Portfolio Construction",
-    "section": "",
-    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the entire asset management and financial markets industry’s value chain.\nIn this blog, I will document here my findings and experiments, notably in Python, Jupyter and along themes like portfolio optimisation and reproducible research.\nIn my different roles, I have developed and deployed a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the asset management and capital markets industry’s value chain.\nIn my different roles, I have developed and deployed a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\nFind me on Linkedin\n\nWhy this blog?\nWhat struck me the most when I started my career in finance was the knowledge asymetry between finance professionals and end clients. Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts still sound fairly exotic or technical to many investors.\nHere, I will try to demystify financial analysis and provide ideas and starting points in order to put theory into practice.\nIn most articles, you should be able to copy, run and modify the code behind the analysis. This should help you to directly use many of the tools presented. The entire source is available on Github"
-  },
-  {
-    "objectID": "all_posts.html",
-    "href": "all_posts.html",
-    "title": "All Posts",
-    "section": "",
-    "text": "Analyzing Equity long Term Returns with Python\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nExploring the Worldbank API (WBGAPI)\n\n\n\n\n\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 5, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started with Eurostat API\n\n\n\n\n\n\n\nen\n\n\n101\n\n\ndata\n\n\napi\n\n\n\n\n\n\n\n\n\n\n\nApr 15, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nLes 10 formules les plus utilisées en finance de marché\n\n\n\n\n\n\n\nfr\n\n\nfinance\n\n\ntutorial\n\n\n101\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nObtenir la valorisation de plusieurs titres avec Python et Alpha Vantage\n\n\n\n\n\n\n\nfr\n\n\nvaluation\n\n\nfundamental\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-construction\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nSetting up a python development workstation\n\n\n\n\n\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 6, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nUsing WBGAPI: A Step-By-Step Guide to Access World Bank Data\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nVisualising Historical Data\n\n\n\n\n\n\n\npublication-workflow\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "risk_and_return.html",
-    "href": "risk_and_return.html",
-    "title": "Series: Estimating Risk and Return",
-    "section": "",
-    "text": "Estimate Financial Risk\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\n\n\nLes 10 formules les plus utilisées en finance de marché\n\n\n\n\n\n\n\n\n\n\n\n\n5 min\n\n\n\n\n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\n\n\n\n\n\n8 min\n\n\n\n\n\n\n\n\nBla bla\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/risk_and_return/test.html",
-    "href": "posts/risk_and_return/test.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "posts/risk_and_return/test.html#titre-pipo",
-    "href": "posts/risk_and_return/test.html#titre-pipo",
-    "title": "",
-    "section": "titre pipo",
-    "text": "titre pipo\n\n\n\n\nsequenceDiagram\n  participant Alice\n  participant Bob\n  Alice-&gt;&gt;John: Hello John, how are you?\n  loop Healthcheck\n    John-&gt;&gt;John: Fight against hypochondria\n  end\n  Note right of John: Rational thoughts &lt;br/&gt;prevail!\n  John--&gt;&gt;Alice: Great!\n  John-&gt;&gt;Bob: How about you?\n  Bob--&gt;&gt;John: Jolly good!"
-  },
-  {
-    "objectID": "posts/data-and-apis/exploring-worldbank-api.html",
-    "href": "posts/data-and-apis/exploring-worldbank-api.html",
-    "title": "Exploring the Worldbank API (WBGAPI)",
-    "section": "",
-    "text": "Code\nimport wbgapi as wb\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\n\n\nCode\nincomes = wb.income.list()\ndata = wb.data.fetch('SP.POP.TOTL', 'USA', 2000, 2020)\n\n\n\n\nCode\ndata\n\n\n&lt;generator object fetch at 0x7fcd1d5f7dd0&gt;"
-  },
-  {
-    "objectID": "posts/data-and-apis/test_wb.html",
-    "href": "posts/data-and-apis/test_wb.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "posts/data-and-apis/test_wb.html#installation",
-    "href": "posts/data-and-apis/test_wb.html#installation",
-    "title": "",
-    "section": "Installation",
-    "text": "Installation\nTo start, ensure that you have the WBGAPI library installed. If not, you can do so using pip:\npip install wbgapi"
-  },
-  {
-    "objectID": "posts/data-and-apis/test_wb.html#setting-the-stage",
-    "href": "posts/data-and-apis/test_wb.html#setting-the-stage",
-    "title": "",
-    "section": "Setting the Stage",
-    "text": "Setting the Stage\nFirstly, we need to import the necessary libraries. WBGAPI will be used to gather data, pandas for data manipulation, and matplotlib for visualisation.\nimport wbgapi as wb\nimport pandas as pd\nimport matplotlib.pyplot as plt"
-  },
-  {
-    "objectID": "posts/data-and-apis/test_wb.html#use-case-1-gdp-evolution-of-emerging-vs-developed-markets",
-    "href": "posts/data-and-apis/test_wb.html#use-case-1-gdp-evolution-of-emerging-vs-developed-markets",
-    "title": "",
-    "section": "Use Case 1: GDP Evolution of Emerging vs Developed Markets",
-    "text": "Use Case 1: GDP Evolution of Emerging vs Developed Markets\nGross Domestic Product (GDP) serves as a broad measure for a country’s overall economic activity. It represents the monetary value of all finished goods and services produced within a country’s borders in a specific time period.\nHere is how we can fetch the data:\n# Get income level codes for \"High income\" (developed markets) and \"Lower middle income\" and \"Upper middle income\" (emerging markets)\nincome_levels = wb.income.list().set_index('id')['name']\ndeveloped = [code for code, name in income_levels.items() if 'High income' in name]\nemerging = [code for code, name in income_levels.items() if 'middle income' in name]\n\n# Fetch GDP data (NY.GDP.MKTP.CD) for the last 30 years\nyears = list(range(1994, 2024))\ngdp_developed = wb.data.DataFrame('NY.GDP.MKTP.CD', country=developed, time=years).mean(axis=1)\ngdp_emerging = wb.data.DataFrame('NY.GDP.MKTP.CD', country=emerging, time=years).mean(axis=1)\n\n# Create a DataFrame\ndf_gdp = pd.DataFrame({'Developed Markets': gdp_developed, 'Emerging Markets': gdp_emerging})\nWe can now visualise the data:\ndf_gdp.plot(kind='line')\nplt.title('GDP Evolution: Developed vs Emerging Markets (1994-2024)')\nplt.xlabel('Year')\nplt.ylabel('GDP (Current US$)')\nplt.show()"
-  },
-  {
-    "objectID": "posts/data-and-apis/test_wb.html#use-case-2-gdp-per-capita-evolution-for-selected-countries",
-    "href": "posts/data-and-apis/test_wb.html#use-case-2-gdp-per-capita-evolution-for-selected-countries",
-    "title": "",
-    "section": "Use Case 2: GDP per Capita Evolution for Selected Countries",
-    "text": "Use Case 2: GDP per Capita Evolution for Selected Countries\nGDP per capita is a measure of the total output of a country that takes the GDP and divides it by the number of people in that country. The countries we will focus on are the USA, France, Germany, Japan, China, and India.\nFetching the data is straightforward:\n# Specify countries and fetch data for GDP per capita (NY.GDP.PCAP.CD)\ncountries = ['USA', 'FRA', 'DEU', 'JPN', 'CHN', 'IND']\ndf_gdp_pc = wb.data.DataFrame('NY.GDP.PCAP.CD', country=countries, time=years)\nAnd let’s visualise this:\ndf_gdp_pc.plot(kind='line')\nplt.title('GDP per Capita\n\n Evolution: USA, France, Germany, Japan, China, India (1994-2024)')\nplt.xlabel('Year')\nplt.ylabel('GDP per Capita (Current US$)')\nplt.show()"
-  },
-  {
-    "objectID": "posts/data-and-apis/test_wb.html#conclusion",
-    "href": "posts/data-and-apis/test_wb.html#conclusion",
-    "title": "",
-    "section": "Conclusion",
-    "text": "Conclusion\nWorld Bank data provides invaluable insight into the world’s economic trends, and the WBGAPI library is an incredibly useful tool for extracting this data in an easy and efficient manner. It enables researchers, analysts, and policymakers to gauge economic performance, identify trends, and make evidence-based decisions.\nWhether you are a student, economist, or data enthusiast, the potential of such data is boundless. By coupling World Bank data with Python’s analytical and visualisation capabilities, you can make economic trends come alive, allowing for more profound, insightful analysis and decision-making."
-  },
-  {
-    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html",
-    "href": "posts/tutorials/en/setting-up-a-python-workstation.html",
-    "title": "Setting up a python development workstation",
-    "section": "",
-    "text": "## Introduction"
-  },
-  {
     "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#introduction",
     "href": "posts/tutorials/en/setting-up-a-python-workstation.html#introduction",
     "title": "Setting up a python development workstation",
@@ -509,5 +446,47 @@
     "title": "Setting up a python development workstation",
     "section": "Key Considerations for this Job",
     "text": "Key Considerations for this Job\nIn the world of financial analysis, always ensure you understand the data you’re dealing with and the calculations you’re performing. Never hesitate to go beyond the libraries and tools used here—Python has a vast ecosystem, and there’s always more to learn!\nRemember, coding and financial analysis are both iterative processes. Keep refining your skills and knowledge, and soon you’ll be slicing and dicing financial data like a pro.\nKeywords: Python, Finance, Financial Analysis, Visual Studio Code, Miniconda, Virtual Environment, pandas, matplotlib, seaborn, yfinance, pyportfolioopt, Jupyter Notebook, Portfolio Optimisation, Risk Metrics, Return Metrics, Efficient Frontier, ETFs."
+  },
+  {
+    "objectID": "archive.html",
+    "href": "archive.html",
+    "title": "Archive",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Portfolio Construction",
+    "section": "",
+    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the entire asset management and financial markets industry’s value chain.\nIn this blog, I will document here my findings and experiments, notably in Python, Jupyter and along themes like portfolio optimisation and reproducible research.\nIn my different roles, I have developed and deployed a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\n\n\n\n\nPortfolio Optimisation with Python\nRisks and Returns 101\nGood Finance DataSources available to everyone\n\n\n\n\n\nAutomating Powerpoint\nNice Pictures with Python\n\n\n\n\n\nAutomating Powerpoint\nNice Pictures with Python\n\n\n\n\n\nAutomating Powerpoint\nNice Pictures with Python"
+  },
+  {
+    "objectID": "index.html#welcome-to-portfolio-geek",
+    "href": "index.html#welcome-to-portfolio-geek",
+    "title": "Portfolio Construction",
+    "section": "",
+    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the entire asset management and financial markets industry’s value chain.\nIn this blog, I will document here my findings and experiments, notably in Python, Jupyter and along themes like portfolio optimisation and reproducible research.\nIn my different roles, I have developed and deployed a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the asset management and capital markets industry’s value chain.\nIn my different roles, I have developed and deployed a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\nFind me on Linkedin\n\nWhy this blog?\nWhat struck me the most when I started my career in finance was the knowledge asymetry between finance professionals and end clients. Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts still sound fairly exotic or technical to many investors.\nHere, I will try to demystify financial analysis and provide ideas and starting points in order to put theory into practice.\nIn most articles, you should be able to copy, run and modify the code behind the analysis. This should help you to directly use many of the tools presented. The entire source is available on Github"
+  },
+  {
+    "objectID": "all_posts.html",
+    "href": "all_posts.html",
+    "title": "All Posts",
+    "section": "",
+    "text": "Analyzing Equity long Term Returns with Python\n\n\n\n\n\n\n\ntutorial\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nExploring the Worldbank API (WBGAPI)\n\n\n\n\n\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 5, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started with Eurostat API\n\n\n\n\n\n\n\nen\n\n\n101\n\n\ndata\n\n\napi\n\n\n\n\n\n\n\n\n\n\n\nApr 15, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nLes 10 formules les plus utilisées en finance de marché\n\n\n\n\n\n\n\nfr\n\n\nfinance\n\n\ntutorial\n\n\n101\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nObtenir la valorisation de plusieurs titres avec Python et Alpha Vantage\n\n\n\n\n\n\n\nfr\n\n\nvaluation\n\n\nfundamental\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-construction\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nSetting up a python development workstation\n\n\n\n\n\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 6, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nUsing WBGAPI: A Step-By-Step Guide to Access World Bank Data\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nVisualising Historical Data\n\n\n\n\n\n\n\npublication-workflow\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "risk_and_return.html",
+    "href": "risk_and_return.html",
+    "title": "Series: Estimating Risk and Return",
+    "section": "",
+    "text": "Estimate Financial Risk\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\n\n\nLes 10 formules les plus utilisées en finance de marché\n\n\n\n\n\n\n\n\n\n\n\n\n5 min\n\n\n\n\n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\n\n\n\n\n\n8 min\n\n\n\n\n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   }
 ]
