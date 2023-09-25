@@ -1,0 +1,3 @@
+Write an article  describing the necessary steps to use the wbgapi, the api to access the WorldBank API.
+Format the article in markdown, in a good british english level.
+You should be pleasant to ready, dynamic but stay professional, with clear and concise sentences without jargon.
