@@ -1,6 +1,6 @@
 ---
 page-layout: full
-
+code-tools: false
 ---
 
 ::: {.grid}
