@@ -1,1 +1,3 @@
-CURR_PROJECT = presentation
+FIGSIZE_WIDTH="4"
+FIGSIZE_HEIGHT="6"
+MPL_STYLE="basic"

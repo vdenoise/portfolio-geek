@@ -2,13 +2,15 @@ project:
   type: default
   output-dir: presos
   
-
   render: 
-    - posts/video/fr/*.qmd
-    - posts/video/fr/*.ipynb
-    - posts/video/en/*.qmd
-    - posts/video/en/*.ipynb
+    - posts//*.qmd
+    - posts/tutorials/en/*.ipynb
 
 format:
   revealjs:
-    theme: [simple, preso-backbboard-halfwidth.scss]
+    theme: [dark, preso-whiteboard-halfwidth.scss]
+    execute: true
+    code-fold: true
+    code-tools: true
+    freeze: auto
+    chalkboard: true

@@ -2,15 +2,13 @@ project:
   type: website
   output-dir: docs
 
-execute:
-  freeze: true
-
 format:
   html:
     author: Vincent D.
     theme: yeti
     css: styles.css
     execute: True
+    freeze: False
     code-fold: true
     code-line-numbers: true
     code-tools:

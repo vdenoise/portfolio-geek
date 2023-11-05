@@ -1,10 +1,15 @@
 
 text.color : (0.2,0.2,0.2)
+figure.facecolor: white
+figure.edgecolor: white
 
 # AXES
 axes.titlesize : 12
 axes.labelsize : 10
-axes.edgecolor : (0.1,0.1,0.1) #Normalized RGB colours (from 0 to 1 instead of 0 to 255)
+axes.edgecolor : (0.2,0.2,0.2) #Normalized RGB colours (from 0 to 1 instead of 0 to 255)
+axes.facecolor: white
+
+
 axes.labelcolor : (0.1,0.1,0.1)
 axes.linewidth : 1
 axes.spines.top : False
@@ -19,8 +24,8 @@ grid.linestyle : --
 grid.linewidth : 0.6
 
 # LINES
-axes.prop_cycle : cycler('color', [ '0046b8', '2464c9', '4d87e3', '7899cf', '8ea1bf']) #hex colours
-lines.linewidth : 1.5
+axes.prop_cycle : cycler('color', [ '394494', 'f55656', '1cb981', 'afb7be', '383839']) #hex colours
+lines.linewidth : 2
 lines.markeredgewidth : 0.0
 
 # SCATTER PLOT

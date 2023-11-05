@@ -1,0 +1,59 @@
+text.color : (0.22,0.27,0.58)   # (0.2,0.2,0.2)
+figure.facecolor: white
+figure.edgecolor: white 
+font.size: 12
+
+
+# AXES
+axes.titlesize : 12
+axes.labelsize : 10
+axes.edgecolor : (0.22,0.27,0.58) #(0.2,0.2,0.2) #Normalized RGB colours (from 0 to 1 instead of 0 to 255)
+axes.facecolor: white
+
+
+axes.labelcolor : (0.22,0.27,0.58)   #(0.1,0.1, 0.1)
+axes.linewidth : 1
+axes.spines.top : False
+axes.spines.right : False
+axes.spines.bottom : True
+axes.spines.left : True
+
+# GRID 
+axes.grid : False
+axes.grid.axis: y
+grid.alpha : 0.7
+grid.linestyle : --
+grid.linewidth : 0.6
+
+# LINES
+axes.prop_cycle : cycler('color', [ '394494', 'f55656', '1cb981', 'afb7be', '383839']) #hex colours
+lines.linewidth : 2
+lines.markeredgewidth : 0.0
+
+# SCATTER PLOT
+scatter.marker : .
+
+# TICKS
+xtick.labelsize : 10
+xtick.alignment: right
+xtick.color: (0.22,0.27,0.58) # (0.2,0.2,0.2)
+xtick.direction : in
+ytick.labelsize : 10
+ytick.color: (0.22,0.27,0.58)  #(0.2,0.2,0.2)
+ytick.direction : in
+
+# AXES LABELS
+xaxis.labellocation: right
+yaxis.labellocation: top
+
+# FIGURE OUTPUT 
+figure.figsize  : 8,4
+figure.dpi : 150
+savefig.dpi : 200
+
+# FONT
+font.family  : Marker Felt
+font.weight  : bold
+
+legend.fancybox: False
+legend.frameon:  False

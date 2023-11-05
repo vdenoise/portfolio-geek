@@ -1,5 +1,14 @@
 [
   {
+    "listing": "/risk_and_return.html",
+    "items": [
+      "/posts/risk_and_return/estimating-portfolio-risk.html",
+      "/posts/risk_and_return/10-formules-importantes-finance-marche.html",
+      "/posts/risk_and_return/optimise-portfolios-with-python.html",
+      "/posts/risk_and_return/estimating_risk.html"
+    ]
+  },
+  {
     "listing": "/archive.html",
     "items": []
   },
@@ -17,15 +26,6 @@
       "/posts/tutorials/en/setting-up-a-python-workstation.html",
       "/posts/data-and-apis/test_wb.html",
       "/posts/publication-workflow/visualizing-historical-data.html"
-    ]
-  },
-  {
-    "listing": "/risk_and_return.html",
-    "items": [
-      "/posts/risk_and_return/estimating-portfolio-risk.html",
-      "/posts/risk_and_return/10-formules-importantes-finance-marche.html",
-      "/posts/risk_and_return/optimise-portfolios-with-python.html",
-      "/posts/risk_and_return/estimating_risk.html"
     ]
   }
 ]

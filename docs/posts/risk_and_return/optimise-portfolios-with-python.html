@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.361">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -304,34 +304,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-14"><a href="#cb3-14"></a>df <span class="op">=</span> df.<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[                       0%                       ][                       0%                       ]</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[********************  42%                       ]  5 of 12 completed[********************  42%                       ]  5 of 12 completed</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[********************  42%                       ]  5 of 12 completed</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[**********************67%*******                ]  8 of 12 completed</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[**********************67%*******                ]  8 of 12 completed</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[**********************83%***************        ]  10 of 12 completed</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[**********************83%***************        ]  10 of 12 completed</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[*********************100%***********************]  12 of 12 completed</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code></code></pre>
+<pre><code>[                       0%                       ][                       0%                       ][************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[********************  42%                       ]  5 of 12 completed[********************  42%                       ]  5 of 12 completed[********************  42%                       ]  5 of 12 completed[**********************67%*******                ]  8 of 12 completed[**********************67%*******                ]  8 of 12 completed[**********************83%***************        ]  10 of 12 completed[**********************83%***************        ]  10 of 12 completed[*********************100%***********************]  12 of 12 completed</code></pre>
 </div>
 </div>
 <section id="data-gathering-results" class="level3">
@@ -340,8 +313,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="4">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb14-2"><a href="#cb14-2"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="30">
 <div>
@@ -440,9 +413,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="5">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb15-2"><a href="#cb15-2"></a><span class="co"># Same table, but this time, normalised</span></span>
-<span id="cb15-3"><a href="#cb15-3"></a>(df<span class="op">/</span>df.iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">1</span>).tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="co"># Same table, but this time, normalised</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>(df<span class="op">/</span>df.iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">1</span>).tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="31">
 <div>
@@ -542,25 +515,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="6">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb16-2"><a href="#cb16-2"></a></span>
-<span id="cb16-3"><a href="#cb16-3"></a><span class="co"># Normalise to 100</span></span>
-<span id="cb16-4"><a href="#cb16-4"></a>normalised_data <span class="op">=</span> (df<span class="op">/</span>df.iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>)</span>
-<span id="cb16-5"><a href="#cb16-5"></a></span>
-<span id="cb16-6"><a href="#cb16-6"></a><span class="co"># A bit of data wrangling</span></span>
-<span id="cb16-7"><a href="#cb16-7"></a>transposed_data <span class="op">=</span> normalised_data.tail(<span class="dv">1</span>).reset_index().transpose()</span>
-<span id="cb16-8"><a href="#cb16-8"></a>transposed_data <span class="op">=</span> transposed_data.iloc[<span class="dv">1</span>:<span class="bu">len</span>(transposed_data)]</span>
-<span id="cb16-9"><a href="#cb16-9"></a>transposed_data <span class="op">=</span> transposed_data.rename(columns<span class="op">=</span>{<span class="dv">0</span>: <span class="st">"Last Value"</span>})</span>
-<span id="cb16-10"><a href="#cb16-10"></a></span>
-<span id="cb16-11"><a href="#cb16-11"></a><span class="co"># We want a bar chart sorted by decreaseing values</span></span>
-<span id="cb16-12"><a href="#cb16-12"></a>transposed_data <span class="op">=</span> transposed_data.sort_values(by<span class="op">=</span><span class="st">"Last Value"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb16-13"><a href="#cb16-13"></a></span>
-<span id="cb16-14"><a href="#cb16-14"></a><span class="co"># Theming Seaborn results</span></span>
-<span id="cb16-15"><a href="#cb16-15"></a>sns.set_theme()</span>
-<span id="cb16-16"><a href="#cb16-16"></a></span>
-<span id="cb16-17"><a href="#cb16-17"></a><span class="co"># Draw</span></span>
-<span id="cb16-18"><a href="#cb16-18"></a>transposed_data.plot.bar(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb16-19"><a href="#cb16-19"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="co"># Normalise to 100</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a>normalised_data <span class="op">=</span> (df<span class="op">/</span>df.iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>)</span>
+<span id="cb7-5"><a href="#cb7-5"></a></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="co"># A bit of data wrangling</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a>transposed_data <span class="op">=</span> normalised_data.tail(<span class="dv">1</span>).reset_index().transpose()</span>
+<span id="cb7-8"><a href="#cb7-8"></a>transposed_data <span class="op">=</span> transposed_data.iloc[<span class="dv">1</span>:<span class="bu">len</span>(transposed_data)]</span>
+<span id="cb7-9"><a href="#cb7-9"></a>transposed_data <span class="op">=</span> transposed_data.rename(columns<span class="op">=</span>{<span class="dv">0</span>: <span class="st">"Last Value"</span>})</span>
+<span id="cb7-10"><a href="#cb7-10"></a></span>
+<span id="cb7-11"><a href="#cb7-11"></a><span class="co"># We want a bar chart sorted by decreaseing values</span></span>
+<span id="cb7-12"><a href="#cb7-12"></a>transposed_data <span class="op">=</span> transposed_data.sort_values(by<span class="op">=</span><span class="st">"Last Value"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb7-13"><a href="#cb7-13"></a></span>
+<span id="cb7-14"><a href="#cb7-14"></a><span class="co"># Theming Seaborn results</span></span>
+<span id="cb7-15"><a href="#cb7-15"></a>sns.set_theme()</span>
+<span id="cb7-16"><a href="#cb7-16"></a></span>
+<span id="cb7-17"><a href="#cb7-17"></a><span class="co"># Draw</span></span>
+<span id="cb7-18"><a href="#cb7-18"></a>transposed_data.plot.bar(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb7-19"><a href="#cb7-19"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-7-output-1.png" width="800" height="508"></p>
@@ -575,18 +548,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="7">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb17-2"><a href="#cb17-2"></a></span>
-<span id="cb17-3"><a href="#cb17-3"></a><span class="co"># Theming Seaborn results</span></span>
-<span id="cb17-4"><a href="#cb17-4"></a>sns.set_theme()</span>
-<span id="cb17-5"><a href="#cb17-5"></a></span>
-<span id="cb17-6"><a href="#cb17-6"></a><span class="co"># Plot the time series</span></span>
-<span id="cb17-7"><a href="#cb17-7"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
-<span id="cb17-8"><a href="#cb17-8"></a></span>
-<span id="cb17-9"><a href="#cb17-9"></a><span class="co"># Legends and Axis titles</span></span>
-<span id="cb17-10"><a href="#cb17-10"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>normalised_data)</span>
-<span id="cb17-11"><a href="#cb17-11"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb17-12"><a href="#cb17-12"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="co"># Theming Seaborn results</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a>sns.set_theme()</span>
+<span id="cb8-5"><a href="#cb8-5"></a></span>
+<span id="cb8-6"><a href="#cb8-6"></a><span class="co"># Plot the time series</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
+<span id="cb8-8"><a href="#cb8-8"></a></span>
+<span id="cb8-9"><a href="#cb8-9"></a><span class="co"># Legends and Axis titles</span></span>
+<span id="cb8-10"><a href="#cb8-10"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>normalised_data)</span>
+<span id="cb8-11"><a href="#cb8-11"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb8-12"><a href="#cb8-12"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-8-output-1.png" width="969" height="501"></p>
@@ -607,8 +580,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="8">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a>weekly_returns <span class="op">=</span> df.resample(<span class="st">"W"</span>).last().pct_change()</span>
-<span id="cb18-2"><a href="#cb18-2"></a>((weekly_returns.std()<span class="op">*</span>math.sqrt(<span class="dv">52</span>)<span class="op">*</span><span class="dv">100</span>).sort_values()).plot.bar()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>weekly_returns <span class="op">=</span> df.resample(<span class="st">"W"</span>).last().pct_change()</span>
+<span id="cb9-2"><a href="#cb9-2"></a>((weekly_returns.std()<span class="op">*</span>math.sqrt(<span class="dv">52</span>)<span class="op">*</span><span class="dv">100</span>).sort_values()).plot.bar()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-9-output-1.png" width="569" height="436"></p>
@@ -622,7 +595,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="9">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1"></a>sns.heatmap(weekly_returns.corr())<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a>sns.heatmap(weekly_returns.corr())<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-10-output-1.png" width="576" height="441"></p>
@@ -631,15 +604,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-tags="[]" data-execution_count="10">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb20-2"><a href="#cb20-2"></a><span class="im">from</span> pypfopt <span class="im">import</span> risk_models</span>
-<span id="cb20-3"><a href="#cb20-3"></a><span class="im">from</span> pypfopt <span class="im">import</span> plotting</span>
-<span id="cb20-4"><a href="#cb20-4"></a></span>
-<span id="cb20-5"><a href="#cb20-5"></a><span class="co"># Calculate expected returns and sample covariance</span></span>
-<span id="cb20-6"><a href="#cb20-6"></a>mu <span class="op">=</span> expected_returns.mean_historical_return(df)</span>
-<span id="cb20-7"><a href="#cb20-7"></a>sample_cov <span class="op">=</span> risk_models.sample_cov(df, frequency<span class="op">=</span><span class="dv">252</span>)</span>
-<span id="cb20-8"><a href="#cb20-8"></a></span>
-<span id="cb20-9"><a href="#cb20-9"></a>S <span class="op">=</span> risk_models.CovarianceShrinkage(df).ledoit_wolf()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="im">from</span> pypfopt <span class="im">import</span> risk_models</span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="im">from</span> pypfopt <span class="im">import</span> plotting</span>
+<span id="cb11-4"><a href="#cb11-4"></a></span>
+<span id="cb11-5"><a href="#cb11-5"></a><span class="co"># Calculate expected returns and sample covariance</span></span>
+<span id="cb11-6"><a href="#cb11-6"></a>mu <span class="op">=</span> expected_returns.mean_historical_return(df)</span>
+<span id="cb11-7"><a href="#cb11-7"></a>sample_cov <span class="op">=</span> risk_models.sample_cov(df, frequency<span class="op">=</span><span class="dv">252</span>)</span>
+<span id="cb11-8"><a href="#cb11-8"></a></span>
+<span id="cb11-9"><a href="#cb11-9"></a>S <span class="op">=</span> risk_models.CovarianceShrinkage(df).ledoit_wolf()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -652,15 +625,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-tags="[]" data-execution_count="11">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb21-2"><a href="#cb21-2"></a>ef <span class="op">=</span> EfficientFrontier(mu, sample_cov)</span>
-<span id="cb21-3"><a href="#cb21-3"></a></span>
-<span id="cb21-4"><a href="#cb21-4"></a><span class="co"># We create 2 efficient frontiers</span></span>
-<span id="cb21-5"><a href="#cb21-5"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb21-6"><a href="#cb21-6"></a>plotting.plot_efficient_frontier(ef, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb21-7"><a href="#cb21-7"></a>ax.set_title(<span class="st">"Asset Classes &amp; Efficient Frontier"</span>)</span>
-<span id="cb21-8"><a href="#cb21-8"></a></span>
-<span id="cb21-9"><a href="#cb21-9"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a>ef <span class="op">=</span> EfficientFrontier(mu, sample_cov)</span>
+<span id="cb12-3"><a href="#cb12-3"></a></span>
+<span id="cb12-4"><a href="#cb12-4"></a><span class="co"># We create 2 efficient frontiers</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb12-6"><a href="#cb12-6"></a>plotting.plot_efficient_frontier(ef, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb12-7"><a href="#cb12-7"></a>ax.set_title(<span class="st">"Asset Classes &amp; Efficient Frontier"</span>)</span>
+<span id="cb12-8"><a href="#cb12-8"></a></span>
+<span id="cb12-9"><a href="#cb12-9"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-12-output-1.png" width="655" height="484"></p>
@@ -672,20 +645,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="12">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb22-2"><a href="#cb22-2"></a></span>
-<span id="cb22-3"><a href="#cb22-3"></a><span class="co"># Find and plot the tangency portfolio</span></span>
-<span id="cb22-4"><a href="#cb22-4"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb22-5"><a href="#cb22-5"></a>ef2 <span class="op">=</span> EfficientFrontier(mu, S) </span>
-<span id="cb22-6"><a href="#cb22-6"></a>plotting.plot_efficient_frontier(ef2, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb22-7"><a href="#cb22-7"></a></span>
-<span id="cb22-8"><a href="#cb22-8"></a>ef3 <span class="op">=</span> EfficientFrontier(mu, S) </span>
-<span id="cb22-9"><a href="#cb22-9"></a></span>
-<span id="cb22-10"><a href="#cb22-10"></a>ef3.max_sharpe()</span>
-<span id="cb22-11"><a href="#cb22-11"></a>ret_tangent, std_tangent, _ <span class="op">=</span> ef3.portfolio_performance()</span>
-<span id="cb22-12"><a href="#cb22-12"></a>ax.scatter(std_tangent, ret_tangent, marker<span class="op">=</span><span class="st">"*"</span>, s<span class="op">=</span><span class="dv">100</span>, c<span class="op">=</span><span class="st">"r"</span>, label<span class="op">=</span><span class="st">"Max Sharpe"</span>)</span>
-<span id="cb22-13"><a href="#cb22-13"></a>ax.set_title(<span class="st">"Asset Classes, Efficient Frontier &amp; Max Sharpe portfolio"</span>)</span>
-<span id="cb22-14"><a href="#cb22-14"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a></span>
+<span id="cb13-3"><a href="#cb13-3"></a><span class="co"># Find and plot the tangency portfolio</span></span>
+<span id="cb13-4"><a href="#cb13-4"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb13-5"><a href="#cb13-5"></a>ef2 <span class="op">=</span> EfficientFrontier(mu, S) </span>
+<span id="cb13-6"><a href="#cb13-6"></a>plotting.plot_efficient_frontier(ef2, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb13-7"><a href="#cb13-7"></a></span>
+<span id="cb13-8"><a href="#cb13-8"></a>ef3 <span class="op">=</span> EfficientFrontier(mu, S) </span>
+<span id="cb13-9"><a href="#cb13-9"></a></span>
+<span id="cb13-10"><a href="#cb13-10"></a>ef3.max_sharpe()</span>
+<span id="cb13-11"><a href="#cb13-11"></a>ret_tangent, std_tangent, _ <span class="op">=</span> ef3.portfolio_performance()</span>
+<span id="cb13-12"><a href="#cb13-12"></a>ax.scatter(std_tangent, ret_tangent, marker<span class="op">=</span><span class="st">"*"</span>, s<span class="op">=</span><span class="dv">100</span>, c<span class="op">=</span><span class="st">"r"</span>, label<span class="op">=</span><span class="st">"Max Sharpe"</span>)</span>
+<span id="cb13-13"><a href="#cb13-13"></a>ax.set_title(<span class="st">"Asset Classes, Efficient Frontier &amp; Max Sharpe portfolio"</span>)</span>
+<span id="cb13-14"><a href="#cb13-14"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-13-output-1.png" width="655" height="484"></p>
@@ -697,22 +670,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="13">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb23-2"><a href="#cb23-2"></a></span>
-<span id="cb23-3"><a href="#cb23-3"></a><span class="co"># Plot random portfolios</span></span>
-<span id="cb23-4"><a href="#cb23-4"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb23-5"><a href="#cb23-5"></a>n_samples <span class="op">=</span> <span class="dv">10000</span></span>
-<span id="cb23-6"><a href="#cb23-6"></a>w <span class="op">=</span> np.random.dirichlet(np.ones(<span class="bu">len</span>(mu)), n_samples)</span>
-<span id="cb23-7"><a href="#cb23-7"></a>rets <span class="op">=</span> w.dot(mu)</span>
-<span id="cb23-8"><a href="#cb23-8"></a>stds <span class="op">=</span> np.sqrt((w.T <span class="op">*</span> (S <span class="op">@</span> w.T)).<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>))</span>
-<span id="cb23-9"><a href="#cb23-9"></a>sharpes <span class="op">=</span> rets <span class="op">/</span> stds</span>
-<span id="cb23-10"><a href="#cb23-10"></a>ax.scatter(stds, rets, marker<span class="op">=</span><span class="st">"."</span>, c<span class="op">=</span>sharpes, cmap<span class="op">=</span><span class="st">"viridis_r"</span>)</span>
-<span id="cb23-11"><a href="#cb23-11"></a></span>
-<span id="cb23-12"><a href="#cb23-12"></a><span class="co"># Format</span></span>
-<span id="cb23-13"><a href="#cb23-13"></a>ax.set_title(<span class="st">"Random portfolios, based on the same asset classes"</span>)</span>
-<span id="cb23-14"><a href="#cb23-14"></a><span class="co">#ax.legend()</span></span>
-<span id="cb23-15"><a href="#cb23-15"></a>plt.tight_layout()</span>
-<span id="cb23-16"><a href="#cb23-16"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a></span>
+<span id="cb14-3"><a href="#cb14-3"></a><span class="co"># Plot random portfolios</span></span>
+<span id="cb14-4"><a href="#cb14-4"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb14-5"><a href="#cb14-5"></a>n_samples <span class="op">=</span> <span class="dv">10000</span></span>
+<span id="cb14-6"><a href="#cb14-6"></a>w <span class="op">=</span> np.random.dirichlet(np.ones(<span class="bu">len</span>(mu)), n_samples)</span>
+<span id="cb14-7"><a href="#cb14-7"></a>rets <span class="op">=</span> w.dot(mu)</span>
+<span id="cb14-8"><a href="#cb14-8"></a>stds <span class="op">=</span> np.sqrt((w.T <span class="op">*</span> (S <span class="op">@</span> w.T)).<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>))</span>
+<span id="cb14-9"><a href="#cb14-9"></a>sharpes <span class="op">=</span> rets <span class="op">/</span> stds</span>
+<span id="cb14-10"><a href="#cb14-10"></a>ax.scatter(stds, rets, marker<span class="op">=</span><span class="st">"."</span>, c<span class="op">=</span>sharpes, cmap<span class="op">=</span><span class="st">"viridis_r"</span>)</span>
+<span id="cb14-11"><a href="#cb14-11"></a></span>
+<span id="cb14-12"><a href="#cb14-12"></a><span class="co"># Format</span></span>
+<span id="cb14-13"><a href="#cb14-13"></a>ax.set_title(<span class="st">"Random portfolios, based on the same asset classes"</span>)</span>
+<span id="cb14-14"><a href="#cb14-14"></a><span class="co">#ax.legend()</span></span>
+<span id="cb14-15"><a href="#cb14-15"></a>plt.tight_layout()</span>
+<span id="cb14-16"><a href="#cb14-16"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="optimise-portfolios-with-python_files/figure-html/cell-14-output-1.png" width="657" height="464"></p>

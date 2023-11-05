@@ -2,6 +2,8 @@
 # .15 = dark_gray
 # .8 = light_gray
 figure.facecolor: white
+font.size: 12
+
 text.color: .15
 axes.labelcolor: .15
 legend.frameon: False
@@ -21,6 +23,8 @@ axes.grid: True
 axes.facecolor: EAEAF2
 axes.edgecolor: white
 axes.linewidth: 0
+lines.linewidth: 2
+
 grid.color: white
 xtick.major.size: 0
 ytick.major.size: 0
