@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -162,10 +196,85 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="test-title" class="level1">
-<h1>test title</h1>
+<section id="setting-up-your-financial-analysis-lab-with-python-and-visual-studio" class="level1">
+<h1>Setting Up Your Financial Analysis Lab with Python and Visual Studio</h1>
+<p>Greetings, Financial Wizards of the Future! Today, we’re going to embark on an exciting expedition - setting up a cutting-edge financial analysis lab with Python and Visual Studio. We’ll work on deploying various Python libraries, such as <code>pandas</code>, <code>matplotlib</code>, <code>seaborn</code>, <code>yfinance</code>, and <code>pyportfolioopt</code> in our virtual environment. By the end of this guide, you’ll be able to perform intricate financial analyses, portfolio backtesting, and more. Let’s get started!</p>
+<section id="setting-up-visual-studio" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-visual-studio">Setting Up Visual Studio</h2>
+<p>Our journey starts with installing Visual Studio Code, a versatile and user-friendly text editor. This is our base camp - the place from where all our future explorations commence. It’s popular among developers due to its simplicity, efficiency, and range of extensions for different programming languages and tasks. Download the latest version from the <a href="https://code.visualstudio.com/">official Visual Studio website</a> and follow the intuitive setup instructions.</p>
+</section>
+<section id="installing-anaconda-pip-and-setting-up-conda-environment" class="level2">
+<h2 class="anchored" data-anchor-id="installing-anaconda-pip-and-setting-up-conda-environment">Installing Anaconda, pip and Setting Up Conda Environment</h2>
+<p>Anaconda, an open-source distribution of Python and R, will be our next stop. It’s especially popular among data scientists due to its vast library and package accessibility. You can download Anaconda from the <a href="https://www.anaconda.com/products/distribution">official Anaconda website</a>.</p>
+<p>Once Anaconda is installed, we’ll utilise it to create a virtual environment - a self-contained setup where we can add the specific Python libraries we need for our work. To do this, open the Anaconda prompt and run the following command to create a new environment named ‘finlab’:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">conda</span> create <span class="at">--name</span> finlab python=3.8</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>After creating the environment, activate it with:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">conda</span> activate finlab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We’ll also utilise pip, a package manager for Python, to install some libraries. If it’s not already installed, you can do so by running:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">conda</span> install pip</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="adding-libraries-to-our-python-environment" class="level2">
+<h2 class="anchored" data-anchor-id="adding-libraries-to-our-python-environment">Adding Libraries to Our Python Environment</h2>
+<p>Let’s move to adding some indispensable Python libraries to our environment.</p>
+<section id="pandas" class="level3">
+<h3 class="anchored" data-anchor-id="pandas">Pandas</h3>
+<p><code>Pandas</code> is a powerhouse in data manipulation and analysis. It provides fast, flexible, and expressive data structures, making working with “relational” or “labelled” data both easy and intuitive. To install it, use the command:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">pip</span> install pandas</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="matplotlib-and-seaborn" class="level3">
+<h3 class="anchored" data-anchor-id="matplotlib-and-seaborn">Matplotlib and Seaborn</h3>
+<p><code>Matplotlib</code> and <code>Seaborn</code> are your go-to tools for data visualisation in Python. <code>Matplotlib</code> provides a robust foundation for creating static, animated, and interactive plots, while <code>Seaborn</code> is a high-level interface for drawing attractive and informative statistical graphics.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">pip</span> install matplotlib seaborn</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="yfinance" class="level3">
+<h3 class="anchored" data-anchor-id="yfinance">yfinance</h3>
+<p><code>yfinance</code> offers a nifty way to download historical market data from Yahoo! finance. It’s essential for sourcing real-world financial data for our backtesting.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="ex">pip</span> install yfinance</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="pyportfolioopt" class="level3">
+<h3 class="anchored" data-anchor-id="pyportfolioopt">PyPortfolioOpt</h3>
+<p>Finally, we’ll install <code>pyportfolioopt</code>, a library that provides advanced portfolio optimisation techniques. It enables efficient frontier calculation, risk analysis, and more.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="ex">pip</span> install PyPortfolioOpt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="starting-with-visual-studio-code" class="level2">
+<h2 class="anchored" data-anchor-id="starting-with-visual-studio-code">Starting with Visual Studio Code</h2>
+<p>Now, with our environment fully set up, we can launch Visual Studio Code. Make sure to select the ‘finlab’ environment we created as your Python interpreter.</p>
+</section>
+<section id="gathering-data-and-plotting-the-efficient-frontier" class="level2">
+<h2 class="anchored" data-anchor-id="gathering-data-and-plotting-the-efficient-frontier">Gathering Data and Plotting the Efficient Frontier</h2>
+<p>Let’s start by importing the necessary libraries and fetching the historical data for SPY (S&amp;P 500 ETF), QQQ (NASDAQ 100 ETF), and AGG (US Aggregate Bond ETF) using <code>yfinance</code>.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="im">import</span> yfinance <span class="im">as</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a></span>
+<span id="cb8-3"><a href="#cb8-3"></a> yf</span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="im">from</span> pypfopt.efficient_frontier <span class="im">import</span> EfficientFrontier</span>
+<span id="cb8-6"><a href="#cb8-6"></a><span class="im">from</span> pypfopt <span class="im">import</span> risk_models, expected_returns</span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb8-8"><a href="#cb8-8"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb8-9"><a href="#cb8-9"></a></span>
+<span id="cb8-10"><a href="#cb8-10"></a>tickers <span class="op">=</span> [<span class="st">'SPY'</span>, <span class="st">'QQQ'</span>, <span class="st">'AGG'</span>]</span>
+<span id="cb8-11"><a href="#cb8-11"></a>data <span class="op">=</span> yf.download(tickers, start<span class="op">=</span><span class="st">"2016-01-01"</span>, end<span class="op">=</span><span class="st">"2023-06-25"</span>)[<span class="st">'Adj Close'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Next, we calculate the expected returns and the annualised sample covariance matrix of the asset returns. We then use these to instantiate the <code>EfficientFrontier</code> object.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>mu <span class="op">=</span> expected_returns.mean_historical_return(data)</span>
+<span id="cb9-2"><a href="#cb9-2"></a>S <span class="op">=</span> risk_models.sample_cov(data)</span>
+<span id="cb9-3"><a href="#cb9-3"></a>ef <span class="op">=</span> EfficientFrontier(mu, S)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We can now plot the efficient frontier, which represents the set of optimal portfolios that offer the highest expected return for a given level of risk.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb10-2"><a href="#cb10-2"></a>ef.plot_efficient_frontier(ax)</span>
+<span id="cb10-3"><a href="#cb10-3"></a>plt.title(<span class="st">'Efficient Frontier'</span>)</span>
+<span id="cb10-4"><a href="#cb10-4"></a>plt.xlabel(<span class="st">'Volatility'</span>)</span>
+<span id="cb10-5"><a href="#cb10-5"></a>plt.ylabel(<span class="st">'Return'</span>)</span>
+<span id="cb10-6"><a href="#cb10-6"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="wrapping-up" class="level2">
+<h2 class="anchored" data-anchor-id="wrapping-up">Wrapping Up</h2>
+<p>And voila! You’ve just set up your own financial analysis and portfolio backtesting lab. You’ve successfully taken the first step towards mastering the art of portfolio optimisation.</p>
+<p>Remember, practice makes perfect. Use your new tools, experiment with different techniques, and explore the vast universe of financial data at your fingertips. The world of financial analysis awaits you!</p>
+<p><strong>Keywords for SEO</strong>: Python, Visual Studio Code, financial analysis, portfolio backtesting, pandas, matplotlib, seaborn, yfinance, PyPortfolioOpt, efficient frontier, portfolio optimisation, Anaconda, pip, conda environment, historical market data, data visualisation, data manipulation, risk models, expected returns.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

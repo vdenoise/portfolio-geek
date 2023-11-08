@@ -204,7 +204,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p>“A quick introduction on how to gather data using Python, Pandas and Pandas_DataReader in order to easily gather historical times from Yahoo Finance.”</p>
 </blockquote>
-<p><img src="photos/banner-data-ipad.png" class="img-fluid"></p>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>To start our data analysis and portfolio construction journey, we will perform the basic - but essential - task of <strong>getting access</strong> to <strong>time series</strong> and plot them using pandas.</p>
@@ -252,16 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-11"><a href="#cb2-11"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[                       0%                       ]</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[                       0%                       ][                       0%                       ]</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[*********************100%***********************]  4 of 4 completed</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code></code></pre>
+<pre><code>[                       0%                       ][                       0%                       ][**********************75%***********            ]  3 of 4 completed[*********************100%***********************]  4 of 4 completed</code></pre>
 </div>
 </div>
 </section>
@@ -273,7 +263,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="3">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
@@ -343,10 +333,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2022-05-11</td>
-<td>100.3</td>
-<td>62.6</td>
+<td>98.5</td>
+<td>60.8</td>
 <td>172.8</td>
-<td>386.2</td>
+<td>383.4</td>
 <td>102.8</td>
 <td>62.6</td>
 <td>172.8</td>
@@ -367,10 +357,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2022-05-12</td>
-<td>100.5</td>
-<td>62.0</td>
+<td>98.6</td>
+<td>60.2</td>
 <td>170.2</td>
-<td>385.8</td>
+<td>383.0</td>
 <td>103.0</td>
 <td>62.0</td>
 <td>170.2</td>
@@ -391,10 +381,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2022-05-13</td>
-<td>100.1</td>
-<td>63.5</td>
+<td>98.2</td>
+<td>61.7</td>
 <td>168.8</td>
-<td>395.0</td>
+<td>392.2</td>
 <td>102.5</td>
 <td>63.5</td>
 <td>168.8</td>
@@ -428,7 +418,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="4">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>df[<span class="st">'Adj Close'</span>].tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>df[<span class="st">'Adj Close'</span>].tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <div>
@@ -454,24 +444,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2022-05-11</td>
-<td>100.3</td>
-<td>62.6</td>
+<td>98.5</td>
+<td>60.8</td>
 <td>172.8</td>
-<td>386.2</td>
+<td>383.4</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2022-05-12</td>
-<td>100.5</td>
-<td>62.0</td>
+<td>98.6</td>
+<td>60.2</td>
 <td>170.2</td>
-<td>385.8</td>
+<td>383.0</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2022-05-13</td>
-<td>100.1</td>
-<td>63.5</td>
+<td>98.2</td>
+<td>61.7</td>
 <td>168.8</td>
-<td>395.0</td>
+<td>392.2</td>
 </tr>
 </tbody>
 </table>
@@ -486,16 +476,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="5">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb9-3"><a href="#cb9-3"></a></span>
-<span id="cb9-4"><a href="#cb9-4"></a><span class="co"># Apply the default theme</span></span>
-<span id="cb9-5"><a href="#cb9-5"></a>sns.set_style(<span class="st">'whitegrid'</span>)</span>
-<span id="cb9-6"><a href="#cb9-6"></a></span>
-<span id="cb9-7"><a href="#cb9-7"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
-<span id="cb9-8"><a href="#cb9-8"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>df[<span class="st">'Adj Close'</span>])</span>
-<span id="cb9-9"><a href="#cb9-9"></a>p.set_ylabel(<span class="st">"Close Price"</span>)</span>
-<span id="cb9-10"><a href="#cb9-10"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb6-3"><a href="#cb6-3"></a></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="co"># Apply the default theme</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a>sns.set_style(<span class="st">'whitegrid'</span>)</span>
+<span id="cb6-6"><a href="#cb6-6"></a></span>
+<span id="cb6-7"><a href="#cb6-7"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb6-8"><a href="#cb6-8"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>df[<span class="st">'Adj Close'</span>])</span>
+<span id="cb6-9"><a href="#cb6-9"></a>p.set_ylabel(<span class="st">"Close Price"</span>)</span>
+<span id="cb6-10"><a href="#cb6-10"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="visualizing-historical-data_files/figure-html/cell-6-output-1.png" class="img-fluid"></p>
@@ -509,14 +499,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="6">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb10-2"><a href="#cb10-2"></a></span>
-<span id="cb10-3"><a href="#cb10-3"></a><span class="co"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
-<span id="cb10-4"><a href="#cb10-4"></a>normalised_ts <span class="op">=</span> (df[<span class="st">'Adj Close'</span>]<span class="op">/</span>df[<span class="st">'Adj Close'</span>].iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>)</span>
-<span id="cb10-5"><a href="#cb10-5"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
-<span id="cb10-6"><a href="#cb10-6"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>normalised_ts)</span>
-<span id="cb10-7"><a href="#cb10-7"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb10-8"><a href="#cb10-8"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="co"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a>normalised_ts <span class="op">=</span> (df[<span class="st">'Adj Close'</span>]<span class="op">/</span>df[<span class="st">'Adj Close'</span>].iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>)</span>
+<span id="cb7-5"><a href="#cb7-5"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb7-6"><a href="#cb7-6"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>normalised_ts)</span>
+<span id="cb7-7"><a href="#cb7-7"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb7-8"><a href="#cb7-8"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="visualizing-historical-data_files/figure-html/cell-7-output-1.png" class="img-fluid"></p>
@@ -530,12 +520,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="7">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># We use pct_change() to calculate the one year return</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a>ts_1y_returns <span class="op">=</span> df[<span class="st">'Adj Close'</span>].pct_change(periods<span class="op">=</span><span class="dv">252</span>)</span>
-<span id="cb11-3"><a href="#cb11-3"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
-<span id="cb11-4"><a href="#cb11-4"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>ts_1y_returns)</span>
-<span id="cb11-5"><a href="#cb11-5"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb11-6"><a href="#cb11-6"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># We use pct_change() to calculate the one year return</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>ts_1y_returns <span class="op">=</span> df[<span class="st">'Adj Close'</span>].pct_change(periods<span class="op">=</span><span class="dv">252</span>)</span>
+<span id="cb8-3"><a href="#cb8-3"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb8-4"><a href="#cb8-4"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>ts_1y_returns)</span>
+<span id="cb8-5"><a href="#cb8-5"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb8-6"><a href="#cb8-6"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="visualizing-historical-data_files/figure-html/cell-8-output-1.png" class="img-fluid"></p>
@@ -550,12 +540,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="8">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a>ts_1y_returns <span class="op">=</span> df[<span class="st">'Adj Close'</span>].pct_change(periods<span class="op">=</span><span class="dv">252</span>).rolling(window<span class="op">=</span><span class="dv">21</span>).mean()</span>
-<span id="cb12-3"><a href="#cb12-3"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
-<span id="cb12-4"><a href="#cb12-4"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>ts_1y_returns)</span>
-<span id="cb12-5"><a href="#cb12-5"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb12-6"><a href="#cb12-6"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a>ts_1y_returns <span class="op">=</span> df[<span class="st">'Adj Close'</span>].pct_change(periods<span class="op">=</span><span class="dv">252</span>).rolling(window<span class="op">=</span><span class="dv">21</span>).mean()</span>
+<span id="cb9-3"><a href="#cb9-3"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb9-4"><a href="#cb9-4"></a>p <span class="op">=</span> sns.lineplot(data<span class="op">=</span>ts_1y_returns)</span>
+<span id="cb9-5"><a href="#cb9-5"></a>p.set_ylabel(<span class="ss">f"Close Price, Basis 100 in </span><span class="sc">{</span>start_date<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-6"><a href="#cb9-6"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="visualizing-historical-data_files/figure-html/cell-9-output-1.png" class="img-fluid"></p>

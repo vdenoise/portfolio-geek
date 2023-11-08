@@ -304,7 +304,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-14"><a href="#cb3-14"></a>df <span class="op">=</span> df.<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[                       0%                       ][                       0%                       ][************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[********************  42%                       ]  5 of 12 completed[********************  42%                       ]  5 of 12 completed[********************  42%                       ]  5 of 12 completed[**********************67%*******                ]  8 of 12 completed[**********************67%*******                ]  8 of 12 completed[**********************83%***************        ]  10 of 12 completed[**********************83%***************        ]  10 of 12 completed[*********************100%***********************]  12 of 12 completed</code></pre>
+<pre><code>[                       0%                       ][                       0%                       ][************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[**********************75%***********            ]  9 of 12 completed[**********************83%***************        ]  10 of 12 completed[**********************83%***************        ]  10 of 12 completed[*********************100%***********************]  12 of 12 completed</code></pre>
 </div>
 </div>
 <section id="data-gathering-results" class="level3">
@@ -316,7 +316,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#collapse-hide</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="30">
+<div class="cell-output cell-output-display" data-execution_count="4">
 <div>
 
 
@@ -356,48 +356,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2022-02-24</td>
-<td>106.4</td>
-<td>45.4</td>
+<td>104.4</td>
+<td>45.1</td>
 <td>177.1</td>
-<td>25.0</td>
-<td>253.0</td>
-<td>421.6</td>
+<td>24.6</td>
+<td>251.1</td>
+<td>418.4</td>
 <td>14.3</td>
-<td>45.0</td>
-<td>72.0</td>
-<td>90.5</td>
-<td>212.3</td>
-<td>57.5</td>
+<td>44.7</td>
+<td>70.7</td>
+<td>87.9</td>
+<td>210.7</td>
+<td>56.6</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2022-02-25</td>
-<td>106.5</td>
-<td>46.2</td>
+<td>104.5</td>
+<td>45.9</td>
 <td>176.6</td>
-<td>25.0</td>
-<td>260.3</td>
-<td>430.9</td>
+<td>24.6</td>
+<td>258.3</td>
+<td>427.6</td>
 <td>14.0</td>
-<td>46.1</td>
-<td>74.2</td>
-<td>91.0</td>
-<td>217.0</td>
-<td>58.8</td>
+<td>45.8</td>
+<td>72.8</td>
+<td>88.4</td>
+<td>215.4</td>
+<td>57.9</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2022-02-28</td>
-<td>107.2</td>
-<td>45.6</td>
+<td>105.2</td>
+<td>45.3</td>
 <td>178.4</td>
-<td>25.2</td>
-<td>260.3</td>
-<td>430.0</td>
+<td>24.8</td>
+<td>258.3</td>
+<td>426.7</td>
 <td>14.3</td>
-<td>46.3</td>
-<td>73.9</td>
-<td>92.4</td>
-<td>216.8</td>
-<td>58.0</td>
+<td>45.9</td>
+<td>72.5</td>
+<td>89.8</td>
+<td>215.1</td>
+<td>57.1</td>
 </tr>
 </tbody>
 </table>
@@ -417,7 +417,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-2"><a href="#cb6-2"></a><span class="co"># Same table, but this time, normalised</span></span>
 <span id="cb6-3"><a href="#cb6-3"></a>(df<span class="op">/</span>df.iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">1</span>).tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="31">
+<div class="cell-output cell-output-display" data-execution_count="5">
 <div>
 
 
@@ -458,47 +458,47 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2022-02-24</td>
 <td>116.9</td>
-<td>132.4</td>
+<td>132.6</td>
 <td>153.1</td>
-<td>112.6</td>
+<td>112.8</td>
 <td>189.5</td>
 <td>229.6</td>
 <td>136.2</td>
-<td>175.8</td>
-<td>228.6</td>
-<td>135.1</td>
-<td>224.2</td>
-<td>141.6</td>
+<td>176.0</td>
+<td>228.8</td>
+<td>135.0</td>
+<td>224.1</td>
+<td>141.9</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2022-02-25</td>
 <td>117.0</td>
-<td>134.7</td>
+<td>135.0</td>
 <td>152.6</td>
-<td>112.6</td>
-<td>195.0</td>
+<td>112.8</td>
+<td>194.9</td>
 <td>234.7</td>
 <td>133.3</td>
-<td>180.1</td>
+<td>180.3</td>
 <td>235.6</td>
 <td>135.8</td>
 <td>229.1</td>
-<td>144.8</td>
+<td>145.1</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2022-02-28</td>
 <td>117.8</td>
-<td>132.9</td>
+<td>133.2</td>
 <td>154.2</td>
-<td>113.5</td>
-<td>195.0</td>
+<td>113.8</td>
+<td>194.9</td>
 <td>234.2</td>
 <td>136.2</td>
-<td>180.9</td>
+<td>180.7</td>
 <td>234.6</td>
 <td>137.9</td>
-<td>228.9</td>
-<td>142.9</td>
+<td>228.8</td>
+<td>143.1</td>
 </tr>
 </tbody>
 </table>
@@ -536,7 +536,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-19"><a href="#cb7-19"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-7-output-1.png" width="800" height="508"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-7-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
@@ -562,7 +562,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-12"><a href="#cb8-12"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-8-output-1.png" width="969" height="501"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-8-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
@@ -584,7 +584,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-2"><a href="#cb9-2"></a>((weekly_returns.std()<span class="op">*</span>math.sqrt(<span class="dv">52</span>)<span class="op">*</span><span class="dv">100</span>).sort_values()).plot.bar()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-9-output-1.png" width="569" height="436"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-9-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <p>As one could have guessed, on the left of the chart above, we can find the low volatility asset classes (e.g.&nbsp;Government Bonds, Investment Grade Bonds), whereas on the right we have high volatility asset classes (Mid Cap and Small Cap Equities).</p>
@@ -598,7 +598,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a>sns.heatmap(weekly_returns.corr())<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-10-output-1.png" width="576" height="441"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-tags="[]" data-execution_count="10">
@@ -636,7 +636,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb12-9"><a href="#cb12-9"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-12-output-1.png" width="655" height="484"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-12-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
@@ -661,7 +661,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb13-14"><a href="#cb13-14"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-13-output-1.png" width="655" height="484"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
@@ -688,7 +688,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb14-16"><a href="#cb14-16"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-14-output-1.png" width="657" height="464"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
