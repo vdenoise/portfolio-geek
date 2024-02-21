@@ -8,7 +8,7 @@
 
 <meta name="author" content="Vincent D.">
 
-<title>Portfolio Geek - Import Libraries</title>
+<title>Portfolio Geek - Data and Python 101 - Getting and charting data with Matplotlib</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -171,8 +171,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Import Libraries</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/spy-and-matplotlib.ipynb">View Source</a></li></ul></div></div>
-</div>
+<div class="quarto-title-block"><div><h1 class="title">Data and Python 101 - Getting and charting data with Matplotlib</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/spy-and-matplotlib.ipynb">View Source</a></li></ul></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">tutorial</div>
+    <div class="quarto-category">data</div>
+    <div class="quarto-category">matplotlib</div>
+    <div class="quarto-category">en</div>
+  </div>
+  </div>
 
 
 
@@ -192,6 +198,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<section id="import-libraries" class="level1">
+<h1>Import Libraries</h1>
 <p>First, we import necessary libraries. yfinance will fetch the data, and matplotlib will help us chart it.</p>
 <div class="cell" data-execution_count="1">
 <details>
@@ -200,18 +208,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3"></a>plt.style.use(<span class="st">'seaborn-dark'</span>) <span class="co"># For a nicer theme</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stderr">
-<pre><code>MatplotlibDeprecationWarning: The seaborn styles shipped by Matplotlib are deprecated since 3.6, as they no longer correspond to the styles shipped by seaborn. However, they will remain available as 'seaborn-v0_8-&lt;style&gt;'. Alternatively, directly use the seaborn API instead.
-  plt.style.use('seaborn-dark') # For a nicer theme</code></pre>
 </div>
-</div>
+</section>
 <section id="download-spy-data" class="level1">
 <h1>Download SPY Data</h1>
 <p>Fetching historical data for the SPY ETF is straightforward with yfinance. We’ll grab the last five years of daily data.</p>
 <div class="cell" data-execution_count="2">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>spy_data <span class="op">=</span> yf.download(<span class="st">'SPY'</span>, start<span class="op">=</span><span class="st">'2015-01-01'</span>, end<span class="op">=</span><span class="st">'2020-01-01'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>spy_data <span class="op">=</span> yf.download(<span class="st">'SPY'</span>, start<span class="op">=</span><span class="st">'2015-01-01'</span>, end<span class="op">=</span><span class="st">'2020-01-01'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[*********************100%***********************]  1 of 1 completed</code></pre>
@@ -224,11 +229,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="3">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>spy_data[<span class="st">'Close'</span>].plot(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>), color<span class="op">=</span><span class="st">'blue'</span>)</span>
-<span id="cb5-2"><a href="#cb5-2"></a>plt.title(<span class="st">'SPY ETF Performance 2015-2020'</span>)</span>
-<span id="cb5-3"><a href="#cb5-3"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
-<span id="cb5-4"><a href="#cb5-4"></a>plt.ylabel(<span class="st">'Close Price'</span>)</span>
-<span id="cb5-5"><a href="#cb5-5"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>spy_data[<span class="st">'Close'</span>].plot(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>), color<span class="op">=</span><span class="st">'blue'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2"></a>plt.title(<span class="st">'SPY ETF Performance 2015-2020'</span>)</span>
+<span id="cb4-3"><a href="#cb4-3"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb4-4"><a href="#cb4-4"></a>plt.ylabel(<span class="st">'Close Price'</span>)</span>
+<span id="cb4-5"><a href="#cb4-5"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="spy-and-matplotlib_files/figure-html/cell-4-output-1.png" class="img-fluid"></p>
