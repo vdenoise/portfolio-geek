@@ -37,5 +37,6 @@ website:
         menu: 
           - text: Portfolio Construction
             href: risk_and_return.qmd
-          - text: Real Python
-            href: https://realpython.com/
+          - text: Tutorials (en)
+            href: tutorials_en.qmd
+

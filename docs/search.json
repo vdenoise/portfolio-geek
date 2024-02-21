@@ -7,249 +7,207 @@
     "text": "Estimate Financial Risk\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\n\n\nLes 10 formules les plus utilisées en finance de marché\n\n\n\n\n\n\n\n\n\n\n\n\n5 min\n\n\n\n\n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\n\n\n\n\n\n8 min\n\n\n\n\n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "all_posts.html",
+    "href": "all_posts.html",
+    "title": "All Posts",
     "section": "",
-    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the asset management and capital markets industry’s value chain.\nIn my different roles, I have developed and deployed a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\nFind me on Linkedin\n\nWhy this blog?\nWhat struck me the most when I started my career in finance was the knowledge asymetry between finance professionals and end clients. Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts still sound fairly exotic or technical to many investors.\nHere, I will try to demystify financial analysis and provide ideas and starting points in order to put theory into practice.\nIn most articles, you should be able to copy, run and modify the code behind the analysis. This should help you to directly use many of the tools presented. The entire source is available on Github"
+    "text": "1 - Setting up a Python Development Workstation\n\n\n\n\n\n\n\n101\n\n\nen\n\n\n\n\nIn this article we set up our Workstation and install all the relevant tools to be efficient\n\n\n\n\n\n\nApr 6, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\n2 - Getting and charting data with Matplotlib\n\n\n\n\n\n\n\ntutorial\n\n\ndata\n\n\nmatplotlib\n\n\nen\n\n\n\n\nJust a test\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\n3 - Analyzing Equity long Term Returns with Python\n\n\n\n\n\n\n\ntutorial\n\n\nlong term investing\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\n4 - Getting Started with Eurostat API\n\n\n\n\n\n\n\nen\n\n\n101\n\n\ndata\n\n\napi\n\n\n\n\n\n\n\n\n\n\n\nApr 15, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nExploring the Worldbank API (WBGAPI)\n\n\n\n\n\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 5, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nLes 10 formules les plus utilisées en finance de marché\n\n\n\n\n\n\n\nfr\n\n\nfinance\n\n\ntutorial\n\n\n101\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nObtenir la valorisation de plusieurs titres avec Python et Alpha Vantage\n\n\n\n\n\n\n\nfr\n\n\nvaluation\n\n\nfundamental\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-construction\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nUsing WBGAPI: A Step-By-Step Guide to Access World Bank Data\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nVisualising Historical Data\n\n\n\n\n\n\n\npublication-workflow\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "archive.html",
-    "href": "archive.html",
-    "title": "Archive",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Portfolio Construction",
     "section": "",
-    "text": "No matching items"
+    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the entire asset management and financial markets industry’s value chain.\nIn this blog, I will document here my findings and experiments, notably in Python, Jupyter and along themes like portfolio optimisation and reproducible research.\nIn my different roles, I have developed and deployed a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\n\n\n\n\nPortfolio Optimisation with Python\nRisks and Returns 101\nGood Finance DataSources available to everyone\n\n\n\n\n\nAutomating Powerpoint\nNice Pictures with Python\n\n\n\n\n\nAutomating Powerpoint\nNice Pictures with Python\n\n\n\n\n\nAutomating Powerpoint\nNice Pictures with Python"
   },
   {
-    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#introduction",
-    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#introduction",
-    "title": "Setting up a python development workstation",
+    "objectID": "index.html#welcome-to-portfolio-geek",
+    "href": "index.html#welcome-to-portfolio-geek",
+    "title": "Portfolio Construction",
+    "section": "",
+    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the entire asset management and financial markets industry’s value chain.\nIn this blog, I will document here my findings and experiments, notably in Python, Jupyter and along themes like portfolio optimisation and reproducible research.\nIn my different roles, I have developed and deployed a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios."
+  },
+  {
+    "objectID": "posts/tutorials/en/shiller-data-python.html#introduction",
+    "href": "posts/tutorials/en/shiller-data-python.html#introduction",
+    "title": "3 - Analyzing Equity long Term Returns with Python",
     "section": "Introduction",
-    "text": "Introduction\nHello there, finance wizards and coding enthusiasts! Ready to enter the world of Python, Visual Studio, and financial analysis? Let’s embark on this journey together. By the end of this guide, you’ll have your finance lab primed for dissecting market trends, optimising portfolios, and much more. Buckle up, let’s set sail!"
+    "text": "Introduction\nLong Term Investing enables investors to capture the long term risk premium of various asset classes.\nIn this article, we will explore how to download Shiller’s Excel data on long-term stock market returns from his website using Python. We will use the requests library for HTTP requests and the pandas library for data manipulation. For visualization, we will use the Matplotlib library with the Pacoty stylesheet to create a chart comparing nominal equity returns, real equity returns, and real GDP growth."
   },
   {
-    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#setting-up-visual-studio-and-miniconda",
-    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#setting-up-visual-studio-and-miniconda",
-    "title": "Setting up a python development workstation",
-    "section": "1. Setting Up Visual Studio and Miniconda",
-    "text": "1. Setting Up Visual Studio and Miniconda\nYour coding adventure begins by setting up the primary tools of the trade: Visual Studio Code (VS Code) and Miniconda. VS Code is a robust and versatile code editor, while Miniconda, a mini version of Anaconda, allows us to create isolated Python environments and manage packages.\n\nDownload and install Visual Studio Code from the official website. Follow the prompts to complete the installation process.\nSimilarly, download and install Miniconda from the official website. During installation, ensure that you select the option to “Add Miniconda to my PATH environment variable”. This allows you to use conda commands directly in the VS Code terminal."
+    "objectID": "posts/tutorials/en/shiller-data-python.html#downloading-shillers-data",
+    "href": "posts/tutorials/en/shiller-data-python.html#downloading-shillers-data",
+    "title": "3 - Analyzing Equity long Term Returns with Python",
+    "section": "Downloading Shiller’s Data",
+    "text": "Downloading Shiller’s Data\nFirst, we need to import the required libraries and download the data using an HTTP request:\nThis code below downloads the Excel file from Shiller’s website, directly into memory, and reads it into a pandas DataFrame.\n\n\nCode\nimport requests\nimport pandas as pd\nfrom io import BytesIO\nimport dataframe_image as dfi\n\nurl = \"http://www.econ.yale.edu/~shiller/data/ie_data.xls\"\n\nresponse = requests.get(url)\n\ndef make_pretty(styler):\n    styler.format(precision=2)\n    return styler\n\n# Check if the request was successful\nif response.status_code == 200:\n    data = pd.read_excel(BytesIO(response.content), sheet_name='Data', header=7)\nelse:\n    print(\"Failed to download the data\")\n\ndata.iloc[1:10, 1:5].style.pipe(make_pretty)\n\n\n\n\n\n\n\n\n \nP\nD\nE\nCPI\n\n\n\n\n1\n4.50\n0.26\n0.40\n12.84\n\n\n2\n4.61\n0.26\n0.40\n13.03\n\n\n3\n4.74\n0.26\n0.40\n12.56\n\n\n4\n4.86\n0.26\n0.40\n12.27\n\n\n5\n4.82\n0.26\n0.40\n12.08\n\n\n6\n4.73\n0.26\n0.40\n12.08\n\n\n7\n4.79\n0.26\n0.40\n11.89\n\n\n8\n4.84\n0.26\n0.40\n12.18\n\n\n9\n4.59\n0.26\n0.40\n12.37"
   },
   {
-    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#setting-up-a-python-virtual-environment",
-    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#setting-up-a-python-virtual-environment",
-    "title": "Setting up a python development workstation",
-    "section": "2. Setting Up a Python Virtual Environment",
-    "text": "2. Setting Up a Python Virtual Environment\nWith our tools installed, let’s now create a virtual environment to house our finance lab. We’ll use conda to create a new environment named finlab using Python 3.10.\nOpen VS Code, then open a terminal (Ctrl + `) and type the following command:\nconda create -n finlab python=3.10\nActivate the finlab environment by typing:\nconda activate finlab\nInside finlab, we install several vital Python libraries for our financial analysis journey:\n\npandas: A flexible and powerful data manipulation library, essential for handling and processing financial data.\nmatplotlib and seaborn: Two formidable libraries for data visualisation, because finance isn’t just about numbers—it’s about insightful charts too!\nyfinance: An effective library for fetching historical stock data from Yahoo Finance.\npyportfolioopt: An advanced library designed to optimise portfolios, calculate risk and returns, and much more.\n\nInstall these libraries using the following command:\nconda install pandas matplotlib seaborn yfinance pyportfolioopt"
+    "objectID": "posts/tutorials/en/shiller-data-python.html#downloading-maddison-project-gdp-data",
+    "href": "posts/tutorials/en/shiller-data-python.html#downloading-maddison-project-gdp-data",
+    "title": "3 - Analyzing Equity long Term Returns with Python",
+    "section": "Downloading Maddison Project GDP Data",
+    "text": "Downloading Maddison Project GDP Data\n\n\nCode\nurl = \"https://www.rug.nl/ggdc/historicaldevelopment/maddison/data/mpd2020.xlsx\"\n\nresponse = requests.get(url)\n\ndef make_pretty(styler):\n    styler.format(precision=2)\n    return styler\n\n# Check if the request was successful\nif response.status_code == 200:\n    data_gdp= pd.read_excel(BytesIO(response.content),sheet_name=\"Full data\", header=0)\nelse:\n    print(\"Failed to download the data\")\n\n\n\n\nCode\nimport numpy.ma as ma\ndata_gdp[\"gdp\"] = data_gdp.gdppc * data_gdp[\"pop\"]\ndates = ma.array(\n    [f'{y}-{12}-{31}' for y in data_gdp.year.to_list()],\n    dtype='datetime64[D]'\n    )\n\ndata_gdp[\"date\"] = dates.tolist()\ndata_gdp.set_index(\"date\", inplace=True)\ndata_gdp.iloc[1:10, 1:5].style.pipe(make_pretty)\n\n\n\n\n\n\n\n \ncountry\nyear\ngdppc\npop\n\n\ndate\n \n \n \n \n\n\n\n\n1870-12-31\nAfghanistan\n1870\nnan\n4207.00\n\n\n1913-12-31\nAfghanistan\n1913\nnan\n5730.00\n\n\n1950-12-31\nAfghanistan\n1950\n1156.00\n8150.00\n\n\n1951-12-31\nAfghanistan\n1951\n1170.00\n8284.00\n\n\n1952-12-31\nAfghanistan\n1952\n1189.00\n8425.00\n\n\n1953-12-31\nAfghanistan\n1953\n1240.00\n8573.00\n\n\n1954-12-31\nAfghanistan\n1954\n1245.00\n8728.00\n\n\n1955-12-31\nAfghanistan\n1955\n1246.00\n8891.00\n\n\n1956-12-31\nAfghanistan\n1956\n1278.00\n9062.00"
   },
   {
-    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#installing-key-visual-studio-extensions",
-    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#installing-key-visual-studio-extensions",
-    "title": "Setting up a python development workstation",
-    "section": "3. Installing Key Visual Studio Extensions",
-    "text": "3. Installing Key Visual Studio Extensions\nVS Code shines with its extensions. Here are a few that will make your life easier:\n\nPython: Gives you a host of Python-specific features like linting, debugging, code formatting, and more.\nPrettier: A code formatter that supports many languages, including Python. Keeps your code clean and professional.\nCode Spell Checker: Like a proof-reader, it catches common spelling mistakes in your code.\n\nYou can install these extensions by searching for them in the VS Code Extensions view (Ctrl + Shift + X) and clicking on “Install”."
+    "objectID": "posts/tutorials/en/shiller-data-python.html#cleanup-and-columns-renaming",
+    "href": "posts/tutorials/en/shiller-data-python.html#cleanup-and-columns-renaming",
+    "title": "3 - Analyzing Equity long Term Returns with Python",
+    "section": "Cleanup and Columns Renaming",
+    "text": "Cleanup and Columns Renaming\n\n\nCode\n#Excel Import is mixing up columns, re-titling them\ndata.columns = [\"Date\", \"S&P Composite\", \"Dividend (D)\", \"Earnings (E)\", \"Consumer Price Index (CPI)\", \"Date Fraction\", \"Long Interest Rate (I)\", \"Real Price\", \"Real Dividend\", \"Real Total Return Price\", \"Real Earnings\", \"Real TR Scaled Earnings\", \"CAPE\", \"\", \"TR CAPE\", \"\", \"Excess CAPE Yield\", \"Monthly Total Bond Returns\", \"Real Total Bond Returns\", \"10Y Ann Stock Real Return\", \"10Y Ann Bon Real Return\", \"Real 10Y Ann Excess Return\"]\ndata = data[:-2]\ndata[\"date\"] = pd.to_datetime(data['Date'].map('{:.2f}'.format), format='%Y.%m')\ndata.set_index(\"date\", inplace=True)\ndata[\"Price Return\"] = data[\"Real Price\"].div(data[\"Real Price\"].iloc[0])\ndata[\"Total Return\"] = data.loc[:, \"Real Total Return Price\"].div(data[\"Real Total Return Price\"].iloc[0])\ndata[\"CPI\"] = data.loc[:, \"Consumer Price Index (CPI)\"].div(data[\"Consumer Price Index (CPI)\"].iloc[0])"
   },
   {
-    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#launching-a-jupyter-notebook-inside-visual-studio",
-    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#launching-a-jupyter-notebook-inside-visual-studio",
-    "title": "Setting up a python development workstation",
-    "section": "4. Launching a Jupyter Notebook Inside Visual Studio",
-    "text": "4. Launching a Jupyter Notebook Inside Visual Studio\nWith our finlab environment and VS Code set up, it’s time to dive into some coding. We’ll be using a Jupyter Notebook, a powerful tool allowing you to interweave code and text into a single document.\nCreate a new file with a .ipynb extension. Upon creation, VS Code will prompt you to select a Python interpreter—choose the one corresponding to our finlab environment.\nIn the following steps, we’ll demonstrate some powerful features of the pyportfolioopt library. In this exercise, we’ll fetch the historical data of SPY, QQQ, and AGG ETFs using yfinance, compute risk and\nreturn metrics, plot the 10-year cumulative return, and finally, plot the efficient frontier.\nDue to the length and complexity of the code, it has been omitted from this article. For a complete walkthrough, please refer to the official pyportfolioopt documentation."
+    "objectID": "posts/tutorials/en/shiller-data-python.html#visualizing-the-data-with-matplotlib-and-pacoty",
+    "href": "posts/tutorials/en/shiller-data-python.html#visualizing-the-data-with-matplotlib-and-pacoty",
+    "title": "3 - Analyzing Equity long Term Returns with Python",
+    "section": "Visualizing the Data with Matplotlib and Pacoty",
+    "text": "Visualizing the Data with Matplotlib and Pacoty\nNext, we will create a chart comparing the nominal equity returns, real equity returns, and real GDP growth using Matplotlib and the Pacoty. Let’s start with a first sanity check on the data.\n\n\n\nDataframe\n\n\nThis code snippet creates a chart with a logarithmic scale, comparing nominal equity returns, real equity returns, and real GDP growth over time."
   },
   {
-    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#gather-the-historical-data-of-spy-qqq-and-agg-etfs-using-yfinance",
-    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#gather-the-historical-data-of-spy-qqq-and-agg-etfs-using-yfinance",
-    "title": "Setting up a python development workstation",
-    "section": "Gather the historical data of SPY, QQQ, and AGG ETFs using yfinance",
-    "text": "Gather the historical data of SPY, QQQ, and AGG ETFs using yfinance\n\n\nCode\n%%capture\nimport yfinance as yf\nimport pandas as pd\n\n# Define the ticker list\ntickers = ['SPY', 'QQQ', 'AGG']\n\n# Use yfinance to download the historical market data\ndata = yf.download(tickers, start=\"2013-06-28\", end=\"2023-06-28\")['Adj Close']"
+    "objectID": "posts/tutorials/en/shiller-data-python.html#long-term-equity-returns",
+    "href": "posts/tutorials/en/shiller-data-python.html#long-term-equity-returns",
+    "title": "3 - Analyzing Equity long Term Returns with Python",
+    "section": "Long Term Equity Returns",
+    "text": "Long Term Equity Returns\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\nfrom scipy.ndimage import gaussian_filter1d\nfrom scipy import interpolate\nimport highlight_text as ht\nfrom highlight_text import HighlightText, ax_text, fig_text\nimport matplotlib.dates as mdates\nimport datetime as dt\nfrom scipy import stats\n\n\ndef decyear4(year, month, day, h=0, m=0, s=0):\n    return year + ((30.4375*(month-1) + day-1)*24+h)*3600/31557600.0 \n\n# Set the Pacoty stylesheet\nmpl_style = \"revealjs_whiteboard\"\nplt.style.use(f'../../stylesheets/{mpl_style}.mplstyle')\n\n# Create a figure and axis\nfig, ax = plt.subplots()\n \n# Extract the data we need\nus_gdp = data_gdp[data_gdp.countrycode == \"USA\"].gdp\ndates = data[[\"Real Price\"]].resample(\"Y\").last().index\nus_gdp.index = [dt.datetime.combine(dat, dt.time()) for dat in us_gdp.index]\nus_gdp = us_gdp[us_gdp.index &gt;= dates.min()]\nus_gdp = us_gdp / us_gdp.iloc[0]\nreal_tr = list(data['Price Return'].resample(\"Y\").last().values)\nreal_pr = list(data[\"Total Return\"].resample(\"Y\").last().values)\ncpi = list(data[\"CPI\"].resample(\"Y\").last().values)\n\n#gdp_growth = data['Real GDP Growth']\n\n# Plot the data on a logarithmic scale\n\nf_real_tr= interpolate.interp1d(dates.year, real_tr, 'cubic')\nf_real_pr = interpolate.interp1d(dates.year, real_pr, 'cubic')\n\nreal_tr_interpol = f_real_tr(dates.year)\nreal_pr_interpol = f_real_pr(dates.year)\n\nstats.linregress(dates.year, real_tr)\n\nax.semilogy(dates, real_pr_interpol)\nax.semilogy(dates, real_tr_interpol)\nax.semilogy(us_gdp.index, us_gdp)\n#ax.semilogy(dates, cpi)\n\n#ax.semilogy(years, data[])\n\nsize = plt.rcParams['font.size']\nhighlight_textprops =[{\"fontsize\": size + 4},\n                      {\"fontsize\": size}]\n\nHighlightText(x=0.5, y=0.98, ha='center', \n              s='&lt;Long Term Equity Returns&gt;\\n&lt;Equity vs GDP Growth and Inflation&gt;',\n              highlight_textprops=highlight_textprops,\n              annotationbbox_kw={'boxcoords': fig.transFigure}, textalign=\"center\")\n\n# Customize the chart\nax.set_xlabel('Years')\nax.set_ylabel(f'Value, basis 1 in {(data.index.min().strftime(\"%d.%m.%Y\"))}')\n#ax.set_title('Long Term Equity Returns')\nfig.legend(labels = [\"US Equity: Price (Real)\", \"US Equity: Price & Divs (Real)\", \"US GDP (Real)\"], loc=\"lower left\", ncol=2, bbox_to_anchor=(0.05, -0.075, 0.5, 0.5))\nax.xaxis.set_major_locator(mdates.YearLocator(30))\nax.xaxis.set_major_formatter(\n    mdates.ConciseDateFormatter(ax.xaxis.get_major_locator()))\n\n# Show the chart\nplt.show()\nplt.close()\n#fig.savefig(\"shiller-returns.png\")  \n\n\n\n\n\nLong term equity returns vs CPI\n\n\n\n\nThe resulting chart demonstrates the power of compounded returns and the equity risk premium that has rewarded long-term shareholders. By using Python libraries like requests, pandas, and Matplotlib, we can easily download, process, and visualize financial data to better understand market trends and investment strategies."
   },
   {
-    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#compute-the-key-risk-and-return-metrics-for-each-etf",
-    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#compute-the-key-risk-and-return-metrics-for-each-etf",
-    "title": "Setting up a python development workstation",
-    "section": "Compute the key risk and return metrics for each ETF",
-    "text": "Compute the key risk and return metrics for each ETF\n\n\nCode\n# Calculate the annualized return\nreturns = data.pct_change().mean() * 252\n\n# Calculate the annualized volatility\nvolatility = data.pct_change().std() * (252**0.5)\n\n# Print the results\nprint(\"Annualized Return:\")\nprint(returns)\nprint(\"\\nAnnualized Volatility:\")\nprint(volatility)\n\n\nAnnualized Return:\nAGG    0.016398\nQQQ    0.195275\nSPY    0.133498\ndtype: float64\n\nAnnualized Volatility:\nAGG    0.048838\nQQQ    0.213590\nSPY    0.174692\ndtype: float64"
-  },
-  {
-    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#plot-the-10-year-cumulated-return-as-a-line-chart-for-the-3-etfs-with-the-initial-value-normalized-to-100.",
-    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#plot-the-10-year-cumulated-return-as-a-line-chart-for-the-3-etfs-with-the-initial-value-normalized-to-100.",
-    "title": "Setting up a python development workstation",
-    "section": "Plot the 10-year cumulated return as a line chart for the 3 ETFs, with the initial value normalized to 100.",
-    "text": "Plot the 10-year cumulated return as a line chart for the 3 ETFs, with the initial value normalized to 100.\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Calculate the cumulated return\ncum_return = (1 + data.pct_change()).dropna().cumprod()\n\n# Normalize to 100\ncum_return = 100 * cum_return / cum_return.iloc[0]\n\n# Plot the data\nplt.figure(figsize=(12,8))\ncum_return.plot();\n\nplt.xlabel('Date')\nplt.ylabel('Cumulative Returns')\nplt.title('10-Year Cumulated Returns')\nplt.legend()\nplt.grid(True)\nplt.show()\n\n\n&lt;Figure size 864x576 with 0 Axes&gt;"
-  },
-  {
-    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#use-pyportfolioopt-to-calculate-and-plot-the-efficiency-frontier",
-    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#use-pyportfolioopt-to-calculate-and-plot-the-efficiency-frontier",
-    "title": "Setting up a python development workstation",
-    "section": "Use pyportfolioopt to calculate and plot the efficiency frontier",
-    "text": "Use pyportfolioopt to calculate and plot the efficiency frontier\n\n\nCode\nfrom pypfopt import expected_returns, risk_models\nfrom pypfopt import plotting\nfrom pypfopt.efficient_frontier import EfficientFrontier\n\n# Calculate expected returns and the covariance matrix\nmu = expected_returns.mean_historical_return(data)\nS = risk_models.sample_cov(data)\n\n# Optimize for the maximal Sharpe ratio\nef = EfficientFrontier(mu, S,weight_bounds=(None, None))\n\n# Plot the efficient frontier\nfig, ax = plt.subplots()\nplotting.plot_efficient_frontier(ef, ax=ax, show_assets=True)\n\nplt.title('Efficient Frontier')\nplt.show()"
-  },
-  {
-    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#key-considerations-for-this-job",
-    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#key-considerations-for-this-job",
-    "title": "Setting up a python development workstation",
-    "section": "Key Considerations for this Job",
-    "text": "Key Considerations for this Job\nIn the world of financial analysis, always ensure you understand the data you’re dealing with and the calculations you’re performing. Never hesitate to go beyond the libraries and tools used here—Python has a vast ecosystem, and there’s always more to learn!\nRemember, coding and financial analysis are both iterative processes. Keep refining your skills and knowledge, and soon you’ll be slicing and dicing financial data like a pro.\nKeywords: Python, Finance, Financial Analysis, Visual Studio Code, Miniconda, Virtual Environment, pandas, matplotlib, seaborn, yfinance, pyportfolioopt, Jupyter Notebook, Portfolio Optimisation, Risk Metrics, Return Metrics, Efficient Frontier, ETFs."
-  },
-  {
-    "objectID": "posts/tutorials/en/spy-and-matplotlib.html",
-    "href": "posts/tutorials/en/spy-and-matplotlib.html",
-    "title": "Data and Python 101 - Getting and charting data with Matplotlib",
+    "objectID": "posts/tutorials/en/getting-started-with-eurostat-api.html",
+    "href": "posts/tutorials/en/getting-started-with-eurostat-api.html",
+    "title": "Getting Started with Eurostat API",
     "section": "",
-    "text": "Import Libraries\nFirst, we import necessary libraries. yfinance will fetch the data, and matplotlib will help us chart it.\n\n\nCode\nimport yfinance as yf\nimport matplotlib.pyplot as plt\nplt.style.use('seaborn-dark') # For a nicer theme\n\n\n\n\nDownload SPY Data\nFetching historical data for the SPY ETF is straightforward with yfinance. We’ll grab the last five years of daily data.\n\n\nCode\nspy_data = yf.download('SPY', start='2015-01-01', end='2020-01-01')\n\n\n[*********************100%***********************]  1 of 1 completed\n\n\n\n\nPlotting the Data\nWith our data in hand, let’s plot the closing prices. Here, the choice of a green and blue stylesheet makes our chart not only informative but visually appealing.\n\n\nCode\nspy_data['Close'].plot(figsize=(10, 6), color='blue')\nplt.title('SPY ETF Performance 2015-2020')\nplt.xlabel('Date')\nplt.ylabel('Close Price')\nplt.show()\n\n\n\n\n\n\nWhy This Matters\nThis exercise is a primer in the practical application of Python for financial analysis. By fetching real-world data and visualizing it, we gain insights into market trends and ETF performance over time. This skill is fundamental in quantitative finance, where data-driven decisions are paramount.\n\n\nRecap and Further Reading\nToday, we’ve covered how to set up your Python environment, fetch financial data using yfinance, and visualize it with matplotlib. These steps are building blocks in your journey into quantitative finance and data analysis.\nFor those keen to delve deeper, consider exploring the following resources:\n\nBooks: “Python for Finance” by Yves Hilpisch, “Quantitative Finance For Dummies” by Steve Bell.\nWebsites: Quantopian, QuantConnect, and the matplotlib documentation.\nGitHub Repositories: matplotlib/matplotlib, ranaroussi/yfinance.\n\nStay curious, and happy coding!"
+    "text": "# Connect to Eurostat API with Python using their REST API\nEurostat, the statistical office of the European Union, provides access to a wealth of data on various aspects of the European economy, environment, and society. One way to access this data is through their REST API, which can be easily connected to and queried using Python.\nIn this article, we will walk you through the steps needed to connect to the Eurostat API using Python and build a function to show the connection status to the API. By the end, you’ll be able to retrieve data from Eurostat in a structured and efficient manner."
   },
   {
-    "objectID": "posts/tutorials/fr/valorisation-pe.html#le-price-to-earnings-ratio-per",
-    "href": "posts/tutorials/fr/valorisation-pe.html#le-price-to-earnings-ratio-per",
-    "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
-    "section": "Le Price to Earnings Ratio (“PER”)",
-    "text": "Le Price to Earnings Ratio (“PER”)\nLe Price to Earnings Ratio (PER) est un ratio financier utilisé pour évaluer la valorisation d’une action par rapport à ses bénéfices. Il est calculé en divisant le prix actuel de l’action par le bénéfice par action (EPS) sur une période donnée, généralement sur les 12 derniers mois. La formule est la suivante :\n\\[\nPER = \\frac{Prix\\ de\\ l'action}{Bénéfice\\ par\\ action}\n\\]\nUn PER élevé indique que les investisseurs sont prêts à payer davantage pour les bénéfices futurs de l’entreprise, tandis qu’un PER faible suggère que les investisseurs estiment que l’action est sous-évaluée ou que l’entreprise a des perspectives de croissance limitées."
+    "objectID": "posts/tutorials/en/getting-started-with-eurostat-api.html#prerequisites",
+    "href": "posts/tutorials/en/getting-started-with-eurostat-api.html#prerequisites",
+    "title": "Getting Started with Eurostat API",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nBefore we begin, make sure you have Python installed on your system. You can check whether you have Python installed and which version you’re using by running the following command in your terminal:\npython --version\nIf you don’t have Python installed, you can download it from the official Python website.\nNext, you will need to install the requests library, which allows you to make HTTP requests in Python. To do this, open your terminal and run:\npip install requests"
   },
   {
-    "objectID": "posts/tutorials/fr/valorisation-pe.html#la-librairie-alpha-vantage",
-    "href": "posts/tutorials/fr/valorisation-pe.html#la-librairie-alpha-vantage",
-    "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
-    "section": "La librairie Alpha Vantage",
-    "text": "La librairie Alpha Vantage\nAlpha Vantage est une plateforme de données financières qui fournit des API pour accéder à diverses informations sur le marché, telles que les cours des actions, les indicateurs techniques, les données sur les devises, les cryptomonnaies et bien d’autres. La librairie Python alpha_vantage permet d’interagir facilement avec ces API.\nLa licence gratuite d’Alpha Vantage permet d’accéder à la plupart des données sans frais. Toutefois, elle est soumise à certaines restrictions, notamment un nombre limité de requêtes par minute et par jour. Pour des usages plus intensifs, des plans payants sont disponibles."
+    "objectID": "posts/tutorials/en/getting-started-with-eurostat-api.html#connecting-to-the-eurostat-api",
+    "href": "posts/tutorials/en/getting-started-with-eurostat-api.html#connecting-to-the-eurostat-api",
+    "title": "Getting Started with Eurostat API",
+    "section": "Connecting to the Eurostat API",
+    "text": "Connecting to the Eurostat API\nTo connect to the Eurostat API, you need to send HTTP requests to their API endpoints. The base URL for the Eurostat API is:\nhttps://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/\nYou can append the relevant endpoint to this base URL to access specific datasets or services.\nFor example, to access the dataset on GDP per capita, you would send a request to:\nhttps://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/nama_10_pc?format=sdmx-compact-2.1\nHere’s a Python function that sends a request to the Eurostat API and checks the connection status:\n\n\nCode\nimport requests\n\ndef check_connection_status(endpoint):\n    response = requests.get(endpoint)\n    status_code = response.status_code\n    \n    if status_code == 200:\n        print(\"Connection Successful! (Status Code: 200)\")\n    elif status_code == 404:\n        print(\"Error: Dataset not found (Status Code: 404)\")\n    else:\n        print(f\"Error: Connection failed (Status Code: {status_code})\")\n\n# Test the function with the base URL\napi_base_url = \"https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/sdmx-rest.wadl\"\ncheck_connection_status(api_base_url)\n\n\nConnection Successful! (Status Code: 200)\n\n\nThis function sends an HTTP GET request to the specified api_url and checks the response’s status code. If the status code is 200, the connection is successful. If the status code is anything other than 200, the connection has failed, and the function raises an exception with the corresponding error message.\nTo use this function, replace api_url with the desired Eurostat API endpoint."
   },
   {
-    "objectID": "posts/tutorials/fr/valorisation-pe.html#code-source",
-    "href": "posts/tutorials/fr/valorisation-pe.html#code-source",
-    "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
-    "section": "Code Source",
-    "text": "Code Source\nVoici un exemple de programme Python qui utilise la bibliothèque yfinance pour récupérer les valorisations des ETFs secteurs en Europe. Dans cet exemple, je vais utiliser quelques ETFs populaires en Europe pour illustrer le processus. Vous pouvez ajouter ou modifier les symboles d’ETFs dans la liste etfs pour récupérer les valorisations des ETFs que vous souhaitez.\n\n\nCode\nimport os, sys\nroot_path = os.path.join(sys.path[0],'..','..', '..')\nsys.path.append(root_path)\nimport blog_utils\n\ntpl_path = \"https://github.com/vdenoise/templates/raw/master\"\nmpl_tpl_path = f\"{tpl_path}/matplotlib\"\n\n\n\n\nCode\n\nimport keyring\nimport matplotlib\nimport matplotlib.pyplot as plt\nfrom alpha_vantage.fundamentaldata import FundamentalData\n\n# Remplacez 'your_api_key' par votre clé API Alpha Vantage\napi_key = keyring.get_password(\"alpha_vantage_api_key\", \"email@email.com\")\nfd = FundamentalData(key=api_key)\n\n# Fonction pour récupérer le Price to Earnings Ratio (P/E Ratio)\ndef get_price_to_earnings_ratio(symbol):\n    data, _ = fd.get_company_overview(symbol)\n    pe_ratio = float(data[\"PERatio\"])\n    return pe_ratio\n\n# Récupérer et afficher les P/E Ratios\nsymbols = [\"AAPL\", \"MSFT\", \"IBM\"]\npe_ratios = [get_price_to_earnings_ratio(symbol) for symbol in symbols]\n\nmatplotlib.rcdefaults() \nblog_utils.apply_right_style()\nplt.bar(symbols, pe_ratios)\nplt.xlabel(\"Symboles\")\nplt.ylabel(\"Price to Earnings Ratio\")\nplt.title(\"Comparaison des PER de différentes actions\")\nplt.show()\n\n\n\nNone\n\n\n\n\n\nNotez que les tickers d’ETFs dans etf_tickers sont des exemples. Vous devrez remplacer cette liste par les tickers des ETFs de secteurs en Europe que vous souhaitez analyser. Ce programme récupère le P/E Ratio pour chaque ETF et affiche les résultats à l’écran."
-  },
-  {
-    "objectID": "posts/tutorials/fr/valorisation-pe.html#conclusion",
-    "href": "posts/tutorials/fr/valorisation-pe.html#conclusion",
-    "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
+    "objectID": "posts/tutorials/en/getting-started-with-eurostat-api.html#conclusion",
+    "href": "posts/tutorials/en/getting-started-with-eurostat-api.html#conclusion",
+    "title": "Getting Started with Eurostat API",
     "section": "Conclusion",
-    "text": "Conclusion\nEn résumé, dans cet article tres court, nous avons montré comment récupérer le Price to Earnings Ratio (PER) de plusieurs actions en utilisant Python, la librairie Alpha Vantage et la bibliothèque de visualisation de données Matplotlib. Le PER est un indicateur financier clé pour évaluer la valorisation d’une action et comparer différentes entreprises."
+    "text": "Conclusion\nIn this article, we demonstrated how to connect to the Eurostat API using Python and their REST API. We also showed you how to create a simple function to check the connection status to the API.\nWith these tools in hand, you can now access a wide variety of European statistical data and use it in your data analysis or visualization projects. Happy coding!"
   },
   {
-    "objectID": "posts/tutorials/fr/valorisation-pe.html#sources-de-référence",
-    "href": "posts/tutorials/fr/valorisation-pe.html#sources-de-référence",
-    "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
-    "section": "Sources de référence",
-    "text": "Sources de référence\nPour en savoir plus sur Alpha Vantage, la valorisation des actions et l’utilisation du Price to Earnings Ratio dans l’analyse financière, consultez les sources suivantes :\n\nSite officiel d’AlphaVantage : https://www.alphavantage.co/\nDocumentation de la librairie Python alpha_vantage : https://alpha-vantage.readthedocs.io/\nInvestopedia, “Price-to-Earnings Ratio – P/E Ratio” : https://www.investopedia.com/terms/p/price-earningsratio.asp\nCorporate Finance Institute, “Price Earnings Ratio (P/E Ratio)” : https://corporatefinanceinstitute.com/resources/knowledge/valuation/price-earnings-ratio/\nMatplotlib, documentation officielle : https://matplotlib.org/"
+    "objectID": "posts/data-and-apis/exploring-worldbank-api.html",
+    "href": "posts/data-and-apis/exploring-worldbank-api.html",
+    "title": "Exploring the Worldbank API (WBGAPI)",
+    "section": "",
+    "text": "Code\nimport wbgapi as wb\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\n\n\nCode\nincomes = wb.income.list()\ndata = wb.data.fetch('SP.POP.TOTL', 'USA', 2000, 2020)\n\n\n\n\nCode\ndata\n\n\n&lt;generator object fetch at 0x10ab110b0&gt;"
   },
   {
-    "objectID": "posts/publication-workflow/visualizing-historical-data.html#introduction",
-    "href": "posts/publication-workflow/visualizing-historical-data.html#introduction",
-    "title": "Visualising Historical Data",
+    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#introduction",
+    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#introduction",
+    "title": "Portfolio optimisation with Python",
     "section": "Introduction",
-    "text": "Introduction\nTo start our data analysis and portfolio construction journey, we will perform the basic - but essential - task of getting access to time series and plot them using pandas.\n\nTip: This article is written as a Jupyter Notebook. It has been published using Fastpages. The Jupyter notebook is available on GitHub and if you want to, you can run it directly using the provided Binder link displayed at the top of the article."
+    "text": "Introduction\nHarry Markowitz is one of the (if not “the”) fathers of modern portfolio construction and his seminal paper Portfolio Selection{% fn 1 %} has driven an entire research stream.\nThe intuition behind this paper is that one can combine the information gathered on expected returns, risks and diversification of various assets or asset classes with a view to optimise the risk-return profile of a given portfolio.\nIn practice, we typically find a limited stability of the portfolios generated using this approach, especially due the high sensitivity of the portfolio to the expected returns; nonetheless, the insights it provides are very useful and it’s a perfect start to see the impact of risk and diversification.\nFor this article, we will mostly rely on a fantastic Python library, PyPortfolioOpt {% fn 2%} which will do the optimisation heavy lifting for us."
   },
   {
-    "objectID": "posts/publication-workflow/visualizing-historical-data.html#load-libraries",
-    "href": "posts/publication-workflow/visualizing-historical-data.html#load-libraries",
-    "title": "Visualising Historical Data",
-    "section": "Load libraries",
-    "text": "Load libraries\nA key benefit of Python is the sheer number of libraries we can leverage to perform a particular task. Choosing the right library might look a bit overwhelming, and one the goals of this blog is actually to provide the reader my honest view on what makes most sense to perform the usual tasks in my daily work.\nThe key module for this article is yfinance, a fantastic data gathering library that you can find here on GitHub.\n\n\nCode\n#collapse-hide\nfrom matplotlib import pyplot as plt\nimport pandas as pd\nimport yfinance as yf\nimport datetime as dt\n\n# Note that this change the decimals places inside Jupyter, but not on the website\npd.options.display.float_format = '{:,.1f}'.format"
+    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#setup",
+    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#setup",
+    "title": "Portfolio optimisation with Python",
+    "section": "Setup",
+    "text": "Setup\n\nLoading Libraries\nThe main library to load here is indeed PyPortfolioOpt{% fn 2%}, and we will rely extensively on it in this article.\nWe need the following tools as well: - Pandas{% fn 3%}: load, filter, sort and pretty much all data wrangling operations; - Numpy{% fn 4%}: provides most matrix and advanced numerical operations; this library is the calculation backbone for pandas; - Matplotlib{% fn 5%}: the de facto reference library to draw scientific charts; - yfinance{% fn 6%}: a very handy library to access many different online databases, including Yahoo Finance.\n\n\nCode\n#collapse-hide\nimport numpy as np \nimport pandas_datareader.data as web_reader\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport math\nimport yfinance as yf\n\nfrom pypfopt.efficient_frontier import EfficientFrontier\nfrom pypfopt import risk_models\nfrom pypfopt import expected_returns\n\n\n\n\nMisc Parameters\nIn the code below, we set some variables to adjust the jupyter loo\n\n\nCode\n#collapse-hide\n# Note that this change the decimals places inside Jupyter, but not on the website\npd.options.display.float_format = '{:,.1f}'.format"
   },
   {
-    "objectID": "posts/publication-workflow/visualizing-historical-data.html#get-historical-data",
-    "href": "posts/publication-workflow/visualizing-historical-data.html#get-historical-data",
-    "title": "Visualising Historical Data",
-    "section": "Get historical data",
-    "text": "Get historical data\nLet’s get ready, and gather some historical data for, say, 4 Exchange Traded Funds (ie “ETFs”, still commonly referred to as “trackers” in France): - SPY: S&P 500 - GLD: Gold - AGG: US Aggregate (US Bonds) - CAC.PA: CAC 40 (French Equity Index)\nYou might wonder what the first 3 letters actually correspond to? They are the usual identifier for each ETF on the markets, and are often called the tickerof the ETF.\nTo gather data, you must de facto provide one ticker for each security, but if you forgot the ticker, Google is usually your friend!\nWe will need define to find a few more parameters: - The 2 variables start_date and end_date to keep some flexibility, - The variable tickers will store our ticker list, and pass it as a parameter to Yahoo, in order to specify our query.\n\n\nCode\n#collapse-hide\n\nstart_date = '2015-01-01'\nend_date = '2022-05-14'\ntickers = ['SPY', 'GLD', 'AGG', 'CAC.PA']\ndf = yf.download(tickers,  start=start_date, end=end_date)\n\n# This ones keep the decimals to one on the website. \n# This is especially useful to print dataframes.\ndf = df.round(decimals=2)\n\n\n\n[                       0%                       ][                       0%                       ][**********************75%***********            ]  3 of 4 completed[*********************100%***********************]  4 of 4 completed"
+    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#defining-our-investable-universe",
+    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#defining-our-investable-universe",
+    "title": "Portfolio optimisation with Python",
+    "section": "Defining our Investable Universe",
+    "text": "Defining our Investable Universe\nFirst and foremost, we need to define our Investable Universe i.e. the set of asset classes that we will allow in our portfolio.\nMany investors would typically think about single stocks, but on my side, I am typically looking I am looking here a Long Term Investing, and I would be keen to\nSpeaking about asset classes, we need some ETFs to analyse!\n\n“Important: Please bear in mind this article if purely for pedagogical purpose and should by no mean be understood as a recommendation or advice. Investing brings risk and in particular risk of loss of capital. I have no intention to recommend anything! I will follow among others this recent article in US News{% fn 7%} and ETF.com{% fn 8%} as sources of inspiration to identify relevant ETFs.”\n\n\nEquity\nLet’s start with various Equity sub-asset classes:\n\nIVV: iShares Core S&P 500 ETF representing US Equity Large Cap\nSCHA: Schwab U.S. Small-Cap ETF representing US Equity Small Cap\nIJH: iShares Core S&P Mid-Cap ETF representing US Equity Mid Cap\nSCHD: Schwab U.S. Dividend Equity ETF representing US Equity Dividend (ie US stocks which are deemed to pay higher dividends)\nVTI: Vanguard Total Stock Market ETF representing US Equity, with all market cap included\nVXUS: Vanguard Total International Stock ETF representing World ex-US equities\nEEM: iShares MSCI Emerging Markets ETF representing the Emerging Market Equities\n\n\n\nFixed Income\nLet’s add Fixed Income, which would typically aim to reduce the overall portfolio’s volatility:\n\nAGG: iShares Core U.S. Aggregate Bond ETFrepresenting the entire US Bond market\nGOVT: iShares U.S. Treasury Bond ETF representing the performance of US Government Bonds\nVCLT: Vanguard Long-Term Corporate Bond ETF representing the Investment Grade USD denominated bonds.\n\n\n\nAlternative Assets\nLet’s add 2 additional asset classes, Gold and Commodities: - GLD: SPDR Gold Trust representing the price of Gold - PDBC: Invesco Optimum Yield Diversified Commodity** Strategy No K-1 ETF** which will represent the performance of the Broad Commodities asset class\nEverything in the above is denominated in US Dollars, this will make our life easier in what follows, ie we will not need any currency conversion, which is always a bit painfull in the process."
   },
   {
-    "objectID": "posts/publication-workflow/visualizing-historical-data.html#visual-data-check",
-    "href": "posts/publication-workflow/visualizing-historical-data.html#visual-data-check",
-    "title": "Visualising Historical Data",
-    "section": "Visual data check",
-    "text": "Visual data check\nBy default, Yahoo Finance provides us with several fields, not all of them will be useful in this introduction, and we will perform some further filtering below.\nTo quickly check the status of what we now have, note the use of the tail() function below.\nPandas tail() function\n\n\nCode\ndf.tail(3)\n\n\n\n\n\n\n\n\n\nAdj Close\nClose\nHigh\n...\nLow\nOpen\nVolume\n\n\n\nAGG\nCAC.PA\nGLD\nSPY\nAGG\nCAC.PA\nGLD\nSPY\nAGG\nCAC.PA\n...\nGLD\nSPY\nAGG\nCAC.PA\nGLD\nSPY\nAGG\nCAC.PA\nGLD\nSPY\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2022-05-11\n98.5\n60.8\n172.8\n383.4\n102.8\n62.6\n172.8\n392.8\n102.8\n62.6\n...\n172.2\n392.0\n102.1\n61.7\n172.5\n398.1\n16,462,000.0\n45,387.0\n9,179,600.0\n142,361,000.0\n\n\n2022-05-12\n98.6\n60.2\n170.2\n383.0\n103.0\n62.0\n170.2\n392.3\n103.1\n62.3\n...\n169.9\n385.1\n102.9\n61.4\n172.1\n389.4\n9,015,300.0\n62,497.0\n11,626,800.0\n125,090,800.0\n\n\n2022-05-13\n98.2\n61.7\n168.8\n392.2\n102.5\n63.5\n168.8\n401.7\n102.8\n63.5\n...\n168.0\n395.6\n102.8\n62.4\n168.3\n396.7\n6,715,600.0\n77,603.0\n13,031,100.0\n104,174,400.0\n\n\n\n\n3 rows × 24 columns\n\n\n\nThe Adjusted Close field is returned by Yahoo Finance and is exactly what we are looking for.\nAdjusted Close corresponds to the time series containing what we usually call the total return, typically compounding the dividends with the price returns.\nThis reflects the total return delivered by the ETF, should the investor reinvest systematically the dividend paid by the ETF by buying more this ETF. This is probably the most useful field when we aim to assess the long term returns of an asset class.\nTo quickly check the status of what we now have, note the use of the tail() function below, which get the last n rows of the dataset. Combined with Jupyter’s power in printing data, it’s probably the fastest way to navigate and check a particular dataset.\nPandas tail() function\n\n\nCode\ndf['Adj Close'].tail(3)\n\n\n\n\n\n\n\n\n\nAGG\nCAC.PA\nGLD\nSPY\n\n\nDate\n\n\n\n\n\n\n\n\n2022-05-11\n98.5\n60.8\n172.8\n383.4\n\n\n2022-05-12\n98.6\n60.2\n170.2\n383.0\n\n\n2022-05-13\n98.2\n61.7\n168.8\n392.2"
+    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#parameters-and-data-gathering",
+    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#parameters-and-data-gathering",
+    "title": "Portfolio optimisation with Python",
+    "section": "Parameters and data gathering",
+    "text": "Parameters and data gathering\nI recommend you to read this article about data gathering.\nLike we did in this article, we will utilise pandas_datareader{% fn 6%} to get historical time series. As mentioned above, we will look at the performance of ETFs, which we will consider as as relevant proxies for their respective asset classes.\nYou can of course utilise whatever asset class you want, and take single stocks, funds as historical data points. On my side, I am quite familiar with indices ETFs, and I will go with the selection above.\nLast but not least, we need to define the start_date and end_date for gathering the historical time series. For this study, we will gather 7 years of data.\n\n\nCode\n#collapse-hide\n\nstart_date = '2015-03-01'\nend_date = '2022-03-01'\n\n# Define Investable Universe\ninvestable_universe_tickers = ['IVV', 'SCHA', 'IJH', 'SCHD', 'VTI', 'VXUS', 'EEM', 'VCLT', 'AGG', 'GOVT','PDBC','GLD']\n\n# Get Historical Data\ndf = yf.download(investable_universe_tickers, start=start_date, end=end_date)\ndf = df['Adj Close']\n\n# This is required to round the blog's table into 2 decimals, Jupyter's formatting does not apply on the published website\ndf = df.round(decimals=1)\n\n\n[                       0%                       ][                       0%                       ][************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[**********************75%***********            ]  9 of 12 completed[**********************83%***************        ]  10 of 12 completed[**********************83%***************        ]  10 of 12 completed[*********************100%***********************]  12 of 12 completed\n\n\n\nData gathering: results\nThe request above delivered a pandas data_frame, and here is a snapshot of the last 5 rows:\n\n\nCode\n#collapse-hide\ndf.tail(3)\n\n\n\n\n\n\n\n\n\nAGG\nEEM\nGLD\nGOVT\nIJH\nIVV\nPDBC\nSCHA\nSCHD\nVCLT\nVTI\nVXUS\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2022-02-24\n104.4\n45.1\n177.1\n24.6\n251.1\n418.4\n14.3\n44.7\n70.7\n87.9\n210.7\n56.6\n\n\n2022-02-25\n104.5\n45.9\n176.6\n24.6\n258.3\n427.6\n14.0\n45.8\n72.8\n88.4\n215.4\n57.9\n\n\n2022-02-28\n105.2\n45.3\n178.4\n24.8\n258.3\n426.7\n14.3\n45.9\n72.5\n89.8\n215.1\n57.1\n\n\n\n\n\n\n\n\n\nNormalisation\nA table like the above is not very useful: in the absence a of particle knowledge of the ETFs’ values, we have no way of knowing if a value is “high” or “low”, hence apart from telling us that the value is a number we have now way to let’s try to make this table a bit more insightful.\nThe request above delivered a data_frame, and here is a snapshot of the last 5 rows:\n\n\nCode\n#collapse-hide\n# Same table, but this time, normalised\n(df/df.iloc[0, ]*100).round(decimals=1).tail(3)\n\n\n\n\n\n\n\n\n\nAGG\nEEM\nGLD\nGOVT\nIJH\nIVV\nPDBC\nSCHA\nSCHD\nVCLT\nVTI\nVXUS\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2022-02-24\n116.9\n132.6\n153.1\n112.8\n189.5\n229.6\n136.2\n176.0\n228.8\n135.0\n224.1\n141.9\n\n\n2022-02-25\n117.0\n135.0\n152.6\n112.8\n194.9\n234.7\n133.3\n180.3\n235.6\n135.8\n229.1\n145.1\n\n\n2022-02-28\n117.8\n133.2\n154.2\n113.8\n194.9\n234.2\n136.2\n180.7\n234.6\n137.9\n228.8\n143.1\n\n\n\n\n\n\n\nThis is much better.\nNow we can at least see that: - US Equities (e.g. IVV) had a fantastic ride since 2015; - Government bonds (e.g. GOVT) under-performed; - Commodities (PDBC) and Gold (GLD) had several rough years as well, with recent massive pick-up in the current geopolitical context.\n\n\nVisualise asset classes’ returns\nBeing able to sanity check the data is very important, and it’s often more efficient with a quick chart.\n\n\nCode\n#collapse-hide\n\n# Normalise to 100\nnormalised_data = (df/df.iloc[0, ]*100)\n\n# A bit of data wrangling\ntransposed_data = normalised_data.tail(1).reset_index().transpose()\ntransposed_data = transposed_data.iloc[1:len(transposed_data)]\ntransposed_data = transposed_data.rename(columns={0: \"Last Value\"})\n\n# We want a bar chart sorted by decreaseing values\ntransposed_data = transposed_data.sort_values(by=\"Last Value\", ascending=False)\n\n# Theming Seaborn results\nsns.set_theme()\n\n# Draw\ntransposed_data.plot.bar(figsize=(10, 6))\npass\n\n\n\n\n\n\n\nDraw the wealth curve\nThe table above is useful, but when it comes to grasping and long term risks and returns, a chart is worth a thousand words.\nA very common issue when charting multiple time series is the very different stock levels, and this can make the chart hard to read.\nThis is why we will once again normalise the data.\n\n\nCode\n#collapse-hide\n\n# Theming Seaborn results\nsns.set_theme()\n\n# Plot the time series\nplt.figure(figsize=(12,6))\n\n# Legends and Axis titles\np = sns.lineplot(data=normalised_data)\np.set_ylabel(f\"Close Price, Basis 100 in {start_date}\")\npass"
   },
   {
-    "objectID": "posts/publication-workflow/visualizing-historical-data.html#plot-the-raw-time-series-using-the-seaborn-library",
-    "href": "posts/publication-workflow/visualizing-historical-data.html#plot-the-raw-time-series-using-the-seaborn-library",
-    "title": "Visualising Historical Data",
-    "section": "Plot the raw time series using the seaborn library",
-    "text": "Plot the raw time series using the seaborn library\nTo quickly check that we got the right data, let’s visualise it.\n\n\nCode\n#collapse-hide\nimport seaborn as sns\n\n# Apply the default theme\nsns.set_style('whitegrid')\n\nplt.figure(figsize=(15,6))\np = sns.lineplot(data=df['Adj Close'])\np.set_ylabel(\"Close Price\")\npass"
+    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#estimate-risk-and-return",
+    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#estimate-risk-and-return",
+    "title": "Portfolio optimisation with Python",
+    "section": "Estimate risk and return",
+    "text": "Estimate risk and return\nIn Markowitz 1952{% fn 1 %}, the optimal portfolio is obtained as a function of expected returns and expected risks of the portfolio. This takes a strong assumption that we have a “crystal ball”, or at least access to a predictive model, which at this stage is well beyond this article.\nFor this first example, we will rely on historical parameters estimation, which precisely means that we expect the past to be a good prediction of what might happen in the future.\n\nVolatility\nThere are many ways to estimate the volatility, and I will only cover the simplest approach.\nWe have access to daily close prices of the ETFs, hence we could look at the standard deviation of daily returns. In theory this would utilise most of the data we have access to, which is a good thing. In practice, and especially when looking at asset classes which can be observed with an 8 to 12 hours time difference which might lead the “sample volatility” to become inconsistent between 2 asset classes. This is even more important for estimating the correlation.\nPractitioners often use weekly returns to alleviate this issue, and we will do the same here, and as such calculate the returns using a resampled time series. To calculate the annualized volatility requires an additional factor in this case the square root of 52. Why this?\nVolatility is essential to option traders, and when pricing options, practitioners often model asset prices as Wiener processes(number of weeks in a year) {% fn 9 %}. The variance of a Wiener process is proportional to the time, and the volatility is the square root of the the variance, which gives us that to convert standard deviation of weekly returns into an annualized figure, we need to multiply our results by the square root of the number of weeks in a year (more on Wiener processes here {% fn 9 %}).\n\n\nCode\nweekly_returns = df.resample(\"W\").last().pct_change()\n((weekly_returns.std()*math.sqrt(52)*100).sort_values()).plot.bar();\n\n\n\n\n\nAs one could have guessed, on the left of the chart above, we can find the low volatility asset classes (e.g. Government Bonds, Investment Grade Bonds), whereas on the right we have high volatility asset classes (Mid Cap and Small Cap Equities)."
   },
   {
-    "objectID": "posts/publication-workflow/visualizing-historical-data.html#plot-the-normalised-the-time-series",
-    "href": "posts/publication-workflow/visualizing-historical-data.html#plot-the-normalised-the-time-series",
-    "title": "Visualising Historical Data",
-    "section": "Plot the normalised the time series",
-    "text": "Plot the normalised the time series\nThe chart above is useful, but the vast difference between the ETFs’ values makes it a bit hard to actually track each respective time series.\nIt would be more effective to normalise the data. It’s often referred to as “rebasing”, ie making each time series starting at 100, this will make it much easier to compare.\n\n\nCode\n#collapse-hide\n\n# Normalise the data, which here means for each column to start at 100, with subsequent price development \"scaled\" according to daily returns\nnormalised_ts = (df['Adj Close']/df['Adj Close'].iloc[0, ]*100)\nplt.figure(figsize=(15,6))\np = sns.lineplot(data=normalised_ts)\np.set_ylabel(f\"Close Price, Basis 100 in {start_date}\")\npass"
+    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#correlation",
+    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#correlation",
+    "title": "Portfolio optimisation with Python",
+    "section": "Correlation",
+    "text": "Correlation\n\n\nCode\nsns.heatmap(weekly_returns.corr());\n\n\n\n\n\n\n\nCode\n#collapse-hide\nfrom pypfopt import risk_models\nfrom pypfopt import plotting\n\n# Calculate expected returns and sample covariance\nmu = expected_returns.mean_historical_return(df)\nsample_cov = risk_models.sample_cov(df, frequency=252)\n\nS = risk_models.CovarianceShrinkage(df).ledoit_wolf()"
   },
   {
-    "objectID": "posts/publication-workflow/visualizing-historical-data.html#rolling-window-cumulated-returns",
-    "href": "posts/publication-workflow/visualizing-historical-data.html#rolling-window-cumulated-returns",
-    "title": "Visualising Historical Data",
-    "section": "Rolling window cumulated returns",
-    "text": "Rolling window cumulated returns\nIt’s often easy to get ‘seduced’ by the compelling long term returns, especially about Equities. And indeed, it was a good thing to be invested in Equities in the long run !\nBut 1y returns are usually a good way to keep track of the portfolio, and moreover to see how these returns have developed over time. With a 1y return chart, the notion of risk, ie either fast-changing returns, or - even worse - consistently negative returns, quickly becomes apparent.\n\n\nCode\n# We use pct_change() to calculate the one year return\nts_1y_returns = df['Adj Close'].pct_change(periods=252)\nplt.figure(figsize=(15,6))\np = sns.lineplot(data=ts_1y_returns)\np.set_ylabel(f\"Close Price, Basis 100 in {start_date}\")\npass"
+    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#the-main-results-efficient-frontier-maximum-sharpe-portfolio",
+    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#the-main-results-efficient-frontier-maximum-sharpe-portfolio",
+    "title": "Portfolio optimisation with Python",
+    "section": "The main results: Efficient Frontier & Maximum Sharpe Portfolio",
+    "text": "The main results: Efficient Frontier & Maximum Sharpe Portfolio\n\nCalculate and draw the efficient frontier\nWith expected returns and risk estimated, we are ready to utilise PyPortfolioOpt’s optimiser to draw the efficient frontier.\nThe idea behind the efficient frontier{% fn 1 %} is relatively simple: - For each level of investor’s risk, there is an optimal portfolio which is expected to deliver the highest level of return; or conversely - For each level of investor’s return, there is an optimal portfolio which is expected to deliver the lowest level of return.\n\n\nCode\n#collapse-hide\nef = EfficientFrontier(mu, sample_cov)\n\n# We create 2 efficient frontiers\nfig, ax = plt.subplots()\nplotting.plot_efficient_frontier(ef, ax=ax, show_assets=True)\nax.set_title(\"Asset Classes & Efficient Frontier\")\n\nplt.show()\n\n\n\n\n\n\n\nAdd the Maximum Sharpe portfolio\n\n\nCode\n#collapse-hide\n\n# Find and plot the tangency portfolio\nfig2, ax = plt.subplots()\nef2 = EfficientFrontier(mu, S) \nplotting.plot_efficient_frontier(ef2, ax=ax, show_assets=True)\n\nef3 = EfficientFrontier(mu, S) \n\nef3.max_sharpe()\nret_tangent, std_tangent, _ = ef3.portfolio_performance()\nax.scatter(std_tangent, ret_tangent, marker=\"*\", s=100, c=\"r\", label=\"Max Sharpe\")\nax.set_title(\"Asset Classes, Efficient Frontier & Max Sharpe portfolio\")\nplt.show()\n\n\n\n\n\n\n\nCalculate random portfolios\n\n\nCode\n#collapse-hide\n\n# Plot random portfolios\nfig2, ax = plt.subplots()\nn_samples = 10000\nw = np.random.dirichlet(np.ones(len(mu)), n_samples)\nrets = w.dot(mu)\nstds = np.sqrt((w.T * (S @ w.T)).sum(axis=0))\nsharpes = rets / stds\nax.scatter(stds, rets, marker=\".\", c=sharpes, cmap=\"viridis_r\")\n\n# Format\nax.set_title(\"Random portfolios, based on the same asset classes\")\n#ax.legend()\nplt.tight_layout()\nplt.show()"
   },
   {
-    "objectID": "posts/publication-workflow/visualizing-historical-data.html#smoother-returns",
-    "href": "posts/publication-workflow/visualizing-historical-data.html#smoother-returns",
-    "title": "Visualising Historical Data",
-    "section": "Smoother returns",
-    "text": "Smoother returns\nThe chart above is great, but a bit too busy for my taste. Whilst accurate, there is too much info going on, the noise might reduce our ability to spot real medium terms or breakouts.\nThis is where pandas starts to be really powerful. The rolling() function essentially captures sub-series, with a defined length (here 21 days). By chaining the results of rolling() with the mean function, ie calculating the arithmetic average, this will provide us in a one-liner with a new series. This generated dataframe contains the time series of the moving average (21 days) for each of our time series.\nWhilst this “chaining” approach might initially sound obscure, this is extremely powerful, especially when factoring in the fact that you just need to change the tickers of the ETFs in the beginning of the article to entirely update the whole analysis … your turn!\n\n\nCode\n# Normalise the data, which here means for each column to start at 100, with subsequent price development \"scaled\" according to daily returns\nts_1y_returns = df['Adj Close'].pct_change(periods=252).rolling(window=21).mean()\nplt.figure(figsize=(15,6))\np = sns.lineplot(data=ts_1y_returns)\np.set_ylabel(f\"Close Price, Basis 100 in {start_date}\")\npass"
-  },
-  {
-    "objectID": "posts/publication-workflow/visualizing-historical-data.html#conclusion",
-    "href": "posts/publication-workflow/visualizing-historical-data.html#conclusion",
-    "title": "Visualising Historical Data",
+    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#conclusion",
+    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#conclusion",
+    "title": "Portfolio optimisation with Python",
     "section": "Conclusion",
-    "text": "Conclusion\nSo that’s it for this short intro on data gathering and visualising. In this article, we have gathered, checked, normalised and plot close prices for different ETFs.\nThe next step will be to use these function to generate some returns and risk statistics, and start exploring portfolio construction.\nSee you in the next article, and stay safe."
+    "text": "Conclusion\nEt voila!\nCompared to macros or Excel formulas, this is an amazing improvement, and enables us to customise everything in seconds: historical timeframe, asset classes, etc.\nTo deliver a full portfolio optimisation process in such a limited number of lines is truly awesome.\nI hope this article provided you some ideas on how to look at portfolio construction.\nHappy coding, and happy portfolio construction!\n{% series_list %}"
   },
   {
-    "objectID": "posts/publication-workflow/visualizing-historical-data.html#useful-related-links",
-    "href": "posts/publication-workflow/visualizing-historical-data.html#useful-related-links",
-    "title": "Visualising Historical Data",
-    "section": "Useful Related Links",
-    "text": "Useful Related Links\n{% series_list %}\nThere is no such thing as “full tutorial on something”, knowledge is everywhere. I found these tutorials pretty handy, check them out too!\n\nSeaborn Tutorial\nTutorial on F-Strings"
+    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#resources",
+    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#resources",
+    "title": "Portfolio optimisation with Python",
+    "section": "Resources",
+    "text": "Resources\n{{ ‘Portfolio Selection, Henri Markowitz, 1952’ | fndetail: 1 }}\n{{ ‘PyportfolioOpt, Robert Andrew Martin, 2018’ | fndetail: 2}}\n{{ ‘Pandas’ | fndetail: 3 }}\n{{ ‘Numpy’ | fndetail: 4 }}\n{{ ‘Matplolib’ | fndetail: 5}}\n{{ ‘Pandas_datareader’ | fndetail: 6}}\n{{ ‘US News, 7 Best Long-Term ETFs to Buy and Hold, 25 Feb 2022’ | fndetail: 7}}\n{{ ‘ETF.com’ | fndetail: 8}}\n{{ ‘Wikipedia.com / Wiener Processes’ | fndetail: 9}}"
   },
   {
-    "objectID": "posts/data-and-apis/test_wb.html",
-    "href": "posts/data-and-apis/test_wb.html",
-    "title": "",
+    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html",
+    "href": "posts/risk_and_return/estimating-portfolio-risk.html",
+    "title": "Estimate Financial Risk",
     "section": "",
-    "text": "Code"
+    "text": "## Introduction In today’s session, we will\nCode\nimport pandas as pd\nimport matplotlib\nimport matplotlib.pyplot as plt\n#import pandas_datareader as web_reader\nfrom pandas_datareader import data as pdr\nimport yfinance as yf\n\n\nimport matplotx\nimport matplotlib.dates as mdates\nimport seaborn as sns\nimport numpy as np\nfrom scipy.stats import norm\nimport math\nimport seaborn as sns\n\ntickers = ['SPY']\n\nstart_date = '2018-09-14'\nend_date = '2022-09-14'\ntickers = ['SPY', 'AGG']\n#yf.pdr_override(tickers)\ndf = yf.download(tickers,  start=start_date, end=end_date)\ndata = df.Close.SPY.resample(\"B\").last().fillna(method=\"bfill\")\ndata_agg = df.Close.AGG.resample(\"B\").last().fillna(method=\"bfill\")\n\n\n[                       0%                       ][*********************100%***********************]  2 of 2 completed"
   },
   {
-    "objectID": "posts/data-and-apis/test_wb.html#installation",
-    "href": "posts/data-and-apis/test_wb.html#installation",
-    "title": "",
-    "section": "Installation",
-    "text": "Installation\nTo start, ensure that you have the WBGAPI library installed. If not, you can do so using pip:\npip install wbgapi"
+    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#plot-historical-close-price",
+    "href": "posts/risk_and_return/estimating-portfolio-risk.html#plot-historical-close-price",
+    "title": "Estimate Financial Risk",
+    "section": "Plot Historical Close Price",
+    "text": "Plot Historical Close Price\n\n\nCode\ntpl_path = \"https://github.com/vdenoise/templates/raw/master\"\nmpl_tpl_path = f\"{tpl_path}/matplotlib\"\n\nplt.style.use(f\"{mpl_tpl_path}/dracula_slide.mplstyle\")\ndata.resample(\"W\").last().plot(figsize=(4,6));\nplt.ylabel(\"Wealth Curve\")  \nmatplotx.line_labels()  \n\nplt.savefig(\"output/wealth_curve_spy.png\" );"
   },
   {
-    "objectID": "posts/data-and-apis/test_wb.html#setting-the-stage",
-    "href": "posts/data-and-apis/test_wb.html#setting-the-stage",
-    "title": "",
-    "section": "Setting the Stage",
-    "text": "Setting the Stage\nFirstly, we need to import the necessary libraries. WBGAPI will be used to gather data, pandas for data manipulation, and matplotlib for visualisation.\nimport wbgapi as wb\nimport pandas as pd\nimport matplotlib.pyplot as plt"
+    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#plot-historical-returns",
+    "href": "posts/risk_and_return/estimating-portfolio-risk.html#plot-historical-returns",
+    "title": "Estimate Financial Risk",
+    "section": "Plot Historical Returns",
+    "text": "Plot Historical Returns\n\n\nCode\nplt.figure(figsize=(8, 6))\ndata_bar = data.resample(\"W\").last().pct_change().multiply(100)\nindex = data_bar.index\nindex = [pd.to_datetime(date, format='%Y-%m-%d').date() for date in index]\ndata_bar.index = index\nax = data_bar.plot.bar()\nplt.ylabel(\"Weekly Return (%)\")\nax.xaxis.set_major_locator(mdates.MonthLocator(interval=3))\nplt.gcf().autofmt_xdate()\nplt.savefig(\"output/weekly_returns_spy.png\" );"
   },
   {
-    "objectID": "posts/data-and-apis/test_wb.html#use-case-1-gdp-evolution-of-emerging-vs-developed-markets",
-    "href": "posts/data-and-apis/test_wb.html#use-case-1-gdp-evolution-of-emerging-vs-developed-markets",
-    "title": "",
-    "section": "Use Case 1: GDP Evolution of Emerging vs Developed Markets",
-    "text": "Use Case 1: GDP Evolution of Emerging vs Developed Markets\nGross Domestic Product (GDP) serves as a broad measure for a country’s overall economic activity. It represents the monetary value of all finished goods and services produced within a country’s borders in a specific time period.\nHere is how we can fetch the data:\n# Get income level codes for \"High income\" (developed markets) and \"Lower middle income\" and \"Upper middle income\" (emerging markets)\nincome_levels = wb.income.list().set_index('id')['name']\ndeveloped = [code for code, name in income_levels.items() if 'High income' in name]\nemerging = [code for code, name in income_levels.items() if 'middle income' in name]\n\n# Fetch GDP data (NY.GDP.MKTP.CD) for the last 30 years\nyears = list(range(1994, 2024))\ngdp_developed = wb.data.DataFrame('NY.GDP.MKTP.CD', country=developed, time=years).mean(axis=1)\ngdp_emerging = wb.data.DataFrame('NY.GDP.MKTP.CD', country=emerging, time=years).mean(axis=1)\n\n# Create a DataFrame\ndf_gdp = pd.DataFrame({'Developed Markets': gdp_developed, 'Emerging Markets': gdp_emerging})\nWe can now visualise the data:\ndf_gdp.plot(kind='line')\nplt.title('GDP Evolution: Developed vs Emerging Markets (1994-2024)')\nplt.xlabel('Year')\nplt.ylabel('GDP (Current US$)')\nplt.show()"
+    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#sorted-weekly-returns",
+    "href": "posts/risk_and_return/estimating-portfolio-risk.html#sorted-weekly-returns",
+    "title": "Estimate Financial Risk",
+    "section": "Sorted Weekly Returns",
+    "text": "Sorted Weekly Returns\n\n\nCode\nsorted_returns = data.resample(\"W\").last().pct_change().multiply(100).sort_values()\nsorted_returns.plot(figsize=(8, 6));\nplt.savefig(\"output/sorted_weekly_returns_spy.png\" );"
   },
   {
-    "objectID": "posts/data-and-apis/test_wb.html#use-case-2-gdp-per-capita-evolution-for-selected-countries",
-    "href": "posts/data-and-apis/test_wb.html#use-case-2-gdp-per-capita-evolution-for-selected-countries",
-    "title": "",
-    "section": "Use Case 2: GDP per Capita Evolution for Selected Countries",
-    "text": "Use Case 2: GDP per Capita Evolution for Selected Countries\nGDP per capita is a measure of the total output of a country that takes the GDP and divides it by the number of people in that country. The countries we will focus on are the USA, France, Germany, Japan, China, and India.\nFetching the data is straightforward:\n# Specify countries and fetch data for GDP per capita (NY.GDP.PCAP.CD)\ncountries = ['USA', 'FRA', 'DEU', 'JPN', 'CHN', 'IND']\ndf_gdp_pc = wb.data.DataFrame('NY.GDP.PCAP.CD', country=countries, time=years)\nAnd let’s visualise this:\ndf_gdp_pc.plot(kind='line')\nplt.title('GDP per Capita\n\n Evolution: USA, France, Germany, Japan, China, India (1994-2024)')\nplt.xlabel('Year')\nplt.ylabel('GDP per Capita (Current US$)')\nplt.show()"
+    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#return-distribution",
+    "href": "posts/risk_and_return/estimating-portfolio-risk.html#return-distribution",
+    "title": "Estimate Financial Risk",
+    "section": "Return Distribution",
+    "text": "Return Distribution\n\n\nCode\ndata_bar.hist(bins=100, figsize=(8,6));\n\n\n\n\n\n\n\nCode\nplt.figure(figsize=(8, 6))\nax = sns.kdeplot(data_bar)\nmean = data_bar.mean()\nstd = data_bar.std()\nN = 10\nfor i in [1, 2, 3]:\n    x1 = np.linspace(mean - i*std, mean - (i - 1)*std, N)\n    x2 = np.linspace(mean - (i - 1)*std, mean + (i - 1)*std, N)\n    x3 = np.linspace(mean + (i - 1)*std, mean + i*std, N)\n    x = np.concatenate((x1, x2, x3))\n    x = np.where((mean - (i - 1)*std &lt; x) & (x &lt; mean + (i - 1)*std), np.nan, x)\n    y = norm.pdf(x, mean, std)\n    ax.fill_between(x, y, alpha=0.5)\n\nplt.xlabel(\"SPY Weekly Returns (in %, US Dollar)\")\nplt.ylabel(\"Probability Density Function\")\n#plt.xticks(ticks=range(0, 10))\nplt.grid()\n\nplt.show()"
   },
   {
-    "objectID": "posts/data-and-apis/test_wb.html#conclusion",
-    "href": "posts/data-and-apis/test_wb.html#conclusion",
-    "title": "",
-    "section": "Conclusion",
-    "text": "Conclusion\nWorld Bank data provides invaluable insight into the world’s economic trends, and the WBGAPI library is an incredibly useful tool for extracting this data in an easy and efficient manner. It enables researchers, analysts, and policymakers to gauge economic performance, identify trends, and make evidence-based decisions.\nWhether you are a student, economist, or data enthusiast, the potential of such data is boundless. By coupling World Bank data with Python’s analytical and visualisation capabilities, you can make economic trends come alive, allowing for more profound, insightful analysis and decision-making."
-  },
-  {
-    "objectID": "posts/risk_and_return/estimating_risk.html",
-    "href": "posts/risk_and_return/estimating_risk.html",
-    "title": "Getting Started: measuring volatility",
-    "section": "",
-    "text": "Code\nimport pandas\n\n\n # Getting Started: Measuring Volatility"
+    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#historical-volatility",
+    "href": "posts/risk_and_return/estimating-portfolio-risk.html#historical-volatility",
+    "title": "Estimate Financial Risk",
+    "section": "Historical Volatility",
+    "text": "Historical Volatility\n\n\nCode\nplt.figure(figsize=(8, 6))\nplt.savefig(\"output/wealth_curve_spy.png\" );\ndata.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=True)\nmatplotx.line_labels() \nplt.savefig(\"output/wealth_curve_spy_with_vol.png\" );\n\n\n\n\n\n\n\nCode\nplt.figure(figsize=(8, 6))\ndata.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=False)\nmatplotx.line_labels()\nplt.savefig(\"output/vol_spy.png\" );\ndata_agg.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=False)\nmatplotx.line_labels()\nplt.savefig(\"output/vol_spy_with_agg.png\" );"
   },
   {
     "objectID": "posts/risk_and_return/10-formules-importantes-finance-marche.html#rendement-moyen",
@@ -322,206 +280,255 @@
     "text": "10. Corrélation\n\nUsage\nLa corrélation est utilisée pour mesurer la relation entre les rendements de deux actifs financiers.\n\n\nContexte\nUne corrélation positive indique que les rendements de deux actifs évoluent généralement dans la même direction, tandis qu’une corrélation négative indique qu’ils évoluent généralement dans des directions opposées. La corrélation est souvent utilisée pour évaluer la diversification d’un portefeuille d’investissement.\n\n\nFormule\n\\(\\rho = \\frac{\\mathrm{Cov}(R_i, R_j)}{\\sigma_i \\sigma_j}\\)\n\n\nCode\nticker_2 = 'MSFT'\ndata_2 = yf.download(ticker_2, start='2020-01-01', end='2021-01-01')['Adj Close']\nreturns_2 = data_2.pct_change().dropna()\n\ncorrelation_matrix = np.corrcoef(returns, returns_2)\ncorrelation = correlation_matrix[0][1]\n\nprint(f'Corrélation entre {ticker} et {ticker_2}: {correlation:.4f}')\n\n\n[*********************100%***********************]  1 of 1 completed\nCorrélation entre AAPL et MSFT: 0.8393\n\n\nCes 10 formules sont essentielles pour comprendre et analyser les actifs financiers et les portefeuilles d’investissement en finance de marché. En utilisant ces formules et les outils Python tels que yfinance et matplotlib, vous pouvez facilement récupérer des données de marché et visualiser les résultats de vos analyses."
   },
   {
-    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html",
-    "href": "posts/risk_and_return/estimating-portfolio-risk.html",
-    "title": "Estimate Financial Risk",
+    "objectID": "posts/risk_and_return/estimating_risk.html",
+    "href": "posts/risk_and_return/estimating_risk.html",
+    "title": "Getting Started: measuring volatility",
     "section": "",
-    "text": "## Introduction In today’s session, we will\nCode\nimport pandas as pd\nimport matplotlib\nimport matplotlib.pyplot as plt\n#import pandas_datareader as web_reader\nfrom pandas_datareader import data as pdr\nimport yfinance as yf\n\n\nimport matplotx\nimport matplotlib.dates as mdates\nimport seaborn as sns\nimport numpy as np\nfrom scipy.stats import norm\nimport math\nimport seaborn as sns\n\ntickers = ['SPY']\n\nstart_date = '2018-09-14'\nend_date = '2022-09-14'\ntickers = ['SPY', 'AGG']\n#yf.pdr_override(tickers)\ndf = yf.download(tickers,  start=start_date, end=end_date)\ndata = df.Close.SPY.resample(\"B\").last().fillna(method=\"bfill\")\ndata_agg = df.Close.AGG.resample(\"B\").last().fillna(method=\"bfill\")\n\n\n[                       0%                       ][*********************100%***********************]  2 of 2 completed"
+    "text": "Code\nimport pandas\n\n\n # Getting Started: Measuring Volatility"
   },
   {
-    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#plot-historical-close-price",
-    "href": "posts/risk_and_return/estimating-portfolio-risk.html#plot-historical-close-price",
-    "title": "Estimate Financial Risk",
-    "section": "Plot Historical Close Price",
-    "text": "Plot Historical Close Price\n\n\nCode\ntpl_path = \"https://github.com/vdenoise/templates/raw/master\"\nmpl_tpl_path = f\"{tpl_path}/matplotlib\"\n\nplt.style.use(f\"{mpl_tpl_path}/dracula_slide.mplstyle\")\ndata.resample(\"W\").last().plot(figsize=(4,6));\nplt.ylabel(\"Wealth Curve\")  \nmatplotx.line_labels()  \n\nplt.savefig(\"output/wealth_curve_spy.png\" );"
+    "objectID": "posts/data-and-apis/test_wb.html",
+    "href": "posts/data-and-apis/test_wb.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
   },
   {
-    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#plot-historical-returns",
-    "href": "posts/risk_and_return/estimating-portfolio-risk.html#plot-historical-returns",
-    "title": "Estimate Financial Risk",
-    "section": "Plot Historical Returns",
-    "text": "Plot Historical Returns\n\n\nCode\nplt.figure(figsize=(8, 6))\ndata_bar = data.resample(\"W\").last().pct_change().multiply(100)\nindex = data_bar.index\nindex = [pd.to_datetime(date, format='%Y-%m-%d').date() for date in index]\ndata_bar.index = index\nax = data_bar.plot.bar()\nplt.ylabel(\"Weekly Return (%)\")\nax.xaxis.set_major_locator(mdates.MonthLocator(interval=3))\nplt.gcf().autofmt_xdate()\nplt.savefig(\"output/weekly_returns_spy.png\" );"
+    "objectID": "posts/data-and-apis/test_wb.html#installation",
+    "href": "posts/data-and-apis/test_wb.html#installation",
+    "title": "",
+    "section": "Installation",
+    "text": "Installation\nTo start, ensure that you have the WBGAPI library installed. If not, you can do so using pip:\npip install wbgapi"
   },
   {
-    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#sorted-weekly-returns",
-    "href": "posts/risk_and_return/estimating-portfolio-risk.html#sorted-weekly-returns",
-    "title": "Estimate Financial Risk",
-    "section": "Sorted Weekly Returns",
-    "text": "Sorted Weekly Returns\n\n\nCode\nsorted_returns = data.resample(\"W\").last().pct_change().multiply(100).sort_values()\nsorted_returns.plot(figsize=(8, 6));\nplt.savefig(\"output/sorted_weekly_returns_spy.png\" );"
+    "objectID": "posts/data-and-apis/test_wb.html#setting-the-stage",
+    "href": "posts/data-and-apis/test_wb.html#setting-the-stage",
+    "title": "",
+    "section": "Setting the Stage",
+    "text": "Setting the Stage\nFirstly, we need to import the necessary libraries. WBGAPI will be used to gather data, pandas for data manipulation, and matplotlib for visualisation.\nimport wbgapi as wb\nimport pandas as pd\nimport matplotlib.pyplot as plt"
   },
   {
-    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#return-distribution",
-    "href": "posts/risk_and_return/estimating-portfolio-risk.html#return-distribution",
-    "title": "Estimate Financial Risk",
-    "section": "Return Distribution",
-    "text": "Return Distribution\n\n\nCode\ndata_bar.hist(bins=100, figsize=(8,6));\n\n\n\n\n\n\n\nCode\nplt.figure(figsize=(8, 6))\nax = sns.kdeplot(data_bar)\nmean = data_bar.mean()\nstd = data_bar.std()\nN = 10\nfor i in [1, 2, 3]:\n    x1 = np.linspace(mean - i*std, mean - (i - 1)*std, N)\n    x2 = np.linspace(mean - (i - 1)*std, mean + (i - 1)*std, N)\n    x3 = np.linspace(mean + (i - 1)*std, mean + i*std, N)\n    x = np.concatenate((x1, x2, x3))\n    x = np.where((mean - (i - 1)*std &lt; x) & (x &lt; mean + (i - 1)*std), np.nan, x)\n    y = norm.pdf(x, mean, std)\n    ax.fill_between(x, y, alpha=0.5)\n\nplt.xlabel(\"SPY Weekly Returns (in %, US Dollar)\")\nplt.ylabel(\"Probability Density Function\")\n#plt.xticks(ticks=range(0, 10))\nplt.grid()\n\nplt.show()"
+    "objectID": "posts/data-and-apis/test_wb.html#use-case-1-gdp-evolution-of-emerging-vs-developed-markets",
+    "href": "posts/data-and-apis/test_wb.html#use-case-1-gdp-evolution-of-emerging-vs-developed-markets",
+    "title": "",
+    "section": "Use Case 1: GDP Evolution of Emerging vs Developed Markets",
+    "text": "Use Case 1: GDP Evolution of Emerging vs Developed Markets\nGross Domestic Product (GDP) serves as a broad measure for a country’s overall economic activity. It represents the monetary value of all finished goods and services produced within a country’s borders in a specific time period.\nHere is how we can fetch the data:\n# Get income level codes for \"High income\" (developed markets) and \"Lower middle income\" and \"Upper middle income\" (emerging markets)\nincome_levels = wb.income.list().set_index('id')['name']\ndeveloped = [code for code, name in income_levels.items() if 'High income' in name]\nemerging = [code for code, name in income_levels.items() if 'middle income' in name]\n\n# Fetch GDP data (NY.GDP.MKTP.CD) for the last 30 years\nyears = list(range(1994, 2024))\ngdp_developed = wb.data.DataFrame('NY.GDP.MKTP.CD', country=developed, time=years).mean(axis=1)\ngdp_emerging = wb.data.DataFrame('NY.GDP.MKTP.CD', country=emerging, time=years).mean(axis=1)\n\n# Create a DataFrame\ndf_gdp = pd.DataFrame({'Developed Markets': gdp_developed, 'Emerging Markets': gdp_emerging})\nWe can now visualise the data:\ndf_gdp.plot(kind='line')\nplt.title('GDP Evolution: Developed vs Emerging Markets (1994-2024)')\nplt.xlabel('Year')\nplt.ylabel('GDP (Current US$)')\nplt.show()"
   },
   {
-    "objectID": "posts/risk_and_return/estimating-portfolio-risk.html#historical-volatility",
-    "href": "posts/risk_and_return/estimating-portfolio-risk.html#historical-volatility",
-    "title": "Estimate Financial Risk",
-    "section": "Historical Volatility",
-    "text": "Historical Volatility\n\n\nCode\nplt.figure(figsize=(8, 6))\nplt.savefig(\"output/wealth_curve_spy.png\" );\ndata.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=True)\nmatplotx.line_labels() \nplt.savefig(\"output/wealth_curve_spy_with_vol.png\" );\n\n\n\n\n\n\n\nCode\nplt.figure(figsize=(8, 6))\ndata.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=False)\nmatplotx.line_labels()\nplt.savefig(\"output/vol_spy.png\" );\ndata_agg.resample(\"W\").last().pct_change().rolling(52).std().multiply(math.sqrt(52)).plot(secondary_y=False)\nmatplotx.line_labels()\nplt.savefig(\"output/vol_spy_with_agg.png\" );"
+    "objectID": "posts/data-and-apis/test_wb.html#use-case-2-gdp-per-capita-evolution-for-selected-countries",
+    "href": "posts/data-and-apis/test_wb.html#use-case-2-gdp-per-capita-evolution-for-selected-countries",
+    "title": "",
+    "section": "Use Case 2: GDP per Capita Evolution for Selected Countries",
+    "text": "Use Case 2: GDP per Capita Evolution for Selected Countries\nGDP per capita is a measure of the total output of a country that takes the GDP and divides it by the number of people in that country. The countries we will focus on are the USA, France, Germany, Japan, China, and India.\nFetching the data is straightforward:\n# Specify countries and fetch data for GDP per capita (NY.GDP.PCAP.CD)\ncountries = ['USA', 'FRA', 'DEU', 'JPN', 'CHN', 'IND']\ndf_gdp_pc = wb.data.DataFrame('NY.GDP.PCAP.CD', country=countries, time=years)\nAnd let’s visualise this:\ndf_gdp_pc.plot(kind='line')\nplt.title('GDP per Capita\n\n Evolution: USA, France, Germany, Japan, China, India (1994-2024)')\nplt.xlabel('Year')\nplt.ylabel('GDP per Capita (Current US$)')\nplt.show()"
   },
   {
-    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#introduction",
-    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#introduction",
-    "title": "Portfolio optimisation with Python",
-    "section": "Introduction",
-    "text": "Introduction\nHarry Markowitz is one of the (if not “the”) fathers of modern portfolio construction and his seminal paper Portfolio Selection{% fn 1 %} has driven an entire research stream.\nThe intuition behind this paper is that one can combine the information gathered on expected returns, risks and diversification of various assets or asset classes with a view to optimise the risk-return profile of a given portfolio.\nIn practice, we typically find a limited stability of the portfolios generated using this approach, especially due the high sensitivity of the portfolio to the expected returns; nonetheless, the insights it provides are very useful and it’s a perfect start to see the impact of risk and diversification.\nFor this article, we will mostly rely on a fantastic Python library, PyPortfolioOpt {% fn 2%} which will do the optimisation heavy lifting for us."
-  },
-  {
-    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#setup",
-    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#setup",
-    "title": "Portfolio optimisation with Python",
-    "section": "Setup",
-    "text": "Setup\n\nLoading Libraries\nThe main library to load here is indeed PyPortfolioOpt{% fn 2%}, and we will rely extensively on it in this article.\nWe need the following tools as well: - Pandas{% fn 3%}: load, filter, sort and pretty much all data wrangling operations; - Numpy{% fn 4%}: provides most matrix and advanced numerical operations; this library is the calculation backbone for pandas; - Matplotlib{% fn 5%}: the de facto reference library to draw scientific charts; - yfinance{% fn 6%}: a very handy library to access many different online databases, including Yahoo Finance.\n\n\nCode\n#collapse-hide\nimport numpy as np \nimport pandas_datareader.data as web_reader\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport math\nimport yfinance as yf\n\nfrom pypfopt.efficient_frontier import EfficientFrontier\nfrom pypfopt import risk_models\nfrom pypfopt import expected_returns\n\n\n\n\nMisc Parameters\nIn the code below, we set some variables to adjust the jupyter loo\n\n\nCode\n#collapse-hide\n# Note that this change the decimals places inside Jupyter, but not on the website\npd.options.display.float_format = '{:,.1f}'.format"
-  },
-  {
-    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#defining-our-investable-universe",
-    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#defining-our-investable-universe",
-    "title": "Portfolio optimisation with Python",
-    "section": "Defining our Investable Universe",
-    "text": "Defining our Investable Universe\nFirst and foremost, we need to define our Investable Universe i.e. the set of asset classes that we will allow in our portfolio.\nMany investors would typically think about single stocks, but on my side, I am typically looking I am looking here a Long Term Investing, and I would be keen to\nSpeaking about asset classes, we need some ETFs to analyse!\n\n“Important: Please bear in mind this article if purely for pedagogical purpose and should by no mean be understood as a recommendation or advice. Investing brings risk and in particular risk of loss of capital. I have no intention to recommend anything! I will follow among others this recent article in US News{% fn 7%} and ETF.com{% fn 8%} as sources of inspiration to identify relevant ETFs.”\n\n\nEquity\nLet’s start with various Equity sub-asset classes:\n\nIVV: iShares Core S&P 500 ETF representing US Equity Large Cap\nSCHA: Schwab U.S. Small-Cap ETF representing US Equity Small Cap\nIJH: iShares Core S&P Mid-Cap ETF representing US Equity Mid Cap\nSCHD: Schwab U.S. Dividend Equity ETF representing US Equity Dividend (ie US stocks which are deemed to pay higher dividends)\nVTI: Vanguard Total Stock Market ETF representing US Equity, with all market cap included\nVXUS: Vanguard Total International Stock ETF representing World ex-US equities\nEEM: iShares MSCI Emerging Markets ETF representing the Emerging Market Equities\n\n\n\nFixed Income\nLet’s add Fixed Income, which would typically aim to reduce the overall portfolio’s volatility:\n\nAGG: iShares Core U.S. Aggregate Bond ETFrepresenting the entire US Bond market\nGOVT: iShares U.S. Treasury Bond ETF representing the performance of US Government Bonds\nVCLT: Vanguard Long-Term Corporate Bond ETF representing the Investment Grade USD denominated bonds.\n\n\n\nAlternative Assets\nLet’s add 2 additional asset classes, Gold and Commodities: - GLD: SPDR Gold Trust representing the price of Gold - PDBC: Invesco Optimum Yield Diversified Commodity** Strategy No K-1 ETF** which will represent the performance of the Broad Commodities asset class\nEverything in the above is denominated in US Dollars, this will make our life easier in what follows, ie we will not need any currency conversion, which is always a bit painfull in the process."
-  },
-  {
-    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#parameters-and-data-gathering",
-    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#parameters-and-data-gathering",
-    "title": "Portfolio optimisation with Python",
-    "section": "Parameters and data gathering",
-    "text": "Parameters and data gathering\nI recommend you to read this article about data gathering.\nLike we did in this article, we will utilise pandas_datareader{% fn 6%} to get historical time series. As mentioned above, we will look at the performance of ETFs, which we will consider as as relevant proxies for their respective asset classes.\nYou can of course utilise whatever asset class you want, and take single stocks, funds as historical data points. On my side, I am quite familiar with indices ETFs, and I will go with the selection above.\nLast but not least, we need to define the start_date and end_date for gathering the historical time series. For this study, we will gather 7 years of data.\n\n\nCode\n#collapse-hide\n\nstart_date = '2015-03-01'\nend_date = '2022-03-01'\n\n# Define Investable Universe\ninvestable_universe_tickers = ['IVV', 'SCHA', 'IJH', 'SCHD', 'VTI', 'VXUS', 'EEM', 'VCLT', 'AGG', 'GOVT','PDBC','GLD']\n\n# Get Historical Data\ndf = yf.download(investable_universe_tickers, start=start_date, end=end_date)\ndf = df['Adj Close']\n\n# This is required to round the blog's table into 2 decimals, Jupyter's formatting does not apply on the published website\ndf = df.round(decimals=1)\n\n\n[                       0%                       ][                       0%                       ][************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[************          25%                       ]  3 of 12 completed[**********************75%***********            ]  9 of 12 completed[**********************83%***************        ]  10 of 12 completed[**********************83%***************        ]  10 of 12 completed[*********************100%***********************]  12 of 12 completed\n\n\n\nData gathering: results\nThe request above delivered a pandas data_frame, and here is a snapshot of the last 5 rows:\n\n\nCode\n#collapse-hide\ndf.tail(3)\n\n\n\n\n\n\n\n\n\nAGG\nEEM\nGLD\nGOVT\nIJH\nIVV\nPDBC\nSCHA\nSCHD\nVCLT\nVTI\nVXUS\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2022-02-24\n104.4\n45.1\n177.1\n24.6\n251.1\n418.4\n14.3\n44.7\n70.7\n87.9\n210.7\n56.6\n\n\n2022-02-25\n104.5\n45.9\n176.6\n24.6\n258.3\n427.6\n14.0\n45.8\n72.8\n88.4\n215.4\n57.9\n\n\n2022-02-28\n105.2\n45.3\n178.4\n24.8\n258.3\n426.7\n14.3\n45.9\n72.5\n89.8\n215.1\n57.1\n\n\n\n\n\n\n\n\n\nNormalisation\nA table like the above is not very useful: in the absence a of particle knowledge of the ETFs’ values, we have no way of knowing if a value is “high” or “low”, hence apart from telling us that the value is a number we have now way to let’s try to make this table a bit more insightful.\nThe request above delivered a data_frame, and here is a snapshot of the last 5 rows:\n\n\nCode\n#collapse-hide\n# Same table, but this time, normalised\n(df/df.iloc[0, ]*100).round(decimals=1).tail(3)\n\n\n\n\n\n\n\n\n\nAGG\nEEM\nGLD\nGOVT\nIJH\nIVV\nPDBC\nSCHA\nSCHD\nVCLT\nVTI\nVXUS\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2022-02-24\n116.9\n132.6\n153.1\n112.8\n189.5\n229.6\n136.2\n176.0\n228.8\n135.0\n224.1\n141.9\n\n\n2022-02-25\n117.0\n135.0\n152.6\n112.8\n194.9\n234.7\n133.3\n180.3\n235.6\n135.8\n229.1\n145.1\n\n\n2022-02-28\n117.8\n133.2\n154.2\n113.8\n194.9\n234.2\n136.2\n180.7\n234.6\n137.9\n228.8\n143.1\n\n\n\n\n\n\n\nThis is much better.\nNow we can at least see that: - US Equities (e.g. IVV) had a fantastic ride since 2015; - Government bonds (e.g. GOVT) under-performed; - Commodities (PDBC) and Gold (GLD) had several rough years as well, with recent massive pick-up in the current geopolitical context.\n\n\nVisualise asset classes’ returns\nBeing able to sanity check the data is very important, and it’s often more efficient with a quick chart.\n\n\nCode\n#collapse-hide\n\n# Normalise to 100\nnormalised_data = (df/df.iloc[0, ]*100)\n\n# A bit of data wrangling\ntransposed_data = normalised_data.tail(1).reset_index().transpose()\ntransposed_data = transposed_data.iloc[1:len(transposed_data)]\ntransposed_data = transposed_data.rename(columns={0: \"Last Value\"})\n\n# We want a bar chart sorted by decreaseing values\ntransposed_data = transposed_data.sort_values(by=\"Last Value\", ascending=False)\n\n# Theming Seaborn results\nsns.set_theme()\n\n# Draw\ntransposed_data.plot.bar(figsize=(10, 6))\npass\n\n\n\n\n\n\n\nDraw the wealth curve\nThe table above is useful, but when it comes to grasping and long term risks and returns, a chart is worth a thousand words.\nA very common issue when charting multiple time series is the very different stock levels, and this can make the chart hard to read.\nThis is why we will once again normalise the data.\n\n\nCode\n#collapse-hide\n\n# Theming Seaborn results\nsns.set_theme()\n\n# Plot the time series\nplt.figure(figsize=(12,6))\n\n# Legends and Axis titles\np = sns.lineplot(data=normalised_data)\np.set_ylabel(f\"Close Price, Basis 100 in {start_date}\")\npass"
-  },
-  {
-    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#estimate-risk-and-return",
-    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#estimate-risk-and-return",
-    "title": "Portfolio optimisation with Python",
-    "section": "Estimate risk and return",
-    "text": "Estimate risk and return\nIn Markowitz 1952{% fn 1 %}, the optimal portfolio is obtained as a function of expected returns and expected risks of the portfolio. This takes a strong assumption that we have a “crystal ball”, or at least access to a predictive model, which at this stage is well beyond this article.\nFor this first example, we will rely on historical parameters estimation, which precisely means that we expect the past to be a good prediction of what might happen in the future.\n\nVolatility\nThere are many ways to estimate the volatility, and I will only cover the simplest approach.\nWe have access to daily close prices of the ETFs, hence we could look at the standard deviation of daily returns. In theory this would utilise most of the data we have access to, which is a good thing. In practice, and especially when looking at asset classes which can be observed with an 8 to 12 hours time difference which might lead the “sample volatility” to become inconsistent between 2 asset classes. This is even more important for estimating the correlation.\nPractitioners often use weekly returns to alleviate this issue, and we will do the same here, and as such calculate the returns using a resampled time series. To calculate the annualized volatility requires an additional factor in this case the square root of 52. Why this?\nVolatility is essential to option traders, and when pricing options, practitioners often model asset prices as Wiener processes(number of weeks in a year) {% fn 9 %}. The variance of a Wiener process is proportional to the time, and the volatility is the square root of the the variance, which gives us that to convert standard deviation of weekly returns into an annualized figure, we need to multiply our results by the square root of the number of weeks in a year (more on Wiener processes here {% fn 9 %}).\n\n\nCode\nweekly_returns = df.resample(\"W\").last().pct_change()\n((weekly_returns.std()*math.sqrt(52)*100).sort_values()).plot.bar();\n\n\n\n\n\nAs one could have guessed, on the left of the chart above, we can find the low volatility asset classes (e.g. Government Bonds, Investment Grade Bonds), whereas on the right we have high volatility asset classes (Mid Cap and Small Cap Equities)."
-  },
-  {
-    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#correlation",
-    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#correlation",
-    "title": "Portfolio optimisation with Python",
-    "section": "Correlation",
-    "text": "Correlation\n\n\nCode\nsns.heatmap(weekly_returns.corr());\n\n\n\n\n\n\n\nCode\n#collapse-hide\nfrom pypfopt import risk_models\nfrom pypfopt import plotting\n\n# Calculate expected returns and sample covariance\nmu = expected_returns.mean_historical_return(df)\nsample_cov = risk_models.sample_cov(df, frequency=252)\n\nS = risk_models.CovarianceShrinkage(df).ledoit_wolf()"
-  },
-  {
-    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#the-main-results-efficient-frontier-maximum-sharpe-portfolio",
-    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#the-main-results-efficient-frontier-maximum-sharpe-portfolio",
-    "title": "Portfolio optimisation with Python",
-    "section": "The main results: Efficient Frontier & Maximum Sharpe Portfolio",
-    "text": "The main results: Efficient Frontier & Maximum Sharpe Portfolio\n\nCalculate and draw the efficient frontier\nWith expected returns and risk estimated, we are ready to utilise PyPortfolioOpt’s optimiser to draw the efficient frontier.\nThe idea behind the efficient frontier{% fn 1 %} is relatively simple: - For each level of investor’s risk, there is an optimal portfolio which is expected to deliver the highest level of return; or conversely - For each level of investor’s return, there is an optimal portfolio which is expected to deliver the lowest level of return.\n\n\nCode\n#collapse-hide\nef = EfficientFrontier(mu, sample_cov)\n\n# We create 2 efficient frontiers\nfig, ax = plt.subplots()\nplotting.plot_efficient_frontier(ef, ax=ax, show_assets=True)\nax.set_title(\"Asset Classes & Efficient Frontier\")\n\nplt.show()\n\n\n\n\n\n\n\nAdd the Maximum Sharpe portfolio\n\n\nCode\n#collapse-hide\n\n# Find and plot the tangency portfolio\nfig2, ax = plt.subplots()\nef2 = EfficientFrontier(mu, S) \nplotting.plot_efficient_frontier(ef2, ax=ax, show_assets=True)\n\nef3 = EfficientFrontier(mu, S) \n\nef3.max_sharpe()\nret_tangent, std_tangent, _ = ef3.portfolio_performance()\nax.scatter(std_tangent, ret_tangent, marker=\"*\", s=100, c=\"r\", label=\"Max Sharpe\")\nax.set_title(\"Asset Classes, Efficient Frontier & Max Sharpe portfolio\")\nplt.show()\n\n\n\n\n\n\n\nCalculate random portfolios\n\n\nCode\n#collapse-hide\n\n# Plot random portfolios\nfig2, ax = plt.subplots()\nn_samples = 10000\nw = np.random.dirichlet(np.ones(len(mu)), n_samples)\nrets = w.dot(mu)\nstds = np.sqrt((w.T * (S @ w.T)).sum(axis=0))\nsharpes = rets / stds\nax.scatter(stds, rets, marker=\".\", c=sharpes, cmap=\"viridis_r\")\n\n# Format\nax.set_title(\"Random portfolios, based on the same asset classes\")\n#ax.legend()\nplt.tight_layout()\nplt.show()"
-  },
-  {
-    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#conclusion",
-    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#conclusion",
-    "title": "Portfolio optimisation with Python",
+    "objectID": "posts/data-and-apis/test_wb.html#conclusion",
+    "href": "posts/data-and-apis/test_wb.html#conclusion",
+    "title": "",
     "section": "Conclusion",
-    "text": "Conclusion\nEt voila!\nCompared to macros or Excel formulas, this is an amazing improvement, and enables us to customise everything in seconds: historical timeframe, asset classes, etc.\nTo deliver a full portfolio optimisation process in such a limited number of lines is truly awesome.\nI hope this article provided you some ideas on how to look at portfolio construction.\nHappy coding, and happy portfolio construction!\n{% series_list %}"
+    "text": "Conclusion\nWorld Bank data provides invaluable insight into the world’s economic trends, and the WBGAPI library is an incredibly useful tool for extracting this data in an easy and efficient manner. It enables researchers, analysts, and policymakers to gauge economic performance, identify trends, and make evidence-based decisions.\nWhether you are a student, economist, or data enthusiast, the potential of such data is boundless. By coupling World Bank data with Python’s analytical and visualisation capabilities, you can make economic trends come alive, allowing for more profound, insightful analysis and decision-making."
   },
   {
-    "objectID": "posts/risk_and_return/optimise-portfolios-with-python.html#resources",
-    "href": "posts/risk_and_return/optimise-portfolios-with-python.html#resources",
-    "title": "Portfolio optimisation with Python",
-    "section": "Resources",
-    "text": "Resources\n{{ ‘Portfolio Selection, Henri Markowitz, 1952’ | fndetail: 1 }}\n{{ ‘PyportfolioOpt, Robert Andrew Martin, 2018’ | fndetail: 2}}\n{{ ‘Pandas’ | fndetail: 3 }}\n{{ ‘Numpy’ | fndetail: 4 }}\n{{ ‘Matplolib’ | fndetail: 5}}\n{{ ‘Pandas_datareader’ | fndetail: 6}}\n{{ ‘US News, 7 Best Long-Term ETFs to Buy and Hold, 25 Feb 2022’ | fndetail: 7}}\n{{ ‘ETF.com’ | fndetail: 8}}\n{{ ‘Wikipedia.com / Wiener Processes’ | fndetail: 9}}"
-  },
-  {
-    "objectID": "posts/data-and-apis/exploring-worldbank-api.html",
-    "href": "posts/data-and-apis/exploring-worldbank-api.html",
-    "title": "Exploring the Worldbank API (WBGAPI)",
-    "section": "",
-    "text": "Code\nimport wbgapi as wb\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\n\n\nCode\nincomes = wb.income.list()\ndata = wb.data.fetch('SP.POP.TOTL', 'USA', 2000, 2020)\n\n\n\n\nCode\ndata\n\n\n&lt;generator object fetch at 0x10ab110b0&gt;"
-  },
-  {
-    "objectID": "posts/tutorials/en/getting-started-with-eurostat-api.html",
-    "href": "posts/tutorials/en/getting-started-with-eurostat-api.html",
-    "title": "Getting Started with Eurostat API",
-    "section": "",
-    "text": "# Connect to Eurostat API with Python using their REST API\nEurostat, the statistical office of the European Union, provides access to a wealth of data on various aspects of the European economy, environment, and society. One way to access this data is through their REST API, which can be easily connected to and queried using Python.\nIn this article, we will walk you through the steps needed to connect to the Eurostat API using Python and build a function to show the connection status to the API. By the end, you’ll be able to retrieve data from Eurostat in a structured and efficient manner."
-  },
-  {
-    "objectID": "posts/tutorials/en/getting-started-with-eurostat-api.html#prerequisites",
-    "href": "posts/tutorials/en/getting-started-with-eurostat-api.html#prerequisites",
-    "title": "Getting Started with Eurostat API",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nBefore we begin, make sure you have Python installed on your system. You can check whether you have Python installed and which version you’re using by running the following command in your terminal:\npython --version\nIf you don’t have Python installed, you can download it from the official Python website.\nNext, you will need to install the requests library, which allows you to make HTTP requests in Python. To do this, open your terminal and run:\npip install requests"
-  },
-  {
-    "objectID": "posts/tutorials/en/getting-started-with-eurostat-api.html#connecting-to-the-eurostat-api",
-    "href": "posts/tutorials/en/getting-started-with-eurostat-api.html#connecting-to-the-eurostat-api",
-    "title": "Getting Started with Eurostat API",
-    "section": "Connecting to the Eurostat API",
-    "text": "Connecting to the Eurostat API\nTo connect to the Eurostat API, you need to send HTTP requests to their API endpoints. The base URL for the Eurostat API is:\nhttps://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/\nYou can append the relevant endpoint to this base URL to access specific datasets or services.\nFor example, to access the dataset on GDP per capita, you would send a request to:\nhttps://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/nama_10_pc?format=sdmx-compact-2.1\nHere’s a Python function that sends a request to the Eurostat API and checks the connection status:\n\n\nCode\nimport requests\n\ndef check_connection_status(endpoint):\n    response = requests.get(endpoint)\n    status_code = response.status_code\n    \n    if status_code == 200:\n        print(\"Connection Successful! (Status Code: 200)\")\n    elif status_code == 404:\n        print(\"Error: Dataset not found (Status Code: 404)\")\n    else:\n        print(f\"Error: Connection failed (Status Code: {status_code})\")\n\n# Test the function with the base URL\napi_base_url = \"https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/sdmx-rest.wadl\"\ncheck_connection_status(api_base_url)\n\n\nConnection Successful! (Status Code: 200)\n\n\nThis function sends an HTTP GET request to the specified api_url and checks the response’s status code. If the status code is 200, the connection is successful. If the status code is anything other than 200, the connection has failed, and the function raises an exception with the corresponding error message.\nTo use this function, replace api_url with the desired Eurostat API endpoint."
-  },
-  {
-    "objectID": "posts/tutorials/en/getting-started-with-eurostat-api.html#conclusion",
-    "href": "posts/tutorials/en/getting-started-with-eurostat-api.html#conclusion",
-    "title": "Getting Started with Eurostat API",
-    "section": "Conclusion",
-    "text": "Conclusion\nIn this article, we demonstrated how to connect to the Eurostat API using Python and their REST API. We also showed you how to create a simple function to check the connection status to the API.\nWith these tools in hand, you can now access a wide variety of European statistical data and use it in your data analysis or visualization projects. Happy coding!"
-  },
-  {
-    "objectID": "posts/tutorials/en/shiller-data-python.html#introduction",
-    "href": "posts/tutorials/en/shiller-data-python.html#introduction",
-    "title": "Analyzing Equity long Term Returns with Python",
+    "objectID": "posts/publication-workflow/visualizing-historical-data.html#introduction",
+    "href": "posts/publication-workflow/visualizing-historical-data.html#introduction",
+    "title": "Visualising Historical Data",
     "section": "Introduction",
-    "text": "Introduction\nLong Term Investing enables investors to capture the long term risk premium of various asset classes.\nIn this article, we will explore how to download Shiller’s Excel data on long-term stock market returns from his website using Python. We will use the requests library for HTTP requests and the pandas library for data manipulation. For visualization, we will use the Matplotlib library with the Pacoty stylesheet to create a chart comparing nominal equity returns, real equity returns, and real GDP growth."
+    "text": "Introduction\nTo start our data analysis and portfolio construction journey, we will perform the basic - but essential - task of getting access to time series and plot them using pandas.\n\nTip: This article is written as a Jupyter Notebook. It has been published using Fastpages. The Jupyter notebook is available on GitHub and if you want to, you can run it directly using the provided Binder link displayed at the top of the article."
   },
   {
-    "objectID": "posts/tutorials/en/shiller-data-python.html#downloading-shillers-data",
-    "href": "posts/tutorials/en/shiller-data-python.html#downloading-shillers-data",
-    "title": "Analyzing Equity long Term Returns with Python",
-    "section": "Downloading Shiller’s Data",
-    "text": "Downloading Shiller’s Data\nFirst, we need to import the required libraries and download the data using an HTTP request:\nThis code below downloads the Excel file from Shiller’s website, directly into memory, and reads it into a pandas DataFrame.\n\n\nCode\nimport requests\nimport pandas as pd\nfrom io import BytesIO\nimport dataframe_image as dfi\n\nurl = \"http://www.econ.yale.edu/~shiller/data/ie_data.xls\"\n\nresponse = requests.get(url)\n\ndef make_pretty(styler):\n    styler.format(precision=2)\n    return styler\n\n# Check if the request was successful\nif response.status_code == 200:\n    data = pd.read_excel(BytesIO(response.content), sheet_name='Data', header=7)\nelse:\n    print(\"Failed to download the data\")\n\ndata.iloc[1:10, 1:5].style.pipe(make_pretty)\n\n\n\n\n\n\n\n\n \nP\nD\nE\nCPI\n\n\n\n\n1\n4.50\n0.26\n0.40\n12.84\n\n\n2\n4.61\n0.26\n0.40\n13.03\n\n\n3\n4.74\n0.26\n0.40\n12.56\n\n\n4\n4.86\n0.26\n0.40\n12.27\n\n\n5\n4.82\n0.26\n0.40\n12.08\n\n\n6\n4.73\n0.26\n0.40\n12.08\n\n\n7\n4.79\n0.26\n0.40\n11.89\n\n\n8\n4.84\n0.26\n0.40\n12.18\n\n\n9\n4.59\n0.26\n0.40\n12.37"
+    "objectID": "posts/publication-workflow/visualizing-historical-data.html#load-libraries",
+    "href": "posts/publication-workflow/visualizing-historical-data.html#load-libraries",
+    "title": "Visualising Historical Data",
+    "section": "Load libraries",
+    "text": "Load libraries\nA key benefit of Python is the sheer number of libraries we can leverage to perform a particular task. Choosing the right library might look a bit overwhelming, and one the goals of this blog is actually to provide the reader my honest view on what makes most sense to perform the usual tasks in my daily work.\nThe key module for this article is yfinance, a fantastic data gathering library that you can find here on GitHub.\n\n\nCode\n#collapse-hide\nfrom matplotlib import pyplot as plt\nimport pandas as pd\nimport yfinance as yf\nimport datetime as dt\n\n# Note that this change the decimals places inside Jupyter, but not on the website\npd.options.display.float_format = '{:,.1f}'.format"
   },
   {
-    "objectID": "posts/tutorials/en/shiller-data-python.html#downloading-maddison-project-gdp-data",
-    "href": "posts/tutorials/en/shiller-data-python.html#downloading-maddison-project-gdp-data",
-    "title": "Analyzing Equity long Term Returns with Python",
-    "section": "Downloading Maddison Project GDP Data",
-    "text": "Downloading Maddison Project GDP Data\n\n\nCode\nurl = \"https://www.rug.nl/ggdc/historicaldevelopment/maddison/data/mpd2020.xlsx\"\n\nresponse = requests.get(url)\n\ndef make_pretty(styler):\n    styler.format(precision=2)\n    return styler\n\n# Check if the request was successful\nif response.status_code == 200:\n    data_gdp= pd.read_excel(BytesIO(response.content),sheet_name=\"Full data\", header=0)\nelse:\n    print(\"Failed to download the data\")\n\n\n\n\nCode\nimport numpy.ma as ma\ndata_gdp[\"gdp\"] = data_gdp.gdppc * data_gdp[\"pop\"]\ndates = ma.array(\n    [f'{y}-{12}-{31}' for y in data_gdp.year.to_list()],\n    dtype='datetime64[D]'\n    )\n\ndata_gdp[\"date\"] = dates.tolist()\ndata_gdp.set_index(\"date\", inplace=True)\ndata_gdp.iloc[1:10, 1:5].style.pipe(make_pretty)\n\n\n\n\n\n\n\n \ncountry\nyear\ngdppc\npop\n\n\ndate\n \n \n \n \n\n\n\n\n1870-12-31\nAfghanistan\n1870\nnan\n4207.00\n\n\n1913-12-31\nAfghanistan\n1913\nnan\n5730.00\n\n\n1950-12-31\nAfghanistan\n1950\n1156.00\n8150.00\n\n\n1951-12-31\nAfghanistan\n1951\n1170.00\n8284.00\n\n\n1952-12-31\nAfghanistan\n1952\n1189.00\n8425.00\n\n\n1953-12-31\nAfghanistan\n1953\n1240.00\n8573.00\n\n\n1954-12-31\nAfghanistan\n1954\n1245.00\n8728.00\n\n\n1955-12-31\nAfghanistan\n1955\n1246.00\n8891.00\n\n\n1956-12-31\nAfghanistan\n1956\n1278.00\n9062.00"
+    "objectID": "posts/publication-workflow/visualizing-historical-data.html#get-historical-data",
+    "href": "posts/publication-workflow/visualizing-historical-data.html#get-historical-data",
+    "title": "Visualising Historical Data",
+    "section": "Get historical data",
+    "text": "Get historical data\nLet’s get ready, and gather some historical data for, say, 4 Exchange Traded Funds (ie “ETFs”, still commonly referred to as “trackers” in France): - SPY: S&P 500 - GLD: Gold - AGG: US Aggregate (US Bonds) - CAC.PA: CAC 40 (French Equity Index)\nYou might wonder what the first 3 letters actually correspond to? They are the usual identifier for each ETF on the markets, and are often called the tickerof the ETF.\nTo gather data, you must de facto provide one ticker for each security, but if you forgot the ticker, Google is usually your friend!\nWe will need define to find a few more parameters: - The 2 variables start_date and end_date to keep some flexibility, - The variable tickers will store our ticker list, and pass it as a parameter to Yahoo, in order to specify our query.\n\n\nCode\n#collapse-hide\n\nstart_date = '2015-01-01'\nend_date = '2022-05-14'\ntickers = ['SPY', 'GLD', 'AGG', 'CAC.PA']\ndf = yf.download(tickers,  start=start_date, end=end_date)\n\n# This ones keep the decimals to one on the website. \n# This is especially useful to print dataframes.\ndf = df.round(decimals=2)\n\n\n\n[                       0%                       ][                       0%                       ][**********************75%***********            ]  3 of 4 completed[*********************100%***********************]  4 of 4 completed"
   },
   {
-    "objectID": "posts/tutorials/en/shiller-data-python.html#cleanup-and-columns-renaming",
-    "href": "posts/tutorials/en/shiller-data-python.html#cleanup-and-columns-renaming",
-    "title": "Analyzing Equity long Term Returns with Python",
-    "section": "Cleanup and Columns Renaming",
-    "text": "Cleanup and Columns Renaming\n\n\nCode\n#Excel Import is mixing up columns, re-titling them\ndata.columns = [\"Date\", \"S&P Composite\", \"Dividend (D)\", \"Earnings (E)\", \"Consumer Price Index (CPI)\", \"Date Fraction\", \"Long Interest Rate (I)\", \"Real Price\", \"Real Dividend\", \"Real Total Return Price\", \"Real Earnings\", \"Real TR Scaled Earnings\", \"CAPE\", \"\", \"TR CAPE\", \"\", \"Excess CAPE Yield\", \"Monthly Total Bond Returns\", \"Real Total Bond Returns\", \"10Y Ann Stock Real Return\", \"10Y Ann Bon Real Return\", \"Real 10Y Ann Excess Return\"]\ndata = data[:-2]\ndata[\"date\"] = pd.to_datetime(data['Date'].map('{:.2f}'.format), format='%Y.%m')\ndata.set_index(\"date\", inplace=True)\ndata[\"Price Return\"] = data[\"Real Price\"].div(data[\"Real Price\"].iloc[0])\ndata[\"Total Return\"] = data.loc[:, \"Real Total Return Price\"].div(data[\"Real Total Return Price\"].iloc[0])\ndata[\"CPI\"] = data.loc[:, \"Consumer Price Index (CPI)\"].div(data[\"Consumer Price Index (CPI)\"].iloc[0])"
+    "objectID": "posts/publication-workflow/visualizing-historical-data.html#visual-data-check",
+    "href": "posts/publication-workflow/visualizing-historical-data.html#visual-data-check",
+    "title": "Visualising Historical Data",
+    "section": "Visual data check",
+    "text": "Visual data check\nBy default, Yahoo Finance provides us with several fields, not all of them will be useful in this introduction, and we will perform some further filtering below.\nTo quickly check the status of what we now have, note the use of the tail() function below.\nPandas tail() function\n\n\nCode\ndf.tail(3)\n\n\n\n\n\n\n\n\n\nAdj Close\nClose\nHigh\n...\nLow\nOpen\nVolume\n\n\n\nAGG\nCAC.PA\nGLD\nSPY\nAGG\nCAC.PA\nGLD\nSPY\nAGG\nCAC.PA\n...\nGLD\nSPY\nAGG\nCAC.PA\nGLD\nSPY\nAGG\nCAC.PA\nGLD\nSPY\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2022-05-11\n98.5\n60.8\n172.8\n383.4\n102.8\n62.6\n172.8\n392.8\n102.8\n62.6\n...\n172.2\n392.0\n102.1\n61.7\n172.5\n398.1\n16,462,000.0\n45,387.0\n9,179,600.0\n142,361,000.0\n\n\n2022-05-12\n98.6\n60.2\n170.2\n383.0\n103.0\n62.0\n170.2\n392.3\n103.1\n62.3\n...\n169.9\n385.1\n102.9\n61.4\n172.1\n389.4\n9,015,300.0\n62,497.0\n11,626,800.0\n125,090,800.0\n\n\n2022-05-13\n98.2\n61.7\n168.8\n392.2\n102.5\n63.5\n168.8\n401.7\n102.8\n63.5\n...\n168.0\n395.6\n102.8\n62.4\n168.3\n396.7\n6,715,600.0\n77,603.0\n13,031,100.0\n104,174,400.0\n\n\n\n\n3 rows × 24 columns\n\n\n\nThe Adjusted Close field is returned by Yahoo Finance and is exactly what we are looking for.\nAdjusted Close corresponds to the time series containing what we usually call the total return, typically compounding the dividends with the price returns.\nThis reflects the total return delivered by the ETF, should the investor reinvest systematically the dividend paid by the ETF by buying more this ETF. This is probably the most useful field when we aim to assess the long term returns of an asset class.\nTo quickly check the status of what we now have, note the use of the tail() function below, which get the last n rows of the dataset. Combined with Jupyter’s power in printing data, it’s probably the fastest way to navigate and check a particular dataset.\nPandas tail() function\n\n\nCode\ndf['Adj Close'].tail(3)\n\n\n\n\n\n\n\n\n\nAGG\nCAC.PA\nGLD\nSPY\n\n\nDate\n\n\n\n\n\n\n\n\n2022-05-11\n98.5\n60.8\n172.8\n383.4\n\n\n2022-05-12\n98.6\n60.2\n170.2\n383.0\n\n\n2022-05-13\n98.2\n61.7\n168.8\n392.2"
   },
   {
-    "objectID": "posts/tutorials/en/shiller-data-python.html#visualizing-the-data-with-matplotlib-and-pacoty",
-    "href": "posts/tutorials/en/shiller-data-python.html#visualizing-the-data-with-matplotlib-and-pacoty",
-    "title": "Analyzing Equity long Term Returns with Python",
-    "section": "Visualizing the Data with Matplotlib and Pacoty",
-    "text": "Visualizing the Data with Matplotlib and Pacoty\nNext, we will create a chart comparing the nominal equity returns, real equity returns, and real GDP growth using Matplotlib and the Pacoty. Let’s start with a first sanity check on the data.\n\n\n\nDataframe\n\n\nThis code snippet creates a chart with a logarithmic scale, comparing nominal equity returns, real equity returns, and real GDP growth over time."
+    "objectID": "posts/publication-workflow/visualizing-historical-data.html#plot-the-raw-time-series-using-the-seaborn-library",
+    "href": "posts/publication-workflow/visualizing-historical-data.html#plot-the-raw-time-series-using-the-seaborn-library",
+    "title": "Visualising Historical Data",
+    "section": "Plot the raw time series using the seaborn library",
+    "text": "Plot the raw time series using the seaborn library\nTo quickly check that we got the right data, let’s visualise it.\n\n\nCode\n#collapse-hide\nimport seaborn as sns\n\n# Apply the default theme\nsns.set_style('whitegrid')\n\nplt.figure(figsize=(15,6))\np = sns.lineplot(data=df['Adj Close'])\np.set_ylabel(\"Close Price\")\npass"
   },
   {
-    "objectID": "posts/tutorials/en/shiller-data-python.html#long-term-equity-returns",
-    "href": "posts/tutorials/en/shiller-data-python.html#long-term-equity-returns",
-    "title": "Analyzing Equity long Term Returns with Python",
-    "section": "Long Term Equity Returns",
-    "text": "Long Term Equity Returns\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\nfrom scipy.ndimage import gaussian_filter1d\nfrom scipy import interpolate\nimport highlight_text as ht\nfrom highlight_text import HighlightText, ax_text, fig_text\nimport matplotlib.dates as mdates\nimport datetime as dt\nfrom scipy import stats\n\n\ndef decyear4(year, month, day, h=0, m=0, s=0):\n    return year + ((30.4375*(month-1) + day-1)*24+h)*3600/31557600.0 \n\n# Set the Pacoty stylesheet\nmpl_style = \"revealjs_whiteboard\"\nplt.style.use(f'../../stylesheets/{mpl_style}.mplstyle')\n\n# Create a figure and axis\nfig, ax = plt.subplots()\n \n# Extract the data we need\nus_gdp = data_gdp[data_gdp.countrycode == \"USA\"].gdp\ndates = data[[\"Real Price\"]].resample(\"Y\").last().index\nus_gdp.index = [dt.datetime.combine(dat, dt.time()) for dat in us_gdp.index]\nus_gdp = us_gdp[us_gdp.index &gt;= dates.min()]\nus_gdp = us_gdp / us_gdp.iloc[0]\nreal_tr = list(data['Price Return'].resample(\"Y\").last().values)\nreal_pr = list(data[\"Total Return\"].resample(\"Y\").last().values)\ncpi = list(data[\"CPI\"].resample(\"Y\").last().values)\n\n#gdp_growth = data['Real GDP Growth']\n\n# Plot the data on a logarithmic scale\n\nf_real_tr= interpolate.interp1d(dates.year, real_tr, 'cubic')\nf_real_pr = interpolate.interp1d(dates.year, real_pr, 'cubic')\n\nreal_tr_interpol = f_real_tr(dates.year)\nreal_pr_interpol = f_real_pr(dates.year)\n\nstats.linregress(dates.year, real_tr)\n\nax.semilogy(dates, real_pr_interpol)\nax.semilogy(dates, real_tr_interpol)\nax.semilogy(us_gdp.index, us_gdp)\n#ax.semilogy(dates, cpi)\n\n#ax.semilogy(years, data[])\n\nsize = plt.rcParams['font.size']\nhighlight_textprops =[{\"fontsize\": size + 4},\n                      {\"fontsize\": size}]\n\nHighlightText(x=0.5, y=0.98, ha='center', \n              s='&lt;Long Term Equity Returns&gt;\\n&lt;Equity vs GDP Growth and Inflation&gt;',\n              highlight_textprops=highlight_textprops,\n              annotationbbox_kw={'boxcoords': fig.transFigure}, textalign=\"center\")\n\n# Customize the chart\nax.set_xlabel('Years')\nax.set_ylabel(f'Value, basis 1 in {(data.index.min().strftime(\"%d.%m.%Y\"))}')\n#ax.set_title('Long Term Equity Returns')\nfig.legend(labels = [\"US Equity: Price (Real)\", \"US Equity: Price & Divs (Real)\", \"US GDP (Real)\"], loc=\"lower left\", ncol=2, bbox_to_anchor=(0.05, -0.075, 0.5, 0.5))\nax.xaxis.set_major_locator(mdates.YearLocator(30))\nax.xaxis.set_major_formatter(\n    mdates.ConciseDateFormatter(ax.xaxis.get_major_locator()))\n\n# Show the chart\nplt.show()\nplt.close()\n#fig.savefig(\"shiller-returns.png\")  \n\n\n\n\n\nLong term equity returns vs CPI\n\n\n\n\nThe resulting chart demonstrates the power of compounded returns and the equity risk premium that has rewarded long-term shareholders. By using Python libraries like requests, pandas, and Matplotlib, we can easily download, process, and visualize financial data to better understand market trends and investment strategies."
+    "objectID": "posts/publication-workflow/visualizing-historical-data.html#plot-the-normalised-the-time-series",
+    "href": "posts/publication-workflow/visualizing-historical-data.html#plot-the-normalised-the-time-series",
+    "title": "Visualising Historical Data",
+    "section": "Plot the normalised the time series",
+    "text": "Plot the normalised the time series\nThe chart above is useful, but the vast difference between the ETFs’ values makes it a bit hard to actually track each respective time series.\nIt would be more effective to normalise the data. It’s often referred to as “rebasing”, ie making each time series starting at 100, this will make it much easier to compare.\n\n\nCode\n#collapse-hide\n\n# Normalise the data, which here means for each column to start at 100, with subsequent price development \"scaled\" according to daily returns\nnormalised_ts = (df['Adj Close']/df['Adj Close'].iloc[0, ]*100)\nplt.figure(figsize=(15,6))\np = sns.lineplot(data=normalised_ts)\np.set_ylabel(f\"Close Price, Basis 100 in {start_date}\")\npass"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Portfolio Construction",
+    "objectID": "posts/publication-workflow/visualizing-historical-data.html#rolling-window-cumulated-returns",
+    "href": "posts/publication-workflow/visualizing-historical-data.html#rolling-window-cumulated-returns",
+    "title": "Visualising Historical Data",
+    "section": "Rolling window cumulated returns",
+    "text": "Rolling window cumulated returns\nIt’s often easy to get ‘seduced’ by the compelling long term returns, especially about Equities. And indeed, it was a good thing to be invested in Equities in the long run !\nBut 1y returns are usually a good way to keep track of the portfolio, and moreover to see how these returns have developed over time. With a 1y return chart, the notion of risk, ie either fast-changing returns, or - even worse - consistently negative returns, quickly becomes apparent.\n\n\nCode\n# We use pct_change() to calculate the one year return\nts_1y_returns = df['Adj Close'].pct_change(periods=252)\nplt.figure(figsize=(15,6))\np = sns.lineplot(data=ts_1y_returns)\np.set_ylabel(f\"Close Price, Basis 100 in {start_date}\")\npass"
+  },
+  {
+    "objectID": "posts/publication-workflow/visualizing-historical-data.html#smoother-returns",
+    "href": "posts/publication-workflow/visualizing-historical-data.html#smoother-returns",
+    "title": "Visualising Historical Data",
+    "section": "Smoother returns",
+    "text": "Smoother returns\nThe chart above is great, but a bit too busy for my taste. Whilst accurate, there is too much info going on, the noise might reduce our ability to spot real medium terms or breakouts.\nThis is where pandas starts to be really powerful. The rolling() function essentially captures sub-series, with a defined length (here 21 days). By chaining the results of rolling() with the mean function, ie calculating the arithmetic average, this will provide us in a one-liner with a new series. This generated dataframe contains the time series of the moving average (21 days) for each of our time series.\nWhilst this “chaining” approach might initially sound obscure, this is extremely powerful, especially when factoring in the fact that you just need to change the tickers of the ETFs in the beginning of the article to entirely update the whole analysis … your turn!\n\n\nCode\n# Normalise the data, which here means for each column to start at 100, with subsequent price development \"scaled\" according to daily returns\nts_1y_returns = df['Adj Close'].pct_change(periods=252).rolling(window=21).mean()\nplt.figure(figsize=(15,6))\np = sns.lineplot(data=ts_1y_returns)\np.set_ylabel(f\"Close Price, Basis 100 in {start_date}\")\npass"
+  },
+  {
+    "objectID": "posts/publication-workflow/visualizing-historical-data.html#conclusion",
+    "href": "posts/publication-workflow/visualizing-historical-data.html#conclusion",
+    "title": "Visualising Historical Data",
+    "section": "Conclusion",
+    "text": "Conclusion\nSo that’s it for this short intro on data gathering and visualising. In this article, we have gathered, checked, normalised and plot close prices for different ETFs.\nThe next step will be to use these function to generate some returns and risk statistics, and start exploring portfolio construction.\nSee you in the next article, and stay safe."
+  },
+  {
+    "objectID": "posts/publication-workflow/visualizing-historical-data.html#useful-related-links",
+    "href": "posts/publication-workflow/visualizing-historical-data.html#useful-related-links",
+    "title": "Visualising Historical Data",
+    "section": "Useful Related Links",
+    "text": "Useful Related Links\n{% series_list %}\nThere is no such thing as “full tutorial on something”, knowledge is everywhere. I found these tutorials pretty handy, check them out too!\n\nSeaborn Tutorial\nTutorial on F-Strings"
+  },
+  {
+    "objectID": "posts/tutorials/fr/valorisation-pe.html#le-price-to-earnings-ratio-per",
+    "href": "posts/tutorials/fr/valorisation-pe.html#le-price-to-earnings-ratio-per",
+    "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
+    "section": "Le Price to Earnings Ratio (“PER”)",
+    "text": "Le Price to Earnings Ratio (“PER”)\nLe Price to Earnings Ratio (PER) est un ratio financier utilisé pour évaluer la valorisation d’une action par rapport à ses bénéfices. Il est calculé en divisant le prix actuel de l’action par le bénéfice par action (EPS) sur une période donnée, généralement sur les 12 derniers mois. La formule est la suivante :\n\\[\nPER = \\frac{Prix\\ de\\ l'action}{Bénéfice\\ par\\ action}\n\\]\nUn PER élevé indique que les investisseurs sont prêts à payer davantage pour les bénéfices futurs de l’entreprise, tandis qu’un PER faible suggère que les investisseurs estiment que l’action est sous-évaluée ou que l’entreprise a des perspectives de croissance limitées."
+  },
+  {
+    "objectID": "posts/tutorials/fr/valorisation-pe.html#la-librairie-alpha-vantage",
+    "href": "posts/tutorials/fr/valorisation-pe.html#la-librairie-alpha-vantage",
+    "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
+    "section": "La librairie Alpha Vantage",
+    "text": "La librairie Alpha Vantage\nAlpha Vantage est une plateforme de données financières qui fournit des API pour accéder à diverses informations sur le marché, telles que les cours des actions, les indicateurs techniques, les données sur les devises, les cryptomonnaies et bien d’autres. La librairie Python alpha_vantage permet d’interagir facilement avec ces API.\nLa licence gratuite d’Alpha Vantage permet d’accéder à la plupart des données sans frais. Toutefois, elle est soumise à certaines restrictions, notamment un nombre limité de requêtes par minute et par jour. Pour des usages plus intensifs, des plans payants sont disponibles."
+  },
+  {
+    "objectID": "posts/tutorials/fr/valorisation-pe.html#code-source",
+    "href": "posts/tutorials/fr/valorisation-pe.html#code-source",
+    "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
+    "section": "Code Source",
+    "text": "Code Source\nVoici un exemple de programme Python qui utilise la bibliothèque yfinance pour récupérer les valorisations des ETFs secteurs en Europe. Dans cet exemple, je vais utiliser quelques ETFs populaires en Europe pour illustrer le processus. Vous pouvez ajouter ou modifier les symboles d’ETFs dans la liste etfs pour récupérer les valorisations des ETFs que vous souhaitez.\n\n\nCode\nimport os, sys\nroot_path = os.path.join(sys.path[0],'..','..', '..')\nsys.path.append(root_path)\nimport blog_utils\n\ntpl_path = \"https://github.com/vdenoise/templates/raw/master\"\nmpl_tpl_path = f\"{tpl_path}/matplotlib\"\n\n\n\n\nCode\n\nimport keyring\nimport matplotlib\nimport matplotlib.pyplot as plt\nfrom alpha_vantage.fundamentaldata import FundamentalData\n\n# Remplacez 'your_api_key' par votre clé API Alpha Vantage\napi_key = keyring.get_password(\"alpha_vantage_api_key\", \"email@email.com\")\nfd = FundamentalData(key=api_key)\n\n# Fonction pour récupérer le Price to Earnings Ratio (P/E Ratio)\ndef get_price_to_earnings_ratio(symbol):\n    data, _ = fd.get_company_overview(symbol)\n    pe_ratio = float(data[\"PERatio\"])\n    return pe_ratio\n\n# Récupérer et afficher les P/E Ratios\nsymbols = [\"AAPL\", \"MSFT\", \"IBM\"]\npe_ratios = [get_price_to_earnings_ratio(symbol) for symbol in symbols]\n\nmatplotlib.rcdefaults() \nblog_utils.apply_right_style()\nplt.bar(symbols, pe_ratios)\nplt.xlabel(\"Symboles\")\nplt.ylabel(\"Price to Earnings Ratio\")\nplt.title(\"Comparaison des PER de différentes actions\")\nplt.show()\n\n\n\nNone\n\n\n\n\n\nNotez que les tickers d’ETFs dans etf_tickers sont des exemples. Vous devrez remplacer cette liste par les tickers des ETFs de secteurs en Europe que vous souhaitez analyser. Ce programme récupère le P/E Ratio pour chaque ETF et affiche les résultats à l’écran."
+  },
+  {
+    "objectID": "posts/tutorials/fr/valorisation-pe.html#conclusion",
+    "href": "posts/tutorials/fr/valorisation-pe.html#conclusion",
+    "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
+    "section": "Conclusion",
+    "text": "Conclusion\nEn résumé, dans cet article tres court, nous avons montré comment récupérer le Price to Earnings Ratio (PER) de plusieurs actions en utilisant Python, la librairie Alpha Vantage et la bibliothèque de visualisation de données Matplotlib. Le PER est un indicateur financier clé pour évaluer la valorisation d’une action et comparer différentes entreprises."
+  },
+  {
+    "objectID": "posts/tutorials/fr/valorisation-pe.html#sources-de-référence",
+    "href": "posts/tutorials/fr/valorisation-pe.html#sources-de-référence",
+    "title": "Obtenir la valorisation de plusieurs titres avec Python et Alpha Vantage",
+    "section": "Sources de référence",
+    "text": "Sources de référence\nPour en savoir plus sur Alpha Vantage, la valorisation des actions et l’utilisation du Price to Earnings Ratio dans l’analyse financière, consultez les sources suivantes :\n\nSite officiel d’AlphaVantage : https://www.alphavantage.co/\nDocumentation de la librairie Python alpha_vantage : https://alpha-vantage.readthedocs.io/\nInvestopedia, “Price-to-Earnings Ratio – P/E Ratio” : https://www.investopedia.com/terms/p/price-earningsratio.asp\nCorporate Finance Institute, “Price Earnings Ratio (P/E Ratio)” : https://corporatefinanceinstitute.com/resources/knowledge/valuation/price-earnings-ratio/\nMatplotlib, documentation officielle : https://matplotlib.org/"
+  },
+  {
+    "objectID": "posts/tutorials/en/spy-and-matplotlib.html",
+    "href": "posts/tutorials/en/spy-and-matplotlib.html",
+    "title": "2 - Getting and charting data with Matplotlib",
     "section": "",
-    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the entire asset management and financial markets industry’s value chain.\nIn this blog, I will document here my findings and experiments, notably in Python, Jupyter and along themes like portfolio optimisation and reproducible research.\nIn my different roles, I have developed and deployed a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\n\n\n\n\nPortfolio Optimisation with Python\nRisks and Returns 101\nGood Finance DataSources available to everyone\n\n\n\n\n\nAutomating Powerpoint\nNice Pictures with Python\n\n\n\n\n\nAutomating Powerpoint\nNice Pictures with Python\n\n\n\n\n\nAutomating Powerpoint\nNice Pictures with Python"
+    "text": "Import Libraries\nFirst, we import necessary libraries. yfinance will fetch the data, and matplotlib will help us chart it.\n\n\nCode\nimport yfinance as yf\nimport matplotlib.pyplot as plt\nplt.style.use('seaborn-dark') # For a nicer theme\n\n\n\n\nDownload SPY Data\nFetching historical data for the SPY ETF is straightforward with yfinance. We’ll grab the last five years of daily data.\n\n\nCode\nspy_data = yf.download('SPY', start='2015-01-01', end='2020-01-01', progress=False)\n\n\n\n\nPlotting the Data\nWith our data in hand, let’s plot the closing prices. Here, the choice of a green and blue stylesheet makes our chart not only informative but visually appealing.\n\n\nCode\nspy_data['Close'].plot(figsize=(10, 6), color='blue')\nplt.title('SPY ETF Performance 2015-2020')\nplt.xlabel('Date')\nplt.ylabel('Close Price')\nplt.show()\n\n\n\n\n\n\nWhy This Matters\nThis exercise is a primer in the practical application of Python for financial analysis. By fetching real-world data and visualizing it, we gain insights into market trends and ETF performance over time. This skill is fundamental in quantitative finance, where data-driven decisions are paramount.\n\n\nRecap and Further Reading\nToday, we’ve covered how to set up your Python environment, fetch financial data using yfinance, and visualize it with matplotlib. These steps are building blocks in your journey into quantitative finance and data analysis.\nFor those keen to delve deeper, consider exploring the following resources:\n\nBooks: “Python for Finance” by Yves Hilpisch, “Quantitative Finance For Dummies” by Steve Bell.\nWebsites: Quantopian, QuantConnect, and the matplotlib documentation.\nGitHub Repositories: matplotlib/matplotlib, ranaroussi/yfinance.\n\nStay curious, and happy coding!"
   },
   {
-    "objectID": "index.html#welcome-to-portfolio-geek",
-    "href": "index.html#welcome-to-portfolio-geek",
-    "title": "Portfolio Construction",
-    "section": "",
-    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the entire asset management and financial markets industry’s value chain.\nIn this blog, I will document here my findings and experiments, notably in Python, Jupyter and along themes like portfolio optimisation and reproducible research.\nIn my different roles, I have developed and deployed a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios."
+    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#introduction",
+    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#introduction",
+    "title": "1 - Setting up a Python Development Workstation",
+    "section": "Introduction",
+    "text": "Introduction\nHello there, finance wizards and coding enthusiasts! Ready to enter the world of Python, Visual Studio, and financial analysis? Let’s embark on this journey together. By the end of this guide, you’ll have your finance lab primed for dissecting market trends, optimising portfolios, and much more. Buckle up, let’s set sail!"
   },
   {
-    "objectID": "all_posts.html",
-    "href": "all_posts.html",
-    "title": "All Posts",
+    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#setting-up-visual-studio-and-miniconda",
+    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#setting-up-visual-studio-and-miniconda",
+    "title": "1 - Setting up a Python Development Workstation",
+    "section": "1. Setting Up Visual Studio and Miniconda",
+    "text": "1. Setting Up Visual Studio and Miniconda\nYour coding adventure begins by setting up the primary tools of the trade: Visual Studio Code (VS Code) and Miniconda. VS Code is a robust and versatile code editor, while Miniconda, a mini version of Anaconda, allows us to create isolated Python environments and manage packages.\n\nDownload and install Visual Studio Code from the official website. Follow the prompts to complete the installation process.\nSimilarly, download and install Miniconda from the official website. During installation, ensure that you select the option to “Add Miniconda to my PATH environment variable”. This allows you to use conda commands directly in the VS Code terminal."
+  },
+  {
+    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#setting-up-a-python-virtual-environment",
+    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#setting-up-a-python-virtual-environment",
+    "title": "1 - Setting up a Python Development Workstation",
+    "section": "2. Setting Up a Python Virtual Environment",
+    "text": "2. Setting Up a Python Virtual Environment\nWith our tools installed, let’s now create a virtual environment to house our finance lab. We’ll use conda to create a new environment named finlab using Python 3.10.\nOpen VS Code, then open a terminal (Ctrl + `) and type the following command:\nconda create -n finlab python=3.10\nActivate the finlab environment by typing:\nconda activate finlab\nInside finlab, we install several vital Python libraries for our financial analysis journey:\n\npandas: A flexible and powerful data manipulation library, essential for handling and processing financial data.\nmatplotlib and seaborn: Two formidable libraries for data visualisation, because finance isn’t just about numbers—it’s about insightful charts too!\nyfinance: An effective library for fetching historical stock data from Yahoo Finance.\npyportfolioopt: An advanced library designed to optimise portfolios, calculate risk and returns, and much more.\n\nInstall these libraries using the following command:\nconda install pandas matplotlib seaborn yfinance pyportfolioopt"
+  },
+  {
+    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#installing-key-visual-studio-extensions",
+    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#installing-key-visual-studio-extensions",
+    "title": "1 - Setting up a Python Development Workstation",
+    "section": "3. Installing Key Visual Studio Extensions",
+    "text": "3. Installing Key Visual Studio Extensions\nVS Code shines with its extensions. Here are a few that will make your life easier:\n\nPython: Gives you a host of Python-specific features like linting, debugging, code formatting, and more.\nPrettier: A code formatter that supports many languages, including Python. Keeps your code clean and professional.\nCode Spell Checker: Like a proof-reader, it catches common spelling mistakes in your code.\n\nYou can install these extensions by searching for them in the VS Code Extensions view (Ctrl + Shift + X) and clicking on “Install”."
+  },
+  {
+    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#launching-a-jupyter-notebook-inside-visual-studio",
+    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#launching-a-jupyter-notebook-inside-visual-studio",
+    "title": "1 - Setting up a Python Development Workstation",
+    "section": "4. Launching a Jupyter Notebook Inside Visual Studio",
+    "text": "4. Launching a Jupyter Notebook Inside Visual Studio\nWith our finlab environment and VS Code set up, it’s time to dive into some coding. We’ll be using a Jupyter Notebook, a powerful tool allowing you to interweave code and text into a single document.\nCreate a new file with a .ipynb extension. Upon creation, VS Code will prompt you to select a Python interpreter—choose the one corresponding to our finlab environment.\nIn the following steps, we’ll demonstrate some powerful features of the pyportfolioopt library. In this exercise, we’ll fetch the historical data of SPY, QQQ, and AGG ETFs using yfinance, compute risk and\nreturn metrics, plot the 10-year cumulative return, and finally, plot the efficient frontier.\nDue to the length and complexity of the code, it has been omitted from this article. For a complete walkthrough, please refer to the official pyportfolioopt documentation."
+  },
+  {
+    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#gather-the-historical-data-of-spy-qqq-and-agg-etfs-using-yfinance",
+    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#gather-the-historical-data-of-spy-qqq-and-agg-etfs-using-yfinance",
+    "title": "1 - Setting up a Python Development Workstation",
+    "section": "Gather the historical data of SPY, QQQ, and AGG ETFs using yfinance",
+    "text": "Gather the historical data of SPY, QQQ, and AGG ETFs using yfinance\n\n\nCode\n%%capture\nimport yfinance as yf\nimport pandas as pd\n\n# Define the ticker list\ntickers = ['SPY', 'QQQ', 'AGG']\n\n# Use yfinance to download the historical market data\ndata = yf.download(tickers, start=\"2013-06-28\", end=\"2023-06-28\")['Adj Close']"
+  },
+  {
+    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#compute-the-key-risk-and-return-metrics-for-each-etf",
+    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#compute-the-key-risk-and-return-metrics-for-each-etf",
+    "title": "1 - Setting up a Python Development Workstation",
+    "section": "Compute the key risk and return metrics for each ETF",
+    "text": "Compute the key risk and return metrics for each ETF\n\n\nCode\n# Calculate the annualized return\nreturns = data.pct_change().mean() * 252\n\n# Calculate the annualized volatility\nvolatility = data.pct_change().std() * (252**0.5)\n\n# Print the results\nprint(\"Annualized Return:\")\nprint(returns)\nprint(\"\\nAnnualized Volatility:\")\nprint(volatility)\n\n\nAnnualized Return:\nAGG    0.016398\nQQQ    0.195275\nSPY    0.133498\ndtype: float64\n\nAnnualized Volatility:\nAGG    0.048838\nQQQ    0.213590\nSPY    0.174692\ndtype: float64"
+  },
+  {
+    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#plot-the-10-year-cumulated-return-as-a-line-chart-for-the-3-etfs-with-the-initial-value-normalized-to-100.",
+    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#plot-the-10-year-cumulated-return-as-a-line-chart-for-the-3-etfs-with-the-initial-value-normalized-to-100.",
+    "title": "1 - Setting up a Python Development Workstation",
+    "section": "Plot the 10-year cumulated return as a line chart for the 3 ETFs, with the initial value normalized to 100.",
+    "text": "Plot the 10-year cumulated return as a line chart for the 3 ETFs, with the initial value normalized to 100.\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Calculate the cumulated return\ncum_return = (1 + data.pct_change()).dropna().cumprod()\n\n# Normalize to 100\ncum_return = 100 * cum_return / cum_return.iloc[0]\n\n# Plot the data\nplt.figure(figsize=(12,8))\ncum_return.plot();\n\nplt.xlabel('Date')\nplt.ylabel('Cumulative Returns')\nplt.title('10-Year Cumulated Returns')\nplt.legend()\nplt.grid(True)\nplt.show()\n\n\n&lt;Figure size 1152x768 with 0 Axes&gt;"
+  },
+  {
+    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#use-pyportfolioopt-to-calculate-and-plot-the-efficiency-frontier",
+    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#use-pyportfolioopt-to-calculate-and-plot-the-efficiency-frontier",
+    "title": "1 - Setting up a Python Development Workstation",
+    "section": "Use pyportfolioopt to calculate and plot the efficiency frontier",
+    "text": "Use pyportfolioopt to calculate and plot the efficiency frontier\n\n\nCode\nfrom pypfopt import expected_returns, risk_models\nfrom pypfopt import plotting\nfrom pypfopt.efficient_frontier import EfficientFrontier\n\n# Calculate expected returns and the covariance matrix\nmu = expected_returns.mean_historical_return(data)\nS = risk_models.sample_cov(data)\n\n# Optimize for the maximal Sharpe ratio\nef = EfficientFrontier(mu, S,weight_bounds=(None, None))\n\n# Plot the efficient frontier\nfig, ax = plt.subplots()\nplotting.plot_efficient_frontier(ef, ax=ax, show_assets=True)\n\nplt.title('Efficient Frontier')\nplt.show()"
+  },
+  {
+    "objectID": "posts/tutorials/en/setting-up-a-python-workstation.html#key-considerations-for-this-job",
+    "href": "posts/tutorials/en/setting-up-a-python-workstation.html#key-considerations-for-this-job",
+    "title": "1 - Setting up a Python Development Workstation",
+    "section": "Key Considerations for this Job",
+    "text": "Key Considerations for this Job\nIn the world of financial analysis, always ensure you understand the data you’re dealing with and the calculations you’re performing. Never hesitate to go beyond the libraries and tools used here—Python has a vast ecosystem, and there’s always more to learn!\nRemember, coding and financial analysis are both iterative processes. Keep refining your skills and knowledge, and soon you’ll be slicing and dicing financial data like a pro.\nKeywords: Python, Finance, Financial Analysis, Visual Studio Code, Miniconda, Virtual Environment, pandas, matplotlib, seaborn, yfinance, pyportfolioopt, Jupyter Notebook, Portfolio Optimisation, Risk Metrics, Return Metrics, Efficient Frontier, ETFs."
+  },
+  {
+    "objectID": "archive.html",
+    "href": "archive.html",
+    "title": "Archive",
     "section": "",
-    "text": "Analyzing Equity long Term Returns with Python\n\n\n\n\n\n\n\ntutorial\n\n\nlong term investing\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nData and Python 101 - Getting and charting data with Matplotlib\n\n\n\n\n\n\n\ntutorial\n\n\ndata\n\n\nmatplotlib\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nEstimate Financial Risk\n\n\n\n\n\n\n\ndata-gathering\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nExploring the Worldbank API (WBGAPI)\n\n\n\n\n\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 5, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started with Eurostat API\n\n\n\n\n\n\n\nen\n\n\n101\n\n\ndata\n\n\napi\n\n\n\n\n\n\n\n\n\n\n\nApr 15, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nGetting Started: measuring volatility\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nLes 10 formules les plus utilisées en finance de marché\n\n\n\n\n\n\n\nfr\n\n\nfinance\n\n\ntutorial\n\n\n101\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nObtenir la valorisation de plusieurs titres avec Python et Alpha Vantage\n\n\n\n\n\n\n\nfr\n\n\nvaluation\n\n\nfundamental\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nPortfolio optimisation with Python\n\n\n\n\n\n\n\nportfolio-construction\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nSetting up a python development workstation\n\n\n\n\n\n\n\n101\n\n\nen\n\n\n\n\n\n\n\n\n\n\n\nApr 6, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nUsing WBGAPI: A Step-By-Step Guide to Access World Bank Data\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\nVisualising Historical Data\n\n\n\n\n\n\n\npublication-workflow\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
+    "text": "No matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "With 20 years of experience in portfolio construction, asset allocation and quantitative research, I have worked across the asset management and capital markets industry’s value chain.\nIn my different roles, I have developed and deployed a wide range range of investment solutions, ranging from Exchange Traded Funds (ETFs), derivatives and investment mandates across most asset classes: Equities, Fixed Income, Commodities, Alternative Assets, Multi-Asset portfolios.\nFind me on Linkedin\n\nWhy this blog?\nWhat struck me the most when I started my career in finance was the knowledge asymetry between finance professionals and end clients. Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts still sound fairly exotic or technical to many investors.\nHere, I will try to demystify financial analysis and provide ideas and starting points in order to put theory into practice.\nIn most articles, you should be able to copy, run and modify the code behind the analysis. This should help you to directly use many of the tools presented. The entire source is available on Github"
+  },
+  {
+    "objectID": "tutorials_en.html",
+    "href": "tutorials_en.html",
+    "title": "Series: Introduction to Quantitative Finance with Python",
+    "section": "",
+    "text": "1 - Setting up a Python Development Workstation\n\n\n\n\n\nIn this article we set up our Workstation and install all the relevant tools to be efficient\n\n\n\n\n\n\nApr 6, 2023\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\n2 - Getting and charting data with Matplotlib\n\n\n\n\n\nJust a test\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\n3 - Analyzing Equity long Term Returns with Python\n\n\n\n\n\n\n\n\n\n\n\n\nVincent D.\n\n\n\n\n\n\n  \n\n\n\n\n4 - Getting Started with Eurostat API\n\n\n\n\n\n\n\n\n\n\n\n\nApr 15, 2023\n\n\nVincent D.\n\n\n\n\n\n\nNo matching items"
   }
 ]
