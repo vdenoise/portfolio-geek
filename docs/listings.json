@@ -11,7 +11,8 @@
   {
     "listing": "/all_posts.html",
     "items": [
-      "/posts/tutorials/en/setting-up-a-python-workstation.html",
+      "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",
+      "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
       "/posts/tutorials/en/spy-and-matplotlib.html",
       "/posts/tutorials/en/shiller-data-python.html",
       "/posts/tutorials/en/getting-started-with-eurostat-api.html",
@@ -32,7 +33,8 @@
   {
     "listing": "/tutorials_en.html",
     "items": [
-      "/posts/tutorials/en/setting-up-a-python-workstation.html",
+      "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",
+      "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
       "/posts/tutorials/en/spy-and-matplotlib.html",
       "/posts/tutorials/en/shiller-data-python.html",
       "/posts/tutorials/en/getting-started-with-eurostat-api.html"

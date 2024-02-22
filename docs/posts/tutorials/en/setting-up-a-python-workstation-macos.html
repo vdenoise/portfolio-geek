@@ -7,8 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
+<meta name="dcterms.date" content="2024-02-20">
+<meta name="description" content="In this article we set up our MacOs Workstation and install all the relevant tools to be efficien in python coding.">
 
-<title>Portfolio Geek - 2 - Getting and charting data with Matplotlib</title>
+<title>Portfolio Geek - 1-a Setting up a Python Development Workstation (MacOs)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -171,15 +173,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">2 - Getting and charting data with Matplotlib</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/spy-and-matplotlib.ipynb">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title">1-a Setting up a Python Development Workstation (MacOs)</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/setting-up-a-python-workstation-macos.ipynb"><i class="bi"></i> Code</button></div></div>
   <div class="quarto-categories">
-    <div class="quarto-category">tutorial</div>
-    <div class="quarto-category">data</div>
-    <div class="quarto-category">matplotlib</div>
+    <div class="quarto-category">101</div>
     <div class="quarto-category">en</div>
+    <div class="quarto-category">setup</div>
+    <div class="quarto-category">python</div>
+    <div class="quarto-category">bash</div>
+    <div class="quarto-category">macos</div>
+    <div class="quarto-category">matplotlib</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    In this article we set up our MacOs Workstation and install all the relevant tools to be efficien in python coding.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -191,73 +201,68 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 20, 2024</p>
+    </div>
+  </div>
   
     
   </div>
   
-<div>
-  <div class="abstract">
-    <div class="abstract-title">Abstract</div>
-    In this article, we start our data analysis journey with Python by getting and charting data, in this case the performance of an ETF using freely available data.
-  </div>
-</div>
 
 </header>
 
-<section id="import-libraries" class="level1">
-<h1>Import Libraries</h1>
-<p>First, we import necessary libraries. yfinance will fetch the data, and matplotlib will help us chart it.</p>
-<div class="cell" data-execution_count="1">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
+<p><img src="../../../pictures/high-tech-programming-office-with-workstations.png" class="img-fluid"></p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Hello there, finance wizards and coding enthusiasts! Ready to enter the world of Python, Visual Studio, and financial analysis? Let’s embark on this journey together. By the end of this guide, you’ll have your finance lab primed for dissecting market trends, optimising portfolios, and much more. Buckle up, let’s set sail!</p>
 </section>
-<section id="download-spy-data" class="level1">
-<h1>Download SPY Data</h1>
-<p>Fetching historical data for the SPY ETF is straightforward with yfinance. We’ll grab the last five years of daily data.</p>
-<div class="cell" data-execution_count="2">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>spy_data <span class="op">=</span> yf.download(<span class="st">'SPY'</span>, start<span class="op">=</span><span class="st">'2015-01-01'</span>, end<span class="op">=</span><span class="st">'2020-01-01'</span>, progress<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-</section>
-<section id="plotting-the-data" class="level1">
-<h1>Plotting the Data</h1>
-<p>With our data in hand, let’s plot the closing prices. Here, the choice of a green and blue stylesheet makes our chart not only informative but visually appealing.</p>
-<div class="cell" data-execution_count="3">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>spy_data[<span class="st">'Close'</span>].plot(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>), color<span class="op">=</span><span class="st">'blue'</span>)</span>
-<span id="cb3-2"><a href="#cb3-2"></a>plt.title(<span class="st">'SPY ETF Performance 2015-2020'</span>)</span>
-<span id="cb3-3"><a href="#cb3-3"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
-<span id="cb3-4"><a href="#cb3-4"></a>plt.ylabel(<span class="st">'Close Price'</span>)</span>
-<span id="cb3-5"><a href="#cb3-5"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<p><img src="spy-and-matplotlib_files/figure-html/cell-4-output-1.png" class="img-fluid"></p>
-</div>
-</div>
-<section id="why-this-matters" class="level3">
-<h3 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h3>
-<p>This exercise is a primer in the practical application of Python for financial analysis. By fetching real-world data and visualizing it, we gain insights into market trends and ETF performance over time. This skill is fundamental in quantitative finance, where data-driven decisions are paramount.</p>
-</section>
-<section id="recap-and-further-reading" class="level3">
-<h3 class="anchored" data-anchor-id="recap-and-further-reading">Recap and Further Reading</h3>
-<p>Today, we’ve covered how to set up your Python environment, fetch financial data using yfinance, and visualize it with matplotlib. These steps are building blocks in your journey into quantitative finance and data analysis.</p>
-<p>For those keen to delve deeper, consider exploring the following resources:</p>
+<section id="setting-up-visual-studio-and-miniconda" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-visual-studio-and-miniconda">1. Setting Up Visual Studio and Miniconda</h2>
+<p>Your coding adventure begins by setting up the primary tools of the trade: Visual Studio Code (VS Code) and Miniconda. VS Code is a robust and versatile code editor, while Miniconda, a mini version of Anaconda, allows us to create isolated Python environments and manage packages.</p>
 <ul>
-<li><strong>Books</strong>: “Python for Finance” by Yves Hilpisch, “Quantitative Finance For Dummies” by Steve Bell.</li>
-<li><strong>Websites</strong>: Quantopian, QuantConnect, and the matplotlib documentation.</li>
-<li><strong>GitHub Repositories</strong>: matplotlib/matplotlib, ranaroussi/yfinance.</li>
+<li><p>Download and install Visual Studio Code from the <a href="https://code.visualstudio.com/">official website</a>. Follow the prompts to complete the installation process.</p></li>
+<li><p>Similarly, download and install Miniconda from the <a href="https://docs.conda.io/en/latest/miniconda.html">official website</a>. During installation, ensure that you select the option to “Add Miniconda to my PATH environment variable”. This allows you to use <code>conda</code> commands directly in the VS Code terminal.</p></li>
 </ul>
-<p>Stay curious, and happy coding!</p>
-
-
 </section>
+<section id="setting-up-a-python-virtual-environment" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-a-python-virtual-environment">2. Setting Up a Python Virtual Environment</h2>
+<p>With our tools installed, let’s now create a virtual environment to house our finance lab. We’ll use conda to create a new environment named <code>portfolio-geek</code> using Python 3.10.</p>
+<p>Open <code>VS Code</code>, then open a terminal and type the following command:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">conda</span> create <span class="at">-n</span> portfolio-geek python=3.10</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Activate the <code>portfolio-geek</code> environment by typing:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">conda</span> activate portfolio-geek</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Inside <code>portfolio-geek</code>, we install several vital Python libraries for our financial analysis journey:</p>
+<ul>
+<li><p><strong>pandas</strong>: A flexible and powerful data manipulation library, essential for handling and processing financial data.</p></li>
+<li><p><strong>matplotlib and seaborn</strong>: Two formidable libraries for data visualisation, because finance isn’t just about numbers—it’s about insightful charts too!</p></li>
+<li><p><strong>yfinance</strong>: An effective library for fetching historical stock data from Yahoo Finance.</p></li>
+<li><p><strong>pyportfolioopt</strong>: An advanced library designed to optimise portfolios, calculate risk and returns, and much more.</p></li>
+</ul>
+<p>Install these libraries using the following command:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">conda</span> install pandas matplotlib seaborn yfinance pyportfolioopt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="installing-key-visual-studio-extensions" class="level2">
+<h2 class="anchored" data-anchor-id="installing-key-visual-studio-extensions">3. Installing Key Visual Studio Extensions</h2>
+<p>VS Code shines with its extensions. Here are a few that will make your life easier:</p>
+<ul>
+<li><p><strong>Python</strong>: Gives you a host of Python-specific features like linting, debugging, code formatting, and more.</p></li>
+<li><p><strong>Prettier</strong>: A code formatter that supports many languages, including Python. Keeps your code clean and professional.</p></li>
+<li><p><strong>Code Spell Checker</strong>: Like a proof-reader, it catches common spelling mistakes in your code.</p></li>
+</ul>
+<p>You can install these extensions by searching for them in the VS Code Extensions view (<code>Ctrl + Shift + X</code>) and clicking on “Install”.</p>
+</section>
+<section id="launching-a-jupyter-notebook-inside-visual-studio" class="level2">
+<h2 class="anchored" data-anchor-id="launching-a-jupyter-notebook-inside-visual-studio">4. Launching a Jupyter Notebook Inside Visual Studio</h2>
+<p>With our <code>portfolio-geek</code> environment and VS Code set up, it’s time to dive into some coding. We’ll be using a Jupyter Notebook, a powerful tool allowing you to interweave code and text into a single document.</p>
+<p>Create a new file with a <code>.ipynb</code> extension. Upon creation, VS Code will prompt you to select a Python interpreter—choose the one corresponding to our <code>portfolio-geek</code> environment.</p>
+<p>In the following steps, we’ll demonstrate some powerful features of the <code>pyportfolioopt</code> library. In this exercise, we’ll fetch the historical data of SPY, QQQ, and AGG ETFs using <code>yfinance</code>, compute risk and</p>
+<p>return metrics, plot the 10-year cumulative return, and finally, plot the efficient frontier.</p>
+<p><em>Due to the length and complexity of the code, it has been omitted from this article. For a complete walkthrough, please refer to the official pyportfolioopt <a href="https://pyportfolioopt.readthedocs.io/en/latest/">documentation</a>.</em></p>
+
+
 </section>
 
 </main> <!-- /main -->

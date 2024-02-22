@@ -7,8 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
+<meta name="dcterms.date" content="2023-04-06">
+<meta name="description" content="In this article we set up our Workstation and install all the relevant tools to be efficient">
 
-<title>Portfolio Geek - 2 - Getting and charting data with Matplotlib</title>
+<title>Portfolio Geek - 1 - Setting up a Python Development Workstation (1/3: MacOs)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -171,15 +173,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">2 - Getting and charting data with Matplotlib</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/spy-and-matplotlib.ipynb">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title">1 - Setting up a Python Development Workstation (1/3: MacOs)</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/full-story.ipynb">View Source</a></li></ul></div></div>
   <div class="quarto-categories">
-    <div class="quarto-category">tutorial</div>
-    <div class="quarto-category">data</div>
-    <div class="quarto-category">matplotlib</div>
+    <div class="quarto-category">101</div>
     <div class="quarto-category">en</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    In this article we set up our Workstation and install all the relevant tools to be efficient
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -191,73 +196,183 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 6, 2023</p>
+    </div>
+  </div>
   
     
   </div>
   
-<div>
-  <div class="abstract">
-    <div class="abstract-title">Abstract</div>
-    In this article, we start our data analysis journey with Python by getting and charting data, in this case the performance of an ETF using freely available data.
-  </div>
-</div>
 
 </header>
 
-<section id="import-libraries" class="level1">
-<h1>Import Libraries</h1>
-<p>First, we import necessary libraries. yfinance will fetch the data, and matplotlib will help us chart it.</p>
+<p><img src="../../../pictures/high-tech-programming-office-with-workstations.png" class="img-fluid"></p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Hello there, finance wizards and coding enthusiasts! Ready to enter the world of Python, Visual Studio, and financial analysis? Let’s embark on this journey together. By the end of this guide, you’ll have your finance lab primed for dissecting market trends, optimising portfolios, and much more. Buckle up, let’s set sail!</p>
+</section>
+<section id="setting-up-visual-studio-and-miniconda" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-visual-studio-and-miniconda">1. Setting Up Visual Studio and Miniconda</h2>
+<p>Your coding adventure begins by setting up the primary tools of the trade: Visual Studio Code (VS Code) and Miniconda. VS Code is a robust and versatile code editor, while Miniconda, a mini version of Anaconda, allows us to create isolated Python environments and manage packages.</p>
+<ul>
+<li><p>Download and install Visual Studio Code from the <a href="https://code.visualstudio.com/">official website</a>. Follow the prompts to complete the installation process.</p></li>
+<li><p>Similarly, download and install Miniconda from the <a href="https://docs.conda.io/en/latest/miniconda.html">official website</a>. During installation, ensure that you select the option to “Add Miniconda to my PATH environment variable”. This allows you to use <code>conda</code> commands directly in the VS Code terminal.</p></li>
+</ul>
+</section>
+<section id="setting-up-a-python-virtual-environment" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-a-python-virtual-environment">2. Setting Up a Python Virtual Environment</h2>
+<p>With our tools installed, let’s now create a virtual environment to house our finance lab. We’ll use conda to create a new environment named <code>portfolio-geek</code> using Python 3.10.</p>
+<p>Open VS Code, then open a terminal (Ctrl + `) and type the following command:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">conda</span> create <span class="at">-n</span> portfolio-geek python=3.10</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Activate the <code>portfolio-geek</code> environment by typing:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">conda</span> activate portfolio-geek</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Inside <code>portfolio-geek</code>, we install several vital Python libraries for our financial analysis journey:</p>
+<ul>
+<li><p><strong>pandas</strong>: A flexible and powerful data manipulation library, essential for handling and processing financial data.</p></li>
+<li><p><strong>matplotlib and seaborn</strong>: Two formidable libraries for data visualisation, because finance isn’t just about numbers—it’s about insightful charts too!</p></li>
+<li><p><strong>yfinance</strong>: An effective library for fetching historical stock data from Yahoo Finance.</p></li>
+<li><p><strong>pyportfolioopt</strong>: An advanced library designed to optimise portfolios, calculate risk and returns, and much more.</p></li>
+</ul>
+<p>Install these libraries using the following command:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">conda</span> install pandas matplotlib seaborn yfinance pyportfolioopt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="installing-key-visual-studio-extensions" class="level2">
+<h2 class="anchored" data-anchor-id="installing-key-visual-studio-extensions">3. Installing Key Visual Studio Extensions</h2>
+<p>VS Code shines with its extensions. Here are a few that will make your life easier:</p>
+<ul>
+<li><p><strong>Python</strong>: Gives you a host of Python-specific features like linting, debugging, code formatting, and more.</p></li>
+<li><p><strong>Prettier</strong>: A code formatter that supports many languages, including Python. Keeps your code clean and professional.</p></li>
+<li><p><strong>Code Spell Checker</strong>: Like a proof-reader, it catches common spelling mistakes in your code.</p></li>
+</ul>
+<p>You can install these extensions by searching for them in the VS Code Extensions view (<code>Ctrl + Shift + X</code>) and clicking on “Install”.</p>
+</section>
+<section id="launching-a-jupyter-notebook-inside-visual-studio" class="level2">
+<h2 class="anchored" data-anchor-id="launching-a-jupyter-notebook-inside-visual-studio">4. Launching a Jupyter Notebook Inside Visual Studio</h2>
+<p>With our <code>portfolio-geek</code> environment and VS Code set up, it’s time to dive into some coding. We’ll be using a Jupyter Notebook, a powerful tool allowing you to interweave code and text into a single document.</p>
+<p>Create a new file with a <code>.ipynb</code> extension. Upon creation, VS Code will prompt you to select a Python interpreter—choose the one corresponding to our <code>portfolio-geek</code> environment.</p>
+<p>In the following steps, we’ll demonstrate some powerful features of the <code>pyportfolioopt</code> library. In this exercise, we’ll fetch the historical data of SPY, QQQ, and AGG ETFs using <code>yfinance</code>, compute risk and</p>
+<p>return metrics, plot the 10-year cumulative return, and finally, plot the efficient frontier.</p>
+<p><em>Due to the length and complexity of the code, it has been omitted from this article. For a complete walkthrough, please refer to the official pyportfolioopt <a href="https://pyportfolioopt.readthedocs.io/en/latest/">documentation</a>.</em></p>
+</section>
+<section id="gather-the-historical-data-of-spy-qqq-and-agg-etfs-using-yfinance" class="level2">
+<h2 class="anchored" data-anchor-id="gather-the-historical-data-of-spy-qqq-and-agg-etfs-using-yfinance">Gather the historical data of SPY, QQQ, and AGG ETFs using yfinance</h2>
 <div class="cell" data-execution_count="1">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="op">%%</span>capture</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb4-4"><a href="#cb4-4"></a></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="co"># Define the ticker list</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a>tickers <span class="op">=</span> [<span class="st">'SPY'</span>, <span class="st">'QQQ'</span>, <span class="st">'AGG'</span>]</span>
+<span id="cb4-7"><a href="#cb4-7"></a></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="co"># Use yfinance to download the historical market data</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a>data <span class="op">=</span> yf.download(tickers, start<span class="op">=</span><span class="st">"2013-06-28"</span>, end<span class="op">=</span><span class="st">"2023-06-28"</span>)[<span class="st">'Adj Close'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
-<section id="download-spy-data" class="level1">
-<h1>Download SPY Data</h1>
-<p>Fetching historical data for the SPY ETF is straightforward with yfinance. We’ll grab the last five years of daily data.</p>
+<section id="compute-the-key-risk-and-return-metrics-for-each-etf" class="level2">
+<h2 class="anchored" data-anchor-id="compute-the-key-risk-and-return-metrics-for-each-etf">Compute the key risk and return metrics for each ETF</h2>
 <div class="cell" data-execution_count="2">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>spy_data <span class="op">=</span> yf.download(<span class="st">'SPY'</span>, start<span class="op">=</span><span class="st">'2015-01-01'</span>, end<span class="op">=</span><span class="st">'2020-01-01'</span>, progress<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Calculate the annualized return</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>returns <span class="op">=</span> data.pct_change().mean() <span class="op">*</span> <span class="dv">252</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="co"># Calculate the annualized volatility</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>volatility <span class="op">=</span> data.pct_change().std() <span class="op">*</span> (<span class="dv">252</span><span class="op">**</span><span class="fl">0.5</span>)</span>
+<span id="cb5-6"><a href="#cb5-6"></a></span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="co"># Print the results</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="bu">print</span>(<span class="st">"Annualized Return:"</span>)</span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="bu">print</span>(returns)</span>
+<span id="cb5-10"><a href="#cb5-10"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Annualized Volatility:"</span>)</span>
+<span id="cb5-11"><a href="#cb5-11"></a><span class="bu">print</span>(volatility)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Annualized Return:
+AGG    0.016396
+QQQ    0.195211
+SPY    0.133962
+dtype: float64
+
+Annualized Volatility:
+AGG    0.048848
+QQQ    0.213633
+SPY    0.174720
+dtype: float64</code></pre>
+</div>
 </div>
 </section>
-<section id="plotting-the-data" class="level1">
-<h1>Plotting the Data</h1>
-<p>With our data in hand, let’s plot the closing prices. Here, the choice of a green and blue stylesheet makes our chart not only informative but visually appealing.</p>
+<section id="plot-the-10-year-cumulated-return-as-a-line-chart-for-the-3-etfs-with-the-initial-value-normalized-to-100." class="level2">
+<h2 class="anchored" data-anchor-id="plot-the-10-year-cumulated-return-as-a-line-chart-for-the-3-etfs-with-the-initial-value-normalized-to-100.">Plot the 10-year cumulated return as a line chart for the 3 ETFs, with the initial value normalized to 100.</h2>
 <div class="cell" data-execution_count="3">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>spy_data[<span class="st">'Close'</span>].plot(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>), color<span class="op">=</span><span class="st">'blue'</span>)</span>
-<span id="cb3-2"><a href="#cb3-2"></a>plt.title(<span class="st">'SPY ETF Performance 2015-2020'</span>)</span>
-<span id="cb3-3"><a href="#cb3-3"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
-<span id="cb3-4"><a href="#cb3-4"></a>plt.ylabel(<span class="st">'Close Price'</span>)</span>
-<span id="cb3-5"><a href="#cb3-5"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb7-2"><a href="#cb7-2"></a></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="co"># Calculate the cumulated return</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a>cum_return <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> data.pct_change()).dropna().cumprod()</span>
+<span id="cb7-5"><a href="#cb7-5"></a></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="co"># Normalize to 100</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a>cum_return <span class="op">=</span> <span class="dv">100</span> <span class="op">*</span> cum_return <span class="op">/</span> cum_return.iloc[<span class="dv">0</span>]</span>
+<span id="cb7-8"><a href="#cb7-8"></a></span>
+<span id="cb7-9"><a href="#cb7-9"></a><span class="co"># Plot the data</span></span>
+<span id="cb7-10"><a href="#cb7-10"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">8</span>))</span>
+<span id="cb7-11"><a href="#cb7-11"></a>cum_return.plot()<span class="op">;</span></span>
+<span id="cb7-12"><a href="#cb7-12"></a></span>
+<span id="cb7-13"><a href="#cb7-13"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb7-14"><a href="#cb7-14"></a>plt.ylabel(<span class="st">'Cumulative Returns'</span>)</span>
+<span id="cb7-15"><a href="#cb7-15"></a>plt.title(<span class="st">'10-Year Cumulated Returns'</span>)</span>
+<span id="cb7-16"><a href="#cb7-16"></a>plt.legend()</span>
+<span id="cb7-17"><a href="#cb7-17"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb7-18"><a href="#cb7-18"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="spy-and-matplotlib_files/figure-html/cell-4-output-1.png" class="img-fluid"></p>
+<pre><code>&lt;Figure size 1152x768 with 0 Axes&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="full-story_files/figure-html/cell-4-output-2.png" class="img-fluid"></p>
 </div>
 </div>
-<section id="why-this-matters" class="level3">
-<h3 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h3>
-<p>This exercise is a primer in the practical application of Python for financial analysis. By fetching real-world data and visualizing it, we gain insights into market trends and ETF performance over time. This skill is fundamental in quantitative finance, where data-driven decisions are paramount.</p>
 </section>
-<section id="recap-and-further-reading" class="level3">
-<h3 class="anchored" data-anchor-id="recap-and-further-reading">Recap and Further Reading</h3>
-<p>Today, we’ve covered how to set up your Python environment, fetch financial data using yfinance, and visualize it with matplotlib. These steps are building blocks in your journey into quantitative finance and data analysis.</p>
-<p>For those keen to delve deeper, consider exploring the following resources:</p>
-<ul>
-<li><strong>Books</strong>: “Python for Finance” by Yves Hilpisch, “Quantitative Finance For Dummies” by Steve Bell.</li>
-<li><strong>Websites</strong>: Quantopian, QuantConnect, and the matplotlib documentation.</li>
-<li><strong>GitHub Repositories</strong>: matplotlib/matplotlib, ranaroussi/yfinance.</li>
-</ul>
-<p>Stay curious, and happy coding!</p>
+<section id="use-pyportfolioopt-to-calculate-and-plot-the-efficiency-frontier" class="level2">
+<h2 class="anchored" data-anchor-id="use-pyportfolioopt-to-calculate-and-plot-the-efficiency-frontier">Use pyportfolioopt to calculate and plot the efficiency frontier</h2>
+<div class="cell" data-execution_count="4">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="im">from</span> pypfopt <span class="im">import</span> expected_returns, risk_models</span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="im">from</span> pypfopt <span class="im">import</span> plotting</span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="im">from</span> pypfopt.efficient_frontier <span class="im">import</span> EfficientFrontier</span>
+<span id="cb9-4"><a href="#cb9-4"></a></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="co"># Calculate expected returns and the covariance matrix</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a>mu <span class="op">=</span> expected_returns.mean_historical_return(data)</span>
+<span id="cb9-7"><a href="#cb9-7"></a>S <span class="op">=</span> risk_models.sample_cov(data)</span>
+<span id="cb9-8"><a href="#cb9-8"></a></span>
+<span id="cb9-9"><a href="#cb9-9"></a><span class="co"># Optimize for the maximal Sharpe ratio</span></span>
+<span id="cb9-10"><a href="#cb9-10"></a>ef <span class="op">=</span> EfficientFrontier(mu, S,weight_bounds<span class="op">=</span>(<span class="va">None</span>, <span class="va">None</span>))</span>
+<span id="cb9-11"><a href="#cb9-11"></a></span>
+<span id="cb9-12"><a href="#cb9-12"></a><span class="co"># Plot the efficient frontier</span></span>
+<span id="cb9-13"><a href="#cb9-13"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb9-14"><a href="#cb9-14"></a>plotting.plot_efficient_frontier(ef, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb9-15"><a href="#cb9-15"></a></span>
+<span id="cb9-16"><a href="#cb9-16"></a>plt.title(<span class="st">'Efficient Frontier'</span>)</span>
+<span id="cb9-17"><a href="#cb9-17"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="full-story_files/figure-html/cell-5-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="key-considerations-for-this-job" class="level2">
+<h2 class="anchored" data-anchor-id="key-considerations-for-this-job">Key Considerations for this Job</h2>
+<p>In the world of financial analysis, always ensure you understand the data you’re dealing with and the calculations you’re performing. Never hesitate to go beyond the libraries and tools used here—Python has a vast ecosystem, and there’s always more to learn!</p>
+<p>Remember, coding and financial analysis are both iterative processes. Keep refining your skills and knowledge, and soon you’ll be slicing and dicing financial data like a pro.</p>
+<p><strong>Keywords:</strong> Python, Finance, Financial Analysis, Visual Studio Code, Miniconda, Virtual Environment, pandas, matplotlib, seaborn, yfinance, pyportfolioopt, Jupyter Notebook, Portfolio Optimisation, Risk Metrics, Return Metrics, Efficient Frontier, ETFs.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
