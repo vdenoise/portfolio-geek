@@ -1,5 +1,5 @@
 ---
-title: "Series: Introduction to Quantitative Finance with Python"
+title: "Getting Started: Quantitative Finance with Python"
 listing:
   contents: posts/tutorials/en
   sort: "title asc"

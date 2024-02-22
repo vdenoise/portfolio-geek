@@ -23,7 +23,9 @@ website:
   repo-branch: "master"
   navbar:
     right:
-      - text: Blog
+      - text: Getting Started
+        href: tutorials_en.qmd
+      - text: All Articles
         href: all_posts.qmd
       - text: About
         href: about.qmd
