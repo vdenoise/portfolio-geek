@@ -40,6 +40,8 @@ website:
         menu: 
           - text: Measuring Risk and Return
             href: risk_and_return.qmd
+          - text: Portfolio Construction
+            href: portfolio_construction.qmd
           - text: Tutorials (en)
             href: tutorials_en.qmd
 

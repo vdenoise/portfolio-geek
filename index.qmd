@@ -30,7 +30,7 @@ In my different roles, I have developed and deployed a wide range range of inves
 
 ::: {.g-col-12 .g-col-md-5}
 # Portfolio Construction
-- Portfolio Optimisation with Python
+- [Portfolio Optimisation with Python](portfolio_construction.html)
 - [Risks and Returns 101](risk_and_return.html)
 :::
 

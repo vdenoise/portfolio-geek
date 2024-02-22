@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Vincent D.">
+
+<title>Portfolio Geek - Les 10 formules les plus utilisées en finance de marché</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Portfolio Geek</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../tutorials_en.html" rel="" target="">
+ <span class="menu-text">Getting Started</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../all_posts.html" rel="" target="">
+ <span class="menu-text">All Articles</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/vdenoiseux/" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/vdenoise" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressources" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Ressources</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ressources">    
+        <li>
+    <a class="dropdown-item" href="../risk_and_return.html" rel="" target="">
+ <span class="dropdown-text">Measuring Risk and Return</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorials_en.html" rel="" target="">
+ <span class="dropdown-text">Tutorials (en)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Les 10 formules les plus utilisées en finance de marché</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/10-formules-importantes-finance-marche.ipynb">View Source</a></li></ul></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">fr</div>
+    <div class="quarto-category">finance</div>
+    <div class="quarto-category">tutorial</div>
+    <div class="quarto-category">101</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Vincent D. </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p><img src="../pictures/mathematics-formulas-on-a-blackboard.png" class="img-fluid"></p>
+<section id="les-10-formules-les-plus-utilisées-en-finance-de-marché" class="level1">
+<h1>Les 10 formules les plus utilisées en finance de marché</h1>
+<p>La finance de marché est un domaine complexe qui repose sur de nombreuses formules pour analyser et évaluer les actifs financiers. Dans cet article, nous présentons les 10 formules les plus utilisées en finance de marché. Chaque formule est décrite par son usage, son contexte, une formule en LaTeX, un code source en Python utilisant la bibliothèque yfinance pour récupérer les données de marché, et un graphique généré avec matplotlib.</p>
+<section id="rendement-moyen" class="level2">
+<h2 class="anchored" data-anchor-id="rendement-moyen">1. Rendement moyen</h2>
+<section id="usage" class="level3">
+<h3 class="anchored" data-anchor-id="usage">Usage</h3>
+<p>Le rendement moyen est utilisé pour estimer le rendement d’un actif financier sur une période donnée.</p>
+</section>
+<section id="contexte" class="level3">
+<h3 class="anchored" data-anchor-id="contexte">Contexte</h3>
+<p>Le rendement moyen est souvent utilisé pour comparer les performances de différents actifs financiers ou pour évaluer l’efficacité d’un portefeuille d’investissement.</p>
+</section>
+<section id="formule" class="level3">
+<h3 class="anchored" data-anchor-id="formule">Formule</h3>
+<p><span class="math inline">\(\mu = \frac{1}{n}\sum_{i=1}^{n}(R_i)\)</span></p>
+<div class="cell" data-execution_count="1">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>ticker <span class="op">=</span> <span class="st">'AAPL'</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>data <span class="op">=</span> yf.download(ticker, start<span class="op">=</span><span class="st">'2020-01-01'</span>, end<span class="op">=</span><span class="st">'2021-01-01'</span>)[<span class="st">'Adj Close'</span>]</span>
+<span id="cb1-7"><a href="#cb1-7"></a>returns <span class="op">=</span> data.pct_change().dropna()</span>
+<span id="cb1-8"><a href="#cb1-8"></a>mean_return <span class="op">=</span> np.mean(returns)</span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a>plt.plot(returns)</span>
+<span id="cb1-11"><a href="#cb1-11"></a>plt.axhline(y<span class="op">=</span>mean_return, color<span class="op">=</span><span class="st">'r'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, label<span class="op">=</span><span class="ss">f'Mean Return: </span><span class="sc">{</span>mean_return<span class="sc">:.4f}</span><span class="ss">'</span>)</span>
+<span id="cb1-12"><a href="#cb1-12"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb1-13"><a href="#cb1-13"></a>plt.ylabel(<span class="st">'Returns'</span>)</span>
+<span id="cb1-14"><a href="#cb1-14"></a>plt.legend()</span>
+<span id="cb1-15"><a href="#cb1-15"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[*********************100%***********************]  1 of 1 completed</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-2-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="volatilité" class="level2">
+<h2 class="anchored" data-anchor-id="volatilité">2. Volatilité</h2>
+<section id="usage-1" class="level3">
+<h3 class="anchored" data-anchor-id="usage-1">Usage</h3>
+<p>La volatilité est utilisée pour mesurer le risque associé à un actif financier en estimant l’écart-type de ses rendements.</p>
+</section>
+<section id="contexte-1" class="level3">
+<h3 class="anchored" data-anchor-id="contexte-1">Contexte</h3>
+<p>Une volatilité élevée indique un actif plus risqué, tandis qu’une volatilité faible indique un actif moins risqué. La volatilité est souvent utilisée pour évaluer les fluctuations de prix et le risque de marché.</p>
+</section>
+<section id="formule-1" class="level3">
+<h3 class="anchored" data-anchor-id="formule-1">Formule</h3>
+<p><span class="math inline">\(\sigma = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(R_i - \mu)^2}\)</span></p>
+<div class="cell" data-execution_count="2">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>volatility <span class="op">=</span> np.std(returns, ddof<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a>plt.plot(returns)</span>
+<span id="cb3-4"><a href="#cb3-4"></a>plt.axhline(y<span class="op">=</span><span class="dv">0</span>, color<span class="op">=</span><span class="st">'black'</span>, linestyle<span class="op">=</span><span class="st">'-'</span>)</span>
+<span id="cb3-5"><a href="#cb3-5"></a>plt.axhline(y<span class="op">=</span>volatility, color<span class="op">=</span><span class="st">'r'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, label<span class="op">=</span><span class="ss">f'Volatility: </span><span class="sc">{</span>volatility<span class="sc">:.4f}</span><span class="ss">'</span>)</span>
+<span id="cb3-6"><a href="#cb3-6"></a>plt.axhline(y<span class="op">=-</span>volatility, color<span class="op">=</span><span class="st">'r'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>)</span>
+<span id="cb3-7"><a href="#cb3-7"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb3-8"><a href="#cb3-8"></a>plt.ylabel(<span class="st">'Returns'</span>)</span>
+<span id="cb3-9"><a href="#cb3-9"></a>plt.legend()</span>
+<span id="cb3-10"><a href="#cb3-10"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-3-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="ratio-de-sharpe" class="level2">
+<h2 class="anchored" data-anchor-id="ratio-de-sharpe">3. Ratio de Sharpe</h2>
+<section id="usage-2" class="level3">
+<h3 class="anchored" data-anchor-id="usage-2">Usage</h3>
+<p>Le ratio de Sharpe est utilisé pour évaluer la performance ajustée au risque d’un actif financier ou d’un portefeuille d’investissement.</p>
+</section>
+<section id="contexte-2" class="level3">
+<h3 class="anchored" data-anchor-id="contexte-2">Contexte</h3>
+<p>Un ratio de Sharpe élevé indique une meilleure performance ajustée au risque, tandis qu’un ratio de Sharpe faible indique une moins bonne performance. Le ratio de Sharpe est souvent utilisé pour comparer les performances de différents actifs ou portefeuilles.</p>
+</section>
+<section id="formule-2" class="level3">
+<h3 class="anchored" data-anchor-id="formule-2">Formule</h3>
+<p><span class="math inline">\(S = \frac{\mu - r_f}{\sigma}\)</span></p>
+<div class="cell" data-execution_count="3">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>risk_free_rate <span class="op">=</span> <span class="fl">0.02</span>  <span class="co"># Assuming a 2% annual risk-free rate</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>sharpe_ratio <span class="op">=</span> (mean_return <span class="op">-</span> risk_free_rate) <span class="op">/</span>volatility</span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a>plt.plot(returns)</span>
+<span id="cb4-5"><a href="#cb4-5"></a>plt.axhline(y<span class="op">=</span><span class="dv">0</span>, color<span class="op">=</span><span class="st">'black'</span>, linestyle<span class="op">=</span><span class="st">'-'</span>)</span>
+<span id="cb4-6"><a href="#cb4-6"></a>plt.axhline(y<span class="op">=</span>mean_return, color<span class="op">=</span><span class="st">'g'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, label<span class="op">=</span><span class="ss">f'Mean Return: </span><span class="sc">{</span>mean_return<span class="sc">:.4f}</span><span class="ss">'</span>)</span>
+<span id="cb4-7"><a href="#cb4-7"></a>plt.axhline(y<span class="op">=</span>volatility, color<span class="op">=</span><span class="st">'r'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, label<span class="op">=</span><span class="ss">f'Volatility: </span><span class="sc">{</span>volatility<span class="sc">:.4f}</span><span class="ss">'</span>)</span>
+<span id="cb4-8"><a href="#cb4-8"></a>plt.axhline(y<span class="op">=-</span>volatility, color<span class="op">=</span><span class="st">'r'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>)</span>
+<span id="cb4-9"><a href="#cb4-9"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb4-10"><a href="#cb4-10"></a>plt.ylabel(<span class="st">'Returns'</span>)</span>
+<span id="cb4-11"><a href="#cb4-11"></a>plt.legend()</span>
+<span id="cb4-12"><a href="#cb4-12"></a>plt.show()</span>
+<span id="cb4-13"><a href="#cb4-13"></a></span>
+<span id="cb4-14"><a href="#cb4-14"></a><span class="bu">print</span>(<span class="ss">f'Sharpe Ratio: </span><span class="sc">{</span>sharpe_ratio<span class="sc">:.4f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-4-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Sharpe Ratio: -0.5871</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="bêta" class="level2">
+<h2 class="anchored" data-anchor-id="bêta">4. Bêta</h2>
+<section id="usage-3" class="level3">
+<h3 class="anchored" data-anchor-id="usage-3">Usage</h3>
+<p>La bêta est utilisée pour mesurer la sensibilité d’un actif financier par rapport aux mouvements du marché.</p>
+</section>
+<section id="contexte-3" class="level3">
+<h3 class="anchored" data-anchor-id="contexte-3">Contexte</h3>
+<p>Un bêta supérieur à 1 indique un actif plus sensible aux mouvements du marché, tandis qu’un bêta inférieur à 1 indique un actif moins sensible. La bêta est souvent utilisée pour évaluer le risque systématique d’un actif ou d’un portefeuille d’investissement.</p>
+</section>
+<section id="formule-3" class="level3">
+<h3 class="anchored" data-anchor-id="formule-3">Formule</h3>
+<p><span class="math inline">\(\beta = \frac{\mathrm{Cov}(R_p, R_m)}{\mathrm{Var}(R_m)}\)</span></p>
+<div class="cell" data-execution_count="4">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>market_ticker <span class="op">=</span> <span class="st">'^GSPC'</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>market_data <span class="op">=</span> yf.download(market_ticker, start<span class="op">=</span><span class="st">'2020-01-01'</span>, end<span class="op">=</span><span class="st">'2021-01-01'</span>)[<span class="st">'Adj Close'</span>]</span>
+<span id="cb6-3"><a href="#cb6-3"></a>market_returns <span class="op">=</span> market_data.pct_change().dropna()</span>
+<span id="cb6-4"><a href="#cb6-4"></a></span>
+<span id="cb6-5"><a href="#cb6-5"></a>cov_matrix <span class="op">=</span> np.cov(returns, market_returns)</span>
+<span id="cb6-6"><a href="#cb6-6"></a>beta <span class="op">=</span> cov_matrix[<span class="dv">0</span>][<span class="dv">1</span>] <span class="op">/</span> cov_matrix[<span class="dv">1</span>][<span class="dv">1</span>]</span>
+<span id="cb6-7"><a href="#cb6-7"></a></span>
+<span id="cb6-8"><a href="#cb6-8"></a><span class="bu">print</span>(<span class="ss">f'Beta: </span><span class="sc">{</span>beta<span class="sc">:.4f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[*********************100%***********************]  1 of 1 completed
+Beta: 1.1225</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="alpha-de-jensen" class="level2">
+<h2 class="anchored" data-anchor-id="alpha-de-jensen">5. Alpha de Jensen</h2>
+<section id="usage-4" class="level3">
+<h3 class="anchored" data-anchor-id="usage-4">Usage</h3>
+<p>L’alpha de Jensen est utilisé pour évaluer la performance d’un actif financier ou d’un portefeuille d’investissement par rapport à un indice de marché, en tenant compte du risque.</p>
+</section>
+<section id="contexte-4" class="level3">
+<h3 class="anchored" data-anchor-id="contexte-4">Contexte</h3>
+<p>Un alpha de Jensen positif indique une surperformance par rapport à l’indice de marché, tandis qu’un alpha de Jensen négatif indique une sous-performance. L’alpha de Jensen est souvent utilisé pour évaluer la performance d’un gestionnaire de portefeuille.</p>
+</section>
+<section id="formule-4" class="level3">
+<h3 class="anchored" data-anchor-id="formule-4">Formule</h3>
+<p><span class="math inline">\(\alpha = R_p - (R_f + \beta (R_m - R_f))\)</span></p>
+<div class="cell" data-execution_count="5">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>alpha <span class="op">=</span> mean_return <span class="op">-</span> (risk_free_rate <span class="op">+</span> beta <span class="op">*</span> (np.mean(market_returns) <span class="op">-</span> risk_free_rate))</span>
+<span id="cb8-2"><a href="#cb8-2"></a></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="bu">print</span>(<span class="ss">f'Alpha de Jensen: </span><span class="sc">{</span>alpha<span class="sc">:.4f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Alpha de Jensen: 0.0043</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="duration-de-macaulay" class="level2">
+<h2 class="anchored" data-anchor-id="duration-de-macaulay">6. Duration de Macaulay</h2>
+<section id="usage-5" class="level3">
+<h3 class="anchored" data-anchor-id="usage-5">Usage</h3>
+<p>La duration de Macaulay est utilisée pour mesurer la sensibilité d’un titre à taux fixe, tel qu’une obligation, aux variations des taux d’intérêt.</p>
+</section>
+<section id="contexte-5" class="level3">
+<h3 class="anchored" data-anchor-id="contexte-5">Contexte</h3>
+<p>Une duration de Macaulay élevée indique un titre plus sensible aux variations des taux d’intérêt, tandis qu’une duration de Macaulay faible indique un titre moins sensible. La duration de Macaulay est souvent utilisée pour évaluer le risque de taux d’intérêt et la stratégie de gestion d’un portefeuille d’obligations.</p>
+</section>
+<section id="formule-5" class="level3">
+<h3 class="anchored" data-anchor-id="formule-5">Formule</h3>
+<p><span class="math inline">\(D = \frac{\sum_{t=1}^{n} t \times CF_t}{\sum_{t=1}^{n} CF_t}\)</span></p>
+<p>(Note: Cette formule est simplifiée et ne prend pas en compte la valeuractualisée des flux de trésorerie. Pour une version plus précise, consultez la formule complète de la duration de Macaulay.)</p>
+<div class="cell" data-execution_count="6">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a>cash_flows <span class="op">=</span> np.array([<span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">110</span>])  <span class="co"># Assuming a bond with 2 annual coupon payments of 10 and a face value of 100</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a>time_periods <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="bu">len</span>(cash_flows) <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb10-3"><a href="#cb10-3"></a>macaulay_duration <span class="op">=</span> np.<span class="bu">sum</span>(time_periods <span class="op">*</span> cash_flows) <span class="op">/</span> np.<span class="bu">sum</span>(cash_flows)</span>
+<span id="cb10-4"><a href="#cb10-4"></a></span>
+<span id="cb10-5"><a href="#cb10-5"></a><span class="bu">print</span>(<span class="ss">f'Duration de Macaulay: </span><span class="sc">{</span>macaulay_duration<span class="sc">:.2f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Duration de Macaulay: 2.77</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="convexité" class="level2">
+<h2 class="anchored" data-anchor-id="convexité">7. Convexité</h2>
+<section id="usage-6" class="level3">
+<h3 class="anchored" data-anchor-id="usage-6">Usage</h3>
+<p>La convexité est utilisée pour mesurer la sensibilité d’un titre à taux fixe, tel qu’une obligation, aux variations des taux d’intérêt, en tenant compte de la courbure de la relation prix-taux d’intérêt.</p>
+</section>
+<section id="contexte-6" class="level3">
+<h3 class="anchored" data-anchor-id="contexte-6">Contexte</h3>
+<p>Une convexité élevée indique une plus grande sensibilité aux variations des taux d’intérêt, tandis qu’une convexité faible indique une moindre sensibilité. La convexité est souvent utilisée pour évaluer le risque de taux d’intérêt et la stratégie de gestion d’un portefeuille d’obligations.</p>
+</section>
+<section id="formule-6" class="level3">
+<h3 class="anchored" data-anchor-id="formule-6">Formule</h3>
+<p><span class="math inline">\(C = \frac{\sum_{t=1}^{n} t(t+1) \times CF_t}{(1+y)^t \times \sum_{t=1}^{n} CF_t}\)</span></p>
+<p>(Note: Cette formule est simplifiée et ne prend pas en compte la valeur actualisée des flux de trésorerie. Pour une version plus précise, consultez la formule complète de la convexité.)</p>
+<div class="cell" data-execution_count="7">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a>y <span class="op">=</span> <span class="fl">0.03</span>  <span class="co"># Assuming a 3% yield</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a>convexity <span class="op">=</span> np.<span class="bu">sum</span>(time_periods <span class="op">*</span> (time_periods <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> cash_flows) <span class="op">/</span> ((<span class="dv">1</span> <span class="op">+</span> y) <span class="op">**</span> time_periods <span class="op">*</span> np.<span class="bu">sum</span>(cash_flows))</span>
+<span id="cb12-3"><a href="#cb12-3"></a></span>
+<span id="cb12-4"><a href="#cb12-4"></a><span class="co">#print(f'Convexité: {convexity:.2f}')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+</section>
+<section id="valeur-à-risque-var" class="level2">
+<h2 class="anchored" data-anchor-id="valeur-à-risque-var">8. Valeur à Risque (VaR)</h2>
+<section id="usage-7" class="level3">
+<h3 class="anchored" data-anchor-id="usage-7">Usage</h3>
+<p>La valeur à risque (VaR) est utilisée pour estimer la perte maximale potentielle d’un portefeuille d’investissement sur une période donnée et à un niveau de confiance donné.</p>
+</section>
+<section id="contexte-7" class="level3">
+<h3 class="anchored" data-anchor-id="contexte-7">Contexte</h3>
+<p>La VaR est souvent utilisée pour évaluer le risque de marché et la gestion des risques d’un portefeuille d’investissement.</p>
+</section>
+<section id="formule-7" class="level3">
+<h3 class="anchored" data-anchor-id="formule-7">Formule</h3>
+<p><span class="math inline">\(VaR = \mu - z \times \sigma\)</span></p>
+<div class="cell" data-execution_count="8">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a>confidence_level <span class="op">=</span> <span class="fl">0.95</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>z <span class="op">=</span> <span class="op">-</span>np.percentile(returns, <span class="dv">100</span> <span class="op">-</span> (confidence_level <span class="op">*</span> <span class="dv">100</span>))</span>
+<span id="cb13-3"><a href="#cb13-3"></a>var <span class="op">=</span> <span class="op">-</span>mean_return <span class="op">-</span> z <span class="op">*</span> volatility</span>
+<span id="cb13-4"><a href="#cb13-4"></a></span>
+<span id="cb13-5"><a href="#cb13-5"></a><span class="bu">print</span>(<span class="ss">f'Valeur à Risque (VaR) à </span><span class="sc">{</span>confidence_level <span class="op">*</span> <span class="dv">100</span><span class="sc">}</span><span class="ss">%: </span><span class="sc">{</span>var<span class="sc">:.4f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Valeur à Risque (VaR) à 95.0%: -0.0040</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="value-at-risk-conditionnel-cvar" class="level2">
+<h2 class="anchored" data-anchor-id="value-at-risk-conditionnel-cvar">9. Value at Risk Conditionnel (CVaR)</h2>
+<section id="usage-8" class="level3">
+<h3 class="anchored" data-anchor-id="usage-8">Usage</h3>
+<p>Le CVaR est utilisé pour estimer la perte moyenne potentielle d’un portefeuille d’investissement au-delà de la VaR, sur une période donnée et à un niveau de confiance donné.</p>
+</section>
+<section id="contexte-8" class="level3">
+<h3 class="anchored" data-anchor-id="contexte-8">Contexte</h3>
+<p>Le CVaR est souvent utilisé pour évaluer le risque de marché et la gestion des risques d’un portefeuille d’investissement, en se concentrant sur les pertes extrêmes.</p>
+</section>
+<section id="formule-8" class="level3">
+<h3 class="anchored" data-anchor-id="formule-8">Formule</h3>
+<p><span class="math inline">\(CVaR = \frac{1}{(1 - \alpha)}\int_{-\infty}^{-VaR} xf(x)dx\)</span></p>
+<div class="cell" data-execution_count="9">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1"></a>cvar <span class="op">=</span> <span class="op">-</span>np.mean(returns[returns <span class="op">&lt;</span> <span class="op">-</span>var])</span>
+<span id="cb15-2"><a href="#cb15-2"></a></span>
+<span id="cb15-3"><a href="#cb15-3"></a><span class="bu">print</span>(<span class="ss">f'Value at Risk Conditionnel (CVaR) à </span><span class="sc">{</span>confidence_level <span class="op">*</span> <span class="dv">100</span><span class="sc">}</span><span class="ss">%: </span><span class="sc">{</span>cvar<span class="sc">:.4f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Value at Risk Conditionnel (CVaR) à 95.0%: 0.0168</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="corrélation" class="level2">
+<h2 class="anchored" data-anchor-id="corrélation">10. Corrélation</h2>
+<section id="usage-9" class="level3">
+<h3 class="anchored" data-anchor-id="usage-9">Usage</h3>
+<p>La corrélation est utilisée pour mesurer la relation entre les rendements de deux actifs financiers.</p>
+</section>
+<section id="contexte-9" class="level3">
+<h3 class="anchored" data-anchor-id="contexte-9">Contexte</h3>
+<p>Une corrélation positive indique que les rendements de deux actifs évoluent généralement dans la même direction, tandis qu’une corrélation négative indique qu’ils évoluent généralement dans des directions opposées. La corrélation est souvent utilisée pour évaluer la diversification d’un portefeuille d’investissement.</p>
+</section>
+<section id="formule-9" class="level3">
+<h3 class="anchored" data-anchor-id="formule-9">Formule</h3>
+<p><span class="math inline">\(\rho = \frac{\mathrm{Cov}(R_i, R_j)}{\sigma_i \sigma_j}\)</span></p>
+<div class="cell" data-execution_count="10">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1"></a>ticker_2 <span class="op">=</span> <span class="st">'MSFT'</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a>data_2 <span class="op">=</span> yf.download(ticker_2, start<span class="op">=</span><span class="st">'2020-01-01'</span>, end<span class="op">=</span><span class="st">'2021-01-01'</span>)[<span class="st">'Adj Close'</span>]</span>
+<span id="cb17-3"><a href="#cb17-3"></a>returns_2 <span class="op">=</span> data_2.pct_change().dropna()</span>
+<span id="cb17-4"><a href="#cb17-4"></a></span>
+<span id="cb17-5"><a href="#cb17-5"></a>correlation_matrix <span class="op">=</span> np.corrcoef(returns, returns_2)</span>
+<span id="cb17-6"><a href="#cb17-6"></a>correlation <span class="op">=</span> correlation_matrix[<span class="dv">0</span>][<span class="dv">1</span>]</span>
+<span id="cb17-7"><a href="#cb17-7"></a></span>
+<span id="cb17-8"><a href="#cb17-8"></a><span class="bu">print</span>(<span class="ss">f'Corrélation entre </span><span class="sc">{</span>ticker<span class="sc">}</span><span class="ss"> et </span><span class="sc">{</span>ticker_2<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>correlation<span class="sc">:.4f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[*********************100%***********************]  1 of 1 completed
+Corrélation entre AAPL et MSFT: 0.8393</code></pre>
+</div>
+</div>
+<p>Ces 10 formules sont essentielles pour comprendre et analyser les actifs financiers et les portefeuilles d’investissement en finance de marché. En utilisant ces formules et les outils Python tels que yfinance et matplotlib, vous pouvez facilement récupérer des données de marché et visualiser les résultats de vos analyses.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("portfolio-geek\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

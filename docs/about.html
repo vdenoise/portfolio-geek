@@ -82,8 +82,12 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./tutorials_en.html" rel="" target="">
+ <span class="menu-text">Getting Started</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./all_posts.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+ <span class="menu-text">All Articles</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
@@ -111,6 +115,10 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ressources">    
         <li>
     <a class="dropdown-item" href="./risk_and_return.html" rel="" target="">
+ <span class="dropdown-text">Measuring Risk and Return</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./portfolio_construction.html" rel="" target="">
  <span class="dropdown-text">Portfolio Construction</span></a>
   </li>  
         <li>
@@ -153,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong><a href="https://www.linkedin.com/in/vdenoiseux/">Find me on Linkedin</a></strong></p>
 <section id="why-this-blog" class="level1">
 <h1>Why this blog?</h1>
-<p>What struck me the most when I started my career in finance was the <strong>knowledge asymetry</strong> between finance professionals and end clients. Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts still sound fairly exotic or technical to many investors.</p>
+<p>What struck me the most when I started my career in finance was the <strong>knowledge asymetry</strong> between finance professionals and end clients. Whilst this gap has been considerably reduced since then, thanks to internet and better information provided, many concepts still sound fairly exotic or technical to many investors.</p>
 <p>Here, I will try to <strong>demystify</strong> financial analysis and <strong>provide ideas and starting points</strong> in order to put <strong>theory into practice</strong>.</p>
 <p>In most articles, you should be able to <strong>copy, run and modify</strong> the code behind the analysis. This should help you to directly use many of the tools presented. The entire source is available on <a href="https://github.com/vdenoise/portfolio-geek">Github</a></p>
 
@@ -401,6 +409,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("portfolio-geek\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

@@ -25,7 +25,7 @@ In my different roles, I have developed and deployed a wide range range of inves
 **[Find me on Linkedin](https://www.linkedin.com/in/vdenoiseux/)**
 
 # Why this blog? 
-What struck me the most when I started my career in finance was the **knowledge asymetry** between finance professionals and end clients. Whilst this gap reduced considerably since then, thanks to internet and better information provided, many concepts  still sound fairly exotic or technical to many investors. 
+What struck me the most when I started my career in finance was the **knowledge asymetry** between finance professionals and end clients. Whilst this gap has been considerably reduced  since then, thanks to internet and better information provided, many concepts  still sound fairly exotic or technical to many investors. 
 
 Here, I will try to **demystify** financial analysis and **provide ideas and starting points** in order to put **theory into practice**.
 

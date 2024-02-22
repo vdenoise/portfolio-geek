@@ -2,8 +2,7 @@
   {
     "listing": "/risk_and_return.html",
     "items": [
-      "/posts/risk_and_return/estimating-portfolio-risk.html",
-      "/posts/risk_and_return/optimise-portfolios-with-python.html"
+      "/posts/risk_and_return/estimating-portfolio-risk.html"
     ]
   },
   {
@@ -18,7 +17,7 @@
       "/posts/data-and-apis/exploring-worldbank-api.html",
       "/posts/10-formules-importantes-finance-marche.html",
       "/posts/tutorials/fr/valorisation-pe.html",
-      "/posts/risk_and_return/optimise-portfolios-with-python.html",
+      "/posts/portfolio-construction/optimise-portfolios-with-python.html",
       "/posts/data-and-apis/test_wb.html",
       "/posts/publication-workflow/visualizing-historical-data.html"
     ]
@@ -35,6 +34,12 @@
       "/posts/tutorials/en/spy-and-matplotlib.html",
       "/posts/tutorials/en/shiller-data-python.html",
       "/posts/tutorials/en/getting-started-with-eurostat-api.html"
+    ]
+  },
+  {
+    "listing": "/portfolio_construction.html",
+    "items": [
+      "/posts/portfolio-construction/optimise-portfolios-with-python.html"
     ]
   }
 ]

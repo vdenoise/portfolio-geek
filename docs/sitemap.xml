@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>portfolio-geek.com/risk_and_return.html</loc>
-    <lastmod>2024-02-22T16:45:59.548Z</lastmod>
+    <lastmod>2024-02-22T19:38:02.280Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/all_posts.html</loc>
-    <lastmod>2024-02-22T16:45:58.788Z</lastmod>
+    <lastmod>2024-02-22T19:57:16.935Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/index.html</loc>
-    <lastmod>2024-02-22T16:44:08.344Z</lastmod>
+    <lastmod>2024-02-22T19:42:10.554Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/en/shiller-data-python.html</loc>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/en/spy-and-matplotlib.html</loc>
-    <lastmod>2024-02-22T16:37:32.005Z</lastmod>
+    <lastmod>2024-02-22T18:49:25.842Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation.html</loc>
@@ -66,11 +66,11 @@
   </url>
   <url>
     <loc>portfolio-geek.com/about.html</loc>
-    <lastmod>2024-02-21T10:10:47.164Z</lastmod>
+    <lastmod>2024-02-22T19:39:10.475Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/tutorials_en.html</loc>
-    <lastmod>2024-02-22T16:40:39.386Z</lastmod>
+    <lastmod>2024-02-22T19:38:14.193Z</lastmod>
   </url>
   <url>
     <loc>portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-windows.html</loc>
@@ -79,5 +79,13 @@
   <url>
     <loc>portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-macos.html</loc>
     <lastmod>2024-02-22T16:21:52.440Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python.html</loc>
+    <lastmod>2024-02-22T19:57:14.098Z</lastmod>
+  </url>
+  <url>
+    <loc>portfolio-geek.com/portfolio_construction.html</loc>
+    <lastmod>2024-02-22T19:57:17.581Z</lastmod>
   </url>
 </urlset>
