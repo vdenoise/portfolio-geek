@@ -177,7 +177,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">1-a Setting up a Python Development Workstation (MacOs)</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/setting-up-a-python-workstation-macos.ipynb"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">1-a Setting up a Python Development Workstation (MacOs)</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/setting-up-a-python-workstation-macos.ipynb">View Source</a></li></ul></div></div>
   <div class="quarto-categories">
     <div class="quarto-category">101</div>
     <div class="quarto-category">en</div>
@@ -223,21 +223,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Hello there, finance wizards and coding enthusiasts! Ready to enter the world of Python, Visual Studio, and financial analysis? Let’s embark on this journey together. By the end of this guide, you’ll have your finance lab primed for dissecting market trends, optimising portfolios, and much more. Buckle up, let’s set sail!</p>
 </section>
-<section id="setting-up-visual-studio-and-miniconda" class="level2">
-<h2 class="anchored" data-anchor-id="setting-up-visual-studio-and-miniconda">1. Setting Up Visual Studio and Miniconda</h2>
-<p>Your coding adventure begins by setting up the primary tools of the trade: Visual Studio Code (VS Code) and Miniconda. VS Code is a robust and versatile code editor, while Miniconda, a mini version of Anaconda, allows us to create isolated Python environments and manage packages.</p>
-<ul>
-<li><p>Download and install Visual Studio Code from the <a href="https://code.visualstudio.com/">official website</a>. Follow the prompts to complete the installation process.</p></li>
-<li><p>Similarly, download and install Miniconda from the <a href="https://docs.conda.io/en/latest/miniconda.html">official website</a>. During installation, ensure that you select the option to “Add Miniconda to my PATH environment variable”. This allows you to use <code>conda</code> commands directly in the VS Code terminal.</p></li>
-</ul>
+<section id="step-1-install-your-general-tooling" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-install-your-general-tooling">Step 1: Install Your General Tooling</h2>
+<p>Whilst not mandatory, before looking at Python, code editors and various libraries, it’s extremely useful to check that your MacOs is ready to provide you with the best general setup. Terminal windows, bash script might look a bit obscure at first glance, but take it step by step and look at the video linked below to get more clarity on this. This is a marathon, definitely not a sprint.</p>
+<section id="install-homebrew" class="level3">
+<h3 class="anchored" data-anchor-id="install-homebrew">1.1 Install Homebrew</h3>
+<p>Homebrew, affectionately known as brew, is the Swiss Army knife for installing software on macOS. It simplifies the process of managing software on your Mac, making it a breeze to install, uninstall, and update your applications.</p>
+<p>To install Homebrew, open Terminal and enter:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">/bin/bash</span> <span class="at">-c&nbsp;</span><span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va">)</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="setting-up-a-python-virtual-environment" class="level2">
-<h2 class="anchored" data-anchor-id="setting-up-a-python-virtual-environment">2. Setting Up a Python Virtual Environment</h2>
+<section id="install-iterm2" class="level3">
+<h3 class="anchored" data-anchor-id="install-iterm2">1.2 Install iTerm2</h3>
+<p>iTerm2 is an improvement over macOS’s default terminal, offering features such as split panes, search, and customisation. Install it via brew with:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> iterm2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="install-oh-my-zsh" class="level3">
+<h3 class="anchored" data-anchor-id="install-oh-my-zsh">1.3 Install Oh My Zsh:</h3>
+<p>Zsh, combined with Oh My Zsh, turns the dull default terminal into a powerful and enjoyable tool, complete with themes, plugins, and a vibrant community.</p>
+<p>Install Oh My Zsh with:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">sh</span> <span class="at">-c&nbsp;</span><span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class="va">)</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="step-2.-setting-up-visual-studio-and-miniconda" class="level2">
+<h2 class="anchored" data-anchor-id="step-2.-setting-up-visual-studio-and-miniconda">Step 2. Setting Up Visual Studio and Miniconda</h2>
+<section id="visual-studio" class="level3">
+<h3 class="anchored" data-anchor-id="visual-studio">2.1 Visual Studio</h3>
+<p>Visual Studio Code (VS Code) is a lightweight but powerful source code editor that supports debugging, embedded Git control, syntax highlighting, and more. Install VS Code via brew:</p>
+<p>VS Code is a robust and versatile code editor, while Miniconda, a mini version of Anaconda, allows us to create isolated Python environments and manage packages.</p>
+<p>Using Brew, installed above, is a breeze</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> visual-studio-code</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Alternatively, you can download and install Visual Studio Code from the <a href="https://code.visualstudio.com/">official website</a>. Follow the prompts to complete the installation process.</p>
+</section>
+<section id="miniconda" class="level3">
+<h3 class="anchored" data-anchor-id="miniconda">2.2 Miniconda</h3>
+<p>Using Brew</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> miniconda</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Alternatively, you can download and install Miniconda from the <a href="https://docs.conda.io/en/latest/miniconda.html">official website</a>. During installation, ensure that you select the option to “Add Miniconda to my PATH environment variable”. This allows you to use <code>conda</code> commands directly in the VS Code terminal.</p>
+</section>
+</section>
+<section id="step-3.-setting-up-a-python-virtual-environment" class="level2">
+<h2 class="anchored" data-anchor-id="step-3.-setting-up-a-python-virtual-environment">Step 3. Setting Up a Python Virtual Environment</h2>
+<section id="create-the-conda-environment" class="level3">
+<h3 class="anchored" data-anchor-id="create-the-conda-environment">3.1 Create the Conda environment</h3>
 <p>With our tools installed, let’s now create a virtual environment to house our finance lab. We’ll use conda to create a new environment named <code>portfolio-geek</code> using Python 3.10.</p>
 <p>Open <code>VS Code</code>, then open a terminal and type the following command:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">conda</span> create <span class="at">-n</span> portfolio-geek python=3.10</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="ex">conda</span> create <span class="at">-n</span> portfolio-geek python=3.10</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Activate the <code>portfolio-geek</code> environment by typing:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">conda</span> activate portfolio-geek</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="ex">conda</span> activate portfolio-geek</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="install-the-key-packages-for-your-coding-journey" class="level3">
+<h3 class="anchored" data-anchor-id="install-the-key-packages-for-your-coding-journey">3.2 Install the key packages for your coding journey</h3>
 <p>Inside <code>portfolio-geek</code>, we install several vital Python libraries for our financial analysis journey:</p>
 <ul>
 <li><p><strong>pandas</strong>: A flexible and powerful data manipulation library, essential for handling and processing financial data.</p></li>
@@ -246,11 +281,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><strong>pyportfolioopt</strong>: An advanced library designed to optimise portfolios, calculate risk and returns, and much more.</p></li>
 </ul>
 <p>Install these libraries using the following command:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">conda</span> install pandas matplotlib seaborn yfinance pyportfolioopt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a><span class="ex">conda</span> install pandas matplotlib seaborn yfinance pyportfolioopt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="installing-key-visual-studio-extensions" class="level2">
-<h2 class="anchored" data-anchor-id="installing-key-visual-studio-extensions">3. Installing Key Visual Studio Extensions</h2>
-<p>VS Code shines with its extensions. Here are a few that will make your life easier:</p>
+<section id="step-4.-installing-key-visual-studio-extensions" class="level3">
+<h3 class="anchored" data-anchor-id="step-4.-installing-key-visual-studio-extensions">Step 4. Installing Key Visual Studio Extensions</h3>
+<p>This step is not mandatory but it will be of tremendous help on a day to day basis. VS Code shines with its extensions. Here are a few that will make your life easier:</p>
 <ul>
 <li><p><strong>Python</strong>: Gives you a host of Python-specific features like linting, debugging, code formatting, and more.</p></li>
 <li><p><strong>Prettier</strong>: A code formatter that supports many languages, including Python. Keeps your code clean and professional.</p></li>
@@ -258,13 +293,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>You can install these extensions by searching for them in the VS Code Extensions view (<code>Ctrl + Shift + X</code>) and clicking on “Install”.</p>
 </section>
-<section id="launching-a-jupyter-notebook-inside-visual-studio" class="level2">
-<h2 class="anchored" data-anchor-id="launching-a-jupyter-notebook-inside-visual-studio">4. Launching a Jupyter Notebook Inside Visual Studio</h2>
+</section>
+<section id="step-5-launching-a-jupyter-notebook-inside-visual-studio" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-launching-a-jupyter-notebook-inside-visual-studio">Step 5 Launching a Jupyter Notebook Inside Visual Studio</h2>
 <p>With our <code>portfolio-geek</code> environment and VS Code set up, it’s time to dive into some coding. We’ll be using a Jupyter Notebook, a powerful tool allowing you to interweave code and text into a single document.</p>
 <p>Create a new file with a <code>.ipynb</code> extension. Upon creation, VS Code will prompt you to select a Python interpreter—choose the one corresponding to our <code>portfolio-geek</code> environment.</p>
-<p>In the following steps, we’ll demonstrate some powerful features of the <code>pyportfolioopt</code> library. In this exercise, we’ll fetch the historical data of SPY, QQQ, and AGG ETFs using <code>yfinance</code>, compute risk and</p>
-<p>return metrics, plot the 10-year cumulative return, and finally, plot the efficient frontier.</p>
-<p><em>Due to the length and complexity of the code, it has been omitted from this article. For a complete walkthrough, please refer to the official pyportfolioopt <a href="https://pyportfolioopt.readthedocs.io/en/latest/">documentation</a>.</em></p>
+<div class="cell" data-execution_count="1">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Ensure you're in the 'portfolio-geek' environment</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb9-5"><a href="#cb9-5"></a></span>
+<span id="cb9-6"><a href="#cb9-6"></a><span class="co"># Sample data</span></span>
+<span id="cb9-7"><a href="#cb9-7"></a>x <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">100</span>)</span>
+<span id="cb9-8"><a href="#cb9-8"></a>y <span class="op">=</span> np.sin(x)</span>
+<span id="cb9-9"><a href="#cb9-9"></a></span>
+<span id="cb9-10"><a href="#cb9-10"></a><span class="co"># Plotting</span></span>
+<span id="cb9-11"><a href="#cb9-11"></a>plt.plot(x, y)</span>
+<span id="cb9-12"><a href="#cb9-12"></a>plt.title(<span class="st">"Simple Sine Wave Plot"</span>)</span>
+<span id="cb9-13"><a href="#cb9-13"></a>plt.xlabel(<span class="st">"X axis"</span>)</span>
+<span id="cb9-14"><a href="#cb9-14"></a>plt.ylabel(<span class="st">"Y axis"</span>)</span>
+<span id="cb9-15"><a href="#cb9-15"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="setting-up-a-python-workstation-macos_files/figure-html/cell-2-output-1.png" class="img-fluid"></p>
+</div>
+</div>
 
 
 </section>
@@ -552,6 +608,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("portfolio-geek\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

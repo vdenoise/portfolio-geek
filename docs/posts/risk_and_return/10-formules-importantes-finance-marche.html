@@ -119,8 +119,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../../tutorials_en.html" rel="" target="">
+ <span class="menu-text">Getting Started</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../all_posts.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+ <span class="menu-text">All Articles</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html" rel="" target="">
@@ -148,7 +152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ressources">    
         <li>
     <a class="dropdown-item" href="../../risk_and_return.html" rel="" target="">
- <span class="dropdown-text">Portfolio Construction</span></a>
+ <span class="dropdown-text">Measuring Risk and Return</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../tutorials_en.html" rel="" target="">
@@ -804,6 +808,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("portfolio-geek\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

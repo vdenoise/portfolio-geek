@@ -30,26 +30,19 @@ In my different roles, I have developed and deployed a wide range range of inves
 
 ::: {.g-col-12 .g-col-md-5}
 # Portfolio Construction
-
 - Portfolio Optimisation with Python
-- Risks and Returns 101
-- Good Finance DataSources available to everyone
+- [Risks and Returns 101](risk_and_return.html)
 :::
 
 ::: {.g-col-12 .g-col-md-5}
 # Efficient Blogging
-
-- Automating Powerpoint 
-- Nice Pictures with Python
-
+- Quarto: a revolution in the scientific blogging and publication workflow
 :::
 
 ::: {.g-col-12 .g-col-md-5}
 # Performance & Reporting
-
 - Automating Powerpoint 
-- Nice Pictures with Python
-
+- Nice Pictures with Python and Matplotlib
 :::
 
 :::

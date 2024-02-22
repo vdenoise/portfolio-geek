@@ -10,6 +10,7 @@ format:
     execute: True
     freeze: False
     code-fold: true
+    link-external-newwindow: true
     code-line-numbers: true
     code-tools:
       source: repo
@@ -37,7 +38,7 @@ website:
         href: https://twitter.com
       - text: Ressources
         menu: 
-          - text: Portfolio Construction
+          - text: Measuring Risk and Return
             href: risk_and_return.qmd
           - text: Tutorials (en)
             href: tutorials_en.qmd

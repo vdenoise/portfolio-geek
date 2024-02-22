@@ -3,9 +3,7 @@
     "listing": "/risk_and_return.html",
     "items": [
       "/posts/risk_and_return/estimating-portfolio-risk.html",
-      "/posts/risk_and_return/10-formules-importantes-finance-marche.html",
-      "/posts/risk_and_return/optimise-portfolios-with-python.html",
-      "/posts/risk_and_return/estimating_risk.html"
+      "/posts/risk_and_return/optimise-portfolios-with-python.html"
     ]
   },
   {
@@ -18,8 +16,7 @@
       "/posts/tutorials/en/getting-started-with-eurostat-api.html",
       "/posts/risk_and_return/estimating-portfolio-risk.html",
       "/posts/data-and-apis/exploring-worldbank-api.html",
-      "/posts/risk_and_return/estimating_risk.html",
-      "/posts/risk_and_return/10-formules-importantes-finance-marche.html",
+      "/posts/10-formules-importantes-finance-marche.html",
       "/posts/tutorials/fr/valorisation-pe.html",
       "/posts/risk_and_return/optimise-portfolios-with-python.html",
       "/posts/data-and-apis/test_wb.html",

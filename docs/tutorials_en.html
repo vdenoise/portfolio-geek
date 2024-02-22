@@ -149,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ressources">    
         <li>
     <a class="dropdown-item" href="./risk_and_return.html" rel="" target="">
- <span class="dropdown-text">Portfolio Construction</span></a>
+ <span class="dropdown-text">Measuring Risk and Return</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./tutorials_en.html" rel="" target="">
@@ -203,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="101,en,setup,python,bash,macos,matplotlib" data-listing-date-sort="1708380000000" data-listing-file-modified-sort="1708594564013" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="101,en,setup,python,bash,macos,matplotlib" data-listing-date-sort="1708380000000" data-listing-file-modified-sort="1708617114781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
 <p><a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html"> <img src="./posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image"> </a></p>
 </div>
@@ -231,7 +231,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="101,en,setup,bash,python,windows,matplotlib" data-listing-date-sort="1708552800000" data-listing-file-modified-sort="1708594543526" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="1" data-categories="101,en,setup,bash,python,windows,matplotlib" data-listing-date-sort="1708552800000" data-listing-file-modified-sort="1708617105032" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
 <p><a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html"> <img src="./posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image"> </a></p>
 </div>
@@ -259,7 +259,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="tutorial,data,matplotlib,en" data-listing-date-sort="1706133600000" data-listing-file-modified-sort="1708596139655" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="2" data-categories="tutorial,data,matplotlib,en" data-listing-date-sort="1706133600000" data-listing-file-modified-sort="1708619851443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./posts/tutorials/en/spy-and-matplotlib.html"> <img src="./posts/tutorials/en/chart_spy.png" class="thumbnail-image"> </a></p>
 </div>
@@ -630,6 +630,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("portfolio-geek\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
