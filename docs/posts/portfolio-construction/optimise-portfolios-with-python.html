@@ -218,8 +218,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <section id="loading-libraries" class="level3">
 <h3 class="anchored" data-anchor-id="loading-libraries">Loading Libraries</h3>
-<p>The main library to load here is indeed <strong>PyPortfolioOpt</strong>{% fn 2%}, and we will rely extensively on it in this article.</p>
-<p>We need the following tools as well: - <strong>Pandas</strong>{% fn 3%}: load, filter, sort and pretty much all data wrangling operations; - <strong>Numpy</strong>{% fn 4%}: provides most matrix and advanced numerical operations; this library is the calculation backbone for pandas; - <strong>Matplotlib</strong>{% fn 5%}: the <em>de facto</em> reference library to draw scientific charts; - <strong>yfinance</strong>{% fn 6%}: a very handy library to access many different online databases, including Yahoo Finance.</p>
+<p>The main library to load here is indeed <strong>PyPortfolioOpt</strong>, and we will rely extensively on it in this article.</p>
+<p>We need the following tools as well:</p>
+<ul>
+<li><strong>Pandas</strong>: load, filter, sort and pretty much all data wrangling operations;</li>
+<li><strong>Numpy</strong>: provides most matrix and advanced numerical operations; this library is the calculation backbone for pandas;</li>
+<li><strong>Matplotlib</strong>: the <em>de facto</em> reference library to draw scientific charts;</li>
+<li><strong>yfinance</strong>: a very handy library to access many different online databases, including Yahoo Finance.</li>
+</ul>
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="1">
 <details>
 <summary>Code</summary>
@@ -283,7 +289,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="alternative-assets" class="level4">
 <h4 class="anchored" data-anchor-id="alternative-assets"><strong>Alternative Assets</strong></h4>
-<p>Let’s add 2 additional asset classes, Gold and Commodities: - <strong>GLD</strong>: SPDR <strong>Gold</strong> Trust representing the price of <strong>Gold - </strong>PDBC<strong>: Invesco Optimum Yield Diversified </strong>Commodity** Strategy No K-1 ETF** which will represent the performance of the Broad Commodities asset class</p>
+<p>Let’s add 2 additional asset classes, Gold and Commodities:</p>
+<ul>
+<li><strong>GLD</strong>: SPDR <strong>Gold</strong> Trust representing the price of **Gold</li>
+<li><strong>PDBC</strong>: Invesco Optimum Yield Diversified <strong>Commodity</strong> Strategy No K-1 ETF** which will represent the performance of the Broad Commodities asset class</li>
+</ul>
 <p>Everything in the above is <strong>denominated in US Dollars</strong>, this will make our life easier in what follows, ie we will not need any currency conversion, which is always a bit painful in the process.</p>
 </section>
 </section>
@@ -321,7 +331,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">#collapse-hide</span></span>
 <span id="cb4-2"><a href="#cb4-2"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="30">
 <div>
 
 
@@ -422,7 +432,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-2"><a href="#cb5-2"></a><span class="co"># Same table, but this time, normalised</span></span>
 <span id="cb5-3"><a href="#cb5-3"></a>(df<span class="op">/</span>df.iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">1</span>).tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="5">
+<div class="cell-output cell-output-display" data-execution_count="31">
 <div>
 
 
@@ -541,7 +551,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-19"><a href="#cb6-19"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-7-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-7-output-1.png" width="800" height="508"></p>
 </div>
 </div>
 </section>
@@ -567,21 +577,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-12"><a href="#cb7-12"></a><span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-8-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-8-output-1.png" width="969" height="501"></p>
 </div>
 </div>
 </section>
 </section>
 <section id="estimate-risk-and-return" class="level2">
 <h2 class="anchored" data-anchor-id="estimate-risk-and-return">Estimate risk and return</h2>
-<p>In <u>Markowitz 1952</u><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, the optimal portfolio is obtained as a function of <em>expected</em> returns and <em>expected</em> risks of the portfolio. This takes a strong assumption that we have a “crystal ball”, or at least access to a predictive model, which at this stage is well beyond this article.</p>
+<p>In <u>Markowitz 1952</u>, the optimal portfolio is obtained as a function of <em>expected</em> returns and <em>expected</em> risks of the portfolio. This takes a strong assumption that we have a “crystal ball”, or at least access to a predictive model, which at this stage is well beyond this article.</p>
 <p>For this first example, we will rely on historical parameters estimation, which precisely means that we expect the past to be a good prediction of what might happen in the future.</p>
 <section id="volatility" class="level3">
 <h3 class="anchored" data-anchor-id="volatility">Volatility</h3>
 <p>There are many ways to estimate the volatility, and I will only cover the simplest approach.</p>
 <p>We have access to daily close prices of the ETFs, hence we could look at the standard deviation of <strong>daily</strong> returns. In theory this would utilise most of the data we have access to, which is a good thing. In practice, and especially when looking at asset classes which can be observed with an <strong>8 to 12 hours</strong> time difference which might lead the “sample volatility” to become inconsistent between 2 asset classes. This is even more important for estimating the <strong>correlation</strong>.</p>
 <p>Practitioners often use <strong>weekly returns</strong> to alleviate this issue, and we will do the same here, and as such calculate the returns using a <em>resampled</em> time series. To calculate the <strong>annualized volatility</strong> requires an additional factor in this case the square root of 52. Why this?</p>
-<p>Volatility is essential to option traders, and when pricing options, practitioners often model asset prices as <strong>Wiener processes</strong>(number of weeks in a year) <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. The variance of a Wiener process is proportional to the time, and the volatility is the square root of the the variance, which gives us that to convert standard deviation of weekly returns into an <em>annualized</em> figure, we need to multiply our results by the square root of the number of weeks in a year <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
+<p>Volatility is essential to option traders, and when pricing options, practitioners often model asset prices as <strong>Wiener processes</strong>(number of weeks in a year) <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. The variance of a Wiener process is proportional to the time, and the volatility is the square root of the the variance, which gives us that to convert standard deviation of weekly returns into an <em>annualized</em> figure, we need to multiply our results by the square root of the number of weeks in a year.</p>
 <div class="cell" data-execution_count="8">
 <details>
 <summary>Code</summary>
@@ -589,7 +599,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-2"><a href="#cb8-2"></a>((weekly_returns.std()<span class="op">*</span>math.sqrt(<span class="dv">52</span>)<span class="op">*</span><span class="dv">100</span>).sort_values()).plot.bar()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-9-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-9-output-1.png" width="569" height="436"></p>
 </div>
 </div>
 <p>As one could have guessed, on the left of the chart above, we can find the low volatility asset classes (e.g.&nbsp;Government Bonds, Investment Grade Bonds), whereas on the right we have high volatility asset classes (Mid Cap and Small Cap Equities).</p>
@@ -603,7 +613,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>sns.heatmap(weekly_returns.corr())<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-10-output-1.png" width="567" height="441"></p>
 </div>
 </div>
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-tags="[]" data-execution_count="10">
@@ -626,7 +636,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="calculate-and-draw-the-efficient-frontier" class="level3">
 <h3 class="anchored" data-anchor-id="calculate-and-draw-the-efficient-frontier">Calculate and draw the efficient frontier</h3>
 <p>With expected returns and risk estimated, we are ready to utilise PyPortfolioOpt’s optimiser to draw the <strong>efficient frontier</strong>.</p>
-<p>The idea behind the efficient frontier <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> is relatively simple: - For <strong>each level of investor’s risk</strong>, there is an optimal portfolio which is expected to deliver the <strong>highest level of return</strong>; or conversely - For <strong>each level of investor’s return</strong>, there is an optimal portfolio which is expected to deliver the <strong>lowest level of return</strong>.</p>
+<p>The idea behind the efficient frontier is relatively simple: - For <strong>each level of investor’s risk</strong>, there is an optimal portfolio which is expected to deliver the <strong>highest level of return</strong>; or conversely - For <strong>each level of investor’s return</strong>, there is an optimal portfolio which is expected to deliver the <strong>lowest level of return</strong>.</p>
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-tags="[]" data-execution_count="11">
 <details>
 <summary>Code</summary>
@@ -641,7 +651,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-9"><a href="#cb11-9"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-12-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-12-output-1.png" width="656" height="484"></p>
 </div>
 </div>
 </section>
@@ -666,7 +676,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb12-14"><a href="#cb12-14"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-13-output-1.png" width="656" height="484"></p>
 </div>
 </div>
 </section>
@@ -693,7 +703,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb13-16"><a href="#cb13-16"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-14-output-1.png" width="657" height="464"></p>
 </div>
 </div>
 </section>
@@ -715,10 +725,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol>
 <li id="fn1"><p><a href="https://www.jstor.org/stable/2975974">Portfolio Selection</a>, Henri Markowitz, 1952<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p><a href="https://pyportfolioopt.readthedocs.io/en/latest/">PyportfolioOpt</a>, Robert Andrew Martin, 2018<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p><a href="https://www.jstor.org/stable/2975974">Portfolio Selection</a>, Henri Markowitz, 1952<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p><a href="https://en.wikipedia.org/wiki/Wiener_process">Wikipedia.com / Wiener Processes</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p><a href="https://en.wikipedia.org/wiki/Wiener_process">Wikipedia.com / Wiener Processes</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p><a href="https://www.jstor.org/stable/2975974">Portfolio Selection</a>, Henri Markowitz, 1952<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://en.wikipedia.org/wiki/Wiener_process">Wikipedia.com / Wiener Processes</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
