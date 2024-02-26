@@ -2,7 +2,7 @@
 title: "Archive"
 page-layout: full
 listing:
-  contents: posts/**/*.qmd
+  contents: posts/**/*.ipynb
   type: default
   sort: 'date desc'
 code-tools: false
