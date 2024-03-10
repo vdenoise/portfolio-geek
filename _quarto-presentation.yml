@@ -14,3 +14,6 @@ format:
     code-tools: true
     freeze: auto
     chalkboard: true
+
+variables:
+  presentation: true

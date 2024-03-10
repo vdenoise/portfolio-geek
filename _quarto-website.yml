@@ -19,6 +19,8 @@ format:
 website:
   title: "Portfolio Geek"
   site-url: "portfolio-geek.com"
+  google-analytics: "G-CJ2CMCX5LZ"
+  cookie-consent: true
   repo-url: "https://github.com/vdenoise/portfolio-geek/"
   description: "Finance, Research and the Tech required to Fuel them"
   repo-branch: "master"

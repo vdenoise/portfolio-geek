@@ -7,7 +7,16 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: false
+  
   fields: [author, date, description, title, image]
 page-layout: full
 title-block-banner: true
 ---
+
+
+Estimating risks and returns is probably the most important - and the most difficult - topic in quantitative finance. There are plenty of approaches to tackle it.
+
+Below is a series of articles delving into various approaches and techniques to analyse time series and estimating risk and returns. This list will be augmented over time.
+
+::: {#sample-listings}
+:::

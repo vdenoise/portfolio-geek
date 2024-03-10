@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -65,6 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -80,7 +82,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -89,14 +97,69 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CJ2CMCX5LZ"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CJ2CMCX5LZ', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"implied",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -105,9 +168,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Portfolio Geek</span>
     </a>
@@ -119,51 +182,55 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../tutorials_en.html" rel="" target="">
- <span class="menu-text">Getting Started</span></a>
+    <a class="nav-link" href="../tutorials_en.html"> 
+<span class="menu-text">Getting Started</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../all_posts.html" rel="" target="">
- <span class="menu-text">All Articles</span></a>
+    <a class="nav-link" href="../all_posts.html"> 
+<span class="menu-text">All Articles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/vdenoiseux/" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/vdenoiseux/"> <i class="bi bi-linkedin" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/vdenoise" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/vdenoise"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressources" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Ressources</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ressources">    
         <li>
-    <a class="dropdown-item" href="../risk_and_return.html" rel="" target="">
+    <a class="dropdown-item" href="../risk_and_return.html">
  <span class="dropdown-text">Measuring Risk and Return</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../tutorials_en.html" rel="" target="">
+    <a class="dropdown-item" href="../portfolio_construction.html">
+ <span class="dropdown-text">Portfolio Construction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorials_en.html">
  <span class="dropdown-text">Tutorials (en)</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -202,7 +269,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
+
 
 <p><img src="../pictures/mathematics-formulas-on-a-blackboard.png" class="img-fluid"></p>
 <section id="les-10-formules-les-plus-utilisées-en-finance-de-marché" class="level1">
@@ -222,7 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="formule">Formule</h3>
 <p><span class="math inline">\(\mu = \frac{1}{n}\sum_{i=1}^{n}(R_i)\)</span></p>
 <div class="cell" data-execution_count="1">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -244,7 +313,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[*********************100%***********************]  1 of 1 completed</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-2-output-2.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-2-output-2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -263,7 +336,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="formule-1">Formule</h3>
 <p><span class="math inline">\(\sigma = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(R_i - \mu)^2}\)</span></p>
 <div class="cell" data-execution_count="2">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>volatility <span class="op">=</span> np.std(returns, ddof<span class="op">=</span><span class="dv">1</span>)</span>
 <span id="cb3-2"><a href="#cb3-2"></a></span>
@@ -277,7 +350,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-10"><a href="#cb3-10"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-3-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -296,7 +373,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="formule-2">Formule</h3>
 <p><span class="math inline">\(S = \frac{\mu - r_f}{\sigma}\)</span></p>
 <div class="cell" data-execution_count="3">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>risk_free_rate <span class="op">=</span> <span class="fl">0.02</span>  <span class="co"># Assuming a 2% annual risk-free rate</span></span>
 <span id="cb4-2"><a href="#cb4-2"></a>sharpe_ratio <span class="op">=</span> (mean_return <span class="op">-</span> risk_free_rate) <span class="op">/</span>volatility</span>
@@ -314,7 +391,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-14"><a href="#cb4-14"></a><span class="bu">print</span>(<span class="ss">f'Sharpe Ratio: </span><span class="sc">{</span>sharpe_ratio<span class="sc">:.4f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-4-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Sharpe Ratio: -0.5871</code></pre>
@@ -336,7 +417,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="formule-3">Formule</h3>
 <p><span class="math inline">\(\beta = \frac{\mathrm{Cov}(R_p, R_m)}{\mathrm{Var}(R_m)}\)</span></p>
 <div class="cell" data-execution_count="4">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>market_ticker <span class="op">=</span> <span class="st">'^GSPC'</span></span>
 <span id="cb6-2"><a href="#cb6-2"></a>market_data <span class="op">=</span> yf.download(market_ticker, start<span class="op">=</span><span class="st">'2020-01-01'</span>, end<span class="op">=</span><span class="st">'2021-01-01'</span>)[<span class="st">'Adj Close'</span>]</span>
@@ -368,7 +449,7 @@ Beta: 1.1225</code></pre>
 <h3 class="anchored" data-anchor-id="formule-4">Formule</h3>
 <p><span class="math inline">\(\alpha = R_p - (R_f + \beta (R_m - R_f))\)</span></p>
 <div class="cell" data-execution_count="5">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>alpha <span class="op">=</span> mean_return <span class="op">-</span> (risk_free_rate <span class="op">+</span> beta <span class="op">*</span> (np.mean(market_returns) <span class="op">-</span> risk_free_rate))</span>
 <span id="cb8-2"><a href="#cb8-2"></a></span>
@@ -395,7 +476,7 @@ Beta: 1.1225</code></pre>
 <p><span class="math inline">\(D = \frac{\sum_{t=1}^{n} t \times CF_t}{\sum_{t=1}^{n} CF_t}\)</span></p>
 <p>(Note: Cette formule est simplifiée et ne prend pas en compte la valeuractualisée des flux de trésorerie. Pour une version plus précise, consultez la formule complète de la duration de Macaulay.)</p>
 <div class="cell" data-execution_count="6">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a>cash_flows <span class="op">=</span> np.array([<span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">110</span>])  <span class="co"># Assuming a bond with 2 annual coupon payments of 10 and a face value of 100</span></span>
 <span id="cb10-2"><a href="#cb10-2"></a>time_periods <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="bu">len</span>(cash_flows) <span class="op">+</span> <span class="dv">1</span>)</span>
@@ -424,7 +505,7 @@ Beta: 1.1225</code></pre>
 <p><span class="math inline">\(C = \frac{\sum_{t=1}^{n} t(t+1) \times CF_t}{(1+y)^t \times \sum_{t=1}^{n} CF_t}\)</span></p>
 <p>(Note: Cette formule est simplifiée et ne prend pas en compte la valeur actualisée des flux de trésorerie. Pour une version plus précise, consultez la formule complète de la convexité.)</p>
 <div class="cell" data-execution_count="7">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a>y <span class="op">=</span> <span class="fl">0.03</span>  <span class="co"># Assuming a 3% yield</span></span>
 <span id="cb12-2"><a href="#cb12-2"></a>convexity <span class="op">=</span> np.<span class="bu">sum</span>(time_periods <span class="op">*</span> (time_periods <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> cash_flows) <span class="op">/</span> ((<span class="dv">1</span> <span class="op">+</span> y) <span class="op">**</span> time_periods <span class="op">*</span> np.<span class="bu">sum</span>(cash_flows))</span>
@@ -448,7 +529,7 @@ Beta: 1.1225</code></pre>
 <h3 class="anchored" data-anchor-id="formule-7">Formule</h3>
 <p><span class="math inline">\(VaR = \mu - z \times \sigma\)</span></p>
 <div class="cell" data-execution_count="8">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a>confidence_level <span class="op">=</span> <span class="fl">0.95</span></span>
 <span id="cb13-2"><a href="#cb13-2"></a>z <span class="op">=</span> <span class="op">-</span>np.percentile(returns, <span class="dv">100</span> <span class="op">-</span> (confidence_level <span class="op">*</span> <span class="dv">100</span>))</span>
@@ -476,7 +557,7 @@ Beta: 1.1225</code></pre>
 <h3 class="anchored" data-anchor-id="formule-8">Formule</h3>
 <p><span class="math inline">\(CVaR = \frac{1}{(1 - \alpha)}\int_{-\infty}^{-VaR} xf(x)dx\)</span></p>
 <div class="cell" data-execution_count="9">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1"></a>cvar <span class="op">=</span> <span class="op">-</span>np.mean(returns[returns <span class="op">&lt;</span> <span class="op">-</span>var])</span>
 <span id="cb15-2"><a href="#cb15-2"></a></span>
@@ -502,7 +583,7 @@ Beta: 1.1225</code></pre>
 <h3 class="anchored" data-anchor-id="formule-9">Formule</h3>
 <p><span class="math inline">\(\rho = \frac{\mathrm{Cov}(R_i, R_j)}{\sigma_i \sigma_j}\)</span></p>
 <div class="cell" data-execution_count="10">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1"></a>ticker_2 <span class="op">=</span> <span class="st">'MSFT'</span></span>
 <span id="cb17-2"><a href="#cb17-2"></a>data_2 <span class="op">=</span> yf.download(ticker_2, start<span class="op">=</span><span class="st">'2020-01-01'</span>, end<span class="op">=</span><span class="st">'2021-01-01'</span>)[<span class="st">'Adj Close'</span>]</span>
@@ -656,10 +737,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   if (showAllCode) {
     showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("portfolio-geek\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -669,8 +767,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -683,6 +790,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -726,6 +952,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -751,6 +978,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -808,23 +1061,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("portfolio-geek\.com");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
 
 
 

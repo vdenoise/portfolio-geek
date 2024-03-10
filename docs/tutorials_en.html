@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -48,7 +50,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +65,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -91,9 +100,63 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CJ2CMCX5LZ"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CJ2CMCX5LZ', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"implied",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -101,10 +164,10 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Portfolio Geek</span>
     </a>
@@ -116,55 +179,55 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./tutorials_en.html" rel="" target="" aria-current="page">
- <span class="menu-text">Getting Started</span></a>
+    <a class="nav-link active" href="./tutorials_en.html" aria-current="page"> 
+<span class="menu-text">Getting Started</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./all_posts.html" rel="" target="">
- <span class="menu-text">All Articles</span></a>
+    <a class="nav-link" href="./all_posts.html"> 
+<span class="menu-text">All Articles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/vdenoiseux/" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/vdenoiseux/"> <i class="bi bi-linkedin" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/vdenoise" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/vdenoise"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressources" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Ressources</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ressources">    
         <li>
-    <a class="dropdown-item" href="./risk_and_return.html" rel="" target="">
+    <a class="dropdown-item" href="./risk_and_return.html">
  <span class="dropdown-text">Measuring Risk and Return</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./portfolio_construction.html" rel="" target="">
+    <a class="dropdown-item" href="./portfolio_construction.html">
  <span class="dropdown-text">Portfolio Construction</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./tutorials_en.html" rel="" target="">
+    <a class="dropdown-item" href="./tutorials_en.html">
  <span class="dropdown-text">Tutorials (en)</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -177,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page">
 
       <div>
       <div class="quarto-title-meta-heading">Author</div>
@@ -205,27 +268,28 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="101,en,setup,python,bash,macos,matplotlib" data-listing-date-sort="1708380000000" data-listing-file-modified-sort="1708617114781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="0" data-categories="101,en,setup,python,bash,macos,matplotlib" data-listing-date-sort="1708387200000" data-listing-file-modified-sort="1710064982704" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="720">
 <div class="thumbnail">
-<p><a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html"> <img src="./posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external"></a></p><a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external">
+<p><img src="./posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html">
 <h3 class="no-anchor listing-title">
-1-a Setting up a Python Development Workstation (MacOs)
+<a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external">1-a Setting up a Python Development Workstation (MacOs)</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<p>In this article we set up our MacOs Workstation and install all the relevant tools to be efficien in python coding.</p>
+<a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external">In this article, we start our journey into Finance and Python coding. Let’s set up our MacOs Workstation and install a few key tools to code efficiently.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html">
+<a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external">
 <div class="listing-date">
 Feb 20, 2024
 </div>
@@ -235,25 +299,25 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="101,en,setup,bash,python,windows,matplotlib" data-listing-date-sort="1708552800000" data-listing-file-modified-sort="1708617105032" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="1" data-categories="101,en,setup,bash,python,windows,matplotlib" data-listing-date-sort="1708560000000" data-listing-file-modified-sort="1709016126496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="546">
 <div class="thumbnail">
-<p><a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html"> <img src="./posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external"></a></p><a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external">
+<p><img src="./posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html">
 <h3 class="no-anchor listing-title">
-1-b- Setting up a Python Development Workstation (Windows)
+<a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external">1-b- Setting up a Python Development Workstation (Windows)</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<p>In this article we set up our Windows workstation and install all the relevant tools to be efficient in coding in Python.</p>
+<a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external">In this article we set up our Windows workstation and install all the relevant tools to be efficient in coding in Python.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html">
+<a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external">
 <div class="listing-date">
 Feb 22, 2024
 </div>
@@ -263,25 +327,25 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="tutorial,data,matplotlib,en" data-listing-date-sort="1706133600000" data-listing-file-modified-sort="1708627764595" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="2" data-categories="tutorial,data,matplotlib,en" data-listing-date-sort="1706140800000" data-listing-file-modified-sort="1708627764595" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="395">
 <div class="thumbnail">
-<p><a href="./posts/tutorials/en/spy-and-matplotlib.html"> <img src="./posts/tutorials/en/chart_spy.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external"></a></p><a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external">
+<p><img src="./posts/tutorials/en/chart_spy.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/tutorials/en/spy-and-matplotlib.html">
 <h3 class="no-anchor listing-title">
-2 - Getting and charting data with Matplotlib
+<a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external">2 - Getting and charting data with Matplotlib</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<p>In this article, we start our data analysis journey with Python by getting and charting data, in this case the performance of an ETF using freely available data.</p>
+<a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external">In this article, we start our data analysis journey with Python by getting and charting data, in this case the performance of an ETF using freely available data.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/tutorials/en/spy-and-matplotlib.html">
+<a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external">
 <div class="listing-date">
 Jan 25, 2024
 </div>
@@ -291,25 +355,25 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="tutorial,long term investing,en,shiller,data,python,matplotlib,stylesheet" data-listing-date-sort="1705269600000" data-listing-file-modified-sort="1708595864139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="3" data-categories="tutorial,long term investing,en,shiller,data,python,matplotlib,stylesheet" data-listing-date-sort="1705276800000" data-listing-file-modified-sort="1708595864139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="589">
 <div class="thumbnail">
-<p><a href="./posts/tutorials/en/shiller-data-python.html"> <p class="card-img-top"><img src="pictures/time-horizon-paper.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/tutorials/en/shiller-data-python.html" class="no-external"></a></p><a href="./posts/tutorials/en/shiller-data-python.html" class="no-external">
+<p class="card-img-top"><img src="pictures/time-horizon-paper.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/tutorials/en/shiller-data-python.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/tutorials/en/shiller-data-python.html">
 <h3 class="no-anchor listing-title">
-3 - First Analysis: Equity long-term returns with Python
+<a href="./posts/tutorials/en/shiller-data-python.html" class="no-external">3 - First Analysis: Equity long-term returns with Python</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/tutorials/en/shiller-data-python.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<p>Long Term Investing enables investors to capture the long term risk premium of various asset classes. In this article, we will explore how to download Shiller’s Excel data on long-term stock market returns from his website using Python. We will use the requests library for HTTP requests and the pandas library for data manipulation. For visualization, we will use the Matplotlib library with the Pacoty stylesheet to create a chart comparing nominal equity returns, real equity returns, and real GDP growth.</p>
+<a href="./posts/tutorials/en/shiller-data-python.html" class="no-external">Long Term Investing enables investors to capture the long term risk premium of various asset classes. In this article, we will explore how to download Shiller’s Excel data on long-term stock market returns from his website using Python. We will use the requests library for HTTP requests and the pandas library for data manipulation. For visualization, we will use the Matplotlib library with the Pacoty stylesheet to create a chart comparing nominal equity returns, real equity returns, and real GDP growth.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/tutorials/en/shiller-data-python.html">
+<a href="./posts/tutorials/en/shiller-data-python.html" class="no-external">
 <div class="listing-date">
 Jan 15, 2024
 </div>
@@ -319,25 +383,25 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="en,101,data,api,data,python,macro,economics" data-listing-date-sort="1705269600000" data-listing-file-modified-sort="1708596067236" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="4" data-categories="en,101,data,api,data,python,macro,economics" data-listing-date-sort="1705276800000" data-listing-file-modified-sort="1708596067236" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="368">
 <div class="thumbnail">
-<p><a href="./posts/tutorials/en/getting-started-with-eurostat-api.html"> <p class="card-img-top"><img src="pictures/api-connection-check.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/tutorials/en/getting-started-with-eurostat-api.html" class="no-external"></a></p><a href="./posts/tutorials/en/getting-started-with-eurostat-api.html" class="no-external">
+<p class="card-img-top"><img src="pictures/api-connection-check.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/tutorials/en/getting-started-with-eurostat-api.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/tutorials/en/getting-started-with-eurostat-api.html">
 <h3 class="no-anchor listing-title">
-4 - First Macro-Economic data analysis: using the Eurostat API
+<a href="./posts/tutorials/en/getting-started-with-eurostat-api.html" class="no-external">4 - First Macro-Economic data analysis: using the Eurostat API</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/tutorials/en/getting-started-with-eurostat-api.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<p>In this article, we leverage our first API request, using the data provided freely by the Eurostat organisation.</p>
+<a href="./posts/tutorials/en/getting-started-with-eurostat-api.html" class="no-external">In this article, we leverage our first API request, using the data provided freely by the Eurostat organisation.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/tutorials/en/getting-started-with-eurostat-api.html">
+<a href="./posts/tutorials/en/getting-started-with-eurostat-api.html" class="no-external">
 <div class="listing-date">
 Jan 15, 2024
 </div>
@@ -482,10 +546,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   if (showAllCode) {
     showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("portfolio-geek\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -495,8 +576,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -509,6 +599,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -552,6 +761,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -577,6 +787,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -634,23 +870,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("portfolio-geek\.com");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
 
 
 
