@@ -26,7 +26,7 @@ website:
   cookie-consent:
     type: express
     style: headline
-    palette: dark
+    palette: light
   repo-url: "https://github.com/vdenoise/portfolio-geek/"
   description: "Finance, Research and the Tech required to Fuel them"
   repo-branch: "master"
