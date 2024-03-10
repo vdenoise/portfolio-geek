@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>portfolio-geek.com/risk_and_return.html</loc>
+    <loc>https://portfolio-geek.com/risk_and_return.html</loc>
     <lastmod>2024-02-22T19:38:01.469Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/all_posts.html</loc>
+    <loc>https://portfolio-geek.com/all_posts.html</loc>
     <lastmod>2023-05-02T05:34:22.768Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/index.html</loc>
+    <loc>https://portfolio-geek.com/index.html</loc>
     <lastmod>2024-02-25T19:49:07.636Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/tutorials/en/shiller-data-python.html</loc>
-    <lastmod>2024-02-22T09:57:44.139Z</lastmod>
+    <loc>https://portfolio-geek.com/posts/tutorials/en/shiller-data-python.html</loc>
+    <lastmod>2024-03-10T12:33:10.631Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/tutorials/en/spy-and-matplotlib.html</loc>
-    <lastmod>2024-02-22T18:49:24.595Z</lastmod>
+    <loc>https://portfolio-geek.com/posts/tutorials/en/spy-and-matplotlib.html</loc>
+    <lastmod>2024-03-10T12:35:59.560Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-windows.html</loc>
-    <lastmod>2024-02-27T06:42:06.496Z</lastmod>
+    <loc>https://portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-windows.html</loc>
+    <lastmod>2024-03-10T12:34:47.891Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/10-formules-importantes-finance-marche.html</loc>
-    <lastmod>2024-02-22T16:52:04.811Z</lastmod>
+    <loc>https://portfolio-geek.com/posts/10-formules-importantes-finance-marche.html</loc>
+    <lastmod>2024-03-10T12:33:10.622Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/data-and-apis/exploring-worldbank-api.html</loc>
+    <loc>https://portfolio-geek.com/posts/data-and-apis/exploring-worldbank-api.html</loc>
     <lastmod>2023-11-08T06:35:51.305Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/risk_and_return/estimating-portfolio-risk.html</loc>
+    <loc>https://portfolio-geek.com/posts/risk_and_return/estimating-portfolio-risk.html</loc>
     <lastmod>2023-11-08T06:35:17.314Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/portfolio_construction.html</loc>
+    <loc>https://portfolio-geek.com/portfolio_construction.html</loc>
     <lastmod>2024-02-25T19:05:15.534Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/data-and-apis/test_wb.html</loc>
+    <loc>https://portfolio-geek.com/posts/data-and-apis/test_wb.html</loc>
     <lastmod>2023-06-26T18:04:25.358Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python.html</loc>
-    <lastmod>2024-02-25T16:08:15.304Z</lastmod>
+    <loc>https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python.html</loc>
+    <lastmod>2024-03-10T12:34:48.587Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/publication-workflow/visualizing-historical-data.html</loc>
+    <loc>https://portfolio-geek.com/posts/publication-workflow/visualizing-historical-data.html</loc>
     <lastmod>2023-11-08T06:36:01.196Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/tutorials/fr/valorisation-pe.html</loc>
+    <loc>https://portfolio-geek.com/posts/tutorials/fr/valorisation-pe.html</loc>
     <lastmod>2023-11-08T06:36:14.841Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/tutorials/en/getting-started-with-eurostat-api.html</loc>
+    <loc>https://portfolio-geek.com/posts/tutorials/en/getting-started-with-eurostat-api.html</loc>
     <lastmod>2024-02-22T10:01:07.236Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-macos.html</loc>
-    <lastmod>2024-03-10T10:03:02.704Z</lastmod>
+    <loc>https://portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-macos.html</loc>
+    <lastmod>2024-03-10T12:33:10.865Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/archive.html</loc>
+    <loc>https://portfolio-geek.com/archive.html</loc>
     <lastmod>2024-02-25T19:07:09.335Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/about.html</loc>
+    <loc>https://portfolio-geek.com/about.html</loc>
     <lastmod>2024-02-25T19:24:41.634Z</lastmod>
   </url>
   <url>
-    <loc>portfolio-geek.com/tutorials_en.html</loc>
+    <loc>https://portfolio-geek.com/tutorials_en.html</loc>
     <lastmod>2024-02-22T09:55:45.055Z</lastmod>
   </url>
 </urlset>

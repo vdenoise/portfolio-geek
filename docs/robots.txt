@@ -1,1 +1,1 @@
-Sitemap: portfolio-geek.com/sitemap.xml
+Sitemap: https://portfolio-geek.com/sitemap.xml

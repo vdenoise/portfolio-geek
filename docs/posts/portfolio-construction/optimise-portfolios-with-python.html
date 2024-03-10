@@ -58,7 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -116,11 +116,11 @@ gtag('config', 'G-CJ2CMCX5LZ', { 'anonymize_ip': true});
 <script type="text/javascript" charset="UTF-8">
 document.addEventListener('DOMContentLoaded', function () {
 cookieconsent.run({
-  "notice_banner_type":"simple",
-  "consent_type":"implied",
-  "palette":"light",
+  "notice_banner_type":"headline",
+  "consent_type":"express",
+  "palette":"dark",
   "language":"en",
-  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
+  "page_load_consent_levels":["strictly-necessary"],
   "notice_banner_reject_button_hide":false,
   "preferences_center_close_button_hide":false,
   "website_name":""
@@ -131,7 +131,7 @@ cookieconsent.run({
 </script> 
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
@@ -370,8 +370,7 @@ cookieconsent.run({
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">#collapse-hide</span></span>
 <span id="cb4-2"><a href="#cb4-2"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="4">
-<div>
+<div class="cell-output cell-output-display" data-execution_count="30">
 <div>
 <div>
 
@@ -416,7 +415,7 @@ cookieconsent.run({
 <td>37.3</td>
 <td>168.4</td>
 <td>22.1</td>
-<td>47.9</td>
+<td>255.3</td>
 <td>391.8</td>
 <td>13.6</td>
 <td>43.1</td>
@@ -431,7 +430,7 @@ cookieconsent.run({
 <td>37.5</td>
 <td>169.0</td>
 <td>22.1</td>
-<td>48.0</td>
+<td>255.9</td>
 <td>393.2</td>
 <td>13.6</td>
 <td>43.2</td>
@@ -446,7 +445,7 @@ cookieconsent.run({
 <td>37.2</td>
 <td>169.8</td>
 <td>22.1</td>
-<td>47.9</td>
+<td>255.3</td>
 <td>391.7</td>
 <td>13.7</td>
 <td>43.2</td>
@@ -474,8 +473,7 @@ cookieconsent.run({
 <span id="cb5-2"><a href="#cb5-2"></a><span class="co"># Same table, but this time, normalised</span></span>
 <span id="cb5-3"><a href="#cb5-3"></a>(df<span class="op">/</span>df.iloc[<span class="dv">0</span>, ]<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(decimals<span class="op">=</span><span class="dv">1</span>).tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="5">
-<div>
+<div class="cell-output cell-output-display" data-execution_count="31">
 <div>
 <div>
 
@@ -516,48 +514,48 @@ cookieconsent.run({
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2023-02-24</td>
-<td>102.4</td>
+<td>102.5</td>
 <td>89.0</td>
-<td>135.0</td>
+<td>134.7</td>
 <td>100.9</td>
-<td>207.4</td>
-<td>161.5</td>
-<td>144.7</td>
-<td>136.8</td>
-<td>177.0</td>
-<td>102.2</td>
-<td>158.1</td>
-<td>110.4</td>
+<td>150.4</td>
+<td>159.4</td>
+<td>146.2</td>
+<td>136.4</td>
+<td>174.4</td>
+<td>102.0</td>
+<td>156.2</td>
+<td>109.3</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2023-02-27</td>
-<td>102.6</td>
+<td>102.7</td>
 <td>89.5</td>
-<td>135.5</td>
+<td>135.2</td>
 <td>100.9</td>
-<td>207.8</td>
-<td>162.1</td>
-<td>144.7</td>
-<td>137.1</td>
-<td>177.0</td>
-<td>102.0</td>
-<td>158.7</td>
-<td>111.5</td>
+<td>150.8</td>
+<td>160.0</td>
+<td>146.2</td>
+<td>136.7</td>
+<td>174.4</td>
+<td>101.7</td>
+<td>156.8</td>
+<td>110.3</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2023-02-28</td>
-<td>102.6</td>
+<td>102.7</td>
 <td>88.8</td>
-<td>136.2</td>
+<td>135.8</td>
 <td>100.9</td>
-<td>207.4</td>
-<td>161.5</td>
-<td>145.7</td>
-<td>137.1</td>
-<td>176.2</td>
-<td>102.1</td>
-<td>158.1</td>
-<td>110.6</td>
+<td>150.4</td>
+<td>159.4</td>
+<td>147.3</td>
+<td>136.7</td>
+<td>173.7</td>
+<td>101.8</td>
+<td>156.2</td>
+<td>109.5</td>
 </tr>
 </tbody>
 </table>
@@ -711,15 +709,6 @@ cookieconsent.run({
 <span id="cb11-8"><a href="#cb11-8"></a></span>
 <span id="cb11-9"><a href="#cb11-9"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stderr">
-<pre><code>/opt/homebrew/Caskroom/miniconda/base/envs/portfolio-geek/lib/python3.10/site-packages/cvxpy/reductions/solvers/solving_chain.py:336: FutureWarning: 
-    Your problem is being solved with the ECOS solver by default. Starting in 
-    CVXPY 1.5.0, Clarabel will be used as the default solver instead. To continue 
-    using ECOS, specify the ECOS solver explicitly using the ``solver=cp.ECOS`` 
-    argument to the ``problem.solve`` method.
-    
-  warnings.warn(ECOS_DEPRECATION_MSG, FutureWarning)</code></pre>
-</div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -734,20 +723,20 @@ cookieconsent.run({
 <div class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb13-2"><a href="#cb13-2"></a></span>
-<span id="cb13-3"><a href="#cb13-3"></a><span class="co"># Find and plot the tangency portfolio</span></span>
-<span id="cb13-4"><a href="#cb13-4"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb13-5"><a href="#cb13-5"></a>ef2 <span class="op">=</span> EfficientFrontier(mu, S) </span>
-<span id="cb13-6"><a href="#cb13-6"></a>plotting.plot_efficient_frontier(ef2, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb13-7"><a href="#cb13-7"></a></span>
-<span id="cb13-8"><a href="#cb13-8"></a>ef3 <span class="op">=</span> EfficientFrontier(mu, S) </span>
-<span id="cb13-9"><a href="#cb13-9"></a></span>
-<span id="cb13-10"><a href="#cb13-10"></a>ef3.max_sharpe()</span>
-<span id="cb13-11"><a href="#cb13-11"></a>ret_tangent, std_tangent, _ <span class="op">=</span> ef3.portfolio_performance()</span>
-<span id="cb13-12"><a href="#cb13-12"></a>ax.scatter(std_tangent, ret_tangent, marker<span class="op">=</span><span class="st">"*"</span>, s<span class="op">=</span><span class="dv">100</span>, c<span class="op">=</span><span class="st">"r"</span>, label<span class="op">=</span><span class="st">"Max Sharpe"</span>)</span>
-<span id="cb13-13"><a href="#cb13-13"></a>ax.set_title(<span class="st">"Asset Classes, Efficient Frontier &amp; Max Sharpe portfolio"</span>)</span>
-<span id="cb13-14"><a href="#cb13-14"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a></span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="co"># Find and plot the tangency portfolio</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb12-5"><a href="#cb12-5"></a>ef2 <span class="op">=</span> EfficientFrontier(mu, S) </span>
+<span id="cb12-6"><a href="#cb12-6"></a>plotting.plot_efficient_frontier(ef2, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb12-7"><a href="#cb12-7"></a></span>
+<span id="cb12-8"><a href="#cb12-8"></a>ef3 <span class="op">=</span> EfficientFrontier(mu, S) </span>
+<span id="cb12-9"><a href="#cb12-9"></a></span>
+<span id="cb12-10"><a href="#cb12-10"></a>ef3.max_sharpe()</span>
+<span id="cb12-11"><a href="#cb12-11"></a>ret_tangent, std_tangent, _ <span class="op">=</span> ef3.portfolio_performance()</span>
+<span id="cb12-12"><a href="#cb12-12"></a>ax.scatter(std_tangent, ret_tangent, marker<span class="op">=</span><span class="st">"*"</span>, s<span class="op">=</span><span class="dv">100</span>, c<span class="op">=</span><span class="st">"r"</span>, label<span class="op">=</span><span class="st">"Max Sharpe"</span>)</span>
+<span id="cb12-13"><a href="#cb12-13"></a>ax.set_title(<span class="st">"Asset Classes, Efficient Frontier &amp; Max Sharpe portfolio"</span>)</span>
+<span id="cb12-14"><a href="#cb12-14"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -763,22 +752,22 @@ cookieconsent.run({
 <div class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb14-2"><a href="#cb14-2"></a></span>
-<span id="cb14-3"><a href="#cb14-3"></a><span class="co"># Plot random portfolios</span></span>
-<span id="cb14-4"><a href="#cb14-4"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb14-5"><a href="#cb14-5"></a>n_samples <span class="op">=</span> <span class="dv">10000</span></span>
-<span id="cb14-6"><a href="#cb14-6"></a>w <span class="op">=</span> np.random.dirichlet(np.ones(<span class="bu">len</span>(mu)), n_samples)</span>
-<span id="cb14-7"><a href="#cb14-7"></a>rets <span class="op">=</span> w.dot(mu)</span>
-<span id="cb14-8"><a href="#cb14-8"></a>stds <span class="op">=</span> np.sqrt((w.T <span class="op">*</span> (S <span class="op">@</span> w.T)).<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>))</span>
-<span id="cb14-9"><a href="#cb14-9"></a>sharpes <span class="op">=</span> rets <span class="op">/</span> stds</span>
-<span id="cb14-10"><a href="#cb14-10"></a>ax.scatter(stds, rets, marker<span class="op">=</span><span class="st">"."</span>, c<span class="op">=</span>sharpes, cmap<span class="op">=</span><span class="st">"viridis_r"</span>)</span>
-<span id="cb14-11"><a href="#cb14-11"></a></span>
-<span id="cb14-12"><a href="#cb14-12"></a><span class="co"># Format</span></span>
-<span id="cb14-13"><a href="#cb14-13"></a>ax.set_title(<span class="st">"Random portfolios, based on the same asset classes"</span>)</span>
-<span id="cb14-14"><a href="#cb14-14"></a><span class="co">#ax.legend()</span></span>
-<span id="cb14-15"><a href="#cb14-15"></a>plt.tight_layout()</span>
-<span id="cb14-16"><a href="#cb14-16"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a></span>
+<span id="cb13-3"><a href="#cb13-3"></a><span class="co"># Plot random portfolios</span></span>
+<span id="cb13-4"><a href="#cb13-4"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb13-5"><a href="#cb13-5"></a>n_samples <span class="op">=</span> <span class="dv">10000</span></span>
+<span id="cb13-6"><a href="#cb13-6"></a>w <span class="op">=</span> np.random.dirichlet(np.ones(<span class="bu">len</span>(mu)), n_samples)</span>
+<span id="cb13-7"><a href="#cb13-7"></a>rets <span class="op">=</span> w.dot(mu)</span>
+<span id="cb13-8"><a href="#cb13-8"></a>stds <span class="op">=</span> np.sqrt((w.T <span class="op">*</span> (S <span class="op">@</span> w.T)).<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>))</span>
+<span id="cb13-9"><a href="#cb13-9"></a>sharpes <span class="op">=</span> rets <span class="op">/</span> stds</span>
+<span id="cb13-10"><a href="#cb13-10"></a>ax.scatter(stds, rets, marker<span class="op">=</span><span class="st">"."</span>, c<span class="op">=</span>sharpes, cmap<span class="op">=</span><span class="st">"viridis_r"</span>)</span>
+<span id="cb13-11"><a href="#cb13-11"></a></span>
+<span id="cb13-12"><a href="#cb13-12"></a><span class="co"># Format</span></span>
+<span id="cb13-13"><a href="#cb13-13"></a>ax.set_title(<span class="st">"Random portfolios, based on the same asset classes"</span>)</span>
+<span id="cb13-14"><a href="#cb13-14"></a><span class="co">#ax.legend()</span></span>
+<span id="cb13-15"><a href="#cb13-15"></a>plt.tight_layout()</span>
+<span id="cb13-16"><a href="#cb13-16"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -942,7 +931,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("portfolio-geek\.com");
+      var filterRegex = new RegExp("https:\/\/portfolio-geek\.com");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1280,7 +1269,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-
 
 
 
