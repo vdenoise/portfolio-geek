@@ -340,7 +340,7 @@ cookieconsent.run({
 <div class="cell-output cell-output-stdout">
 <pre><code>Annualized Return:
 AGG    0.016396
-QQQ    0.195211
+QQQ    0.195212
 SPY    0.133962
 dtype: float64
 
@@ -411,6 +411,15 @@ dtype: float64</code></pre>
 <span id="cb9-16"><a href="#cb9-16"></a>plt.title(<span class="st">'Efficient Frontier'</span>)</span>
 <span id="cb9-17"><a href="#cb9-17"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
+<div class="cell-output cell-output-stderr">
+<pre><code>/opt/homebrew/Caskroom/miniconda/base/envs/portfolio-geek/lib/python3.10/site-packages/cvxpy/reductions/solvers/solving_chain.py:336: FutureWarning: 
+    Your problem is being solved with the ECOS solver by default. Starting in 
+    CVXPY 1.5.0, Clarabel will be used as the default solver instead. To continue 
+    using ECOS, specify the ECOS solver explicitly using the ``solver=cp.ECOS`` 
+    argument to the ``problem.solve`` method.
+    
+  warnings.warn(ECOS_DEPRECATION_MSG, FutureWarning)</code></pre>
+</div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -900,6 +909,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+
 
 
 
