@@ -1,6 +1,8 @@
 project:
   type: default
   output-dir: presos
+  resources:
+  - "pictures/*"
   
   render: 
     - posts//*.qmd

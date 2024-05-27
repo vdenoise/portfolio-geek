@@ -18,6 +18,7 @@
       "/posts/10-formules-importantes-finance-marche.html",
       "/posts/tutorials/fr/valorisation-pe.html",
       "/posts/portfolio-construction/optimise-portfolios-with-python.html",
+      "/posts/data-driven-minute/ddm1-volatility.html",
       "/posts/data-and-apis/test_wb.html",
       "/posts/publication-workflow/visualizing-historical-data.html"
     ]
@@ -32,6 +33,7 @@
     "listing": "/archive.html",
     "items": [
       "/posts/10-formules-importantes-finance-marche.html",
+      "/posts/data-driven-minute/ddm1-volatility.html",
       "/posts/portfolio-construction/optimise-portfolios-with-python.html",
       "/posts/publication-workflow/visualizing-historical-data.html",
       "/posts/risk_and_return/estimating-portfolio-risk.html",
