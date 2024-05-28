@@ -1,0 +1,46 @@
+/*-- scss:defaults --*/
+
+// Define variables
+$font-color: navy;
+$font-family: "Comic Sans MS", cursive, sans-serif;
+$font-family-sans-serif: "Comic Sans MS";
+
+
+// Global styles
+body {
+  font-family: $font-family;
+  color: $font-color;
+}
+
+// Example styles
+h1, h2, h3, h4, h5, h6, li {
+  color: $font-color;
+}
+
+p {
+  color: $font-color;
+}
+
+// Navigation styles
+nav {
+  background-color: darken($font-color, 10%);
+  a {
+    color: lighten($font-color, 20%);
+    &:hover {
+      color: $font-color;
+    }
+  }
+}
+
+// Button styles
+button {
+  background-color: $font-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-family: $font-family;
+  cursor: pointer;
+  &:hover {
+    background-color: lighten($font-color, 10%);
+  }
+}
