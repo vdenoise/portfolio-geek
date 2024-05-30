@@ -1,0 +1,38 @@
+figure.figsize: 8, 10
+
+# Background colors
+axes.facecolor: none
+figure.facecolor: none
+
+# Font properties
+font.family: MS Sans
+text.color: navy
+axes.labelcolor: gray
+xtick.color: navy
+ytick.color: navy
+axes.titlecolor: gray
+legend.facecolor: navy
+legend.edgecolor: navy
+
+# Grid properties
+grid.color: lightgray
+grid.linestyle: -
+grid.linewidth: 0.25
+axes.grid: True
+axes.grid.axis: y
+axes.edgecolor: gray
+axes.linewidth: 1
+
+# Spine properties
+axes.spines.top: False
+axes.spines.right: False
+
+# Tick properties
+xtick.major.size: 0
+ytick.major.size: 0
+xtick.minor.size: 0
+ytick.minor.size: 0
+
+date.autoformatter.month: %y-%b
+yaxis.labellocation: top
+xaxis.labellocation: right

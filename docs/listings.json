@@ -8,6 +8,7 @@
   {
     "listing": "/all_posts.html",
     "items": [
+      "/posts/data-driven-minute/ddm1-volatility.html",
       "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",
       "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
       "/posts/tutorials/en/spy-and-matplotlib.html",
@@ -19,8 +20,7 @@
       "/posts/tutorials/fr/valorisation-pe.html",
       "/posts/portfolio-construction/optimise-portfolios-with-python.html",
       "/posts/data-and-apis/test_wb.html",
-      "/posts/publication-workflow/visualizing-historical-data.html",
-      "/posts/data-driven-minute/ddm1-volatility.html"
+      "/posts/publication-workflow/visualizing-historical-data.html"
     ]
   },
   {
