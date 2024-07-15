@@ -8,9 +8,11 @@
   {
     "listing": "/all_posts.html",
     "items": [
+      "/posts/data-driven-minute/ddm-template.html",
       "/posts/data-driven-minute/ddm1-volatility.html",
       "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",
       "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
+      "/posts/daily-curation/2024-07-15_daily-curation.html",
       "/posts/tutorials/en/spy-and-matplotlib.html",
       "/posts/tutorials/en/getting-started-with-eurostat-api.html",
       "/posts/tutorials/en/shiller-data-python.html",
@@ -18,6 +20,7 @@
       "/posts/data-and-apis/exploring-worldbank-api.html",
       "/posts/10-formules-importantes-finance-marche.html",
       "/posts/tutorials/fr/valorisation-pe.html",
+      "/posts/daily-curation.html",
       "/posts/portfolio-construction/optimise-portfolios-with-python.html",
       "/posts/data-and-apis/test_wb.html",
       "/posts/publication-workflow/visualizing-historical-data.html"
@@ -33,6 +36,7 @@
     "listing": "/archive.html",
     "items": [
       "/posts/10-formules-importantes-finance-marche.html",
+      "/posts/data-driven-minute/ddm-template.html",
       "/posts/data-driven-minute/ddm1-volatility.html",
       "/posts/portfolio-construction/optimise-portfolios-with-python.html",
       "/posts/publication-workflow/visualizing-historical-data.html",
@@ -54,6 +58,12 @@
       "/posts/tutorials/en/spy-and-matplotlib.html",
       "/posts/tutorials/en/getting-started-with-eurostat-api.html",
       "/posts/tutorials/en/shiller-data-python.html"
+    ]
+  },
+  {
+    "listing": "/posts/daily-curation.html",
+    "items": [
+      "/posts/daily-curation/2024-07-15_daily-curation.html"
     ]
   }
 ]

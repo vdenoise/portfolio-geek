@@ -1,0 +1,41 @@
+---
+title: "15/07/2024:  Economics, Indexing, Quant and Coding Links"
+page-layout: full
+title-block-banner: true
+---
+
+## Economics
+
+| Title | Source | Summary	|
+|-------|---------|----------|
+| [Home Inventory Grows 34.5% YoY but Still Struggles to Meet Pre-Pandemic Levels: Insight into Current Market Trends](http://www.calculatedriskblog.com/2024/07/realtorcom-reports-active-inventory-up_01292103715.html ) |	Calculated Risk	| Active inventory in the existing home market increased by 34.5% YoY, marking the 35th consecutive week of growth. New listings declined by 4.9% from last year. Supply constraints persist. |
+| [Navigating Market Peaks: What to Know Before Buying a Home Amidst Soaring Prices and Mortgage Rates](https://awealthofcommonsense.com/2024/07/buying-a-house-at-the-top-of-the-market/) |	A Wealth of Common Sense	|Housing prices have risen significantly, and the author warns that potential homebuyers may face low returns. They discuss two scenarios: a 20% price drop or stagnant prices for the decade. The author believes that for homeowners planning to stay, these scenarios wouldn't have a significant impact. They highlight the potential risks for those buying right now and emphasize that a house should be more than just a financial investment. |
+|  [Bloomberg Donates $1 Billion to Johns Hopkins for Medical School Free Tuition and Comprehensive Student Support](https://www.npr.org/2024/07/09/g-s1-8876/johns-hopkins-medical-school-bloomberg)|	NPR	| Johns Hopkins University's medical school will offer free tuition to most students, thanks to a $1 billion gift from Michael Bloomberg's philanthropic organization. |
+
+
+## Index Investing
+
+| Title | Source | Summary	|
+|-------|---------|----------|
+| [How Passive Investing Subtly Shifts Market Dynamics: A New Perspective from GMO Experts](https://www.institutionalinvestor.com/article/2dgy5jctx2rb7g3wv2juo/portfolio/gmo-passive-investings-impact-has-been-overblown-but-its-not-negligible ) |	GMO Quarterly Letter |	The impact of passive investing on the stock market is less significant than believed, according to GMO. The firm argues that passive investing has not made markets less efficient and that the future impact will be muted. 	|
+| [Why Concerns About Index Funds Being a Bubble May Be Overstated: Insights and Historical Context](https://jlcollinsnh.com/2024/07/09/are-index-funds-a-bubble/)|	Retirement Investing Today	| The article explores concerns about index funds being a bubble, but argues that these concerns are unfounded due to the historical success of indexing and the continued demand for active management.  |
+
+
+## Quantitative Investing
+| Title | Source | Summary	|
+|-------|---------|----------|
+|[Why Investors Might Want to Pay Attention to Market Moves on July 1st](https://quantifiableedges.com/july-remains-king-of-day-1-performance/)|	Quantifiable Edges	| July has historically seen the highest win percentage and largest average trade on the first day of the month, potentially due to 401k inflows. In the past 13 instances, July's day-1 performance has always been positive. 	|
+|[Simplifying Multifactor Credit Portfolios: Why Integrated Beats Mixing for Better Returns and Lower Risk](https://quantpedia.com/how-to-construct-a-long-only-multifactor-credit-portfolio/ )|	Quantpedia|	The integrated approach is found to be better for constructing long-only multifactor credit portfolios, according to a research paper. It reduces downside risk and can achieve attractive risk-adjusted returns. 	|
+|[Maximize Investment Strategy: Boost Returns by Merging Forecasts from Top Financial Institutions for Better Predictions](https://portfoliooptimizer.io/blog/capital-market-assumptions-combining-institutions-forecasts-for-improved-accuracy/ )	| Capital Plug|	Combining capital market assumptions from multiple institutions improves forecasting accuracy for investors by averaging forecasts and reducing reliance on a single institution's forecast. 	|
+|[Balancing Risk and Reward: Smart Strategies for Navigating Prolonged Yield Curve Inversions in Your Investment Portfolio](https://quantpedia.com/a-few-thoughts-on-pragmatic-asset-allocation/ )|	Quantpedia|	The Pragmatic Asset Allocation Model focuses on tax-efficient investing and uses the yield curve inversion signal to determine when to move to a hedging portfolio. An amended version of the model switches to equities after 12 months of the signal. Long-term results show negligible differences between the original and amended versions. The decision between the two versions depends on individual risk tolerance and preferences. 	|
+|[Unlocking Market Insights: How NLP Transforms News and Corporate Filings into Investment Gold](https://www.quantrocket.com/blog/brain-alternative-data)	|QuantRocket and Brain|	NLP techniques are revolutionizing alternative data analysis, allowing investors to extract insights from news articles, SEC filings, and earnings calls. Brain's datasets and case studies demonstrate their effectiveness. |
+|[Enhance Your Data Analysis: Discover the Power of Time Series Smoothing Techniques with Savitzky-Golay Filter](https://medium.com/bip-xtech/stop-using-moving-average-to-smooth-your-time-series-2179af9ed59b)	|Medium	| Smoothing time series data helps to detect meaningful patterns. Moving average and Savitzky-Golay filter are popular smoothing techniques. While moving average is simple, it lacks precision, whereas Savitzky-Golay filter preserves important characteristics like peaks and troughs. |
+
+
+## Tech and Coding
+| Title | Source | Summary	|
+|-------|---------|----------|
+| coding	| [Make SQLite Smarter and Faster with Vectorlite: Your Go-To Extension for Enhanced Vector Search in AI Applications](https://www.reddit.com/r/Python/comments/1e26xsm/vectorlite_a_fast_vector_search_extension_for/ ) |	Reddit	| Vectorlite is a fast and tunable vector search extension for SQLite. It offers fast ANN-search, metadata filter pushdown support, and index serde support, among other features.|
+
+
+

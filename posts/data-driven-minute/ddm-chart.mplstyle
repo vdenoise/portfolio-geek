@@ -1,21 +1,23 @@
 figure.figsize: 8, 10
 
 # Background colors
-axes.facecolor: none
-figure.facecolor: none
+axes.facecolor: white
+figure.facecolor: white
 
 # Font properties
-font.family: MS Sans
-text.color: navy
+font.family: Arial
+font.size: 14 
+
+text.color: 12115F
 axes.labelcolor: gray
 xtick.color: navy
 ytick.color: navy
 axes.titlecolor: gray
-legend.facecolor: navy
-legend.edgecolor: navy
+legend.facecolor: white
+legend.edgecolor: white
 
 # Grid properties
-grid.color: lightgray
+grid.color: 12115F
 grid.linestyle: -
 grid.linewidth: 0.25
 axes.grid: True
