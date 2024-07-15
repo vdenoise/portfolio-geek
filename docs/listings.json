@@ -27,6 +27,12 @@
     ]
   },
   {
+    "listing": "/posts/daily-curation.html",
+    "items": [
+      "/posts/daily-curation/2024-07-15_daily-curation.html"
+    ]
+  },
+  {
     "listing": "/portfolio_construction.html",
     "items": [
       "/posts/portfolio-construction/optimise-portfolios-with-python.html"
@@ -58,12 +64,6 @@
       "/posts/tutorials/en/spy-and-matplotlib.html",
       "/posts/tutorials/en/getting-started-with-eurostat-api.html",
       "/posts/tutorials/en/shiller-data-python.html"
-    ]
-  },
-  {
-    "listing": "/posts/daily-curation.html",
-    "items": [
-      "/posts/daily-curation/2024-07-15_daily-curation.html"
     ]
   }
 ]
