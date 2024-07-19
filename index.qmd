@@ -22,7 +22,7 @@ In particular, [this section](/tutorials_en.html) provides you with a **Zero to 
 
 ::: {.g-col-12 .g-col-md-5}
 # Introductory Videos
-- [The Data Driven Minutes](/tutorials_en.html)
+- [The Data Driven Minutes](/posts/data-driven-minute.html)
 :::
 
 ::: {.g-col-12 .g-col-md-5}

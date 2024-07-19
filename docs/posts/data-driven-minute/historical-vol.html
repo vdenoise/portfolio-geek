@@ -357,47 +357,27 @@
 
 <section id="section" class="slide level2">
 <h2></h2>
-<aside class="notes">
-<p>Hey there! Imagine you’re driving to work every day. Some days, you zip through traffic without a hitch. Other days, you get stuck in jams or hit every red light. Now, think of the ups and downs of your drive as return volatility in the stock market.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<div class="absolute" style="top: 75px; left: 200px; width: 350px; height: 100px; ">
+<div class="absolute" style="top: 150px; left: 30px; width: 350px; height: 100px; ">
 <p><span class="math display">\[
-\sigma = \sqrt{\frac{\sum_{i=1}^{n}(R_i - \mu)^2}{n-1}}
+σ = √(Σ(Ri - R̄)² / (N - 1)) * √W
 \]</span></p>
 </div>
-<p>:::{.absolute top=250 left=100 width=600 height=400}0</p>
-<div class="smaller">
+<div class="absolute" style="top: 300px; left: 30px; width: 600px; height: 800px; ">
+<p>Where:</p>
 <ol type="1">
-<li class="fragment">Calculate the average return (<span class="math inline">\(\mu\)</span>).</li>
-<li class="fragment">Subtract the average return from each individual return <span class="math inline">\(R_{i} - \mu\)</span>.</li>
-<li class="fragment">Square these differences.</li>
-<li class="fragment">Sum up all the squared differences.</li>
-<li class="fragment">Divide by the number of returns minus one (<span class="math inline">\(n-1\)</span>).</li>
-<li class="fragment">Take the square root of the result.</li>
+<li>Ri = Return in the period i</li>
+<li>R̄ = Average return over the period</li>
+<li>N = Number of periods</li>
+<li>W = Number of periods in a year</li>
+<li>(W=52 for weekly returns)</li>
 </ol>
 </div>
-<p>:::</p>
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
-</section>
-<section id="section-2" class="slide level2">
-<h2></h2>
-<div class="absolute" style="top: 10px; left: 10px; width: 900px; height: 900px; ">
 
-</div>
 
-<div class="quarto-auto-generated-content">
+<img data-src="historical-vol_files/figure-revealjs/cell-2-output-1.png" class="r-stretch"><div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
