@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
-<meta name="dcterms.date" content="2024-01-15">
+<meta name="dcterms.date" content="2023-04-15">
 <meta name="description" content="In this article, we leverage our first API request, using the data provided freely by the Eurostat organisation.">
 
 <title>Portfolio Geek - 4 - First Macro-Economic data analysis: using the Eurostat API</title>
@@ -217,16 +217,12 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">4 - First Macro-Economic data analysis: using the Eurostat API</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/getting-started-with-eurostat-api.ipynb">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Getting Started with Eurostat API</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/getting-started-with-eurostat-api.ipynb">View Source</a></li></ul></div></div>
   <div class="quarto-categories">
     <div class="quarto-category">en</div>
     <div class="quarto-category">101</div>
     <div class="quarto-category">data</div>
     <div class="quarto-category">api</div>
-    <div class="quarto-category">data</div>
-    <div class="quarto-category">python</div>
-    <div class="quarto-category">macro</div>
-    <div class="quarto-category">economics</div>
   </div>
   </div>
 
@@ -249,7 +245,7 @@ cookieconsent.run({
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 15, 2024</p>
+      <p class="date">April 15, 2023</p>
     </div>
   </div>
   
@@ -261,24 +257,24 @@ cookieconsent.run({
 </header>
 
 
-<p><img src="../../../pictures/api-connection-check.png" class="img-fluid"> ## Connect to Eurostat API with Python using their REST API</p>
+<p><img src="../../../pictures/api-connection-check.png" class="img-fluid"> # Connect to Eurostat API with Python using their REST API</p>
 <p>Eurostat, the statistical office of the European Union, provides access to a wealth of data on various aspects of the European economy, environment, and society. One way to access this data is through their REST API, which can be easily connected to and queried using Python.</p>
 <p>In this article, we will walk you through the steps needed to connect to the Eurostat API using Python and build a function to show the connection status to the API. By the end, you’ll be able to retrieve data from Eurostat in a structured and efficient manner.</p>
-<section id="prerequisites" class="level3">
-<h3 class="anchored" data-anchor-id="prerequisites">Prerequisites</h3>
+<section id="prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
 <p>Before we begin, make sure you have Python installed on your system. You can check whether you have Python installed and which version you’re using by running the following command in your terminal:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">python</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>If you don’t have Python installed, you can download it from the official <a href="https://www.python.org/downloads/">Python website</a>.</p>
 <p>Next, you will need to install the <code>requests</code> library, which allows you to make HTTP requests in Python. To do this, open your terminal and run:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">pip</span> install requests</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="connecting-to-the-eurostat-api" class="level3">
-<h3 class="anchored" data-anchor-id="connecting-to-the-eurostat-api">Connecting to the Eurostat API</h3>
+<section id="connecting-to-the-eurostat-api" class="level2">
+<h2 class="anchored" data-anchor-id="connecting-to-the-eurostat-api">Connecting to the Eurostat API</h2>
 <p>To connect to the Eurostat API, you need to send HTTP requests to their API endpoints. The base URL for the Eurostat API is:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/</code></pre>
 <p>You can append the relevant endpoint to this base URL to access specific datasets or services.</p>
 <p>For example, to access the dataset on GDP per capita, you would send a request to:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/nama_10_pc?format=sdmx-compact-2.1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/nama_10_pc?format=sdmx-compact-2.1</code></pre>
 <p>Here’s a Python function that sends a request to the Eurostat API and checks the connection status:</p>
 <div class="cell" data-execution_count="1">
 <details class="code-fold">

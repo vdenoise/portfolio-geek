@@ -290,7 +290,7 @@ window.Quarto = {
 <section id="formule" class="level3">
 <h3 class="anchored" data-anchor-id="formule">Formule</h3>
 <p><span class="math inline">\(\mu = \frac{1}{n}\sum_{i=1}^{n}(R_i)\)</span></p>
-<div class="cell" data-execution_count="1">
+<div id="cell-2" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
@@ -310,12 +310,12 @@ window.Quarto = {
 <span id="cb1-15"><a href="#cb1-15"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[*********************100%***********************]  1 of 1 completed</code></pre>
+<pre><code>[*********************100%%**********************]  1 of 1 completed</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-2-output-2.png" class="img-fluid figure-img"></p>
+<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-2-output-2.png" width="614" height="429" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -335,7 +335,7 @@ window.Quarto = {
 <section id="formule-1" class="level3">
 <h3 class="anchored" data-anchor-id="formule-1">Formule</h3>
 <p><span class="math inline">\(\sigma = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(R_i - \mu)^2}\)</span></p>
-<div class="cell" data-execution_count="2">
+<div id="cell-4" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>volatility <span class="op">=</span> np.std(returns, ddof<span class="op">=</span><span class="dv">1</span>)</span>
@@ -352,7 +352,7 @@ window.Quarto = {
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-3-output-1.png" width="614" height="429" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -372,7 +372,7 @@ window.Quarto = {
 <section id="formule-2" class="level3">
 <h3 class="anchored" data-anchor-id="formule-2">Formule</h3>
 <p><span class="math inline">\(S = \frac{\mu - r_f}{\sigma}\)</span></p>
-<div class="cell" data-execution_count="3">
+<div id="cell-6" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>risk_free_rate <span class="op">=</span> <span class="fl">0.02</span>  <span class="co"># Assuming a 2% annual risk-free rate</span></span>
@@ -393,7 +393,7 @@ window.Quarto = {
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="10-formules-importantes-finance-marche_files/figure-html/cell-4-output-1.png" width="614" height="429" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -416,7 +416,7 @@ window.Quarto = {
 <section id="formule-3" class="level3">
 <h3 class="anchored" data-anchor-id="formule-3">Formule</h3>
 <p><span class="math inline">\(\beta = \frac{\mathrm{Cov}(R_p, R_m)}{\mathrm{Var}(R_m)}\)</span></p>
-<div class="cell" data-execution_count="4">
+<div id="cell-8" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>market_ticker <span class="op">=</span> <span class="st">'^GSPC'</span></span>
@@ -429,7 +429,7 @@ window.Quarto = {
 <span id="cb6-8"><a href="#cb6-8"></a><span class="bu">print</span>(<span class="ss">f'Beta: </span><span class="sc">{</span>beta<span class="sc">:.4f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[*********************100%***********************]  1 of 1 completed
+<pre><code>[*********************100%%**********************]  1 of 1 completed
 Beta: 1.1225</code></pre>
 </div>
 </div>
@@ -448,7 +448,7 @@ Beta: 1.1225</code></pre>
 <section id="formule-4" class="level3">
 <h3 class="anchored" data-anchor-id="formule-4">Formule</h3>
 <p><span class="math inline">\(\alpha = R_p - (R_f + \beta (R_m - R_f))\)</span></p>
-<div class="cell" data-execution_count="5">
+<div id="cell-10" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>alpha <span class="op">=</span> mean_return <span class="op">-</span> (risk_free_rate <span class="op">+</span> beta <span class="op">*</span> (np.mean(market_returns) <span class="op">-</span> risk_free_rate))</span>
@@ -475,7 +475,7 @@ Beta: 1.1225</code></pre>
 <h3 class="anchored" data-anchor-id="formule-5">Formule</h3>
 <p><span class="math inline">\(D = \frac{\sum_{t=1}^{n} t \times CF_t}{\sum_{t=1}^{n} CF_t}\)</span></p>
 <p>(Note: Cette formule est simplifiée et ne prend pas en compte la valeuractualisée des flux de trésorerie. Pour une version plus précise, consultez la formule complète de la duration de Macaulay.)</p>
-<div class="cell" data-execution_count="6">
+<div id="cell-12" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a>cash_flows <span class="op">=</span> np.array([<span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">110</span>])  <span class="co"># Assuming a bond with 2 annual coupon payments of 10 and a face value of 100</span></span>
@@ -504,7 +504,7 @@ Beta: 1.1225</code></pre>
 <h3 class="anchored" data-anchor-id="formule-6">Formule</h3>
 <p><span class="math inline">\(C = \frac{\sum_{t=1}^{n} t(t+1) \times CF_t}{(1+y)^t \times \sum_{t=1}^{n} CF_t}\)</span></p>
 <p>(Note: Cette formule est simplifiée et ne prend pas en compte la valeur actualisée des flux de trésorerie. Pour une version plus précise, consultez la formule complète de la convexité.)</p>
-<div class="cell" data-execution_count="7">
+<div id="cell-14" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a>y <span class="op">=</span> <span class="fl">0.03</span>  <span class="co"># Assuming a 3% yield</span></span>
@@ -528,7 +528,7 @@ Beta: 1.1225</code></pre>
 <section id="formule-7" class="level3">
 <h3 class="anchored" data-anchor-id="formule-7">Formule</h3>
 <p><span class="math inline">\(VaR = \mu - z \times \sigma\)</span></p>
-<div class="cell" data-execution_count="8">
+<div id="cell-16" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a>confidence_level <span class="op">=</span> <span class="fl">0.95</span></span>
@@ -556,7 +556,7 @@ Beta: 1.1225</code></pre>
 <section id="formule-8" class="level3">
 <h3 class="anchored" data-anchor-id="formule-8">Formule</h3>
 <p><span class="math inline">\(CVaR = \frac{1}{(1 - \alpha)}\int_{-\infty}^{-VaR} xf(x)dx\)</span></p>
-<div class="cell" data-execution_count="9">
+<div id="cell-18" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1"></a>cvar <span class="op">=</span> <span class="op">-</span>np.mean(returns[returns <span class="op">&lt;</span> <span class="op">-</span>var])</span>
@@ -582,7 +582,7 @@ Beta: 1.1225</code></pre>
 <section id="formule-9" class="level3">
 <h3 class="anchored" data-anchor-id="formule-9">Formule</h3>
 <p><span class="math inline">\(\rho = \frac{\mathrm{Cov}(R_i, R_j)}{\sigma_i \sigma_j}\)</span></p>
-<div class="cell" data-execution_count="10">
+<div id="cell-20" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1"></a>ticker_2 <span class="op">=</span> <span class="st">'MSFT'</span></span>
@@ -595,7 +595,7 @@ Beta: 1.1225</code></pre>
 <span id="cb17-8"><a href="#cb17-8"></a><span class="bu">print</span>(<span class="ss">f'Corrélation entre </span><span class="sc">{</span>ticker<span class="sc">}</span><span class="ss"> et </span><span class="sc">{</span>ticker_2<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>correlation<span class="sc">:.4f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[*********************100%***********************]  1 of 1 completed
+<pre><code>[*********************100%%**********************]  1 of 1 completed
 Corrélation entre AAPL et MSFT: 0.8393</code></pre>
 </div>
 </div>
