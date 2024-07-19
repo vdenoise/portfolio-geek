@@ -8,11 +8,11 @@ title-block-banner: true
 
 | Title | Source | Summary |
 |-----|-------|----------|
-| [These Three Investments Are Getting Ready to Be Jerome Powell's Favorite](https://moneymorning.com/2024/07/15/these-three-investment-are-getting-ready-to-be-jerome-powells-favorite/) | Unknown | The Fed's potential interest rate cuts may boost small cap stocks, regional banks, and real estate, prompting a significant market shift and attracting investors seeking higher returns.  | 
+| [These Three Investments Are Getting Ready to Be Jerome Powell's Favorite](https://moneymorning.com/2024/07/15/these-three-investment-are-getting-ready-to-be-jerome-powells-favorite/) | Money Morning | The Fed's potential interest rate cuts may boost small cap stocks, regional banks, and real estate, prompting a significant market shift and attracting investors seeking higher returns.  | 
 | [When Will the Yield Curve “Un”Invert?](https://www.wisdomtree.com/investments/blog/2024/07/10/when-will-the-yield-curve-uninvert) | WisdomTree's website | The UST yield curve's potential "un"inversion timing hinges on Fed rate cuts, with the UST 2-Year/10-Year spread likely reversing before the UST 3-Month/10-Year spread.  | 
 | [Moat Stocks Steady Amid Tech’s Market Surge](https://www.vaneck.com/us/en/blogs/moat-investing/moat-stocks-steady-amid-techs-market-surge/) | Moat Index Quarterly Review | Moat Index reviews revealed a contrarian bias towards large caps, reduced Financials exposure, and increased allocations in Consumer Staples, Industrials, and Technology, remaining underweight in growth stocks.  | 
 | [The Automatic Investing Revolution - A Wealth of Common Sense](https://awealthofcommonsense.com/2024/07/the-automatic-investing-revolution/) | A Wealth of Common Sense | The shift to automatic retirement savings, like higher default rates, improves participation and investor behavior, positively affecting stock market valuations while highlighting the limitations of defined contribution plans.  | 
-| [This Bullish Trend in Banks Is Just Starting](https://moneymorning.com/2024/07/15/this-bullish-trend-in-banks-is-just-starting-grab-it-now/) | Unknown | The banking sector shows potential recovery as interest rates may soon lower, with investor sentiment shifting and earnings reports exceeding expectations, presenting buying opportunities in ETFs like KBE and KRE.  | 
+| [This Bullish Trend in Banks Is Just Starting](https://moneymorning.com/2024/07/15/this-bullish-trend-in-banks-is-just-starting-grab-it-now/) | Money Morning | The banking sector shows potential recovery as interest rates may soon lower, with investor sentiment shifting and earnings reports exceeding expectations, presenting buying opportunities in ETFs like KBE and KRE.  | 
 
 
 # Tech
