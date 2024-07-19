@@ -13,6 +13,7 @@
       "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",
       "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
       "/posts/daily-curation/2024-07-15_daily-curation.html",
+      "/posts/daily-curation/2024-07-17_daily-curation.html",
       "/posts/tutorials/en/spy-and-matplotlib.html",
       "/posts/tutorials/en/getting-started-with-eurostat-api.html",
       "/posts/tutorials/en/shiller-data-python.html",
@@ -29,7 +30,8 @@
   {
     "listing": "/posts/daily-curation.html",
     "items": [
-      "/posts/daily-curation/2024-07-15_daily-curation.html"
+      "/posts/daily-curation/2024-07-15_daily-curation.html",
+      "/posts/daily-curation/2024-07-17_daily-curation.html"
     ]
   },
   {
