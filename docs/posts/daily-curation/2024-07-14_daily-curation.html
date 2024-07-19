@@ -7,10 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
-<meta name="dcterms.date" content="2024-01-25">
-<meta name="description" content="In this article, we start our data analysis journey with Python by getting and charting data, in this case the performance of an ETF using freely available data.">
 
-<title>Portfolio Geek - 2 - Getting and charting data with Matplotlib</title>
+<title>Portfolio Geek - 14/07/2024: Economics, Indexing, Quant and Coding Links</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,61 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="../../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -132,22 +96,19 @@ cookieconsent.run({
 });
 </script> 
   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
-<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Portfolio Geek</span>
     </a>
   </div>
@@ -158,15 +119,15 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../tutorials_en.html"> 
+    <a class="nav-link" href="../../tutorials_en.html"> 
 <span class="menu-text">Getting Started</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../all_posts.html"> 
+    <a class="nav-link" href="../../all_posts.html"> 
 <span class="menu-text">All Articles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -190,15 +151,15 @@ cookieconsent.run({
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ressources">    
         <li>
-    <a class="dropdown-item" href="../../../risk_and_return.html">
+    <a class="dropdown-item" href="../../risk_and_return.html">
  <span class="dropdown-text">Measuring Risk and Return</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../portfolio_construction.html">
+    <a class="dropdown-item" href="../../portfolio_construction.html">
  <span class="dropdown-text">Portfolio Construction</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../tutorials_en.html">
+    <a class="dropdown-item" href="../../tutorials_en.html">
  <span class="dropdown-text">Tutorials (en)</span></a>
   </li>  
     </ul>
@@ -211,223 +172,183 @@ cookieconsent.run({
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
+      <div class="quarto-title-block"><div><h1 class="title">14/07/2024: Economics, Indexing, Quant and Coding Links</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/daily-curation/2024-07-14_daily-curation.qmd"><i class="bi"></i> Code</button></div></div>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Vincent D. </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">2 - Getting and charting data with Matplotlib</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/spy-and-matplotlib.ipynb">View Source</a></li></ul></div></div>
-  <div class="quarto-categories">
-    <div class="quarto-category">tutorial</div>
-    <div class="quarto-category">data</div>
-    <div class="quarto-category">matplotlib</div>
-    <div class="quarto-category">en</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    In this article, we start our data analysis journey with Python by getting and charting data, in this case the performance of an ETF using freely available data.
-  </div>
-</div>
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Vincent D. </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 25, 2024</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
 
 
-</header>
 
-
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Welcome to the second episode of our Python and Quantitative Finance tutorial, where we will enter in our real Python journey.</p>
-<p>In this first coding exercise, things will be very simple, we will essentially look at the past performance of a financial tool, an ETF. This ETF is called the SPY, it’s a US domiciled ETF that aims to replicate the performance of the S&amp;P 500 Index<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, one of the key indices to measure the performance of the US Equity market.</p>
-</section>
-<section id="import-libraries" class="level2">
-<h2 class="anchored" data-anchor-id="import-libraries">Import Libraries</h2>
-<p>First, we import necessary libraries. yfinance will fetch the data, and matplotlib will help us chart it.</p>
-<div id="cell-2" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> matplotlib <span class="im">as</span> mpl</span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-</section>
-<section id="download-spy-data" class="level1">
-<h1>Download SPY Data</h1>
-<p>Fetching historical data for the SPY ETF is straightforward with yfinance. We’ll grab the last five years of daily data.</p>
-<div id="cell-4" class="cell" data-execution_count="2">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>spy_data <span class="op">=</span> yf.download(<span class="st">'SPY'</span>, start<span class="op">=</span><span class="st">'2015-01-01'</span>, end<span class="op">=</span><span class="st">'2020-01-01'</span>, progress<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<p>It’s easy to show the results of this request with the code below, using the function <code>tail(n)</code> that essentially gathers the last <code>n</code> row of the <code>spy_data</code> dataframe that has been generated by the <code>download</code> function of the the <code>yfinance</code> library.</p>
-<div id="cell-6" class="cell" data-execution_count="3">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>spy_data.tail(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<div>
-<div>
-
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<section id="climate" class="level1">
+<h1>Climate</h1>
+<table class="table">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Open</th>
-<th data-quarto-table-cell-role="th">High</th>
-<th data-quarto-table-cell-role="th">Low</th>
-<th data-quarto-table-cell-role="th">Close</th>
-<th data-quarto-table-cell-role="th">Adj Close</th>
-<th data-quarto-table-cell-role="th">Volume</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Date</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
+<th>Title</th>
+<th>Source</th>
+<th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2019-12-24</td>
-<td>321.470001</td>
-<td>321.519989</td>
-<td>320.899994</td>
-<td>321.230011</td>
-<td>299.739075</td>
-<td>20270000</td>
+<td><a href="https://www.carbonbrief.org/qa-how-denmark-plans-to-tax-agriculture-emissions-to-meet-climate-goals/">Q&amp;A: How Denmark plans to tax agriculture emissions to meet climate goals</a></td>
+<td>Carbon Brief</td>
+<td>Denmark will implement a tax on agricultural emissions in 2030, aiming for significant CO2 reductions and supporting the livestock industry’s transition to greener practices, influencing global policies.</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2019-12-26</td>
-<td>321.649994</td>
-<td>322.950012</td>
-<td>321.640015</td>
-<td>322.940002</td>
-<td>301.334717</td>
-<td>30911200</td>
+<td><a href="https://www.esgtoday.com/blackrock-launches-decarbonization-voting-and-engagement-policy-for-climate-focused-funds/">BlackRock Launches Decarbonization Voting and Engagement Policy for Climate-Focused Funds - ESG Today</a></td>
+<td>ESG Today</td>
+<td>BlackRock introduced “Climate and Decarbonization Stewardship Guidelines” to enhance voting and engagement for climate-focused funds, prioritizing low-carbon transition and demanding disclosure of emissions reduction targets from companies.</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2019-12-27</td>
-<td>323.739990</td>
-<td>323.799988</td>
-<td>322.279999</td>
-<td>322.859985</td>
-<td>301.260040</td>
-<td>42528800</td>
+<td><a href="https://www.oxfordmail.co.uk/news/24401044.oxford-university-climate-survey-shows-majority-want-action/">Oxford University climate survey shows majority want action</a></td>
+<td>Oxford Mail</td>
+<td>A UNDP-Oxford survey shows 86% want stronger climate action, with 72% supporting a shift from fossil fuels, highlighting women’s greater advocacy for enhanced climate commitments.</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2019-12-30</td>
-<td>322.950012</td>
-<td>323.100006</td>
-<td>320.549988</td>
-<td>321.079987</td>
-<td>299.599152</td>
-<td>49729100</td>
+<td><a href="https://www.theguardian.com/environment/article/2024/jul/08/temperatures-1-point-5c-above-pre-industrial-era-average-for-12-months-data-shows">Temperatures 1.5C above pre-industrial era average for 12 months, data shows</a></td>
+<td>The Guardian</td>
+<td>The world has experienced 12 consecutive months of record-high temperatures, exceeding 1.5°C above pre-industrial levels, highlighting urgent climate change risks and the need for emission reductions.</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2019-12-31</td>
-<td>320.529999</td>
-<td>322.130005</td>
-<td>320.149994</td>
-<td>321.859985</td>
-<td>300.326904</td>
-<td>57077300</td>
+<td><a href="https://www.cnn.com/2024/07/07/weather/west-coast-heat-wave-california-nevada-oregon/index.html">Death Valley sets a new daily record with a searing 128 degrees as the unrelenting West Coast heat wave drags on</a></td>
+<td>CNN</td>
+<td>Record-breaking heat continues across the US, with temperatures exceeding 100 degrees in many areas, increased wildfire risks, and heat alerts impacting millions from the West to the East Coast.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.theclimatebrink.com/p/can-we-air-condition-our-way-out">Can we air condition our way out of extreme heat?</a></td>
+<td>The Climate Brink</td>
+<td>Air conditioning is essential for survival amid climate change, but increasing costs disproportionately affect the poor, highlighting equity issues and the need for government support in adaptation efforts.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.theclimatebrink.com/p/the-growing-carbon-debt">The growing carbon debt</a></td>
+<td>Carbon Brief</td>
+<td>The growing carbon debt requires future generations to remove excess CO2, as emissions persist long-term, necessitating urgent action to minimize climate impact and reduce future burdens.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-pulse" class="level1">
+<h1>Market Pulse</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Source</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.bloomberg.com/news/articles/2024-07-13/ecb-rate-cuts-lagarde-poised-for-holiday-may-prime-markets-for-september?srnd=economics-v2&amp;sref=ZPVkTM30">Ecb rate cuts lagarde poised for holiday may prime markets for september</a></td>
+<td>Bloomberg</td>
+<td>European Central Bank officials may signal an interest-rate cut, observing inflation pressures, while traders await insights from President Lagarde ahead of the September 12 meeting following a long summer break.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tech" class="level1">
+<h1>Tech</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Source</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.cityam.com/uk-sweeps-a-third-of-european-tech-funding-in-2024-as-london-and-cambridge-boom/">UK sweeps a third of European tech funding in 2024</a></td>
+<td>Dealroom</td>
+<td>UK firms secured £7.4bn in tech funding, capturing 32% of Europe’s total, with significant growth in London and Cambridge, driven by investment in AI, fintech, and energy sectors.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.lesnumeriques.com/photo/six-astuces-pour-de-superbes-photos-de-feux-d-artifice-avec-votre-smartphone-a224069.html">Six astuces pour de superbes photos de feux d’artifice avec votre smartphone</a></td>
+<td>Les Numériques</td>
+<td>Six conseils pour photographier des feux d’artifice avec un smartphone : repérage, stabilisation, bons réglages, applications, utiliser un retardateur et retoucher les images en postproduction.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://hackaday.com/2024/07/11/embedded-python-micropython-is-amazing/">Embedded Python: MicroPython Is Amazing</a></td>
+<td>Hackaday</td>
+<td>MicroPython enhances project development with fast interactive coding, extensive libraries, and ease of use, making it ideal for debugging, prototyping, and implementing features on microcontrollers like ESP32 and RP2040.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="automation" class="level1">
+<h1>Automation</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Source</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.forbes.com/sites/jodiecook/2024/07/12/5-chatgpt-prompts-to-create-30-pieces-of-content-in-30-minutes/">5 ChatGPT Prompts To Create 30 Pieces Of Content In 30 Minutes</a></td>
+<td>Forbes</td>
+<td>Use five prompts with ChatGPT to quickly generate 30 pieces of engaging social media content by providing context, core ideas, examples, post formats, and edits.</td>
+</tr>
+<tr class="even">
+<td><a href="https://medium.com/pythoneers/17-mindblowing-python-automation-scripts-i-use-everyday-523fb1eb9284">17 Mindblowing Python Automation Scripts I Use Everyday</a></td>
+<td>Towards Data Science</td>
+<td>The author shares Python automation scripts that enhance productivity, including a script to convert PDF files into audio books using the PyPDF2 and pyttsx3 libraries.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quantitative-investing" class="level1">
+<h1>Quantitative Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Source</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://medium.com/bip-xtech/stop-using-moving-average-to-smooth-your-time-series-2179af9ed59b">Stop using Moving Average to smooth your Time Series</a></td>
+<td>Medium</td>
+<td>Time series smoothing improves data analysis by reducing fluctuations. Moving averages lag and lose detail, while Savitzky-Golay retains important features, capturing seasonality without delay.</td>
 </tr>
 </tbody>
 </table>
 
-</div>
-</div>
-</div>
-</div>
-<p>The function <code>tail</code> comes out of the <code>pandas</code> library, which is probably the most powerful library <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> I have seen in the last 2 decades!</p>
-<p>Going through the details of this library is well beyond the scope of this article but will we will discover step by step of its most useful functions.</p>
-</section>
-<section id="plotting-the-data" class="level1">
-<h1>Plotting the Data</h1>
-<p>With our data in hand, let’s plot the closing prices. Here, the choice of a green and blue stylesheet makes our chart not only informative but visually appealing.</p>
-<div id="cell-9" class="cell" data-execution_count="4">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Default settings</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>mpl.rcParams.update(mpl.rcParamsDefault)</span>
-<span id="cb4-3"><a href="#cb4-3"></a></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="co"># Use a ggplot stylesheet</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a>plt.style.use(<span class="st">"ggplot"</span>)</span>
-<span id="cb4-6"><a href="#cb4-6"></a></span>
-<span id="cb4-7"><a href="#cb4-7"></a>spy_data[<span class="st">'Close'</span>].plot(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>), color<span class="op">=</span><span class="st">'blue'</span>)</span>
-<span id="cb4-8"><a href="#cb4-8"></a></span>
-<span id="cb4-9"><a href="#cb4-9"></a>plt.title(<span class="st">'SPY ETF Performance 2015-2020'</span>)</span>
-<span id="cb4-10"><a href="#cb4-10"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
-<span id="cb4-11"><a href="#cb4-11"></a>plt.ylabel(<span class="st">'Close Price'</span>)</span>
-<span id="cb4-12"><a href="#cb4-12"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="spy-and-matplotlib_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<section id="why-this-matters" class="level3">
-<h3 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h3>
-<p>This exercise is a primer in the practical application of Python for financial analysis. By fetching real-world data and visualizing it, we gain insights into market trends and ETF performance over time. This skill is fundamental in quantitative finance, where data-driven decisions are paramount.</p>
-</section>
-<section id="recap-and-further-reading" class="level3">
-<h3 class="anchored" data-anchor-id="recap-and-further-reading">Recap and Further Reading</h3>
-<p>Today, we’ve covered how to set up your Python environment, fetch financial data using yfinance, and visualize it with matplotlib. These steps are building blocks in your journey into quantitative finance and data analysis.</p>
-<p>For those keen to delve deeper, consider exploring the following resources:</p>
-<ul>
-<li><strong>Books</strong>: “Python for Finance” by Yves Hilpisch, “Quantitative Finance For Dummies” by Steve Bell.</li>
-<li><strong>Websites</strong>: Quantopian, QuantConnect, and the matplotlib documentation.</li>
-<li><strong>GitHub Repositories</strong>: matplotlib/matplotlib, ranaroussi/yfinance.</li>
-</ul>
-<p>Stay curious, and happy coding!</p>
-
 
 </section>
-</section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>For more information on the S&amp;P 500 Index, you can look at this <a href="https://en.wikipedia.org/wiki/S%26P_500">Wikipedia article</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>For more information on the <code>pandas</code> library, look at its <a href="https://pandas.pydata.org/">reference website</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

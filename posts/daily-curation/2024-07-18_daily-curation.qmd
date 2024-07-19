@@ -1,0 +1,25 @@
+---
+title: "18/07/2024:  Economics, Indexing, Quant and Coding Links"
+page-layout: full
+title-block-banner: true
+---
+
+# Automation
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [Simple Linux Shell Scripts in Bash, Python, and Perl That Will Get You Up and Running](https://www.linuxjournal.com/content/simple-linux-shell-scripts-bash-python-and-perl-will-get-you-and-running) | Unknown | Bash, Python, and Perl are powerful Linux scripting languages for task automation, offering unique features like command integration, extensive libraries, and text processing capabilities for efficient system management.  | 
+
+
+# Quantitative Investing
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [Designing Robust Trend-Following System - QuantPedia](https://quantpedia.com/) | Quantpedia | Dobromir Tzotchev's framework outlines a robust trend-following strategy emphasizing a clean signal, portfolio diversification, and effective risk management techniques for consistent returns in varying market conditions.  | 
+
+
+# Tech
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [History and Future of LLMs](https://www.datasciencecentral.com/history-and-future-of-llms/) | Data Science Central | Large Language Models (LLMs) evolved from rule-based NLP to transformers, utilizing attention mechanisms and multimodal inputs, with advancements in hardware, algorithms, and smaller models to enhance efficiency and performance.  | 

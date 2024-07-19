@@ -4,38 +4,50 @@ page-layout: full
 title-block-banner: true
 ---
 
-## Economics
+# Market Pulse
 
-| Title | Source | Summary	|
-|-------|---------|----------|
-| [Home Inventory Grows 34.5% YoY but Still Struggles to Meet Pre-Pandemic Levels: Insight into Current Market Trends](http://www.calculatedriskblog.com/2024/07/realtorcom-reports-active-inventory-up_01292103715.html ) |	Calculated Risk	| Active inventory in the existing home market increased by 34.5% YoY, marking the 35th consecutive week of growth. New listings declined by 4.9% from last year. Supply constraints persist. |
-| [Navigating Market Peaks: What to Know Before Buying a Home Amidst Soaring Prices and Mortgage Rates](https://awealthofcommonsense.com/2024/07/buying-a-house-at-the-top-of-the-market/) |	A Wealth of Common Sense	|Housing prices have risen significantly, and the author warns that potential homebuyers may face low returns. They discuss two scenarios: a 20% price drop or stagnant prices for the decade. The author believes that for homeowners planning to stay, these scenarios wouldn't have a significant impact. They highlight the potential risks for those buying right now and emphasize that a house should be more than just a financial investment. |
-|  [Bloomberg Donates $1 Billion to Johns Hopkins for Medical School Free Tuition and Comprehensive Student Support](https://www.npr.org/2024/07/09/g-s1-8876/johns-hopkins-medical-school-bloomberg)|	NPR	| Johns Hopkins University's medical school will offer free tuition to most students, thanks to a $1 billion gift from Michael Bloomberg's philanthropic organization. |
-
-
-## Index Investing
-
-| Title | Source | Summary	|
-|-------|---------|----------|
-| [How Passive Investing Subtly Shifts Market Dynamics: A New Perspective from GMO Experts](https://www.institutionalinvestor.com/article/2dgy5jctx2rb7g3wv2juo/portfolio/gmo-passive-investings-impact-has-been-overblown-but-its-not-negligible ) |	GMO Quarterly Letter |	The impact of passive investing on the stock market is less significant than believed, according to GMO. The firm argues that passive investing has not made markets less efficient and that the future impact will be muted. 	|
-| [Why Concerns About Index Funds Being a Bubble May Be Overstated: Insights and Historical Context](https://jlcollinsnh.com/2024/07/09/are-index-funds-a-bubble/)|	Retirement Investing Today	| The article explores concerns about index funds being a bubble, but argues that these concerns are unfounded due to the historical success of indexing and the continued demand for active management.  |
+| Title | Source | Summary |
+|-----|-------|----------|
+| [These Three Investments Are Getting Ready to Be Jerome Powell's Favorite](https://moneymorning.com/2024/07/15/these-three-investment-are-getting-ready-to-be-jerome-powells-favorite/) | Unknown | The Fed's potential interest rate cuts may boost small cap stocks, regional banks, and real estate, prompting a significant market shift and attracting investors seeking higher returns.  | 
+| [When Will the Yield Curve “Un”Invert?](https://www.wisdomtree.com/investments/blog/2024/07/10/when-will-the-yield-curve-uninvert) | WisdomTree's website | The UST yield curve's potential "un"inversion timing hinges on Fed rate cuts, with the UST 2-Year/10-Year spread likely reversing before the UST 3-Month/10-Year spread.  | 
+| [Moat Stocks Steady Amid Tech’s Market Surge](https://www.vaneck.com/us/en/blogs/moat-investing/moat-stocks-steady-amid-techs-market-surge/) | Moat Index Quarterly Review | Moat Index reviews revealed a contrarian bias towards large caps, reduced Financials exposure, and increased allocations in Consumer Staples, Industrials, and Technology, remaining underweight in growth stocks.  | 
+| [The Automatic Investing Revolution - A Wealth of Common Sense](https://awealthofcommonsense.com/2024/07/the-automatic-investing-revolution/) | A Wealth of Common Sense | The shift to automatic retirement savings, like higher default rates, improves participation and investor behavior, positively affecting stock market valuations while highlighting the limitations of defined contribution plans.  | 
+| [This Bullish Trend in Banks Is Just Starting](https://moneymorning.com/2024/07/15/this-bullish-trend-in-banks-is-just-starting-grab-it-now/) | Unknown | The banking sector shows potential recovery as interest rates may soon lower, with investor sentiment shifting and earnings reports exceeding expectations, presenting buying opportunities in ETFs like KBE and KRE.  | 
 
 
-## Quantitative Investing
-| Title | Source | Summary	|
-|-------|---------|----------|
-|[Why Investors Might Want to Pay Attention to Market Moves on July 1st](https://quantifiableedges.com/july-remains-king-of-day-1-performance/)|	Quantifiable Edges	| July has historically seen the highest win percentage and largest average trade on the first day of the month, potentially due to 401k inflows. In the past 13 instances, July's day-1 performance has always been positive. 	|
-|[Simplifying Multifactor Credit Portfolios: Why Integrated Beats Mixing for Better Returns and Lower Risk](https://quantpedia.com/how-to-construct-a-long-only-multifactor-credit-portfolio/ )|	Quantpedia|	The integrated approach is found to be better for constructing long-only multifactor credit portfolios, according to a research paper. It reduces downside risk and can achieve attractive risk-adjusted returns. 	|
-|[Maximize Investment Strategy: Boost Returns by Merging Forecasts from Top Financial Institutions for Better Predictions](https://portfoliooptimizer.io/blog/capital-market-assumptions-combining-institutions-forecasts-for-improved-accuracy/ )	| Capital Plug|	Combining capital market assumptions from multiple institutions improves forecasting accuracy for investors by averaging forecasts and reducing reliance on a single institution's forecast. 	|
-|[Balancing Risk and Reward: Smart Strategies for Navigating Prolonged Yield Curve Inversions in Your Investment Portfolio](https://quantpedia.com/a-few-thoughts-on-pragmatic-asset-allocation/ )|	Quantpedia|	The Pragmatic Asset Allocation Model focuses on tax-efficient investing and uses the yield curve inversion signal to determine when to move to a hedging portfolio. An amended version of the model switches to equities after 12 months of the signal. Long-term results show negligible differences between the original and amended versions. The decision between the two versions depends on individual risk tolerance and preferences. 	|
-|[Unlocking Market Insights: How NLP Transforms News and Corporate Filings into Investment Gold](https://www.quantrocket.com/blog/brain-alternative-data)	|QuantRocket and Brain|	NLP techniques are revolutionizing alternative data analysis, allowing investors to extract insights from news articles, SEC filings, and earnings calls. Brain's datasets and case studies demonstrate their effectiveness. |
-|[Enhance Your Data Analysis: Discover the Power of Time Series Smoothing Techniques with Savitzky-Golay Filter](https://medium.com/bip-xtech/stop-using-moving-average-to-smooth-your-time-series-2179af9ed59b)	|Medium	| Smoothing time series data helps to detect meaningful patterns. Moving average and Savitzky-Golay filter are popular smoothing techniques. While moving average is simple, it lacks precision, whereas Savitzky-Golay filter preserves important characteristics like peaks and troughs. |
+# Tech
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [Crypto owners know Crypto…but not finance](https://alphaarchitect.com/2024/07/crypto-literacy/) | Alpha Architect | A study reveals Bitcoin owners have higher crypto literacy than non-owners, but financial literacy remains weak. Gender gaps persist, highlighting the need for enhanced financial education on cryptocurrencies.  | 
 
 
-## Tech and Coding
-| Title | Source | Summary	|
-|-------|---------|----------|
-|[Make SQLite Smarter and Faster with Vectorlite: Your Go-To Extension for Enhanced Vector Search in AI Applications](https://www.reddit.com/r/Python/comments/1e26xsm/vectorlite_a_fast_vector_search_extension_for/ ) |	Reddit	| Vectorlite is a fast and tunable vector search extension for SQLite. It offers fast ANN-search, metadata filter pushdown support, and index serde support, among other features.|
+# Quantitative Investing
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [Diversification for Trend Following Models](https://thealgorithmicadvantage.substack.com/p/diversification-for-trend-following) | Algorithmic Advantage | Diversification in trend following allows capturing outlier events, enhancing portfolio performance despite asset correlations, challenging traditional limits of diversification and emphasizing the importance of uncorrelated trade results.  | 
+| [A portfolio of strategies - by Quantitativo](https://www.quantitativo.com/p/a-portfolio-of-strategies) | Quant Trading Rules | Combining mean reversion and improved momentum strategies optimizes risk-adjusted returns, leveraging diversification principles to reduce drawdowns and enhance portfolio performance through uncorrelated asset mixing.  | 
 
 
+# Economics
 
+| Title | Source | Summary |
+|-----|-------|----------|
+| [The New York Fed DSGE Model Forecast—June 2024](https://libertystreeteconomics.newyorkfed.org/2024/06/the-new-york-fed-dsge-model-forecast-june-2024/) | Federal Reserve Bank of New York | The New York Fed's DSGE model forecasts higher core PCE inflation at 2.7% and lower output growth at 1.0% for 2024, attributing changes to cost-push shocks and monetary policy.  | 
+| [Savvy Shoppers Await Prime Week Deal Competition](https://lipperalpha.refinitiv.com/2024/07/savvy-shoppers-await-prime-week-deal-competition/) | LSEG Workspace | Amazon's Prime Week prompts retailers to offer competitive discounts, aiming to attract value-oriented shoppers while facing inflation, with increased online discount penetration and evolving consumer preferences.  | 
+
+
+# Fundamental
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [One of the stock market's most consistent trends](https://www.tker.co/p/earnings-season-q2-24-beat-rates) | TKer | Stocks are at record highs as Q2 earnings season begins, with companies likely to beat estimates by about 5%. Analysts maintain positive outlooks despite recession risks being elevated.  | 
+| [Is This Time Different? Small-Cap Stocks Finally Perking Up](https://www.etftrends.com/etf-education-channel/time-different-small-cap-stocks-finally-perking-up/) | ETF Trends | QQQJ ETF, targeting Nasdaq Next Generation 100, includes promising tech stocks like Zoom, NICE, and Paylocity, offering growth opportunities in a market dominated by mega-cap equities.  | 
+
+
+# Portfolio Construction
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [A Balanced Portfolio Always Comes with Regrets](https://awealthofcommonsense.com/2024/07/a-balanced-portfolio-always-comes-with-regrets/) | None | A balanced portfolio, while providing stability, often leads to regrets as market performance varies. Diversification reduces risk but can't predict future outcomes, emphasizing the importance of a long-term strategy.  | 

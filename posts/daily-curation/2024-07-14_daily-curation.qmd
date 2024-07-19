@@ -1,0 +1,48 @@
+---
+title: "14/07/2024:  Economics, Indexing, Quant and Coding Links"
+page-layout: full
+title-block-banner: true
+---
+
+# Climate
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [Q&A: How Denmark plans to tax agriculture emissions to meet climate goals](https://www.carbonbrief.org/qa-how-denmark-plans-to-tax-agriculture-emissions-to-meet-climate-goals/) | Carbon Brief | Denmark will implement a tax on agricultural emissions in 2030, aiming for significant CO2 reductions and supporting the livestock industry's transition to greener practices, influencing global policies.  | 
+| [BlackRock Launches Decarbonization Voting and Engagement Policy for Climate-Focused Funds - ESG Today](https://www.esgtoday.com/blackrock-launches-decarbonization-voting-and-engagement-policy-for-climate-focused-funds/) | ESG Today | BlackRock introduced "Climate and Decarbonization Stewardship Guidelines" to enhance voting and engagement for climate-focused funds, prioritizing low-carbon transition and demanding disclosure of emissions reduction targets from companies.  | 
+| [Oxford University climate survey shows majority want action](https://www.oxfordmail.co.uk/news/24401044.oxford-university-climate-survey-shows-majority-want-action/) | Oxford Mail | A UNDP-Oxford survey shows 86% want stronger climate action, with 72% supporting a shift from fossil fuels, highlighting women's greater advocacy for enhanced climate commitments.  | 
+| [Temperatures 1.5C above pre-industrial era average for 12 months, data shows](https://www.theguardian.com/environment/article/2024/jul/08/temperatures-1-point-5c-above-pre-industrial-era-average-for-12-months-data-shows) | The Guardian | The world has experienced 12 consecutive months of record-high temperatures, exceeding 1.5°C above pre-industrial levels, highlighting urgent climate change risks and the need for emission reductions.  | 
+| [Death Valley sets a new daily record with a searing 128 degrees as the unrelenting West Coast heat wave drags on](https://www.cnn.com/2024/07/07/weather/west-coast-heat-wave-california-nevada-oregon/index.html) | CNN | Record-breaking heat continues across the US, with temperatures exceeding 100 degrees in many areas, increased wildfire risks, and heat alerts impacting millions from the West to the East Coast.  | 
+| [Can we air condition our way out of extreme heat?](https://www.theclimatebrink.com/p/can-we-air-condition-our-way-out) | The Climate Brink | Air conditioning is essential for survival amid climate change, but increasing costs disproportionately affect the poor, highlighting equity issues and the need for government support in adaptation efforts.  | 
+| [The growing carbon debt](https://www.theclimatebrink.com/p/the-growing-carbon-debt) | Carbon Brief | The growing carbon debt requires future generations to remove excess CO2, as emissions persist long-term, necessitating urgent action to minimize climate impact and reduce future burdens.  | 
+
+
+# Market Pulse
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [Ecb rate cuts lagarde poised for holiday may prime markets for september](https://www.bloomberg.com/news/articles/2024-07-13/ecb-rate-cuts-lagarde-poised-for-holiday-may-prime-markets-for-september?srnd=economics-v2&sref=ZPVkTM30) | Bloomberg | European Central Bank officials may signal an interest-rate cut, observing inflation pressures, while traders await insights from President Lagarde ahead of the September 12 meeting following a long summer break.  | 
+
+
+# Tech
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [UK sweeps a third of European tech funding in 2024](https://www.cityam.com/uk-sweeps-a-third-of-european-tech-funding-in-2024-as-london-and-cambridge-boom/) | Dealroom | UK firms secured £7.4bn in tech funding, capturing 32% of Europe’s total, with significant growth in London and Cambridge, driven by investment in AI, fintech, and energy sectors.  | 
+| [Six astuces pour de superbes photos de feux d'artifice avec votre smartphone](https://www.lesnumeriques.com/photo/six-astuces-pour-de-superbes-photos-de-feux-d-artifice-avec-votre-smartphone-a224069.html) | Les Numériques | Six conseils pour photographier des feux d'artifice avec un smartphone : repérage, stabilisation, bons réglages, applications, utiliser un retardateur et retoucher les images en postproduction.  | 
+| [Embedded Python: MicroPython Is Amazing](https://hackaday.com/2024/07/11/embedded-python-micropython-is-amazing/) | Hackaday | MicroPython enhances project development with fast interactive coding, extensive libraries, and ease of use, making it ideal for debugging, prototyping, and implementing features on microcontrollers like ESP32 and RP2040.  | 
+
+
+# Automation
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [5 ChatGPT Prompts To Create 30 Pieces Of Content In 30 Minutes](https://www.forbes.com/sites/jodiecook/2024/07/12/5-chatgpt-prompts-to-create-30-pieces-of-content-in-30-minutes/) | Forbes | Use five prompts with ChatGPT to quickly generate 30 pieces of engaging social media content by providing context, core ideas, examples, post formats, and edits.  | 
+| [17 Mindblowing Python Automation Scripts I Use Everyday](https://medium.com/pythoneers/17-mindblowing-python-automation-scripts-i-use-everyday-523fb1eb9284) | Towards Data Science | The author shares Python automation scripts that enhance productivity, including a script to convert PDF files into audio books using the PyPDF2 and pyttsx3 libraries.  | 
+
+
+# Quantitative Investing
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [Stop using Moving Average to smooth your Time Series](https://medium.com/bip-xtech/stop-using-moving-average-to-smooth-your-time-series-2179af9ed59b) | Medium | Time series smoothing improves data analysis by reducing fluctuations. Moving averages lag and lose detail, while Savitzky-Golay retains important features, capturing seasonality without delay.  | 

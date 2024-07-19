@@ -4,56 +4,54 @@ page-layout: full
 title-block-banner: true
 ---
 
+# Asset Management
 
-Portfolio Construction
-
-
-|Title|Source|Summary|
+| Title | Source | Summary |
 |-----|-------|----------|
-|[Pragmatic Asset Allocation from Vojtko and Javorská of Quantpedia](https://allocatesmartly.com/pragmatic-asset-allocation-from-vojtko-and-javorska-of-quantpedia/)|Quantpedia|Pragmatic Asset Allocation is a tactical strategy that adjusts the portfolio based on market conditions while also ensuring tax efficiency. It uses the yield curve inversion and price change indicators to allocate between risk and defensive assets. |
-|[Can we please stop selling these products](https://klementoninvesting.substack.com/p/can-we-please-stop-selling-these)|Klement on Investing|Pragmatic Asset Allocation is a tactical strategy that adjusts the portfolio based on market conditions while also ensuring tax efficiency. It uses the yield curve inversion and price change indicators to allocate between risk and defensive assets. |
-|[Commodities for the Long Run?](https://blogs.cfainstitute.org/investor/2024/07/08/commodities-for-the-long-run/)|CFA Institute Research Foundation|Pragmatic Asset Allocation is a tactical strategy that adjusts the portfolio based on market conditions while also ensuring tax efficiency. It uses the yield curve inversion and price change indicators to allocate between risk and defensive assets. |
-|[Managed Futures versus Market-Neutral Multi-Factor Investing](https://insights.finominal.com/research-managed-futures-versus-market-neutral-multi-factor-investing)|MyAlgoAI|Pragmatic Asset Allocation is a tactical strategy that adjusts the portfolio based on market conditions while also ensuring tax efficiency. It uses the yield curve inversion and price change indicators to allocate between risk and defensive assets. |
-|[Commodities for the Long Run?](https://blogs.cfainstitute.org/investor/2024/07/08/commodities-for-the-long-run/)|CFA Institute Research|Pragmatic Asset Allocation is a tactical strategy that adjusts the portfolio based on market conditions while also ensuring tax efficiency. It uses the yield curve inversion and price change indicators to allocate between risk and defensive assets. |
-|[Classifying hedge fund strategies once again](http://mrzepczynski.blogspot.com/2024/07/classifying-hedge-fund-strategies-once.html)|The name of the blog or website is not mentioned in the given content.|Pragmatic Asset Allocation is a tactical strategy that adjusts the portfolio based on market conditions while also ensuring tax efficiency. It uses the yield curve inversion and price change indicators to allocate between risk and defensive assets. |
-|[When Rebalancing Creates Higher Returns-and When It Doesn’t](https://www.morningstar.com/columns/rekenthaler-report/when-rebalancing-creates-higher-returnsand-when-it-doesnt)|Morningstar|Pragmatic Asset Allocation is a tactical strategy that adjusts the portfolio based on market conditions while also ensuring tax efficiency. It uses the yield curve inversion and price change indicators to allocate between risk and defensive assets. |
+| [How Much Money You Need For Retirement](https://awealthofcommonsense.com/2024/07/how-much-money-you-need-for-retirement/) | A Wealth of Common Sense | The 4% rule and 25x rule provide retirement planning frameworks, but individual circumstances may necessitate more savings for a greater safety margin against uncertainties.  | 
 
 
-### coding
+# Coding
 
-|Title|Source|Summary|
+| Title | Source | Summary |
 |-----|-------|----------|
-|[How to trade a covered call with Alpaca (the easy way)](https://pyquantnews.com/the-pyquant-newsletter/how-to-trade-a-covered-call-with-alpaca)|Alpaca|Learn how to trade a covered call using Alpaca's Trading API with Python. Execute trades, manage positions, and automate trading strategies with Alpaca's powerful platform. |
-|[Quickly make a trading strategy with a 82% win rate](https://pyquantnews.com/the-pyquant-newsletter/quickly-make-a-trading-strategy-with-a-82-win-rate)|Quantifiable Edges|Learn how to trade a covered call using Alpaca's Trading API with Python. Execute trades, manage positions, and automate trading strategies with Alpaca's powerful platform. |
-|[Portfolio Hedging with Put Options](https://robotwealth.com/portfolio-hedging-with-put-options/)|Robot Wealth|Learn how to trade a covered call using Alpaca's Trading API with Python. Execute trades, manage positions, and automate trading strategies with Alpaca's powerful platform. |
-|[Python Protocols: Leveraging Structural Subtyping](https://realpython.com/python-protocol/)|Towards Data Science|Learn how to trade a covered call using Alpaca's Trading API with Python. Execute trades, manage positions, and automate trading strategies with Alpaca's powerful platform. |
+| [How to trade a covered call with Alpaca (the easy way)](https://pyquantnews.com/the-pyquant-newsletter/how-to-trade-a-covered-call-with-alpaca) | Alpaca | Create an Alpaca account, set up Python with the Alpaca library, and use the API to execute trades for covered calls, managing positions effectively.  | 
+| [Quickly make a trading strategy with a 82% win rate](https://pyquantnews.com/the-pyquant-newsletter/quickly-make-a-trading-strategy-with-a-82-win-rate) | Quantifiable Edges | Pandas in Python enables quick trading strategy testing with an 82% win rate by analyzing historical data, identifying 3-day losing streaks, and calculating future returns.  | 
+| [Portfolio Hedging with Put Options](https://robotwealth.com/portfolio-hedging-with-put-options/) | Robot Wealth | This post discusses portfolio hedging using put options to limit downside risk, including examples, calculating beta, and considerations of risk tolerance and trading edge when hedging strategies.  | 
+| [Python Protocols: Leveraging Structural Subtyping](https://realpython.com/python-protocol/) | Towards Data Science | Protocols in Python enable structural subtyping, allowing type checking without inheritance. They enhance type hints for static duck typing, improving code flexibility, readability, and reliability.  | 
 
 
-### economics
+# Economics
 
-|Title|Source|Summary|
+| Title | Source | Summary |
 |-----|-------|----------|
-|[Unexpected Economist: Carl Linnaeus on Economic Theory](https://conversableeconomist.com/2024/07/16/unexpected-economist-carl-linnaeus-on-economic-theory/)|Conversable Economist|Carl Linnaeus believed that every country possessed the natural resources necessary for a multifunctional economy. He supported state interventionism and favored autarky, but also believed in the potential of transmutationist botany for economic prosperity. |
-|[Recession Probabilities for June 2025](https://econbrowser.com/archives/2024/07/recession-probabilities-for-june-2025)|NBER|Carl Linnaeus believed that every country possessed the natural resources necessary for a multifunctional economy. He supported state interventionism and favored autarky, but also believed in the potential of transmutationist botany for economic prosperity. |
-|[Yield Curve Control Means The Party Can Continue, What's Not To Love?](http://climateerinvest.blogspot.com/2024/07/yield-curve-control-means-party-can.html)|Climateer Investing|Carl Linnaeus believed that every country possessed the natural resources necessary for a multifunctional economy. He supported state interventionism and favored autarky, but also believed in the potential of transmutationist botany for economic prosperity. |
+| [Unexpected Economist: Carl Linnaeus on Economic Theory](https://conversableeconomist.com/2024/07/16/unexpected-economist-carl-linnaeus-on-economic-theory/) | Conversable Economist | Carl Linnaeus viewed economics as essential for well-being, favored mercantilism, endorsed self-sufficiency, and believed all nations possessed natural resources for economic flourishing, despite his obsession with gold.  | 
+| [Recession Probabilities for June 2025](https://econbrowser.com/archives/2024/07/recession-probabilities-for-june-2025) | NBER | Recession probabilities for June 2025 indicate varied outcomes based on models, showing 60% likelihood with basic indicators and 20% with additional debt measures, reflecting declining debt-service ratios.  | 
+| [Yield Curve Control Means The Party Can Continue, What's Not To Love?](http://climateerinvest.blogspot.com/2024/07/yield-curve-control-means-party-can.html) | Climateer Investing | Central banks disguise risk through yield curve control, preventing bond yields from rising and perpetuating economic stagnation, resulting in more debt and inefficient allocation of resources.  | 
 
 
-### fundamental
+# Fundamental
 
-|Title|Source|Summary|
+| Title | Source | Summary |
 |-----|-------|----------|
-|[China Economic Sentiment](https://econbrowser.com/archives/2024/07/china-economic-sentiment)|Econbrowser|Torsten Slok's slide deck shows graphs illustrating the impact of the real estate market collapse on China's economy, supporting the interpretation of manipulated Chinese economic statistics. |
+| [China Economic Sentiment](https://econbrowser.com/archives/2024/07/china-economic-sentiment) | Econbrowser | Torsten Slok's China analysis highlights real estate market collapse effects, featuring graphs illustrating economic challenges, emphasizing a constant narrative in interpreting China's economic statistics.  | 
 
 
-### tech
+# Portfolio Construction
 
-|Title|Source|Summary|
+| Title | Source | Summary |
 |-----|-------|----------|
-|[Goldman Sachs Throws Cold Water on AI Mania](https://www.institutionalinvestor.com/article/2di0s1e6m7h197mfh6fb4/portfolio/goldman-sachs-throws-cold-water-on-ai-mania)|Goldman Sachs|Goldman Sachs warns that AI may not live up to its promises, citing high costs and lack of productivity gains. MIT professor and Silicon Valley veteran Roger McNamee raise similar concerns. |
+| [Pragmatic Asset Allocation from Vojtko and Javorská of Quantpedia](https://allocatesmartly.com/pragmatic-asset-allocation-from-vojtko-and-javorska-of-quantpedia/) | Quantpedia | Pragmatic Asset Allocation is a tactical strategy focusing on tax efficiency, trading based on yield curve inversion, and adjusting asset allocation quarterly for optimal performance.  | 
+| [Can we please stop selling these products](https://klementoninvesting.substack.com/p/can-we-please-stop-selling-these) | Klement on Investing | Structured products are illiquid, high-fee investments that underperform traditional portfolios, providing minimal risk reduction while diminishing returns, making them unworthy for investors.  | 
+| [Commodities for the Long Run?](https://blogs.cfainstitute.org/investor/2024/07/08/commodities-for-the-long-run/) | CFA Institute Research Foundation | Commodities may appear inefficient short-term but offer significant benefits in long-term portfolios, especially against inflation, warranting reevaluation of their role in investment strategies.  | 
+| [Managed Futures versus Market-Neutral Multi-Factor Investing](https://insights.finominal.com/research-managed-futures-versus-market-neutral-multi-factor-investing) | Finomial | Managed futures and market-neutral multi-factor investing both provide uncorrelated returns, but their performance trends exhibit significant similarities, limiting diversification benefits when combined in portfolios.  | 
+| [Commodities for the Long Run?](https://blogs.cfainstitute.org/investor/2024/07/08/commodities-for-the-long-run/) | CFA Institute Research | Commodities show improved portfolio efficiency over longer horizons, especially during inflation, suggesting significant optimal allocations when considering real returns as opposed to nominal returns.  | 
+| [Classifying hedge fund strategies once again](http://mrzepczynski.blogspot.com/2024/07/classifying-hedge-fund-strategies-once.html) | Disciplined Systematic Macro Views | Managed futures excel during market drawdowns, offering strong alpha, low beta, and diversification benefits, making them a valuable addition to investment portfolios for downside protection.  | 
+| [When Rebalancing Creates Higher Returns-and When It Doesn’t](https://www.morningstar.com/columns/rekenthaler-report/when-rebalancing-creates-higher-returnsand-when-it-doesnt) | Morningstar | Rebalancing can enhance portfolio returns when reallocating between divergent asset performances, but may not benefit portfolios with similar assets. Investors should evaluate performance dynamics before rebalancing.  | 
 
 
-### asset-management
+# Tech
 
-|Title|Source|Summary|
+| Title | Source | Summary |
 |-----|-------|----------|
-|[How Much Money You Need For Retirement](https://awealthofcommonsense.com/2024/07/how-much-money-you-need-for-retirement/)|The name of the blog or website is "A Wealth of Common Sense".|The 4% rule for retirement may not be widely followed, but it is conservative and has historical evidence to support it. It's a good estimate to use when planning for retirement. |
+| [Goldman Sachs Throws Cold Water on AI Mania](https://www.institutionalinvestor.com/article/2di0s1e6m7h197mfh6fb4/portfolio/goldman-sachs-throws-cold-water-on-ai-mania) | Goldman Sachs | Goldman Sachs critiques excessive AI investment, highlighting high costs, lack of significant breakthroughs, and other challenges like resource consumption and ethical issues, questioning the technology’s expected impact on productivity.  | 

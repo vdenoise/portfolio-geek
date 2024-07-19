@@ -1,0 +1,67 @@
+---
+title: "16/07/2024:  Economics, Indexing, Quant and Coding Links"
+page-layout: full
+title-block-banner: true
+---
+
+# Asset Management
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [Asset Manager Profit Margins Get Thinner](https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner) | Casey Quirk | Asset managers face declining profit margins despite rising markets, driven by increased operating costs and weak inflows, prompting a focus on alternative investments for growth and adaptation.  | 
+| [Index Investing as an Active Decision: Implications for Fixed Income Investors](https://www.institutionalinvestor.com/article/2dg5aji7ohkluumcrwy68/innovation/index-investing-as-an-active-decision-implications-for-fixed-income-investors) | Northern Trust Asset Management. | Passive investing in fixed income has evolved, offering customization, precision, and better risk management, despite challenges like liquidity and replication concerns, attracting more investments than active strategies.  | 
+| [The Growth Of Tech And 25 Years Of Nasdaq Futures (Nasdaq Global Indices:NDX)](https://seekingalpha.com/article/4703878-tech-growth-25-years-nasdaq-futures) | Seeking Alpha | E-mini Nasdaq-100 futures, launched in 1999, have grown substantially in volume, reflecting the importance of technology stocks and risk management in today's market landscape.  | 
+
+
+# Economics
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [Ships Fleeing the Red Sea Now Face Perilous African Weather](https://finance.yahoo.com/news/ships-fleeing-red-sea-now-160349344.html) | Bloomberg | Ships near South Africa face severe weather, causing container losses and delays. Many vessels are diverting routes to avoid risk from Houthi militants in the Red Sea.  | 
+| [Fastest wage growth over the last four years](https://angrybearblog.com/2024/06/fastest-wage-growth-over-the-last-four-years) | Economic Policy Institute | Low-wage workers experienced significant wage growth of 12.1% from 2019 to 2023, driven by policy responses and a tight labor market, marking a departure from historical trends.  | 
+
+
+# ETF and Index Investing
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [The Cornerstones of Benchmarking Private Capital](https://www.msci.com/www/blog-posts/the-cornerstones-of/04783300823) | MSCI | Benchmarking private capital requires accurate data, defined inclusion criteria, and a strong governance framework to measure performance through various index types and calculations effectively.  | 
+
+
+# Fundamental
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [Asset Manager Profit Margins Get Thinner](https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner) | Institutional Investor. | Asset managers face declining profit margins due to rising costs, weak inflows, and the need for innovation despite a strong stock market. Strategic adaptation is essential for future success.  | 
+| [Europe’s luxury stocks have boomed in the last decade*](https://sherwood.news/markets/europes-luxury-stocks-have-boomed-burberry-got-left-behind/) | Sherwood | Burberry's first-quarter results showed a 22% revenue drop, CEO resignation, dividend suspension, and declining sales, prompting challenges for the new CEO amidst declining brand exclusivity and market presence.  | 
+| [India’s Markets Have Changed](https://www.msci.com/www/blog-posts/india-s-changed-and-changing/04777168512) | MSCI | India's equity market shows significant growth, with over 300 new companies since 2020, highlighting changes in industry profiles and future potential from private market entrants.  | 
+| [S&P 500 Will Likely Report Earnings Growth of At Least 12% For Q2](https://insight.factset.com/sp-500-will-likely-report-earnings-growth-of-at-least-12-for-q2) | FactSet | S&P 500 expected to report earnings growth above 12% for Q2, supported by historical trends of exceeding estimates, with 81% of companies reporting higher EPS so far.  | 
+
+
+# Knowledge Management
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [In a sea of disinformation, why is Wikipedia so accurate?](https://www.forkingpaths.co/p/in-a-sea-of-disinformation-why-is) | The Garden of Forking Paths | Wikipedia has over 6.8 million articles, providing accurate information amid online disinformation, with a reliable citation system that allows users to verify sources and find obscure knowledge.  | 
+
+
+# Portfolio Construction
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [Blackrock CEO Larry Fink Explains Why Everyone Should Consider Bitcoin in Portfolios – Finance Bitcoin News](https://news.bitcoin.com/blackrock-ceo-larry-fink-explains-why-everyone-should-consider-bitcoin-in-portfolios/) | Bitcoin.com | Larry Fink, Blackrock's CEO, now views bitcoin as "digital gold," advocating for its inclusion in portfolios as a hedge against economic instability and currency debasement.  | 
+| [Markets in Focus: Currency Risk Higher for Global Equity Investors](https://www.msci.com/www/blog-posts/markets-in-focus-currency-risk/04783398091) | Markets in Focus | Currency volatility has influenced global markets, with mixed equity returns and rising currency risk for investors, particularly in Japan, amidst ongoing rate uncertainties since 2022.  | 
+
+
+# Quantitative Investing
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [S&P Momentum Indices Leading the Pack – Indexology® Blog](https://www.indexologyblog.com/2024/07/09/sp-momentum-indices-leading-the-pack/) | Indexology | S&P Momentum Indices have outperformed benchmarks over the past year, utilizing a methodology based on risk-adjusted price momentum, with notable contributions from sectors like Information Technology and Industrials.  | 
+
+
+# Tech
+
+| Title | Source | Summary |
+|-----|-------|----------|
+| [How the World Sped Up](https://www.forkingpaths.co/p/how-the-world-sped-up-249) | The Garden of Forking Paths | The essay explores the accelerated pace of change in modern society, highlighting how speed impacts information dissemination, financial markets, and the risks associated with rapid technological advancements.  | 
