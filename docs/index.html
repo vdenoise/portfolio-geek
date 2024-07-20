@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -69,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CJ2CMCX5LZ"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -97,6 +128,35 @@ cookieconsent.run({
 </script> 
   
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -213,52 +273,156 @@ cookieconsent.run({
 <p>In this blog, I document my findings and experiments, notably in <strong>Python</strong>, <strong>Jupyter</strong> and along themes like <strong>portfolio optimisation</strong> and <strong>reproducible research</strong>.</p>
 <p>In particular, <a href="./tutorials_en.html">this section</a> provides you with a <strong>Zero to Hero</strong> experience in Python and Quantitative Finance.</p>
 </section>
-<section id="introductory-videos" class="level1 g-col-12 g-col-md-5">
-<h1>Introductory Videos</h1>
-<ul>
-<li><a href="./posts/data-driven-minute.html">The Data Driven Minutes</a></li>
-</ul>
-</section>
-<section id="latest-posts" class="level1 g-col-12 g-col-md-5">
-<h1>Latest Posts</h1>
-<ul>
-<li><a href="./posts/daily-curation.html">Daily Quant &amp; Coding Curation</a></li>
-</ul>
-</section>
-<section id="getting-started-tutorials" class="level1 g-col-12 g-col-md-5">
-<h1>Getting Started: Tutorials</h1>
-<ul>
-<li><a href="./tutorials_en.html">All Tutorials</a></li>
-<li><a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html">Getting Started: Mac</a></li>
-<li><a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html">Getting Started: Windows PC</a></li>
-</ul>
-</section>
-<section id="portfolio-construction" class="level1 g-col-12 g-col-md-5">
-<h1>Portfolio Construction</h1>
-<ul>
-<li><a href="portfolio_construction.html">Portfolio Optimisation with Python</a></li>
-<li><a href="risk_and_return.html">Risks and Returns 101</a></li>
-</ul>
-</section>
-<section id="efficient-blogging" class="level1 g-col-12 g-col-md-5">
-<h1>Efficient Blogging</h1>
-<ul>
-<li>Quarto: a revolution in the scientific blogging and publication workflow</li>
-</ul>
-</section>
-<section id="performance-reporting" class="level1 g-col-12 g-col-md-5">
-<h1>Performance &amp; Reporting</h1>
-<ul>
-<li>Powerful Word document Generation with python</li>
-<li>Automated Powerpoint authoring with python</li>
-<li>Nice Pictures with Python and Matplotlib</li>
-</ul>
-</section>
+<div class="g-col-12 g-col-md-5">
+<div id="sample-listings">
+
+</div>
+</div>
 </div>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1721430000000" data-listing-file-modified-sort="1721491931765" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<a href="./posts/daily-curation/2024-07-20_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./pictures/laptop-data.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Bitcoin’s Safe-Haven Status, GPT-4o Mini’s Launch, and Mastering AI Content: Today’s Key Insights
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 20, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1721343600000" data-listing-file-modified-sort="1721491975068" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="251">
+<a href="./posts/daily-curation/2024-07-19_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./pictures/stock-valuation.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+19 July 2024: Daily selection of Quant, Finance and Coding links
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 19, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1721257200000" data-listing-file-modified-sort="1721492387546" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="153">
+<a href="./posts/daily-curation/2024-07-18_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./pictures/portfolio-optimisation.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+18 July 2024: Automation, Quant and Tech in Focus
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 18, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-date-sort="1721170800000" data-listing-file-modified-sort="1721492358744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="712">
+<a href="./posts/daily-curation/2024-07-17_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./pictures/laptop.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+17 July 2024: Daily Curation with Asset Management, Coding and Economics in Focus
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 17, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-date-sort="1721084400000" data-listing-file-modified-sort="1721492305987" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="703">
+<a href="./posts/daily-curation/2024-07-16_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./pictures/chart-preview.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+16 July 2024: Asset Management, Economics and ETFs in Focus
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 16, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-date-sort="1720998000000" data-listing-file-modified-sort="1721492277026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="595">
+<a href="./posts/daily-curation/2024-07-15_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./pictures/mathematics-formulas-on-a-blackboard.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+15 July 2024: daily curation with Market, Tech and Quant Links
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 15, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-listing-date-sort="1720911600000" data-listing-file-modified-sort="1721492255472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="652">
+<a href="./posts/daily-curation/2024-07-14_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+14 July 2024: Economics, Indexing, Quant and Coding Links
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 14, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

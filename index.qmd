@@ -1,6 +1,11 @@
 ---
 page-layout: full
 code-tools: false
+listing:
+  contents: posts/daily-curation/
+  sort: "date desc"
+  type: grid
+  fields: [date, title, image]
 ---
 
 ::: {.grid}
@@ -20,40 +25,15 @@ In particular, [this section](/tutorials_en.html) provides you with a **Zero to 
 
 :::
 
-::: {.g-col-12 .g-col-md-5}
-# Introductory Videos
-- [The Data Driven Minutes](/posts/data-driven-minute.html)
-:::
 
 ::: {.g-col-12 .g-col-md-5}
-# Latest Posts
-- [Daily Quant & Coding Curation](/posts/daily-curation.html)
+
+::: {#sample-listings}
 :::
 
-::: {.g-col-12 .g-col-md-5}
-# Getting Started: Tutorials
-- [All Tutorials](/tutorials_en.html)
-- [Getting Started: Mac](/posts/tutorials/en/setting-up-a-python-workstation-macos.html)
-- [Getting Started: Windows PC](/posts/tutorials/en/setting-up-a-python-workstation-macos.html)
 :::
 
-::: {.g-col-12 .g-col-md-5}
-# Portfolio Construction
-- [Portfolio Optimisation with Python](portfolio_construction.html)
-- [Risks and Returns 101](risk_and_return.html)
-:::
 
-::: {.g-col-12 .g-col-md-5}
-# Efficient Blogging
-- Quarto: a revolution in the scientific blogging and publication workflow
-:::
-
-::: {.g-col-12 .g-col-md-5}
-# Performance & Reporting
-- Powerful Word document Generation with python
-- Automated Powerpoint authoring with python
-- Nice Pictures with Python and Matplotlib
-:::
 
 :::
 

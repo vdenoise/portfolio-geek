@@ -3,6 +3,7 @@ title: "19 July 2024: Daily selection of Quant, Finance and Coding links"
 page-layout: full
 title-block-banner: true
 date: 07-19-2024
+image: /pictures/stock-valuation.png
 ---
 
 Here is what we found most interesting on 19 July 2024. 

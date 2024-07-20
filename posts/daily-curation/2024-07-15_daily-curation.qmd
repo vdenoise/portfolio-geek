@@ -1,8 +1,9 @@
 ---
-title: "15/07/2024:  Economics, Indexing, Quant and Coding Links"
+title: "15 July 2024: daily curation with Market, Tech and Quant Links"
 page-layout: full
 title-block-banner: true
 date: 07-15-2024
+image: /pictures/mathematics-formulas-on-a-blackboard.png
 ---
 
 # Market Pulse
