@@ -6,6 +6,13 @@ date: 07-18-2024
 image: /pictures/portfolio-optimisation.png
 ---
 
+Here are the findings of the day.
+
+Happy reading!
+
+Vincent
+
+
 # Automation
 
 | Title | Source | Summary |

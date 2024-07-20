@@ -5,8 +5,6 @@ listing:
   sort: "date desc"
   type: default
   categories: false
-  sort-ui: false
-  filter-ui: false
   
   fields: [author, date, description, title, image]
 page-layout: full
