@@ -1,9 +1,9 @@
 ---
-title: "Portfolio Construction"
+title: "Daily Findings"
 listing:
-  contents: /posts/daily-curation/*
+  contents: /posts/daily-curation/*.qmd
   sort: "date desc"
-  type: default
+  type: grid
   categories: false
   
   fields: [author, date, description, title, image]
