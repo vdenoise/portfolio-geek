@@ -2,6 +2,7 @@
 title: "16/07/2024:  Economics, Indexing, Quant and Coding Links"
 page-layout: full
 title-block-banner: true
+date: 07-16-2024
 ---
 
 # Asset Management
