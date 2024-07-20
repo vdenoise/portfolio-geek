@@ -305,7 +305,7 @@ cookieconsent.run({
 </section>
 <section id="gather-the-historical-data-of-spy-qqq-and-agg-etfs-using-yfinance" class="level2">
 <h2 class="anchored" data-anchor-id="gather-the-historical-data-of-spy-qqq-and-agg-etfs-using-yfinance">Gather the historical data of SPY, QQQ, and AGG ETFs using yfinance</h2>
-<div id="cell-4" class="cell" data-execution_count="1">
+<div class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="op">%%</span>capture</span>
@@ -322,7 +322,7 @@ cookieconsent.run({
 </section>
 <section id="compute-the-key-risk-and-return-metrics-for-each-etf" class="level2">
 <h2 class="anchored" data-anchor-id="compute-the-key-risk-and-return-metrics-for-each-etf">Compute the key risk and return metrics for each ETF</h2>
-<div id="cell-6" class="cell" data-execution_count="2">
+<div class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Calculate the annualized return</span></span>
@@ -340,7 +340,7 @@ cookieconsent.run({
 <div class="cell-output cell-output-stdout">
 <pre><code>Annualized Return:
 AGG    0.016396
-QQQ    0.195212
+QQQ    0.195211
 SPY    0.133962
 dtype: float64
 
@@ -354,7 +354,7 @@ dtype: float64</code></pre>
 </section>
 <section id="plot-the-10-year-cumulated-return-as-a-line-chart-for-the-3-etfs-with-the-initial-value-normalized-to-100." class="level2">
 <h2 class="anchored" data-anchor-id="plot-the-10-year-cumulated-return-as-a-line-chart-for-the-3-etfs-with-the-initial-value-normalized-to-100.">Plot the 10-year cumulated return as a line chart for the 3 ETFs, with the initial value normalized to 100.</h2>
-<div id="cell-8" class="cell" data-execution_count="3">
+<div class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -382,7 +382,7 @@ dtype: float64</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="full-story_files/figure-html/cell-4-output-2.png" width="593" height="421" class="figure-img"></p>
+<p><img src="full-story_files/figure-html/cell-4-output-2.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -390,7 +390,7 @@ dtype: float64</code></pre>
 </section>
 <section id="use-pyportfolioopt-to-calculate-and-plot-the-efficiency-frontier" class="level2">
 <h2 class="anchored" data-anchor-id="use-pyportfolioopt-to-calculate-and-plot-the-efficiency-frontier">Use pyportfolioopt to calculate and plot the efficiency frontier</h2>
-<div id="cell-10" class="cell" data-execution_count="4">
+<div class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="im">from</span> pypfopt <span class="im">import</span> expected_returns, risk_models</span>
@@ -411,19 +411,10 @@ dtype: float64</code></pre>
 <span id="cb9-16"><a href="#cb9-16"></a>plt.title(<span class="st">'Efficient Frontier'</span>)</span>
 <span id="cb9-17"><a href="#cb9-17"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stderr">
-<pre><code>/opt/homebrew/Caskroom/miniconda/base/envs/portfolio-geek/lib/python3.10/site-packages/cvxpy/reductions/solvers/solving_chain.py:336: FutureWarning: 
-    Your problem is being solved with the ECOS solver by default. Starting in 
-    CVXPY 1.5.0, Clarabel will be used as the default solver instead. To continue 
-    using ECOS, specify the ECOS solver explicitly using the ``solver=cp.ECOS`` 
-    argument to the ``problem.solve`` method.
-    
-  warnings.warn(ECOS_DEPRECATION_MSG, FutureWarning)</code></pre>
-</div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="full-story_files/figure-html/cell-5-output-2.png" width="662" height="490" class="figure-img"></p>
+<p><img src="full-story_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>

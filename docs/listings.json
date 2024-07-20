@@ -21,6 +21,7 @@
       "/posts/tutorials/en/spy-and-matplotlib.html",
       "/posts/tutorials/en/getting-started-with-eurostat-api.html",
       "/posts/tutorials/en/shiller-data-python.html",
+      "/posts/daily-curation/2024-07-20_daily-curation.html",
       "/posts/data-driven-minute.html",
       "/posts/risk_and_return/estimating-portfolio-risk.html",
       "/posts/data-and-apis/exploring-worldbank-api.html",
@@ -34,8 +35,17 @@
     ]
   },
   {
+    "listing": "/posts/data-driven-minute.html",
+    "items": [
+      "/posts/data-driven-minute/ddm-template.html",
+      "/posts/data-driven-minute/ddm1-volatility.html",
+      "/posts/data-driven-minute/historical-vol.html"
+    ]
+  },
+  {
     "listing": "/posts/daily-curation.html",
     "items": [
+      "/posts/daily-curation/2024-07-20_daily-curation.html",
       "/posts/daily-curation/2024-07-19_daily-curation.html",
       "/posts/daily-curation/2024-07-18_daily-curation.html",
       "/posts/daily-curation/2024-07-17_daily-curation.html",
@@ -77,14 +87,6 @@
       "/posts/tutorials/en/spy-and-matplotlib.html",
       "/posts/tutorials/en/getting-started-with-eurostat-api.html",
       "/posts/tutorials/en/shiller-data-python.html"
-    ]
-  },
-  {
-    "listing": "/posts/data-driven-minute.html",
-    "items": [
-      "/posts/data-driven-minute/ddm-template.html",
-      "/posts/data-driven-minute/ddm1-volatility.html",
-      "/posts/data-driven-minute/historical-vol.html"
     ]
   }
 ]

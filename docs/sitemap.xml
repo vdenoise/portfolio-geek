@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://portfolio-geek.com/risk_and_return.html</loc>
-    <lastmod>2024-02-26T17:16:34.774Z</lastmod>
+    <lastmod>2024-02-22T19:38:01.469Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/all_posts.html</loc>
@@ -21,36 +21,44 @@
     <lastmod>2024-07-20T08:49:04.898Z</lastmod>
   </url>
   <url>
+    <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-19_daily-curation.html</loc>
+    <lastmod>2024-07-20T08:52:27.728Z</lastmod>
+  </url>
+  <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-17_daily-curation.html</loc>
     <lastmod>2024-07-20T08:48:45.355Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-macos.html</loc>
-    <lastmod>2024-07-19T12:43:57.611Z</lastmod>
+    <lastmod>2024-03-10T12:33:10.865Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/tutorials/en/getting-started-with-eurostat-api.html</loc>
-    <lastmod>2024-07-19T12:43:57.608Z</lastmod>
+    <lastmod>2024-02-22T10:01:07.236Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/tutorials/fr/valorisation-pe.html</loc>
-    <lastmod>2024-07-19T12:43:57.619Z</lastmod>
+    <lastmod>2023-11-08T06:36:14.841Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/publication-workflow/visualizing-historical-data.html</loc>
-    <lastmod>2024-07-19T12:43:57.597Z</lastmod>
+    <lastmod>2023-11-08T06:36:01.196Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python.html</loc>
-    <lastmod>2024-07-19T12:43:57.590Z</lastmod>
+    <lastmod>2024-03-10T12:34:48.587Z</lastmod>
   </url>
   <url>
-    <loc>https://portfolio-geek.com/posts/data-driven-minute/ddm-template.html</loc>
-    <lastmod>2024-07-20T08:02:02.103Z</lastmod>
+    <loc>https://portfolio-geek.com/posts/data-driven-minute/historical-vol.html</loc>
+    <lastmod>2024-07-20T08:02:02.104Z</lastmod>
+  </url>
+  <url>
+    <loc>https://portfolio-geek.com/posts/data-driven-minute.html</loc>
+    <lastmod>2024-07-20T08:02:02.099Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/data-and-apis/test_wb.html</loc>
-    <lastmod>2024-07-19T12:43:57.577Z</lastmod>
+    <lastmod>2023-06-26T18:04:25.358Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation.html</loc>
@@ -58,27 +66,31 @@
   </url>
   <url>
     <loc>https://portfolio-geek.com/portfolio_construction.html</loc>
-    <lastmod>2024-05-31T09:08:59.324Z</lastmod>
+    <lastmod>2024-02-25T19:05:15.534Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/risk_and_return/estimating-portfolio-risk.html</loc>
-    <lastmod>2024-07-19T12:43:57.601Z</lastmod>
+    <lastmod>2023-11-08T06:35:17.314Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/data-and-apis/exploring-worldbank-api.html</loc>
-    <lastmod>2024-07-19T12:43:57.577Z</lastmod>
+    <lastmod>2023-11-08T06:35:51.305Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/10-formules-importantes-finance-marche.html</loc>
-    <lastmod>2024-07-19T12:43:57.573Z</lastmod>
+    <lastmod>2024-03-10T12:33:10.622Z</lastmod>
+  </url>
+  <url>
+    <loc>https://portfolio-geek.com/posts/data-driven-minute/ddm-template.html</loc>
+    <lastmod>2024-07-20T08:02:02.103Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/data-driven-minute/ddm1-volatility.html</loc>
-    <lastmod>2024-07-19T16:53:07.518Z</lastmod>
+    <lastmod>2024-06-27T21:47:15.288Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-windows.html</loc>
-    <lastmod>2024-07-19T12:43:57.611Z</lastmod>
+    <lastmod>2024-03-10T12:34:47.891Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/tutorials/en/spy-and-matplotlib.html</loc>
@@ -93,6 +105,10 @@
     <lastmod>2024-07-20T08:49:12.035Z</lastmod>
   </url>
   <url>
+    <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-20_daily-curation.html</loc>
+    <lastmod>2024-07-20T15:35:16.438Z</lastmod>
+  </url>
+  <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-18_daily-curation.html</loc>
     <lastmod>2024-07-20T08:48:32.875Z</lastmod>
   </url>
@@ -102,22 +118,10 @@
   </url>
   <url>
     <loc>https://portfolio-geek.com/about.html</loc>
-    <lastmod>2024-02-26T17:16:34.701Z</lastmod>
+    <lastmod>2024-02-25T19:24:41.634Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/tutorials_en.html</loc>
     <lastmod>2024-02-22T09:55:45.055Z</lastmod>
-  </url>
-  <url>
-    <loc>https://portfolio-geek.com/posts/data-driven-minute/historical-vol.html</loc>
-    <lastmod>2024-07-20T08:02:02.104Z</lastmod>
-  </url>
-  <url>
-    <loc>https://portfolio-geek.com/posts/data-driven-minute.html</loc>
-    <lastmod>2024-07-20T08:02:02.099Z</lastmod>
-  </url>
-  <url>
-    <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-19_daily-curation.html</loc>
-    <lastmod>2024-07-20T08:48:10.748Z</lastmod>
   </url>
 </urlset>
