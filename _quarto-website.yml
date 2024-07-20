@@ -34,10 +34,10 @@ website:
   repo-branch: "master"
   navbar:
     right:
+      - text: Daily Findings
+        href: posts/daily-curation.qmd
       - text: Getting Started
         href: tutorials_en.qmd
-      - text: All Articles
-        href: all_posts.qmd
       - text: About
         href: about.qmd
       - icon: linkedin
