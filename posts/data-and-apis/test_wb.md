@@ -1,3 +1,7 @@
+---
+draft: true
+---
+
 # Using WBGAPI: A Step-By-Step Guide to Access World Bank Data
 
 WBGAPI is an extraordinary tool to gather data directly from the World Bank's vast databases. In this article, we will cover how to harness this tool and use it to study the evolution of various economic indicators. To demonstrate its utility, we will focus on two specific use cases:

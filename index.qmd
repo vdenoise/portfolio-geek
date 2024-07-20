@@ -2,10 +2,12 @@
 page-layout: full
 code-tools: false
 listing:
-  contents: posts/daily-curation/
+  contents: posts/
   sort: "date desc"
   type: grid
   fields: [date, title, image]
+  feed: true
+
 ---
 
 ::: {.grid}

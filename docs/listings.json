@@ -1,37 +1,23 @@
 [
   {
     "listing": "/risk_and_return.html",
-    "items": [
-      "/posts/risk_and_return/estimating-portfolio-risk.html"
-    ]
+    "items": []
   },
   {
     "listing": "/all_posts.html",
     "items": [
-      "/posts/data-driven-minute/ddm-template.html",
-      "/posts/data-driven-minute/ddm1-volatility.html",
-      "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",
-      "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
       "/posts/daily-curation/2024-07-14_daily-curation.html",
       "/posts/daily-curation/2024-07-15_daily-curation.html",
       "/posts/daily-curation/2024-07-16_daily-curation.html",
       "/posts/daily-curation/2024-07-17_daily-curation.html",
       "/posts/daily-curation/2024-07-18_daily-curation.html",
       "/posts/daily-curation/2024-07-19_daily-curation.html",
-      "/posts/tutorials/en/spy-and-matplotlib.html",
-      "/posts/tutorials/en/getting-started-with-eurostat-api.html",
-      "/posts/tutorials/en/shiller-data-python.html",
       "/posts/daily-curation/2024-07-20_daily-curation.html",
-      "/posts/data-driven-minute.html",
-      "/posts/risk_and_return/estimating-portfolio-risk.html",
-      "/posts/data-and-apis/exploring-worldbank-api.html",
-      "/posts/10-formules-importantes-finance-marche.html",
-      "/posts/tutorials/fr/valorisation-pe.html",
-      "/posts/daily-curation.html",
+      "/posts/tutorials/en/spy-and-matplotlib.html",
       "/posts/portfolio-construction/optimise-portfolios-with-python.html",
-      "/posts/data-and-apis/test_wb.html",
-      "/posts/publication-workflow/visualizing-historical-data.html",
-      "/posts/data-driven-minute/historical-vol.html"
+      "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",
+      "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
+      "/posts/publication-workflow/visualizing-historical-data.html"
     ]
   },
   {
@@ -43,19 +29,26 @@
       "/posts/daily-curation/2024-07-17_daily-curation.html",
       "/posts/daily-curation/2024-07-16_daily-curation.html",
       "/posts/daily-curation/2024-07-15_daily-curation.html",
-      "/posts/daily-curation/2024-07-14_daily-curation.html"
+      "/posts/daily-curation/2024-07-14_daily-curation.html",
+      "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
+      "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",
+      "/posts/tutorials/en/spy-and-matplotlib.html",
+      "/posts/portfolio-construction/optimise-portfolios-with-python.html",
+      "/posts/publication-workflow/visualizing-historical-data.html"
     ]
   },
   {
-    "listing": "/posts/data-driven-minute.html",
+    "listing": "/data-driven-minute.html",
+    "items": []
+  },
+  {
+    "listing": "/portfolio_construction.html",
     "items": [
-      "/posts/data-driven-minute/ddm-template.html",
-      "/posts/data-driven-minute/ddm1-volatility.html",
-      "/posts/data-driven-minute/historical-vol.html"
+      "/posts/portfolio-construction/optimise-portfolios-with-python.html"
     ]
   },
   {
-    "listing": "/posts/daily-curation.html",
+    "listing": "/daily-curation.html",
     "items": [
       "/posts/daily-curation/2024-07-20_daily-curation.html",
       "/posts/daily-curation/2024-07-19_daily-curation.html",
@@ -67,38 +60,21 @@
     ]
   },
   {
-    "listing": "/portfolio_construction.html",
-    "items": [
-      "/posts/portfolio-construction/optimise-portfolios-with-python.html"
-    ]
-  },
-  {
     "listing": "/archive.html",
     "items": [
-      "/posts/10-formules-importantes-finance-marche.html",
-      "/posts/data-driven-minute/ddm-template.html",
-      "/posts/data-driven-minute/ddm1-volatility.html",
-      "/posts/data-driven-minute/historical-vol.html",
-      "/posts/portfolio-construction/optimise-portfolios-with-python.html",
-      "/posts/publication-workflow/visualizing-historical-data.html",
-      "/posts/risk_and_return/estimating-portfolio-risk.html",
-      "/posts/tutorials/en/shiller-data-python.html",
       "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
       "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",
       "/posts/tutorials/en/spy-and-matplotlib.html",
-      "/posts/tutorials/en/getting-started-with-eurostat-api.html",
-      "/posts/data-and-apis/exploring-worldbank-api.html",
-      "/posts/tutorials/fr/valorisation-pe.html"
+      "/posts/portfolio-construction/optimise-portfolios-with-python.html",
+      "/posts/publication-workflow/visualizing-historical-data.html"
     ]
   },
   {
     "listing": "/tutorials_en.html",
     "items": [
-      "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",
-      "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
       "/posts/tutorials/en/spy-and-matplotlib.html",
-      "/posts/tutorials/en/getting-started-with-eurostat-api.html",
-      "/posts/tutorials/en/shiller-data-python.html"
+      "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",
+      "/posts/tutorials/en/setting-up-a-python-workstation-windows.html"
     ]
   }
 ]

@@ -154,7 +154,7 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/daily-curation.html"> 
+    <a class="nav-link" href="../../daily-curation.html"> 
 <span class="menu-text">Daily Findings</span></a>
   </li>  
   <li class="nav-item">
@@ -164,6 +164,11 @@ cookieconsent.run({
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/vdenoiseux/"> <i class="bi bi-linkedin" role="img">
@@ -249,7 +254,7 @@ cookieconsent.run({
 </header>
 
 
-<div class="cell" data-execution_count="1">
+<div id="cell-1" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> wbgapi <span class="im">as</span> wb</span>
@@ -257,20 +262,20 @@ cookieconsent.run({
 <span id="cb1-3"><a href="#cb1-3"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div class="cell" data-execution_count="2">
+<div id="cell-2" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>incomes <span class="op">=</span> wb.income.<span class="bu">list</span>()</span>
 <span id="cb2-2"><a href="#cb2-2"></a>data <span class="op">=</span> wb.data.fetch(<span class="st">'SP.POP.TOTL'</span>, <span class="st">'USA'</span>, <span class="dv">2000</span>, <span class="dv">2020</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div class="cell" data-execution_count="3">
+<div id="cell-3" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="3">
-<pre><code>&lt;generator object fetch at 0x10ab110b0&gt;</code></pre>
+<pre><code>&lt;generator object fetch at 0x117a02040&gt;</code></pre>
 </div>
 </div>
 

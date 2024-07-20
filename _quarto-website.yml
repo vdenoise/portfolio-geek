@@ -22,6 +22,7 @@ website:
   title: "Portfolio Geek"
   site-url: "https://portfolio-geek.com"
   site-path: "/"
+
   google-analytics: 
     tracking-id: "G-CJ2CMCX5LZ"
     anonymize-ip: true
@@ -35,11 +36,13 @@ website:
   navbar:
     right:
       - text: Daily Findings
-        href: posts/daily-curation.qmd
+        href: daily-curation.qmd
       - text: Getting Started
         href: tutorials_en.qmd
       - text: About
         href: about.qmd
+      - icon: rss
+        href: index.xml
       - icon: linkedin
         href: https://www.linkedin.com/in/vdenoiseux/
       - icon: github

@@ -155,7 +155,7 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../posts/daily-curation.html"> 
+    <a class="nav-link" href="../../../daily-curation.html"> 
 <span class="menu-text">Daily Findings</span></a>
   </li>  
   <li class="nav-item">
@@ -165,6 +165,11 @@ cookieconsent.run({
   <li class="nav-item">
     <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/vdenoiseux/"> <i class="bi bi-linkedin" role="img">
@@ -280,7 +285,7 @@ cookieconsent.run({
 <p>For example, to access the dataset on GDP per capita, you would send a request to:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/nama_10_pc?format=sdmx-compact-2.1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Here’s a Python function that sends a request to the Eurostat API and checks the connection status:</p>
-<div class="cell" data-execution_count="1">
+<div id="cell-2" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">import</span> requests</span>

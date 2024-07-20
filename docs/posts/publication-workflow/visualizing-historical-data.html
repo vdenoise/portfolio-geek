@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
+<meta name="dcterms.date" content="2023-03-03">
 
 <title>Portfolio Geek - Visualising Historical Data</title>
 <style>
@@ -58,7 +59,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -131,7 +132,7 @@ cookieconsent.run({
 </script> 
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
@@ -156,7 +157,7 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/daily-curation.html"> 
+    <a class="nav-link" href="../../daily-curation.html"> 
 <span class="menu-text">Daily Findings</span></a>
   </li>  
   <li class="nav-item">
@@ -166,6 +167,11 @@ cookieconsent.run({
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/vdenoiseux/"> <i class="bi bi-linkedin" role="img">
@@ -235,6 +241,12 @@ cookieconsent.run({
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 3, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -261,7 +273,7 @@ cookieconsent.run({
 <h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
 <p>A key benefit of <strong>Python</strong> is the sheer number of libraries we can leverage to perform a particular task. Choosing the right library might look a bit overwhelming, and one the goals of this blog is actually to provide the reader my honest view on what makes most sense to perform the usual tasks in my daily work.</p>
 <p>The key module for this article is <strong><a href="https://github.com/ranaroussi/yfinance">yfinance</a></strong>, a fantastic data gathering library that you can find <a href="https://github.com/ranaroussi/yfinance">here</a> on GitHub.</p>
-<div class="cell" data-execution_count="1">
+<div id="cell-3" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">#collapse-hide</span></span>
@@ -281,7 +293,7 @@ cookieconsent.run({
 <p>You might wonder what the first 3 letters actually correspond to? They are the usual identifier for each ETF on the markets, and are often called the <strong>ticker</strong>of the ETF.</p>
 <p>To gather data, you must <em>de facto</em> provide one ticker for each security, but if you forgot the ticker, Google is usually your friend!</p>
 <p>We will need define to find a few more <strong>parameters</strong>: - The 2 variables start_date and end_date to keep some flexibility, - The variable <em>tickers</em> will store our ticker list, and pass it as a parameter to Yahoo, in order to specify our query.</p>
-<div class="cell" data-execution_count="2">
+<div id="cell-5" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">#collapse-hide</span></span>
@@ -297,7 +309,7 @@ cookieconsent.run({
 <span id="cb2-11"><a href="#cb2-11"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[                       0%                       ][                       0%                       ][**********************75%***********            ]  3 of 4 completed[*********************100%***********************]  4 of 4 completed</code></pre>
+<pre><code>[                       0%                       ][                       0%                       ][                       0%                       ][*********************100%***********************]  4 of 4 completed</code></pre>
 </div>
 </div>
 </section>
@@ -306,7 +318,7 @@ cookieconsent.run({
 <p>By default, Yahoo Finance provides us with several fields, not all of them will be useful in this introduction, and we will perform some further filtering below.</p>
 <p>To quickly check the status of what we now have, note the use of the <strong>tail()</strong> function below.</p>
 <p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.tail.html">Pandas tail() function</a></p>
-<div class="cell" data-execution_count="3">
+<div id="cell-7" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>df.tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -380,10 +392,10 @@ cookieconsent.run({
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2022-05-11</td>
-<td>98.5</td>
-<td>60.8</td>
+<td>96.1</td>
+<td>59.1</td>
 <td>172.8</td>
-<td>383.4</td>
+<td>379.5</td>
 <td>102.8</td>
 <td>62.6</td>
 <td>172.8</td>
@@ -404,10 +416,10 @@ cookieconsent.run({
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2022-05-12</td>
-<td>98.6</td>
-<td>60.2</td>
+<td>96.3</td>
+<td>58.5</td>
 <td>170.2</td>
-<td>383.0</td>
+<td>379.1</td>
 <td>103.0</td>
 <td>62.0</td>
 <td>170.2</td>
@@ -428,10 +440,10 @@ cookieconsent.run({
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2022-05-13</td>
-<td>98.2</td>
-<td>61.7</td>
+<td>95.9</td>
+<td>60.0</td>
 <td>168.8</td>
-<td>392.2</td>
+<td>388.1</td>
 <td>102.5</td>
 <td>63.5</td>
 <td>168.8</td>
@@ -463,7 +475,7 @@ cookieconsent.run({
 <p>This reflects the total return delivered by the ETF, should the investor reinvest systematically the dividend paid by the ETF by buying more this ETF. This is probably the most useful field when we aim to assess the <strong>long term returns of an asset class</strong>.</p>
 <p>To quickly check the status of what we now have, note the use of the <strong>tail()</strong> function below, which get the last <em>n</em> rows of the dataset. Combined with Jupyter’s power in printing data, it’s probably the fastest way to navigate and check a particular dataset.</p>
 <p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.tail.html">Pandas tail() function</a></p>
-<div class="cell" data-execution_count="4">
+<div id="cell-9" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>df[<span class="st">'Adj Close'</span>].tail(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -493,24 +505,24 @@ cookieconsent.run({
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2022-05-11</td>
-<td>98.5</td>
-<td>60.8</td>
+<td>96.1</td>
+<td>59.1</td>
 <td>172.8</td>
-<td>383.4</td>
+<td>379.5</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2022-05-12</td>
-<td>98.6</td>
-<td>60.2</td>
+<td>96.3</td>
+<td>58.5</td>
 <td>170.2</td>
-<td>383.0</td>
+<td>379.1</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2022-05-13</td>
-<td>98.2</td>
-<td>61.7</td>
+<td>95.9</td>
+<td>60.0</td>
 <td>168.8</td>
-<td>392.2</td>
+<td>388.1</td>
 </tr>
 </tbody>
 </table>
@@ -523,7 +535,7 @@ cookieconsent.run({
 <section id="plot-the-raw-time-series-using-the-seaborn-library" class="level2">
 <h2 class="anchored" data-anchor-id="plot-the-raw-time-series-using-the-seaborn-library">Plot the raw time series using the seaborn library</h2>
 <p>To quickly check that we got the right data, let’s visualise it.</p>
-<div class="cell" data-execution_count="5">
+<div id="cell-11" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">#collapse-hide</span></span>
@@ -550,7 +562,7 @@ cookieconsent.run({
 <h2 class="anchored" data-anchor-id="plot-the-normalised-the-time-series">Plot the normalised the time series</h2>
 <p>The chart above is useful, but the vast difference between the ETFs’ values makes it a bit hard to actually track each respective time series.</p>
 <p>It would be more effective to <strong>normalise the data</strong>. It’s often referred to as “rebasing”, ie making each time series starting at 100, this will make it much easier to compare.</p>
-<div class="cell" data-execution_count="6">
+<div id="cell-13" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="co">#collapse-hide</span></span>
@@ -575,7 +587,7 @@ cookieconsent.run({
 <h2 class="anchored" data-anchor-id="rolling-window-cumulated-returns">Rolling window cumulated returns</h2>
 <p>It’s often easy to get ‘seduced’ by the compelling long term returns, especially about Equities. And indeed, it was a good thing to be invested in Equities in the long run !</p>
 <p>But 1y returns are usually a good way to keep track of the portfolio, and moreover to see how these returns have developed over time. With a 1y return chart, the notion of risk, ie either fast-changing returns, or - even worse - consistently negative returns, quickly becomes apparent.</p>
-<div class="cell" data-execution_count="7">
+<div id="cell-15" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># We use pct_change() to calculate the one year return</span></span>
@@ -599,7 +611,7 @@ cookieconsent.run({
 <p>The chart above is great, but a bit too busy for my taste. Whilst accurate, there is too much info going on, the noise might reduce our ability to spot real medium terms or breakouts.</p>
 <p>This is where <strong>pandas</strong> starts to be really powerful. The <em>rolling()</em> function essentially captures sub-series, with a defined length (here 21 days). By <em>chaining</em> the results of rolling() with the <em>mean</em> function, ie calculating the arithmetic average, this will provide us in a one-liner with a new series. This generated dataframe contains the time series of the moving average (21 days) for each of our time series.</p>
 <p>Whilst this “chaining” approach might initially sound obscure, this is <strong>extremely powerful</strong>, especially when factoring in the fact that you just need to change the tickers of the ETFs in the beginning of the article to entirely update the whole analysis … your turn!</p>
-<div class="cell" data-execution_count="8">
+<div id="cell-17" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
