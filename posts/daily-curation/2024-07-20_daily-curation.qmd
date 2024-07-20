@@ -5,7 +5,9 @@ title-block-banner: true
 date: 07-20-2024
 ---
 
+
 In today's curation, we explore a range of topics relevant to technology, fitness, and finance:
+
 - OpenAI’s launch of GPT-4o mini, offering a cost-effective alternative to GPT-4o.
 - Guidelines for creating effective content prompts for generative AI.
 - The benefits of hill repeats for enhancing cardiovascular fitness.
