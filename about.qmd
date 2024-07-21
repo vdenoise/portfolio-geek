@@ -33,9 +33,9 @@ In most articles, you should be able to **copy, run and modify** the code behind
 
 
 # Disclaimer
-**Disclaimer**
-Welcome to portfolio-geek.com! 
-This blog is dedicated to sharing knowledge and insights about financial markets for educational purposes only. All content, including charts, data, and formulas, is meant for illustration and should not be taken as financial advice. It's important to understand that all decisions you make based on the information provided here are solely your responsibility. 
+One again, welcome to portfolio-geek.com! 
+
+**Important**: This blog is dedicated to sharing knowledge and insights about financial markets for educational purposes only. All content, including charts, data, and formulas, is meant for illustration and should not be taken as financial advice. It's important to understand that all decisions you make based on the information provided here are solely your responsibility. 
 
 Please note that all opinions and content expressed here are my own and do not reflect the views of any current or past employers. I am sharing my 20 years of experience in the financial markets to help students, finance enthusiasts, and academics learn and grow. However, I do not offer personalized financial advice or investment recommendations.
 
