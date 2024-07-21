@@ -51,14 +51,6 @@ website:
         href: https://github.com/vdenoise 
       - icon: twitter
         href: https://twitter.com
-      - text: Ressources
-        menu: 
-          - text: Measuring Risk and Return
-            href: risk_and_return.qmd
-          - text: Portfolio Construction
-            href: portfolio_construction.qmd
-          - text: Tutorials (en)
-            href: tutorials_en.qmd
   page-footer:
     left: |
       Proudly propelled by [Quarto](https://quarto.org/)
