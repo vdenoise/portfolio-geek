@@ -1,62 +1,51 @@
 ---
-title: "15 July 2024: daily curation with Market, Tech and Quant Links"
+title: "Today's Financial Curation: Fed's Inflation Forecast, Q2 Earnings Surge, ETF Market Shifts, and Automatic Savings Boost"
 page-layout: full
 title-block-banner: true
 date: 07-15-2024
+categories: [economics,fundamental,market-feed,portfolio-construction]
+tags: [inflation, stocks, etfs, consumer, interest, rates, discounts, diversification, technology, behavioral]
 image: /pictures/mathematics-formulas-on-a-blackboard.png
 ---
 
-Here are the findings of the day.
+In today's curation, we explore a range of critical financial topics that impact current market dynamics:
 
-Happy reading!
+- The New York Fed's inflation and output growth predictions
+- Amazon's competitive strategies amidst Prime Week
+- Insights from Q2 earnings season and stock performance
+- Opportunities in the QQQJ ETF showcasing tech growth
+- Implications of potential Fed interest rate cuts 
+- The UST yield curve and its relevance to rate changes
+- The Moat Index's recent findings on market trends
+- The benefits of automatic retirement savings 
+- Recovery signs in the banking sector 
+- The complexities of maintaining a balanced investment portfolio
 
-Vincent
-
-
-# Market Pulse
-
-| Title | Source | Summary |
-|-----|-------|----------|
-| [These Three Investments Are Getting Ready to Be Jerome Powell's Favorite](https://moneymorning.com/2024/07/15/these-three-investment-are-getting-ready-to-be-jerome-powells-favorite/) | Money Morning | The Fed's potential interest rate cuts may boost small cap stocks, regional banks, and real estate, prompting a significant market shift and attracting investors seeking higher returns.  | 
-| [When Will the Yield Curve “Un”Invert?](https://www.wisdomtree.com/investments/blog/2024/07/10/when-will-the-yield-curve-uninvert) | WisdomTree's website | The UST yield curve's potential "un"inversion timing hinges on Fed rate cuts, with the UST 2-Year/10-Year spread likely reversing before the UST 3-Month/10-Year spread.  | 
-| [Moat Stocks Steady Amid Tech’s Market Surge](https://www.vaneck.com/us/en/blogs/moat-investing/moat-stocks-steady-amid-techs-market-surge/) | Moat Index Quarterly Review | Moat Index reviews revealed a contrarian bias towards large caps, reduced Financials exposure, and increased allocations in Consumer Staples, Industrials, and Technology, remaining underweight in growth stocks.  | 
-| [The Automatic Investing Revolution - A Wealth of Common Sense](https://awealthofcommonsense.com/2024/07/the-automatic-investing-revolution/) | A Wealth of Common Sense | The shift to automatic retirement savings, like higher default rates, improves participation and investor behavior, positively affecting stock market valuations while highlighting the limitations of defined contribution plans.  | 
-| [This Bullish Trend in Banks Is Just Starting](https://moneymorning.com/2024/07/15/this-bullish-trend-in-banks-is-just-starting-grab-it-now/) | Money Morning | The banking sector shows potential recovery as interest rates may soon lower, with investor sentiment shifting and earnings reports exceeding expectations, presenting buying opportunities in ETFs like KBE and KRE.  | 
-
-
-# Tech
-
-| Title | Source | Summary |
-|-----|-------|----------|
-| [Crypto owners know Crypto…but not finance](https://alphaarchitect.com/2024/07/crypto-literacy/) | Alpha Architect | A study reveals Bitcoin owners have higher crypto literacy than non-owners, but financial literacy remains weak. Gender gaps persist, highlighting the need for enhanced financial education on cryptocurrencies.  | 
-
-
-# Quantitative Investing
-
-| Title | Source | Summary |
-|-----|-------|----------|
-| [Diversification for Trend Following Models](https://thealgorithmicadvantage.substack.com/p/diversification-for-trend-following) | Algorithmic Advantage | Diversification in trend following allows capturing outlier events, enhancing portfolio performance despite asset correlations, challenging traditional limits of diversification and emphasizing the importance of uncorrelated trade results.  | 
-| [A portfolio of strategies - by Quantitativo](https://www.quantitativo.com/p/a-portfolio-of-strategies) | Quant Trading Rules | Combining mean reversion and improved momentum strategies optimizes risk-adjusted returns, leveraging diversification principles to reduce drawdowns and enhance portfolio performance through uncorrelated asset mixing.  | 
 
 
 # Economics
+| Title | Summary |
+|-----|-----------|
+| [Why Inflation is Surging and Growth is Slumping: Key Insights from the New York Fed's Latest Forecast (Federal Reserve Bank of New York, 2024-06-14)](https://libertystreeteconomics.newyorkfed.org/2024/06/the-new-york-fed-dsge-model-forecast-june-2024/)   | The New York Fed's DSGE model forecasts higher core PCE inflation at 2.7% and lower output growth at 1.0% for 2024, attributing changes to cost-push shocks and monetary policy. |
+| [Savvy Challenges: How Retailers Leverage Amazon Prime Week to Battle Inflation and Woo Value-Conscious Consumers (LSEG Workspace, 2024-07-15)](https://lipperalpha.refinitiv.com/2024/07/savvy-shoppers-await-prime-week-deal-competition/)   | Amazon's Prime Week prompts retailers to offer competitive discounts, aiming to attract value-oriented shoppers while facing inflation, with increased online discount penetration and evolving consumer preferences. |
 
-| Title | Source | Summary |
-|-----|-------|----------|
-| [The New York Fed DSGE Model Forecast—June 2024](https://libertystreeteconomics.newyorkfed.org/2024/06/the-new-york-fed-dsge-model-forecast-june-2024/) | Federal Reserve Bank of New York | The New York Fed's DSGE model forecasts higher core PCE inflation at 2.7% and lower output growth at 1.0% for 2024, attributing changes to cost-push shocks and monetary policy.  | 
-| [Savvy Shoppers Await Prime Week Deal Competition](https://lipperalpha.refinitiv.com/2024/07/savvy-shoppers-await-prime-week-deal-competition/) | LSEG Workspace | Amazon's Prime Week prompts retailers to offer competitive discounts, aiming to attract value-oriented shoppers while facing inflation, with increased online discount penetration and evolving consumer preferences.  | 
+# Fundamental Investing
+| Title | Summary |
+|-----|-----------|
+| [Earnings Season Q2 2024: Why Most Companies Consistently Surpass Analysts' Expectations (TKer, 2024-07-15)](https://www.tker.co/p/earnings-season-q2-24-beat-rates)   | Stocks are at record highs as Q2 earnings season begins, with companies likely to beat estimates by about 5%. Analysts maintain positive outlooks despite recession risks being elevated. |
+| [Discover Hidden Tech Gems: The Invesco NASDAQ Next Gen ETF's Potential in Small-Cap Stocks (ETF Trends, 2024-07-15)](https://www.etftrends.com/etf-education-channel/time-different-small-cap-stocks-finally-perking-up/)   | QQQJ ETF, targeting Nasdaq Next Generation 100, includes promising tech stocks like Zoom, NICE, and Paylocity, offering growth opportunities in a market dominated by mega-cap equities. |
 
+# Market Pulse & Market News
+| Title | Summary |
+|-----|-----------|
+| [Prepare for Market Shake-Up: Key Sectors Poised to Surge as Fed Signals Interest Rate Cuts Before Election (Unknown, 2024-07-15)](https://moneymorning.com/2024/07/15/these-three-investment-are-getting-ready-to-be-jerome-powells-favorite/)   | The Fed's potential interest rate cuts may boost small cap stocks, regional banks, and real estate, prompting a significant market shift and attracting investors seeking higher returns. |
+| [Why You Should Care About the Timing of the Yield Curve's Next Move (WisdomTree's website, 2024-07-15)](https://www.wisdomtree.com/investments/blog/2024/07/10/when-will-the-yield-curve-uninvert)   | The UST yield curve's potential "un"inversion timing hinges on Fed rate cuts, with the UST 2-Year/10-Year spread likely reversing before the UST 3-Month/10-Year spread. |
+| [Smart Investing: How Quarterly Reviews Shape the Moat Index and Spotlight Top Undervalued Companies (Moat Index Quarterly Review, 2024-07-15)](https://www.vaneck.com/us/en/blogs/moat-investing/moat-stocks-steady-amid-techs-market-surge/)   | Moat Index reviews revealed a contrarian bias towards large caps, reduced Financials exposure, and increased allocations in Consumer Staples, Industrials, and Technology, remaining underweight in growth stocks. |
+| [Elevate Your Retirement Savings: How Higher Default Rates and Automatic Investing Are Reshaping Financial Futures (A Wealth of Common Sense, 2024-07-15)](https://awealthofcommonsense.com/2024/07/the-automatic-investing-revolution/)   | The shift to automatic retirement savings, like higher default rates, improves participation and investor behavior, positively affecting stock market valuations while highlighting the limitations of defined contribution plans. |
+| [Banking Renaissance: Why Investor Sentiment Shift Signals a Golden Opportunity in Financial Stocks (Unknown, 2024-07-15)](https://moneymorning.com/2024/07/15/this-bullish-trend-in-banks-is-just-starting-grab-it-now/)   | The banking sector shows potential recovery as interest rates may soon lower, with investor sentiment shifting and earnings reports exceeding expectations, presenting buying opportunities in ETFs like KBE and KRE. |
 
-# Fundamental
+# Portfolio Construction Techniques
+| Title | Summary |
+|-----|-----------|
+| [Balancing Investments: Why Diversification May Seem Boring But Is Actually Smart and Lowers Your Risk (None, 2024-07-14)](https://awealthofcommonsense.com/2024/07/a-balanced-portfolio-always-comes-with-regrets/)   | A balanced portfolio, while providing stability, often leads to regrets as market performance varies. Diversification reduces risk but can't predict future outcomes, emphasizing the importance of a long-term strategy. |
 
-| Title | Source | Summary |
-|-----|-------|----------|
-| [One of the stock market's most consistent trends](https://www.tker.co/p/earnings-season-q2-24-beat-rates) | TKer | Stocks are at record highs as Q2 earnings season begins, with companies likely to beat estimates by about 5%. Analysts maintain positive outlooks despite recession risks being elevated.  | 
-| [Is This Time Different? Small-Cap Stocks Finally Perking Up](https://www.etftrends.com/etf-education-channel/time-different-small-cap-stocks-finally-perking-up/) | ETF Trends | QQQJ ETF, targeting Nasdaq Next Generation 100, includes promising tech stocks like Zoom, NICE, and Paylocity, offering growth opportunities in a market dominated by mega-cap equities.  | 
-
-
-# Portfolio Construction
-
-| Title | Source | Summary |
-|-----|-------|----------|
-| [A Balanced Portfolio Always Comes with Regrets](https://awealthofcommonsense.com/2024/07/a-balanced-portfolio-always-comes-with-regrets/) | None | A balanced portfolio, while providing stability, often leads to regrets as market performance varies. Diversification reduces risk but can't predict future outcomes, emphasizing the importance of a long-term strategy.  | 

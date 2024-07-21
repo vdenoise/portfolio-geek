@@ -1,34 +1,33 @@
 ---
-title: "18 July 2024:  Automation, Quant and Tech in Focus"
+title: "Mastering Linux Scripting, Trend-Following Strategies, and Evolution of Large Language Models in Today's Financial Landscape"
 page-layout: full
 title-block-banner: true
 date: 07-18-2024
-image: /pictures/portfolio-optimisation.png
+categories: [automation,quant,tech]
+tags: [bash, python, perl, automation, scripting, trend-following, diversification, risk, language, models]
+image: /pictures/stock-valuation.png
 ---
 
-Here are the findings of the day.
+In today's curation, we explore several crucial topics in financial technology and market strategies. The highlights include:
 
-Happy reading!
+- Scripting languages like Bash, Python, and Perl for task automation in Linux.
+- A trend-following investment strategy framework by Dobromir Tzotchev focusing on risk management and portfolio diversification.
+- An overview of Large Language Models (LLMs) and their evolution in natural language processing.
 
-Vincent
 
 
 # Automation
+| Title | Summary |
+|-----|-----------|
+| [Unlock Your Linux System’s Potential: Automate Tasks with Bash, Python, and Perl Scripts for Improved Productivity (Linux Journal, 2024-07-18)](https://www.linuxjournal.com/content/simple-linux-shell-scripts-bash-python-and-perl-will-get-you-and-running)   | Bash, Python, and Perl are powerful Linux scripting languages for task automation, offering unique features like command integration, extensive libraries, and text processing capabilities for efficient system management. |
 
-| Title | Source | Summary |
-|-----|-------|----------|
-| [Simple Linux Shell Scripts in Bash, Python, and Perl That Will Get You Up and Running](https://www.linuxjournal.com/content/simple-linux-shell-scripts-bash-python-and-perl-will-get-you-and-running) | Linux Journal | Bash, Python, and Perl are powerful Linux scripting languages for task automation, offering unique features like command integration, extensive libraries, and text processing capabilities for efficient system management.  | 
+# Quantative Investing
+| Title | Summary |
+|-----|-----------|
+| [Master Trend-Following Strategies: Learn the Key Tactics for Consistent Market Success (Quantpedia, 2024-07-18)](https://quantpedia.com/)   | Dobromir Tzotchev's framework outlines a robust trend-following strategy emphasizing a clean signal, portfolio diversification, and effective risk management techniques for consistent returns in varying market conditions. |
 
+# Technology
+| Title | Summary |
+|-----|-----------|
+| [Neural Networks to Modern AI: The Evolution and Future of Large Language Models (Data Science Central, 2024-07-18)](https://www.datasciencecentral.com/history-and-future-of-llms/)   | Large Language Models (LLMs) evolved from rule-based NLP to transformers, utilizing attention mechanisms and multimodal inputs, with advancements in hardware, algorithms, and smaller models to enhance efficiency and performance. |
 
-# Quantitative Investing
-
-| Title | Source | Summary |
-|-----|-------|----------|
-| [Designing Robust Trend-Following System - QuantPedia](https://quantpedia.com/) | Quantpedia | Dobromir Tzotchev's framework outlines a robust trend-following strategy emphasizing a clean signal, portfolio diversification, and effective risk management techniques for consistent returns in varying market conditions.  | 
-
-
-# Tech
-
-| Title | Source | Summary |
-|-----|-------|----------|
-| [History and Future of LLMs](https://www.datasciencecentral.com/history-and-future-of-llms/) | Data Science Central | Large Language Models (LLMs) evolved from rule-based NLP to transformers, utilizing attention mechanisms and multimodal inputs, with advancements in hardware, algorithms, and smaller models to enhance efficiency and performance.  | 

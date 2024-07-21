@@ -1,29 +1,29 @@
 ---
-title: "19 July 2024: Daily selection of Quant, Finance and Coding links"
+title: "Daily Market Insights: Fed Influence, Small Cap Squeeze, and Portfolio Risk Reassessment"
 page-layout: full
 title-block-banner: true
 date: 07-19-2024
-image: /pictures/stock-valuation.png
+categories: [market-feed,portfolio-construction]
+tags: [investors stocks bonds volatility capital allocation risk diversification sentiment squeeze returns alpha portfolios]
+image: /pictures/portfolio-optimisation.png
 ---
 
-Here is what we found most interesting on 19 July 2024. 
-Today, 3 links caught our attention in particular.
+In today’s curation, we explore key trends and insights impacting financial markets:
 
-Happy reading,
-
-Vincent
-
-
-# Market Feed
-
-| Title | Source | Summary |
-|-----|-------|----------|
-| [Short Sellers Hate That These Stocks Are Moving Higher](https://moneymorning.com/2024/07/19/short-sellers-hate-that-these-stocks-are-moving-higher/) | Traders Reserve | Investors are moving away from large cap stocks as the Fed is likely to drop interest rates, causing a shift in sentiment. This is creating short squeeze opportunities in small cap stocks. Some short squeeze candidates include the S&P Biotech ETF(XBI), Chevron (CVX), and Royal Caribbean Cruise Lines (RCL).  | 
+- Shift in investor sentiment from large-cap to small-cap stocks due to potential Fed interest rate cuts, leading to short squeeze opportunities.
+- Analysis of the evolving correlation between stocks and bonds, affecting portfolio risk assessment.
+- Insights on private capital valuation and the significance of lagged betas for managing systemic risk.
 
 
-# Portfolio Construction
 
-| Title | Source | Summary |
-|-----|-------|----------|
-| [Why is the stock-bond correlation important](http://mrzepczynski.blogspot.com/2024/07/why-is-stock-bond-correlation-important.html) | Disciplined Systematic Global Macro Views | The correlation between stocks and bonds is historically negative, providing diversification. However, this correlation can change over time, leading to increased portfolio risk. Investors should regularly reassess their asset allocation.  | 
-| [The Impact of Amortizing Volatility across Private Investments](https://alphaarchitect.com/2024/07/amortizing-volatility/) | Alpha Architect | Private capital managers have discretion in valuing their portfolios, which results in smoother returns and understated volatility. Failure to consider lagged betas leads to underestimating risk and overestimating alpha. Mark Anson's study found that private investments exhibit significant serial correlation at the quarterly level and that lagged betas account for a significant amount of returns associated with private capital alpha. Adjusting for lagged betas leads to lower allocations and drops in Sharpe ratios. It is important for investors to properly account for systemic risk in private assets by including estimates of lagged betas.  | 
+# Market Pulse & Market News
+| Title | Summary |
+|-----|-----------|
+| [Unlock Potential Gains: Top Stocks Benefiting from Potential Fed Rate Cuts and Short Squeeze Opportunities (Traders Reserve, 2024-07-19)](https://moneymorning.com/2024/07/19/short-sellers-hate-that-these-stocks-are-moving-higher/)   | Investors are moving away from large cap stocks as the Fed is likely to drop interest rates, causing a shift in sentiment. This is creating short squeeze opportunities in small cap stocks. Some short squeeze candidates include the S&P Biotech ETF(XBI), Chevron (CVX), and Royal Caribbean Cruise Lines (RCL). |
+
+# Portfolio Construction Techniques
+| Title | Summary |
+|-----|-----------|
+| [Rethinking Your Portfolio: The Crucial Impact of Changing Stock-Bond Correlations (Unknown, 2024-07-19)](http://mrzepczynski.blogspot.com/2024/07/why-is-stock-bond-correlation-important.html)   | The correlation between stocks and bonds is historically negative, providing diversification. However, this correlation can change over time, leading to increased portfolio risk. Investors should regularly reassess their asset allocation. |
+| [Private Investments: Unveiling Hidden Risks and Smoothing Effects on Volatility (Alpha Architect, 2024-07-19)](https://alphaarchitect.com/2024/07/amortizing-volatility/)   | Private capital managers have discretion in valuing their portfolios, which results in smoother returns and understated volatility. Failure to consider lagged betas leads to underestimating risk and overestimating alpha. Mark Anson's study found that private investments exhibit significant serial correlation at the quarterly level and that lagged betas account for a significant amount of returns associated with private capital alpha. Adjusting for lagged betas leads to lower allocations and drops in Sharpe ratios. It is important for investors to properly account for systemic risk in private assets by including estimates of lagged betas. |
+

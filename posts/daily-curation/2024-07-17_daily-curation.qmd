@@ -1,66 +1,57 @@
 ---
-title: "17 July 2024: Daily Curation with Asset Management, Coding and Economics in Focus"
+title: "Today's Curation: Master Python Trading with Alpaca, Retirement Strategies, & Managing Risks with Options"
 page-layout: full
 title-block-banner: true
 date: 07-17-2024
-image: /pictures/laptop.png
+categories: [asset-management,coding,economics,fundamental,portfolio-construction]
+tags: [retirement, trading, python, hedging, economics, recession, risk, allocation, strategies, analysis]
+image: /pictures/laptop-data.png
 ---
 
-Here are the findings of the day.
+In this curation for 17/07/2024, we explore a range of financial concepts and strategies that can enhance your investment approach:
 
-Happy reading!
+- Retirement planning frameworks: the 4% and 25x rules
+- Trading with Alpaca: setting up Python and executing trades
+- Utilizing Pandas for strategy testing in Python
+- Portfolio hedging with put options 
+- Python protocols for improved code structure 
+- Historical economic perspectives of Carl Linnaeus 
+- Recession probabilities and economic indicators 
+- Central banks and yield curve control 
+- Analysis of China's real estate market impacts 
+- Tactical asset allocation strategies 
 
-Vincent
+This selection aims to provide insights into both practical trading techniques and broader economic theories.
+
 
 
 # Asset Management
-
-| Title | Source | Summary |
-|-----|-------|----------|
-| [How Much Money You Need For Retirement](https://awealthofcommonsense.com/2024/07/how-much-money-you-need-for-retirement/) | A Wealth of Common Sense | The 4% rule and 25x rule provide retirement planning frameworks, but individual circumstances may necessitate more savings for a greater safety margin against uncertainties.  | 
-
+| Title | Summary |
+|-----|-----------|
+| [Is 25x Your Annual Spending the Magic Number for a Secure Retirement? (A Wealth of Common Sense, 2024-07-17)](https://awealthofcommonsense.com/2024/07/how-much-money-you-need-for-retirement/)   | The 4% rule and 25x rule provide retirement planning frameworks, but individual circumstances may necessitate more savings for a greater safety margin against uncertainties. |
 
 # Coding
-
-| Title | Source | Summary |
-|-----|-------|----------|
-| [How to trade a covered call with Alpaca (the easy way)](https://pyquantnews.com/the-pyquant-newsletter/how-to-trade-a-covered-call-with-alpaca) | Alpaca | Create an Alpaca account, set up Python with the Alpaca library, and use the API to execute trades for covered calls, managing positions effectively.  | 
-| [Quickly make a trading strategy with a 82% win rate](https://pyquantnews.com/the-pyquant-newsletter/quickly-make-a-trading-strategy-with-a-82-win-rate) | Quantifiable Edges | Pandas in Python enables quick trading strategy testing with an 82% win rate by analyzing historical data, identifying 3-day losing streaks, and calculating future returns.  | 
-| [Portfolio Hedging with Put Options](https://robotwealth.com/portfolio-hedging-with-put-options/) | Robot Wealth | This post discusses portfolio hedging using put options to limit downside risk, including examples, calculating beta, and considerations of risk tolerance and trading edge when hedging strategies.  | 
-| [Python Protocols: Leveraging Structural Subtyping](https://realpython.com/python-protocol/) | Towards Data Science | Protocols in Python enable structural subtyping, allowing type checking without inheritance. They enhance type hints for static duck typing, improving code flexibility, readability, and reliability.  | 
-
+| Title | Summary |
+|-----|-----------|
+| [Master Covered Calls in a Bullish Market: Simple Python Automation with Alpaca Trading API (Alpaca, 2024-06-21)](https://pyquantnews.com/the-pyquant-newsletter/how-to-trade-a-covered-call-with-alpaca)   | Create an Alpaca account, set up Python with the Alpaca library, and use the API to execute trades for covered calls, managing positions effectively. |
+| [Unlock Trading Secrets: Use Python to Achieve an 82% Win Rate with Simple SPY Strategy (Quantifiable Edges, 2024-06-19)](https://pyquantnews.com/the-pyquant-newsletter/quickly-make-a-trading-strategy-with-a-82-win-rate)   | Pandas in Python enables quick trading strategy testing with an 82% win rate by analyzing historical data, identifying 3-day losing streaks, and calculating future returns. |
+| [Shield Your Investments: Easy Techniques to Protect Your Portfolio with Put Options (Robot Wealth, 2024-07-16)](https://robotwealth.com/portfolio-hedging-with-put-options/)   | This post discusses portfolio hedging using put options to limit downside risk, including examples, calculating beta, and considerations of risk tolerance and trading edge when hedging strategies. |
+| [Unlock Dynamic Python Typing: Master Protocols for Robust, Cleaner Code Without Inheritance Constraints (Towards Data Science, 2024-07-17)](https://realpython.com/python-protocol/)   | Protocols in Python enable structural subtyping, allowing type checking without inheritance. They enhance type hints for static duck typing, improving code flexibility, readability, and reliability. |
 
 # Economics
+| Title | Summary |
+|-----|-----------|
+| [Carl Linnaeus: The Botanist Who Secretly Shaped Economic Theory and Advocated Autarky (Conversable Economist, 2024-07-16)](https://conversableeconomist.com/2024/07/16/unexpected-economist-carl-linnaeus-on-economic-theory/)   | Carl Linnaeus viewed economics as essential for well-being, favored mercantilism, endorsed self-sufficiency, and believed all nations possessed natural resources for economic flourishing, despite his obsession with gold. |
+| [Recession Risks Explained: Key Metrics to Watch for June 2025 Forecasts (NBER, 2024-07-17)](https://econbrowser.com/archives/2024/07/recession-probabilities-for-june-2025)   | Recession probabilities for June 2025 indicate varied outcomes based on models, showing 60% likelihood with basic indicators and 20% with additional debt measures, reflecting declining debt-service ratios. |
+| [The Hidden Risks of Central Bank Yield Curve Control and Its Impact on Economic Stability (Climateer Investing, 2024-07-17)](http://climateerinvest.blogspot.com/2024/07/yield-curve-control-means-party-can.html)   | Central banks disguise risk through yield curve control, preventing bond yields from rising and perpetuating economic stagnation, resulting in more debt and inefficient allocation of resources. |
 
-| Title | Source | Summary |
-|-----|-------|----------|
-| [Unexpected Economist: Carl Linnaeus on Economic Theory](https://conversableeconomist.com/2024/07/16/unexpected-economist-carl-linnaeus-on-economic-theory/) | Conversable Economist | Carl Linnaeus viewed economics as essential for well-being, favored mercantilism, endorsed self-sufficiency, and believed all nations possessed natural resources for economic flourishing, despite his obsession with gold.  | 
-| [Recession Probabilities for June 2025](https://econbrowser.com/archives/2024/07/recession-probabilities-for-june-2025) | NBER | Recession probabilities for June 2025 indicate varied outcomes based on models, showing 60% likelihood with basic indicators and 20% with additional debt measures, reflecting declining debt-service ratios.  | 
-| [Yield Curve Control Means The Party Can Continue, What's Not To Love?](http://climateerinvest.blogspot.com/2024/07/yield-curve-control-means-party-can.html) | Climateer Investing | Central banks disguise risk through yield curve control, preventing bond yields from rising and perpetuating economic stagnation, resulting in more debt and inefficient allocation of resources.  | 
+# Fundamental Investing
+| Title | Summary |
+|-----|-----------|
+| [China's Real Estate Woes: Understanding Economic Sentiment Through Insightful Graphs from Apollo's Torsten Slok (Econbrowser, 2024-07-17)](https://econbrowser.com/archives/2024/07/china-economic-sentiment)   | Torsten Slok's China analysis highlights real estate market collapse effects, featuring graphs illustrating economic challenges, emphasizing a constant narrative in interpreting China's economic statistics. |
 
+# Portfolio Construction Techniques
+| Title | Summary |
+|-----|-----------|
+| [Optimize Your Investments with Pragmatic Asset Allocation: A Smart, Tax-Efficient Strategy for Every Market Condition (Quantpedia, 2024-07-16)](https://allocatesmartly.com/pragmatic-asset-allocation-from-vojtko-and-javorska-of-quantpedia/)   | Pragmatic Asset Allocation is a tactical strategy focusing on tax efficiency, trading based on yield curve inversion, and adjusting asset allocation quarterly for optimal performance. |
 
-# Fundamental
-
-| Title | Source | Summary |
-|-----|-------|----------|
-| [China Economic Sentiment](https://econbrowser.com/archives/2024/07/china-economic-sentiment) | Econbrowser | Torsten Slok's China analysis highlights real estate market collapse effects, featuring graphs illustrating economic challenges, emphasizing a constant narrative in interpreting China's economic statistics.  | 
-
-
-# Portfolio Construction
-
-| Title | Source | Summary |
-|-----|-------|----------|
-| [Pragmatic Asset Allocation from Vojtko and Javorská of Quantpedia](https://allocatesmartly.com/pragmatic-asset-allocation-from-vojtko-and-javorska-of-quantpedia/) | Quantpedia | Pragmatic Asset Allocation is a tactical strategy focusing on tax efficiency, trading based on yield curve inversion, and adjusting asset allocation quarterly for optimal performance.  | 
-| [Can we please stop selling these products](https://klementoninvesting.substack.com/p/can-we-please-stop-selling-these) | Klement on Investing | Structured products are illiquid, high-fee investments that underperform traditional portfolios, providing minimal risk reduction while diminishing returns, making them unworthy for investors.  | 
-| [Commodities for the Long Run?](https://blogs.cfainstitute.org/investor/2024/07/08/commodities-for-the-long-run/) | CFA Institute Research Foundation | Commodities may appear inefficient short-term but offer significant benefits in long-term portfolios, especially against inflation, warranting reevaluation of their role in investment strategies.  | 
-| [Managed Futures versus Market-Neutral Multi-Factor Investing](https://insights.finominal.com/research-managed-futures-versus-market-neutral-multi-factor-investing) | Finomial | Managed futures and market-neutral multi-factor investing both provide uncorrelated returns, but their performance trends exhibit significant similarities, limiting diversification benefits when combined in portfolios.  | 
-| [Commodities for the Long Run?](https://blogs.cfainstitute.org/investor/2024/07/08/commodities-for-the-long-run/) | CFA Institute Research | Commodities show improved portfolio efficiency over longer horizons, especially during inflation, suggesting significant optimal allocations when considering real returns as opposed to nominal returns.  | 
-| [Classifying hedge fund strategies once again](http://mrzepczynski.blogspot.com/2024/07/classifying-hedge-fund-strategies-once.html) | Disciplined Systematic Macro Views | Managed futures excel during market drawdowns, offering strong alpha, low beta, and diversification benefits, making them a valuable addition to investment portfolios for downside protection.  | 
-| [When Rebalancing Creates Higher Returns-and When It Doesn’t](https://www.morningstar.com/columns/rekenthaler-report/when-rebalancing-creates-higher-returnsand-when-it-doesnt) | Morningstar | Rebalancing can enhance portfolio returns when reallocating between divergent asset performances, but may not benefit portfolios with similar assets. Investors should evaluate performance dynamics before rebalancing.  | 
-
-
-# Tech
-
-| Title | Source | Summary |
-|-----|-------|----------|
-| [Goldman Sachs Throws Cold Water on AI Mania](https://www.institutionalinvestor.com/article/2di0s1e6m7h197mfh6fb4/portfolio/goldman-sachs-throws-cold-water-on-ai-mania) | Goldman Sachs | Goldman Sachs critiques excessive AI investment, highlighting high costs, lack of significant breakthroughs, and other challenges like resource consumption and ethical issues, questioning the technology’s expected impact on productivity.  | 

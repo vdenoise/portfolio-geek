@@ -1,0 +1,39 @@
+---
+title: "Daily Curations: Strava Insights, Key Finance Coding Skills, Data Science Portfolios, and Economic Forecasts"
+page-layout: full
+title-block-banner: true
+date: 07-21-2024
+categories: [coding,economics,market-feed]
+tags: [strava, analysis, programming, finance, portfolio, trends, recession, savings, consumption, markets]
+image: /pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg
+---
+
+In today's curation, we explore various topics relevant to finance and data analysis, including:
+
+- Analyzing competitive segments on Strava using R
+- Essential programming languages for finance careers
+- Building a professional data science portfolio with mkdocs
+- Trends in real household net worth and its implications
+- Economic forecasts indicating a potential U.S. recession
+
+Please find the detailed articles and resources in the table below.
+
+
+
+# Coding
+| Title | Summary |
+|-----|-----------|
+| [Unlocking Strava Secrets: Using R and Data Science to Dominate Running Segments and Set Course Records (Rstats, 2024-07-20)](https://www.r-bloggers.com/2024/07/king-of-the-mountain-using-r-to-bag-a-strava-kom/)   | Strava allows users to compete for King or Queen of the Mountain titles. Using R and its API, users can analyse segments to identify beatable course records for running. |
+| [Unlock Your Finance Career: Master These 3 Programming Languages for Top Job Prospects (TechSpot, 2024-07-20)](https://www.techspot.com/news/103878-3-programming-languages-help-you-land-job-finance.html)   | Three key programming languages for finance jobs are SQL, Python, and Java. SQL leads with 24.4% demand, followed by Python at 18%, and Java at 14%. |
+| [Create a Stunning Data Science Portfolio Using Python and mkdocs: A Step-by-Step Guide (Towards Data Science, 2024-07-20)](https://towardsdatascience.com/full-guide-to-build-a-professionnal-portfolio-with-python-markdown-git-and-github-page-for-66d12f7859f0)   | This article details the author's journey in creating a professional data science portfolio using mkdocs, highlighting environment setup, Git configuration, and iterative improvement based on community standards. |
+
+# Economics
+| Title | Summary |
+|-----|-----------|
+| [Recession Paradox: Can Rising Household Wealth Signal Economic Downturn? (Apollo, 2024-07-20)](https://econbrowser.com/archives/2024/07/can-one-have-a-recession-start-when-real-household-wealth-is-rising)   | Torsten Slok discusses real household net worth trends around NBER peaks. Historically, net worth decreased before recessions, except in 2020. In 2024Q1, real net worth increased by 10%. |
+
+# Market Pulse & Market News
+| Title | Summary |
+|-----|-----------|
+| [Impending Recession Signals as Consumer Savings Decline and Investment Contributions Waver (Barron's, 2024-07-20)](http://climateerinvest.blogspot.com/2024/07/recession-odds-grow-as-consumers-pull.html)   | BCA Research forecasts a U.S. recession by late 2024 or early 2025, citing dwindling consumer savings, reduced consumption growth, and tight monetary policy impacting capital spending. |
+

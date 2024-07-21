@@ -10,9 +10,98 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Fri, 19 Jul 2024 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 20 Jul 2024 23:00:00 GMT</lastBuildDate>
 <item>
-  <title>Bitcoin’s Safe-Haven Status, GPT-4o Mini’s Launch, and Mastering AI Content: Today’s Key Insights</title>
+  <title>Daily Curations: Strava Insights, Key Finance Coding Skills, Data Science Portfolios, and Economic Forecasts</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-21_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In today’s curation, we explore various topics relevant to finance and data analysis, including:</p>
+<ul>
+<li>Analyzing competitive segments on Strava using R</li>
+<li>Essential programming languages for finance careers</li>
+<li>Building a professional data science portfolio with mkdocs</li>
+<li>Trends in real household net worth and its implications</li>
+<li>Economic forecasts indicating a potential U.S. recession</li>
+</ul>
+<p>Please find the detailed articles and resources in the table below.</p>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.r-bloggers.com/2024/07/king-of-the-mountain-using-r-to-bag-a-strava-kom/">Unlocking Strava Secrets: Using R and Data Science to Dominate Running Segments and Set Course Records (Rstats, 2024-07-20)</a></td>
+<td>Strava allows users to compete for King or Queen of the Mountain titles. Using R and its API, users can analyse segments to identify beatable course records for running.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.techspot.com/news/103878-3-programming-languages-help-you-land-job-finance.html">Unlock Your Finance Career: Master These 3 Programming Languages for Top Job Prospects (TechSpot, 2024-07-20)</a></td>
+<td>Three key programming languages for finance jobs are SQL, Python, and Java. SQL leads with 24.4% demand, followed by Python at 18%, and Java at 14%.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/full-guide-to-build-a-professionnal-portfolio-with-python-markdown-git-and-github-page-for-66d12f7859f0">Create a Stunning Data Science Portfolio Using Python and mkdocs: A Step-by-Step Guide (Towards Data Science, 2024-07-20)</a></td>
+<td>This article details the author’s journey in creating a professional data science portfolio using mkdocs, highlighting environment setup, Git configuration, and iterative improvement based on community standards.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://econbrowser.com/archives/2024/07/can-one-have-a-recession-start-when-real-household-wealth-is-rising">Recession Paradox: Can Rising Household Wealth Signal Economic Downturn? (Apollo, 2024-07-20)</a></td>
+<td>Torsten Slok discusses real household net worth trends around NBER peaks. Historically, net worth decreased before recessions, except in 2020. In 2024Q1, real net worth increased by 10%.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-pulse-market-news" class="level1">
+<h1>Market Pulse &amp; Market News</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://climateerinvest.blogspot.com/2024/07/recession-odds-grow-as-consumers-pull.html">Impending Recession Signals as Consumer Savings Decline and Investment Contributions Waver (Barron’s, 2024-07-20)</a></td>
+<td>BCA Research forecasts a U.S. recession by late 2024 or early 2025, citing dwindling consumer savings, reduced consumption growth, and tight monetary policy impacting capital spending.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <category>economics</category>
+  <category>market-feed</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-21_daily-curation.html</guid>
+  <pubDate>Sat, 20 Jul 2024 23:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Daily Insights: GPT-4o Mini Launch, Bitcoin’s Safe-Haven Surge, AI Content Best Practices, Hill Repeats for Runners</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-20_daily-curation.html</link>
   <description><![CDATA[ 
@@ -21,12 +110,12 @@
 
 
 
-<p>In today’s curation, we explore a range of topics relevant to technology, fitness, and finance:</p>
+<p>In today’s curation, we explore several noteworthy topics that highlight recent developments and insights in technology and finance:</p>
 <ul>
-<li>OpenAI’s launch of GPT-4o mini, offering a cost-effective alternative to GPT-4o.</li>
-<li>Guidelines for creating effective content prompts for generative AI.</li>
-<li>The benefits of hill repeats for enhancing cardiovascular fitness.</li>
-<li>Bitcoin’s disconnection from the S&amp;P 500 and its emerging status as a safe-haven asset.</li>
+<li>OpenAI’s launch of the more affordable GPT-4o mini.</li>
+<li>Strategies for creating effective content prompts for generative AI.</li>
+<li>The benefits of hill repeats for cardiovascular fitness.</li>
+<li>Bitcoin’s evolving relationship with the S&amp;P 500 and its rising status as a safe-haven asset.</li>
 </ul>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
@@ -34,14 +123,12 @@
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://lifehacker.com/tech/gpt-4o-mini-is-a-cheaper-almost-as-good-gpt-4o">GPT-4o Mini Is a Cheaper, Almost as Good Version of GPT-4o</a></td>
-<td>OpenAI Blog</td>
+<td><a href="https://lifehacker.com/tech/gpt-4o-mini-is-a-cheaper-almost-as-good-gpt-4o">Affordable AI Power: OpenAI’s GPT-4o Mini Brings High-Performance Language Processing at a Lower Cost (OpenAI Blog, 2024-07-19)</a></td>
 <td>OpenAI has launched GPT-4o mini, a cheaper alternative to GPT-4o, lacking audio/video processing. It offers similar performance and safety features but at significantly reduced pricing for developers.</td>
 </tr>
 </tbody>
@@ -53,33 +140,29 @@
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://contently.com/2024/07/19/better-content-prompts-for-generative-ai/">How to Level Up Your Content Prompts for Generative AI</a></td>
-<td>The Content Strategist</td>
+<td><a href="https://contently.com/2024/07/19/better-content-prompts-for-generative-ai/">Mastering AI Prompts: Elevate Your Content Creation with Precise, Strategic Commands (The Content Strategist, 2024-07-20)</a></td>
 <td>Creating effective content prompts for generative AI involves specificity, choosing the right tools, fact-checking, and navigating copyright issues. Clear guidelines help mitigate risks associated with AI-generated content.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="personal-developement" class="level1">
-<h1>Personal Developement</h1>
+<section id="personal-development" class="level1">
+<h1>Personal Development</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://lifehacker.com/health/how-to-run-hill-repeats">Why You Should Be Running Hill Repeats (and How to Get Started)</a></td>
-<td>The blog name is not explicitly mentioned in the provided content.</td>
+<td><a href="https://lifehacker.com/health/how-to-run-hill-repeats">Mastering Your Runs: The Ultimate Guide to Effective Hill Workouts for Peak Cardiovascular Fitness and Strength Training (The blog name is not explicitly mentioned in the provided content., 2024-07-19)</a></td>
 <td>Hill repeats improve cardiovascular fitness and strength. They are low impact, enhance running form, and provide confidence. Use varied inclines and adjust reps as needed, even on flat terrain.</td>
 </tr>
 </tbody>
@@ -91,14 +174,12 @@
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://www.valuewalk.com/bitcoin-sp500-correlation-breaks/">Bitcoin Snaps Its Correlation with the S&amp;P 500</a></td>
-<td>Bloomberg</td>
+<td><a href="https://www.valuewalk.com/bitcoin-sp500-correlation-breaks/">Bitcoin Defies Market Trends: Bullish Surge Amid US Market Decline and Financial Uncertainty (Bloomberg, 2024-07-20)</a></td>
 <td>Bitcoin has broken its correlation with the S&amp;P 500, rising despite market declines. Strong ETF inflows and strategic remarks about Bitcoin boost its potential as a safe-haven asset.</td>
 </tr>
 </tbody>
@@ -108,12 +189,16 @@
 </section>
 
  ]]></description>
+  <category>ai</category>
+  <category>automation</category>
+  <category>personal-dvpt</category>
+  <category>portfolio-construction</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-20_daily-curation.html</guid>
   <pubDate>Fri, 19 Jul 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/laptop-data.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://portfolio-geek.com/pictures/blog-post.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
-  <title>19 July 2024: Daily selection of Quant, Finance and Coding links</title>
+  <title>Daily Market Insights: Fed Influence, Small Cap Squeeze, and Portfolio Risk Reassessment</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-19_daily-curation.html</link>
   <description><![CDATA[ 
@@ -122,47 +207,45 @@
 
 
 
-<p>Here is what we found most interesting on 19 July 2024. Today, 3 links caught our attention in particular.</p>
-<p>Happy reading,</p>
-<p>Vincent</p>
-<section id="market-feed" class="level1">
-<h1>Market Feed</h1>
+<p>In today’s curation, we explore key trends and insights impacting financial markets:</p>
+<ul>
+<li>Shift in investor sentiment from large-cap to small-cap stocks due to potential Fed interest rate cuts, leading to short squeeze opportunities.</li>
+<li>Analysis of the evolving correlation between stocks and bonds, affecting portfolio risk assessment.</li>
+<li>Insights on private capital valuation and the significance of lagged betas for managing systemic risk.</li>
+</ul>
+<section id="market-pulse-market-news" class="level1">
+<h1>Market Pulse &amp; Market News</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://moneymorning.com/2024/07/19/short-sellers-hate-that-these-stocks-are-moving-higher/">Short Sellers Hate That These Stocks Are Moving Higher</a></td>
-<td>Traders Reserve</td>
+<td><a href="https://moneymorning.com/2024/07/19/short-sellers-hate-that-these-stocks-are-moving-higher/">Unlock Potential Gains: Top Stocks Benefiting from Potential Fed Rate Cuts and Short Squeeze Opportunities (Traders Reserve, 2024-07-19)</a></td>
 <td>Investors are moving away from large cap stocks as the Fed is likely to drop interest rates, causing a shift in sentiment. This is creating short squeeze opportunities in small cap stocks. Some short squeeze candidates include the S&amp;P Biotech ETF(XBI), Chevron (CVX), and Royal Caribbean Cruise Lines (RCL).</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="portfolio-construction" class="level1">
-<h1>Portfolio Construction</h1>
+<section id="portfolio-construction-techniques" class="level1">
+<h1>Portfolio Construction Techniques</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="http://mrzepczynski.blogspot.com/2024/07/why-is-stock-bond-correlation-important.html">Why is the stock-bond correlation important</a></td>
-<td>Disciplined Systematic Global Macro Views</td>
+<td><a href="http://mrzepczynski.blogspot.com/2024/07/why-is-stock-bond-correlation-important.html">Rethinking Your Portfolio: The Crucial Impact of Changing Stock-Bond Correlations (Unknown, 2024-07-19)</a></td>
 <td>The correlation between stocks and bonds is historically negative, providing diversification. However, this correlation can change over time, leading to increased portfolio risk. Investors should regularly reassess their asset allocation.</td>
 </tr>
 <tr class="even">
-<td><a href="https://alphaarchitect.com/2024/07/amortizing-volatility/">The Impact of Amortizing Volatility across Private Investments</a></td>
-<td>Alpha Architect</td>
+<td><a href="https://alphaarchitect.com/2024/07/amortizing-volatility/">Private Investments: Unveiling Hidden Risks and Smoothing Effects on Volatility (Alpha Architect, 2024-07-19)</a></td>
 <td>Private capital managers have discretion in valuing their portfolios, which results in smoother returns and understated volatility. Failure to consider lagged betas leads to underestimating risk and overestimating alpha. Mark Anson’s study found that private investments exhibit significant serial correlation at the quarterly level and that lagged betas account for a significant amount of returns associated with private capital alpha. Adjusting for lagged betas leads to lower allocations and drops in Sharpe ratios. It is important for investors to properly account for systemic risk in private assets by including estimates of lagged betas.</td>
 </tr>
 </tbody>
@@ -172,12 +255,14 @@
 </section>
 
  ]]></description>
+  <category>market-feed</category>
+  <category>portfolio-construction</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-19_daily-curation.html</guid>
   <pubDate>Thu, 18 Jul 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/stock-valuation.png" medium="image" type="image/png" height="96" width="144"/>
+  <media:content url="https://portfolio-geek.com/pictures/portfolio-optimisation.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
-  <title>18 July 2024: Automation, Quant and Tech in Focus</title>
+  <title>Mastering Linux Scripting, Trend-Following Strategies, and Evolution of Large Language Models in Today’s Financial Landscape</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-18_daily-curation.html</link>
   <description><![CDATA[ 
@@ -186,61 +271,58 @@
 
 
 
-<p>Here are the findings of the day.</p>
-<p>Happy reading!</p>
-<p>Vincent</p>
+<p>In today’s curation, we explore several crucial topics in financial technology and market strategies. The highlights include:</p>
+<ul>
+<li>Scripting languages like Bash, Python, and Perl for task automation in Linux.</li>
+<li>A trend-following investment strategy framework by Dobromir Tzotchev focusing on risk management and portfolio diversification.</li>
+<li>An overview of Large Language Models (LLMs) and their evolution in natural language processing.</li>
+</ul>
 <section id="automation" class="level1">
 <h1>Automation</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://www.linuxjournal.com/content/simple-linux-shell-scripts-bash-python-and-perl-will-get-you-and-running">Simple Linux Shell Scripts in Bash, Python, and Perl That Will Get You Up and Running</a></td>
-<td>Linux Journal</td>
+<td><a href="https://www.linuxjournal.com/content/simple-linux-shell-scripts-bash-python-and-perl-will-get-you-and-running">Unlock Your Linux System’s Potential: Automate Tasks with Bash, Python, and Perl Scripts for Improved Productivity (Linux Journal, 2024-07-18)</a></td>
 <td>Bash, Python, and Perl are powerful Linux scripting languages for task automation, offering unique features like command integration, extensive libraries, and text processing capabilities for efficient system management.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="quantitative-investing" class="level1">
-<h1>Quantitative Investing</h1>
+<section id="quantative-investing" class="level1">
+<h1>Quantative Investing</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://quantpedia.com/">Designing Robust Trend-Following System - QuantPedia</a></td>
-<td>Quantpedia</td>
+<td><a href="https://quantpedia.com/">Master Trend-Following Strategies: Learn the Key Tactics for Consistent Market Success (Quantpedia, 2024-07-18)</a></td>
 <td>Dobromir Tzotchev’s framework outlines a robust trend-following strategy emphasizing a clean signal, portfolio diversification, and effective risk management techniques for consistent returns in varying market conditions.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="tech" class="level1">
-<h1>Tech</h1>
+<section id="technology" class="level1">
+<h1>Technology</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://www.datasciencecentral.com/history-and-future-of-llms/">History and Future of LLMs</a></td>
-<td>Data Science Central</td>
+<td><a href="https://www.datasciencecentral.com/history-and-future-of-llms/">Neural Networks to Modern AI: The Evolution and Future of Large Language Models (Data Science Central, 2024-07-18)</a></td>
 <td>Large Language Models (LLMs) evolved from rule-based NLP to transformers, utilizing attention mechanisms and multimodal inputs, with advancements in hardware, algorithms, and smaller models to enhance efficiency and performance.</td>
 </tr>
 </tbody>
@@ -250,12 +332,15 @@
 </section>
 
  ]]></description>
+  <category>automation</category>
+  <category>quant</category>
+  <category>tech</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-18_daily-curation.html</guid>
   <pubDate>Wed, 17 Jul 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/portfolio-optimisation.png" medium="image" type="image/png" height="96" width="144"/>
+  <media:content url="https://portfolio-geek.com/pictures/stock-valuation.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
-  <title>17 July 2024: Daily Curation with Asset Management, Coding and Economics in Focus</title>
+  <title>Today’s Curation: Master Python Trading with Alpaca, Retirement Strategies, &amp; Managing Risks with Options</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-17_daily-curation.html</link>
   <description><![CDATA[ 
@@ -264,23 +349,32 @@
 
 
 
-<p>Here are the findings of the day.</p>
-<p>Happy reading!</p>
-<p>Vincent</p>
+<p>In this curation for 17/07/2024, we explore a range of financial concepts and strategies that can enhance your investment approach:</p>
+<ul>
+<li>Retirement planning frameworks: the 4% and 25x rules</li>
+<li>Trading with Alpaca: setting up Python and executing trades</li>
+<li>Utilizing Pandas for strategy testing in Python</li>
+<li>Portfolio hedging with put options</li>
+<li>Python protocols for improved code structure</li>
+<li>Historical economic perspectives of Carl Linnaeus</li>
+<li>Recession probabilities and economic indicators</li>
+<li>Central banks and yield curve control</li>
+<li>Analysis of China’s real estate market impacts</li>
+<li>Tactical asset allocation strategies</li>
+</ul>
+<p>This selection aims to provide insights into both practical trading techniques and broader economic theories.</p>
 <section id="asset-management" class="level1">
 <h1>Asset Management</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://awealthofcommonsense.com/2024/07/how-much-money-you-need-for-retirement/">How Much Money You Need For Retirement</a></td>
-<td>A Wealth of Common Sense</td>
+<td><a href="https://awealthofcommonsense.com/2024/07/how-much-money-you-need-for-retirement/">Is 25x Your Annual Spending the Magic Number for a Secure Retirement? (A Wealth of Common Sense, 2024-07-17)</a></td>
 <td>The 4% rule and 25x rule provide retirement planning frameworks, but individual circumstances may necessitate more savings for a greater safety margin against uncertainties.</td>
 </tr>
 </tbody>
@@ -292,29 +386,24 @@
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://pyquantnews.com/the-pyquant-newsletter/how-to-trade-a-covered-call-with-alpaca">How to trade a covered call with Alpaca (the easy way)</a></td>
-<td>Alpaca</td>
+<td><a href="https://pyquantnews.com/the-pyquant-newsletter/how-to-trade-a-covered-call-with-alpaca">Master Covered Calls in a Bullish Market: Simple Python Automation with Alpaca Trading API (Alpaca, 2024-06-21)</a></td>
 <td>Create an Alpaca account, set up Python with the Alpaca library, and use the API to execute trades for covered calls, managing positions effectively.</td>
 </tr>
 <tr class="even">
-<td><a href="https://pyquantnews.com/the-pyquant-newsletter/quickly-make-a-trading-strategy-with-a-82-win-rate">Quickly make a trading strategy with a 82% win rate</a></td>
-<td>Quantifiable Edges</td>
+<td><a href="https://pyquantnews.com/the-pyquant-newsletter/quickly-make-a-trading-strategy-with-a-82-win-rate">Unlock Trading Secrets: Use Python to Achieve an 82% Win Rate with Simple SPY Strategy (Quantifiable Edges, 2024-06-19)</a></td>
 <td>Pandas in Python enables quick trading strategy testing with an 82% win rate by analyzing historical data, identifying 3-day losing streaks, and calculating future returns.</td>
 </tr>
 <tr class="odd">
-<td><a href="https://robotwealth.com/portfolio-hedging-with-put-options/">Portfolio Hedging with Put Options</a></td>
-<td>Robot Wealth</td>
+<td><a href="https://robotwealth.com/portfolio-hedging-with-put-options/">Shield Your Investments: Easy Techniques to Protect Your Portfolio with Put Options (Robot Wealth, 2024-07-16)</a></td>
 <td>This post discusses portfolio hedging using put options to limit downside risk, including examples, calculating beta, and considerations of risk tolerance and trading edge when hedging strategies.</td>
 </tr>
 <tr class="even">
-<td><a href="https://realpython.com/python-protocol/">Python Protocols: Leveraging Structural Subtyping</a></td>
-<td>Towards Data Science</td>
+<td><a href="https://realpython.com/python-protocol/">Unlock Dynamic Python Typing: Master Protocols for Robust, Cleaner Code Without Inheritance Constraints (Towards Data Science, 2024-07-17)</a></td>
 <td>Protocols in Python enable structural subtyping, allowing type checking without inheritance. They enhance type hints for static duck typing, improving code flexibility, readability, and reliability.</td>
 </tr>
 </tbody>
@@ -326,112 +415,55 @@
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://conversableeconomist.com/2024/07/16/unexpected-economist-carl-linnaeus-on-economic-theory/">Unexpected Economist: Carl Linnaeus on Economic Theory</a></td>
-<td>Conversable Economist</td>
+<td><a href="https://conversableeconomist.com/2024/07/16/unexpected-economist-carl-linnaeus-on-economic-theory/">Carl Linnaeus: The Botanist Who Secretly Shaped Economic Theory and Advocated Autarky (Conversable Economist, 2024-07-16)</a></td>
 <td>Carl Linnaeus viewed economics as essential for well-being, favored mercantilism, endorsed self-sufficiency, and believed all nations possessed natural resources for economic flourishing, despite his obsession with gold.</td>
 </tr>
 <tr class="even">
-<td><a href="https://econbrowser.com/archives/2024/07/recession-probabilities-for-june-2025">Recession Probabilities for June 2025</a></td>
-<td>NBER</td>
+<td><a href="https://econbrowser.com/archives/2024/07/recession-probabilities-for-june-2025">Recession Risks Explained: Key Metrics to Watch for June 2025 Forecasts (NBER, 2024-07-17)</a></td>
 <td>Recession probabilities for June 2025 indicate varied outcomes based on models, showing 60% likelihood with basic indicators and 20% with additional debt measures, reflecting declining debt-service ratios.</td>
 </tr>
 <tr class="odd">
-<td><a href="http://climateerinvest.blogspot.com/2024/07/yield-curve-control-means-party-can.html">Yield Curve Control Means The Party Can Continue, What’s Not To Love?</a></td>
-<td>Climateer Investing</td>
+<td><a href="http://climateerinvest.blogspot.com/2024/07/yield-curve-control-means-party-can.html">The Hidden Risks of Central Bank Yield Curve Control and Its Impact on Economic Stability (Climateer Investing, 2024-07-17)</a></td>
 <td>Central banks disguise risk through yield curve control, preventing bond yields from rising and perpetuating economic stagnation, resulting in more debt and inefficient allocation of resources.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="fundamental" class="level1">
-<h1>Fundamental</h1>
+<section id="fundamental-investing" class="level1">
+<h1>Fundamental Investing</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://econbrowser.com/archives/2024/07/china-economic-sentiment">China Economic Sentiment</a></td>
-<td>Econbrowser</td>
+<td><a href="https://econbrowser.com/archives/2024/07/china-economic-sentiment">China’s Real Estate Woes: Understanding Economic Sentiment Through Insightful Graphs from Apollo’s Torsten Slok (Econbrowser, 2024-07-17)</a></td>
 <td>Torsten Slok’s China analysis highlights real estate market collapse effects, featuring graphs illustrating economic challenges, emphasizing a constant narrative in interpreting China’s economic statistics.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="portfolio-construction" class="level1">
-<h1>Portfolio Construction</h1>
+<section id="portfolio-construction-techniques" class="level1">
+<h1>Portfolio Construction Techniques</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://allocatesmartly.com/pragmatic-asset-allocation-from-vojtko-and-javorska-of-quantpedia/">Pragmatic Asset Allocation from Vojtko and Javorská of Quantpedia</a></td>
-<td>Quantpedia</td>
+<td><a href="https://allocatesmartly.com/pragmatic-asset-allocation-from-vojtko-and-javorska-of-quantpedia/">Optimize Your Investments with Pragmatic Asset Allocation: A Smart, Tax-Efficient Strategy for Every Market Condition (Quantpedia, 2024-07-16)</a></td>
 <td>Pragmatic Asset Allocation is a tactical strategy focusing on tax efficiency, trading based on yield curve inversion, and adjusting asset allocation quarterly for optimal performance.</td>
-</tr>
-<tr class="even">
-<td><a href="https://klementoninvesting.substack.com/p/can-we-please-stop-selling-these">Can we please stop selling these products</a></td>
-<td>Klement on Investing</td>
-<td>Structured products are illiquid, high-fee investments that underperform traditional portfolios, providing minimal risk reduction while diminishing returns, making them unworthy for investors.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://blogs.cfainstitute.org/investor/2024/07/08/commodities-for-the-long-run/">Commodities for the Long Run?</a></td>
-<td>CFA Institute Research Foundation</td>
-<td>Commodities may appear inefficient short-term but offer significant benefits in long-term portfolios, especially against inflation, warranting reevaluation of their role in investment strategies.</td>
-</tr>
-<tr class="even">
-<td><a href="https://insights.finominal.com/research-managed-futures-versus-market-neutral-multi-factor-investing">Managed Futures versus Market-Neutral Multi-Factor Investing</a></td>
-<td>Finomial</td>
-<td>Managed futures and market-neutral multi-factor investing both provide uncorrelated returns, but their performance trends exhibit significant similarities, limiting diversification benefits when combined in portfolios.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://blogs.cfainstitute.org/investor/2024/07/08/commodities-for-the-long-run/">Commodities for the Long Run?</a></td>
-<td>CFA Institute Research</td>
-<td>Commodities show improved portfolio efficiency over longer horizons, especially during inflation, suggesting significant optimal allocations when considering real returns as opposed to nominal returns.</td>
-</tr>
-<tr class="even">
-<td><a href="http://mrzepczynski.blogspot.com/2024/07/classifying-hedge-fund-strategies-once.html">Classifying hedge fund strategies once again</a></td>
-<td>Disciplined Systematic Macro Views</td>
-<td>Managed futures excel during market drawdowns, offering strong alpha, low beta, and diversification benefits, making them a valuable addition to investment portfolios for downside protection.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://www.morningstar.com/columns/rekenthaler-report/when-rebalancing-creates-higher-returnsand-when-it-doesnt">When Rebalancing Creates Higher Returns-and When It Doesn’t</a></td>
-<td>Morningstar</td>
-<td>Rebalancing can enhance portfolio returns when reallocating between divergent asset performances, but may not benefit portfolios with similar assets. Investors should evaluate performance dynamics before rebalancing.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="tech" class="level1">
-<h1>Tech</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Source</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.institutionalinvestor.com/article/2di0s1e6m7h197mfh6fb4/portfolio/goldman-sachs-throws-cold-water-on-ai-mania">Goldman Sachs Throws Cold Water on AI Mania</a></td>
-<td>Goldman Sachs</td>
-<td>Goldman Sachs critiques excessive AI investment, highlighting high costs, lack of significant breakthroughs, and other challenges like resource consumption and ethical issues, questioning the technology’s expected impact on productivity.</td>
 </tr>
 </tbody>
 </table>
@@ -440,12 +472,17 @@
 </section>
 
  ]]></description>
+  <category>asset-management</category>
+  <category>coding</category>
+  <category>economics</category>
+  <category>fundamental</category>
+  <category>portfolio-construction</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-17_daily-curation.html</guid>
   <pubDate>Tue, 16 Jul 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/laptop.png" medium="image" type="image/png" height="124" width="144"/>
+  <media:content url="https://portfolio-geek.com/pictures/laptop-data.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
-  <title>16 July 2024: Asset Management, Economics and ETFs in Focus</title>
+  <title>Daily Insights: Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-16_daily-curation.html</link>
   <description><![CDATA[ 
@@ -454,33 +491,38 @@
 
 
 
-<p>Here are the findings of the day.</p>
-<p>Happy reading!</p>
-<p>Vincent</p>
+<p>In today’s curation, we explore key developments in finance and investment. The following topics are highlighted:</p>
+<ul>
+<li>Asset managers and declining profit margins</li>
+<li>Evolution of passive investing in fixed income</li>
+<li>Growth of E-mini Nasdaq-100 futures</li>
+<li>Impact of severe weather on shipping near South Africa</li>
+<li>Wage growth trends for low-wage workers</li>
+<li>Benchmarking private capital effectively</li>
+<li>Burberry’s challenging first-quarter results</li>
+<li>Growth in India’s equity market</li>
+<li>S&amp;P 500 earnings growth expectations for Q2</li>
+</ul>
 <section id="asset-management" class="level1">
 <h1>Asset Management</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner">Asset Manager Profit Margins Get Thinner</a></td>
-<td>Casey Quirk</td>
+<td><a href="https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner">Why Asset Managers Struggle Despite Booming Markets: Rising Costs and the Push for Alternative Investments Explained (Casey Quirk, 2024-07-15)</a></td>
 <td>Asset managers face declining profit margins despite rising markets, driven by increased operating costs and weak inflows, prompting a focus on alternative investments for growth and adaptation.</td>
 </tr>
 <tr class="even">
-<td><a href="https://www.institutionalinvestor.com/article/2dg5aji7ohkluumcrwy68/innovation/index-investing-as-an-active-decision-implications-for-fixed-income-investors">Index Investing as an Active Decision: Implications for Fixed Income Investors</a></td>
-<td>Northern Trust Asset Management.</td>
+<td><a href="https://www.institutionalinvestor.com/article/2dg5aji7ohkluumcrwy68/innovation/index-investing-as-an-active-decision-implications-for-fixed-income-investors">Unlocking Precision and Efficiency: Why Passive Fixed Income Strategies Are Transforming Modern Investment Portfolios (Northern Trust Asset Management., 2024-07-16)</a></td>
 <td>Passive investing in fixed income has evolved, offering customization, precision, and better risk management, despite challenges like liquidity and replication concerns, attracting more investments than active strategies.</td>
 </tr>
 <tr class="odd">
-<td><a href="https://seekingalpha.com/article/4703878-tech-growth-25-years-nasdaq-futures">The Growth Of Tech And 25 Years Of Nasdaq Futures (Nasdaq Global Indices:NDX)</a></td>
-<td>Seeking Alpha</td>
+<td><a href="https://seekingalpha.com/article/4703878-tech-growth-25-years-nasdaq-futures">Navigating Tech Sector Growth: How E-mini Nasdaq-100 Futures Shape Modern Investment and Risk Management Strategies (Seeking Alpha, 2024-07-16)</a></td>
 <td>E-mini Nasdaq-100 futures, launched in 1999, have grown substantially in volume, reflecting the importance of technology stocks and risk management in today’s market landscape.</td>
 </tr>
 </tbody>
@@ -492,154 +534,63 @@
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://finance.yahoo.com/news/ships-fleeing-red-sea-now-160349344.html">Ships Fleeing the Red Sea Now Face Perilous African Weather</a></td>
-<td>Bloomberg</td>
+<td><a href="https://finance.yahoo.com/news/ships-fleeing-red-sea-now-160349344.html">Shipping Chaos: Violent Storms Off South Africa Cause Major Disruptions and Container Losses (Bloomberg, 2024-07-15)</a></td>
 <td>Ships near South Africa face severe weather, causing container losses and delays. Many vessels are diverting routes to avoid risk from Houthi militants in the Red Sea.</td>
 </tr>
 <tr class="even">
-<td><a href="https://angrybearblog.com/2024/06/fastest-wage-growth-over-the-last-four-years">Fastest wage growth over the last four years</a></td>
-<td>Economic Policy Institute</td>
+<td><a href="https://angrybearblog.com/2024/06/fastest-wage-growth-over-the-last-four-years">Pandemic Policies Fuel Unprecedented Wage Growth for Low-Wage Workers Over Recent Four-Year Period (Economic Policy Institute, 2024-07-16)</a></td>
 <td>Low-wage workers experienced significant wage growth of 12.1% from 2019 to 2023, driven by policy responses and a tight labor market, marking a departure from historical trends.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="etf-and-index-investing" class="level1">
-<h1>ETF and Index Investing</h1>
+<section id="etfs-and-index-investing" class="level1">
+<h1>ETFs and Index Investing</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://www.msci.com/www/blog-posts/the-cornerstones-of/04783300823">The Cornerstones of Benchmarking Private Capital</a></td>
-<td>MSCI</td>
+<td><a href="https://www.msci.com/www/blog-posts/the-cornerstones-of/04783300823">Unlocking the Secrets of Private Capital Performance: A Smart Guide to Benchmarking and Index Creation (MSCI, 2024-07-16)</a></td>
 <td>Benchmarking private capital requires accurate data, defined inclusion criteria, and a strong governance framework to measure performance through various index types and calculations effectively.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="fundamental" class="level1">
-<h1>Fundamental</h1>
+<section id="fundamental-investing" class="level1">
+<h1>Fundamental Investing</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner">Asset Manager Profit Margins Get Thinner</a></td>
-<td>Institutional Investor.</td>
+<td><a href="https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner">Asset Managers’ Profits Decline Despite Market Growth, Rising Costs and Innovation Needs Challenge Firms (Institutional Investor., 2024-07-15)</a></td>
 <td>Asset managers face declining profit margins due to rising costs, weak inflows, and the need for innovation despite a strong stock market. Strategic adaptation is essential for future success.</td>
 </tr>
 <tr class="even">
-<td><a href="https://sherwood.news/markets/europes-luxury-stocks-have-boomed-burberry-got-left-behind/">Europe’s luxury stocks have boomed in the last decade*</a></td>
-<td>Sherwood</td>
+<td><a href="https://sherwood.news/markets/europes-luxury-stocks-have-boomed-burberry-got-left-behind/">Burberry Faces Tough Quarter: Sales Drop, CEO Resigns, and Brand Strategy Questioned (Sherwood, 2024-07-15)</a></td>
 <td>Burberry’s first-quarter results showed a 22% revenue drop, CEO resignation, dividend suspension, and declining sales, prompting challenges for the new CEO amidst declining brand exclusivity and market presence.</td>
 </tr>
 <tr class="odd">
-<td><a href="https://www.msci.com/www/blog-posts/india-s-changed-and-changing/04777168512">India’s Markets Have Changed</a></td>
-<td>MSCI</td>
+<td><a href="https://www.msci.com/www/blog-posts/india-s-changed-and-changing/04777168512">India’s Equity Market Evolution: New Listings, Venture-Backed Firms, and Potential Power Shifts for Global Investors (MSCI, 2024-07-16)</a></td>
 <td>India’s equity market shows significant growth, with over 300 new companies since 2020, highlighting changes in industry profiles and future potential from private market entrants.</td>
 </tr>
 <tr class="even">
-<td><a href="https://insight.factset.com/sp-500-will-likely-report-earnings-growth-of-at-least-12-for-q2">S&amp;P 500 Will Likely Report Earnings Growth of At Least 12% For Q2</a></td>
-<td>FactSet</td>
+<td><a href="https://insight.factset.com/sp-500-will-likely-report-earnings-growth-of-at-least-12-for-q2">S&amp;P 500 Earnings Surge: Historical Data Predicts Over 12% Growth for Q2, Outperforming Estimates (FactSet, 2024-07-16)</a></td>
 <td>S&amp;P 500 expected to report earnings growth above 12% for Q2, supported by historical trends of exceeding estimates, with 81% of companies reporting higher EPS so far.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="knowledge-management" class="level1">
-<h1>Knowledge Management</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Source</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.forkingpaths.co/p/in-a-sea-of-disinformation-why-is">In a sea of disinformation, why is Wikipedia so accurate?</a></td>
-<td>The Garden of Forking Paths</td>
-<td>Wikipedia has over 6.8 million articles, providing accurate information amid online disinformation, with a reliable citation system that allows users to verify sources and find obscure knowledge.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="portfolio-construction" class="level1">
-<h1>Portfolio Construction</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Source</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://news.bitcoin.com/blackrock-ceo-larry-fink-explains-why-everyone-should-consider-bitcoin-in-portfolios/">Blackrock CEO Larry Fink Explains Why Everyone Should Consider Bitcoin in Portfolios – Finance Bitcoin News</a></td>
-<td>Bitcoin.com</td>
-<td>Larry Fink, Blackrock’s CEO, now views bitcoin as “digital gold,” advocating for its inclusion in portfolios as a hedge against economic instability and currency debasement.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.msci.com/www/blog-posts/markets-in-focus-currency-risk/04783398091">Markets in Focus: Currency Risk Higher for Global Equity Investors</a></td>
-<td>Markets in Focus</td>
-<td>Currency volatility has influenced global markets, with mixed equity returns and rising currency risk for investors, particularly in Japan, amidst ongoing rate uncertainties since 2022.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="quantitative-investing" class="level1">
-<h1>Quantitative Investing</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Source</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.indexologyblog.com/2024/07/09/sp-momentum-indices-leading-the-pack/">S&amp;P Momentum Indices Leading the Pack – Indexology® Blog</a></td>
-<td>Indexology</td>
-<td>S&amp;P Momentum Indices have outperformed benchmarks over the past year, utilizing a methodology based on risk-adjusted price momentum, with notable contributions from sectors like Information Technology and Industrials.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="tech" class="level1">
-<h1>Tech</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Source</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.forkingpaths.co/p/how-the-world-sped-up-249">How the World Sped Up</a></td>
-<td>The Garden of Forking Paths</td>
-<td>The essay explores the accelerated pace of change in modern society, highlighting how speed impacts information dissemination, financial markets, and the risks associated with rapid technological advancements.</td>
 </tr>
 </tbody>
 </table>
@@ -648,12 +599,16 @@
 </section>
 
  ]]></description>
+  <category>asset-management</category>
+  <category>economics</category>
+  <category>etf</category>
+  <category>fundamental</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-16_daily-curation.html</guid>
   <pubDate>Mon, 15 Jul 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/chart-preview.png" medium="image" type="image/png" height="78" width="144"/>
+  <media:content url="https://portfolio-geek.com/pictures/time-horizon-paper.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
-  <title>15 July 2024: daily curation with Market, Tech and Quant Links</title>
+  <title>Today’s Financial Curation: Fed’s Inflation Forecast, Q2 Earnings Surge, ETF Market Shifts, and Automatic Savings Boost</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-15_daily-curation.html</link>
   <description><![CDATA[ 
@@ -662,87 +617,296 @@
 
 
 
-<p>Here are the findings of the day.</p>
-<p>Happy reading!</p>
-<p>Vincent</p>
-<section id="market-pulse" class="level1">
-<h1>Market Pulse</h1>
+<p>In today’s curation, we explore a range of critical financial topics that impact current market dynamics:</p>
+<ul>
+<li>The New York Fed’s inflation and output growth predictions</li>
+<li>Amazon’s competitive strategies amidst Prime Week</li>
+<li>Insights from Q2 earnings season and stock performance</li>
+<li>Opportunities in the QQQJ ETF showcasing tech growth</li>
+<li>Implications of potential Fed interest rate cuts</li>
+<li>The UST yield curve and its relevance to rate changes</li>
+<li>The Moat Index’s recent findings on market trends</li>
+<li>The benefits of automatic retirement savings</li>
+<li>Recovery signs in the banking sector</li>
+<li>The complexities of maintaining a balanced investment portfolio</li>
+</ul>
+<section id="economics" class="level1">
+<h1>Economics</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://moneymorning.com/2024/07/15/these-three-investment-are-getting-ready-to-be-jerome-powells-favorite/">These Three Investments Are Getting Ready to Be Jerome Powell’s Favorite</a></td>
-<td>Money Morning</td>
+<td><a href="https://libertystreeteconomics.newyorkfed.org/2024/06/the-new-york-fed-dsge-model-forecast-june-2024/">Why Inflation is Surging and Growth is Slumping: Key Insights from the New York Fed’s Latest Forecast (Federal Reserve Bank of New York, 2024-06-14)</a></td>
+<td>The New York Fed’s DSGE model forecasts higher core PCE inflation at 2.7% and lower output growth at 1.0% for 2024, attributing changes to cost-push shocks and monetary policy.</td>
+</tr>
+<tr class="even">
+<td><a href="https://lipperalpha.refinitiv.com/2024/07/savvy-shoppers-await-prime-week-deal-competition/">Savvy Challenges: How Retailers Leverage Amazon Prime Week to Battle Inflation and Woo Value-Conscious Consumers (LSEG Workspace, 2024-07-15)</a></td>
+<td>Amazon’s Prime Week prompts retailers to offer competitive discounts, aiming to attract value-oriented shoppers while facing inflation, with increased online discount penetration and evolving consumer preferences.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fundamental-investing" class="level1">
+<h1>Fundamental Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.tker.co/p/earnings-season-q2-24-beat-rates">Earnings Season Q2 2024: Why Most Companies Consistently Surpass Analysts’ Expectations (TKer, 2024-07-15)</a></td>
+<td>Stocks are at record highs as Q2 earnings season begins, with companies likely to beat estimates by about 5%. Analysts maintain positive outlooks despite recession risks being elevated.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.etftrends.com/etf-education-channel/time-different-small-cap-stocks-finally-perking-up/">Discover Hidden Tech Gems: The Invesco NASDAQ Next Gen ETF’s Potential in Small-Cap Stocks (ETF Trends, 2024-07-15)</a></td>
+<td>QQQJ ETF, targeting Nasdaq Next Generation 100, includes promising tech stocks like Zoom, NICE, and Paylocity, offering growth opportunities in a market dominated by mega-cap equities.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-pulse-market-news" class="level1">
+<h1>Market Pulse &amp; Market News</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://moneymorning.com/2024/07/15/these-three-investment-are-getting-ready-to-be-jerome-powells-favorite/">Prepare for Market Shake-Up: Key Sectors Poised to Surge as Fed Signals Interest Rate Cuts Before Election (Unknown, 2024-07-15)</a></td>
 <td>The Fed’s potential interest rate cuts may boost small cap stocks, regional banks, and real estate, prompting a significant market shift and attracting investors seeking higher returns.</td>
 </tr>
 <tr class="even">
-<td><a href="https://www.wisdomtree.com/investments/blog/2024/07/10/when-will-the-yield-curve-uninvert">When Will the Yield Curve “Un”Invert?</a></td>
-<td>WisdomTree’s website</td>
+<td><a href="https://www.wisdomtree.com/investments/blog/2024/07/10/when-will-the-yield-curve-uninvert">Why You Should Care About the Timing of the Yield Curve’s Next Move (WisdomTree’s website, 2024-07-15)</a></td>
 <td>The UST yield curve’s potential “un”inversion timing hinges on Fed rate cuts, with the UST 2-Year/10-Year spread likely reversing before the UST 3-Month/10-Year spread.</td>
 </tr>
 <tr class="odd">
-<td><a href="https://www.vaneck.com/us/en/blogs/moat-investing/moat-stocks-steady-amid-techs-market-surge/">Moat Stocks Steady Amid Tech’s Market Surge</a></td>
-<td>Moat Index Quarterly Review</td>
+<td><a href="https://www.vaneck.com/us/en/blogs/moat-investing/moat-stocks-steady-amid-techs-market-surge/">Smart Investing: How Quarterly Reviews Shape the Moat Index and Spotlight Top Undervalued Companies (Moat Index Quarterly Review, 2024-07-15)</a></td>
 <td>Moat Index reviews revealed a contrarian bias towards large caps, reduced Financials exposure, and increased allocations in Consumer Staples, Industrials, and Technology, remaining underweight in growth stocks.</td>
 </tr>
 <tr class="even">
-<td><a href="https://awealthofcommonsense.com/2024/07/the-automatic-investing-revolution/">The Automatic Investing Revolution - A Wealth of Common Sense</a></td>
-<td>A Wealth of Common Sense</td>
+<td><a href="https://awealthofcommonsense.com/2024/07/the-automatic-investing-revolution/">Elevate Your Retirement Savings: How Higher Default Rates and Automatic Investing Are Reshaping Financial Futures (A Wealth of Common Sense, 2024-07-15)</a></td>
 <td>The shift to automatic retirement savings, like higher default rates, improves participation and investor behavior, positively affecting stock market valuations while highlighting the limitations of defined contribution plans.</td>
 </tr>
 <tr class="odd">
-<td><a href="https://moneymorning.com/2024/07/15/this-bullish-trend-in-banks-is-just-starting-grab-it-now/">This Bullish Trend in Banks Is Just Starting</a></td>
-<td>Money Morning</td>
+<td><a href="https://moneymorning.com/2024/07/15/this-bullish-trend-in-banks-is-just-starting-grab-it-now/">Banking Renaissance: Why Investor Sentiment Shift Signals a Golden Opportunity in Financial Stocks (Unknown, 2024-07-15)</a></td>
 <td>The banking sector shows potential recovery as interest rates may soon lower, with investor sentiment shifting and earnings reports exceeding expectations, presenting buying opportunities in ETFs like KBE and KRE.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="tech" class="level1">
-<h1>Tech</h1>
+<section id="portfolio-construction-techniques" class="level1">
+<h1>Portfolio Construction Techniques</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://alphaarchitect.com/2024/07/crypto-literacy/">Crypto owners know Crypto…but not finance</a></td>
-<td>Alpha Architect</td>
-<td>A study reveals Bitcoin owners have higher crypto literacy than non-owners, but financial literacy remains weak. Gender gaps persist, highlighting the need for enhanced financial education on cryptocurrencies.</td>
+<td><a href="https://awealthofcommonsense.com/2024/07/a-balanced-portfolio-always-comes-with-regrets/">Balancing Investments: Why Diversification May Seem Boring But Is Actually Smart and Lowers Your Risk (None, 2024-07-14)</a></td>
+<td>A balanced portfolio, while providing stability, often leads to regrets as market performance varies. Diversification reduces risk but can’t predict future outcomes, emphasizing the importance of a long-term strategy.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>economics</category>
+  <category>fundamental</category>
+  <category>market-feed</category>
+  <category>portfolio-construction</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-15_daily-curation.html</guid>
+  <pubDate>Sun, 14 Jul 2024 23:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/mathematics-formulas-on-a-blackboard.png" medium="image" type="image/png" height="95" width="144"/>
+</item>
+<item>
+  <title>Welcome to Your Daily Financial Curation: Python Automation, Climate Action, ECB Policy Signals, and US Heatwave Insights</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-14_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In today’s curation, I present a range of insights related to finance, climate change, and technological advancements. Key topics include:</p>
+<ul>
+<li>Quick tips for creating engaging social media content using ChatGPT</li>
+<li>Python automation scripts for enhancing productivity</li>
+<li>Denmark’s new tax on agricultural emissions</li>
+<li>BlackRock’s climate-focused stewardship guidelines</li>
+<li>Recent record-high global temperatures and their implications</li>
+</ul>
+<p>Please find detailed summaries in the table below.</p>
+<section id="automation" class="level1">
+<h1>Automation</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.forbes.com/sites/jodiecook/2024/07/12/5-chatgpt-prompts-to-create-30-pieces-of-content-in-30-minutes/">Create 30 High-Impact Social Media Posts in 30 Minutes with ChatGPT Tips for Busy Professionals (Forbes, 2024-07-14)</a></td>
+<td>Use five prompts with ChatGPT to quickly generate 30 pieces of engaging social media content by providing context, core ideas, examples, post formats, and edits.</td>
+</tr>
+<tr class="even">
+<td><a href="https://medium.com/pythoneers/17-mindblowing-python-automation-scripts-i-use-everyday-523fb1eb9284">Transform Your Daily Routine with These Essential Python Automation Scripts (Towards Data Science, 2024-07-14)</a></td>
+<td>The author shares Python automation scripts that enhance productivity, including a script to convert PDF files into audio books using the PyPDF2 and pyttsx3 libraries.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="quantitative-investing" class="level1">
-<h1>Quantitative Investing</h1>
+<section id="climate" class="level1">
+<h1>Climate</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://thealgorithmicadvantage.substack.com/p/diversification-for-trend-following">Diversification for Trend Following Models</a></td>
-<td>Algorithmic Advantage</td>
-<td>Diversification in trend following allows capturing outlier events, enhancing portfolio performance despite asset correlations, challenging traditional limits of diversification and emphasizing the importance of uncorrelated trade results.</td>
+<td><a href="https://www.carbonbrief.org/qa-how-denmark-plans-to-tax-agriculture-emissions-to-meet-climate-goals/">Denmark’s Innovative Agricultural Emissions Tax: Leading the Charge Toward Global Climate Goals and Sustainable Farming Practices (Carbon Brief, 2024-07-09)</a></td>
+<td>Denmark will implement a tax on agricultural emissions in 2030, aiming for significant CO2 reductions and supporting the livestock industry’s transition to greener practices, influencing global policies.</td>
 </tr>
 <tr class="even">
-<td><a href="https://www.quantitativo.com/p/a-portfolio-of-strategies">A portfolio of strategies - by Quantitativo</a></td>
-<td>Quant Trading Rules</td>
-<td>Combining mean reversion and improved momentum strategies optimizes risk-adjusted returns, leveraging diversification principles to reduce drawdowns and enhance portfolio performance through uncorrelated asset mixing.</td>
+<td><a href="https://www.esgtoday.com/blackrock-launches-decarbonization-voting-and-engagement-policy-for-climate-focused-funds/">BlackRock Sets New Climate Standards with Decarbonization Voting Policy for Eco-Conscious Investors (ESG Today, 2024-07-10)</a></td>
+<td>BlackRock introduced “Climate and Decarbonization Stewardship Guidelines” to enhance voting and engagement for climate-focused funds, prioritizing low-carbon transition and demanding disclosure of emissions reduction targets from companies.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.oxfordmail.co.uk/news/24401044.oxford-university-climate-survey-shows-majority-want-action/">Global Majority Urge Governments to Overcome Differences and Tackle Climate Change, Says Oxford University Survey (Oxford Mail, 2024-07-14)</a></td>
+<td>A UNDP-Oxford survey shows 86% want stronger climate action, with 72% supporting a shift from fossil fuels, highlighting women’s greater advocacy for enhanced climate commitments.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.theguardian.com/environment/article/2024/jul/08/temperatures-1-point-5c-above-pre-industrial-era-average-for-12-months-data-shows">Planet Faces Year of Record Heat: 12 Months at 1.5°C Above Pre-Industrial Levels Raise Alarming Climate Concerns (The Guardian, 2024-07-14)</a></td>
+<td>The world has experienced 12 consecutive months of record-high temperatures, exceeding 1.5°C above pre-industrial levels, highlighting urgent climate change risks and the need for emission reductions.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.cnn.com/2024/07/07/weather/west-coast-heat-wave-california-nevada-oregon/index.html">Unrelenting Heatwave Shatters Records Across US: Health Risks and Wildfire Threats Surge Amid Scorching Temperatures (CNN, 2024-07-14)</a></td>
+<td>Record-breaking heat continues across the US, with temperatures exceeding 100 degrees in many areas, increased wildfire risks, and heat alerts impacting millions from the West to the East Coast.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.theclimatebrink.com/p/can-we-air-condition-our-way-out">The High Cost of Staying Cool: How Air Conditioning Fails to Beat Climate Change (The Climate Brink, 2024-07-14)</a></td>
+<td>Air conditioning is essential for survival amid climate change, but increasing costs disproportionately affect the poor, highlighting equity issues and the need for government support in adaptation efforts.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.theclimatebrink.com/p/the-growing-carbon-debt">Our Carbon Debt Crisis: The Environmental Costs Future Generations Will Inherit (Carbon Brief, 2024-06-27)</a></td>
+<td>The growing carbon debt requires future generations to remove excess CO2, as emissions persist long-term, necessitating urgent action to minimize climate impact and reduce future burdens.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-pulse-market-news" class="level1">
+<h1>Market Pulse &amp; Market News</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.bloomberg.com/news/articles/2024-07-13/ecb-rate-cuts-lagarde-poised-for-holiday-may-prime-markets-for-september?srnd=economics-v2&amp;sref=ZPVkTM30">Is Europe Headed for Another Interest Rate Cut? What to Expect from the ECB in September (Bloomberg, 2024-07-14)</a></td>
+<td>European Central Bank officials may signal an interest-rate cut, observing inflation pressures, while traders await insights from President Lagarde ahead of the September 12 meeting following a long summer break.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>automation</category>
+  <category>climate</category>
+  <category>market-feed</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-14_daily-curation.html</guid>
+  <pubDate>Sat, 13 Jul 2024 23:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Today’s Picks: Wind Power Surpasses Coal, EV Savings for Rural Families, Impact Investing, and Shifts in ETF Trends</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-13_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>As of July 13, 2024, today’s curation highlights key developments in finance, energy, and educational initiatives. Below are the summarized topics:</p>
+<ul>
+<li>The financial benefits of electric vehicles for rural families in the US.</li>
+<li>The rise of impact investing amidst ESG skepticism.</li>
+<li>Wind power’s dominance over coal in US electricity generation.</li>
+<li>Concerns surrounding BlackRock’s climate transition ETFs.</li>
+<li>Introduction of Vectorlite, a new SQLite extension for vector search.</li>
+<li>Trends in the existing home market and housing prices.</li>
+<li>Johns Hopkins Medical School’s significant donation for free tuition.</li>
+<li>Recent ETF inflows, particularly in core equity and bonds.</li>
+<li>Insights on the impact of passive investing on market dynamics.</li>
+</ul>
+<section id="climate" class="level1">
+<h1>Climate</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://skepticalscience.com/rural-families-saving-thousands-evs.html">Electric Vehicles: A Game-Changer for Rural Families Saving Big on Fuel and Maintenance Costs (Skeptical Science, 2024-07-09)</a></td>
+<td>Rural families in the US are saving money by switching to electric vehicles (EVs) and avoiding gas expenses. EVs require less maintenance and have financial incentives, making them cost-effective.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.forbes.com.au/brand-voice/brandvoice/rip-esg-how-impact-investing-can-help-save-an-industry-in-crisis/">Impact Investing: A Smart Alternative to ESG for Optimized Financial and Social Returns (Forbes Australia, 2024-07-13)</a></td>
+<td>Amidst ESG skepticism, impact investing gains recognition as a credible way to back companies that deliver positive impact and financial returns. Investors prioritize measurable impact activities aligned with the UN Sustainable Development Goals.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://sherwood.news/power/lean-energy-wind-generated-more-electricity-than-coal/">Wind Power Surpasses Coal in US Electricity Production as Renewable Energy Continues to Rise (Sherwood News, 2024-07-13)</a></td>
+<td>Wind power has surpassed coal as a major source of electricity in the US for two consecutive months. Renewable energy accounted for 21% of electricity generation in 2019.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.etfstream.com/articles/blackrock-climate-transition-etfs-portfolio-tool-or-tick-box-exercise">Are BlackRock’s New Climate ETFs Truly Driving Change or Just Ticking Boxes for Sustainable Investment Goals? (ETF Stream, 2024-06-24)</a></td>
+<td>BlackRock’s new climate transition ETFs offer ESG tilting, but concerns remain about their impact. The ETFs may be a useful tool for institutional investors, but lack exposure to key sectors.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.reddit.com/r/Python/comments/1e26xsm/vectorlite_a_fast_vector_search_extension_for/">Make SQLite Smarter and Faster with Vectorlite: Your Go-To Extension for Enhanced Vector Search in AI Applications (Reddit, 2024-07-13)</a></td>
+<td>Vectorlite is a fast and tunable vector search extension for SQLite, offering improved performance, metadata filter support, index serialization, and cross-platform compatibility compared to similar solutions like sqlite-vss.</td>
 </tr>
 </tbody>
 </table>
@@ -753,63 +917,42 @@
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://libertystreeteconomics.newyorkfed.org/2024/06/the-new-york-fed-dsge-model-forecast-june-2024/">The New York Fed DSGE Model Forecast—June 2024</a></td>
-<td>Federal Reserve Bank of New York</td>
-<td>The New York Fed’s DSGE model forecasts higher core PCE inflation at 2.7% and lower output growth at 1.0% for 2024, attributing changes to cost-push shocks and monetary policy.</td>
+<td><a href="http://www.calculatedriskblog.com/2024/07/realtorcom-reports-active-inventory-up_01292103715.html">Home Inventory Grows 34.5% YoY but Still Struggles to Meet Pre-Pandemic Levels: Insight into Current Market Trends (Calculated Risk, 2024-07-11)</a></td>
+<td>Active inventory in the existing home market increased by 34.5% YoY, marking the 35th consecutive week of growth. New listings declined 4.9% YoY. Buyers still face a 30% decrease in homes compared to pre-pandemic levels.</td>
 </tr>
 <tr class="even">
-<td><a href="https://lipperalpha.refinitiv.com/2024/07/savvy-shoppers-await-prime-week-deal-competition/">Savvy Shoppers Await Prime Week Deal Competition</a></td>
-<td>LSEG Workspace</td>
-<td>Amazon’s Prime Week prompts retailers to offer competitive discounts, aiming to attract value-oriented shoppers while facing inflation, with increased online discount penetration and evolving consumer preferences.</td>
+<td><a href="https://awealthofcommonsense.com/2024/07/buying-a-house-at-the-top-of-the-market/">Navigating Market Peaks: What to Know Before Buying a Home Amidst Soaring Prices and Mortgage Rates (A Wealth of Common Sense, 2024-07-13)</a></td>
+<td>Housing prices have surged in recent years, but there are concerns about low returns going forward. The impact on homeowners may vary depending on their situation and future plans.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.npr.org/2024/07/09/g-s1-8876/johns-hopkins-medical-school-bloomberg">Bloomberg Donates $1 Billion to Johns Hopkins for Medical School Free Tuition and Comprehensive Student Support (NPR, 2024-07-13)</a></td>
+<td>Johns Hopkins Medical School will offer free tuition to most students thanks to a $1 billion donation from Michael Bloomberg’s philanthropic organization.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="fundamental" class="level1">
-<h1>Fundamental</h1>
+<section id="etfs-and-index-investing" class="level1">
+<h1>ETFs and Index Investing</h1>
 <table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Source</th>
 <th>Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://www.tker.co/p/earnings-season-q2-24-beat-rates">One of the stock market’s most consistent trends</a></td>
-<td>TKer</td>
-<td>Stocks are at record highs as Q2 earnings season begins, with companies likely to beat estimates by about 5%. Analysts maintain positive outlooks despite recession risks being elevated.</td>
+<td><a href="https://www.etfstream.com/articles/core-equity-and-short-duration-bond-etfs-capture-most-inflows-in-q2">Investors Flock to Core Equity and Short-Duration Bonds Amid Market Rally and Inflation Concerns: Q2 Insights (ETF Stream, 2024-07-13)</a></td>
+<td>Core equity and short-duration bond ETFs saw the highest inflows in Q2, while ESG ETFs experienced outflows. The iShares Core S&amp;P 500 UCITS ETF (CSPX) and the Xtrackers EUR Overnight Rate Swap UCITS ETF (XEON) were among the popular choices.</td>
 </tr>
 <tr class="even">
-<td><a href="https://www.etftrends.com/etf-education-channel/time-different-small-cap-stocks-finally-perking-up/">Is This Time Different? Small-Cap Stocks Finally Perking Up</a></td>
-<td>ETF Trends</td>
-<td>QQQJ ETF, targeting Nasdaq Next Generation 100, includes promising tech stocks like Zoom, NICE, and Paylocity, offering growth opportunities in a market dominated by mega-cap equities.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="portfolio-construction" class="level1">
-<h1>Portfolio Construction</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Source</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://awealthofcommonsense.com/2024/07/a-balanced-portfolio-always-comes-with-regrets/">A Balanced Portfolio Always Comes with Regrets</a></td>
-<td>None</td>
-<td>A balanced portfolio, while providing stability, often leads to regrets as market performance varies. Diversification reduces risk but can’t predict future outcomes, emphasizing the importance of a long-term strategy.</td>
+<td><a href="https://www.institutionalinvestor.com/article/2dgy5jctx2rb7g3wv2juo/portfolio/gmo-passive-investings-impact-has-been-overblown-but-its-not-negligible">How Passive Investing Subtly Shifts Market Dynamics: A New Perspective from GMO Experts (GMO Quarterly Letter, 2024-07-13)</a></td>
+<td>The impact of passive investing on markets is less significant than believed, says GMO. The shift of retirement assets to defined contribution plans is coming to an end, limiting the future impact of passive flows.</td>
 </tr>
 </tbody>
 </table>
@@ -818,170 +961,13 @@
 </section>
 
  ]]></description>
-  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-15_daily-curation.html</guid>
-  <pubDate>Sun, 14 Jul 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/mathematics-formulas-on-a-blackboard.png" medium="image" type="image/png" height="95" width="144"/>
-</item>
-<item>
-  <title>14 July 2024: Economics, Indexing, Quant and Coding Links</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-14_daily-curation.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Here are the findings of the day.</p>
-<p>Happy reading!</p>
-<p>Vincent</p>
-<section id="climate" class="level1">
-<h1>Climate</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Source</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.carbonbrief.org/qa-how-denmark-plans-to-tax-agriculture-emissions-to-meet-climate-goals/">Q&amp;A: How Denmark plans to tax agriculture emissions to meet climate goals</a></td>
-<td>Carbon Brief</td>
-<td>Denmark will implement a tax on agricultural emissions in 2030, aiming for significant CO2 reductions and supporting the livestock industry’s transition to greener practices, influencing global policies.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.esgtoday.com/blackrock-launches-decarbonization-voting-and-engagement-policy-for-climate-focused-funds/">BlackRock Launches Decarbonization Voting and Engagement Policy for Climate-Focused Funds - ESG Today</a></td>
-<td>ESG Today</td>
-<td>BlackRock introduced “Climate and Decarbonization Stewardship Guidelines” to enhance voting and engagement for climate-focused funds, prioritizing low-carbon transition and demanding disclosure of emissions reduction targets from companies.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://www.oxfordmail.co.uk/news/24401044.oxford-university-climate-survey-shows-majority-want-action/">Oxford University climate survey shows majority want action</a></td>
-<td>Oxford Mail</td>
-<td>A UNDP-Oxford survey shows 86% want stronger climate action, with 72% supporting a shift from fossil fuels, highlighting women’s greater advocacy for enhanced climate commitments.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.theguardian.com/environment/article/2024/jul/08/temperatures-1-point-5c-above-pre-industrial-era-average-for-12-months-data-shows">Temperatures 1.5C above pre-industrial era average for 12 months, data shows</a></td>
-<td>The Guardian</td>
-<td>The world has experienced 12 consecutive months of record-high temperatures, exceeding 1.5°C above pre-industrial levels, highlighting urgent climate change risks and the need for emission reductions.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://www.cnn.com/2024/07/07/weather/west-coast-heat-wave-california-nevada-oregon/index.html">Death Valley sets a new daily record with a searing 128 degrees as the unrelenting West Coast heat wave drags on</a></td>
-<td>CNN</td>
-<td>Record-breaking heat continues across the US, with temperatures exceeding 100 degrees in many areas, increased wildfire risks, and heat alerts impacting millions from the West to the East Coast.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.theclimatebrink.com/p/can-we-air-condition-our-way-out">Can we air condition our way out of extreme heat?</a></td>
-<td>The Climate Brink</td>
-<td>Air conditioning is essential for survival amid climate change, but increasing costs disproportionately affect the poor, highlighting equity issues and the need for government support in adaptation efforts.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://www.theclimatebrink.com/p/the-growing-carbon-debt">The growing carbon debt</a></td>
-<td>Carbon Brief</td>
-<td>The growing carbon debt requires future generations to remove excess CO2, as emissions persist long-term, necessitating urgent action to minimize climate impact and reduce future burdens.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="market-pulse" class="level1">
-<h1>Market Pulse</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Source</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.bloomberg.com/news/articles/2024-07-13/ecb-rate-cuts-lagarde-poised-for-holiday-may-prime-markets-for-september?srnd=economics-v2&amp;sref=ZPVkTM30">Ecb rate cuts lagarde poised for holiday may prime markets for september</a></td>
-<td>Bloomberg</td>
-<td>European Central Bank officials may signal an interest-rate cut, observing inflation pressures, while traders await insights from President Lagarde ahead of the September 12 meeting following a long summer break.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="tech" class="level1">
-<h1>Tech</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Source</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.cityam.com/uk-sweeps-a-third-of-european-tech-funding-in-2024-as-london-and-cambridge-boom/">UK sweeps a third of European tech funding in 2024</a></td>
-<td>Dealroom</td>
-<td>UK firms secured £7.4bn in tech funding, capturing 32% of Europe’s total, with significant growth in London and Cambridge, driven by investment in AI, fintech, and energy sectors.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.lesnumeriques.com/photo/six-astuces-pour-de-superbes-photos-de-feux-d-artifice-avec-votre-smartphone-a224069.html">Six astuces pour de superbes photos de feux d’artifice avec votre smartphone</a></td>
-<td>Les Numériques</td>
-<td>Six conseils pour photographier des feux d’artifice avec un smartphone : repérage, stabilisation, bons réglages, applications, utiliser un retardateur et retoucher les images en postproduction.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://hackaday.com/2024/07/11/embedded-python-micropython-is-amazing/">Embedded Python: MicroPython Is Amazing</a></td>
-<td>Hackaday</td>
-<td>MicroPython enhances project development with fast interactive coding, extensive libraries, and ease of use, making it ideal for debugging, prototyping, and implementing features on microcontrollers like ESP32 and RP2040.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="automation" class="level1">
-<h1>Automation</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Source</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.forbes.com/sites/jodiecook/2024/07/12/5-chatgpt-prompts-to-create-30-pieces-of-content-in-30-minutes/">5 ChatGPT Prompts To Create 30 Pieces Of Content In 30 Minutes</a></td>
-<td>Forbes</td>
-<td>Use five prompts with ChatGPT to quickly generate 30 pieces of engaging social media content by providing context, core ideas, examples, post formats, and edits.</td>
-</tr>
-<tr class="even">
-<td><a href="https://medium.com/pythoneers/17-mindblowing-python-automation-scripts-i-use-everyday-523fb1eb9284">17 Mindblowing Python Automation Scripts I Use Everyday</a></td>
-<td>Towards Data Science</td>
-<td>The author shares Python automation scripts that enhance productivity, including a script to convert PDF files into audio books using the PyPDF2 and pyttsx3 libraries.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="quantitative-investing" class="level1">
-<h1>Quantitative Investing</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Source</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://medium.com/bip-xtech/stop-using-moving-average-to-smooth-your-time-series-2179af9ed59b">Stop using Moving Average to smooth your Time Series</a></td>
-<td>Medium</td>
-<td>Time series smoothing improves data analysis by reducing fluctuations. Moving averages lag and lose detail, while Savitzky-Golay retains important features, capturing seasonality without delay.</td>
-</tr>
-</tbody>
-</table>
-
-
-</section>
-
- ]]></description>
-  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-14_daily-curation.html</guid>
-  <pubDate>Sat, 13 Jul 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
+  <category>climate</category>
+  <category>coding</category>
+  <category>economics</category>
+  <category>etf</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-13_daily-curation.html</guid>
+  <pubDate>Fri, 12 Jul 2024 23:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/blog-post.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
   <title>Setting up a Python Development Workstation (Windows)</title>
