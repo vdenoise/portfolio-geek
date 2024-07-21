@@ -24,8 +24,6 @@ With 20+ years of experience in **portfolio construction, asset allocation and q
 
 In this blog, I document my findings and experiments, notably in **Python**, **Jupyter** and along themes like **portfolio optimisation** and **reproducible research**.
 
-In particular, [this section](/tutorials_en.html) provides you with a **Zero to Hero** experience in Python and Quantitative Finance.
-
 :::
 
 
