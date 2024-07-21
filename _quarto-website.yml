@@ -22,6 +22,7 @@ website:
   title: "Portfolio Geek"
   site-url: "https://portfolio-geek.com"
   site-path: "/"
+  margin-header: subscribe.html
 
   google-analytics: 
     tracking-id: "G-CJ2CMCX5LZ"
