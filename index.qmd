@@ -6,10 +6,11 @@ listing:
   sort: "date desc"
   type: grid
   fields: [date, title, image]
-  feed: true
+  feed:   
+    type: full
 
 ---
-
+ 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6}
