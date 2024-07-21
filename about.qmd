@@ -31,3 +31,14 @@ Here, I will try to **demystify** financial analysis and **provide ideas and sta
 
 In most articles, you should be able to **copy, run and modify** the code behind the analysis. This should help you to directly use many of the tools presented. The entire source is available on [Github](https://github.com/vdenoise/portfolio-geek)
 
+
+# Disclaimer
+**Disclaimer**
+Welcome to portfolio-geek.com! 
+This blog is dedicated to sharing knowledge and insights about financial markets for educational purposes only. All content, including charts, data, and formulas, is meant for illustration and should not be taken as financial advice. It's important to understand that all decisions you make based on the information provided here are solely your responsibility. 
+
+Please note that all opinions and content expressed here are my own and do not reflect the views of any current or past employers. I am sharing my 20 years of experience in the financial markets to help students, finance enthusiasts, and academics learn and grow. However, I do not offer personalized financial advice or investment recommendations.
+
+Remember, investing in financial markets carries risks, and it's crucial to do your own research or consult a professional advisor before making any financial decisions. 
+
+All content on this blog is copyrighted and may not be reproduced without permission. Thank you for visiting, and I hope you find the information here valuable and insightful. Enjoy learning!

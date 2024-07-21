@@ -3,7 +3,7 @@ project:
   output-dir: docs
   resources:
   - "pictures/*"
-  
+
 format:
   html:
     author: Vincent D.
@@ -20,10 +20,11 @@ format:
 
 website:
   title: "Portfolio Geek"
+  open-graph: true
   site-url: "https://portfolio-geek.com"
   site-path: "/"
   margin-header: subscribe.html
-
+  
   google-analytics: 
     tracking-id: "G-CJ2CMCX5LZ"
     anonymize-ip: true
@@ -58,4 +59,9 @@ website:
             href: portfolio_construction.qmd
           - text: Tutorials (en)
             href: tutorials_en.qmd
-
+  page-footer:
+    left: |
+      Proudly propelled by [Quarto](https://quarto.org/)
+    center:
+      - text: "About | Copyright | Disclaimer"
+        href: about.qmd
