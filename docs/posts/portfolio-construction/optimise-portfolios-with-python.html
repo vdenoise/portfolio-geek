@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
-<meta name="dcterms.date" content="2023-05-01">
+<meta name="dcterms.date" content="2024-05-01">
 
 <title>Portfolio Geek - Portfolio optimisation with Python</title>
 <style>
@@ -261,7 +261,7 @@ cookieconsent.run({
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 1, 2023</p>
+      <p class="date">May 1, 2024</p>
     </div>
   </div>
   
@@ -274,6 +274,19 @@ cookieconsent.run({
 
 
 <p><img src="../../pictures/portfolio-optimisation.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+In Construction
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Thanks for popping by; please note that this article is still in construction.</p>
+</div>
+</div>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p><strong>Harry Markowitz</strong> is one of the (if not “the”) fathers of modern portfolio construction and his seminal paper Portfolio Selection <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> has driven an entire research stream.</p>
@@ -327,7 +340,7 @@ cookieconsent.run({
 <section id="defining-our-investable-universe" class="level2">
 <h2 class="anchored" data-anchor-id="defining-our-investable-universe">Defining our Investable Universe</h2>
 <p>First and foremost, we need to define our <strong>Investable Universe</strong> i.e.&nbsp;the set of asset classes that we will allow in our portfolio.</p>
-<p>Many investors would typically think about single stocks, but on my side, I am typically looking I am looking here a Long Term Investing, and I would be keen to</p>
+<p>Many investors would typically think about single stocks, but on my side, I am typically looking at well diversified portfolios. Moreover, I am typically looking Long Term Investing, and as such, Indices, diversified portfolio or ETFs are in focus for me.</p>
 <p>Speaking about asset classes, we need some ETFs to analyse!</p>
 <blockquote class="blockquote">
 <p>“Important: Please bear in mind this article if purely for pedagogical purpose and should by no mean be understood as a recommendation or advice. Investing brings risk and in particular risk of loss of capital. I have no intention to recommend anything! I will follow among others this recent article in US News{% fn 7%} and ETF.com{% fn 8%} as sources of inspiration to identify relevant ETFs.”</p>
@@ -366,7 +379,7 @@ cookieconsent.run({
 </section>
 <section id="parameters-and-data-gathering" class="level2">
 <h2 class="anchored" data-anchor-id="parameters-and-data-gathering">Parameters and data gathering</h2>
-<p>I recommend you to read this <strong><a href="https://portfolio-geek.com/data/yahoo%20finance/pandas/2022/02/17/gathering_etf_and_stock_historical_data.html">article about data gathering</a></strong>.</p>
+<p>I recommend you to read this <strong><a href="../../posts/tutorials/en/spy-and-matplotlib.html">article about data gathering</a></strong>.</p>
 <p>Like we did in this article, we will utilise <strong>yfinance</strong> to get historical time series. As mentioned above, we will look at the performance of ETFs, which we will consider as as relevant proxies for their respective asset classes.</p>
 <p>You can of course utilise whatever asset class you want, and take single stocks, funds as historical data points. On my side, I am quite familiar with indices ETFs, and I will go with the selection above.</p>
 <p>Last but not least, we need to define the <strong>start_date</strong> and <strong>end_date</strong> for gathering the historical time series. For this study, we will gather 7 years of data.</p>
