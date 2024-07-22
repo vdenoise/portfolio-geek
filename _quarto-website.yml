@@ -24,7 +24,12 @@ website:
   site-url: "https://portfolio-geek.com"
   site-path: "/"
   margin-header: subscribe.html
-  
+
+  sidebar:
+    - id: Daily Findings
+      contents: posts/daily-curation/*.qmd
+      search: true
+      
   google-analytics: 
     tracking-id: "G-CJ2CMCX5LZ"
     anonymize-ip: true
