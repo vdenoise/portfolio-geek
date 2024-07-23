@@ -1,5 +1,5 @@
 ---
-title: "Today's Financial Curation: Fed's Inflation Forecast, Q2 Earnings Surge, ETF Market Shifts, and Automatic Savings Boost"
+title: "Today's Financial Curation (15.07.24): Fed's Inflation Forecast, Q2 Earnings Surge, ETF Market Shifts, and Automatic Savings Boost"
 page-layout: full
 title-block-banner: true
 date: 07-15-2024

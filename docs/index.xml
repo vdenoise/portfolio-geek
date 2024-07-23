@@ -10,9 +10,107 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Sat, 20 Jul 2024 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 21 Jul 2024 23:00:00 GMT</lastBuildDate>
 <item>
-  <title>Daily Findings: Strava Insights, Key Finance Coding Skills, Data Science Portfolios, and Economic Forecasts</title>
+  <title>Daily Finance Insights (22.07.24): Pandas Plot for EDA, Inflation &amp; Geopolitical Shocks, Large-Cap Growth Leads, and Optimizing YouTube Experience</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_22_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In today’s curation, we cover a range of topics relevant to financial markets and data analysis:</p>
+<ul>
+<li><strong>Pandas Plot</strong>: Simplifying data visualization with one-line plotting from dataframes.</li>
+<li><strong>Geopolitical Influences</strong>: Effects on inflation and household sentiment.</li>
+<li><strong>US Equity Factors</strong>: Large-cap growth leads, while small-cap value shows potential.</li>
+<li><strong>YouTube Shorts Management</strong>: Tips on disabling Shorts for a cleaner experience.</li>
+</ul>
+<p>Please explore the details in the table below.</p>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/you-dont-need-matplotlib-when-pandas-is-enough-for-data-visualisation-38d5680197a5">Simplify Your Data Visualizations: Leveraging Pandas for Efficient Exploratory Data Analysis (Author, 2024-07-22)</a></td>
+<td>Pandas Plot simplifies data visualisation, allowing one-line plotting from dataframes. While it utilises Matplotlib, it suffices for routine EDA. Limitations exist; it’s best for straightforward tasks only.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://mrzepczynski.blogspot.com/2024/07/geopolitical-risk-is-tied-to-inflation.html">How Geopolitical Events Fuel Inflation and Impact Your Wallet: A Simplified Guide (Geopolitical Shocks and Inflation, 2024-07-22)</a></td>
+<td>Geopolitical shocks contribute to inflation by disrupting trade and increasing public spending. This dynamic influences political change and household sentiment through declining purchasing power and economic impacts.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fundamental-investing" class="level1">
+<h1>Fundamental Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.capitalspectator.com/large-cap-growth-is-still-leading-the-market-will-it-last/">Small-Cap Stocks Suddenly Surge: Will They Outpace Large-Cap Growth and Change Market Dynamics? (CNBC, 2024-07-22)</a></td>
+<td>Large-cap growth leads US equity factors in 2024. Small-cap value lags but shows a potential turnaround amid speculation of Federal Reserve interest rate cuts. Caution advised on small-cap sustainability.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technology" class="level1">
+<h1>Technology</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://sethmlarson.dev/youtube-without-youtube-shorts?date=2024-07-22">Mastering YouTube: How Disabling Watch History Eliminates the Distraction of Shorts and Enhances Viewing Experience (YouTube without YouTube Shorts, 2024-07-22)</a></td>
+<td>The author disabled YouTube Shorts by turning off and deleting their Watch History. This resulted in no Shorts appearing, as well as a simplified home page.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <category>economics</category>
+  <category>fundamental</category>
+  <category>tech</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_22_daily-curation.html</guid>
+  <pubDate>Sun, 21 Jul 2024 23:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Daily Findings (21.07.24): Strava Insights, Key Finance Coding Skills, Data Science Portfolios, and Economic Forecasts</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-21_daily-curation.html</link>
   <description><![CDATA[ 
@@ -98,10 +196,10 @@
   <category>market-feed</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-21_daily-curation.html</guid>
   <pubDate>Sat, 20 Jul 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://portfolio-geek.com/pictures/laptop-plant-and-stack-of-newspapers-on-wooden-ta-2023-11-27-05-12-11-utc.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
-  <title>Daily Insights: GPT-4o Mini Launch, Bitcoin’s Safe-Haven Surge, AI Content Best Practices, Hill Repeats for Runners</title>
+  <title>Daily Insights (20.07.24): GPT-4o Mini Launch, Bitcoin’s Safe-Haven Surge, AI Content Best Practices, Hill Repeats for Runners</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-20_daily-curation.html</link>
   <description><![CDATA[ 
@@ -198,7 +296,7 @@
   <media:content url="https://portfolio-geek.com/pictures/blog-post.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
-  <title>Daily Market Insights: Fed Influence, Small Cap Squeeze, and Portfolio Risk Reassessment</title>
+  <title>Daily Market Insights (19.07.24): Fed Influence, Small Cap Squeeze, and Portfolio Risk Reassessment</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-19_daily-curation.html</link>
   <description><![CDATA[ 
@@ -262,7 +360,7 @@
   <media:content url="https://portfolio-geek.com/pictures/portfolio-optimisation.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
-  <title>Mastering Linux Scripting, Trend-Following Strategies, and Evolution of Large Language Models in Today’s Financial Landscape</title>
+  <title>18.07.24: Mastering Linux Scripting, Trend-Following Strategies, and Evolution of Large Language Models in Today’s Financial Landscape</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-18_daily-curation.html</link>
   <description><![CDATA[ 
@@ -340,7 +438,7 @@
   <media:content url="https://portfolio-geek.com/pictures/stock-valuation.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
-  <title>Today’s Curation: Master Python Trading with Alpaca, Retirement Strategies, &amp; Managing Risks with Options</title>
+  <title>Today’s Curation (15.07.24): Master Python Trading with Alpaca, Retirement Strategies, &amp; Managing Risks with Options</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-17_daily-curation.html</link>
   <description><![CDATA[ 
@@ -482,7 +580,7 @@
   <media:content url="https://portfolio-geek.com/pictures/laptop-data.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
-  <title>Daily Insights: Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market</title>
+  <title>Daily Insights (16.07.24): Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-16_daily-curation.html</link>
   <description><![CDATA[ 
@@ -608,7 +706,7 @@
   <media:content url="https://portfolio-geek.com/pictures/time-horizon-paper.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
-  <title>Today’s Financial Curation: Fed’s Inflation Forecast, Q2 Earnings Surge, ETF Market Shifts, and Automatic Savings Boost</title>
+  <title>Today’s Financial Curation (15.07.24): Fed’s Inflation Forecast, Q2 Earnings Surge, ETF Market Shifts, and Automatic Savings Boost</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-15_daily-curation.html</link>
   <description><![CDATA[ 
@@ -735,7 +833,7 @@
   <media:content url="https://portfolio-geek.com/pictures/mathematics-formulas-on-a-blackboard.png" medium="image" type="image/png" height="95" width="144"/>
 </item>
 <item>
-  <title>Welcome to Your Daily Financial Curation: Python Automation, Climate Action, ECB Policy Signals, and US Heatwave Insights</title>
+  <title>Welcome to Your Daily Financial Curation (14.07.24): Python Automation, Climate Action, ECB Policy Signals, and US Heatwave Insights</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-14_daily-curation.html</link>
   <description><![CDATA[ 
@@ -844,7 +942,7 @@
   <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Today’s Picks: Wind Power Surpasses Coal, EV Savings for Rural Families, Impact Investing, and Shifts in ETF Trends</title>
+  <title>Today’s Picks (13.07.24): Wind Power Surpasses Coal, EV Savings for Rural Families, Impact Investing, and Shifts in ETF Trends</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-13_daily-curation.html</link>
   <description><![CDATA[ 

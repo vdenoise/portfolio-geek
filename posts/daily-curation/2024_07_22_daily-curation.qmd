@@ -1,0 +1,41 @@
+---
+title: "Daily Finance Insights (22.07.24): Pandas Plot for EDA, Inflation & Geopolitical Shocks, Large-Cap Growth Leads, and Optimizing YouTube Experience"
+page-layout: full
+title-block-banner: true
+date: 07-22-2024
+categories: [coding,economics,fundamental,tech]
+tags: [data, visualization, inflation, geopolitics, equity, factors, growth, sustainability, youtube, history]
+image: /pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg
+---
+
+In today's curation, we cover a range of topics relevant to financial markets and data analysis:
+
+- **Pandas Plot**: Simplifying data visualization with one-line plotting from dataframes.
+- **Geopolitical Influences**: Effects on inflation and household sentiment.
+- **US Equity Factors**: Large-cap growth leads, while small-cap value shows potential.
+- **YouTube Shorts Management**: Tips on disabling Shorts for a cleaner experience.
+
+Please explore the details in the table below.
+
+
+
+# Coding
+| Title | Summary |
+|-----|-----------|
+| [Simplify Your Data Visualizations: Leveraging Pandas for Efficient Exploratory Data Analysis (Author, 2024-07-22)](https://towardsdatascience.com/you-dont-need-matplotlib-when-pandas-is-enough-for-data-visualisation-38d5680197a5)   | Pandas Plot simplifies data visualisation, allowing one-line plotting from dataframes. While it utilises Matplotlib, it suffices for routine EDA. Limitations exist; it's best for straightforward tasks only. |
+
+# Economics
+| Title | Summary |
+|-----|-----------|
+| [How Geopolitical Events Fuel Inflation and Impact Your Wallet: A Simplified Guide (Geopolitical Shocks and Inflation, 2024-07-22)](http://mrzepczynski.blogspot.com/2024/07/geopolitical-risk-is-tied-to-inflation.html)   | Geopolitical shocks contribute to inflation by disrupting trade and increasing public spending. This dynamic influences political change and household sentiment through declining purchasing power and economic impacts. |
+
+# Fundamental Investing
+| Title | Summary |
+|-----|-----------|
+| [Small-Cap Stocks Suddenly Surge: Will They Outpace Large-Cap Growth and Change Market Dynamics? (CNBC, 2024-07-22)](https://www.capitalspectator.com/large-cap-growth-is-still-leading-the-market-will-it-last/)   | Large-cap growth leads US equity factors in 2024. Small-cap value lags but shows a potential turnaround amid speculation of Federal Reserve interest rate cuts. Caution advised on small-cap sustainability. |
+
+# Technology
+| Title | Summary |
+|-----|-----------|
+| [Mastering YouTube: How Disabling Watch History Eliminates the Distraction of Shorts and Enhances Viewing Experience (YouTube without YouTube Shorts, 2024-07-22)](http://sethmlarson.dev/youtube-without-youtube-shorts?date=2024-07-22)   | The author disabled YouTube Shorts by turning off and deleting their Watch History. This resulted in no Shorts appearing, as well as a simplified home page. |
+

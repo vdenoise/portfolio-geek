@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Your Daily Financial Curation: Python Automation, Climate Action, ECB Policy Signals, and US Heatwave Insights"
+title: "Welcome to Your Daily Financial Curation (14.07.24): Python Automation, Climate Action, ECB Policy Signals, and US Heatwave Insights"
 page-layout: full
 title-block-banner: true
 date: 07-14-2024

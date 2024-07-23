@@ -1,5 +1,5 @@
 ---
-title: "Today's Curation: Master Python Trading with Alpaca, Retirement Strategies, & Managing Risks with Options"
+title: "Today's Curation  (15.07.24): Master Python Trading with Alpaca, Retirement Strategies, & Managing Risks with Options"
 page-layout: full
 title-block-banner: true
 date: 07-17-2024

@@ -1,5 +1,5 @@
 ---
-title: "Daily Insights: GPT-4o Mini Launch, Bitcoin's Safe-Haven Surge, AI Content Best Practices, Hill Repeats for Runners"
+title: "Daily Insights (20.07.24): GPT-4o Mini Launch, Bitcoin's Safe-Haven Surge, AI Content Best Practices, Hill Repeats for Runners"
 page-layout: full
 title-block-banner: true
 date: 07-20-2024

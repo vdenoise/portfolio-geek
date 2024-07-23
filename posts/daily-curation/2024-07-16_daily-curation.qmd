@@ -1,5 +1,5 @@
 ---
-title: "Daily Insights: Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market"
+title: "Daily Insights (16.07.24): Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market"
 page-layout: full
 title-block-banner: true
 date: 07-16-2024
