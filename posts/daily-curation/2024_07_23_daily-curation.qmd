@@ -1,0 +1,53 @@
+---
+title: "Daily Links 23.07.2024: Transparent Private Markets, Improved Forecasting Models, and Cutting-Edge Tech News"
+page-layout: full
+title-block-banner: true
+date: 07-23-2024
+categories: [coding,portfolio-construction,quant,tech]
+tags: [temperature, transparency, returns, inflation, analysts, forecasting, physics, data, investment, crowdfunding]
+image: /pictures/newspaper-stack-on-table-2023-11-27-05-14-30-utc.png
+---
+
+In today's curation, we explore a diverse range of topics relevant to finance and technology, encompassing:
+
+- Geospatial interpolation methods for EV battery performance analysis
+- Transparency in private markets and the need for reliable benchmarks
+- Projected returns for pensions driven by stock allocations
+- Potential Fed rate cuts and the attractiveness of bonds
+- Insights from _Confessions of a Wall Street Analyst_
+- Quantifying forecasting uncertainty in time series with Python
+- Mathematical concepts from physics applicable to finance
+- A personal journey through data science and overfitting
+- Current tech developments affecting major companies
+- Plum's recent funding and growth trajectory
+
+Please see the table below for links and descriptions of each topic.
+
+
+
+# Coding
+| Title | Summary |
+|-----|-----------|
+| [Understanding EV Battery Efficiency: Using Geospatial Interpolation to Reconstruct Historical Temperature Data (Towards Data Science, 2024-07-23)](https://towardsdatascience.com/temperature-reconstruction-through-geospatial-interpolation-aea34c359207?source=rss----7f60cf5620c9---4)   | This article presents a method for reconstructing historical atmospheric temperatures using geospatial interpolation, specifically Inverse Distance Weighting, to improve EV battery performance analysis with reduced data queries. |
+
+# Portfolio Construction Techniques
+| Title | Summary |
+|-----|-----------|
+| [Unveiling Hidden Markets: The Power of Data and Benchmarks in Private Investments (Institutional Investor, 2024-07-23)](https://www.institutionalinvestor.com/article/2dj2yfmbp85ay1lm1c8ow/opinion/with-20-trillion-in-private-markets-the-lack-of-transparency-is-no-longer-okay)   | Private markets, valued at $20 trillion, face transparency issues. Reliable benchmarks are essential for informed decision-making, investor confidence, and fostering trust among stakeholders in the evolving alternatives landscape. |
+| [Public Pensions Surged in 2024 Thanks to Stock Market Gains: Analysis Predicts Continued Growth (Institutional Investor, 2024-07-23)](https://www.institutionalinvestor.com/article/2dj3kro2cg8my5mj198g0/portfolio/stocks-drove-pension-performance-again)   | MPI predicts higher returns for pensions in fiscal year 2024, driven by stock exposure. Major allocations to public equities led to promising projected returns for funds like Georgia and Kentucky teachers' systems. |
+| [Understanding Stocks vs. Bonds: Where Should You Invest as Interest Rates Change? (Disciplined Systematic Global Macro Views, 2024-07-23)](http://mrzepczynski.blogspot.com/2024/07/should-you-prefer-stocks-or-bonds-not.html)   | Inflation is down, leading to potential Fed rate cuts. Stocks appear expensive relative to bonds, making bonds more attractive. Managed futures offer an alternative for diversifying investments. |
+| [The High-Stakes World of Wall Street Analysts: Pressure, Competition, and the Pursuit of Financial Accuracy (Disciplined Systematic Global Macro Views, 2024-07-23)](http://mrzepczynski.blogspot.com/2024/07/being-wall-street-analyst-has-lot-of.html)   | _Confessions of a Wall Street Analyst_ explores the pressures faced by analysts in the telecom sector during significant changes, highlighting risks, competition, and evolving practices pre-regulation era. |
+
+# Quantative Investing
+| Title | Summary |
+|-----|-----------|
+| [Mastering Forecasting Uncertainty: Simple Steps for Accurate Time Series Predictions Using Conformal Prediction and Bootstrap (T. Moudiki's Webpage, 2024-07-22)](https://www.r-bloggers.com/2024/07/forecasting-uncertainty-sequential-split-conformal-prediction-block-bootstrap-web-app/)   | This article discusses a method for quantifying forecasting uncertainty in time series using sequential split conformal prediction and block bootstrap, implemented in the Python package nnetsauce. |
+| [Unlocking Physics: Action Principles, Spacetime Transformations, and Curved Geometry Insight for Curious Minds without Math Anxiety (Towards Data Science, 2024-07-23)](https://towardsdatascience.com/three-mind-blowing-ideas-in-physics-the-stationary-action-principle-lorentz-transformations-and-e86977ea86ad?source=rss----7f60cf5620c9---4)   | The article explores three fundamental concepts in physics: the stationary action principle, Lorentz transformations, and the metric tensor, highlighting their mathematical significance and applications in understanding physical phenomena. |
+| [Mastering Neural Networks: Overcoming Frustration and Embracing the Journey to Understand Overfitting (Data Science, 2024-07-23)](https://towardsdatascience.com/i-used-to-hate-overfitting-but-now-im-grokking-it-e6e1dcfbdfd8)   | The author reflects on their journey with data science, contrasting early frustrations with sound propagation models to their evolving understanding of overfitting in neural networks and its implications. |
+
+# Technology
+| Title | Summary |
+|-----|-----------|
+| [Smart's Electric Roadster, Vacation Gadget Tips, and Blame Game for CrowdStrike Outage Explored (01net, 2024-07-22)](https://www.01net.com/actualites/01net-morning-debrancher-ou-pas-ses-equipements-pendant-les-vacances-un-futur-roadster-chez-smart-panne-crowdstrike-a-qui-la-faute.html)   | 01net discusses whether to unplug devices during holidays, Microsoft's blame on the EU for the CrowdStrike outage, and Smart's future plans for an electric Roadster, while Samsung shifts to Google Messages. |
+| [Plum Secures £16M Boost: On Track for Profitability with 2M Users and £1B Assets Under Management (Plum blog, 2024-07-23)](https://www.finextra.com/newsarticle/44488/plum-raises-16-million-in-push-for-profitability)   | Plum raised £16m, including £13.4m from institutional investors and £2.7m via crowdfunding. The app has over two million customers and aims for profitability by 2025, with assets under management exceeding £1bn. |
+
