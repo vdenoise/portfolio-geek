@@ -1,0 +1,48 @@
+---
+title: "Daily Financial Insights 24.07.2024: US Economic Growth, ETF Trends, Small-Cap Outperformance, & Inflation Eases"
+page-layout: full
+title-block-banner: true
+date: 07-24-2024
+categories: [coding,economics,fundamental,quant]
+tags: [pandas, groupby, economy, inflation, rates, stocks, etfs, growth, credit, analysis]
+image: /pictures/news-concept-with-newspapers-2023-11-27-05-32-59-utc.png
+---
+
+In today’s curation, we explore a range of topics relevant to quantitative finance and market insights:
+
+- GroupBy operations in pandas for data analysis
+- rnatoolbox for plotting group data
+- US economic growth and inflation trends
+- Fed rate prediction and implications for small-cap stocks
+- Performance of small-cap ETFs and investor sentiment  
+- Market performance under the Biden administration
+
+Please find further details in the table below.
+
+
+
+# Coding
+| Title | Summary |
+|-----|-----------|
+| [Unlocking Data Insights: Master pandas GroupBy Techniques with Real-World Examples (pandas documentation, 2024-07-23)](https://realpython.com/courses/pandas-groupby-real-world-data/)   | This course teaches pandas GroupBy operations using real-world datasets. It covers the split-apply-combine process, method categorisation, and practical applications for effective data analysis. |
+| [Visualize Data with Ease Using Group Scatter Plots in R (gacatag, 2024-07-23)](https://www.r-bloggers.com/2024/07/plotting-individual-values-within-multiple-groups-together-with-their-means/)   | The `groupScatterPlot()` function in the rnatoolbox package plots individual values from multiple groups alongside their means, useful for various data analyses, including gene expression. |
+
+# Economics
+| Title | Summary |
+|-----|-----------|
+| [US Economy Shows Resilience: Q2 Growth Set for Improvement, Recession Risk Remains Low (CapitalSpectator.com, 2024-07-23)](https://www.capitalspectator.com/us-q2-gdp-growth-set-for-modest-pickup-in-thursdays-report/)   | US economic growth is expected to rise to 1.9% in Q2, an improvement from Q1's 1.4%. Recession risk remains low, with estimates around 9% based on recent analytics. |
+| [How Smart Financial Choices Mitigated Inflation Impact Without Triggering Recession (The name is not explicitly mentioned in the content provided, so I am unable to identify it., 2024-07-24)](https://awealthofcommonsense.com/2024/07/are-higher-rates-finally-starting-to-impact-consumer-finances/)   | Inflation fell to 3% without recession. Consumers remain relatively resilient despite rising interest rates, though some debt types, like credit cards and auto loans, show increasing delinquencies. |
+| [Why the Fed May Delay Rate Cuts: Data, Market Signals, and Election Timing (FactSet Insight, 2024-07-23)](https://insight.factset.com/the-fed-is-not-cutting-in-september)   | The Fed is likely not to cut rates in September, anticipating two cuts in November and December instead, citing data dependency, synthetic cuts, and election politicisation as reasons. |
+
+# Fundamental Investing
+| Title | Summary |
+|-----|-----------|
+| [Unlocking Small-Cap Stock Potential and Ether ETF Strategies: Insights from Industry Experts (ETF Trends, 2024-07-23)](https://www.etftrends.com/etf-prime/crigger-small-cap-stocks-plus-spot-ether-etfs/)   | Small-cap stocks have recently outperformed large-caps, leading to significant inflows into small-cap ETFs. Spot ether ETFs were approved rapidly, capitalising on changing regulatory attitudes towards cryptocurrencies. |
+| [Assessing Biden's Stock Market Legacy: A Comparative Analysis with Past Presidents from Reagan to Trump (ValueWalk, 2024-07-23)](https://www.valuewalk.com/how-the-stock-market-has-fared-under-biden/)   | Since Biden took office, the S&P 500 has risen 48%. His administration experienced two bull markets and one bear market, trailing both Trump and Obama's stock market performances. |
+| [Forecasting the Small Cap Surge: Tom Lee's Bold Prediction on IWM Reaching 300 (Rotation Report, 2024-07-23)](https://rotationreport.substack.com/p/the-small-cap-snowball)   | Tom Lee predicts IWM will reach 300. This speculation raises interesting possibilities for small-cap growth. Full details are exclusive to paid subscribers on a specific platform. |
+
+# Quantitative Investing
+| Title | Summary |
+|-----|-----------|
+| [Unlock High Returns: Quality Small Cap Stocks to Watch During Upcoming Rate Cuts (ETF Trends, 2024-07-24)](https://www.etftrends.com/etf-building-blocks-channel/investing-factor-key-rate-sensitive-small-caps/)   | Rate cuts may benefit small-cap quality stocks, particularly through the ALPS O’Shares U.S. Small-Cap Quality Dividend ETF (OUSM), which focuses on dividends and shows strong performance compared to benchmarks. |
+

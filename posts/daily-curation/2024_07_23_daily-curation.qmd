@@ -38,7 +38,7 @@ Please see the table below for links and descriptions of each topic.
 | [Understanding Stocks vs. Bonds: Where Should You Invest as Interest Rates Change? (Disciplined Systematic Global Macro Views, 2024-07-23)](http://mrzepczynski.blogspot.com/2024/07/should-you-prefer-stocks-or-bonds-not.html)   | Inflation is down, leading to potential Fed rate cuts. Stocks appear expensive relative to bonds, making bonds more attractive. Managed futures offer an alternative for diversifying investments. |
 | [The High-Stakes World of Wall Street Analysts: Pressure, Competition, and the Pursuit of Financial Accuracy (Disciplined Systematic Global Macro Views, 2024-07-23)](http://mrzepczynski.blogspot.com/2024/07/being-wall-street-analyst-has-lot-of.html)   | _Confessions of a Wall Street Analyst_ explores the pressures faced by analysts in the telecom sector during significant changes, highlighting risks, competition, and evolving practices pre-regulation era. |
 
-# Quantative Investing
+# Quantitative Investing
 | Title | Summary |
 |-----|-----------|
 | [Mastering Forecasting Uncertainty: Simple Steps for Accurate Time Series Predictions Using Conformal Prediction and Bootstrap (T. Moudiki's Webpage, 2024-07-22)](https://www.r-bloggers.com/2024/07/forecasting-uncertainty-sequential-split-conformal-prediction-block-bootstrap-web-app/)   | This article discusses a method for quantifying forecasting uncertainty in time series using sequential split conformal prediction and block bootstrap, implemented in the Python package nnetsauce. |

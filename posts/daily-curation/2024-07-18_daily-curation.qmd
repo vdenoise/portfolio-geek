@@ -21,7 +21,7 @@ In today's curation, we explore several crucial topics in financial technology a
 |-----|-----------|
 | [Unlock Your Linux System’s Potential: Automate Tasks with Bash, Python, and Perl Scripts for Improved Productivity (Linux Journal, 2024-07-18)](https://www.linuxjournal.com/content/simple-linux-shell-scripts-bash-python-and-perl-will-get-you-and-running)   | Bash, Python, and Perl are powerful Linux scripting languages for task automation, offering unique features like command integration, extensive libraries, and text processing capabilities for efficient system management. |
 
-# Quantative Investing
+# Quantitative Investing
 | Title | Summary |
 |-----|-----------|
 | [Master Trend-Following Strategies: Learn the Key Tactics for Consistent Market Success (Quantpedia, 2024-07-18)](https://quantpedia.com/)   | Dobromir Tzotchev's framework outlines a robust trend-following strategy emphasizing a clean signal, portfolio diversification, and effective risk management techniques for consistent returns in varying market conditions. |

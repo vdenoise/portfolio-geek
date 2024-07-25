@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
-<meta name="dcterms.date" content="2024-07-23">
 
-<title>Portfolio Geek - Daily Links 23.07.2024: Transparent Private Markets, Improved Forecasting Models, and Cutting-Edge Tech News</title>
+<title>Portfolio Geek - Getting Started: measuring volatility</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,10 +21,44 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -97,21 +130,50 @@ cookieconsent.run({
 });
 </script> 
   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Portfolio Geek - Daily Links 23.07.2024: Transparent Private Markets, Improved Forecasting Models, and Cutting-Edge Tech News">
+<meta property="og:title" content="Portfolio Geek - Getting Started: measuring volatility">
 <meta property="og:description" content="Finance, Research and the Tech required to Fuel them">
-<meta property="og:image" content="https://portfolio-geek.com/pictures/newspaper-stack-on-table-2023-11-27-05-14-30-utc.png">
 <meta property="og:site_name" content="Portfolio Geek">
-<meta property="og:image:height" content="427">
-<meta property="og:image:width" content="640">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -165,158 +227,362 @@ cookieconsent.run({
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <div class="quarto-title-block"><div><h1 class="title">Daily Links 23.07.2024: Transparent Private Markets, Improved Forecasting Models, and Cutting-Edge Tech News</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/daily-curation/2024_07_23_daily-curation.qmd"><i class="bi"></i> Code</button></div></div>
-                                <div class="quarto-categories">
-                <div class="quarto-category">coding</div>
-                <div class="quarto-category">portfolio-construction</div>
-                <div class="quarto-category">quant</div>
-                <div class="quarto-category">tech</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Vincent D. </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">July 23, 2024</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Getting Started: measuring volatility</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/risk_and_return/post_historical-vol.ipynb">View Source</a></li></ul></div></div>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Vincent D. </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
 
 
-<p>In today’s curation, we explore a diverse range of topics relevant to finance and technology, encompassing:</p>
-<ul>
-<li>Geospatial interpolation methods for EV battery performance analysis</li>
-<li>Transparency in private markets and the need for reliable benchmarks</li>
-<li>Projected returns for pensions driven by stock allocations</li>
-<li>Potential Fed rate cuts and the attractiveness of bonds</li>
-<li>Insights from <em>Confessions of a Wall Street Analyst</em></li>
-<li>Quantifying forecasting uncertainty in time series with Python</li>
-<li>Mathematical concepts from physics applicable to finance</li>
-<li>A personal journey through data science and overfitting</li>
-<li>Current tech developments affecting major companies</li>
-<li>Plum’s recent funding and growth trajectory</li>
-</ul>
-<p>Please see the table below for links and descriptions of each topic.</p>
-<section id="coding" class="level1">
-<h1>Coding</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://towardsdatascience.com/temperature-reconstruction-through-geospatial-interpolation-aea34c359207?source=rss----7f60cf5620c9---4">Understanding EV Battery Efficiency: Using Geospatial Interpolation to Reconstruct Historical Temperature Data (Towards Data Science, 2024-07-23)</a></td>
-<td>This article presents a method for reconstructing historical atmospheric temperatures using geospatial interpolation, specifically Inverse Distance Weighting, to improve EV battery performance analysis with reduced data queries.</td>
-</tr>
-</tbody>
-</table>
+</header>
+
+
+<section id="understanding-historical-volatility" class="level1">
+<h1>Understanding Historical Volatility</h1>
+<p>Welcome to this detailed exploration of Historical Volatility, a concept central to risk assessment in finance and investing. Given my 20 years of experience as a financial engineer, I am thrilled to share my insights on this subject through practical Python examples. Whether you are a student, academic, or financial enthusiast, this post will provide you with hands-on knowledge, making it easier to comprehend and apply historical volatility in your analyses.</p>
+<section id="introduction-to-historical-volatility" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-historical-volatility">1. Introduction to Historical Volatility</h2>
+<hr>
+<section id="relevance-in-finance-and-investing" class="level3">
+<h3 class="anchored" data-anchor-id="relevance-in-finance-and-investing">1.1. Relevance in Finance and Investing</h3>
+<p>Historical volatility is crucial in finance and investing for assessing the riskiness of an asset. With its role in portfolio management, derivatives pricing, and investment decisions, understanding this concept is essential for making informed financial choices.</p>
 </section>
-<section id="portfolio-construction-techniques" class="level1">
-<h1>Portfolio Construction Techniques</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.institutionalinvestor.com/article/2dj2yfmbp85ay1lm1c8ow/opinion/with-20-trillion-in-private-markets-the-lack-of-transparency-is-no-longer-okay">Unveiling Hidden Markets: The Power of Data and Benchmarks in Private Investments (Institutional Investor, 2024-07-23)</a></td>
-<td>Private markets, valued at $20 trillion, face transparency issues. Reliable benchmarks are essential for informed decision-making, investor confidence, and fostering trust among stakeholders in the evolving alternatives landscape.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.institutionalinvestor.com/article/2dj3kro2cg8my5mj198g0/portfolio/stocks-drove-pension-performance-again">Public Pensions Surged in 2024 Thanks to Stock Market Gains: Analysis Predicts Continued Growth (Institutional Investor, 2024-07-23)</a></td>
-<td>MPI predicts higher returns for pensions in fiscal year 2024, driven by stock exposure. Major allocations to public equities led to promising projected returns for funds like Georgia and Kentucky teachers’ systems.</td>
-</tr>
-<tr class="odd">
-<td><a href="http://mrzepczynski.blogspot.com/2024/07/should-you-prefer-stocks-or-bonds-not.html">Understanding Stocks vs.&nbsp;Bonds: Where Should You Invest as Interest Rates Change? (Disciplined Systematic Global Macro Views, 2024-07-23)</a></td>
-<td>Inflation is down, leading to potential Fed rate cuts. Stocks appear expensive relative to bonds, making bonds more attractive. Managed futures offer an alternative for diversifying investments.</td>
-</tr>
-<tr class="even">
-<td><a href="http://mrzepczynski.blogspot.com/2024/07/being-wall-street-analyst-has-lot-of.html">The High-Stakes World of Wall Street Analysts: Pressure, Competition, and the Pursuit of Financial Accuracy (Disciplined Systematic Global Macro Views, 2024-07-23)</a></td>
-<td><em>Confessions of a Wall Street Analyst</em> explores the pressures faced by analysts in the telecom sector during significant changes, highlighting risks, competition, and evolving practices pre-regulation era.</td>
-</tr>
-</tbody>
-</table>
+<section id="importance-of-spy-sp-500-etf-in-volatility-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="importance-of-spy-sp-500-etf-in-volatility-analysis">1.2. Importance of SPY (S&amp;P 500 ETF) in Volatility Analysis</h3>
+<p>SPY, representing the S&amp;P 500 index, serves as an excellent proxy for market analysis. Its high liquidity and trading volume make it a reliable measure of volatility, aiding in comparison with other assets.</p>
 </section>
-<section id="quantitative-investing" class="level1">
-<h1>Quantitative Investing</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.r-bloggers.com/2024/07/forecasting-uncertainty-sequential-split-conformal-prediction-block-bootstrap-web-app/">Mastering Forecasting Uncertainty: Simple Steps for Accurate Time Series Predictions Using Conformal Prediction and Bootstrap (T. Moudiki’s Webpage, 2024-07-22)</a></td>
-<td>This article discusses a method for quantifying forecasting uncertainty in time series using sequential split conformal prediction and block bootstrap, implemented in the Python package nnetsauce.</td>
-</tr>
-<tr class="even">
-<td><a href="https://towardsdatascience.com/three-mind-blowing-ideas-in-physics-the-stationary-action-principle-lorentz-transformations-and-e86977ea86ad?source=rss----7f60cf5620c9---4">Unlocking Physics: Action Principles, Spacetime Transformations, and Curved Geometry Insight for Curious Minds without Math Anxiety (Towards Data Science, 2024-07-23)</a></td>
-<td>The article explores three fundamental concepts in physics: the stationary action principle, Lorentz transformations, and the metric tensor, highlighting their mathematical significance and applications in understanding physical phenomena.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://towardsdatascience.com/i-used-to-hate-overfitting-but-now-im-grokking-it-e6e1dcfbdfd8">Mastering Neural Networks: Overcoming Frustration and Embracing the Journey to Understand Overfitting (Data Science, 2024-07-23)</a></td>
-<td>The author reflects on their journey with data science, contrasting early frustrations with sound propagation models to their evolving understanding of overfitting in neural networks and its implications.</td>
-</tr>
-</tbody>
-</table>
+<section id="setting-the-stage-complexity-level" class="level3">
+<h3 class="anchored" data-anchor-id="setting-the-stage-complexity-level">1.3. Setting the Stage: Complexity Level</h3>
+<p>While historical volatility can seem complex, it becomes manageable with a basic understanding of statistics and financial concepts. This post aims to walk you through the necessary steps, illustrating each concept with Python code.</p>
 </section>
-<section id="technology" class="level1">
-<h1>Technology</h1>
-<table class="table">
+</section>
+<section id="key-concepts-and-formulas" class="level2">
+<h2 class="anchored" data-anchor-id="key-concepts-and-formulas">2. Key Concepts and Formulas</h2>
+<hr>
+<section id="the-formula-for-historical-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="the-formula-for-historical-volatility">2.1. The Formula for Historical Volatility</h3>
+<p>Historical volatility is calculated using the standard deviation of logarithmic returns of an asset’s prices.</p>
+<p><span class="math display">\[ \sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N} (R_i - \bar{R})^2} \]</span></p>
+<p>where: - ( ) is the historical volatility - ( N ) is the number of observations - ( R_i ) is the logarithmic return at time ( i ) - ( {R} ) is the average of the logarithmic returns</p>
+</section>
+<section id="annualizing-historical-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="annualizing-historical-volatility">2.2. Annualizing Historical Volatility</h3>
+<p>To annualize the calculated weekly volatility, use the following formula:</p>
+<p><span class="math display">\[ \sigma_{\text{annual}} = \sigma_{\text{weekly}} \times \sqrt{52} \]</span></p>
+</section>
+<section id="parameters-and-their-impact" class="level3">
+<h3 class="anchored" data-anchor-id="parameters-and-their-impact">2.3. Parameters and Their Impact</h3>
+<p>The number of observations (N), the time interval (weekly), and the asset’s historical closing prices significantly influence the calculated volatility. Understanding these parameters helps in tweaking the analysis for different assets or time frames.</p>
+</section>
+</section>
+<section id="practical-implementation-in-python" class="level2">
+<h2 class="anchored" data-anchor-id="practical-implementation-in-python">3. Practical Implementation in Python</h2>
+<hr>
+<section id="importing-required-libraries" class="level3">
+<h3 class="anchored" data-anchor-id="importing-required-libraries">3.1. Importing Required Libraries</h3>
+<p>First, let’s import the necessary libraries for our analysis.</p>
+<div id="c93e353e" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="fetching-historical-data" class="level3">
+<h3 class="anchored" data-anchor-id="fetching-historical-data">3.2. Fetching Historical Data</h3>
+<p>We’ll use the <code>yfinance</code> library to fetch historical data for SPY (S&amp;P 500 ETF).</p>
+<div id="8744cc03" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Fetch SPY data</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>spy <span class="op">=</span> yf.Ticker(<span class="st">'SPY'</span>)</span>
+<span id="cb2-3"><a href="#cb2-3"></a>df <span class="op">=</span> spy.history(period<span class="op">=</span><span class="st">'5y'</span>, interval<span class="op">=</span><span class="st">'1wk'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header">
-<th>Title</th>
-<th>Summary</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Open</th>
+<th data-quarto-table-cell-role="th">High</th>
+<th data-quarto-table-cell-role="th">Low</th>
+<th data-quarto-table-cell-role="th">Close</th>
+<th data-quarto-table-cell-role="th">Volume</th>
+<th data-quarto-table-cell-role="th">Dividends</th>
+<th data-quarto-table-cell-role="th">Stock Splits</th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Date</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://www.01net.com/actualites/01net-morning-debrancher-ou-pas-ses-equipements-pendant-les-vacances-un-futur-roadster-chez-smart-panne-crowdstrike-a-qui-la-faute.html">Smart’s Electric Roadster, Vacation Gadget Tips, and Blame Game for CrowdStrike Outage Explored (01net, 2024-07-22)</a></td>
-<td>01net discusses whether to unplug devices during holidays, Microsoft’s blame on the EU for the CrowdStrike outage, and Smart’s future plans for an electric Roadster, while Samsung shifts to Google Messages.</td>
+<td data-quarto-table-cell-role="th">2019-07-22</td>
+<td>276.530804</td>
+<td>279.340577</td>
+<td>276.438372</td>
+<td>279.137238</td>
+<td>147691400.0</td>
+<td>0.0</td>
+<td>0</td>
 </tr>
 <tr class="even">
-<td><a href="https://www.finextra.com/newsarticle/44488/plum-raises-16-million-in-push-for-profitability">Plum Secures £16M Boost: On Track for Profitability with 2M Users and £1B Assets Under Management (Plum blog, 2024-07-23)</a></td>
-<td>Plum raised £16m, including £13.4m from institutional investors and £2.7m via crowdfunding. The app has over two million customers and aims for profitability by 2025, with assets under management exceeding £1bn.</td>
+<td data-quarto-table-cell-role="th">2019-07-29</td>
+<td>279.017107</td>
+<td>279.137266</td>
+<td>268.868668</td>
+<td>270.458405</td>
+<td>447617000.0</td>
+<td>0.0</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2019-08-05</td>
+<td>266.271465</td>
+<td>271.382648</td>
+<td>260.383902</td>
+<td>269.534119</td>
+<td>621473300.0</td>
+<td>0.0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2019-08-12</td>
+<td>267.999797</td>
+<td>271.872469</td>
+<td>261.003135</td>
+<td>266.973877</td>
+<td>478024400.0</td>
+<td>0.0</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2019-08-19</td>
+<td>270.060925</td>
+<td>271.669137</td>
+<td>262.001335</td>
+<td>263.276825</td>
+<td>355520800.0</td>
+<td>0.0</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>
 
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="calculating-weekly-returns" class="level3">
+<h3 class="anchored" data-anchor-id="calculating-weekly-returns">3.3. Calculating Weekly Returns</h3>
+<p>Using the historical weekly closing prices, we calculate the logarithmic returns.</p>
+<div id="e924f13e" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Calculate logarithmic returns</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>df[<span class="st">'Log Returns'</span>] <span class="op">=</span> np.log(df[<span class="st">'Close'</span>] <span class="op">/</span> df[<span class="st">'Close'</span>].shift(<span class="dv">1</span>))</span>
+<span id="cb3-3"><a href="#cb3-3"></a>df <span class="op">=</span> df.dropna()</span>
+<span id="cb3-4"><a href="#cb3-4"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+<div>
 
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Open</th>
+<th data-quarto-table-cell-role="th">High</th>
+<th data-quarto-table-cell-role="th">Low</th>
+<th data-quarto-table-cell-role="th">Close</th>
+<th data-quarto-table-cell-role="th">Volume</th>
+<th data-quarto-table-cell-role="th">Dividends</th>
+<th data-quarto-table-cell-role="th">Stock Splits</th>
+<th data-quarto-table-cell-role="th">Log Returns</th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Date</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2019-07-29</td>
+<td>279.017107</td>
+<td>279.137266</td>
+<td>268.868668</td>
+<td>270.458405</td>
+<td>447617000.0</td>
+<td>0.0</td>
+<td>0</td>
+<td>-0.031585</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2019-08-05</td>
+<td>266.271465</td>
+<td>271.382648</td>
+<td>260.383902</td>
+<td>269.534119</td>
+<td>621473300.0</td>
+<td>0.0</td>
+<td>0</td>
+<td>-0.003423</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2019-08-12</td>
+<td>267.999797</td>
+<td>271.872469</td>
+<td>261.003135</td>
+<td>266.973877</td>
+<td>478024400.0</td>
+<td>0.0</td>
+<td>0</td>
+<td>-0.009544</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2019-08-19</td>
+<td>270.060925</td>
+<td>271.669137</td>
+<td>262.001335</td>
+<td>263.276825</td>
+<td>355520800.0</td>
+<td>0.0</td>
+<td>0</td>
+<td>-0.013945</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2019-08-26</td>
+<td>265.513466</td>
+<td>271.955591</td>
+<td>263.646462</td>
+<td>270.301178</td>
+<td>319590000.0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.026331</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="calculating-historical-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="calculating-historical-volatility">3.4. Calculating Historical Volatility</h3>
+<p>Next, we compute the historical volatility using the standard deviation of the logarithmic returns and annualize it.</p>
+<div id="6bbd502e" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Calculate historical volatility</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>weekly_volatility <span class="op">=</span> df[<span class="st">'Log Returns'</span>].std()</span>
+<span id="cb4-3"><a href="#cb4-3"></a>annual_volatility <span class="op">=</span> weekly_volatility <span class="op">*</span> np.sqrt(<span class="dv">52</span>)</span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="bu">print</span>(<span class="ss">f'Annualized Historical Volatility: </span><span class="sc">{</span>annual_volatility<span class="sc">:.2%}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Annualized Historical Volatility: 19.65%</code></pre>
+</div>
+</div>
+</section>
+<section id="visualising-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="visualising-volatility">3.5. Visualising Volatility</h3>
+<p>We’ll plot the weekly returns and volatility to visualise the data better.</p>
+<div id="41a1641b" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Plot weekly returns</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>df[<span class="st">'Log Returns'</span>].plot(figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">7</span>), title<span class="op">=</span><span class="st">'Weekly Log Returns of SPY'</span>)</span>
+<span id="cb6-3"><a href="#cb6-3"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="post_historical-vol_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">4. Conclusion</h2>
+<hr>
+<section id="efficacy-of-historical-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="efficacy-of-historical-volatility">4.1. Efficacy of Historical Volatility</h3>
+<p>Historical volatility is a valuable tool for assessing asset risk and aiding in investment decisions. By understanding its calculation and implications, beginners can better gauge market dynamics and make informed choices.</p>
+</section>
+<section id="limitations-to-consider" class="level3">
+<h3 class="anchored" data-anchor-id="limitations-to-consider">4.2. Limitations to Consider</h3>
+<p>While useful, historical volatility is not foolproof. It bases predictions on past data, which may not always accurately forecast future volatility. Therefore, it’s essential to complement it with other analyses.</p>
+</section>
+<section id="invitation-to-explore-further" class="level3">
+<h3 class="anchored" data-anchor-id="invitation-to-explore-further">4.3. Invitation to Explore Further</h3>
+<p>We encourage you to experiment with different assets and time frames using the provided code. For a more comprehensive understanding, check out these advanced sources:</p>
+<ol type="1">
+<li><a href="https://www.investopedia.com/terms/v/volatility.asp">Investopedia on Volatility</a></li>
+<li><a href="https://financetrain.com/historical-volatility">Finance Train on Historical Volatility</a></li>
+<li><a href="https://www.khanacademy.org/math/statistics-probability">Khan Academy on Variance and Standard Deviation</a></li>
+<li><a href="https://www.quantstart.com/articles/Volatility-Modelling">QuantStart on Options Pricing Models</a></li>
+<li><a href="https://towardsdatascience.com/financial-risk-analysis">Towards Data Science on Financial Metrics</a></li>
+<li><a href="https://www.eurekly.com/blog/financial-engineering">Eurekly on Financial Engineering</a></li>
+<li><a href="https://quant.stackexchange.com/">Stack Exchange Quantitative Finance</a></li>
+<li><a href="https://pythonforfinance.net/">Python for Finance</a></li>
+<li><a href="https://datadriveninvesting.org/">DataDrivenInvesting Blog</a></li>
+<li><a href="https://www.datasciencecentral.com/">Data Science Central on Volatility</a></li>
+</ol>
+<p>For more practical tutorials, visit the <a href="https://www.youtube.com/channel/UCqxr913I1cWVPbIXuMkc2Sg">Data Driven Minutes Youtube Channel</a>. Happy coding and investing!</p>
+
+
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
