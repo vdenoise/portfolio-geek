@@ -10,7 +10,111 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Tue, 23 Jul 2024 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 24 Jul 2024 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Daily Market Insights: Diversification, International Stock Gains, and Climate Progress (25.07.2024)</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_25_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In today’s curation, we explore several significant developments impacting financial markets and investment strategies. Key topics include:</p>
+<ul>
+<li>Climate pollution trends and the role of clean energy.</li>
+<li>Performance of international equities and diversification opportunities.</li>
+<li>Insights from Goldman Sachs on asset allocation.</li>
+<li>Shifts in market dynamics affecting traditional portfolios.</li>
+<li>Innovations in large language models and their applications.</li>
+<li>Updates on hedge fund negotiations with Ukraine.</li>
+<li>Trends in US Treasury debt and investor sentiment.</li>
+</ul>
+<p>Below is a detailed summary of these topics.</p>
+<section id="climate" class="level1">
+<h1>Climate</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://skepticalscience.com/climate-pollution-maybe-peaked.html">Climate Pollution at a Potential Peak: What It Means and Why It’s Crucial for Our Future (Skeptical Science, 2024-07-25)</a></td>
+<td>Global climate pollution may have peaked, with slight declines noted in early 2024. Clean energy growth, particularly in China, is crucial for reducing emissions towards net zero by 2050.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/a-visual-guide-to-quantization-930ebcd9be94?source=rss----7f60cf5620c9---4">How Shrinking AI Models Can Save Space: An Insider’s Guide to Quantization Techniques for Optimal Performance (Towards Data Science, 2024-07-24)</a></td>
+<td>Large Language Models (LLMs) require vast memory due to billions of parameters. Quantization reduces representation bits, preserving precision while minimising memory usage. Techniques include symmetric and asymmetric quantization, and post-training quantization.</td>
+</tr>
+<tr class="even">
+<td><a href="https://realpython.com/huggingface-transformers/">Unlock AI’s Potential with Hugging Face: Simplifying Access to Open-Source Models for NLP, Vision, and Audio Tasks (Real Python 2024-07-25)</a></td>
+<td>Transformers is a Python library by Hugging Face for utilizing pretrained AI models across various tasks. It supports NLP, computer vision, and audio, and facilitates cost-effective, secure deployments.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="finance" class="level1">
+<h1>Finance</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.hedgeweek.com/hedge-funds-gear-up-for-2-6bn-ukraine-debt-restructuring/">Hedge Funds Prepare for Major Ukraine Debt Talks Amidst Ongoing War and Economic Uncertainty (HedgeWeek, 2024-07-25)</a></td>
+<td>Hedge funds, including Aurelius and VR Capital, prepare for negotiations with Ukraine to restructure $2.6bn in GDP warrants. Payments are due in August, with warrants trading at 58 cents on the dollar.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://conversableeconomist.com/2024/07/24/if-demand-for-us-treasury-bonds-dried-up-what-warning-signs-would-flash/">What Happens if the World Stops Buying US Treasury Bonds? Warning Signs and Economic Implications (Conversable Economist, 2024-07-24)</a></td>
+<td>Rising US Treasury debt could deter investors, indicated by primary dealers purchasing larger auction shares, declining bid-to-cover ratios, and foreign holdings decreasing as a share of total debt.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>climate</category>
+  <category>coding</category>
+  <category>economics</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_25_daily-curation.html</guid>
+  <pubDate>Wed, 24 Jul 2024 23:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/morning-news-in-the-office-2023-11-27-04-50-01-utc.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Daily Financial Insights 24.07.2024: US Economic Growth, ETF Trends, Small-Cap Outperformance, &amp; Inflation Eases</title>
   <dc:creator>Vincent D.</dc:creator>
