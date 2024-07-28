@@ -10,7 +10,177 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Wed, 24 Jul 2024 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 26 Jul 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Daily Curation (26.07.2024): SearchGPT Launch, Bitcoin ETFs, China’s Economic Moves, and Rising Small Cap Investments</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_26_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In today’s curation, we explore a range of important financial and technological developments that may impact various sectors. Key topics include:</p>
+<ul>
+<li>Launch of OpenAI’s SearchGPT for enhanced search experiences</li>
+<li>Microsoft Bing’s Generative Search and its layout changes</li>
+<li>Building a streaming agentic chatbot with Burr and FastAPI</li>
+<li>Jersey City’s pension fund’s investment in Bitcoin ETFs</li>
+<li>China’s central bank’s unexpected lending rate cuts</li>
+<li>Rising domestic food prices amid falling global rates</li>
+<li>Surge in U.S. ETF flows and interest in spot Bitcoin ETFs</li>
+<li>Shift towards small caps with significant inflows into Russell 2000 ETF</li>
+<li>Opportunities in emerging market debt amid volatility</li>
+<li>Financial planning advice for baby boomers on wealth gifting</li>
+</ul>
+<p>Please see the table below for more details on each topic.</p>
+<section id="ai-and-gen-ai" class="level1">
+<h1>AI and Gen-AI</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.thedrum.com/news/2024/07/25/openai-releases-prototype-searchgpt-generative-ai-powered-search-tool">AI Search Revolution: OpenAI’s SearchGPT Combines Conversational AI with Real-Time Web Info for Smarter Results (The Drum, 2024-07-25)</a></td>
+<td>OpenAI launched SearchGPT, a generative AI search tool that provides up-to-date information, cites sources, and allows publishers to manage their appearances in results, aiming to improve online search experiences.</td>
+</tr>
+<tr class="even">
+<td><a href="https://lifehacker.com/tech/bing-ai-search">Bing’s New AI-Powered Search Will Transform Your Online Experience and Upend Traditional Search Results (theverge, 2024-07-25)</a></td>
+<td>Microsoft’s Bing Generative Search will feature an extensive AI information box, altering the homepage layout. Concerns include misinformation and potential reduction in clickthrough rates. Release details are pending.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/how-to-build-a-streaming-agent-with-burr-fastapi-and-react-e2459ef527a8?source=rss----7f60cf5620c9---4">Create a Dynamic Chatbot with Streaming Text Using Burr, FastAPI, and React: A Beginner’s Guide to Streaming AI (Towards Data Science, 2024-07-25)</a></td>
+<td>This article outlines building a streaming agentic chatbot using Burr, FastAPI, and React. It emphasises the importance of streaming for enhanced interactivity and user experience.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="crypto-news-and-analysis" class="level1">
+<h1>Crypto News and Analysis</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://coinspectator.com/newsbtc/2024/07/26/in-the-works-jersey-city-mayors-plan-to-introduce-bitcoin-etfs-into-pension-funds/">Pension Investments Evolve: Jersey City Fund Ventures into Bitcoin ETFs, Paving Way for Traditional Finance Integration (Bitcoinist, 2024-07-25)</a></td>
+<td>Jersey City pension fund plans to invest in Bitcoin ETFs, updating SEC paperwork, following Wisconsin’s similar move. Mayor Fulop endorses blockchain technology, noting increasing interest in crypto investments.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.reuters.com/world/china/china-central-bank-surprises-by-lending-again-lower-rates-2024-07-25/">China Injects Cash Amid Economic Concerns: Central Bank’s Surprise Rate Cuts to Boost Growth and Confidence (Reuters Econ World, 2024-07-25)</a></td>
+<td>China’s central bank reduced lending rates unexpectedly, injecting liquidity into the market. This aims to counteract deflationary pressures and support a struggling economy amid declining stock market performance.</td>
+</tr>
+<tr class="even">
+<td><a href="https://rwer.wordpress.com/2024/07/25/why-do-domestic-food-prices-keep-going-up-when-global-prices-fall/">Why Your Grocery Bill Keeps Rising Even as Global Food Prices Drop: A Deeper Look at Inflation Triggers (Real-World Economics Review, 2024-07-25)</a></td>
+<td>Domestic food prices rise despite falling global prices due to currency depreciation, debt distress, reliance on global markets, and uneven price transmission, especially in lower-income countries.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="etfs-and-index-investing" class="level1">
+<h1>ETFs and Index Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.etftrends.com/u-s-etf-flows-investors-getting-polarized/">Navigating the Shifting Landscape: Why Investors Are Flocking to Active Management and Bitcoin ETFs in 2024 (ETF Trends, 2024-07-25)</a></td>
+<td>In H1 2024, U.S. ETF flows surged, focusing on core, complex, and active strategies. Spot Bitcoin ETFs attracted significant interest, marking a shift towards higher-cost investments and active management.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.benzinga.com/markets/equities/24/07/39970069/investors-go-all-in-on-small-caps-pour-over-6-billion-into-russell-2000-etf-this-month-they-will">Why Billions Are Flowing into Small-Cap ETFs as Big Tech Falters: What Investors Might Be Missing (Benzinga, 2024-07-25)</a></td>
+<td>Investors are shifting to small caps, with over $6 billion inflows into the Russell 2000 ETF in July 2024, despite caution from experts about long-term prospects compared to larger firms.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fundamental-investing" class="level1">
+<h1>Fundamental Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.institutionalinvestor.com/article/2djkjeoxdz13ar7w9kkxs/innovation/opportunities-in-emerging-markets-amidst-volatility">Unlocking Profitable Opportunities in Emerging Market Debt Despite Global Volatility and Geopolitical Tensions (Institutional Investor, 2024-07-26)</a></td>
+<td>Emerging market debt presents growth potential amidst volatility. Larger economies like Brazil and India show improved fundamentals, with low default rates expected. Opportunities exist in liquid and illiquid strategies.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="personal-development" class="level1">
+<h1>Personal Development</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.businessinsider.com/boomers-who-want-pass-down-wealth-pass-stress-test-advisor-2024-7">Smart Wealth Transfers: Ensure Personal Financial Stability Before Helping Kids with Early Gifting (Business Insider, 2024-07-25)</a></td>
+<td>Financial planners advise baby boomers to ensure financial stability before gifting wealth. They suggest conducting a “stress test” on portfolios to assess sustainability for long-term care and potential market downturns.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>coding</category>
+  <category>crypto</category>
+  <category>economics</category>
+  <category>etf</category>
+  <category>fundamental</category>
+  <category>personal-dvpt</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_26_daily-curation.html</guid>
+  <pubDate>Fri, 26 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/article-in-newspaper.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Daily Market Insights: Shrink your AI models with Quantization and Climate Progress (25.07.2024)</title>
   <dc:creator>Vincent D.</dc:creator>
@@ -109,7 +279,7 @@
   <category>coding</category>
   <category>economics</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_25_daily-curation.html</guid>
-  <pubDate>Wed, 24 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Wed, 24 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/morning-news-in-the-office-2023-11-27-04-50-01-utc.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -230,7 +400,7 @@
   <category>fundamental</category>
   <category>quant</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_24_daily-curation.html</guid>
-  <pubDate>Tue, 23 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Tue, 23 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/news-concept-with-newspapers-2023-11-27-05-32-59-utc.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
@@ -358,7 +528,7 @@
   <category>quant</category>
   <category>tech</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_23_daily-curation.html</guid>
-  <pubDate>Mon, 22 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Mon, 22 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/newspaper-stack-on-table-2023-11-27-05-14-30-utc.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
@@ -456,7 +626,7 @@
   <category>fundamental</category>
   <category>tech</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_22_daily-curation.html</guid>
-  <pubDate>Sun, 21 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Sun, 21 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -545,7 +715,7 @@
   <category>economics</category>
   <category>market-feed</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-21_daily-curation.html</guid>
-  <pubDate>Sat, 20 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Sat, 20 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/laptop-plant-and-stack-of-newspapers-on-wooden-ta-2023-11-27-05-12-11-utc.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
@@ -642,7 +812,7 @@
   <category>personal-dvpt</category>
   <category>portfolio-construction</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-20_daily-curation.html</guid>
-  <pubDate>Fri, 19 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Fri, 19 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/blog-post.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
@@ -706,7 +876,7 @@
   <category>market-feed</category>
   <category>portfolio-construction</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-19_daily-curation.html</guid>
-  <pubDate>Thu, 18 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Thu, 18 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/portfolio-optimisation.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
@@ -784,7 +954,7 @@
   <category>quant</category>
   <category>tech</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-18_daily-curation.html</guid>
-  <pubDate>Wed, 17 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Wed, 17 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/stock-valuation.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
@@ -926,7 +1096,7 @@
   <category>fundamental</category>
   <category>portfolio-construction</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-17_daily-curation.html</guid>
-  <pubDate>Tue, 16 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Tue, 16 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/laptop-data.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -1052,7 +1222,7 @@
   <category>etf</category>
   <category>fundamental</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-16_daily-curation.html</guid>
-  <pubDate>Mon, 15 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Mon, 15 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/time-horizon-paper.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -1179,7 +1349,7 @@
   <category>market-feed</category>
   <category>portfolio-construction</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-15_daily-curation.html</guid>
-  <pubDate>Sun, 14 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Sun, 14 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/mathematics-formulas-on-a-blackboard.png" medium="image" type="image/png" height="95" width="144"/>
 </item>
 <item>
@@ -1288,7 +1458,7 @@
   <category>climate</category>
   <category>market-feed</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-14_daily-curation.html</guid>
-  <pubDate>Sat, 13 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Sat, 13 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -1414,7 +1584,7 @@
   <category>economics</category>
   <category>etf</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-13_daily-curation.html</guid>
-  <pubDate>Fri, 12 Jul 2024 23:00:00 GMT</pubDate>
+  <pubDate>Fri, 12 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/blog-post.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
@@ -2361,7 +2531,7 @@ font-style: inherit;">#ax.legend()</span></span>
 </section></div> ]]></description>
   <category>portfolio-construction</category>
   <guid>https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python.html</guid>
-  <pubDate>Tue, 30 Apr 2024 23:00:00 GMT</pubDate>
+  <pubDate>Tue, 30 Apr 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Setting up a Python Development Workstation (Windows)</title>
@@ -2564,7 +2734,7 @@ font-style: inherit;">"Y axis"</span>)</span>
   <category>windows</category>
   <category>matplotlib</category>
   <guid>https://portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-windows.html</guid>
-  <pubDate>Thu, 22 Feb 2024 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 21 Feb 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -2778,7 +2948,7 @@ font-style: inherit;">"Y axis"</span>)</span>
   <category>macos</category>
   <category>matplotlib</category>
   <guid>https://portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-macos.html</guid>
-  <pubDate>Tue, 20 Feb 2024 00:00:00 GMT</pubDate>
+  <pubDate>Mon, 19 Feb 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -3017,7 +3187,7 @@ font-style: inherit;">'Close Price'</span>)</span>
   <category>matplotlib</category>
   <category>en</category>
   <guid>https://portfolio-geek.com/posts/tutorials/en/spy-and-matplotlib.html</guid>
-  <pubDate>Thu, 25 Jan 2024 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 24 Jan 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/posts/tutorials/en/chart_spy.png" medium="image" type="image/png" height="85" width="144"/>
 </item>
 <item>
@@ -3629,7 +3799,7 @@ font-style: inherit;">pass</span></span></code></pre></div>
  ]]></description>
   <category>publication-workflow</category>
   <guid>https://portfolio-geek.com/posts/publication-workflow/visualizing-historical-data.html</guid>
-  <pubDate>Fri, 03 Mar 2023 00:00:00 GMT</pubDate>
+  <pubDate>Thu, 02 Mar 2023 23:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
