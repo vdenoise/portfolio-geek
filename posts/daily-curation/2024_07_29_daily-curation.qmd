@@ -1,0 +1,39 @@
+---
+title: "Daily Curation (29.07.2024): Bitcoin Leaps, Vanguard’s High-Yield ETFs, and S&P Stumbles while SmallCaps Shine"
+page-layout: full
+title-block-banner: true
+date: 07-29-2024
+categories: [crypto,etf,market-feed]
+tags: [bitcoin, financing, mining, hashrate, etfs, yields, s&p500, decline, treasury, smallcap]
+image: /pictures/pile-of-newspapers.jpg
+---
+
+In today's curation, we explore notable developments in financial markets, including:
+
+- Howard Lutnick's $2 billion Bitcoin financing initiative.
+- A surge in Bitcoin's mining hashrate amidst rising prices.
+- Vanguard’s VGSH and VCSH ETFs offering competitive yields.
+- Recent declines in the S&P 500 despite strong year-to-date performance.
+- Invesco's XSVM ETF reaching a 52-week high.
+
+Below is a detailed overview of these topics.
+
+
+
+# Crypto News and Analysis
+| Title | Summary |
+|-----|-----------|
+| [Cantor Fitzgerald's $2 Billion Bet: Empowering Bitcoin Holders with Leverage in the Financial Market (Cointelegraph, 2024-07-27)](https://cointelegraph.com/news/cantor-fitzgerald-announces-2b-bitcoin-financing-business?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound)   | Howard Lutnick, CEO of Cantor Fitzgerald, announced a $2 billion Bitcoin financing business at the Bitcoin 2024 conference, aiming to leverage Bitcoin ownership and support the cryptocurrency community. |
+| [Bitcoin Mining Power Nears Peak as BTC Breaks $67K: What It Means for Investors (The name of the blog or website is not explicitly mentioned in the content provided., 2024-07-27)](https://bitcoinist.com/bitcoin-hashrate-all-time-high-btc-price-67000/)   | Bitcoin's mining hashrate nears an all-time high, recovering as BTC trades above $67,000. After a decline post-April's Halving, rates improved alongside recent price increases. |
+
+# ETFs and Index Investing
+| Title | Summary |
+|-----|-----------|
+| [Maximize Bond Investments: Mitigate Risks with Vanguard's Top Short-Term Treasury and Corporate Bond ETFs (ETF Trends, 2024-07-26)](https://www.etftrends.com/fixed-income-channel/mitigate-default-rate-risk-2-etfs/)   | Vanguard offers VGSH and VCSH ETFs to mitigate default and rate risk, featuring yields of 4.70% and 5.13%, respectively, with low expense ratios of 0.04%. |
+
+# Market Pulse & Market News
+| Title | Summary |
+|-----|-----------|
+| [Understanding S&P 500: Recent Trends, Volatility, and Insights into Treasury Yields for Savvy Investors (ETF Trends, 2024-07-27)](https://www.etftrends.com/innovative-etfs-channel/sp-500-snapshot-index-falls-second-straight-week/)   | The S&P 500 fell 0.83% last week, marking its second consecutive decline. It's up 16.10% year-to-date, achieving 38 record highs. Treasury yields reached 4.20% for the 10-year note. |
+| [Small-Cap ETF Soars: Up 28%, Riding U.S. Economic Boom and Solid Consumer Spending, Is It Worth Your Attention? (Benzinga.com, 2024-07-26)](https://www.benzinga.com/news/24/07/39986277/small-cap-etf-hits-new-52-week-high)   | Invesco S&P SmallCap Value with Momentum ETF (XSVM) recently reached a 52-week high, up 28% from its low. It focuses on small-cap stocks linked to domestic economic growth. |
+
