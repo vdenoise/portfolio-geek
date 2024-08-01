@@ -1,0 +1,56 @@
+---
+title: "Daily Financial Curations for 31.07.2024: Earth's Record Heat, PyCharm-Pytest Guide, AI Search Engines, Active ETFs Expansion"
+page-layout: full
+title-block-banner: true
+date: 07-31-2024
+categories: [climate,coding,data-science,economics,etf]
+tags: [climate, testing, pytest, sql, ai, rates, gdp, etfs, stocks, growth]
+image: /pictures/stack-of-paper.jpg
+---
+
+In today's curation, we explore various pressing topics currently shaping the financial landscape:
+
+- Record high temperatures and climate change implications
+- Practical applications of file testing and simulation
+- Utilizing pytest effectively with PyCharm
+- Advanced SQL techniques for improved data analysis
+- The impact of AI on search engine dynamics
+- Key economic questions and Federal Reserve outlook
+- Recent US GDP growth insights
+- BlackRock's expansion in active ETFs
+- Small-cap stock performance trends and future forecasts
+
+Happy reading!
+
+
+
+# Climate
+| Title | Summary |
+|-----|-----------|
+| [Unprecedented Temperatures: A Glimpse into Earth's Ancient Climate and Our Near Future (The Atlantic, 2024-07-31)](https://angrybearblog.com/2024/07/a-jump-in-the-global-temperature)   | Scientists report the Earth's hottest day in record keeping occurred recently, nearing temperatures not seen in 125,000 years, raising concerns about climate change and rising seas. |
+
+# Coding
+| Title | Summary |
+|-----|-----------|
+| [Effortlessly Test File-Reading Apps: Discover the Power of Python's io.StringIO and Mocking Techniques (realpython, 2024-07-30)](https://realpython.com/courses/simulate-text-file/)   | Testing applications reading files from disk can be complex. This course teaches simulation of text files with StringIO, file operations, usage considerations, alternatives, and mocking file objects with unittest.mock. |
+| [Master Pytest with PyCharm: Videos, Tutorials, Books and More for testing Proficiency (JetBrains Guide, 2024-07-29)](https://blog.jetbrains.com/pycharm/2024/07/learning-resources-for-pytest/)   | PyCharm supports pytest with a test runner, code completion, and assert reports. Resources include video tutorials, written guides, books, and official documentation for learning pytest effectively. |
+
+# Data, Databases and Data Science
+| Title | Summary |
+|-----|-----------|
+| [Mastering Advanced SQL: Boost Your Data Skills with Window Functions, Subqueries, and Common Table Expressions (Towards Data Science, 2024-07-31)](https://towardsdatascience.com/the-most-useful-advanced-sql-techniques-to-succeed-in-the-tech-industry-0f0690e8386c)   | Advanced SQL techniques include window functions, subqueries, and Common Table Expressions (CTEs). These tools enhance data manipulation capabilities, simplify complex queries, and improve analysis efficiency in the tech industry. |
+| [AI-Driven Search Engines: The Next Evolution in How We Access Information Online (Towards Data Science, 2024-07-30)](https://towardsdatascience.com/genai-is-revolutionizing-search-451fdc2f1e57)   | Advancements in artificial intelligence are transforming search engines into answer machines. New players like Perplexity and You.com challenge Google's dominance. These changes influence how users access information globally. |
+
+# Economics
+| Title | Summary |
+|-----|-----------|
+| [Seven Thought-Provoking Questions on Economy, Happiness, Fireplaces, Stocks, and More: Insights and Musings from a Financial Expert (The name of the blog is not explicitly mentioned in the provided content., 2024-07-31)](https://awealthofcommonsense.com/2024/07/7-questions-im-pondering/)   | Seven questions pondered include Fed rate cuts, Americans' wage disparity, youth happiness decline, the charm of fireplaces, small-cap stock valuation, hotel steamers' inefficacy, and stock market return predictions for 2024. |
+| [Fed Holds Rates Steady: What It Means for Your Money and Economy (Not provided, 2024-07-28)](https://www.calculatedriskblog.com/2024/07/fomc-preview-no-change-to-fed-funds-rate.html)   | Most analysts expect no change to the federal funds rate. Future cuts in September, November, and December are likely. Inflation is approaching the 2% target, with unemployment slightly higher. |
+| [Economic Growth Surges in Q2: Consumers, Investments, and Government Spending Propel US Economy Despite Fed Rate Hikes (Naked Capitalism, 2024-07-26)](https://www.nakedcapitalism.com/2024/07/economy-re-accelerates-in-q2-our-drunken-sailors-splurge-on-durable-goods-investment-jumps-federal-gov-undoes-blip.html)   | US real GDP grew by 2.8% in Q2, driven by increased consumer spending (+2.3%) and investment (+8.4%). Government consumption rose +3.1%, while the trade deficit worsened. |
+
+# ETFs and Index Investing
+| Title | Summary |
+|-----|-----------|
+| [BlackRock Foresees Explosive Growth in Active ETFs as New Launches Target European Market (ETF Hub, 2024-07-30)](https://www.ft.com/content/ecc735f0-ebad-43fd-bfd2-7ef750105e28)   | BlackRock launches five active ETFs in Europe, doubling its offerings. Despite slower growth in Europe, active ETFs see rising global interest, particularly in the US, with significant market potential. |
+| [Small Caps Might Soar: Election Year Trends and Fed Policies Could Propel Russell 2000 to New Heights (Benzinga, 2024-07-30)](https://www.benzinga.com/analyst-ratings/analyst-color/24/07/40049081/small-caps-eyes-strongest-month-against-tech-stocks-in-22-years-why-presidential-el)   | In July 2024, small-cap stocks outperformed tech stocks significantly. Predictions of Federal Reserve rate cuts and historical trends in presidential election years suggest potential continued growth for the Russell 2000. |
+

@@ -10,7 +10,148 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Sun, 28 Jul 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 30 Jul 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Daily Financial Curations for 31.07.2024: Earth’s Record Heat, PyCharm-Pytest Guide, AI Search Engines, Active ETFs Expansion</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_31_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In today’s curation, we explore various pressing topics currently shaping the financial landscape:</p>
+<ul>
+<li>Record high temperatures and climate change implications</li>
+<li>Practical applications of file testing and simulation</li>
+<li>Utilizing pytest effectively with PyCharm</li>
+<li>Advanced SQL techniques for improved data analysis</li>
+<li>The impact of AI on search engine dynamics</li>
+<li>Key economic questions and Federal Reserve outlook</li>
+<li>Recent US GDP growth insights</li>
+<li>BlackRock’s expansion in active ETFs</li>
+<li>Small-cap stock performance trends and future forecasts</li>
+</ul>
+<p>Happy reading!</p>
+<section id="climate" class="level1">
+<h1>Climate</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://angrybearblog.com/2024/07/a-jump-in-the-global-temperature">Unprecedented Temperatures: A Glimpse into Earth’s Ancient Climate and Our Near Future (The Atlantic, 2024-07-31)</a></td>
+<td>Scientists report the Earth’s hottest day in record keeping occurred recently, nearing temperatures not seen in 125,000 years, raising concerns about climate change and rising seas.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://realpython.com/courses/simulate-text-file/">Effortlessly Test File-Reading Apps: Discover the Power of Python’s io.StringIO and Mocking Techniques (realpython, 2024-07-30)</a></td>
+<td>Testing applications reading files from disk can be complex. This course teaches simulation of text files with StringIO, file operations, usage considerations, alternatives, and mocking file objects with unittest.mock.</td>
+</tr>
+<tr class="even">
+<td><a href="https://blog.jetbrains.com/pycharm/2024/07/learning-resources-for-pytest/">Master Pytest with PyCharm: Videos, Tutorials, Books and More for testing Proficiency (JetBrains Guide, 2024-07-29)</a></td>
+<td>PyCharm supports pytest with a test runner, code completion, and assert reports. Resources include video tutorials, written guides, books, and official documentation for learning pytest effectively.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-databases-and-data-science" class="level1">
+<h1>Data, Databases and Data Science</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/the-most-useful-advanced-sql-techniques-to-succeed-in-the-tech-industry-0f0690e8386c">Mastering Advanced SQL: Boost Your Data Skills with Window Functions, Subqueries, and Common Table Expressions (Towards Data Science, 2024-07-31)</a></td>
+<td>Advanced SQL techniques include window functions, subqueries, and Common Table Expressions (CTEs). These tools enhance data manipulation capabilities, simplify complex queries, and improve analysis efficiency in the tech industry.</td>
+</tr>
+<tr class="even">
+<td><a href="https://towardsdatascience.com/genai-is-revolutionizing-search-451fdc2f1e57">AI-Driven Search Engines: The Next Evolution in How We Access Information Online (Towards Data Science, 2024-07-30)</a></td>
+<td>Advancements in artificial intelligence are transforming search engines into answer machines. New players like Perplexity and You.com challenge Google’s dominance. These changes influence how users access information globally.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://awealthofcommonsense.com/2024/07/7-questions-im-pondering/">Seven Thought-Provoking Questions on Economy, Happiness, Fireplaces, Stocks, and More: Insights and Musings from a Financial Expert (The name of the blog is not explicitly mentioned in the provided content., 2024-07-31)</a></td>
+<td>Seven questions pondered include Fed rate cuts, Americans’ wage disparity, youth happiness decline, the charm of fireplaces, small-cap stock valuation, hotel steamers’ inefficacy, and stock market return predictions for 2024.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.calculatedriskblog.com/2024/07/fomc-preview-no-change-to-fed-funds-rate.html">Fed Holds Rates Steady: What It Means for Your Money and Economy (Not provided, 2024-07-28)</a></td>
+<td>Most analysts expect no change to the federal funds rate. Future cuts in September, November, and December are likely. Inflation is approaching the 2% target, with unemployment slightly higher.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.nakedcapitalism.com/2024/07/economy-re-accelerates-in-q2-our-drunken-sailors-splurge-on-durable-goods-investment-jumps-federal-gov-undoes-blip.html">Economic Growth Surges in Q2: Consumers, Investments, and Government Spending Propel US Economy Despite Fed Rate Hikes (Naked Capitalism, 2024-07-26)</a></td>
+<td>US real GDP grew by 2.8% in Q2, driven by increased consumer spending (+2.3%) and investment (+8.4%). Government consumption rose +3.1%, while the trade deficit worsened.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="etfs-and-index-investing" class="level1">
+<h1>ETFs and Index Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.ft.com/content/ecc735f0-ebad-43fd-bfd2-7ef750105e28">BlackRock Foresees Explosive Growth in Active ETFs as New Launches Target European Market (ETF Hub, 2024-07-30)</a></td>
+<td>BlackRock launches five active ETFs in Europe, doubling its offerings. Despite slower growth in Europe, active ETFs see rising global interest, particularly in the US, with significant market potential.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.benzinga.com/analyst-ratings/analyst-color/24/07/40049081/small-caps-eyes-strongest-month-against-tech-stocks-in-22-years-why-presidential-el">Small Caps Might Soar: Election Year Trends and Fed Policies Could Propel Russell 2000 to New Heights (Benzinga, 2024-07-30)</a></td>
+<td>In July 2024, small-cap stocks outperformed tech stocks significantly. Predictions of Federal Reserve rate cuts and historical trends in presidential election years suggest potential continued growth for the Russell 2000.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>climate</category>
+  <category>coding</category>
+  <category>data-science</category>
+  <category>economics</category>
+  <category>etf</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_31_daily-curation.html</guid>
+  <pubDate>Tue, 30 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/stack-of-paper.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Daily Curation (29.07.2024): Bitcoin Leaps, Vanguard’s High-Yield ETFs, and S&amp;P Stumbles while SmallCaps Shine</title>
   <dc:creator>Vincent D.</dc:creator>
@@ -3278,617 +3419,6 @@ font-style: inherit;">'Close Price'</span>)</span>
   <guid>https://portfolio-geek.com/posts/tutorials/en/spy-and-matplotlib.html</guid>
   <pubDate>Wed, 24 Jan 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/posts/tutorials/en/chart_spy.png" medium="image" type="image/png" height="85" width="144"/>
-</item>
-<item>
-  <title>Visualising Historical Data</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/publication-workflow/visualizing-historical-data.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><img src="https://portfolio-geek.com/pictures/chart-preview.png" class="img-fluid"></p>
-<section id="visualizing-historical-data" class="level1">
-<h1>Visualizing historical data</h1>
-<blockquote class="blockquote">
-<p>“A quick introduction on how to gather data using Python, Pandas and Pandas_DataReader in order to easily gather historical times from Yahoo Finance.”</p>
-</blockquote>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>To start our data analysis and portfolio construction journey, we will perform the basic - but essential - task of <strong>getting access</strong> to <strong>time series</strong> and plot them using pandas.</p>
-<blockquote class="blockquote">
-<p>Tip: This article is written as a Jupyter Notebook. It has been published using <a href="https://portfolio-geek.com/blogging/publishing/workflow/2022/03/06/write-articles-with-jupyter-fastpages.html">Fastpages</a>. The Jupyter notebook is available on GitHub and if you want to, you can run it directly using the provided Binder link displayed at the top of the article.</p>
-</blockquote>
-</section>
-<section id="load-libraries" class="level2">
-<h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
-<p>A key benefit of <strong>Python</strong> is the sheer number of libraries we can leverage to perform a particular task. Choosing the right library might look a bit overwhelming, and one the goals of this blog is actually to provide the reader my honest view on what makes most sense to perform the usual tasks in my daily work.</p>
-<p>The key module for this article is <strong><a href="https://github.com/ranaroussi/yfinance">yfinance</a></strong>, a fantastic data gathering library that you can find <a href="https://github.com/ranaroussi/yfinance">here</a> on GitHub.</p>
-<div id="cell-3" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb1-2"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> matplotlib <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> pyplot <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> plt</span>
-<span id="cb1-3"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> pd</span>
-<span id="cb1-4"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> yfinance <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> yf</span>
-<span id="cb1-5"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> datetime <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> dt</span>
-<span id="cb1-6"></span>
-<span id="cb1-7"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Note that this change the decimals places inside Jupyter, but not on the website</span></span>
-<span id="cb1-8">pd.options.display.float_format <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{:,.1f}</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'</span>.<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">format</span></span></code></pre></div>
-</details>
-</div>
-</section>
-<section id="get-historical-data" class="level2">
-<h2 class="anchored" data-anchor-id="get-historical-data">Get historical data</h2>
-<p>Let’s get ready, and gather some historical data for, say, 4 <strong>Exchange Traded Funds</strong> (ie “ETFs”, still commonly referred to as “trackers” in France): - SPY: <strong>S&amp;P 500</strong> - GLD: <strong>Gold</strong> - AGG: <strong>US Aggregate (US Bonds)</strong> - CAC.PA: <strong>CAC 40 (French Equity Index)</strong></p>
-<p>You might wonder what the first 3 letters actually correspond to? They are the usual identifier for each ETF on the markets, and are often called the <strong>ticker</strong>of the ETF.</p>
-<p>To gather data, you must <em>de facto</em> provide one ticker for each security, but if you forgot the ticker, Google is usually your friend!</p>
-<p>We will need define to find a few more <strong>parameters</strong>: - The 2 variables start_date and end_date to keep some flexibility, - The variable <em>tickers</em> will store our ticker list, and pass it as a parameter to Yahoo, in order to specify our query.</p>
-<div id="cell-5" class="cell" data-execution_count="2">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb2-2"></span>
-<span id="cb2-3">start_date <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'2015-01-01'</span></span>
-<span id="cb2-4">end_date <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'2022-05-14'</span></span>
-<span id="cb2-5">tickers <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SPY'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'GLD'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'AGG'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'CAC.PA'</span>]</span>
-<span id="cb2-6">df <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> yf.download(tickers,  start<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>start_date, end<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>end_date)</span>
-<span id="cb2-7"></span>
-<span id="cb2-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># This ones keep the decimals to one on the website. </span></span>
-<span id="cb2-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># This is especially useful to print dataframes.</span></span>
-<span id="cb2-10">df <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> df.<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">round</span>(decimals<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>)</span>
-<span id="cb2-11"></span></code></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[                       0%                       ][                       0%                       ][                       0%                       ][*********************100%***********************]  4 of 4 completed</code></pre>
-</div>
-</div>
-</section>
-<section id="visual-data-check" class="level2">
-<h2 class="anchored" data-anchor-id="visual-data-check">Visual data check</h2>
-<p>By default, Yahoo Finance provides us with several fields, not all of them will be useful in this introduction, and we will perform some further filtering below.</p>
-<p>To quickly check the status of what we now have, note the use of the <strong>tail()</strong> function below.</p>
-<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.tail.html">Pandas tail() function</a></p>
-<div id="cell-7" class="cell" data-execution_count="3">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1">df.tail(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>)</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<div>
-<div>
-
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th colspan="4" data-quarto-table-cell-role="th" data-halign="left">Adj Close</th>
-<th colspan="4" data-quarto-table-cell-role="th" data-halign="left">Close</th>
-<th colspan="2" data-quarto-table-cell-role="th" data-halign="left">High</th>
-<th data-quarto-table-cell-role="th">...</th>
-<th colspan="2" data-quarto-table-cell-role="th" data-halign="left">Low</th>
-<th colspan="4" data-quarto-table-cell-role="th" data-halign="left">Open</th>
-<th colspan="4" data-quarto-table-cell-role="th" data-halign="left">Volume</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">AGG</th>
-<th data-quarto-table-cell-role="th">CAC.PA</th>
-<th data-quarto-table-cell-role="th">GLD</th>
-<th data-quarto-table-cell-role="th">SPY</th>
-<th data-quarto-table-cell-role="th">AGG</th>
-<th data-quarto-table-cell-role="th">CAC.PA</th>
-<th data-quarto-table-cell-role="th">GLD</th>
-<th data-quarto-table-cell-role="th">SPY</th>
-<th data-quarto-table-cell-role="th">AGG</th>
-<th data-quarto-table-cell-role="th">CAC.PA</th>
-<th data-quarto-table-cell-role="th">...</th>
-<th data-quarto-table-cell-role="th">GLD</th>
-<th data-quarto-table-cell-role="th">SPY</th>
-<th data-quarto-table-cell-role="th">AGG</th>
-<th data-quarto-table-cell-role="th">CAC.PA</th>
-<th data-quarto-table-cell-role="th">GLD</th>
-<th data-quarto-table-cell-role="th">SPY</th>
-<th data-quarto-table-cell-role="th">AGG</th>
-<th data-quarto-table-cell-role="th">CAC.PA</th>
-<th data-quarto-table-cell-role="th">GLD</th>
-<th data-quarto-table-cell-role="th">SPY</th>
-</tr>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Date</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2022-05-11</td>
-<td>96.1</td>
-<td>59.1</td>
-<td>172.8</td>
-<td>379.5</td>
-<td>102.8</td>
-<td>62.6</td>
-<td>172.8</td>
-<td>392.8</td>
-<td>102.8</td>
-<td>62.6</td>
-<td>...</td>
-<td>172.2</td>
-<td>392.0</td>
-<td>102.1</td>
-<td>61.7</td>
-<td>172.5</td>
-<td>398.1</td>
-<td>16,462,000.0</td>
-<td>45,387.0</td>
-<td>9,179,600.0</td>
-<td>142,361,000.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2022-05-12</td>
-<td>96.3</td>
-<td>58.5</td>
-<td>170.2</td>
-<td>379.1</td>
-<td>103.0</td>
-<td>62.0</td>
-<td>170.2</td>
-<td>392.3</td>
-<td>103.1</td>
-<td>62.3</td>
-<td>...</td>
-<td>169.9</td>
-<td>385.1</td>
-<td>102.9</td>
-<td>61.4</td>
-<td>172.1</td>
-<td>389.4</td>
-<td>9,015,300.0</td>
-<td>62,497.0</td>
-<td>11,626,800.0</td>
-<td>125,090,800.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2022-05-13</td>
-<td>95.9</td>
-<td>60.0</td>
-<td>168.8</td>
-<td>388.1</td>
-<td>102.5</td>
-<td>63.5</td>
-<td>168.8</td>
-<td>401.7</td>
-<td>102.8</td>
-<td>63.5</td>
-<td>...</td>
-<td>168.0</td>
-<td>395.6</td>
-<td>102.8</td>
-<td>62.4</td>
-<td>168.3</td>
-<td>396.7</td>
-<td>6,715,600.0</td>
-<td>77,603.0</td>
-<td>13,031,100.0</td>
-<td>104,174,400.0</td>
-</tr>
-</tbody>
-</table>
-
-<p>3 rows × 24 columns</p>
-</div>
-</div>
-</div>
-</div>
-<p>The <strong>Adjusted Close</strong> field is returned by Yahoo Finance and is exactly what we are looking for.</p>
-<p>Adjusted Close corresponds to the time series containing what we usually call the <em>total return</em>, typically <strong>compounding the dividends</strong> with the <strong>price returns</strong>.</p>
-<p>This reflects the total return delivered by the ETF, should the investor reinvest systematically the dividend paid by the ETF by buying more this ETF. This is probably the most useful field when we aim to assess the <strong>long term returns of an asset class</strong>.</p>
-<p>To quickly check the status of what we now have, note the use of the <strong>tail()</strong> function below, which get the last <em>n</em> rows of the dataset. Combined with Jupyter’s power in printing data, it’s probably the fastest way to navigate and check a particular dataset.</p>
-<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.tail.html">Pandas tail() function</a></p>
-<div id="cell-9" class="cell" data-execution_count="4">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1">df[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Adj Close'</span>].tail(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>)</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="4">
-<div>
-<div>
-
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">AGG</th>
-<th data-quarto-table-cell-role="th">CAC.PA</th>
-<th data-quarto-table-cell-role="th">GLD</th>
-<th data-quarto-table-cell-role="th">SPY</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Date</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2022-05-11</td>
-<td>96.1</td>
-<td>59.1</td>
-<td>172.8</td>
-<td>379.5</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2022-05-12</td>
-<td>96.3</td>
-<td>58.5</td>
-<td>170.2</td>
-<td>379.1</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2022-05-13</td>
-<td>95.9</td>
-<td>60.0</td>
-<td>168.8</td>
-<td>388.1</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="plot-the-raw-time-series-using-the-seaborn-library" class="level2">
-<h2 class="anchored" data-anchor-id="plot-the-raw-time-series-using-the-seaborn-library">Plot the raw time series using the seaborn library</h2>
-<p>To quickly check that we got the right data, let’s visualise it.</p>
-<div id="cell-11" class="cell" data-execution_count="5">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb6-2"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> seaborn <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> sns</span>
-<span id="cb6-3"></span>
-<span id="cb6-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Apply the default theme</span></span>
-<span id="cb6-5">sns.set_style(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'whitegrid'</span>)</span>
-<span id="cb6-6"></span>
-<span id="cb6-7">plt.figure(figsize<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">15</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span>))</span>
-<span id="cb6-8">p <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> sns.lineplot(data<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>df[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Adj Close'</span>])</span>
-<span id="cb6-9">p.set_ylabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Close Price"</span>)</span>
-<span id="cb6-10"><span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">pass</span></span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/publication-workflow/visualizing-historical-data_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="plot-the-normalised-the-time-series" class="level2">
-<h2 class="anchored" data-anchor-id="plot-the-normalised-the-time-series">Plot the normalised the time series</h2>
-<p>The chart above is useful, but the vast difference between the ETFs’ values makes it a bit hard to actually track each respective time series.</p>
-<p>It would be more effective to <strong>normalise the data</strong>. It’s often referred to as “rebasing”, ie making each time series starting at 100, this will make it much easier to compare.</p>
-<div id="cell-13" class="cell" data-execution_count="6">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb7-2"></span>
-<span id="cb7-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
-<span id="cb7-4">normalised_ts <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> (df[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Adj Close'</span>]<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">/</span>df[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Adj Close'</span>].iloc[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, ]<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>)</span>
-<span id="cb7-5">plt.figure(figsize<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">15</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span>))</span>
-<span id="cb7-6">p <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> sns.lineplot(data<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>normalised_ts)</span>
-<span id="cb7-7">p.set_ylabel(<span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">f"Close Price, Basis 100 in </span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span>start_date<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"</span>)</span>
-<span id="cb7-8"><span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">pass</span></span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/publication-workflow/visualizing-historical-data_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="rolling-window-cumulated-returns" class="level2">
-<h2 class="anchored" data-anchor-id="rolling-window-cumulated-returns">Rolling window cumulated returns</h2>
-<p>It’s often easy to get ‘seduced’ by the compelling long term returns, especially about Equities. And indeed, it was a good thing to be invested in Equities in the long run !</p>
-<p>But 1y returns are usually a good way to keep track of the portfolio, and moreover to see how these returns have developed over time. With a 1y return chart, the notion of risk, ie either fast-changing returns, or - even worse - consistently negative returns, quickly becomes apparent.</p>
-<div id="cell-15" class="cell" data-execution_count="7">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># We use pct_change() to calculate the one year return</span></span>
-<span id="cb8-2">ts_1y_returns <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> df[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Adj Close'</span>].pct_change(periods<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">252</span>)</span>
-<span id="cb8-3">plt.figure(figsize<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">15</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span>))</span>
-<span id="cb8-4">p <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> sns.lineplot(data<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>ts_1y_returns)</span>
-<span id="cb8-5">p.set_ylabel(<span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">f"Close Price, Basis 100 in </span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span>start_date<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"</span>)</span>
-<span id="cb8-6"><span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">pass</span></span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/publication-workflow/visualizing-historical-data_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="smoother-returns" class="level2">
-<h2 class="anchored" data-anchor-id="smoother-returns">Smoother returns</h2>
-<p>The chart above is great, but a bit too busy for my taste. Whilst accurate, there is too much info going on, the noise might reduce our ability to spot real medium terms or breakouts.</p>
-<p>This is where <strong>pandas</strong> starts to be really powerful. The <em>rolling()</em> function essentially captures sub-series, with a defined length (here 21 days). By <em>chaining</em> the results of rolling() with the <em>mean</em> function, ie calculating the arithmetic average, this will provide us in a one-liner with a new series. This generated dataframe contains the time series of the moving average (21 days) for each of our time series.</p>
-<p>Whilst this “chaining” approach might initially sound obscure, this is <strong>extremely powerful</strong>, especially when factoring in the fact that you just need to change the tickers of the ETFs in the beginning of the article to entirely update the whole analysis … your turn!</p>
-<div id="cell-17" class="cell" data-execution_count="8">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Normalise the data, which here means for each column to start at 100, with subsequent price development "scaled" according to daily returns</span></span>
-<span id="cb9-2">ts_1y_returns <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> df[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Adj Close'</span>].pct_change(periods<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">252</span>).rolling(window<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">21</span>).mean()</span>
-<span id="cb9-3">plt.figure(figsize<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">15</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span>))</span>
-<span id="cb9-4">p <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> sns.lineplot(data<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>ts_1y_returns)</span>
-<span id="cb9-5">p.set_ylabel(<span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">f"Close Price, Basis 100 in </span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span>start_date<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"</span>)</span>
-<span id="cb9-6"><span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">pass</span></span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/publication-workflow/visualizing-historical-data_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>So that’s it for this short intro on data gathering and visualising. In this article, we have gathered, checked, normalised and plot close prices for different ETFs.</p>
-<p>The next step will be to use these function to generate some returns and risk statistics, and start exploring portfolio construction.</p>
-<p>See you in the next article, and stay safe.</p>
-</section>
-<section id="useful-related-links" class="level2">
-<h2 class="anchored" data-anchor-id="useful-related-links">Useful Related Links</h2>
-<p>{% series_list %}</p>
-<p>There is no such thing as “full tutorial on something”, <strong>knowledge is everywhere</strong>. I found these tutorials pretty handy, check them out too!</p>
-<ul>
-<li><a href="http://seaborn.pydata.org/introduction.html#:~:text=Seaborn%20is%20a%20library%20for,explore%20and%20understand%20your%20data.">Seaborn Tutorial</a></li>
-<li><a href="https://www.datacamp.com/community/tutorials/f-string-formatting-in-python">Tutorial on F-Strings</a></li>
-</ul>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>publication-workflow</category>
-  <guid>https://portfolio-geek.com/posts/publication-workflow/visualizing-historical-data.html</guid>
-  <pubDate>Thu, 02 Mar 2023 23:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
