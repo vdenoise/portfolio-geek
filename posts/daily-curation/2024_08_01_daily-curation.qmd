@@ -1,0 +1,55 @@
+---
+title: "Dive into Python Upgrades, ETF Inflows, Hedge Fund Shifts, and Climate Crisis Insights (01.08.2024)"
+page-layout: full
+title-block-banner: true
+date: 08-01-2024
+categories: [ai,climate,coding,etf,hedge-funds,tech]
+tags: [models, climate, emissions, python, etfs, commodities, hedge, traffic, cybersecurity, investment]
+image: /pictures/cup-of-coffee-and-a-newspaper.jpg
+---
+
+In today's curation, we explore a variety of topics that reflect current trends and developments in technology, finance, and environmental concerns. Key highlights include:
+
+- Advances in large language models and their token processing capabilities.
+- The impact of climate change on Georgia's Sea Islands.
+- Urgent updates on global warming consequences.
+- Enhancements in Python tools for developers.
+- Notable trends in ETF inflows and hedge fund strategies.
+- New features in navigation apps like Google Maps and Waze.
+- The recent challenges faced by cybersecurity firm CrowdStrike.
+
+
+
+# AI and Gen-AI
+| Title | Summary |
+|-----|-----------|
+| [Understanding the Impact of Long Context Windows in Language Models: From 512 Tokens to 2 Million (Towards Data Science, 2024-07-31)](https://towardsdatascience.com/evaluating-long-context-large-language-models-fbd665b3544c)   | Large language models now process up to 2 million tokens, significantly increasing from 512 tokens in 2018. This capacity can encompass nearly all works of Harry Potter and Lord of the Rings. |
+
+# Climate
+| Title | Summary |
+|-----|-----------|
+| [Sea Level Crisis: The Local Impact of Climate Change on Georgia's Sea Islands (Naked Capitalism, 2024-07-31)](https://www.nakedcapitalism.com/2024/07/climate-change-can-one-specific-example-counter-the-denialists.html)   | The Sea Islands of Georgia face accelerating sea level rise, threatening habitation. Historical stability is shifting, and local leaders must act despite scepticism about anthropogenic climate change. |
+| [Global Warming Overshoots: Every 0.1C Increase Elevates Risk of Irreversible Environmental Tipping Points (Carbon Brief, 2024-08-01)](https://www.carbonbrief.org/every-0-1c-of-overshoot-above-1-5c-increases-risk-of-crossing-tipping-points/)   | Every 0.1C overshoot above 1.5C raises the risk of critical ecological tipping points. Global warming beyond 2C significantly accelerates this risk, necessitating urgent emission reductions. |
+
+# Coding
+| Title | Summary |
+|-----|-----------|
+| [Enhance Your Python Coding with New Visual Studio Code Features: Inline Values, Improved Discovery, and Enhanced REPL (Python in Visual Studio Code, 2024-07-31)](https://devblogs.microsoft.com/python/python-in-visual-studio-code-august-2024-release/)   | The August 2024 release for Python in Visual Studio Code features improved environment discovery, inline variable values in debugging, enhanced REPL UI, and additional user-requested enhancements. |
+
+# ETFs and Index Investing
+| Title | Summary |
+|-----|-----------|
+| [ETFs Defy Summer Slump with Record-Breaking Inflows: What’s Driving the Surge? (ETF Trends, 2024-07-31)](https://www.etftrends.com/no-summer-vacation-etfs-flows-near-record-pace-july/)   | ETFs experienced significant inflows in July, particularly in fixed income and equities, with strategies like USHY and SPY gaining momentum, potentially challenging previous annual records. |
+
+# Hedge Fund News
+| Title | Summary |
+|-----|-----------|
+| [Hedge Funds Abandon Industrial Stocks for Lucrative Commodities Amid Economic Concerns and Geopolitical Tensions (Bloomberg, 2024-07-31)](https://www.hedgeweek.com/hedge-funds-shift-focus-from-industrials-to-commodities/)   | Hedge funds are shifting from industrial stocks to commodity sectors like energy and materials amid geopolitical tensions. Industrial sell-offs are linked to trade concerns; energy and materials see increased investment. |
+
+# Technology
+| Title | Summary |
+|-----|-----------|
+| [Google Maps Enhances Road Safety with Police Alerts, Speed Tracking Traffic Lights, and Event Traffic Guidance (Google Blog, 2024-07-31)](https://lifehacker.com/tech/how-to-track-police-cars-google-maps)   | Google Maps and Waze introduce new traffic-tracking features, allowing users to report police locations, traffic events, and enhancing destination guidance with highlighted entrances and nearby parking. |
+| [CrowdStrike: The Cybersecurity Titan's $30 Billion Misstep and Critical Role in Global Digital Safety (Climateer Investing, 2024-07-31)](http://climateerinvest.blogspot.com/2024/07/how-crowdstrike-company-behind-global.html)   | CrowdStrike, a $90 billion cybersecurity firm, faced a $30 billion market cap loss after a software update outage affected 8.5 million systems. It was founded in 2011 by George Kurtz and others. |
+| [Navigate More Efficiently with Google's Updated Maps and Waze Features (Engadget, 2024-07-31)](https://www.engadget.com/google-maps-will-show-you-where-to-enter-your-destination-130021496.html?src=rss)   | Google Maps introduces features like highlighting building entrances and easier incident reporting. Waze adds camera alerts, traffic notifications, and locked navigation guidance, rolling out on iOS and Android. |
+
