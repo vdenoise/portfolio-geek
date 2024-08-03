@@ -1,0 +1,39 @@
+---
+title: "Daily Financial Insights 02.08.2024: Generative AI Business Models, Enhanced Data Science Portfolios, and Efficient SQL Optimization Techniques"
+page-layout: full
+title-block-banner: true
+date: 08-02-2024
+categories: [ai,coding,data-science]
+tags: [ai, business, portfolio, data, models, neural, revenue, sql, optimisation, research]
+image: /pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg
+---
+
+In today's curation, we explore a variety of topics pertinent to the intersection of technology and finance:
+
+- Challenges in the generative AI market regarding business models and costs
+- Enhancements made to a data science portfolio using mkdocs and Google Analytics
+- Utilizing large language models for efficient parsing of scientific papers
+- Building a simple neural network with TensorFlow and PyTorch for revenue prediction
+- Six SQL optimization tips for improved performance in Snowflake 
+
+Please find the details in the table below.
+
+
+
+# AI and Gen-AI
+| Title | Summary |
+|-----|-----------|
+| [Can Generative AI Sustain Its Costly Growth Without Compromising Innovation and Ethical Standards? (Towards Data Science, 2024-08-01)](https://towardsdatascience.com/economics-of-generative-ai-75f550288097)   | The generative AI market faces challenges in defining its business model, balancing between being a product or feature, and sustaining high costs while ensuring meaningful innovation and research. |
+
+# Coding
+| Title | Summary |
+|-----|-----------|
+| [Effortlessly Build a Stunning Data Science Portfolio with Python and MkDocs: A Step-by-Step Guide (Medium, 2024-08-02)](https://towardsdatascience.com/full-guide-to-build-a-professionnal-portfolio-with-python-markdown-git-and-github-page-for-66d12f7859f0)   | In 2024, I revamped my data science portfolio using mkdocs for improved aesthetics and functionality, integrating Google Analytics, with a focus on minimal configuration and free solutions. |
+| [Harnessing the Power of AI for Effortless Scientific Paper Analysis and Metadata Extraction (Medium, 2024-08-02)](https://towardsdatascience.com/document-parsing-using-large-language-models-with-code-9229fda09cdf)   | This article describes using large language models for parsing scientific research papers. It outlines a structured workflow, metadata extraction process, necessary libraries, and code implementation details for efficient document processing. |
+| [Effortless Neural Network Building for Beginners: A Practical Guide Using TensorFlow and PyTorch (Deep Learning Illustrated, 2024-08-02)](https://towardsdatascience.com/implementing-neural-networks-in-tensorflow-and-pytorch-3c1f097e412a)   | This guide demonstrates building a simple neural network using TensorFlow and PyTorch to predict ice cream revenue based on temperature and day, emphasising data preparation, model training, and evaluation. |
+
+# Data, Databases and Data Science
+| Title | Summary |
+|-----|-----------|
+| [Cut Snowflake Query Times by 50 Hours with These Six Simple SQL Hacks for Faster Data Analysis (The name of the blog or website is Snowflake., 2024-08-02)](https://towardsdatascience.com/mastering-sql-optimization-from-functional-to-efficient-queries-74d8692f10be)   | The author shared six SQL optimisation tips, reducing Snowflake query time by 50 hours daily. Key strategies include selecting necessary columns, analysing query profiles, and utilising Snowflake's functionality effectively. |
+

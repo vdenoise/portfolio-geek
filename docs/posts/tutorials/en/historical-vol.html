@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
+<meta name="dcterms.date" content="2024-08-03">
 
-<title>Portfolio Geek - Getting Started: measuring volatility</title>
+<title>Portfolio Geek - Understanding Historical Volatility</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,24 +59,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -130,9 +131,6 @@ cookieconsent.run({
 });
 </script> 
   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -164,9 +162,9 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Portfolio Geek - Getting Started: measuring volatility">
-<meta property="og:description" content="Finance, Research and the Tech required to Fuel them">
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="Portfolio Geek - Understanding Historical Volatility">
+<meta property="og:image" content="https://portfolio-geek.com/pictures/diagram-representing-red-crashing-market-volatility.jpg">
 <meta property="og:site_name" content="Portfolio Geek">
 </head>
 
@@ -177,7 +175,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Portfolio Geek</span>
     </a>
   </div>
@@ -188,19 +186,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../daily-curation.html"> 
+    <a class="nav-link" href="../../../daily-curation.html"> 
 <span class="menu-text">Daily Findings</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../tutorials_en.html"> 
+    <a class="nav-link" href="../../../tutorials_en.html"> 
 <span class="menu-text">Getting Started</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -236,8 +234,13 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Getting Started: measuring volatility</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/risk_and_return/post_historical-vol.ipynb">View Source</a></li></ul></div></div>
-</div>
+<div class="quarto-title-block"><div><h1 class="title">Understanding Historical Volatility</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/historical-vol.ipynb">View Source</a></li></ul></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">data-gathering</div>
+    <div class="quarto-category">volatility</div>
+    <div class="quarto-category">log-returns</div>
+  </div>
+  </div>
 
 
 
@@ -250,6 +253,12 @@ window.Quarto = {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 3, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -259,293 +268,213 @@ window.Quarto = {
 </header>
 
 
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../pictures/diagram-representing-red-crashing-market-volatility.jpg" class="img-fluid figure-img"></p>
+<figcaption>Market Volatility</figcaption>
+</figure>
+</div>
 <section id="understanding-historical-volatility" class="level1">
 <h1>Understanding Historical Volatility</h1>
-<p>Welcome to this detailed exploration of Historical Volatility, a concept central to risk assessment in finance and investing. Given my 20 years of experience as a financial engineer, I am thrilled to share my insights on this subject through practical Python examples. Whether you are a student, academic, or financial enthusiast, this post will provide you with hands-on knowledge, making it easier to comprehend and apply historical volatility in your analyses.</p>
-<section id="introduction-to-historical-volatility" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-historical-volatility">1. Introduction to Historical Volatility</h2>
-<hr>
+<section id="importance-of-grasping-historical-volatility" class="level2">
+<h2 class="anchored" data-anchor-id="importance-of-grasping-historical-volatility">Importance of Grasping Historical Volatility</h2>
+<section id="why-grasping-historical-volatility-is-crucial" class="level3">
+<h3 class="anchored" data-anchor-id="why-grasping-historical-volatility-is-crucial">Why Grasping Historical Volatility is Crucial</h3>
+<p>If you’re a budding financial engineer, investor, or market enthusiast, understanding historical volatility is crucial. Historical volatility, by referencing past price data, offers insights into the market’s perception of risk. Not only does it aid in evaluating the riskiness of an asset, but it also assists in crafting strategies to manage portfolios effectively.</p>
+</section>
 <section id="relevance-in-finance-and-investing" class="level3">
-<h3 class="anchored" data-anchor-id="relevance-in-finance-and-investing">1.1. Relevance in Finance and Investing</h3>
-<p>Historical volatility is crucial in finance and investing for assessing the riskiness of an asset. With its role in portfolio management, derivatives pricing, and investment decisions, understanding this concept is essential for making informed financial choices.</p>
+<h3 class="anchored" data-anchor-id="relevance-in-finance-and-investing">Relevance in Finance and Investing</h3>
+<ol type="1">
+<li><strong>Finance and Investing</strong>: Historical volatility reflects the risk tied to an asset. A high volatility implies higher risk, which often translates to higher returns.</li>
+<li><strong>Portfolio Management</strong>: Volatility helps in diversification by understanding how volatile an asset is compared to others in the portfolio.</li>
+<li><strong>Derivatives Pricing</strong>: It is indispensable in options pricing. Models like Black-Scholes employ historical volatility to estimate an asset’s future risk.</li>
+</ol>
 </section>
-<section id="importance-of-spy-sp-500-etf-in-volatility-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="importance-of-spy-sp-500-etf-in-volatility-analysis">1.2. Importance of SPY (S&amp;P 500 ETF) in Volatility Analysis</h3>
-<p>SPY, representing the S&amp;P 500 index, serves as an excellent proxy for market analysis. Its high liquidity and trading volume make it a reliable measure of volatility, aiding in comparison with other assets.</p>
-</section>
-<section id="setting-the-stage-complexity-level" class="level3">
-<h3 class="anchored" data-anchor-id="setting-the-stage-complexity-level">1.3. Setting the Stage: Complexity Level</h3>
-<p>While historical volatility can seem complex, it becomes manageable with a basic understanding of statistics and financial concepts. This post aims to walk you through the necessary steps, illustrating each concept with Python code.</p>
-</section>
-</section>
-<section id="key-concepts-and-formulas" class="level2">
-<h2 class="anchored" data-anchor-id="key-concepts-and-formulas">2. Key Concepts and Formulas</h2>
-<hr>
-<section id="the-formula-for-historical-volatility" class="level3">
-<h3 class="anchored" data-anchor-id="the-formula-for-historical-volatility">2.1. The Formula for Historical Volatility</h3>
-<p>Historical volatility is calculated using the standard deviation of logarithmic returns of an asset’s prices.</p>
-<p><span class="math display">\[ \sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N} (R_i - \bar{R})^2} \]</span></p>
-<p>where: - ( ) is the historical volatility - ( N ) is the number of observations - ( R_i ) is the logarithmic return at time ( i ) - ( {R} ) is the average of the logarithmic returns</p>
-</section>
-<section id="annualizing-historical-volatility" class="level3">
-<h3 class="anchored" data-anchor-id="annualizing-historical-volatility">2.2. Annualizing Historical Volatility</h3>
-<p>To annualize the calculated weekly volatility, use the following formula:</p>
-<p><span class="math display">\[ \sigma_{\text{annual}} = \sigma_{\text{weekly}} \times \sqrt{52} \]</span></p>
-</section>
-<section id="parameters-and-their-impact" class="level3">
-<h3 class="anchored" data-anchor-id="parameters-and-their-impact">2.3. Parameters and Their Impact</h3>
-<p>The number of observations (N), the time interval (weekly), and the asset’s historical closing prices significantly influence the calculated volatility. Understanding these parameters helps in tweaking the analysis for different assets or time frames.</p>
+<section id="why-we-need-this-concept" class="level3">
+<h3 class="anchored" data-anchor-id="why-we-need-this-concept">Why We Need This Concept</h3>
+<ol type="1">
+<li><strong>Risk Assessment</strong>: Enables us to quantify the risk and potential variation in returns for any given asset.</li>
+<li><strong>Investment Decisions</strong>: Guides investors on whether the asset’s risk matches their risk appetite.</li>
+<li><strong>Benchmarking Performance</strong>: Facilitates comparisons with historical norms to identify unusual market behavior.</li>
+</ol>
 </section>
 </section>
-<section id="practical-implementation-in-python" class="level2">
-<h2 class="anchored" data-anchor-id="practical-implementation-in-python">3. Practical Implementation in Python</h2>
-<hr>
-<section id="importing-required-libraries" class="level3">
-<h3 class="anchored" data-anchor-id="importing-required-libraries">3.1. Importing Required Libraries</h3>
-<p>First, let’s import the necessary libraries for our analysis.</p>
-<div id="c93e353e" class="cell" data-execution_count="1">
+<section id="defining-of-historical-volatility" class="level2">
+<h2 class="anchored" data-anchor-id="defining-of-historical-volatility">Defining of Historical Volatility</h2>
+<section id="breaking-down-the-key-formula" class="level3">
+<h3 class="anchored" data-anchor-id="breaking-down-the-key-formula">Breaking Down the Key Formula</h3>
+<p>Historical volatility measures how much the price of a stock varies over a period. The fundamental formula for historical volatility is:</p>
+<p><span class="math display">\[
+\sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N} (R_i - \bar{R})^2}
+\]</span></p>
+<p>Where: - <span class="math inline">\(\sigma\)</span> is the historical volatility - <span class="math inline">\(N\)</span> is the number of observations - <span class="math inline">\(R_i\)</span> represents the logarithmic return of the price at time <span class="math inline">\(i\)</span> - <span class="math inline">\(\bar{R}\)</span> is the average of the logarithmic returns</p>
+</section>
+<section id="annualizing-weekly-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="annualizing-weekly-volatility">Annualizing Weekly Volatility</h3>
+<p>To annualize the volatility calculated from weekly data, we use:</p>
+<p><span class="math display">\[
+\sigma_{\text{annual}} = \sigma_{\text{weekly}} \times \sqrt{52}
+\]</span></p>
+<p>This conversion is necessary as it scales the weekly volatility to an annual level, making comparisons with annualized returns straightforward.</p>
+</section>
+<section id="how-parameters-affect-the-results" class="level3">
+<h3 class="anchored" data-anchor-id="how-parameters-affect-the-results">How Parameters Affect the Results</h3>
+<ol type="1">
+<li><strong>Number of Observations (<span class="math inline">\(N\)</span>)</strong>: More observations typically lead to a more accurate estimation of volatility.</li>
+<li><strong>Logarithmic Returns (<span class="math inline">\(R_i\)</span>)</strong>: Captures the continuous compounding of returns, reflecting the actual growth rate better than simple returns.</li>
+<li><strong>Average Logarithmic Return (<span class="math inline">\(\bar{R}\)</span>)</strong>: Considering mean return centralizes the volatility measure, giving a base to calculate deviations.</li>
+</ol>
+</section>
+</section>
+<section id="section-3-building-charts-using-python" class="level2">
+<h2 class="anchored" data-anchor-id="section-3-building-charts-using-python">Section 3: Building Charts Using Python</h2>
+<p>In this section, we’ll use <code>pandas</code>, <code>matplotlib</code>, and <code>yfinance</code> to fetch historical data of SPY and calculate its historical volatility.</p>
+<section id="fetching-historical-data" class="level3">
+<h3 class="anchored" data-anchor-id="fetching-historical-data">Fetching Historical Data</h3>
+<p>First, let’s fetch the historical weekly closing prices for SPY using the <code>yfinance</code> library.</p>
+<div id="761039ac" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co"># Fetching SPY historical data</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>spy <span class="op">=</span> yf.Ticker(<span class="st">"SPY"</span>)</span>
+<span id="cb1-9"><a href="#cb1-9"></a>hist <span class="op">=</span> spy.history(period<span class="op">=</span><span class="st">"5y"</span>, interval<span class="op">=</span><span class="st">"1wk"</span>)</span>
+<span id="cb1-10"><a href="#cb1-10"></a>prices <span class="op">=</span> hist[<span class="st">"Close"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
-<section id="fetching-historical-data" class="level3">
-<h3 class="anchored" data-anchor-id="fetching-historical-data">3.2. Fetching Historical Data</h3>
-<p>We’ll use the <code>yfinance</code> library to fetch historical data for SPY (S&amp;P 500 ETF).</p>
-<div id="8744cc03" class="cell" data-execution_count="2">
+<section id="calculating-weekly-log-returns" class="level3">
+<h3 class="anchored" data-anchor-id="calculating-weekly-log-returns">Calculating Weekly Log Returns</h3>
+<p>We’ll compute the weekly log returns from the closing prices.</p>
+<div id="c15c1c70" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Fetch SPY data</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>spy <span class="op">=</span> yf.Ticker(<span class="st">'SPY'</span>)</span>
-<span id="cb2-3"><a href="#cb2-3"></a>df <span class="op">=</span> spy.history(period<span class="op">=</span><span class="st">'5y'</span>, interval<span class="op">=</span><span class="st">'1wk'</span>)</span>
-<span id="cb2-4"><a href="#cb2-4"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Calculating weekly log returns</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>log_returns <span class="op">=</span> np.log(prices <span class="op">/</span> prices.shift(<span class="dv">1</span>)).dropna()</span>
+<span id="cb2-3"><a href="#cb2-3"></a>log_returns_head <span class="op">=</span> log_returns.head()</span>
+<span id="cb2-4"><a href="#cb2-4"></a>log_returns_head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="2">
-<div>
-<div>
-
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Open</th>
-<th data-quarto-table-cell-role="th">High</th>
-<th data-quarto-table-cell-role="th">Low</th>
-<th data-quarto-table-cell-role="th">Close</th>
-<th data-quarto-table-cell-role="th">Volume</th>
-<th data-quarto-table-cell-role="th">Dividends</th>
-<th data-quarto-table-cell-role="th">Stock Splits</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Date</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2019-07-22</td>
-<td>276.530804</td>
-<td>279.340577</td>
-<td>276.438372</td>
-<td>279.137238</td>
-<td>147691400.0</td>
-<td>0.0</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2019-07-29</td>
-<td>279.017107</td>
-<td>279.137266</td>
-<td>268.868668</td>
-<td>270.458405</td>
-<td>447617000.0</td>
-<td>0.0</td>
-<td>0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2019-08-05</td>
-<td>266.271465</td>
-<td>271.382648</td>
-<td>260.383902</td>
-<td>269.534119</td>
-<td>621473300.0</td>
-<td>0.0</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2019-08-12</td>
-<td>267.999797</td>
-<td>271.872469</td>
-<td>261.003135</td>
-<td>266.973877</td>
-<td>478024400.0</td>
-<td>0.0</td>
-<td>0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2019-08-19</td>
-<td>270.060925</td>
-<td>271.669137</td>
-<td>262.001335</td>
-<td>263.276825</td>
-<td>355520800.0</td>
-<td>0.0</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
+<pre><code>Date
+2019-08-05 00:00:00-04:00   -0.003424
+2019-08-12 00:00:00-04:00   -0.009544
+2019-08-19 00:00:00-04:00   -0.013945
+2019-08-26 00:00:00-04:00    0.026331
+2019-09-02 00:00:00-04:00    0.018967
+Name: Close, dtype: float64</code></pre>
 </div>
 </div>
 </section>
-<section id="calculating-weekly-returns" class="level3">
-<h3 class="anchored" data-anchor-id="calculating-weekly-returns">3.3. Calculating Weekly Returns</h3>
-<p>Using the historical weekly closing prices, we calculate the logarithmic returns.</p>
-<div id="e924f13e" class="cell" data-execution_count="3">
+<section id="plotting-the-historical-price-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="plotting-the-historical-price-evolution">Plotting the Historical Price Evolution</h3>
+<p>We’ll now create a line chart displaying the historical price evolution of SPY over the past 5 years.</p>
+<div id="e21a7af3" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Calculate logarithmic returns</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>df[<span class="st">'Log Returns'</span>] <span class="op">=</span> np.log(df[<span class="st">'Close'</span>] <span class="op">/</span> df[<span class="st">'Close'</span>].shift(<span class="dv">1</span>))</span>
-<span id="cb3-3"><a href="#cb3-3"></a>df <span class="op">=</span> df.dropna()</span>
-<span id="cb3-4"><a href="#cb3-4"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<div>
-<div>
-
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Open</th>
-<th data-quarto-table-cell-role="th">High</th>
-<th data-quarto-table-cell-role="th">Low</th>
-<th data-quarto-table-cell-role="th">Close</th>
-<th data-quarto-table-cell-role="th">Volume</th>
-<th data-quarto-table-cell-role="th">Dividends</th>
-<th data-quarto-table-cell-role="th">Stock Splits</th>
-<th data-quarto-table-cell-role="th">Log Returns</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Date</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2019-07-29</td>
-<td>279.017107</td>
-<td>279.137266</td>
-<td>268.868668</td>
-<td>270.458405</td>
-<td>447617000.0</td>
-<td>0.0</td>
-<td>0</td>
-<td>-0.031585</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2019-08-05</td>
-<td>266.271465</td>
-<td>271.382648</td>
-<td>260.383902</td>
-<td>269.534119</td>
-<td>621473300.0</td>
-<td>0.0</td>
-<td>0</td>
-<td>-0.003423</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2019-08-12</td>
-<td>267.999797</td>
-<td>271.872469</td>
-<td>261.003135</td>
-<td>266.973877</td>
-<td>478024400.0</td>
-<td>0.0</td>
-<td>0</td>
-<td>-0.009544</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2019-08-19</td>
-<td>270.060925</td>
-<td>271.669137</td>
-<td>262.001335</td>
-<td>263.276825</td>
-<td>355520800.0</td>
-<td>0.0</td>
-<td>0</td>
-<td>-0.013945</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2019-08-26</td>
-<td>265.513466</td>
-<td>271.955591</td>
-<td>263.646462</td>
-<td>270.301178</td>
-<td>319590000.0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.026331</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="calculating-historical-volatility" class="level3">
-<h3 class="anchored" data-anchor-id="calculating-historical-volatility">3.4. Calculating Historical Volatility</h3>
-<p>Next, we compute the historical volatility using the standard deviation of the logarithmic returns and annualize it.</p>
-<div id="6bbd502e" class="cell" data-execution_count="4">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Calculate historical volatility</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>weekly_volatility <span class="op">=</span> df[<span class="st">'Log Returns'</span>].std()</span>
-<span id="cb4-3"><a href="#cb4-3"></a>annual_volatility <span class="op">=</span> weekly_volatility <span class="op">*</span> np.sqrt(<span class="dv">52</span>)</span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="bu">print</span>(<span class="ss">f'Annualized Historical Volatility: </span><span class="sc">{</span>annual_volatility<span class="sc">:.2%}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>Annualized Historical Volatility: 19.65%</code></pre>
-</div>
-</div>
-</section>
-<section id="visualising-volatility" class="level3">
-<h3 class="anchored" data-anchor-id="visualising-volatility">3.5. Visualising Volatility</h3>
-<p>We’ll plot the weekly returns and volatility to visualise the data better.</p>
-<div id="41a1641b" class="cell" data-execution_count="5">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Plot weekly returns</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a>df[<span class="st">'Log Returns'</span>].plot(figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">7</span>), title<span class="op">=</span><span class="st">'Weekly Log Returns of SPY'</span>)</span>
-<span id="cb6-3"><a href="#cb6-3"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co"># Plotting historical price evolution</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>plt.figure()</span>
+<span id="cb4-5"><a href="#cb4-5"></a>prices.plot()</span>
+<span id="cb4-6"><a href="#cb4-6"></a>plt.title(<span class="st">'Historical Price Evolution of SPY'</span>)</span>
+<span id="cb4-7"><a href="#cb4-7"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb4-8"><a href="#cb4-8"></a>plt.ylabel(<span class="st">'Price'</span>)</span>
+<span id="cb4-9"><a href="#cb4-9"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="post_historical-vol_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="historical-vol_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="histogram-of-weekly-return-distributions" class="level3">
+<h3 class="anchored" data-anchor-id="histogram-of-weekly-return-distributions">Histogram of Weekly Return Distributions</h3>
+<p>Next, let’s create a histogram of the weekly return distributions for SPY over the past 5 years.</p>
+<div id="27c7c7b1" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Plotting histogram of weekly log returns</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>plt.figure()</span>
+<span id="cb5-3"><a href="#cb5-3"></a>log_returns.hist(bins<span class="op">=</span><span class="dv">50</span>)</span>
+<span id="cb5-4"><a href="#cb5-4"></a>plt.title(<span class="st">'Histogram of Weekly Log Returns for SPY'</span>)</span>
+<span id="cb5-5"><a href="#cb5-5"></a>plt.xlabel(<span class="st">'Log Return'</span>)</span>
+<span id="cb5-6"><a href="#cb5-6"></a>plt.ylabel(<span class="st">'Frequency'</span>)</span>
+<span id="cb5-7"><a href="#cb5-7"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="historical-vol_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="rolling-annualized-historical-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="rolling-annualized-historical-volatility">Rolling Annualized Historical Volatility</h3>
+<p>We’ll now calculate the rolling annualized historical volatility using a 52-week rolling window and plot it.</p>
+<div id="79724871" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Calculating rolling annualized volatility</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>rolling_vol <span class="op">=</span> log_returns.rolling(window<span class="op">=</span><span class="dv">52</span>).std() <span class="op">*</span> np.sqrt(<span class="dv">52</span>)</span>
+<span id="cb6-3"><a href="#cb6-3"></a></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="co"># Plotting rolling annualized volatility</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a>plt.figure()</span>
+<span id="cb6-6"><a href="#cb6-6"></a>rolling_vol.plot()</span>
+<span id="cb6-7"><a href="#cb6-7"></a>plt.title(<span class="st">'Rolling Annualized Historical Volatility of SPY'</span>)</span>
+<span id="cb6-8"><a href="#cb6-8"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb6-9"><a href="#cb6-9"></a>plt.ylabel(<span class="st">'Volatility'</span>)</span>
+<span id="cb6-10"><a href="#cb6-10"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="historical-vol_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="comparing-2-assets-by-their-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="comparing-2-assets-by-their-volatility">Comparing 2 assets by their volatility</h3>
+<p>Let’s create a scatter plot comparing the annualized historical volatility as derived from weekly SPY returns against the performance of other ETFs.</p>
+<div id="e4472cc8" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Fetching historical data for other ETFs</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>qqq <span class="op">=</span> yf.Ticker(<span class="st">"QQQ"</span>).history(period<span class="op">=</span><span class="st">"5y"</span>, interval<span class="op">=</span><span class="st">"1wk"</span>)[<span class="st">"Close"</span>]</span>
+<span id="cb7-3"><a href="#cb7-3"></a>iwm <span class="op">=</span> yf.Ticker(<span class="st">"IWM"</span>).history(period<span class="op">=</span><span class="st">"5y"</span>, interval<span class="op">=</span><span class="st">"1wk"</span>)[<span class="st">"Close"</span>]</span>
+<span id="cb7-4"><a href="#cb7-4"></a></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="co"># Calculating log returns for other ETFs</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a>log_returns_qqq <span class="op">=</span> np.log(qqq <span class="op">/</span> qqq.shift(<span class="dv">1</span>)).dropna()</span>
+<span id="cb7-7"><a href="#cb7-7"></a>log_returns_iwm <span class="op">=</span> np.log(iwm <span class="op">/</span> iwm.shift(<span class="dv">1</span>)).dropna()</span>
+<span id="cb7-8"><a href="#cb7-8"></a></span>
+<span id="cb7-9"><a href="#cb7-9"></a><span class="co"># Calculating annualized volatility for other ETFs</span></span>
+<span id="cb7-10"><a href="#cb7-10"></a>vol_qqq <span class="op">=</span> log_returns_qqq.rolling(window<span class="op">=</span><span class="dv">52</span>).std() <span class="op">*</span> np.sqrt(<span class="dv">52</span>)</span>
+<span id="cb7-11"><a href="#cb7-11"></a>vol_iwm <span class="op">=</span> log_returns_iwm.rolling(window<span class="op">=</span><span class="dv">52</span>).std() <span class="op">*</span> np.sqrt(<span class="dv">52</span>)</span>
+<span id="cb7-12"><a href="#cb7-12"></a></span>
+<span id="cb7-13"><a href="#cb7-13"></a><span class="co"># Creating the scatter plot</span></span>
+<span id="cb7-14"><a href="#cb7-14"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb7-15"><a href="#cb7-15"></a>vol_qqq.plot(ax<span class="op">=</span>ax)</span>
+<span id="cb7-16"><a href="#cb7-16"></a></span>
+<span id="cb7-17"><a href="#cb7-17"></a>vol_iwm.plot(ax<span class="op">=</span>ax)</span>
+<span id="cb7-18"><a href="#cb7-18"></a>plt.ylabel(<span class="st">'Volatility'</span>)</span>
+<span id="cb7-19"><a href="#cb7-19"></a>plt.legend()</span>
+<span id="cb7-20"><a href="#cb7-20"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="historical-vol_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -553,32 +482,21 @@ window.Quarto = {
 </section>
 </section>
 <section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">4. Conclusion</h2>
-<hr>
-<section id="efficacy-of-historical-volatility" class="level3">
-<h3 class="anchored" data-anchor-id="efficacy-of-historical-volatility">4.1. Efficacy of Historical Volatility</h3>
-<p>Historical volatility is a valuable tool for assessing asset risk and aiding in investment decisions. By understanding its calculation and implications, beginners can better gauge market dynamics and make informed choices.</p>
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<section id="practical-applications" class="level3">
+<h3 class="anchored" data-anchor-id="practical-applications">Practical Applications</h3>
+<p>Understanding historical volatility allows you to assess the risk and behaviour of assets over time. It is invaluable in portfolio management and derivative pricing.</p>
 </section>
-<section id="limitations-to-consider" class="level3">
-<h3 class="anchored" data-anchor-id="limitations-to-consider">4.2. Limitations to Consider</h3>
-<p>While useful, historical volatility is not foolproof. It bases predictions on past data, which may not always accurately forecast future volatility. Therefore, it’s essential to complement it with other analyses.</p>
+<section id="limitations" class="level3">
+<h3 class="anchored" data-anchor-id="limitations">Limitations</h3>
+<ul>
+<li><strong>Past vs.&nbsp;Future</strong>: Historical volatility relies on past data and isn’t always indicative of future movements.</li>
+<li><strong>Distribution Assumptions</strong>: It assumes a normal distribution, which may not always be true in real-world markets.</li>
+</ul>
 </section>
-<section id="invitation-to-explore-further" class="level3">
-<h3 class="anchored" data-anchor-id="invitation-to-explore-further">4.3. Invitation to Explore Further</h3>
-<p>We encourage you to experiment with different assets and time frames using the provided code. For a more comprehensive understanding, check out these advanced sources:</p>
-<ol type="1">
-<li><a href="https://www.investopedia.com/terms/v/volatility.asp">Investopedia on Volatility</a></li>
-<li><a href="https://financetrain.com/historical-volatility">Finance Train on Historical Volatility</a></li>
-<li><a href="https://www.khanacademy.org/math/statistics-probability">Khan Academy on Variance and Standard Deviation</a></li>
-<li><a href="https://www.quantstart.com/articles/Volatility-Modelling">QuantStart on Options Pricing Models</a></li>
-<li><a href="https://towardsdatascience.com/financial-risk-analysis">Towards Data Science on Financial Metrics</a></li>
-<li><a href="https://www.eurekly.com/blog/financial-engineering">Eurekly on Financial Engineering</a></li>
-<li><a href="https://quant.stackexchange.com/">Stack Exchange Quantitative Finance</a></li>
-<li><a href="https://pythonforfinance.net/">Python for Finance</a></li>
-<li><a href="https://datadriveninvesting.org/">DataDrivenInvesting Blog</a></li>
-<li><a href="https://www.datasciencecentral.com/">Data Science Central on Volatility</a></li>
-</ol>
-<p>For more practical tutorials, visit the <a href="https://www.youtube.com/channel/UCqxr913I1cWVPbIXuMkc2Sg">Data Driven Minutes Youtube Channel</a>. Happy coding and investing!</p>
+<section id="final-thoughts" class="level3">
+<h3 class="anchored" data-anchor-id="final-thoughts">Final Thoughts</h3>
+<p>By integrating historical volatility into your analysis, you can better navigate the financial markets. Don’t forget, you can always refer to the corresponding video on the Data Driven Minutes Youtube channel for a more visual walkthrough.</p>
 
 
 </section>
@@ -1051,7 +969,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
+    <a class="nav-link" href="../../../about.html">
 <p>About | Copyright | Disclaimer</p>
 </a>
   </li>  

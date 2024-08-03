@@ -2,7 +2,7 @@
 title: "Getting Started: Quantitative Finance with Python"
 listing:
   contents: posts/tutorials/en
-  sort: "title asc"
+  sort: "date desc"
   type: grid
   fields: [author, date, description, title, image]
 page-layout: full

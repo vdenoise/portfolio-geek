@@ -10,7 +10,510 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Wed, 31 Jul 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 02 Aug 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Understanding Historical Volatility</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/tutorials/en/historical-vol.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/diagram-representing-red-crashing-market-volatility.jpg" class="img-fluid figure-img"></p>
+<figcaption>Market Volatility</figcaption>
+</figure>
+</div>
+<section id="understanding-historical-volatility" class="level1">
+<h1>Understanding Historical Volatility</h1>
+<section id="importance-of-grasping-historical-volatility" class="level2">
+<h2 class="anchored" data-anchor-id="importance-of-grasping-historical-volatility">Importance of Grasping Historical Volatility</h2>
+<section id="why-grasping-historical-volatility-is-crucial" class="level3">
+<h3 class="anchored" data-anchor-id="why-grasping-historical-volatility-is-crucial">Why Grasping Historical Volatility is Crucial</h3>
+<p>If you’re a budding financial engineer, investor, or market enthusiast, understanding historical volatility is crucial. Historical volatility, by referencing past price data, offers insights into the market’s perception of risk. Not only does it aid in evaluating the riskiness of an asset, but it also assists in crafting strategies to manage portfolios effectively.</p>
+</section>
+<section id="relevance-in-finance-and-investing" class="level3">
+<h3 class="anchored" data-anchor-id="relevance-in-finance-and-investing">Relevance in Finance and Investing</h3>
+<ol type="1">
+<li><strong>Finance and Investing</strong>: Historical volatility reflects the risk tied to an asset. A high volatility implies higher risk, which often translates to higher returns.</li>
+<li><strong>Portfolio Management</strong>: Volatility helps in diversification by understanding how volatile an asset is compared to others in the portfolio.</li>
+<li><strong>Derivatives Pricing</strong>: It is indispensable in options pricing. Models like Black-Scholes employ historical volatility to estimate an asset’s future risk.</li>
+</ol>
+</section>
+<section id="why-we-need-this-concept" class="level3">
+<h3 class="anchored" data-anchor-id="why-we-need-this-concept">Why We Need This Concept</h3>
+<ol type="1">
+<li><strong>Risk Assessment</strong>: Enables us to quantify the risk and potential variation in returns for any given asset.</li>
+<li><strong>Investment Decisions</strong>: Guides investors on whether the asset’s risk matches their risk appetite.</li>
+<li><strong>Benchmarking Performance</strong>: Facilitates comparisons with historical norms to identify unusual market behavior.</li>
+</ol>
+</section>
+</section>
+<section id="defining-of-historical-volatility" class="level2">
+<h2 class="anchored" data-anchor-id="defining-of-historical-volatility">Defining of Historical Volatility</h2>
+<section id="breaking-down-the-key-formula" class="level3">
+<h3 class="anchored" data-anchor-id="breaking-down-the-key-formula">Breaking Down the Key Formula</h3>
+<p>Historical volatility measures how much the price of a stock varies over a period. The fundamental formula for historical volatility is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Csigma%20=%20%5Csqrt%7B%5Cfrac%7B1%7D%7BN-1%7D%20%5Csum_%7Bi=1%7D%5E%7BN%7D%20(R_i%20-%20%5Cbar%7BR%7D)%5E2%7D%0A"></p>
+<p>Where: - <img src="https://latex.codecogs.com/png.latex?%5Csigma"> is the historical volatility - <img src="https://latex.codecogs.com/png.latex?N"> is the number of observations - <img src="https://latex.codecogs.com/png.latex?R_i"> represents the logarithmic return of the price at time <img src="https://latex.codecogs.com/png.latex?i"> - <img src="https://latex.codecogs.com/png.latex?%5Cbar%7BR%7D"> is the average of the logarithmic returns</p>
+</section>
+<section id="annualizing-weekly-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="annualizing-weekly-volatility">Annualizing Weekly Volatility</h3>
+<p>To annualize the volatility calculated from weekly data, we use:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Csigma_%7B%5Ctext%7Bannual%7D%7D%20=%20%5Csigma_%7B%5Ctext%7Bweekly%7D%7D%20%5Ctimes%20%5Csqrt%7B52%7D%0A"></p>
+<p>This conversion is necessary as it scales the weekly volatility to an annual level, making comparisons with annualized returns straightforward.</p>
+</section>
+<section id="how-parameters-affect-the-results" class="level3">
+<h3 class="anchored" data-anchor-id="how-parameters-affect-the-results">How Parameters Affect the Results</h3>
+<ol type="1">
+<li><strong>Number of Observations (<img src="https://latex.codecogs.com/png.latex?N">)</strong>: More observations typically lead to a more accurate estimation of volatility.</li>
+<li><strong>Logarithmic Returns (<img src="https://latex.codecogs.com/png.latex?R_i">)</strong>: Captures the continuous compounding of returns, reflecting the actual growth rate better than simple returns.</li>
+<li><strong>Average Logarithmic Return (<img src="https://latex.codecogs.com/png.latex?%5Cbar%7BR%7D">)</strong>: Considering mean return centralizes the volatility measure, giving a base to calculate deviations.</li>
+</ol>
+</section>
+</section>
+<section id="section-3-building-charts-using-python" class="level2">
+<h2 class="anchored" data-anchor-id="section-3-building-charts-using-python">Section 3: Building Charts Using Python</h2>
+<p>In this section, we’ll use <code>pandas</code>, <code>matplotlib</code>, and <code>yfinance</code> to fetch historical data of SPY and calculate its historical volatility.</p>
+<section id="fetching-historical-data" class="level3">
+<h3 class="anchored" data-anchor-id="fetching-historical-data">Fetching Historical Data</h3>
+<p>First, let’s fetch the historical weekly closing prices for SPY using the <code>yfinance</code> library.</p>
+<div id="761039ac" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> yfinance <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> yf</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb1-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb1-5"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span>matplotlib inline</span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fetching SPY historical data</span></span>
+<span id="cb1-8">spy <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.Ticker(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"SPY"</span>)</span>
+<span id="cb1-9">hist <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> spy.history(period<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"5y"</span>, interval<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"1wk"</span>)</span>
+<span id="cb1-10">prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Close"</span>]</span></code></pre></div>
+</details>
+</div>
+</section>
+<section id="calculating-weekly-log-returns" class="level3">
+<h3 class="anchored" data-anchor-id="calculating-weekly-log-returns">Calculating Weekly Log Returns</h3>
+<p>We’ll compute the weekly log returns from the closing prices.</p>
+<div id="c15c1c70" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculating weekly log returns</span></span>
+<span id="cb2-2">log_returns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.log(prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> prices.shift(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)).dropna()</span>
+<span id="cb2-3">log_returns_head <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> log_returns.head()</span>
+<span id="cb2-4">log_returns_head</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<pre><code>Date
+2019-08-05 00:00:00-04:00   -0.003424
+2019-08-12 00:00:00-04:00   -0.009544
+2019-08-19 00:00:00-04:00   -0.013945
+2019-08-26 00:00:00-04:00    0.026331
+2019-09-02 00:00:00-04:00    0.018967
+Name: Close, dtype: float64</code></pre>
+</div>
+</div>
+</section>
+<section id="plotting-the-historical-price-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="plotting-the-historical-price-evolution">Plotting the Historical Price Evolution</h3>
+<p>We’ll now create a line chart displaying the historical price evolution of SPY over the past 5 years.</p>
+<div id="e21a7af3" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb4-2"></span>
+<span id="cb4-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting historical price evolution</span></span>
+<span id="cb4-4">plt.figure()</span>
+<span id="cb4-5">prices.plot()</span>
+<span id="cb4-6">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Historical Price Evolution of SPY'</span>)</span>
+<span id="cb4-7">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb4-8">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Price'</span>)</span>
+<span id="cb4-9">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/historical-vol_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="histogram-of-weekly-return-distributions" class="level3">
+<h3 class="anchored" data-anchor-id="histogram-of-weekly-return-distributions">Histogram of Weekly Return Distributions</h3>
+<p>Next, let’s create a histogram of the weekly return distributions for SPY over the past 5 years.</p>
+<div id="27c7c7b1" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting histogram of weekly log returns</span></span>
+<span id="cb5-2">plt.figure()</span>
+<span id="cb5-3">log_returns.hist(bins<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">50</span>)</span>
+<span id="cb5-4">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Histogram of Weekly Log Returns for SPY'</span>)</span>
+<span id="cb5-5">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Log Return'</span>)</span>
+<span id="cb5-6">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Frequency'</span>)</span>
+<span id="cb5-7">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/historical-vol_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="rolling-annualized-historical-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="rolling-annualized-historical-volatility">Rolling Annualized Historical Volatility</h3>
+<p>We’ll now calculate the rolling annualized historical volatility using a 52-week rolling window and plot it.</p>
+<div id="79724871" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculating rolling annualized volatility</span></span>
+<span id="cb6-2">rolling_vol <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> log_returns.rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>).std() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> np.sqrt(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>)</span>
+<span id="cb6-3"></span>
+<span id="cb6-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting rolling annualized volatility</span></span>
+<span id="cb6-5">plt.figure()</span>
+<span id="cb6-6">rolling_vol.plot()</span>
+<span id="cb6-7">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling Annualized Historical Volatility of SPY'</span>)</span>
+<span id="cb6-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb6-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Volatility'</span>)</span>
+<span id="cb6-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/historical-vol_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="comparing-2-assets-by-their-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="comparing-2-assets-by-their-volatility">Comparing 2 assets by their volatility</h3>
+<p>Let’s create a scatter plot comparing the annualized historical volatility as derived from weekly SPY returns against the performance of other ETFs.</p>
+<div id="e4472cc8" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fetching historical data for other ETFs</span></span>
+<span id="cb7-2">qqq <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.Ticker(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"QQQ"</span>).history(period<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"5y"</span>, interval<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"1wk"</span>)[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Close"</span>]</span>
+<span id="cb7-3">iwm <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.Ticker(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"IWM"</span>).history(period<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"5y"</span>, interval<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"1wk"</span>)[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Close"</span>]</span>
+<span id="cb7-4"></span>
+<span id="cb7-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculating log returns for other ETFs</span></span>
+<span id="cb7-6">log_returns_qqq <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.log(qqq <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> qqq.shift(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)).dropna()</span>
+<span id="cb7-7">log_returns_iwm <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.log(iwm <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> iwm.shift(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)).dropna()</span>
+<span id="cb7-8"></span>
+<span id="cb7-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculating annualized volatility for other ETFs</span></span>
+<span id="cb7-10">vol_qqq <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> log_returns_qqq.rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>).std() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> np.sqrt(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>)</span>
+<span id="cb7-11">vol_iwm <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> log_returns_iwm.rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>).std() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> np.sqrt(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>)</span>
+<span id="cb7-12"></span>
+<span id="cb7-13"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Creating the scatter plot</span></span>
+<span id="cb7-14">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb7-15">vol_qqq.plot(ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax)</span>
+<span id="cb7-16"></span>
+<span id="cb7-17">vol_iwm.plot(ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax)</span>
+<span id="cb7-18">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Volatility'</span>)</span>
+<span id="cb7-19">plt.legend()</span>
+<span id="cb7-20">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/historical-vol_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<section id="practical-applications" class="level3">
+<h3 class="anchored" data-anchor-id="practical-applications">Practical Applications</h3>
+<p>Understanding historical volatility allows you to assess the risk and behaviour of assets over time. It is invaluable in portfolio management and derivative pricing.</p>
+</section>
+<section id="limitations" class="level3">
+<h3 class="anchored" data-anchor-id="limitations">Limitations</h3>
+<ul>
+<li><strong>Past vs.&nbsp;Future</strong>: Historical volatility relies on past data and isn’t always indicative of future movements.</li>
+<li><strong>Distribution Assumptions</strong>: It assumes a normal distribution, which may not always be true in real-world markets.</li>
+</ul>
+</section>
+<section id="final-thoughts" class="level3">
+<h3 class="anchored" data-anchor-id="final-thoughts">Final Thoughts</h3>
+<p>By integrating historical volatility into your analysis, you can better navigate the financial markets. Don’t forget, you can always refer to the corresponding video on the Data Driven Minutes Youtube channel for a more visual walkthrough.</p>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>data-gathering</category>
+  <category>volatility</category>
+  <category>log-returns</category>
+  <guid>https://portfolio-geek.com/posts/tutorials/en/historical-vol.html</guid>
+  <pubDate>Fri, 02 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/diagram-representing-red-crashing-market-volatility.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Daily Financial Insights 02.08.2024: Generative AI Business Models, Enhanced Data Science Portfolios, and Efficient SQL Optimization Techniques</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_08_02_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In today’s curation, we explore a variety of topics pertinent to the intersection of technology and finance:</p>
+<ul>
+<li>Challenges in the generative AI market regarding business models and costs</li>
+<li>Enhancements made to a data science portfolio using mkdocs and Google Analytics</li>
+<li>Utilizing large language models for efficient parsing of scientific papers</li>
+<li>Building a simple neural network with TensorFlow and PyTorch for revenue prediction</li>
+<li>Six SQL optimization tips for improved performance in Snowflake</li>
+</ul>
+<p>Please find the details in the table below.</p>
+<section id="ai-and-gen-ai" class="level1">
+<h1>AI and Gen-AI</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/economics-of-generative-ai-75f550288097">Can Generative AI Sustain Its Costly Growth Without Compromising Innovation and Ethical Standards? (Towards Data Science, 2024-08-01)</a></td>
+<td>The generative AI market faces challenges in defining its business model, balancing between being a product or feature, and sustaining high costs while ensuring meaningful innovation and research.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/full-guide-to-build-a-professionnal-portfolio-with-python-markdown-git-and-github-page-for-66d12f7859f0">Effortlessly Build a Stunning Data Science Portfolio with Python and MkDocs: A Step-by-Step Guide (Medium, 2024-08-02)</a></td>
+<td>In 2024, I revamped my data science portfolio using mkdocs for improved aesthetics and functionality, integrating Google Analytics, with a focus on minimal configuration and free solutions.</td>
+</tr>
+<tr class="even">
+<td><a href="https://towardsdatascience.com/document-parsing-using-large-language-models-with-code-9229fda09cdf">Harnessing the Power of AI for Effortless Scientific Paper Analysis and Metadata Extraction (Medium, 2024-08-02)</a></td>
+<td>This article describes using large language models for parsing scientific research papers. It outlines a structured workflow, metadata extraction process, necessary libraries, and code implementation details for efficient document processing.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/implementing-neural-networks-in-tensorflow-and-pytorch-3c1f097e412a">Effortless Neural Network Building for Beginners: A Practical Guide Using TensorFlow and PyTorch (Deep Learning Illustrated, 2024-08-02)</a></td>
+<td>This guide demonstrates building a simple neural network using TensorFlow and PyTorch to predict ice cream revenue based on temperature and day, emphasising data preparation, model training, and evaluation.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-databases-and-data-science" class="level1">
+<h1>Data, Databases and Data Science</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/mastering-sql-optimization-from-functional-to-efficient-queries-74d8692f10be">Cut Snowflake Query Times by 50 Hours with These Six Simple SQL Hacks for Faster Data Analysis (The name of the blog or website is Snowflake., 2024-08-02)</a></td>
+<td>The author shared six SQL optimisation tips, reducing Snowflake query time by 50 hours daily. Key strategies include selecting necessary columns, analysing query profiles, and utilising Snowflake’s functionality effectively.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>coding</category>
+  <category>data-science</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_02_daily-curation.html</guid>
+  <pubDate>Thu, 01 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Dive into Python Upgrades, ETF Inflows, Hedge Fund Shifts, and Climate Crisis Insights (01.08.2024)</title>
   <dc:creator>Vincent D.</dc:creator>
@@ -2910,424 +3413,6 @@ font-style: inherit;">#ax.legend()</span></span>
   <category>portfolio-construction</category>
   <guid>https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python.html</guid>
   <pubDate>Tue, 30 Apr 2024 22:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Setting up a Python Development Workstation (Windows)</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-windows.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Welcome, fellow data enthusiasts and future quants! Today, we embark on an exciting journey to set up a coding environment that bridges the gap between mathematical theory and the practical world of finance. Whether you’re a student stepping into the field or a practitioner eager to enhance your skills, this guide is your first step towards mastering quantitative finance with Python. Let’s demystify the process and make it enjoyable together.</p>
-</section>
-<section id="general-setup" class="level2">
-<h2 class="anchored" data-anchor-id="general-setup">1 General Setup</h2>
-<section id="setting-up-chocolatey" class="level3">
-<h3 class="anchored" data-anchor-id="setting-up-chocolatey">1.1 Setting Up Chocolatey</h3>
-<p>Open an administrator PowerShell and execute:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">Set-ExecutionPolicy</span> Bypass <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-Scope</span> Process <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-Force</span><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">;</span> </span>
-<span id="cb1-2"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">[System.Net.ServicePointManager]::SecurityProtocol</span> = <span class="pp" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">[</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">System.Net.ServicePointManager</span><span class="pp" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">]</span>::SecurityProtocol <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-bor</span> 3072<span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">;</span> </span>
-<span id="cb1-3"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">iwr</span> https://chocolatey.org/install.ps1 <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-UseBasicParsing</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">|</span> <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">iex</span></span></code></pre></div>
-</section>
-<section id="setting-up-powershell-visual-studio-code-and-miniconda" class="level3">
-<h3 class="anchored" data-anchor-id="setting-up-powershell-visual-studio-code-and-miniconda">1.2 Setting Up Powershell, Visual Studio Code, and Miniconda</h3>
-<p><strong>Why this trio?</strong> Powershell for a superior shell experience, Visual Studio Code (VS Code) for its versatility as a code editor, and Miniconda for managing our Python environments efficiently.</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Install Zsh, VS Code, and Miniconda</span></span>
-<span id="cb2-2"></span>
-<span id="cb2-3"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">choco</span> install vscode miniconda3 <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-y</span></span></code></pre></div>
-<p>To setup the conda integration for Powershell, once a powershell windows is opened, you can type <code>conda init</code>, this will enable an easier monitoring of the virtual environment.</p>
-</section>
-</section>
-<section id="visual-studio-code-setup-installing-key-visual-studio-extensions" class="level2">
-<h2 class="anchored" data-anchor-id="visual-studio-code-setup-installing-key-visual-studio-extensions">2. Visual Studio Code Setup: Installing Key Visual Studio Extensions</h2>
-<p>VS Code shines with its extensions. Here are a few that will make your life easier:</p>
-<ul>
-<li><p><strong>Python</strong>: Gives you a host of Python-specific features like linting, debugging, code formatting, and more.</p></li>
-<li><p><strong>Prettier</strong>: A code formatter that supports many languages, including Python. Keeps your code clean and professional.</p></li>
-<li><p><strong>Code Spell Checker</strong>: Like a proof-reader, it catches common spelling mistakes in your code.</p></li>
-</ul>
-<p>You can install these extensions by searching for them in the VS Code Extensions view (<code>Ctrl + Shift + X</code>) and clicking on “Install”.</p>
-</section>
-<section id="create-a-conda-virtual-environment" class="level2">
-<h2 class="anchored" data-anchor-id="create-a-conda-virtual-environment">3: Create a Conda Virtual Environment</h2>
-<p><strong>Why a virtual environment?</strong> It allows us to create isolated spaces for our projects, ensuring that our dependencies are managed neatly, without conflicts.</p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Create the virtual environment</span></span>
-<span id="cb3-2"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">conda</span> create <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">--name</span> portfolio-geek python=3.12 jupyterlab <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-y</span></span>
-<span id="cb3-3"></span>
-<span id="cb3-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Activate the environment</span></span>
-<span id="cb3-5"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">conda</span> activate portfolio-geek</span>
-<span id="cb3-6"></span>
-<span id="cb3-7"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">pip</span> install matplotlib</span></code></pre></div>
-</section>
-<section id="step-4-building-a-simple-matplotlib-chart-in-visual-studio" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-building-a-simple-matplotlib-chart-in-visual-studio">Step 4: Building a Simple Matplotlib Chart in Visual Studio</h2>
-<p>We need to start somewhere! Let’s create a Notebook file (extension <code>.ipynb</code>) within Visual Studio and let’s type the following code.</p>
-<div id="cell-6" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Ensure you're in the 'portfolio-geek' environment</span></span>
-<span id="cb4-2"></span>
-<span id="cb4-3"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> plt</span>
-<span id="cb4-4"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> np</span>
-<span id="cb4-5"></span>
-<span id="cb4-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Sample data</span></span>
-<span id="cb4-7">x <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.linspace(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>)</span>
-<span id="cb4-8">y <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.sin(x)</span>
-<span id="cb4-9"></span>
-<span id="cb4-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Plotting</span></span>
-<span id="cb4-11">plt.plot(x, y)</span>
-<span id="cb4-12">plt.title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Simple Sine Wave Plot"</span>)</span>
-<span id="cb4-13">plt.xlabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"X axis"</span>)</span>
-<span id="cb4-14">plt.ylabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Y axis"</span>)</span>
-<span id="cb4-15">plt.show()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-windows_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Et Voila! The first chart in our journey to Python coding.</p>
-<section id="recap-and-conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="recap-and-conclusion">Recap and Conclusion</h3>
-<p>Congratulations! You’ve set up a robust coding environment for your journey into quantitative finance and data analysis. Today, we’ve installed essential tools with Chocolatey, created an isolated workspace with Conda, and dipped our toes into the world of data visualization with Matplotlib.</p>
-<p><strong>Why is this important?</strong> This setup not only equips you with the technical skills needed in the field but also instills confidence to explore complex financial models and datasets.</p>
-<p>As we progress, remember that the journey is as rewarding as the destination. Keep experimenting, and don’t hesitate to dive deeper into each tool and library we discussed.</p>
-</section>
-<section id="further-reading-and-resources" class="level3">
-<h3 class="anchored" data-anchor-id="further-reading-and-resources">Further Reading and Resources</h3>
-<ul>
-<li><strong>Books:</strong>
-<ul>
-<li>“Python for Finance” by Yves Hilpisch</li>
-<li>“Python for Data Analysis” by Wes McKinney</li>
-</ul></li>
-<li><strong>Websites:</strong>
-<ul>
-<li><a href="https://docs.python.org/3/">Official Python Documentation</a></li>
-<li><a href="https://matplotlib.org/stable/tutorials/index.html">Matplotlib Tutorials</a></li>
-</ul></li>
-<li><strong>Awesome Python GitHub Repositories:</strong>
-<ul>
-<li><a href="https://github.com/wilsonfreitas/awesome-quant">Awesome Quant</a></li>
-<li><a href="https://github.com/lballabio/QuantLib">QuantLib</a></li>
-</ul></li>
-</ul>
-<p>This structure offers a blend of instructional content and hands-on coding, making it accessible for beginners while providing enough depth for more experienced learners. The tone is kept light and encouraging, aiming to demystify the complexities of setting up a quantitative finance coding environment.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>101</category>
-  <category>en</category>
-  <category>setup</category>
-  <category>bash</category>
-  <category>python</category>
-  <category>windows</category>
-  <category>matplotlib</category>
-  <guid>https://portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-windows.html</guid>
-  <pubDate>Wed, 21 Feb 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Setting up a Python Development Workstation (MacOs)</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-macos.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Ready to enter the world of Python, Visual Studio, and financial analysis? Let’s embark on this journey together. By the end of this guide, you’ll have your finance lab all set for dissecting market trends, optimising portfolios, and much more. Buckle up, let’s set sail! This article requires some knowledge of the terminal, installing softwares</p>
-</section>
-<section id="step-1-install-your-general-tooling" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-install-your-general-tooling">Step 1: Install Your General Tooling</h2>
-<p>Whilst not mandatory, before looking at Python, code editors and various libraries, it’s extremely useful to check that your MacOs is ready to provide you with the best general setup. Terminal windows, bash script might look a bit obscure at first glance, but take it step by step and look at the video linked below to get more clarity on this. This is a marathon, definitely not a sprint.</p>
-<section id="install-homebrew" class="level3">
-<h3 class="anchored" data-anchor-id="install-homebrew">1.1 Install Homebrew</h3>
-<p>Homebrew, affectionately known as brew, is the Swiss Army knife for installing software on macOS. It simplifies the process of managing software on your Mac, making it a breeze to install, uninstall, and update your applications.</p>
-<p>To install Homebrew, open Terminal and enter:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">/bin/bash</span> <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-c&nbsp;</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"</span><span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">$(</span><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">curl</span> <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">)</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"</span></span></code></pre></div>
-</section>
-<section id="install-iterm2" class="level3">
-<h3 class="anchored" data-anchor-id="install-iterm2">1.2 Install iTerm2</h3>
-<p>iTerm2 is an improvement over macOS’s default terminal, offering features such as split panes, search, and customisation. Install it via brew with:</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">brew</span> install <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">--cask</span> iterm2</span></code></pre></div>
-</section>
-<section id="install-oh-my-zsh" class="level3">
-<h3 class="anchored" data-anchor-id="install-oh-my-zsh">1.3 Install Oh My Zsh:</h3>
-<p>Zsh, combined with Oh My Zsh, turns the dull default terminal into a powerful and enjoyable tool, complete with themes, plugins, and a vibrant community.</p>
-<p>Install Oh My Zsh with:</p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">sh</span> <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-c&nbsp;</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"</span><span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">$(</span><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">curl</span> <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-fsSL</span> https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">)</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"</span></span></code></pre></div>
-<p>::: {.content-visible unless-profile=“presentation”}</p>
-</section>
-</section>
-<section id="step-2.-setting-up-visual-studio-and-miniconda" class="level2">
-<h2 class="anchored" data-anchor-id="step-2.-setting-up-visual-studio-and-miniconda">Step 2. Setting Up Visual Studio and Miniconda</h2>
-<section id="visual-studio" class="level3">
-<h3 class="anchored" data-anchor-id="visual-studio">2.1 Visual Studio</h3>
-<p>Visual Studio Code (VS Code) is a lightweight but powerful source code editor that supports debugging, embedded Git control, syntax highlighting, and more. Install VS Code via brew:</p>
-<p>VS Code is a robust and versatile code editor, while Miniconda, a mini version of Anaconda, allows us to create isolated Python environments and manage packages.</p>
-<p>Using Brew, installed above, is a breeze</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">brew</span> install <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">--cask</span> visual-studio-code</span></code></pre></div>
-<p>Alternatively, you can download and install Visual Studio Code from the <a href="https://code.visualstudio.com/">official website</a>. Follow the prompts to complete the installation process.</p>
-</section>
-<section id="miniconda" class="level3">
-<h3 class="anchored" data-anchor-id="miniconda">2.2 Miniconda</h3>
-<p>Using Brew</p>
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">brew</span> install <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">--cask</span> miniconda</span></code></pre></div>
-<p>Alternatively, you can download and install Miniconda from the <a href="https://docs.conda.io/en/latest/miniconda.html">official website</a>. During installation, ensure that you select the option to “Add Miniconda to my PATH environment variable”. This allows you to use <code>conda</code> commands directly in the VS Code terminal.</p>
-</section>
-</section>
-<section id="step-3.-setting-up-a-python-virtual-environment" class="level2">
-<h2 class="anchored" data-anchor-id="step-3.-setting-up-a-python-virtual-environment">Step 3. Setting Up a Python Virtual Environment</h2>
-<section id="create-the-conda-environment" class="level3">
-<h3 class="anchored" data-anchor-id="create-the-conda-environment">3.1 Create the Conda environment</h3>
-<p>With our tools installed, let’s now create a virtual environment to house our finance lab. We’ll use conda to create a new environment named <code>portfolio-geek</code> using Python 3.10.</p>
-<p>Open <code>VS Code</code>, then open a terminal and type the following command:</p>
-<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">conda</span> create <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-n</span> portfolio-geek python=3.10</span></code></pre></div>
-<p>Activate the <code>portfolio-geek</code> environment by typing:</p>
-<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">conda</span> activate portfolio-geek</span></code></pre></div>
-</section>
-<section id="install-the-key-packages-for-your-coding-journey" class="level3">
-<h3 class="anchored" data-anchor-id="install-the-key-packages-for-your-coding-journey">3.2 Install the key packages for your coding journey</h3>
-<p>Inside <code>portfolio-geek</code>, we install several vital Python libraries for our financial analysis journey:</p>
-<ul>
-<li><p><strong>pandas</strong>: A flexible and powerful data manipulation library, essential for handling and processing financial data.</p></li>
-<li><p><strong>matplotlib and seaborn</strong>: Two formidable libraries for data visualisation, because finance isn’t just about numbers—it’s about insightful charts too!</p></li>
-<li><p><strong>yfinance</strong>: An effective library for fetching historical stock data from Yahoo Finance.</p></li>
-<li><p><strong>pyportfolioopt</strong>: An advanced library designed to optimise portfolios, calculate risk and returns, and much more.</p></li>
-</ul>
-<p>Install these libraries using the following command:</p>
-<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">conda</span> install pandas matplotlib seaborn yfinance pyportfolioopt</span></code></pre></div>
-</section>
-<section id="step-4.-installing-key-visual-studio-extensions" class="level3">
-<h3 class="anchored" data-anchor-id="step-4.-installing-key-visual-studio-extensions">Step 4. Installing Key Visual Studio Extensions</h3>
-<p>This step is not mandatory but it will be of tremendous help on a day to day basis. VS Code shines with its extensions. Here are a few that will make your life easier:</p>
-<ul>
-<li><p><strong>Python</strong>: Gives you a host of Python-specific features like linting, debugging, code formatting, and more.</p></li>
-<li><p><strong>Prettier</strong>: A code formatter that supports many languages, including Python. Keeps your code clean and professional.</p></li>
-<li><p><strong>Code Spell Checker</strong>: Like a proof-reader, it catches common spelling mistakes in your code.</p></li>
-</ul>
-<p>You can install these extensions by searching for them in the VS Code Extensions view (<code>Ctrl + Shift + X</code>) and clicking on “Install”.</p>
-</section>
-</section>
-<section id="step-5-launching-a-jupyter-notebook-inside-visual-studio" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-launching-a-jupyter-notebook-inside-visual-studio">Step 5 Launching a Jupyter Notebook Inside Visual Studio</h2>
-<p>With our <code>portfolio-geek</code> environment and VS Code set up, it’s time to dive into some coding. We’ll be using a Jupyter Notebook, a powerful tool allowing you to interweave code and text into a single document.</p>
-<p>Create a new file with a <code>.ipynb</code> extension. Upon creation, VS Code will prompt you to select a Python interpreter—choose the one corresponding to our <code>portfolio-geek</code> environment.</p>
-<div id="cell-8" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Ensure you're in the 'portfolio-geek' environment</span></span>
-<span id="cb9-2"></span>
-<span id="cb9-3"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> plt</span>
-<span id="cb9-4"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> np</span>
-<span id="cb9-5"></span>
-<span id="cb9-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Sample data</span></span>
-<span id="cb9-7">x <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.linspace(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>)</span>
-<span id="cb9-8">y <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.sin(x)</span>
-<span id="cb9-9"></span>
-<span id="cb9-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Plotting</span></span>
-<span id="cb9-11">plt.plot(x, y)</span>
-<span id="cb9-12">plt.title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Simple Sine Wave Plot"</span>)</span>
-<span id="cb9-13">plt.xlabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"X axis"</span>)</span>
-<span id="cb9-14">plt.ylabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Y axis"</span>)</span>
-<span id="cb9-15">plt.show()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-macos_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-
-
-</section>
-
- ]]></description>
-  <category>101</category>
-  <category>en</category>
-  <category>setup</category>
-  <category>python</category>
-  <category>bash</category>
-  <category>macos</category>
-  <category>matplotlib</category>
-  <guid>https://portfolio-geek.com/posts/tutorials/en/setting-up-a-python-workstation-macos.html</guid>
-  <pubDate>Mon, 19 Feb 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
