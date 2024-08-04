@@ -82,7 +82,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
@@ -247,7 +248,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(24)</span></div><div class="category" data-category="101">101 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ai">ai <span class="quarto-category-count">(4)</span></div><div class="category" data-category="asset-management">asset-management <span class="quarto-category-count">(2)</span></div><div class="category" data-category="automation">automation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="bash">bash <span class="quarto-category-count">(2)</span></div><div class="category" data-category="climate">climate <span class="quarto-category-count">(5)</span></div><div class="category" data-category="coding">coding <span class="quarto-category-count">(11)</span></div><div class="category" data-category="crypto">crypto <span class="quarto-category-count">(2)</span></div><div class="category" data-category="data">data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="data-gathering">data-gathering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="data-science">data-science <span class="quarto-category-count">(2)</span></div><div class="category" data-category="economics">economics <span class="quarto-category-count">(10)</span></div><div class="category" data-category="en">en <span class="quarto-category-count">(3)</span></div><div class="category" data-category="etf">etf <span class="quarto-category-count">(6)</span></div><div class="category" data-category="fundamental">fundamental <span class="quarto-category-count">(6)</span></div><div class="category" data-category="hedge-funds">hedge-funds <span class="quarto-category-count">(1)</span></div><div class="category" data-category="log-returns">log-returns <span class="quarto-category-count">(1)</span></div><div class="category" data-category="macos">macos <span class="quarto-category-count">(1)</span></div><div class="category" data-category="market-feed">market-feed <span class="quarto-category-count">(5)</span></div><div class="category" data-category="matplotlib">matplotlib <span class="quarto-category-count">(3)</span></div><div class="category" data-category="personal-dvpt">personal-dvpt <span class="quarto-category-count">(2)</span></div><div class="category" data-category="portfolio-construction">portfolio-construction <span class="quarto-category-count">(6)</span></div><div class="category" data-category="publication-workflow">publication-workflow <span class="quarto-category-count">(1)</span></div><div class="category" data-category="python">python <span class="quarto-category-count">(2)</span></div><div class="category" data-category="quant">quant <span class="quarto-category-count">(3)</span></div><div class="category" data-category="setup">setup <span class="quarto-category-count">(2)</span></div><div class="category" data-category="tech">tech <span class="quarto-category-count">(4)</span></div><div class="category" data-category="tutorial">tutorial <span class="quarto-category-count">(1)</span></div><div class="category" data-category="volatility">volatility <span class="quarto-category-count">(1)</span></div><div class="category" data-category="windows">windows <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(26)</span></div><div class="category" data-category="101">101 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ai">ai <span class="quarto-category-count">(4)</span></div><div class="category" data-category="asset-management">asset-management <span class="quarto-category-count">(2)</span></div><div class="category" data-category="automation">automation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="bash">bash <span class="quarto-category-count">(2)</span></div><div class="category" data-category="climate">climate <span class="quarto-category-count">(5)</span></div><div class="category" data-category="coding">coding <span class="quarto-category-count">(13)</span></div><div class="category" data-category="crypto">crypto <span class="quarto-category-count">(2)</span></div><div class="category" data-category="data">data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="data-gathering">data-gathering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="data-science">data-science <span class="quarto-category-count">(2)</span></div><div class="category" data-category="economics">economics <span class="quarto-category-count">(10)</span></div><div class="category" data-category="en">en <span class="quarto-category-count">(3)</span></div><div class="category" data-category="etf">etf <span class="quarto-category-count">(6)</span></div><div class="category" data-category="finance">finance <span class="quarto-category-count">(2)</span></div><div class="category" data-category="fundamental">fundamental <span class="quarto-category-count">(6)</span></div><div class="category" data-category="hedge-funds">hedge-funds <span class="quarto-category-count">(1)</span></div><div class="category" data-category="log-returns">log-returns <span class="quarto-category-count">(1)</span></div><div class="category" data-category="macos">macos <span class="quarto-category-count">(1)</span></div><div class="category" data-category="market-feed">market-feed <span class="quarto-category-count">(5)</span></div><div class="category" data-category="matplotlib">matplotlib <span class="quarto-category-count">(3)</span></div><div class="category" data-category="personal-dvpt">personal-dvpt <span class="quarto-category-count">(2)</span></div><div class="category" data-category="portfolio-construction">portfolio-construction <span class="quarto-category-count">(6)</span></div><div class="category" data-category="publication-workflow">publication-workflow <span class="quarto-category-count">(1)</span></div><div class="category" data-category="python">python <span class="quarto-category-count">(4)</span></div><div class="category" data-category="quant">quant <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ratio">ratio <span class="quarto-category-count">(1)</span></div><div class="category" data-category="return">return <span class="quarto-category-count">(1)</span></div><div class="category" data-category="risk">risk <span class="quarto-category-count">(2)</span></div><div class="category" data-category="setup">setup <span class="quarto-category-count">(2)</span></div><div class="category" data-category="sharpe">sharpe <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tech">tech <span class="quarto-category-count">(4)</span></div><div class="category" data-category="tutorial">tutorial <span class="quarto-category-count">(1)</span></div><div class="category" data-category="volatility">volatility <span class="quarto-category-count">(1)</span></div><div class="category" data-category="windows">windows <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -888,7 +889,49 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="portfolio-construction" data-listing-date-sort="1714514400000" data-listing-file-modified-sort="1721720331839" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1454">
+<div class="quarto-post image-right" data-index="15" data-categories="coding,finance,risk,python" data-listing-date-sort="1722722400000" data-listing-file-modified-sort="1722761253211" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
+<div class="thumbnail">
+<p><a href="./posts/tutorials/en/max-drawdown.html" class="no-external"></a></p><a href="./posts/tutorials/en/max-drawdown.html" class="no-external">
+<p><img src="./pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/tutorials/en/max-drawdown.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/tutorials/en/max-drawdown.html" class="no-external">Maximum Drawdown: A Practical Approach with Python</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/tutorials/en/max-drawdown.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('coding'); return false;">
+coding
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('finance'); return false;">
+finance
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('risk'); return false;">
+risk
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
+python
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/tutorials/en/max-drawdown.html" class="no-external">Maximum Drawdown (MDD) is a critical risk metric for investors. It quantifies the largest peak-to-trough decline in an investment’s value over a specified period, providing…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/tutorials/en/max-drawdown.html" class="no-external">
+<div class="listing-date">
+Aug 4, 2024
+</div>
+<div class="listing-author">
+Vincent D.
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="16" data-categories="portfolio-construction" data-listing-date-sort="1714514400000" data-listing-file-modified-sort="1721720331839" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1454">
 <div class="thumbnail">
 <p><a href="./posts/portfolio-construction/optimise-portfolios-with-python.html" class="no-external"></a></p><a href="./posts/portfolio-construction/optimise-portfolios-with-python.html" class="no-external">
 <p class="card-img-top"><img src="pictures/portfolio-optimisation.png"  class="thumbnail-image card-img"/></p>
@@ -921,7 +964,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="101,en,setup,python,bash,macos,matplotlib" data-listing-date-sort="1708383600000" data-listing-file-modified-sort="1721720364082" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="735">
+<div class="quarto-post image-right" data-index="17" data-categories="101,en,setup,python,bash,macos,matplotlib" data-listing-date-sort="1708383600000" data-listing-file-modified-sort="1721720364082" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="735">
 <div class="thumbnail">
 <p><a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external"></a></p><a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external">
 <p><img src="./posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image"></p>
@@ -972,7 +1015,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="101,en,setup,bash,python,windows,matplotlib" data-listing-date-sort="1708556400000" data-listing-file-modified-sort="1721720369067" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="561">
+<div class="quarto-post image-right" data-index="18" data-categories="101,en,setup,bash,python,windows,matplotlib" data-listing-date-sort="1708556400000" data-listing-file-modified-sort="1721720369067" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="561">
 <div class="thumbnail">
 <p><a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external"></a></p><a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external">
 <p><img src="./posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image"></p>
@@ -1023,7 +1066,58 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="asset-management,coding,economics,fundamental,portfolio-construction" data-listing-date-sort="1721167200000" data-listing-file-modified-sort="1721716530894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="588">
+<div class="quarto-post image-right" data-index="19" data-categories="coding,finance,risk,return,sharpe,ratio,python" data-listing-date-sort="1722722400000" data-listing-file-modified-sort="1722788616222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="782">
+<div class="thumbnail">
+<p><a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external"></a></p><a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external">
+<p><img src="./pictures/risk-return-concept.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external">Sharpe Ratio: A Must-Know for Every Investor</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('coding'); return false;">
+coding
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('finance'); return false;">
+finance
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('risk'); return false;">
+risk
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('return'); return false;">
+return
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('sharpe'); return false;">
+sharpe
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ratio'); return false;">
+ratio
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
+python
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external">As a financial engineer with over 20 years of experience, I understand just how crucial the Sharpe Ratio is for evaluating investments. This essential metric provides a way…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external">
+<div class="listing-date">
+Aug 4, 2024
+</div>
+<div class="listing-author">
+Vincent D.
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="20" data-categories="asset-management,coding,economics,fundamental,portfolio-construction" data-listing-date-sort="1721167200000" data-listing-file-modified-sort="1721716530894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="588">
 <div class="thumbnail">
 <p><a href="./posts/daily-curation/2024-07-17_daily-curation.html" class="no-external"></a></p><a href="./posts/daily-curation/2024-07-17_daily-curation.html" class="no-external">
 <p><img src="./pictures/laptop-data.png" class="thumbnail-image"></p>
@@ -1068,7 +1162,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="economics,fundamental,market-feed,portfolio-construction" data-listing-date-sort="1720994400000" data-listing-file-modified-sort="1721716516154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="614">
+<div class="quarto-post image-right" data-index="21" data-categories="economics,fundamental,market-feed,portfolio-construction" data-listing-date-sort="1720994400000" data-listing-file-modified-sort="1721716516154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="614">
 <div class="thumbnail">
 <p><a href="./posts/daily-curation/2024-07-15_daily-curation.html" class="no-external"></a></p><a href="./posts/daily-curation/2024-07-15_daily-curation.html" class="no-external">
 <p><img src="./pictures/mathematics-formulas-on-a-blackboard.png" class="thumbnail-image"></p>
@@ -1110,7 +1204,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="climate,coding,economics,etf" data-listing-date-sort="1720821600000" data-listing-file-modified-sort="1721716497705" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="658">
+<div class="quarto-post image-right" data-index="22" data-categories="climate,coding,economics,etf" data-listing-date-sort="1720821600000" data-listing-file-modified-sort="1721716497705" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="658">
 <div class="thumbnail">
 <p><a href="./posts/daily-curation/2024-07-13_daily-curation.html" class="no-external"></a></p><a href="./posts/daily-curation/2024-07-13_daily-curation.html" class="no-external">
 <p><img src="./pictures/blog-post.png" class="thumbnail-image"></p>
@@ -1152,7 +1246,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-categories="data-gathering,volatility,log-returns" data-listing-date-sort="1722636000000" data-listing-file-modified-sort="1722702036117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
+<div class="quarto-post image-right" data-index="23" data-categories="data-gathering,volatility,log-returns" data-listing-date-sort="1722636000000" data-listing-file-modified-sort="1722702036117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
 <div class="thumbnail">
 <p><a href="./posts/tutorials/en/historical-vol.html" class="no-external"></a></p><a href="./posts/tutorials/en/historical-vol.html" class="no-external">
 <p><img src="./pictures/diagram-representing-red-crashing-market-volatility.jpg" class="thumbnail-image"></p>
@@ -1191,7 +1285,7 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-categories="publication-workflow" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1721494736662" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="892">
+<div class="quarto-post image-right" data-index="24" data-categories="publication-workflow" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1721494736662" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="892">
 <div class="thumbnail">
 <p><a href="./posts/publication-workflow/visualizing-historical-data.html" class="no-external"></a></p><a href="./posts/publication-workflow/visualizing-historical-data.html" class="no-external">
 <p class="card-img-top"><img src="pictures/chart-preview.png"  class="thumbnail-image card-img"/></p>
@@ -1224,10 +1318,10 @@ Vincent D.
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-categories="automation,climate,market-feed" data-listing-date-sort="1720908000000" data-listing-file-modified-sort="1721716489614" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="556">
+<div class="quarto-post image-right" data-index="25" data-categories="automation,climate,market-feed" data-listing-date-sort="1720908000000" data-listing-file-modified-sort="1721716489614" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="556">
 <div class="thumbnail">
 <p><a href="./posts/daily-curation/2024-07-14_daily-curation.html" class="no-external"></a></p><a href="./posts/daily-curation/2024-07-14_daily-curation.html" class="no-external">
-<p><img src="./pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" class="thumbnail-image"></p>
+<p><img data-src="./pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" class="thumbnail-image"></p>
 </a><p><a href="./posts/daily-curation/2024-07-14_daily-curation.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -1267,6 +1361,9 @@ Vincent D.
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

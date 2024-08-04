@@ -21,9 +21,11 @@
       "/posts/daily-curation/2024_07_25_daily-curation.html",
       "/posts/daily-curation/2024_08_01_daily-curation.html",
       "/posts/tutorials/en/spy-and-matplotlib.html",
+      "/posts/tutorials/en/max-drawdown.html",
       "/posts/portfolio-construction/optimise-portfolios-with-python.html",
       "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",
       "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
+      "/posts/tutorials/en/sharpe-ratio.html",
       "/posts/daily-curation/2024-07-17_daily-curation.html",
       "/posts/daily-curation/2024-07-15_daily-curation.html",
       "/posts/daily-curation/2024-07-13_daily-curation.html",
@@ -35,6 +37,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/tutorials/en/sharpe-ratio.html",
+      "/posts/tutorials/en/max-drawdown.html",
       "/posts/tutorials/en/historical-vol.html",
       "/posts/daily-curation/2024_08_02_daily-curation.html",
       "/posts/daily-curation/2024_08_01_daily-curation.html",
@@ -97,6 +101,8 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/tutorials/en/max-drawdown.html",
+      "/posts/tutorials/en/sharpe-ratio.html",
       "/posts/tutorials/en/historical-vol.html",
       "/posts/portfolio-construction/optimise-portfolios-with-python.html",
       "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
@@ -108,6 +114,8 @@
   {
     "listing": "/tutorials_en.html",
     "items": [
+      "/posts/tutorials/en/sharpe-ratio.html",
+      "/posts/tutorials/en/max-drawdown.html",
       "/posts/tutorials/en/historical-vol.html",
       "/posts/tutorials/en/setting-up-a-python-workstation-windows.html",
       "/posts/tutorials/en/setting-up-a-python-workstation-macos.html",

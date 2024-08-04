@@ -10,7 +10,811 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Fri, 02 Aug 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 03 Aug 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Sharpe Ratio: A Must-Know for Every Investor</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="sharpe-ratio-a-must-know-for-every-investor" class="level2">
+<h2 class="anchored" data-anchor-id="sharpe-ratio-a-must-know-for-every-investor">Sharpe Ratio: A Must-Know for Every Investor</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/risk-return-concept.jpg" class="img-fluid figure-img"></p>
+<figcaption>Mitigating Risk and Return</figcaption>
+</figure>
+</div>
+</section>
+<section id="sharpe-ratio-a-must-know-for-every-investor-1" class="level2">
+<h2 class="anchored" data-anchor-id="sharpe-ratio-a-must-know-for-every-investor-1">Sharpe Ratio: A Must-Know for Every Investor</h2>
+<p>As a financial engineer with over 20 years of experience, I understand just how crucial the Sharpe Ratio is for evaluating investments. This essential metric provides a way to measure the risk-adjusted return of a portfolio, enabling smarter investment decisions. Let’s dive into the concept of the Sharpe Ratio and learn how to use Python to analyze and visualize it using real-world examples such as QQQ vs.&nbsp;SPY.</p>
+</section>
+<section id="understanding-the-sharpe-ratio" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-sharpe-ratio">Understanding the Sharpe Ratio</h2>
+<section id="what-is-the-sharpe-ratio" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-sharpe-ratio">What is the Sharpe Ratio?</h3>
+<p>The Sharpe Ratio is a financial measure used to evaluate the return of an investment compared to its risk. The key formula behind this ratio is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0ASharpe%20Ratio%20=%20%5Cfrac%7BR_p%20-%20R_f%7D%7B%5Csigma_p%7D%0A"></p>
+<p>Where:</p>
+<ul>
+<li>(R_p) is the expected return of the portfolio</li>
+<li>(R_f) is the risk-free rate (such as Treasury yield)</li>
+<li>(_p) represents the standard deviation of the portfolio’s excess return, symbolizing the risk</li>
+</ul>
+<p>By defining how much excess return you are achieving for every unit of risk, the Sharpe Ratio helps you make informed investment decisions.</p>
+</section>
+<section id="key-benefits-and-limitations" class="level3">
+<h3 class="anchored" data-anchor-id="key-benefits-and-limitations">Key Benefits and Limitations</h3>
+<p>One cannot ignore the advantages of using Sharpe Ratio:</p>
+<ol type="1">
+<li><strong>Assessing Performance</strong>: Easily compare different investments by their risk-adjusted returns.</li>
+<li><strong>Identifying Efficient Portfolios</strong>: Helps in finding portfolios that offer higher returns for a certain risk level.</li>
+<li><strong>Standardization</strong>: Offers a common measure across various asset classes.</li>
+<li><strong>Risk Management</strong>: Encourages evaluating risk alongside returns.</li>
+</ol>
+<p>However, it’s not without limitations:</p>
+<ol type="1">
+<li><strong>Assumes Normal Distribution</strong>: Returns are assumed to be normally distributed, which is not always the case.</li>
+<li><strong>Single Period Measure</strong>: Does not account for changing risk profiles over multiple periods.</li>
+<li><strong>Sensitivity to Risk-Free Rate</strong>: Results can vary based on the risk-free rate used.</li>
+<li><strong>Risk Measurement</strong>: Standard deviation might not reflect all types of risks.</li>
+</ol>
+</section>
+<section id="how-to-calculate-the-sharpe-ratio" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-calculate-the-sharpe-ratio">How to Calculate the Sharpe Ratio</h3>
+<p>The calculation steps for the Sharpe Ratio involve:</p>
+<ol type="1">
+<li>Gather historical return data over the desired period.</li>
+<li>Determine the risk-free rate (government bonds or Treasury yields).</li>
+<li>Compute the standard deviation of the investment’s excess returns.</li>
+<li>Use the formula to calculate the Sharpe Ratio.</li>
+</ol>
+<p>Let’s move to some Python examples to see this in action.</p>
+</section>
+</section>
+<section id="analising-qqq-vs.-spy-through-a-sharpe-ratio-lens" class="level2">
+<h2 class="anchored" data-anchor-id="analising-qqq-vs.-spy-through-a-sharpe-ratio-lens">Analising QQQ vs.&nbsp;SPY through a Sharpe Ratio lens</h2>
+<section id="historical-price-data-of-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="historical-price-data-of-qqq-and-spy">Historical Price Data of QQQ and SPY</h3>
+<p>Understanding how QQQ (NASDAQ-100) and SPY (S&amp;P 500) performed over the last five years is always a good starting point. This visualization shows their performance trends and helps to lay the groundwork for further analysis.</p>
+<div id="cell-7" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%</span>capture</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> yfinance <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> yf</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb1-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fetch historical price data for QQQ and SPY</span></span>
+<span id="cb1-7">tickers <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"QQQ"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"SPY"</span>]</span>
+<span id="cb1-8">data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.download(tickers, start<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"2018-01-01"</span>, end<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"2023-12-31"</span>)[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Adj Close'</span>]</span>
+<span id="cb1-9"></span>
+<span id="cb1-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot the data</span></span></code></pre></div>
+</details>
+</div>
+<div id="cell-8" class="cell" data-execution="{}" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"></span>
+<span id="cb2-2">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb2-3">data.plot()</span>
+<span id="cb2-4">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Historical Price Data: QQQ vs. SPY'</span>)</span>
+<span id="cb2-5">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb2-6">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Adjusted Close Price'</span>)</span>
+<span id="cb2-7">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="annualized-returns-of-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="annualized-returns-of-qqq-and-spy">Annualized Returns of QQQ and SPY</h3>
+<p>Now, let’s compare the annualized returns of QQQ and SPY over the same time period. This helps to evaluate the consistency and average performance of each fund on an annual basis.</p>
+<div id="cell-10" class="cell" data-execution="{}" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate annualized returns</span></span>
+<span id="cb3-2">annualized_returns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (((data.iloc[<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> data.iloc[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>)) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span></span>
+<span id="cb3-3"></span>
+<span id="cb3-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot the annualized returns</span></span>
+<span id="cb3-5">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb3-6">annualized_returns.plot(kind<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'bar'</span>)</span>
+<span id="cb3-7">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Annualized Returns: QQQ vs. SPY (in %)'</span>)</span>
+<span id="cb3-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ETF'</span>)</span>
+<span id="cb3-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Annualized Return (in %)'</span>)</span>
+<span id="cb3-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="historical-volatility-of-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="historical-volatility-of-qqq-and-spy">Historical Volatility of QQQ and SPY</h3>
+<p>To understand the risk associated with each ETF, we will plot their historical volatility. This is computed as the standard deviation of returns over the last five years, highlighting periods of higher volatility.</p>
+<div id="cell-12" class="cell" data-execution="{}" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate historical volatility</span></span>
+<span id="cb4-2">volatility <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data.pct_change().std() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Annualized standard deviation</span></span>
+<span id="cb4-3"></span>
+<span id="cb4-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot historical volatility</span></span>
+<span id="cb4-5">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb4-6">volatility.plot(kind<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'bar'</span>)</span>
+<span id="cb4-7">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Historical Volatility: QQQ vs. SPY  (in %)'</span>)</span>
+<span id="cb4-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ETF'</span>)</span>
+<span id="cb4-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Annualized Volatility (in %)'</span>)</span>
+<span id="cb4-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="calculating-excess-returns-of-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="calculating-excess-returns-of-qqq-and-spy">Calculating Excess Returns of QQQ and SPY</h3>
+<p>To move towards the Sharpe Ratio, let’s calculate the excess returns of QQQ and SPY by subtracting the risk-free rate (say, 4% per annum for example) from their respective returns. This sets the stage for understanding how much return is gained relative to a risk-free investment.</p>
+<div id="cell-14" class="cell" data-execution="{}" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1">risk_free_rate <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.04</span></span>
+<span id="cb5-2"></span>
+<span id="cb5-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate excess returns</span></span>
+<span id="cb5-4">excess_returns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data.pct_change() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> risk_free_rate <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span></span>
+<span id="cb5-5"></span>
+<span id="cb5-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot the excess returns</span></span>
+<span id="cb5-7">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb5-8">excess_returns.plot()</span>
+<span id="cb5-9">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Excess Returns: QQQ vs. SPY'</span>)</span>
+<span id="cb5-10">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb5-11">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Excess Return'</span>)</span>
+<span id="cb5-12">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="sharpe-ratios-for-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="sharpe-ratios-for-qqq-and-spy">Sharpe Ratios for QQQ and SPY</h3>
+<p>Now, let’s calculate and display the Sharpe Ratios for QQQ and SPY. This provides a visual representation of their risk-adjusted performance, giving immediate insight into which asset class, fund or ETF has delivered better returns relative to the risks taken.</p>
+<div id="cell-16" class="cell" data-execution="{}" data-execution_count="6">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate Sharpe Ratios</span></span>
+<span id="cb6-2">sharpe_ratio <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> excess_returns.mean() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> excess_returns.std() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>)</span>
+<span id="cb6-3"></span>
+<span id="cb6-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot the Sharpe Ratios</span></span>
+<span id="cb6-5">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb6-6">sharpe_ratio.plot(kind<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'bar'</span>)</span>
+<span id="cb6-7">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sharpe Ratio: QQQ vs. SPY'</span>)</span>
+<span id="cb6-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ETF'</span>)</span>
+<span id="cb6-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sharpe Ratio'</span>)</span>
+<span id="cb6-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="rolling-sharpe-ratios-for-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="rolling-sharpe-ratios-for-qqq-and-spy">Rolling Sharpe Ratios for QQQ and SPY</h3>
+<p>Observing the rolling Sharpe Ratios over a 12-month window provides enhanced insight into how risk-adjusted performance has changed over time under different market conditions.</p>
+<div id="cell-18" class="cell" data-execution="{}" data-execution_count="7">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate rolling Sharpe Ratios</span></span>
+<span id="cb7-2">rolling_sharpe <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (excess_returns.rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span>).mean() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> excess_returns.rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span>).std()) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>)</span>
+<span id="cb7-3"></span>
+<span id="cb7-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot rolling Sharpe Ratios</span></span>
+<span id="cb7-5">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb7-6">rolling_sharpe.plot()</span>
+<span id="cb7-7">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling 12-Month Sharpe Ratio: QQQ vs. SPY'</span>)</span>
+<span id="cb7-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb7-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling Sharpe Ratio'</span>)</span>
+<span id="cb7-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="comparing-cumulative-sharpe-ratios-of-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="comparing-cumulative-sharpe-ratios-of-qqq-and-spy">Comparing Cumulative Sharpe Ratios of QQQ and SPY</h3>
+<p>Lastly, let’s compare the cumulative Sharpe Ratios of QQQ and SPY against a designated benchmark (e.g., a broader market index). This helps to gauge how well each ETF has outperformed relative to overall market trends.</p>
+<div id="cell-20" class="cell" data-execution="{}" data-execution_count="8">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate cumulative Sharpe Ratios</span></span>
+<span id="cb8-2">cumulative_sharpe <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> ((excess_returns.expanding(min_periods<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span>).mean()) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> excess_returns.expanding().std()) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>)</span>
+<span id="cb8-3"></span>
+<span id="cb8-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot cumulative Sharpe Ratios</span></span>
+<span id="cb8-5">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb8-6">cumulative_sharpe.plot()</span>
+<span id="cb8-7">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Cumulative Sharpe Ratio: QQQ vs. SPY'</span>)</span>
+<span id="cb8-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb8-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Cumulative Sharpe Ratio'</span>)</span>
+<span id="cb8-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="scatter-plot-of-risk-vs.-return" class="level3">
+<h3 class="anchored" data-anchor-id="scatter-plot-of-risk-vs.-return">Scatter Plot of Risk vs.&nbsp;Return</h3>
+<p>Finally, we will create a scatter plot of risk versus return, plotting the expected returns of QQQ and SPY against their respective standard deviations. This visual representation underscores the efficient frontier concept, providing a comprehensive view of optimal risk-return trade-offs.</p>
+<div id="cell-22" class="cell" data-execution="{}" data-execution_count="9">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate expected returns and standard deviations</span></span>
+<span id="cb9-2">expected_returns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> annualized_returns</span>
+<span id="cb9-3">risk <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> volatility</span>
+<span id="cb9-4"></span>
+<span id="cb9-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Scatter plot of risk vs. return</span></span>
+<span id="cb9-6">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb9-7">plt.scatter(risk, expected_returns, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY'</span>])</span>
+<span id="cb9-8"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> i, txt <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">enumerate</span>(risk.index):</span>
+<span id="cb9-9">    plt.annotate(txt, (risk[i], expected_returns[i]))</span>
+<span id="cb9-10">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Risk vs. Return: QQQ vs. SPY'</span>)</span>
+<span id="cb9-11">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Annualized Volatility'</span>)</span>
+<span id="cb9-12">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Annualized Return'</span>)</span>
+<span id="cb9-13">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>We have delved into the Sharpe Ratio, examined its merits and limitations, and visualized its application using real-world datasets of QQQ and SPY. This exploration highlights how investors can leverage this crucial metric for better risk-adjusted decision-making. While the Sharpe Ratio is invaluable, it’s essential to be aware of its limitations, such as the assumption of normally distributed returns and its sensitivity to the chosen risk-free rate.</p>
+<p>For further reading, check out these insightful resources:</p>
+<ul>
+<li><a href="https://www.investopedia.com/terms/s/sharperatio.asp">Investopedia on Sharpe Ratio</a></li>
+<li><a href="https://www.khanacademy.org/economics-finance-domain/core-finance/investment-vehicles-tutorial/capital-asset-pricing-model/v/sharpe-ratio">Khan Academy on CAPM and Sharpe Ratio</a></li>
+</ul>
+<p>Make sure to visit the Data Driven Minutes Youtube channel for a corresponding video on this topic. Happy investing!</p>
+<p><a href="../../../about.html">About us and Disclaimers</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <category>finance</category>
+  <category>risk</category>
+  <category>return</category>
+  <category>sharpe</category>
+  <category>ratio</category>
+  <category>python</category>
+  <guid>https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio.html</guid>
+  <pubDate>Sat, 03 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/risk-return-concept.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Maximum Drawdown: A Practical Approach with Python</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/tutorials/en/max-drawdown.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="maximum-drawdown-a-practical-approach-with-python" class="level1">
+<h1>Maximum Drawdown: A Practical Approach with Python</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" class="img-fluid figure-img"></p>
+<figcaption>Maximum Drawdown in essentially a measure of investment risk</figcaption>
+</figure>
+</div>
+<section id="the-importance-of-maximum-drawdown" class="level2">
+<h2 class="anchored" data-anchor-id="the-importance-of-maximum-drawdown">1: The Importance of Maximum Drawdown</h2>
+<section id="significance-of-maximum-drawdown" class="level3">
+<h3 class="anchored" data-anchor-id="significance-of-maximum-drawdown">1.1 Significance of Maximum Drawdown</h3>
+<p>Maximum Drawdown (MDD) is a critical risk metric for investors. It quantifies the largest peak-to-trough decline in an investment’s value over a specified period, providing insights into potential losses during market downturns. Understanding MDD helps investors gauge the risk profile of their investments and make informed decisions.</p>
+</section>
+<section id="contextualizing-mdd-in-financial-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="contextualizing-mdd-in-financial-analysis">1.2 Contextualizing MDD in Financial Analysis</h3>
+<p>In today’s volatile markets, comprehending the MDD of assets like QQQ (a NASDAQ ETF) and SPY (a S&amp;P 500 ETF) can bring some help in grasping the risk of a particular asset. Such analysis provides a comparative view of the resilience of individual stocks versus market indices, aiding in better portfolio management.</p>
+</section>
+<section id="objective" class="level3">
+<h3 class="anchored" data-anchor-id="objective">1.3 Objective</h3>
+<p>This blog aims to introduce Python enthusiasts and portfolio managers to the concept of Maximum Drawdown, demonstrating how to calculate and visualize it using Python libraries like pandas, yfinance, and matplotlib.</p>
+</section>
+</section>
+<section id="deriving-and-understanding-maximum-drawdown" class="level2">
+<h2 class="anchored" data-anchor-id="deriving-and-understanding-maximum-drawdown">2: Deriving and Understanding Maximum Drawdown</h2>
+<section id="the-mdd-formula" class="level3">
+<h3 class="anchored" data-anchor-id="the-mdd-formula">2.1 The MDD Formula</h3>
+<p>The formula to calculate Maximum Drawdown is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AMDD%20=%20%5Cfrac%7BP_%7B%5Ctext%7Bpeak%7D%7D%20-%20P_%7B%5Ctext%7Btrough%7D%7D%7D%7BP_%7B%5Ctext%7Bpeak%7D%7D%7D%20%5Ctimes%20100%0A"></p>
+<p>Where:</p>
+<ul>
+<li>P_{peak} is the highest portfolio value during the analysis period.</li>
+<li>P_{trough} is the lowest portfolio value following that peak before a new peak is achieved.</li>
+</ul>
+</section>
+<section id="key-benefits-of-mdd" class="level3">
+<h3 class="anchored" data-anchor-id="key-benefits-of-mdd">2.2 Key Benefits of MDD</h3>
+<ul>
+<li><strong>Risk Assessment</strong>: Provides a clear numerical representation of potential losses during downturns.</li>
+<li><strong>Portfolio Management</strong>: Helps in asset allocation and risk management.</li>
+<li><strong>Performance Comparison</strong>: Facilitates comparisons between different investments.</li>
+<li><strong>Emotional Preparedness</strong>: Reduces panic selling by setting realistic expectations.</li>
+</ul>
+</section>
+<section id="limitations-of-mdd" class="level3">
+<h3 class="anchored" data-anchor-id="limitations-of-mdd">2.3 Limitations of MDD</h3>
+<ul>
+<li>Time Frame Dependency</li>
+<li>Ignores Recovery</li>
+<li>Does Not Capture Volatility</li>
+<li>Historical Data Reflection</li>
+</ul>
+</section>
+</section>
+<section id="visualizing-maximum-drawdown" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-maximum-drawdown">3: Visualizing Maximum Drawdown</h2>
+<section id="line-chart-of-daily-closing-prices" class="level3">
+<h3 class="anchored" data-anchor-id="line-chart-of-daily-closing-prices">3.1 Line Chart of Daily Closing Prices</h3>
+<p>When diving into the concept of maximum drawdown, it’s essential to start with the basics and ensure you’re on solid ground. First off, gathering and plotting financial data is the backbone of any credible analysis. By doing so, you avoid the classic pitfalls of using incorrect tickers or dodgy datasets, which can completely skew your findings. Trust me, there’s nothing worse than realising your conclusions are based on faulty data. Proper data handling also helps you spot trends and anomalies right from the start, making your analysis more robust. Plus, it builds a strong foundation for any advanced techniques you want to explore later on. So, take your time, get the basics right, and your insights will be all the more valuable and reliable for it.</p>
+<div id="37429a9c" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%</span>capture</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> yfinance <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> yf</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb1-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Define the style</span></span>
+<span id="cb1-7">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb1-8"></span>
+<span id="cb1-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Download data</span></span>
+<span id="cb1-10">data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.download([<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY'</span>], start<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'2018-01-01'</span>, end<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'2024-08-01'</span>)</span></code></pre></div>
+</details>
+</div>
+<div id="74109035" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1">closing_prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Adj Close'</span>]</span>
+<span id="cb2-2">closing_prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> closing_prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> closing_prices.iloc[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb2-3"></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting the data</span></span>
+<span id="cb2-5">closing_prices.plot(title<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'AAPL and SPY Daily Closing Prices'</span>)</span>
+<span id="cb2-6">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/max-drawdown_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="waterfall-chart-for-drawdown-timeline" class="level3">
+<h3 class="anchored" data-anchor-id="waterfall-chart-for-drawdown-timeline">3.2 Waterfall Chart for Drawdown Timeline</h3>
+<p>Before diving into the chart, let’s break down the calculation of maximum drawdown. Maximum drawdown measures the largest single drop from peak to trough in the value of a financial asset before a new peak is achieved.</p>
+<p>As mentioned above, to calculate it, we track the highest point of the asset’s value over a given period and compare it to the lowest point that follows. By doing this, we get a clear picture of the worst-case scenario in terms of losses. In the chart below, we’ve illustrated the maximum drawdown to visually capture these significant drops, providing a tangible sense of the risk involved.</p>
+<div id="1fcba3a5" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate drawdowns</span></span>
+<span id="cb3-2">closing_prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> closing_prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> closing_prices.iloc[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb3-3">drawdowns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>(closing_prices.cummax() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> closing_prices)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>closing_prices.cummax()</span>
+<span id="cb3-4"></span>
+<span id="cb3-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting drawdown timeline</span></span>
+<span id="cb3-6">drawdowns.plot(title<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
+<span id="cb3-7">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/max-drawdown_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">4: Conclusion</h2>
+<section id="practical-application" class="level3">
+<h3 class="anchored" data-anchor-id="practical-application">Practical Application</h3>
+<p>Investors and portfolio managers use Maximum Drawdown to assess risk, manage portfolios, and compare investment performance. While useful, it should be combined with other metrics for comprehensive risk management.</p>
+</section>
+<section id="explore-more" class="level3">
+<h3 class="anchored" data-anchor-id="explore-more">Explore More</h3>
+<p>Feel free to explore and test the code snippets provided. Check out the corresponding video on the Data Driven Minutes Youtube channel for a step-by-step guide.</p>
+<p>Thanks for passing by and see you in the next article!</p>
+<p>Vincent</p>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <category>finance</category>
+  <category>risk</category>
+  <category>python</category>
+  <guid>https://portfolio-geek.com/posts/tutorials/en/max-drawdown.html</guid>
+  <pubDate>Sat, 03 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Understanding Historical Volatility</title>
   <dc:creator>Vincent D.</dc:creator>
@@ -2341,1078 +3145,6 @@ font-style: inherit;">'Volatility'</span>)</span>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-14_daily-curation.html</guid>
   <pubDate>Sat, 13 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Today’s Picks (13.07.24): Wind Power Surpasses Coal, EV Savings for Rural Families, Impact Investing, and Shifts in ETF Trends</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-13_daily-curation.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>As of July 13, 2024, today’s curation highlights key developments in finance, energy, and educational initiatives. Below are the summarized topics:</p>
-<ul>
-<li>The financial benefits of electric vehicles for rural families in the US.</li>
-<li>The rise of impact investing amidst ESG skepticism.</li>
-<li>Wind power’s dominance over coal in US electricity generation.</li>
-<li>Concerns surrounding BlackRock’s climate transition ETFs.</li>
-<li>Introduction of Vectorlite, a new SQLite extension for vector search.</li>
-<li>Trends in the existing home market and housing prices.</li>
-<li>Johns Hopkins Medical School’s significant donation for free tuition.</li>
-<li>Recent ETF inflows, particularly in core equity and bonds.</li>
-<li>Insights on the impact of passive investing on market dynamics.</li>
-</ul>
-<section id="climate" class="level1">
-<h1>Climate</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://skepticalscience.com/rural-families-saving-thousands-evs.html">Electric Vehicles: A Game-Changer for Rural Families Saving Big on Fuel and Maintenance Costs (Skeptical Science, 2024-07-09)</a></td>
-<td>Rural families in the US are saving money by switching to electric vehicles (EVs) and avoiding gas expenses. EVs require less maintenance and have financial incentives, making them cost-effective.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.forbes.com.au/brand-voice/brandvoice/rip-esg-how-impact-investing-can-help-save-an-industry-in-crisis/">Impact Investing: A Smart Alternative to ESG for Optimized Financial and Social Returns (Forbes Australia, 2024-07-13)</a></td>
-<td>Amidst ESG skepticism, impact investing gains recognition as a credible way to back companies that deliver positive impact and financial returns. Investors prioritize measurable impact activities aligned with the UN Sustainable Development Goals.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://sherwood.news/power/lean-energy-wind-generated-more-electricity-than-coal/">Wind Power Surpasses Coal in US Electricity Production as Renewable Energy Continues to Rise (Sherwood News, 2024-07-13)</a></td>
-<td>Wind power has surpassed coal as a major source of electricity in the US for two consecutive months. Renewable energy accounted for 21% of electricity generation in 2019.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.etfstream.com/articles/blackrock-climate-transition-etfs-portfolio-tool-or-tick-box-exercise">Are BlackRock’s New Climate ETFs Truly Driving Change or Just Ticking Boxes for Sustainable Investment Goals? (ETF Stream, 2024-06-24)</a></td>
-<td>BlackRock’s new climate transition ETFs offer ESG tilting, but concerns remain about their impact. The ETFs may be a useful tool for institutional investors, but lack exposure to key sectors.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="coding" class="level1">
-<h1>Coding</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.reddit.com/r/Python/comments/1e26xsm/vectorlite_a_fast_vector_search_extension_for/">Make SQLite Smarter and Faster with Vectorlite: Your Go-To Extension for Enhanced Vector Search in AI Applications (Reddit, 2024-07-13)</a></td>
-<td>Vectorlite is a fast and tunable vector search extension for SQLite, offering improved performance, metadata filter support, index serialization, and cross-platform compatibility compared to similar solutions like sqlite-vss.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="economics" class="level1">
-<h1>Economics</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="http://www.calculatedriskblog.com/2024/07/realtorcom-reports-active-inventory-up_01292103715.html">Home Inventory Grows 34.5% YoY but Still Struggles to Meet Pre-Pandemic Levels: Insight into Current Market Trends (Calculated Risk, 2024-07-11)</a></td>
-<td>Active inventory in the existing home market increased by 34.5% YoY, marking the 35th consecutive week of growth. New listings declined 4.9% YoY. Buyers still face a 30% decrease in homes compared to pre-pandemic levels.</td>
-</tr>
-<tr class="even">
-<td><a href="https://awealthofcommonsense.com/2024/07/buying-a-house-at-the-top-of-the-market/">Navigating Market Peaks: What to Know Before Buying a Home Amidst Soaring Prices and Mortgage Rates (A Wealth of Common Sense, 2024-07-13)</a></td>
-<td>Housing prices have surged in recent years, but there are concerns about low returns going forward. The impact on homeowners may vary depending on their situation and future plans.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://www.npr.org/2024/07/09/g-s1-8876/johns-hopkins-medical-school-bloomberg">Bloomberg Donates $1 Billion to Johns Hopkins for Medical School Free Tuition and Comprehensive Student Support (NPR, 2024-07-13)</a></td>
-<td>Johns Hopkins Medical School will offer free tuition to most students thanks to a $1 billion donation from Michael Bloomberg’s philanthropic organization.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="etfs-and-index-investing" class="level1">
-<h1>ETFs and Index Investing</h1>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.etfstream.com/articles/core-equity-and-short-duration-bond-etfs-capture-most-inflows-in-q2">Investors Flock to Core Equity and Short-Duration Bonds Amid Market Rally and Inflation Concerns: Q2 Insights (ETF Stream, 2024-07-13)</a></td>
-<td>Core equity and short-duration bond ETFs saw the highest inflows in Q2, while ESG ETFs experienced outflows. The iShares Core S&amp;P 500 UCITS ETF (CSPX) and the Xtrackers EUR Overnight Rate Swap UCITS ETF (XEON) were among the popular choices.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.institutionalinvestor.com/article/2dgy5jctx2rb7g3wv2juo/portfolio/gmo-passive-investings-impact-has-been-overblown-but-its-not-negligible">How Passive Investing Subtly Shifts Market Dynamics: A New Perspective from GMO Experts (GMO Quarterly Letter, 2024-07-13)</a></td>
-<td>The impact of passive investing on markets is less significant than believed, says GMO. The shift of retirement assets to defined contribution plans is coming to an end, limiting the future impact of passive flows.</td>
-</tr>
-</tbody>
-</table>
-
-
-</section>
-
- ]]></description>
-  <category>climate</category>
-  <category>coding</category>
-  <category>economics</category>
-  <category>etf</category>
-  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-13_daily-curation.html</guid>
-  <pubDate>Fri, 12 Jul 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/blog-post.png" medium="image" type="image/png" height="96" width="144"/>
-</item>
-<item>
-  <title>Portfolio Optimisation with Python</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><img src="https://portfolio-geek.com/pictures/portfolio-optimisation.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-In Construction
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Thanks for popping by; please note that this article is still in construction.</p>
-</div>
-</div>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p><strong>Harry Markowitz</strong> is one of the (if not “the”) fathers of modern portfolio construction and his seminal paper Portfolio Selection <sup>1</sup> has driven an entire research stream.</p>
-<p>The <strong>intuition</strong> behind this paper is that one can combine the information gathered on expected returns, risks and diversification of various assets or asset classes with a view to optimise the risk-return profile of a given portfolio.</p>
-<p>In practice, we typically find a limited stability of the portfolios generated using this approach, especially due the high sensitivity of the portfolio to the expected returns; nonetheless, the insights it provides are very useful and it’s a perfect start to see the impact of risk and diversification.</p>
-<p>For this article, we will mostly rely on a fantastic Python library, PyPortfolioOpt <sup>2</sup> which will do the optimisation heavy lifting for us.</p>
-</section>
-<section id="setup" class="level2">
-<h2 class="anchored" data-anchor-id="setup">Setup</h2>
-<section id="loading-libraries" class="level3">
-<h3 class="anchored" data-anchor-id="loading-libraries">Loading Libraries</h3>
-<p>The main library to load here is indeed <strong>PyPortfolioOpt</strong>, and we will rely extensively on it in this article.</p>
-<p>We need the following tools as well:</p>
-<ul>
-<li><strong>Pandas</strong>: load, filter, sort and pretty much all data wrangling operations;</li>
-<li><strong>Numpy</strong>: provides most matrix and advanced numerical operations; this library is the calculation backbone for pandas;</li>
-<li><strong>Matplotlib</strong>: the <em>de facto</em> reference library to draw scientific charts;</li>
-<li><strong>yfinance</strong>: a very handy library to access many different online databases, including Yahoo Finance.</li>
-</ul>
-<div id="cell-3" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb1-2"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> np </span>
-<span id="cb1-3"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> pandas_datareader.data <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> web_reader</span>
-<span id="cb1-4"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> pd</span>
-<span id="cb1-5"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> plt</span>
-<span id="cb1-6"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> seaborn <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> sns</span>
-<span id="cb1-7"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> math</span>
-<span id="cb1-8"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> yfinance <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> yf</span>
-<span id="cb1-9"></span>
-<span id="cb1-10"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> pypfopt.efficient_frontier <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> EfficientFrontier</span>
-<span id="cb1-11"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> pypfopt <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> risk_models</span>
-<span id="cb1-12"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> pypfopt <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> expected_returns</span></code></pre></div>
-</details>
-</div>
-</section>
-<section id="misc-parameters" class="level3">
-<h3 class="anchored" data-anchor-id="misc-parameters">Misc Parameters</h3>
-<p>In the code below, we set some variables to adjust the jupyter loo</p>
-<div id="cell-5" class="cell" data-execution_count="2">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb2-2"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Note that this change the decimals places inside Jupyter, but not on the website</span></span>
-<span id="cb2-3">pd.options.display.float_format <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{:,.1f}</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'</span>.<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">format</span></span></code></pre></div>
-</details>
-</div>
-</section>
-</section>
-<section id="defining-our-investable-universe" class="level2">
-<h2 class="anchored" data-anchor-id="defining-our-investable-universe">Defining our Investable Universe</h2>
-<p>First and foremost, we need to define our <strong>Investable Universe</strong> i.e.&nbsp;the set of asset classes that we will allow in our portfolio.</p>
-<p>Many investors would typically think about single stocks, but on my side, I am typically looking at well diversified portfolios. Moreover, I am typically looking Long Term Investing, and as such, Indices, diversified portfolio or ETFs are in focus for me.</p>
-<p>Speaking about asset classes, we need some ETFs to analyse!</p>
-<blockquote class="blockquote">
-<p>“Important: Please bear in mind this article if purely for pedagogical purpose and should by no mean be understood as a recommendation or advice. Investing brings risk and in particular risk of loss of capital. I have no intention to recommend anything! I will follow among others this recent article in US News{% fn 7%} and ETF.com{% fn 8%} as sources of inspiration to identify relevant ETFs.”</p>
-</blockquote>
-<section id="equity" class="level4">
-<h4 class="anchored" data-anchor-id="equity"><strong>Equity</strong></h4>
-<p>Let’s start with various Equity sub-asset classes:</p>
-<ul>
-<li><strong>IVV</strong>: iShares Core <strong>S&amp;P 500</strong> ETF representing US Equity Large Cap</li>
-<li><strong>SCHA</strong>: Schwab <strong>U.S. Small-Cap</strong> ETF representing US Equity Small Cap</li>
-<li><strong>IJH</strong>: iShares Core <strong>S&amp;P Mid-Cap</strong> ETF representing US Equity Mid Cap</li>
-<li><strong>SCHD</strong>: Schwab <strong>U.S. Dividend Equity</strong> ETF representing US Equity Dividend (ie US stocks which are deemed to pay higher dividends)</li>
-<li><strong>VTI</strong>: Vanguard <strong>Total Stock Market</strong> ETF representing US Equity, with all market cap included</li>
-<li><strong>VXUS</strong>: Vanguard <strong>Total International Stock</strong> ETF representing World ex-US equities</li>
-<li><strong>EEM</strong>: iShares <strong>MSCI Emerging Markets</strong> ETF representing the Emerging Market Equities</li>
-</ul>
-</section>
-<section id="fixed-income" class="level4">
-<h4 class="anchored" data-anchor-id="fixed-income"><strong>Fixed Income</strong></h4>
-<p>Let’s add Fixed Income, which would typically aim to reduce the overall portfolio’s volatility:</p>
-<ul>
-<li><strong>AGG</strong>: iShares Core <strong>U.S. Aggregate Bond</strong> ETFrepresenting the entire US Bond market</li>
-<li><strong>GOVT</strong>: iShares <strong>U.S. Treasury Bond</strong> ETF representing the performance of US Government Bonds</li>
-<li><strong>VCLT</strong>: Vanguard <strong>Long-Term Corporate Bond</strong> ETF representing the Investment Grade USD denominated bonds.</li>
-</ul>
-</section>
-<section id="alternative-assets" class="level4">
-<h4 class="anchored" data-anchor-id="alternative-assets"><strong>Alternative Assets</strong></h4>
-<p>Let’s add 2 additional asset classes, Gold and Commodities:</p>
-<ul>
-<li><strong>GLD</strong>: SPDR <strong>Gold</strong> Trust representing the price of **Gold</li>
-<li><strong>PDBC</strong>: Invesco Optimum Yield Diversified <strong>Commodity</strong> Strategy No K-1 ETF** which will represent the performance of the Broad Commodities asset class</li>
-</ul>
-<p>Everything in the above is <strong>denominated in US Dollars</strong>, this will make our life easier in what follows, ie we will not need any currency conversion, which is always a bit painful in the process.</p>
-</section>
-</section>
-<section id="parameters-and-data-gathering" class="level2">
-<h2 class="anchored" data-anchor-id="parameters-and-data-gathering">Parameters and data gathering</h2>
-<p>I recommend you to read this <strong><a href="../../posts/tutorials/en/spy-and-matplotlib.html">article about data gathering</a></strong>.</p>
-<p>Like we did in this article, we will utilise <strong>yfinance</strong> to get historical time series. As mentioned above, we will look at the performance of ETFs, which we will consider as as relevant proxies for their respective asset classes.</p>
-<p>You can of course utilise whatever asset class you want, and take single stocks, funds as historical data points. On my side, I am quite familiar with indices ETFs, and I will go with the selection above.</p>
-<p>Last but not least, we need to define the <strong>start_date</strong> and <strong>end_date</strong> for gathering the historical time series. For this study, we will gather 7 years of data.</p>
-<div id="cell-7" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-execution_count="3">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb3-2"></span>
-<span id="cb3-3">start_date <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'2018-03-01'</span></span>
-<span id="cb3-4">end_date <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'2023-03-01'</span></span>
-<span id="cb3-5"></span>
-<span id="cb3-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Define Investable Universe</span></span>
-<span id="cb3-7">investable_universe_tickers <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'IVV'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SCHA'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'IJH'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SCHD'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'VTI'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'VXUS'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'EEM'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'VCLT'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'AGG'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'GOVT'</span>,<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'PDBC'</span>,<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'GLD'</span>]</span>
-<span id="cb3-8"></span>
-<span id="cb3-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Get Historical Data</span></span>
-<span id="cb3-10">df <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> yf.download(investable_universe_tickers, start<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>start_date, end<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>end_date, progress<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">False</span>)</span>
-<span id="cb3-11">df <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> df[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Adj Close'</span>]</span>
-<span id="cb3-12"></span>
-<span id="cb3-13"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># This is required to round the blog's table into 2 decimals, Jupyter's formatting does not apply on the published website</span></span>
-<span id="cb3-14">df <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> df.<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">round</span>(decimals<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)</span></code></pre></div>
-</details>
-</div>
-<section id="data-gathering-results" class="level3">
-<h3 class="anchored" data-anchor-id="data-gathering-results">Data gathering: <strong>results</strong></h3>
-<p>The request above delivered a <strong>pandas data_frame</strong>, and here is a snapshot of the last 5 rows:</p>
-<div id="cell-9" class="cell" data-execution_count="4">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb4-2">df.tail(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>)</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="4">
-<div>
-<div>
-
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">AGG</th>
-<th data-quarto-table-cell-role="th">EEM</th>
-<th data-quarto-table-cell-role="th">GLD</th>
-<th data-quarto-table-cell-role="th">GOVT</th>
-<th data-quarto-table-cell-role="th">IJH</th>
-<th data-quarto-table-cell-role="th">IVV</th>
-<th data-quarto-table-cell-role="th">PDBC</th>
-<th data-quarto-table-cell-role="th">SCHA</th>
-<th data-quarto-table-cell-role="th">SCHD</th>
-<th data-quarto-table-cell-role="th">VCLT</th>
-<th data-quarto-table-cell-role="th">VTI</th>
-<th data-quarto-table-cell-role="th">VXUS</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Date</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2023-02-24</td>
-<td>92.6</td>
-<td>37.0</td>
-<td>168.4</td>
-<td>21.8</td>
-<td>50.8</td>
-<td>389.4</td>
-<td>13.6</td>
-<td>42.9</td>
-<td>70.9</td>
-<td>71.4</td>
-<td>195.0</td>
-<td>51.3</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2023-02-27</td>
-<td>92.8</td>
-<td>37.2</td>
-<td>169.0</td>
-<td>21.8</td>
-<td>50.9</td>
-<td>390.8</td>
-<td>13.6</td>
-<td>43.0</td>
-<td>70.9</td>
-<td>71.3</td>
-<td>195.7</td>
-<td>51.8</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2023-02-28</td>
-<td>92.8</td>
-<td>37.0</td>
-<td>169.8</td>
-<td>21.9</td>
-<td>50.8</td>
-<td>389.3</td>
-<td>13.7</td>
-<td>43.0</td>
-<td>70.6</td>
-<td>71.3</td>
-<td>195.0</td>
-<td>51.4</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="normalisation" class="level3">
-<h3 class="anchored" data-anchor-id="normalisation">Normalisation</h3>
-<p>A table like the above is not very useful: in the absence a of particle knowledge of the ETFs’ values, we have no way of knowing if a value is “high” or “low”, hence apart from telling us that the value is a number we have now way to let’s try to make this table a bit more insightful.</p>
-<p>The request above delivered a data_frame, and here is a snapshot of the last 5 rows:</p>
-<div id="cell-11" class="cell" data-execution_count="5">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb5-2"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Same table, but this time, normalised</span></span>
-<span id="cb5-3">(df<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">/</span>df.iloc[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, ]<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>).<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">round</span>(decimals<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>).tail(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>)</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="5">
-<div>
-<div>
-
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">AGG</th>
-<th data-quarto-table-cell-role="th">EEM</th>
-<th data-quarto-table-cell-role="th">GLD</th>
-<th data-quarto-table-cell-role="th">GOVT</th>
-<th data-quarto-table-cell-role="th">IJH</th>
-<th data-quarto-table-cell-role="th">IVV</th>
-<th data-quarto-table-cell-role="th">PDBC</th>
-<th data-quarto-table-cell-role="th">SCHA</th>
-<th data-quarto-table-cell-role="th">SCHD</th>
-<th data-quarto-table-cell-role="th">VCLT</th>
-<th data-quarto-table-cell-role="th">VTI</th>
-<th data-quarto-table-cell-role="th">VXUS</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">Date</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2023-02-24</td>
-<td>102.4</td>
-<td>88.9</td>
-<td>135.0</td>
-<td>100.9</td>
-<td>150.7</td>
-<td>161.5</td>
-<td>144.7</td>
-<td>137.1</td>
-<td>176.8</td>
-<td>102.1</td>
-<td>158.2</td>
-<td>110.3</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2023-02-27</td>
-<td>102.7</td>
-<td>89.4</td>
-<td>135.5</td>
-<td>100.9</td>
-<td>151.0</td>
-<td>162.1</td>
-<td>144.7</td>
-<td>137.4</td>
-<td>176.8</td>
-<td>102.0</td>
-<td>158.7</td>
-<td>111.4</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2023-02-28</td>
-<td>102.7</td>
-<td>88.9</td>
-<td>136.2</td>
-<td>101.4</td>
-<td>150.7</td>
-<td>161.5</td>
-<td>145.7</td>
-<td>137.4</td>
-<td>176.1</td>
-<td>102.0</td>
-<td>158.2</td>
-<td>110.5</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</div>
-<p>This is <strong>much</strong> better.</p>
-<p>Now we can at least see that: - <strong>US Equities</strong> (e.g.&nbsp;IVV) had a <strong>fantastic ride since 2015</strong>; - Government bonds (e.g.&nbsp;GOVT) under-performed; - Commodities (PDBC) and Gold (GLD) had several rough years as well, with recent massive pick-up in the current geopolitical context.</p>
-</section>
-<section id="visualise-asset-classes-returns" class="level3">
-<h3 class="anchored" data-anchor-id="visualise-asset-classes-returns">Visualise asset classes’ returns</h3>
-<p>Being able to sanity check the data is very important, and it’s often more efficient with a quick chart.</p>
-<div id="cell-13" class="cell" data-execution_count="6">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb6-2"></span>
-<span id="cb6-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Normalise to 100</span></span>
-<span id="cb6-4">normalised_data <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> (df<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">/</span>df.iloc[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, ]<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>)</span>
-<span id="cb6-5"></span>
-<span id="cb6-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># A bit of data wrangling</span></span>
-<span id="cb6-7">transposed_data <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> normalised_data.tail(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>).reset_index().transpose()</span>
-<span id="cb6-8">transposed_data <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> transposed_data.iloc[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>:<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">len</span>(transposed_data)]</span>
-<span id="cb6-9">transposed_data <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> transposed_data.rename(columns<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>{<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>: <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Last Value"</span>})</span>
-<span id="cb6-10"></span>
-<span id="cb6-11"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># We want a bar chart sorted by decreaseing values</span></span>
-<span id="cb6-12">transposed_data <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> transposed_data.sort_values(by<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Last Value"</span>, ascending<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">False</span>)</span>
-<span id="cb6-13"></span>
-<span id="cb6-14"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Theming Seaborn results</span></span>
-<span id="cb6-15">sns.set_theme()</span>
-<span id="cb6-16"></span>
-<span id="cb6-17"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Draw</span></span>
-<span id="cb6-18">transposed_data.plot.bar(figsize<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span>))</span>
-<span id="cb6-19"><span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">pass</span></span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="draw-the-wealth-curve" class="level3">
-<h3 class="anchored" data-anchor-id="draw-the-wealth-curve">Draw the <strong>wealth curve</strong></h3>
-<p>The table above is useful, but when it comes to grasping and long term risks and returns, a chart is worth a thousand words.</p>
-<p>A very common issue when charting multiple time series is the very different stock levels, and this can make the chart hard to read.</p>
-<p>This is why we will once again normalise the data.</p>
-<div id="cell-15" class="cell" data-execution_count="7">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb7-2"></span>
-<span id="cb7-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Theming Seaborn results</span></span>
-<span id="cb7-4">sns.set_theme()</span>
-<span id="cb7-5"></span>
-<span id="cb7-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Plot the time series</span></span>
-<span id="cb7-7">plt.figure(figsize<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">12</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span>))</span>
-<span id="cb7-8"></span>
-<span id="cb7-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Legends and Axis titles</span></span>
-<span id="cb7-10">p <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> sns.lineplot(data<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>normalised_data)</span>
-<span id="cb7-11">p.set_ylabel(<span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">f"Close Price, Basis 100 in </span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span>start_date<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"</span>)</span>
-<span id="cb7-12"><span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">pass</span></span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="estimate-risk-and-return" class="level2">
-<h2 class="anchored" data-anchor-id="estimate-risk-and-return">Estimate risk and return</h2>
-<p>In <u>Markowitz 1952</u>, the optimal portfolio is obtained as a function of <em>expected</em> returns and <em>expected</em> risks of the portfolio. This takes a strong assumption that we have a “crystal ball”, or at least access to a predictive model, which at this stage is well beyond this article.</p>
-<p>For this first example, we will rely on historical parameters estimation, which precisely means that we expect the past to be a good prediction of what might happen in the future.</p>
-<section id="volatility" class="level3">
-<h3 class="anchored" data-anchor-id="volatility">Volatility</h3>
-<p>There are many ways to estimate the volatility, and I will only cover the simplest approach.</p>
-<p>We have access to daily close prices of the ETFs, hence we could look at the standard deviation of <strong>daily</strong> returns. In theory this would utilise most of the data we have access to, which is a good thing. In practice, and especially when looking at asset classes which can be observed with an <strong>8 to 12 hours</strong> time difference which might lead the “sample volatility” to become inconsistent between 2 asset classes. This is even more important for estimating the <strong>correlation</strong>.</p>
-<p>Practitioners often use <strong>weekly returns</strong> to alleviate this issue, and we will do the same here, and as such calculate the returns using a <em>resampled</em> time series. To calculate the <strong>annualized volatility</strong> requires an additional factor in this case the square root of 52. Why this?</p>
-<p>Volatility is essential to option traders, and when pricing options, practitioners often model asset prices as <strong>Wiener processes</strong>(number of weeks in a year) <sup>3</sup>. The variance of a Wiener process is proportional to the time, and the volatility is the square root of the the variance, which gives us that to convert standard deviation of weekly returns into an <em>annualized</em> figure, we need to multiply our results by the square root of the number of weeks in a year.</p>
-<div id="cell-19" class="cell" data-execution_count="8">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1">weekly_returns <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> df.resample(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"W"</span>).last().pct_change()</span>
-<span id="cb8-2">((weekly_returns.std()<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span>math.sqrt(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">52</span>)<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>).sort_values()).plot.bar()<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>As one could have guessed, on the left of the chart above, we can find the low volatility asset classes (e.g.&nbsp;Government Bonds, Investment Grade Bonds), whereas on the right we have high volatility asset classes (Mid Cap and Small Cap Equities).</p>
-</section>
-</section>
-<section id="correlation" class="level2">
-<h2 class="anchored" data-anchor-id="correlation">Correlation</h2>
-<div id="cell-22" class="cell" data-execution_count="9">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1">sns.heatmap(weekly_returns.corr())<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<div id="cell-23" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-tags="[]" data-execution_count="10">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb10-2"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> pypfopt <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> risk_models</span>
-<span id="cb10-3"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> pypfopt <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> plotting</span>
-<span id="cb10-4"></span>
-<span id="cb10-5"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Calculate expected returns and sample covariance</span></span>
-<span id="cb10-6">mu <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> expected_returns.mean_historical_return(df)</span>
-<span id="cb10-7">sample_cov <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> risk_models.sample_cov(df, frequency<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">252</span>)</span>
-<span id="cb10-8"></span>
-<span id="cb10-9">S <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> risk_models.CovarianceShrinkage(df).ledoit_wolf()</span></code></pre></div>
-</details>
-</div>
-</section>
-<section id="the-main-results-efficient-frontier-maximum-sharpe-portfolio" class="level2">
-<h2 class="anchored" data-anchor-id="the-main-results-efficient-frontier-maximum-sharpe-portfolio">The main results: Efficient Frontier &amp; Maximum Sharpe Portfolio</h2>
-<section id="calculate-and-draw-the-efficient-frontier" class="level3">
-<h3 class="anchored" data-anchor-id="calculate-and-draw-the-efficient-frontier">Calculate and draw the efficient frontier</h3>
-<p>With expected returns and risk estimated, we are ready to utilise PyPortfolioOpt’s optimiser to draw the <strong>efficient frontier</strong>.</p>
-<p>The idea behind the efficient frontier is relatively simple: - For <strong>each level of investor’s risk</strong>, there is an optimal portfolio which is expected to deliver the <strong>highest level of return</strong>; or conversely - For <strong>each level of investor’s return</strong>, there is an optimal portfolio which is expected to deliver the <strong>lowest level of return</strong>.</p>
-<div id="cell-25" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-tags="[]" data-execution_count="11">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb11-2">ef <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> EfficientFrontier(mu, sample_cov)</span>
-<span id="cb11-3"></span>
-<span id="cb11-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># We create 2 efficient frontiers</span></span>
-<span id="cb11-5">fig, ax <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> plt.subplots()</span>
-<span id="cb11-6">plotting.plot_efficient_frontier(ef, ax<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>ax, show_assets<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">True</span>)</span>
-<span id="cb11-7">ax.set_title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Asset Classes &amp; Efficient Frontier"</span>)</span>
-<span id="cb11-8"></span>
-<span id="cb11-9">plt.show()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python_files/figure-html/cell-12-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="add-the-maximum-sharpe-portfolio" class="level3">
-<h3 class="anchored" data-anchor-id="add-the-maximum-sharpe-portfolio">Add the Maximum Sharpe portfolio</h3>
-<div id="cell-28" class="cell" data-execution_count="12">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb12-2"></span>
-<span id="cb12-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Find and plot the tangency portfolio</span></span>
-<span id="cb12-4">fig2, ax <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> plt.subplots()</span>
-<span id="cb12-5">ef2 <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> EfficientFrontier(mu, S) </span>
-<span id="cb12-6">plotting.plot_efficient_frontier(ef2, ax<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>ax, show_assets<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">True</span>)</span>
-<span id="cb12-7"></span>
-<span id="cb12-8">ef3 <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> EfficientFrontier(mu, S) </span>
-<span id="cb12-9"></span>
-<span id="cb12-10">ef3.max_sharpe()</span>
-<span id="cb12-11">ret_tangent, std_tangent, _ <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> ef3.portfolio_performance()</span>
-<span id="cb12-12">ax.scatter(std_tangent, ret_tangent, marker<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"*"</span>, s<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>, c<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"r"</span>, label<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Max Sharpe"</span>)</span>
-<span id="cb12-13">ax.set_title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Asset Classes, Efficient Frontier &amp; Max Sharpe portfolio"</span>)</span>
-<span id="cb12-14">plt.show()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python_files/figure-html/cell-13-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="calculate-random-portfolios" class="level3">
-<h3 class="anchored" data-anchor-id="calculate-random-portfolios">Calculate random portfolios</h3>
-<div id="cell-30" class="cell" data-execution_count="13">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#collapse-hide</span></span>
-<span id="cb13-2"></span>
-<span id="cb13-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Plot random portfolios</span></span>
-<span id="cb13-4">fig2, ax <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> plt.subplots()</span>
-<span id="cb13-5">n_samples <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10000</span></span>
-<span id="cb13-6">w <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.random.dirichlet(np.ones(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">len</span>(mu)), n_samples)</span>
-<span id="cb13-7">rets <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> w.dot(mu)</span>
-<span id="cb13-8">stds <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.sqrt((w.T <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span> (S <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">@</span> w.T)).<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">sum</span>(axis<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>))</span>
-<span id="cb13-9">sharpes <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> rets <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">/</span> stds</span>
-<span id="cb13-10">ax.scatter(stds, rets, marker<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"."</span>, c<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>sharpes, cmap<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"viridis_r"</span>)</span>
-<span id="cb13-11"></span>
-<span id="cb13-12"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Format</span></span>
-<span id="cb13-13">ax.set_title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Random portfolios, based on the same asset classes"</span>)</span>
-<span id="cb13-14"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#ax.legend()</span></span>
-<span id="cb13-15">plt.tight_layout()</span>
-<span id="cb13-16">plt.show()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Et voila!</p>
-<p>Compared to macros or Excel formulas, this is an amazing improvement, and enables us to customise everything in seconds: historical timeframe, asset classes, etc.</p>
-<p>To deliver a full portfolio optimisation process in such a limited number of lines is truly awesome.</p>
-<p>I hope this article provided you some ideas on how to look at portfolio construction.</p>
-<p>Happy coding, and happy portfolio construction!</p>
-
-
-</section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p><a href="https://www.jstor.org/stable/2975974">Portfolio Selection</a>, Henri Markowitz, 1952↩︎</p></li>
-<li id="fn2"><p><a href="https://pyportfolioopt.readthedocs.io/en/latest/">PyportfolioOpt</a>, Robert Andrew Martin, 2018↩︎</p></li>
-<li id="fn3"><p><a href="https://en.wikipedia.org/wiki/Wiener_process">Wikipedia.com / Wiener Processes</a>↩︎</p></li>
-</ol>
-</section></div> ]]></description>
-  <category>portfolio-construction</category>
-  <guid>https://portfolio-geek.com/posts/portfolio-construction/optimise-portfolios-with-python.html</guid>
-  <pubDate>Tue, 30 Apr 2024 22:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

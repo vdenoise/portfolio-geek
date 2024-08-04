@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
+<meta name="dcterms.date" content="2024-08-04">
 
-<title>Portfolio Geek - Archive</title>
+<title>Portfolio Geek - Maximum Drawdown: A Practical Approach with Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,29 +22,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,35 +104,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CJ2CMCX5LZ"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -158,19 +162,20 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Portfolio Geek - Archive">
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="Portfolio Geek - Maximum Drawdown: A Practical Approach with Python">
+<meta property="og:image" content="https://portfolio-geek.com/pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg">
 <meta property="og:site_name" content="Portfolio Geek">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Portfolio Geek</span>
     </a>
   </div>
@@ -181,19 +186,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./daily-curation.html"> 
+    <a class="nav-link" href="../../../daily-curation.html"> 
 <span class="menu-text">Daily Findings</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorials_en.html"> 
+    <a class="nav-link" href="../../../tutorials_en.html"> 
 <span class="menu-text">Getting Started</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -220,273 +225,189 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
+      <div class="quarto-title-block"><div><h1 class="title">Maximum Drawdown: A Practical Approach with Python</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/tutorials/en/max-drawdown.ipynb">View Source</a></li></ul></div></div>
+                                <div class="quarto-categories">
+                <div class="quarto-category">coding</div>
+                <div class="quarto-category">finance</div>
+                <div class="quarto-category">risk</div>
+                <div class="quarto-category">python</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Vincent D. </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 4, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Archive</h1>
-</div>
-
-
-
-<div class="quarto-title-meta column-page">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Vincent D. </p>
-          </div>
-  </div>
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
 
 
+<section id="maximum-drawdown-a-practical-approach-with-python" class="level1">
+<h1>Maximum Drawdown: A Practical Approach with Python</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" class="img-fluid figure-img"></p>
+<figcaption>Maximum Drawdown in essentially a measure of investment risk</figcaption>
+</figure>
+</div>
+<section id="the-importance-of-maximum-drawdown" class="level2">
+<h2 class="anchored" data-anchor-id="the-importance-of-maximum-drawdown">1: The Importance of Maximum Drawdown</h2>
+<section id="significance-of-maximum-drawdown" class="level3">
+<h3 class="anchored" data-anchor-id="significance-of-maximum-drawdown">1.1 Significance of Maximum Drawdown</h3>
+<p>Maximum Drawdown (MDD) is a critical risk metric for investors. It quantifies the largest peak-to-trough decline in an investment’s value over a specified period, providing insights into potential losses during market downturns. Understanding MDD helps investors gauge the risk profile of their investments and make informed decisions.</p>
+</section>
+<section id="contextualizing-mdd-in-financial-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="contextualizing-mdd-in-financial-analysis">1.2 Contextualizing MDD in Financial Analysis</h3>
+<p>In today’s volatile markets, comprehending the MDD of assets like QQQ (a NASDAQ ETF) and SPY (a S&amp;P 500 ETF) can bring some help in grasping the risk of a particular asset. Such analysis provides a comparative view of the resilience of individual stocks versus market indices, aiding in better portfolio management.</p>
+</section>
+<section id="objective" class="level3">
+<h3 class="anchored" data-anchor-id="objective">1.3 Objective</h3>
+<p>This blog aims to introduce Python enthusiasts and portfolio managers to the concept of Maximum Drawdown, demonstrating how to calculate and visualize it using Python libraries like pandas, yfinance, and matplotlib.</p>
+</section>
+</section>
+<section id="deriving-and-understanding-maximum-drawdown" class="level2">
+<h2 class="anchored" data-anchor-id="deriving-and-understanding-maximum-drawdown">2: Deriving and Understanding Maximum Drawdown</h2>
+<section id="the-mdd-formula" class="level3">
+<h3 class="anchored" data-anchor-id="the-mdd-formula">2.1 The MDD Formula</h3>
+<p>The formula to calculate Maximum Drawdown is:</p>
+<p><span class="math display">\[
+MDD = \frac{P_{\text{peak}} - P_{\text{trough}}}{P_{\text{peak}}} \times 100
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li>P_{peak} is the highest portfolio value during the analysis period.</li>
+<li>P_{trough} is the lowest portfolio value following that peak before a new peak is achieved.</li>
+</ul>
+</section>
+<section id="key-benefits-of-mdd" class="level3">
+<h3 class="anchored" data-anchor-id="key-benefits-of-mdd">2.2 Key Benefits of MDD</h3>
+<ul>
+<li><strong>Risk Assessment</strong>: Provides a clear numerical representation of potential losses during downturns.</li>
+<li><strong>Portfolio Management</strong>: Helps in asset allocation and risk management.</li>
+<li><strong>Performance Comparison</strong>: Facilitates comparisons between different investments.</li>
+<li><strong>Emotional Preparedness</strong>: Reduces panic selling by setting realistic expectations.</li>
+</ul>
+</section>
+<section id="limitations-of-mdd" class="level3">
+<h3 class="anchored" data-anchor-id="limitations-of-mdd">2.3 Limitations of MDD</h3>
+<ul>
+<li>Time Frame Dependency</li>
+<li>Ignores Recovery</li>
+<li>Does Not Capture Volatility</li>
+<li>Historical Data Reflection</li>
+</ul>
+</section>
+</section>
+<section id="visualizing-maximum-drawdown" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-maximum-drawdown">3: Visualizing Maximum Drawdown</h2>
+<section id="line-chart-of-daily-closing-prices" class="level3">
+<h3 class="anchored" data-anchor-id="line-chart-of-daily-closing-prices">3.1 Line Chart of Daily Closing Prices</h3>
+<p>When diving into the concept of maximum drawdown, it’s essential to start with the basics and ensure you’re on solid ground. First off, gathering and plotting financial data is the backbone of any credible analysis. By doing so, you avoid the classic pitfalls of using incorrect tickers or dodgy datasets, which can completely skew your findings. Trust me, there’s nothing worse than realising your conclusions are based on faulty data. Proper data handling also helps you spot trends and anomalies right from the start, making your analysis more robust. Plus, it builds a strong foundation for any advanced techniques you want to explore later on. So, take your time, get the basics right, and your insights will be all the more valuable and reliable for it.</p>
+<div id="37429a9c" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="op">%%</span>capture</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co"># Define the style</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co"># Download data</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>data <span class="op">=</span> yf.download([<span class="st">'QQQ'</span>, <span class="st">'SPY'</span>], start<span class="op">=</span><span class="st">'2018-01-01'</span>, end<span class="op">=</span><span class="st">'2024-08-01'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="74109035" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>closing_prices <span class="op">=</span> data[<span class="st">'Adj Close'</span>]</span>
+<span id="cb2-2"><a href="#cb2-2"></a>closing_prices <span class="op">=</span> closing_prices <span class="op">/</span> closing_prices.iloc[<span class="dv">0</span>]</span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co"># Plotting the data</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>closing_prices.plot(title<span class="op">=</span><span class="st">'AAPL and SPY Daily Closing Prices'</span>)</span>
+<span id="cb2-6"><a href="#cb2-6"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="max-drawdown_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="waterfall-chart-for-drawdown-timeline" class="level3">
+<h3 class="anchored" data-anchor-id="waterfall-chart-for-drawdown-timeline">3.2 Waterfall Chart for Drawdown Timeline</h3>
+<p>Before diving into the chart, let’s break down the calculation of maximum drawdown. Maximum drawdown measures the largest single drop from peak to trough in the value of a financial asset before a new peak is achieved.</p>
+<p>As mentioned above, to calculate it, we track the highest point of the asset’s value over a given period and compare it to the lowest point that follows. By doing this, we get a clear picture of the worst-case scenario in terms of losses. In the chart below, we’ve illustrated the maximum drawdown to visually capture these significant drops, providing a tangible sense of the risk involved.</p>
+<div id="1fcba3a5" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Calculate drawdowns</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>closing_prices <span class="op">=</span> closing_prices <span class="op">/</span> closing_prices.iloc[<span class="dv">0</span>]</span>
+<span id="cb3-3"><a href="#cb3-3"></a>drawdowns <span class="op">=</span> <span class="op">-</span>(closing_prices.cummax() <span class="op">-</span> closing_prices)<span class="op">/</span>closing_prices.cummax()</span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="co"># Plotting drawdown timeline</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>drawdowns.plot(title<span class="op">=</span><span class="st">'Drawdown Timeline for AAPL and SPY'</span>)</span>
+<span id="cb3-7"><a href="#cb3-7"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="max-drawdown_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">4: Conclusion</h2>
+<section id="practical-application" class="level3">
+<h3 class="anchored" data-anchor-id="practical-application">Practical Application</h3>
+<p>Investors and portfolio managers use Maximum Drawdown to assess risk, manage portfolios, and compare investment performance. While useful, it should be combined with other metrics for comprehensive risk management.</p>
+</section>
+<section id="explore-more" class="level3">
+<h3 class="anchored" data-anchor-id="explore-more">Explore More</h3>
+<p>Feel free to explore and test the code snippets provided. Check out the corresponding video on the Data Driven Minutes Youtube channel for a step-by-step guide.</p>
+<p>Thanks for passing by and see you in the next article!</p>
+<p>Vincent</p>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="coding,finance,risk,python" data-listing-date-sort="1722722400000" data-listing-file-modified-sort="1722761253211" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
-<div class="thumbnail">
-<p><a href="./posts/tutorials/en/max-drawdown.html" class="no-external"></a></p><a href="./posts/tutorials/en/max-drawdown.html" class="no-external">
-<p><img src="./pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/tutorials/en/max-drawdown.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/tutorials/en/max-drawdown.html" class="no-external">Maximum Drawdown: A Practical Approach with Python</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/tutorials/en/max-drawdown.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/tutorials/en/max-drawdown.html" class="no-external">Maximum Drawdown (MDD) is a critical risk metric for investors. It quantifies the largest peak-to-trough decline in an investment’s value over a specified period, providing…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/tutorials/en/max-drawdown.html" class="no-external">
-<div class="listing-date">
-Aug 4, 2024
-</div>
-<div class="listing-author">
-Vincent D.
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="coding,finance,risk,return,sharpe,ratio,python" data-listing-date-sort="1722722400000" data-listing-file-modified-sort="1722788616222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="782">
-<div class="thumbnail">
-<p><a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external"></a></p><a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external">
-<p><img src="./pictures/risk-return-concept.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external">Sharpe Ratio: A Must-Know for Every Investor</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external">As a financial engineer with over 20 years of experience, I understand just how crucial the Sharpe Ratio is for evaluating investments. This essential metric provides a way…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/tutorials/en/sharpe-ratio.html" class="no-external">
-<div class="listing-date">
-Aug 4, 2024
-</div>
-<div class="listing-author">
-Vincent D.
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="data-gathering,volatility,log-returns" data-listing-date-sort="1722636000000" data-listing-file-modified-sort="1722702036117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
-<div class="thumbnail">
-<p><a href="./posts/tutorials/en/historical-vol.html" class="no-external"></a></p><a href="./posts/tutorials/en/historical-vol.html" class="no-external">
-<p><img src="./pictures/diagram-representing-red-crashing-market-volatility.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/tutorials/en/historical-vol.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/tutorials/en/historical-vol.html" class="no-external">Understanding Historical Volatility</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/tutorials/en/historical-vol.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/tutorials/en/historical-vol.html" class="no-external">If you’re a budding financial engineer, investor, or market enthusiast, understanding historical volatility is crucial. Historical volatility, by referencing past price…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/tutorials/en/historical-vol.html" class="no-external">
-<div class="listing-date">
-Aug 3, 2024
-</div>
-<div class="listing-author">
-Vincent D.
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="portfolio-construction" data-listing-date-sort="1714514400000" data-listing-file-modified-sort="1721720331839" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1454">
-<div class="thumbnail">
-<p><a href="./posts/portfolio-construction/optimise-portfolios-with-python.html" class="no-external"></a></p><a href="./posts/portfolio-construction/optimise-portfolios-with-python.html" class="no-external">
-<p class="card-img-top"><img src="pictures/portfolio-optimisation.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/portfolio-construction/optimise-portfolios-with-python.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/portfolio-construction/optimise-portfolios-with-python.html" class="no-external">Portfolio Optimisation with Python</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/portfolio-construction/optimise-portfolios-with-python.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/portfolio-construction/optimise-portfolios-with-python.html" class="no-external">Thanks for popping by; please note that this article is still in construction.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/portfolio-construction/optimise-portfolios-with-python.html" class="no-external">
-<div class="listing-date">
-May 1, 2024
-</div>
-<div class="listing-author">
-Vincent D.
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="101,en,setup,bash,python,windows,matplotlib" data-listing-date-sort="1708556400000" data-listing-file-modified-sort="1721720369067" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="561">
-<div class="thumbnail">
-<p><a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external"></a></p><a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external">
-<p><img src="./posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external">Setting up a Python Development Workstation (Windows)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external">In this article we set up our Windows workstation and install all the relevant tools to be efficient in coding in Python.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="no-external">
-<div class="listing-date">
-Feb 22, 2024
-</div>
-<div class="listing-author">
-Vincent D.
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="101,en,setup,python,bash,macos,matplotlib" data-listing-date-sort="1708383600000" data-listing-file-modified-sort="1721720364082" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="735">
-<div class="thumbnail">
-<p><a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external"></a></p><a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external">
-<p><img src="./posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external">Setting up a Python Development Workstation (MacOs)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external">In this article, we start our journey into Finance and Python coding. Let’s set up our MacOs Workstation and install a few key tools to code efficiently.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="no-external">
-<div class="listing-date">
-Feb 20, 2024
-</div>
-<div class="listing-author">
-Vincent D.
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="tutorial,data,matplotlib,en" data-listing-date-sort="1706137200000" data-listing-file-modified-sort="1721720381505" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="410">
-<div class="thumbnail">
-<p><a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external"></a></p><a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external">
-<p><img src="./posts/tutorials/en/chart_spy.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external">Getting and charting data with Matplotlib</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external">In this article, we start our data analysis journey with Python by getting and charting data, in this case the performance of an ETF using freely available data.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/tutorials/en/spy-and-matplotlib.html" class="no-external">
-<div class="listing-date">
-Jan 25, 2024
-</div>
-<div class="listing-author">
-Vincent D.
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="publication-workflow" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1721494736662" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="892">
-<div class="thumbnail">
-<p><a href="./posts/publication-workflow/visualizing-historical-data.html" class="no-external"></a></p><a href="./posts/publication-workflow/visualizing-historical-data.html" class="no-external">
-<p class="card-img-top"><img src="pictures/chart-preview.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/publication-workflow/visualizing-historical-data.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/publication-workflow/visualizing-historical-data.html" class="no-external">Visualising Historical Data</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/publication-workflow/visualizing-historical-data.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/publication-workflow/visualizing-historical-data.html" class="no-external">“A quick introduction on how to gather data using Python, Pandas and Pandas_DataReader in order to easily gather historical times from Yahoo Finance.”</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/publication-workflow/visualizing-historical-data.html" class="no-external">
-<div class="listing-date">
-Mar 3, 2023
-</div>
-<div class="listing-author">
-Vincent D.
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -566,6 +487,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/portfolio-geek\.com");
@@ -901,7 +873,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../../../about.html">
 <p>About | Copyright | Disclaimer</p>
 </a>
   </li>  
