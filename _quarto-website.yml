@@ -3,7 +3,7 @@ project:
   output-dir: _site
   resources:
   - "pictures/*"
-
+ 
 format:
   html:
     author: Vincent D.

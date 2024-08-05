@@ -17,7 +17,7 @@ In today’s curation, we explore key trends and insights impacting financial ma
 - Analysis of the evolving correlation between stocks and bonds, affecting portfolio risk assessment.
 - Insights on private capital valuation and the significance of lagged betas for managing systemic risk.:::
 :::
-
+ 
 :::{#second-column}
 ![Coffee with daily news](/pictures/portfolio-optimisation.png)
 :::
