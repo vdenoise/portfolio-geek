@@ -1,4 +1,4 @@
-figure.figsize: 5, 7
+figure.figsize: 8, 3
 
 # Background colors
 axes.facecolor: white
@@ -8,7 +8,7 @@ figure.facecolor: white
 font.family: Arial
 font.size: 10 
 
-text.color: 12115F
+text.color: 08082E
 axes.labelcolor: gray
 xtick.color: navy
 ytick.color: navy

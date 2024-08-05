@@ -168,7 +168,7 @@ window.Quarto = {
 <meta property="og:site_name" content="Portfolio Geek">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -225,12 +225,12 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -244,7 +244,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -268,20 +268,31 @@ window.Quarto = {
 </header>
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../../pictures/diagram-representing-red-crashing-market-volatility.jpg" class="img-fluid figure-img"></p>
-<figcaption>Market Volatility</figcaption>
-</figure>
-</div>
 <section id="understanding-historical-volatility" class="level1">
 <h1>Understanding Historical Volatility</h1>
 <section id="importance-of-grasping-historical-volatility" class="level2">
 <h2 class="anchored" data-anchor-id="importance-of-grasping-historical-volatility">Importance of Grasping Historical Volatility</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <section id="why-grasping-historical-volatility-is-crucial" class="level3">
 <h3 class="anchored" data-anchor-id="why-grasping-historical-volatility-is-crucial">Why Grasping Historical Volatility is Crucial</h3>
 <p>If you’re a budding financial engineer, investor, or market enthusiast, understanding historical volatility is crucial. Historical volatility, by referencing past price data, offers insights into the market’s perception of risk. Not only does it aid in evaluating the riskiness of an asset, but it also assists in crafting strategies to manage portfolios effectively.</p>
 </section>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="../../../pictures/diagram-representing-red-crashing-market-volatility.jpg" class="img-fluid quarto-figure quarto-figure-right figure-img" style="width:100.0%"></p>
+<figcaption>Market Volatility</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="relevance-in-finance-and-investing" class="level3">
 <h3 class="anchored" data-anchor-id="relevance-in-finance-and-investing">Relevance in Finance and Investing</h3>
 <ol type="1">
@@ -361,11 +372,11 @@ window.Quarto = {
 </details>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>Date
-2019-08-05 00:00:00-04:00   -0.003424
-2019-08-12 00:00:00-04:00   -0.009544
-2019-08-19 00:00:00-04:00   -0.013945
-2019-08-26 00:00:00-04:00    0.026331
-2019-09-02 00:00:00-04:00    0.018967
+2019-08-05   -0.003423
+2019-08-12   -0.009544
+2019-08-19   -0.013944
+2019-08-26    0.026331
+2019-09-02    0.018967
 Name: Close, dtype: float64</code></pre>
 </div>
 </div>
@@ -376,7 +387,7 @@ Name: Close, dtype: float64</code></pre>
 <div id="e21a7af3" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
 <span id="cb4-2"><a href="#cb4-2"></a></span>
 <span id="cb4-3"><a href="#cb4-3"></a><span class="co"># Plotting historical price evolution</span></span>
 <span id="cb4-4"><a href="#cb4-4"></a>plt.figure()</span>
@@ -497,6 +508,7 @@ Name: Close, dtype: float64</code></pre>
 <section id="final-thoughts" class="level3">
 <h3 class="anchored" data-anchor-id="final-thoughts">Final Thoughts</h3>
 <p>By integrating historical volatility into your analysis, you can better navigate the financial markets. Don’t forget, you can always refer to the corresponding video on the Data Driven Minutes Youtube channel for a more visual walkthrough.</p>
+<p><a href="../../../about.html">About us and Disclaimers</a></p>
 
 
 </section>

@@ -276,17 +276,28 @@ window.Quarto = {
 
 <section id="sharpe-ratio-a-must-know-for-every-investor" class="level2">
 <h2 class="anchored" data-anchor-id="sharpe-ratio-a-must-know-for-every-investor">Sharpe Ratio: A Must-Know for Every Investor</h2>
+<div>
+
+</div>
+</section>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<section id="sharpe-ratio-a-must-know-for-every-investor-1" class="level2">
+<h2 class="anchored" data-anchor-id="sharpe-ratio-a-must-know-for-every-investor-1">Sharpe Ratio: A Must-Know for Every Investor</h2>
+<p>As a financial engineer with over 20 years of experience, I understand just how crucial the Sharpe Ratio is for evaluating investments. This essential metric provides a way to measure the risk-adjusted return of a portfolio, enabling smarter investment decisions. Let’s dive into the concept of the Sharpe Ratio and learn how to use Python to analyze and visualize it using real-world examples such as QQQ vs.&nbsp;SPY.</p>
+</section>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../pictures/risk-return-concept.jpg" class="img-fluid figure-img"></p>
 <figcaption>Mitigating Risk and Return</figcaption>
 </figure>
 </div>
-</section>
-<section id="sharpe-ratio-a-must-know-for-every-investor-1" class="level2">
-<h2 class="anchored" data-anchor-id="sharpe-ratio-a-must-know-for-every-investor-1">Sharpe Ratio: A Must-Know for Every Investor</h2>
-<p>As a financial engineer with over 20 years of experience, I understand just how crucial the Sharpe Ratio is for evaluating investments. This essential metric provides a way to measure the risk-adjusted return of a portfolio, enabling smarter investment decisions. Let’s dive into the concept of the Sharpe Ratio and learn how to use Python to analyze and visualize it using real-world examples such as QQQ vs.&nbsp;SPY.</p>
-</section>
+</div>
+</div>
+</div>
 <section id="understanding-the-sharpe-ratio" class="level2">
 <h2 class="anchored" data-anchor-id="understanding-the-sharpe-ratio">Understanding the Sharpe Ratio</h2>
 <section id="what-is-the-sharpe-ratio" class="level3">
@@ -337,7 +348,7 @@ Sharpe Ratio = \frac{R_p - R_f}{\sigma_p}
 <section id="historical-price-data-of-qqq-and-spy" class="level3">
 <h3 class="anchored" data-anchor-id="historical-price-data-of-qqq-and-spy">Historical Price Data of QQQ and SPY</h3>
 <p>Understanding how QQQ (NASDAQ-100) and SPY (S&amp;P 500) performed over the last five years is always a good starting point. This visualization shows their performance trends and helps to lay the groundwork for further analysis.</p>
-<div id="cell-7" class="cell" data-execution_count="1">
+<div id="cell-6" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="op">%%</span>capture</span>
@@ -352,16 +363,15 @@ Sharpe Ratio = \frac{R_p - R_f}{\sigma_p}
 <span id="cb1-10"><a href="#cb1-10"></a><span class="co"># Plot the data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-8" class="cell" data-execution="{}" data-execution_count="2">
+<div id="cell-7" class="cell" data-execution="{}" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a></span>
-<span id="cb2-2"><a href="#cb2-2"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
-<span id="cb2-3"><a href="#cb2-3"></a>data.plot()</span>
-<span id="cb2-4"><a href="#cb2-4"></a>plt.title(<span class="st">'Historical Price Data: QQQ vs. SPY'</span>)</span>
-<span id="cb2-5"><a href="#cb2-5"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
-<span id="cb2-6"><a href="#cb2-6"></a>plt.ylabel(<span class="st">'Adjusted Close Price'</span>)</span>
-<span id="cb2-7"><a href="#cb2-7"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2"></a>data.plot()</span>
+<span id="cb2-3"><a href="#cb2-3"></a>plt.title(<span class="st">'Historical Price Data: QQQ vs. SPY'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb2-5"><a href="#cb2-5"></a>plt.ylabel(<span class="st">'Adjusted Close Price'</span>)</span>
+<span id="cb2-6"><a href="#cb2-6"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -375,14 +385,14 @@ Sharpe Ratio = \frac{R_p - R_f}{\sigma_p}
 <section id="annualized-returns-of-qqq-and-spy" class="level3">
 <h3 class="anchored" data-anchor-id="annualized-returns-of-qqq-and-spy">Annualized Returns of QQQ and SPY</h3>
 <p>Now, let’s compare the annualized returns of QQQ and SPY over the same time period. This helps to evaluate the consistency and average performance of each fund on an annual basis.</p>
-<div id="cell-10" class="cell" data-execution="{}" data-execution_count="3">
+<div id="cell-9" class="cell" data-execution="{}" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Calculate annualized returns</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a>annualized_returns <span class="op">=</span> (((data.iloc[<span class="op">-</span><span class="dv">1</span>] <span class="op">/</span> data.iloc[<span class="dv">0</span>]) <span class="op">**</span> (<span class="dv">1</span> <span class="op">/</span> <span class="dv">5</span>)) <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">100</span></span>
 <span id="cb3-3"><a href="#cb3-3"></a></span>
 <span id="cb3-4"><a href="#cb3-4"></a><span class="co"># Plot the annualized returns</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb3-5"><a href="#cb3-5"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
 <span id="cb3-6"><a href="#cb3-6"></a>annualized_returns.plot(kind<span class="op">=</span><span class="st">'bar'</span>)</span>
 <span id="cb3-7"><a href="#cb3-7"></a>plt.title(<span class="st">'Annualized Returns: QQQ vs. SPY (in %)'</span>)</span>
 <span id="cb3-8"><a href="#cb3-8"></a>plt.xlabel(<span class="st">'ETF'</span>)</span>
@@ -401,14 +411,14 @@ Sharpe Ratio = \frac{R_p - R_f}{\sigma_p}
 <section id="historical-volatility-of-qqq-and-spy" class="level3">
 <h3 class="anchored" data-anchor-id="historical-volatility-of-qqq-and-spy">Historical Volatility of QQQ and SPY</h3>
 <p>To understand the risk associated with each ETF, we will plot their historical volatility. This is computed as the standard deviation of returns over the last five years, highlighting periods of higher volatility.</p>
-<div id="cell-12" class="cell" data-execution="{}" data-execution_count="4">
+<div id="cell-11" class="cell" data-execution="{}" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Calculate historical volatility</span></span>
 <span id="cb4-2"><a href="#cb4-2"></a>volatility <span class="op">=</span> data.pct_change().std() <span class="op">*</span> (<span class="dv">252</span> <span class="op">**</span> <span class="fl">0.5</span>) <span class="op">*</span> <span class="dv">100</span> <span class="co"># Annualized standard deviation</span></span>
 <span id="cb4-3"><a href="#cb4-3"></a></span>
 <span id="cb4-4"><a href="#cb4-4"></a><span class="co"># Plot historical volatility</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb4-5"><a href="#cb4-5"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
 <span id="cb4-6"><a href="#cb4-6"></a>volatility.plot(kind<span class="op">=</span><span class="st">'bar'</span>)</span>
 <span id="cb4-7"><a href="#cb4-7"></a>plt.title(<span class="st">'Historical Volatility: QQQ vs. SPY  (in %)'</span>)</span>
 <span id="cb4-8"><a href="#cb4-8"></a>plt.xlabel(<span class="st">'ETF'</span>)</span>
@@ -427,7 +437,7 @@ Sharpe Ratio = \frac{R_p - R_f}{\sigma_p}
 <section id="calculating-excess-returns-of-qqq-and-spy" class="level3">
 <h3 class="anchored" data-anchor-id="calculating-excess-returns-of-qqq-and-spy">Calculating Excess Returns of QQQ and SPY</h3>
 <p>To move towards the Sharpe Ratio, let’s calculate the excess returns of QQQ and SPY by subtracting the risk-free rate (say, 4% per annum for example) from their respective returns. This sets the stage for understanding how much return is gained relative to a risk-free investment.</p>
-<div id="cell-14" class="cell" data-execution="{}" data-execution_count="5">
+<div id="cell-13" class="cell" data-execution="{}" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>risk_free_rate <span class="op">=</span> <span class="fl">0.04</span></span>
@@ -436,7 +446,7 @@ Sharpe Ratio = \frac{R_p - R_f}{\sigma_p}
 <span id="cb5-4"><a href="#cb5-4"></a>excess_returns <span class="op">=</span> data.pct_change() <span class="op">-</span> risk_free_rate <span class="op">/</span> <span class="dv">252</span></span>
 <span id="cb5-5"><a href="#cb5-5"></a></span>
 <span id="cb5-6"><a href="#cb5-6"></a><span class="co"># Plot the excess returns</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb5-7"><a href="#cb5-7"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
 <span id="cb5-8"><a href="#cb5-8"></a>excess_returns.plot()</span>
 <span id="cb5-9"><a href="#cb5-9"></a>plt.title(<span class="st">'Excess Returns: QQQ vs. SPY'</span>)</span>
 <span id="cb5-10"><a href="#cb5-10"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
@@ -455,14 +465,14 @@ Sharpe Ratio = \frac{R_p - R_f}{\sigma_p}
 <section id="sharpe-ratios-for-qqq-and-spy" class="level3">
 <h3 class="anchored" data-anchor-id="sharpe-ratios-for-qqq-and-spy">Sharpe Ratios for QQQ and SPY</h3>
 <p>Now, let’s calculate and display the Sharpe Ratios for QQQ and SPY. This provides a visual representation of their risk-adjusted performance, giving immediate insight into which asset class, fund or ETF has delivered better returns relative to the risks taken.</p>
-<div id="cell-16" class="cell" data-execution="{}" data-execution_count="6">
+<div id="cell-15" class="cell" data-execution="{}" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Calculate Sharpe Ratios</span></span>
 <span id="cb6-2"><a href="#cb6-2"></a>sharpe_ratio <span class="op">=</span> excess_returns.mean() <span class="op">/</span> excess_returns.std() <span class="op">*</span> (<span class="dv">252</span> <span class="op">**</span> <span class="fl">0.5</span>)</span>
 <span id="cb6-3"><a href="#cb6-3"></a></span>
 <span id="cb6-4"><a href="#cb6-4"></a><span class="co"># Plot the Sharpe Ratios</span></span>
-<span id="cb6-5"><a href="#cb6-5"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb6-5"><a href="#cb6-5"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
 <span id="cb6-6"><a href="#cb6-6"></a>sharpe_ratio.plot(kind<span class="op">=</span><span class="st">'bar'</span>)</span>
 <span id="cb6-7"><a href="#cb6-7"></a>plt.title(<span class="st">'Sharpe Ratio: QQQ vs. SPY'</span>)</span>
 <span id="cb6-8"><a href="#cb6-8"></a>plt.xlabel(<span class="st">'ETF'</span>)</span>
@@ -481,14 +491,14 @@ Sharpe Ratio = \frac{R_p - R_f}{\sigma_p}
 <section id="rolling-sharpe-ratios-for-qqq-and-spy" class="level3">
 <h3 class="anchored" data-anchor-id="rolling-sharpe-ratios-for-qqq-and-spy">Rolling Sharpe Ratios for QQQ and SPY</h3>
 <p>Observing the rolling Sharpe Ratios over a 12-month window provides enhanced insight into how risk-adjusted performance has changed over time under different market conditions.</p>
-<div id="cell-18" class="cell" data-execution="{}" data-execution_count="7">
+<div id="cell-17" class="cell" data-execution="{}" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Calculate rolling Sharpe Ratios</span></span>
 <span id="cb7-2"><a href="#cb7-2"></a>rolling_sharpe <span class="op">=</span> (excess_returns.rolling(window<span class="op">=</span><span class="dv">252</span>).mean() <span class="op">/</span> excess_returns.rolling(window<span class="op">=</span><span class="dv">252</span>).std()) <span class="op">*</span> (<span class="dv">252</span> <span class="op">**</span> <span class="fl">0.5</span>)</span>
 <span id="cb7-3"><a href="#cb7-3"></a></span>
 <span id="cb7-4"><a href="#cb7-4"></a><span class="co"># Plot rolling Sharpe Ratios</span></span>
-<span id="cb7-5"><a href="#cb7-5"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb7-5"><a href="#cb7-5"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
 <span id="cb7-6"><a href="#cb7-6"></a>rolling_sharpe.plot()</span>
 <span id="cb7-7"><a href="#cb7-7"></a>plt.title(<span class="st">'Rolling 12-Month Sharpe Ratio: QQQ vs. SPY'</span>)</span>
 <span id="cb7-8"><a href="#cb7-8"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
@@ -507,14 +517,14 @@ Sharpe Ratio = \frac{R_p - R_f}{\sigma_p}
 <section id="comparing-cumulative-sharpe-ratios-of-qqq-and-spy" class="level3">
 <h3 class="anchored" data-anchor-id="comparing-cumulative-sharpe-ratios-of-qqq-and-spy">Comparing Cumulative Sharpe Ratios of QQQ and SPY</h3>
 <p>Lastly, let’s compare the cumulative Sharpe Ratios of QQQ and SPY against a designated benchmark (e.g., a broader market index). This helps to gauge how well each ETF has outperformed relative to overall market trends.</p>
-<div id="cell-20" class="cell" data-execution="{}" data-execution_count="8">
+<div id="cell-19" class="cell" data-execution="{}" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Calculate cumulative Sharpe Ratios</span></span>
 <span id="cb8-2"><a href="#cb8-2"></a>cumulative_sharpe <span class="op">=</span> ((excess_returns.expanding(min_periods<span class="op">=</span><span class="dv">252</span>).mean()) <span class="op">/</span> excess_returns.expanding().std()) <span class="op">*</span> (<span class="dv">252</span> <span class="op">**</span> <span class="fl">0.5</span>)</span>
 <span id="cb8-3"><a href="#cb8-3"></a></span>
 <span id="cb8-4"><a href="#cb8-4"></a><span class="co"># Plot cumulative Sharpe Ratios</span></span>
-<span id="cb8-5"><a href="#cb8-5"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb8-5"><a href="#cb8-5"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
 <span id="cb8-6"><a href="#cb8-6"></a>cumulative_sharpe.plot()</span>
 <span id="cb8-7"><a href="#cb8-7"></a>plt.title(<span class="st">'Cumulative Sharpe Ratio: QQQ vs. SPY'</span>)</span>
 <span id="cb8-8"><a href="#cb8-8"></a>plt.xlabel(<span class="st">'Date'</span>)</span>
@@ -533,7 +543,7 @@ Sharpe Ratio = \frac{R_p - R_f}{\sigma_p}
 <section id="scatter-plot-of-risk-vs.-return" class="level3">
 <h3 class="anchored" data-anchor-id="scatter-plot-of-risk-vs.-return">Scatter Plot of Risk vs.&nbsp;Return</h3>
 <p>Finally, we will create a scatter plot of risk versus return, plotting the expected returns of QQQ and SPY against their respective standard deviations. This visual representation underscores the efficient frontier concept, providing a comprehensive view of optimal risk-return trade-offs.</p>
-<div id="cell-22" class="cell" data-execution="{}" data-execution_count="9">
+<div id="cell-21" class="cell" data-execution="{}" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Calculate expected returns and standard deviations</span></span>
@@ -541,7 +551,7 @@ Sharpe Ratio = \frac{R_p - R_f}{\sigma_p}
 <span id="cb9-3"><a href="#cb9-3"></a>risk <span class="op">=</span> volatility</span>
 <span id="cb9-4"><a href="#cb9-4"></a></span>
 <span id="cb9-5"><a href="#cb9-5"></a><span class="co"># Scatter plot of risk vs. return</span></span>
-<span id="cb9-6"><a href="#cb9-6"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb9-6"><a href="#cb9-6"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
 <span id="cb9-7"><a href="#cb9-7"></a>plt.scatter(risk, expected_returns, label<span class="op">=</span>[<span class="st">'QQQ'</span>, <span class="st">'SPY'</span>])</span>
 <span id="cb9-8"><a href="#cb9-8"></a><span class="cf">for</span> i, txt <span class="kw">in</span> <span class="bu">enumerate</span>(risk.index):</span>
 <span id="cb9-9"><a href="#cb9-9"></a>    plt.annotate(txt, (risk[i], expected_returns[i]))</span>

@@ -272,14 +272,14 @@ window.Quarto = {
 
 <section id="maximum-drawdown-a-practical-approach-with-python" class="level1">
 <h1>Maximum Drawdown: A Practical Approach with Python</h1>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../../pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" class="img-fluid figure-img"></p>
-<figcaption>Maximum Drawdown in essentially a measure of investment risk</figcaption>
-</figure>
-</div>
 <section id="the-importance-of-maximum-drawdown" class="level2">
 <h2 class="anchored" data-anchor-id="the-importance-of-maximum-drawdown">1: The Importance of Maximum Drawdown</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <section id="significance-of-maximum-drawdown" class="level3">
 <h3 class="anchored" data-anchor-id="significance-of-maximum-drawdown">1.1 Significance of Maximum Drawdown</h3>
 <p>Maximum Drawdown (MDD) is a critical risk metric for investors. It quantifies the largest peak-to-trough decline in an investment’s value over a specified period, providing insights into potential losses during market downturns. Understanding MDD helps investors gauge the risk profile of their investments and make informed decisions.</p>
@@ -288,6 +288,17 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="contextualizing-mdd-in-financial-analysis">1.2 Contextualizing MDD in Financial Analysis</h3>
 <p>In today’s volatile markets, comprehending the MDD of assets like QQQ (a NASDAQ ETF) and SPY (a S&amp;P 500 ETF) can bring some help in grasping the risk of a particular asset. Such analysis provides a comparative view of the resilience of individual stocks versus market indices, aiding in better portfolio management.</p>
 </section>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="../../../pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" class="img-fluid quarto-figure quarto-figure-right figure-img"></p>
+<figcaption>Maximum Drawdown is an important measure of investment risk</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="objective" class="level3">
 <h3 class="anchored" data-anchor-id="objective">1.3 Objective</h3>
 <p>This blog aims to introduce Python enthusiasts and portfolio managers to the concept of Maximum Drawdown, demonstrating how to calculate and visualize it using Python libraries like pandas, yfinance, and matplotlib.</p>
@@ -340,7 +351,7 @@ MDD = \frac{P_{\text{peak}} - P_{\text{trough}}}{P_{\text{peak}}} \times 100
 <span id="cb1-4"><a href="#cb1-4"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-5"><a href="#cb1-5"></a></span>
 <span id="cb1-6"><a href="#cb1-6"></a><span class="co"># Define the style</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb1-7"><a href="#cb1-7"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
 <span id="cb1-8"><a href="#cb1-8"></a></span>
 <span id="cb1-9"><a href="#cb1-9"></a><span class="co"># Download data</span></span>
 <span id="cb1-10"><a href="#cb1-10"></a>data <span class="op">=</span> yf.download([<span class="st">'QQQ'</span>, <span class="st">'SPY'</span>], start<span class="op">=</span><span class="st">'2018-01-01'</span>, end<span class="op">=</span><span class="st">'2024-08-01'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -399,8 +410,9 @@ MDD = \frac{P_{\text{peak}} - P_{\text{trough}}}{P_{\text{peak}}} \times 100
 <section id="explore-more" class="level3">
 <h3 class="anchored" data-anchor-id="explore-more">Explore More</h3>
 <p>Feel free to explore and test the code snippets provided. Check out the corresponding video on the Data Driven Minutes Youtube channel for a step-by-step guide.</p>
-<p>Thanks for passing by and see you in the next article!</p>
+<p>Thanks for popping by and see you in the next article!</p>
 <p>Vincent</p>
+<p><a href="../../../about.html">About us and Disclaimers</a></p>
 
 
 </section>
