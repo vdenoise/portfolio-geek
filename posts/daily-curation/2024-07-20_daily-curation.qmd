@@ -8,12 +8,23 @@ tags: [openai, gpt-4o, generative, content, fitness, bitcoin, correlation, etfs,
 image: /pictures/blog-post.png
 ---
 
+::: {layout-ncol=2}
+
+:::{#first-column}
 In today's curation, we explore several noteworthy topics that highlight recent developments and insights in technology and finance:
 
 - OpenAI's launch of the more affordable GPT-4o mini.
 - Strategies for creating effective content prompts for generative AI.
 - The benefits of hill repeats for cardiovascular fitness.
 - Bitcoin's evolving relationship with the S&P 500 and its rising status as a safe-haven asset.
+
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/blog-post.png)
+:::
+
+:::
 
 
 

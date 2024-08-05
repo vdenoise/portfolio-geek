@@ -8,6 +8,12 @@ tags: [climate, bitcoin, etfs, investment, performance, hedge, growth, strategy,
 image: /pictures/books-and-a-cup-of-coffee-on-a-wooden-background.jpg
 ---
 
+
+::: {layout-ncol=2}
+
+:::{#first-column}
+
+
 In today's curation, we explore a variety of financial topics that reflect current trends and strategies. Key highlights include:
 
 - Record global temperature anomalies and implications for markets
@@ -21,6 +27,13 @@ In today's curation, we explore a variety of financial topics that reflect curre
 
 Please find the details in the table below.
 
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/books-and-a-cup-of-coffee-on-a-wooden-background.jpg)
+:::
+
+:::
 
 
 # Climate

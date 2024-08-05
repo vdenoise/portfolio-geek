@@ -8,6 +8,9 @@ tags: [inflation, stocks, etfs, consumer, interest, rates, discounts, diversific
 image: /pictures/mathematics-formulas-on-a-blackboard.png
 ---
 
+::: {layout-ncol=2}
+
+:::{#first-column}
 In today's curation, we explore a range of critical financial topics that impact current market dynamics:
 
 - The New York Fed's inflation and output growth predictions
@@ -19,7 +22,14 @@ In today's curation, we explore a range of critical financial topics that impact
 - The Moat Index's recent findings on market trends
 - The benefits of automatic retirement savings 
 - Recovery signs in the banking sector 
-- The complexities of maintaining a balanced investment portfolio
+- The complexities of maintaining a balanced investment portfolio:::
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/mathematics-formulas-on-a-blackboard.png)
+:::
+
+:::
 
 
 

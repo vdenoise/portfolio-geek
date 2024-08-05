@@ -8,11 +8,24 @@ tags: [bash, python, perl, automation, scripting, trend-following, diversificati
 image: /pictures/stock-valuation.png
 ---
 
+
+::: {layout-ncol=2}
+
+:::{#first-column}
+
 In today's curation, we explore several crucial topics in financial technology and market strategies. The highlights include:
 
 - Scripting languages like Bash, Python, and Perl for task automation in Linux.
 - A trend-following investment strategy framework by Dobromir Tzotchev focusing on risk management and portfolio diversification.
 - An overview of Large Language Models (LLMs) and their evolution in natural language processing.
+
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/stock-valuation.png)
+:::
+
+:::
 
 
 

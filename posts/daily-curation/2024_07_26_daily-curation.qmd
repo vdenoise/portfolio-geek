@@ -8,6 +8,11 @@ tags: [search, ai, bitcoin, etf, lending, inflation, food, markets, investments,
 image: /pictures/article-in-newspaper.jpg
 ---
 
+
+::: {layout-ncol=2}
+
+:::{#first-column}
+
 In today's curation, we explore a range of important financial and technological developments that may impact various sectors. Key topics include:
 
 - Launch of OpenAI's SearchGPT for enhanced search experiences
@@ -22,6 +27,13 @@ In today's curation, we explore a range of important financial and technological
 - Financial planning advice for baby boomers on wealth gifting
 
 Please see the table below for more details on each topic.
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/article-in-newspaper.jpg)
+:::
+
+:::
 
 
 

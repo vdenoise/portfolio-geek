@@ -8,6 +8,9 @@ tags: [investments, growth, risks, margins, markets, wages, performance, technol
 image: /pictures/time-horizon-paper.png
 ---
 
+::: {layout-ncol=2}
+
+:::{#first-column}
 In today's curation, we explore key developments in finance and investment. The following topics are highlighted:
 
 - Asset managers and declining profit margins
@@ -19,6 +22,14 @@ In today's curation, we explore key developments in finance and investment. The 
 - Burberry's challenging first-quarter results
 - Growth in India's equity market
 - S&P 500 earnings growth expectations for Q2
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/time-horizon-paper.png)
+:::
+
+:::
+
 
 
 

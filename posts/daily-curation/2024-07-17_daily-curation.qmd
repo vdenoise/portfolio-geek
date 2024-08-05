@@ -1,5 +1,5 @@
 ---
-title: "Today's Curation  (15.07.24): Master Python Trading with Alpaca, Retirement Strategies, & Managing Risks with Options"
+title: "Today's Curation  (17.07.24): Master Python Trading with Alpaca, Retirement Strategies, & Managing Risks with Options"
 page-layout: full
 title-block-banner: true
 date: 07-17-2024
@@ -8,6 +8,9 @@ tags: [retirement, trading, python, hedging, economics, recession, risk, allocat
 image: /pictures/laptop-data.png
 ---
 
+::: {layout-ncol=2}
+
+:::{#first-column}
 In this curation for 17/07/2024, we explore a range of financial concepts and strategies that can enhance your investment approach:
 
 - Retirement planning frameworks: the 4% and 25x rules
@@ -21,7 +24,14 @@ In this curation for 17/07/2024, we explore a range of financial concepts and st
 - Analysis of China's real estate market impacts 
 - Tactical asset allocation strategies 
 
-This selection aims to provide insights into both practical trading techniques and broader economic theories.
+This selection aims to provide insights into both practical trading techniques and broader economic theories.:::
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/laptop-data.png)
+:::
+
+:::
 
 
 

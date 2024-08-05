@@ -8,6 +8,10 @@ tags: [bitcoin, financing, mining, hashrate, etfs, yields, s&p500, decline, trea
 image: /pictures/pile-of-newspapers.jpg
 ---
 
+::: {layout-ncol=2}
+
+:::{#first-column}
+
 In today's curation, we explore notable developments in financial markets, including:
 
 - Howard Lutnick's $2 billion Bitcoin financing initiative.
@@ -17,6 +21,15 @@ In today's curation, we explore notable developments in financial markets, inclu
 - Invesco's XSVM ETF reaching a 52-week high.
 
 Below is a detailed overview of these topics.
+
+
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/pile-of-newspapers.jpg)
+:::
+
+:::
 
 
 

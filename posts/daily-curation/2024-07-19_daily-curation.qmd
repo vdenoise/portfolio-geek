@@ -8,11 +8,21 @@ tags: [investors stocks bonds volatility capital allocation risk diversification
 image: /pictures/portfolio-optimisation.png
 ---
 
+::: {layout-ncol=2}
+
+:::{#first-column}
 In today’s curation, we explore key trends and insights impacting financial markets:
 
 - Shift in investor sentiment from large-cap to small-cap stocks due to potential Fed interest rate cuts, leading to short squeeze opportunities.
 - Analysis of the evolving correlation between stocks and bonds, affecting portfolio risk assessment.
-- Insights on private capital valuation and the significance of lagged betas for managing systemic risk.
+- Insights on private capital valuation and the significance of lagged betas for managing systemic risk.:::
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/portfolio-optimisation.png)
+:::
+
+:::
 
 
 

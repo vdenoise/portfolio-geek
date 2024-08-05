@@ -8,6 +8,9 @@ tags: [data, visualization, inflation, geopolitics, equity, factors, growth, sus
 image: /pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg
 ---
 
+::: {layout-ncol=2}
+
+:::{#first-column}
 In today's curation, we cover a range of topics relevant to financial markets and data analysis:
 
 - **Pandas Plot**: Simplifying data visualization with one-line plotting from dataframes.
@@ -17,6 +20,13 @@ In today's curation, we cover a range of topics relevant to financial markets an
 
 Please explore the details in the table below.
 
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg)
+:::
+
+:::
 
 
 # Coding

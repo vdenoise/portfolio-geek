@@ -8,6 +8,10 @@ tags: [models, climate, emissions, python, etfs, commodities, hedge, traffic, cy
 image: /pictures/cup-of-coffee-and-a-newspaper.jpg
 ---
 
+::: {layout-ncol=2}
+
+:::{#first-column}
+
 In today's curation, we explore a variety of topics that reflect current trends and developments in technology, finance, and environmental concerns. Key highlights include:
 
 - Advances in large language models and their token processing capabilities.
@@ -18,6 +22,14 @@ In today's curation, we explore a variety of topics that reflect current trends 
 - New features in navigation apps like Google Maps and Waze.
 - The recent challenges faced by cybersecurity firm CrowdStrike.
 
+
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/cup-of-coffee-and-a-newspaper.jpg)
+:::
+
+:::
 
 
 # AI and Gen-AI

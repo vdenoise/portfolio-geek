@@ -8,6 +8,10 @@ tags: [climate, testing, pytest, sql, ai, rates, gdp, etfs, stocks, growth]
 image: /pictures/stack-of-paper.jpg
 ---
 
+::: {layout-ncol=2}
+
+:::{#first-column}
+
 In today's curation, we explore various pressing topics currently shaping the financial landscape:
 
 - Record high temperatures and climate change implications
@@ -21,6 +25,14 @@ In today's curation, we explore various pressing topics currently shaping the fi
 - Small-cap stock performance trends and future forecasts
 
 Happy reading!
+
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/stack-of-paper.jpg)
+:::
+
+:::
 
 
 

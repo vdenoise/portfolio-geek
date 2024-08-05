@@ -847,6 +847,12 @@ font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore a variety of financial topics that reflect current trends and strategies. Key highlights include:</p>
 <ul>
 <li>Record global temperature anomalies and implications for markets</li>
@@ -859,6 +865,17 @@ font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
 <li>August home maintenance tips</li>
 </ul>
 <p>Please find the details in the table below.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/books-and-a-cup-of-coffee-on-a-wooden-background.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="climate" class="level1">
 <h1>Climate</h1>
 <table class="table">
@@ -1401,6 +1418,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore a variety of topics pertinent to the intersection of technology and finance:</p>
 <ul>
 <li>Challenges in the generative AI market regarding business models and costs</li>
@@ -1410,6 +1433,17 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>Six SQL optimization tips for improved performance in Snowflake</li>
 </ul>
 <p>Please find the details in the table below.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
 <table class="table">
@@ -1490,6 +1524,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore a variety of topics that reflect current trends and developments in technology, finance, and environmental concerns. Key highlights include:</p>
 <ul>
 <li>Advances in large language models and their token processing capabilities.</li>
@@ -1500,6 +1540,17 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>New features in navigation apps like Google Maps and Waze.</li>
 <li>The recent challenges faced by cybersecurity firm CrowdStrike.</li>
 </ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/cup-of-coffee-and-a-newspaper.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
 <table class="table">
@@ -1638,6 +1689,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore various pressing topics currently shaping the financial landscape:</p>
 <ul>
 <li>Record high temperatures and climate change implications</li>
@@ -1651,6 +1708,17 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>Small-cap stock performance trends and future forecasts</li>
 </ul>
 <p>Happy reading!</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/stack-of-paper.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="climate" class="level1">
 <h1>Climate</h1>
 <table class="table">
@@ -1779,6 +1847,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore notable developments in financial markets, including:</p>
 <ul>
 <li>Howard Lutnick’s $2 billion Bitcoin financing initiative.</li>
@@ -1788,6 +1862,17 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>Invesco’s XSVM ETF reaching a 52-week high.</li>
 </ul>
 <p>Below is a detailed overview of these topics.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/pile-of-newspapers.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="crypto-news-and-analysis" class="level1">
 <h1>Crypto News and Analysis</h1>
 <table class="table">
@@ -1868,6 +1953,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore a range of important financial and technological developments that may impact various sectors. Key topics include:</p>
 <ul>
 <li>Launch of OpenAI’s SearchGPT for enhanced search experiences</li>
@@ -1882,6 +1973,17 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>Financial planning advice for baby boomers on wealth gifting</li>
 </ul>
 <p>Please see the table below for more details on each topic.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/article-in-newspaper.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
 <table class="table">
@@ -2038,6 +2140,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore several significant developments impacting financial markets and investment strategies. Key topics include:</p>
 <ul>
 <li>Climate pollution trends and the role of clean energy.</li>
@@ -2045,7 +2153,18 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>Updates on hedge fund negotiations with Ukraine.</li>
 <li>Trends in US Treasury debt and investor sentiment.</li>
 </ul>
-<p>Below is a detailed summary of these topics.</p>
+<p>Below is a detailed summary of these topics.:::</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/morning-news-in-the-office-2023-11-27-04-50-01-utc.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="climate" class="level1">
 <h1>Climate</h1>
 <table class="table">
@@ -2139,6 +2258,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore a range of topics relevant to quantitative finance and market insights:</p>
 <ul>
 <li>GroupBy operations in pandas for data analysis</li>
@@ -2150,6 +2275,17 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>Market performance under the Biden administration</li>
 </ul>
 <p>Please find further details in the table below.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/news-concept-with-newspapers-2023-11-27-05-32-59-utc.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="coding" class="level1">
 <h1>Coding</h1>
 <table class="table">
@@ -2260,6 +2396,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore a diverse range of topics relevant to finance and technology, encompassing:</p>
 <ul>
 <li>Geospatial interpolation methods for EV battery performance analysis</li>
@@ -2274,6 +2416,17 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>Plum’s recent funding and growth trajectory</li>
 </ul>
 <p>Please see the table below for links and descriptions of each topic.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/newspaper-stack-on-table-2023-11-27-05-14-30-utc.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="coding" class="level1">
 <h1>Coding</h1>
 <table class="table">
@@ -2388,6 +2541,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we cover a range of topics relevant to financial markets and data analysis:</p>
 <ul>
 <li><strong>Pandas Plot</strong>: Simplifying data visualization with one-line plotting from dataframes.</li>
@@ -2396,6 +2555,17 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li><strong>YouTube Shorts Management</strong>: Tips on disabling Shorts for a cleaner experience.</li>
 </ul>
 <p>Please explore the details in the table below.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="coding" class="level1">
 <h1>Coding</h1>
 <table class="table">
@@ -2486,6 +2656,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore various topics relevant to finance and data analysis, including:</p>
 <ul>
 <li>Analyzing competitive segments on Strava using R</li>
@@ -2495,6 +2671,17 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>Economic forecasts indicating a potential U.S. recession</li>
 </ul>
 <p>Please find the detailed articles and resources in the table below.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/laptop-plant-and-stack-of-newspapers-on-wooden-ta-2023-11-27-05-12-11-utc.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="coding" class="level1">
 <h1>Coding</h1>
 <table class="table">
@@ -2575,6 +2762,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore several noteworthy topics that highlight recent developments and insights in technology and finance:</p>
 <ul>
 <li>OpenAI’s launch of the more affordable GPT-4o mini.</li>
@@ -2582,6 +2775,17 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>The benefits of hill repeats for cardiovascular fitness.</li>
 <li>Bitcoin’s evolving relationship with the S&amp;P 500 and its rising status as a safe-haven asset.</li>
 </ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/blog-post.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
 <table class="table">
@@ -2672,12 +2876,29 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore key trends and insights impacting financial markets:</p>
 <ul>
 <li>Shift in investor sentiment from large-cap to small-cap stocks due to potential Fed interest rate cuts, leading to short squeeze opportunities.</li>
 <li>Analysis of the evolving correlation between stocks and bonds, affecting portfolio risk assessment.</li>
-<li>Insights on private capital valuation and the significance of lagged betas for managing systemic risk.</li>
+<li>Insights on private capital valuation and the significance of lagged betas for managing systemic risk.:::</li>
 </ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/portfolio-optimisation.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="market-pulse-market-news" class="level1">
 <h1>Market Pulse &amp; Market News</h1>
 <table class="table">
@@ -2736,12 +2957,29 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore several crucial topics in financial technology and market strategies. The highlights include:</p>
 <ul>
 <li>Scripting languages like Bash, Python, and Perl for task automation in Linux.</li>
 <li>A trend-following investment strategy framework by Dobromir Tzotchev focusing on risk management and portfolio diversification.</li>
 <li>An overview of Large Language Models (LLMs) and their evolution in natural language processing.</li>
 </ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/stock-valuation.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="automation" class="level1">
 <h1>Automation</h1>
 <table class="table">
@@ -2805,7 +3043,7 @@ font-style: inherit;">'Volatility'</span>)</span>
   <media:content url="https://portfolio-geek.com/pictures/stock-valuation.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
-  <title>Today’s Curation (15.07.24): Master Python Trading with Alpaca, Retirement Strategies, &amp; Managing Risks with Options</title>
+  <title>Today’s Curation (17.07.24): Master Python Trading with Alpaca, Retirement Strategies, &amp; Managing Risks with Options</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024-07-17_daily-curation.html</link>
   <description><![CDATA[ 
@@ -2814,6 +3052,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In this curation for 17/07/2024, we explore a range of financial concepts and strategies that can enhance your investment approach:</p>
 <ul>
 <li>Retirement planning frameworks: the 4% and 25x rules</li>
@@ -2827,7 +3071,18 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>Analysis of China’s real estate market impacts</li>
 <li>Tactical asset allocation strategies</li>
 </ul>
-<p>This selection aims to provide insights into both practical trading techniques and broader economic theories.</p>
+<p>This selection aims to provide insights into both practical trading techniques and broader economic theories.:::</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/laptop-data.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="asset-management" class="level1">
 <h1>Asset Management</h1>
 <table class="table">
@@ -2956,6 +3211,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore key developments in finance and investment. The following topics are highlighted:</p>
 <ul>
 <li>Asset managers and declining profit margins</li>
@@ -2968,6 +3229,17 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>Growth in India’s equity market</li>
 <li>S&amp;P 500 earnings growth expectations for Q2</li>
 </ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/time-horizon-paper.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="asset-management" class="level1">
 <h1>Asset Management</h1>
 <table class="table">
@@ -3082,6 +3354,12 @@ font-style: inherit;">'Volatility'</span>)</span>
 
 
 
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>In today’s curation, we explore a range of critical financial topics that impact current market dynamics:</p>
 <ul>
 <li>The New York Fed’s inflation and output growth predictions</li>
@@ -3093,8 +3371,19 @@ font-style: inherit;">'Volatility'</span>)</span>
 <li>The Moat Index’s recent findings on market trends</li>
 <li>The benefits of automatic retirement savings</li>
 <li>Recovery signs in the banking sector</li>
-<li>The complexities of maintaining a balanced investment portfolio</li>
+<li>The complexities of maintaining a balanced investment portfolio:::</li>
 </ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/mathematics-formulas-on-a-blackboard.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <section id="economics" class="level1">
 <h1>Economics</h1>
 <table class="table">

@@ -8,6 +8,9 @@ tags: [temperature, transparency, returns, inflation, analysts, forecasting, phy
 image: /pictures/newspaper-stack-on-table-2023-11-27-05-14-30-utc.png
 ---
 
+::: {layout-ncol=2}
+
+:::{#first-column}
 In today's curation, we explore a diverse range of topics relevant to finance and technology, encompassing:
 
 - Geospatial interpolation methods for EV battery performance analysis
@@ -22,6 +25,13 @@ In today's curation, we explore a diverse range of topics relevant to finance an
 - Plum's recent funding and growth trajectory
 
 Please see the table below for links and descriptions of each topic.
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/newspaper-stack-on-table-2023-11-27-05-14-30-utc.png)
+:::
+
+:::
 
 
 

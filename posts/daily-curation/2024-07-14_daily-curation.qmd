@@ -8,6 +8,9 @@ tags: [automation, emissions, climate, policy, finance, sustainability, technolo
 image: /pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg
 ---
 
+::: {layout-ncol=2}
+
+:::{#first-column}
 In today's curation, I present a range of insights related to finance, climate change, and technological advancements. Key topics include:
 
 - Quick tips for creating engaging social media content using ChatGPT
@@ -17,6 +20,14 @@ In today's curation, I present a range of insights related to finance, climate c
 - Recent record-high global temperatures and their implications
 
 Please find detailed summaries in the table below.
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg)
+:::
+
+:::
+
 
 
 

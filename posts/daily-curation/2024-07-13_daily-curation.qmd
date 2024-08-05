@@ -8,6 +8,9 @@ tags: [evs, impact, renewable, etfs, housing, inflation, tuition, inventory, inv
 image: /pictures/blog-post.png
 ---
 
+::: {layout-ncol=2}
+
+:::{#first-column}
 As of July 13, 2024, today's curation highlights key developments in finance, energy, and educational initiatives. Below are the summarized topics:
 
 - The financial benefits of electric vehicles for rural families in the US.
@@ -19,6 +22,13 @@ As of July 13, 2024, today's curation highlights key developments in finance, en
 - Johns Hopkins Medical School's significant donation for free tuition.
 - Recent ETF inflows, particularly in core equity and bonds.
 - Insights on the impact of passive investing on market dynamics.
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/blog-post.png)
+:::
+
+:::
 
 
 # Climate
