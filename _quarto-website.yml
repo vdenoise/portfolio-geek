@@ -14,9 +14,11 @@ format:
     code-fold: true
     link-external-newwindow: true
     code-line-numbers: true
-    code-tools:
-      source: repo
     highlight-style: dracula
+    code-tools:
+      source: true
+      toggle: false
+      caption: none
 
 website:
   title: "Portfolio Geek"
@@ -32,6 +34,7 @@ website:
     style: headline
     palette: light
   repo-url: "https://github.com/vdenoise/portfolio-geek/"
+
   description: "Finance, Research and the Tech required to Fuel them"
   repo-branch: "master"
   navbar:

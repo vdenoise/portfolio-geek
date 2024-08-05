@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -167,7 +201,7 @@ cookieconsent.run({
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page">
-      <div class="quarto-title-block"><div><h1 class="title">Daily Insights (16.07.24): Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/daily-curation/2024-07-16_daily-curation.qmd"><i class="bi"></i> Code</button></div></div>
+      <div class="quarto-title-block"><div><h1 class="title">Daily Insights (16.07.24): Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
                                 <div class="quarto-categories">
                 <div class="quarto-category">asset-management</div>
                 <div class="quarto-category">economics</div>
@@ -330,6 +364,8 @@ cookieconsent.run({
 </tbody>
 </table>
 
+
+<!-- -->
 
 </section>
 
@@ -789,7 +825,68 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Daily Insights (16.07.24): Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="an">date:</span><span class="co"> 07-16-2024</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="an">categories:</span><span class="co"> [asset-management,economics,etf,fundamental]</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="an">tags:</span><span class="co"> [investments, growth, risks, margins, markets, wages, performance, technology, adaptation, revenue]</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="an">image:</span><span class="co"> /pictures/time-horizon-paper.png</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co">---</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a>::: {layout-ncol=2}</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>:::{#first-column}</span>
+<span id="cb1-14"><a href="#cb1-14"></a>In today's curation, we explore key developments in finance and investment. The following topics are highlighted:</span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="ss">- </span>Asset managers and declining profit margins</span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="ss">- </span>Evolution of passive investing in fixed income</span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="ss">- </span>Growth of E-mini Nasdaq-100 futures</span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="ss">- </span>Impact of severe weather on shipping near South Africa</span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="ss">- </span>Wage growth trends for low-wage workers</span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="ss">- </span>Benchmarking private capital effectively</span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="ss">- </span>Burberry's challenging first-quarter results</span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="ss">- </span>Growth in India's equity market</span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="ss">- </span>S&amp;P 500 earnings growth expectations for Q2</span>
+<span id="cb1-25"><a href="#cb1-25"></a>:::</span>
+<span id="cb1-26"><a href="#cb1-26"></a></span>
+<span id="cb1-27"><a href="#cb1-27"></a>:::{#second-column}</span>
+<span id="cb1-28"><a href="#cb1-28"></a><span class="al">![Coffee with daily news](/pictures/time-horizon-paper.png)</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a>:::</span>
+<span id="cb1-30"><a href="#cb1-30"></a></span>
+<span id="cb1-31"><a href="#cb1-31"></a>:::</span>
+<span id="cb1-32"><a href="#cb1-32"></a></span>
+<span id="cb1-33"><a href="#cb1-33"></a></span>
+<span id="cb1-34"><a href="#cb1-34"></a></span>
+<span id="cb1-35"><a href="#cb1-35"></a></span>
+<span id="cb1-36"><a href="#cb1-36"></a><span class="fu"># Asset Management</span></span>
+<span id="cb1-37"><a href="#cb1-37"></a>| Title | Summary |</span>
+<span id="cb1-38"><a href="#cb1-38"></a>|-----|-----------|</span>
+<span id="cb1-39"><a href="#cb1-39"></a>| <span class="co">[</span><span class="ot">Why Asset Managers Struggle Despite Booming Markets: Rising Costs and the Push for Alternative Investments Explained (Casey Quirk, 2024-07-15)</span><span class="co">](https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner)</span>   | Asset managers face declining profit margins despite rising markets, driven by increased operating costs and weak inflows, prompting a focus on alternative investments for growth and adaptation. |</span>
+<span id="cb1-40"><a href="#cb1-40"></a>| <span class="co">[</span><span class="ot">Unlocking Precision and Efficiency: Why Passive Fixed Income Strategies Are Transforming Modern Investment Portfolios (Northern Trust Asset Management., 2024-07-16)</span><span class="co">](https://www.institutionalinvestor.com/article/2dg5aji7ohkluumcrwy68/innovation/index-investing-as-an-active-decision-implications-for-fixed-income-investors)</span>   | Passive investing in fixed income has evolved, offering customization, precision, and better risk management, despite challenges like liquidity and replication concerns, attracting more investments than active strategies. |</span>
+<span id="cb1-41"><a href="#cb1-41"></a>| <span class="co">[</span><span class="ot">Navigating Tech Sector Growth: How E-mini Nasdaq-100 Futures Shape Modern Investment and Risk Management Strategies (Seeking Alpha, 2024-07-16)</span><span class="co">](https://seekingalpha.com/article/4703878-tech-growth-25-years-nasdaq-futures)</span>   | E-mini Nasdaq-100 futures, launched in 1999, have grown substantially in volume, reflecting the importance of technology stocks and risk management in today's market landscape. |</span>
+<span id="cb1-42"><a href="#cb1-42"></a></span>
+<span id="cb1-43"><a href="#cb1-43"></a><span class="fu"># Economics</span></span>
+<span id="cb1-44"><a href="#cb1-44"></a>| Title | Summary |</span>
+<span id="cb1-45"><a href="#cb1-45"></a>|-----|-----------|</span>
+<span id="cb1-46"><a href="#cb1-46"></a>| <span class="co">[</span><span class="ot">Shipping Chaos: Violent Storms Off South Africa Cause Major Disruptions and Container Losses (Bloomberg, 2024-07-15)</span><span class="co">](https://finance.yahoo.com/news/ships-fleeing-red-sea-now-160349344.html)</span>   | Ships near South Africa face severe weather, causing container losses and delays. Many vessels are diverting routes to avoid risk from Houthi militants in the Red Sea. |</span>
+<span id="cb1-47"><a href="#cb1-47"></a>| <span class="co">[</span><span class="ot">Pandemic Policies Fuel Unprecedented Wage Growth for Low-Wage Workers Over Recent Four-Year Period (Economic Policy Institute, 2024-07-16)</span><span class="co">](https://angrybearblog.com/2024/06/fastest-wage-growth-over-the-last-four-years)</span>   | Low-wage workers experienced significant wage growth of 12.1% from 2019 to 2023, driven by policy responses and a tight labor market, marking a departure from historical trends. |</span>
+<span id="cb1-48"><a href="#cb1-48"></a></span>
+<span id="cb1-49"><a href="#cb1-49"></a><span class="fu"># ETFs and Index Investing</span></span>
+<span id="cb1-50"><a href="#cb1-50"></a>| Title | Summary |</span>
+<span id="cb1-51"><a href="#cb1-51"></a>|-----|-----------|</span>
+<span id="cb1-52"><a href="#cb1-52"></a>| <span class="co">[</span><span class="ot">Unlocking the Secrets of Private Capital Performance: A Smart Guide to Benchmarking and Index Creation (MSCI, 2024-07-16)</span><span class="co">](https://www.msci.com/www/blog-posts/the-cornerstones-of/04783300823)</span>   | Benchmarking private capital requires accurate data, defined inclusion criteria, and a strong governance framework to measure performance through various index types and calculations effectively. |</span>
+<span id="cb1-53"><a href="#cb1-53"></a></span>
+<span id="cb1-54"><a href="#cb1-54"></a><span class="fu"># Fundamental Investing</span></span>
+<span id="cb1-55"><a href="#cb1-55"></a>| Title | Summary |</span>
+<span id="cb1-56"><a href="#cb1-56"></a>|-----|-----------|</span>
+<span id="cb1-57"><a href="#cb1-57"></a>| <span class="co">[</span><span class="ot">Asset Managers' Profits Decline Despite Market Growth, Rising Costs and Innovation Needs Challenge Firms (Institutional Investor., 2024-07-15)</span><span class="co">](https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner)</span>   | Asset managers face declining profit margins due to rising costs, weak inflows, and the need for innovation despite a strong stock market. Strategic adaptation is essential for future success. |</span>
+<span id="cb1-58"><a href="#cb1-58"></a>| <span class="co">[</span><span class="ot">Burberry Faces Tough Quarter: Sales Drop, CEO Resigns, and Brand Strategy Questioned (Sherwood, 2024-07-15)</span><span class="co">](https://sherwood.news/markets/europes-luxury-stocks-have-boomed-burberry-got-left-behind/)</span>   | Burberry's first-quarter results showed a 22% revenue drop, CEO resignation, dividend suspension, and declining sales, prompting challenges for the new CEO amidst declining brand exclusivity and market presence. |</span>
+<span id="cb1-59"><a href="#cb1-59"></a>| <span class="co">[</span><span class="ot">India's Equity Market Evolution: New Listings, Venture-Backed Firms, and Potential Power Shifts for Global Investors (MSCI, 2024-07-16)</span><span class="co">](https://www.msci.com/www/blog-posts/india-s-changed-and-changing/04777168512)</span>   | India's equity market shows significant growth, with over 300 new companies since 2020, highlighting changes in industry profiles and future potential from private market entrants. |</span>
+<span id="cb1-60"><a href="#cb1-60"></a>| <span class="co">[</span><span class="ot">S&amp;P 500 Earnings Surge: Historical Data Predicts Over 12% Growth for Q2, Outperforming Estimates (FactSet, 2024-07-16)</span><span class="co">](https://insight.factset.com/sp-500-will-likely-report-earnings-growth-of-at-least-12-for-q2)</span>   | S&amp;P 500 expected to report earnings growth above 12% for Q2, supported by historical trends of exceeding estimates, with 81% of companies reporting higher EPS so far. |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -167,7 +201,7 @@ cookieconsent.run({
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page">
-      <div class="quarto-title-block"><div><h1 class="title">Today’s Financial Curation (15.07.24): Fed’s Inflation Forecast, Q2 Earnings Surge, ETF Market Shifts, and Automatic Savings Boost</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/daily-curation/2024-07-15_daily-curation.qmd"><i class="bi"></i> Code</button></div></div>
+      <div class="quarto-title-block"><div><h1 class="title">Today’s Financial Curation (15.07.24): Fed’s Inflation Forecast, Q2 Earnings Surge, ETF Market Shifts, and Automatic Savings Boost</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
                                 <div class="quarto-categories">
                 <div class="quarto-category">economics</div>
                 <div class="quarto-category">fundamental</div>
@@ -331,6 +365,8 @@ cookieconsent.run({
 </tbody>
 </table>
 
+
+<!-- -->
 
 </section>
 
@@ -790,7 +826,68 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Today's Financial Curation (15.07.24): Fed's Inflation Forecast, Q2 Earnings Surge, ETF Market Shifts, and Automatic Savings Boost"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="an">date:</span><span class="co"> 07-15-2024</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="an">categories:</span><span class="co"> [economics,fundamental,market-feed,portfolio-construction]</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="an">tags:</span><span class="co"> [inflation, stocks, etfs, consumer, interest, rates, discounts, diversification, technology, behavioral]</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="an">image:</span><span class="co"> /pictures/mathematics-formulas-on-a-blackboard.png</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co">---</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a>::: {layout-ncol=2}</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>:::{#first-column}</span>
+<span id="cb1-14"><a href="#cb1-14"></a>In today's curation, we explore a range of critical financial topics that impact current market dynamics:</span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="ss">- </span>The New York Fed's inflation and output growth predictions</span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="ss">- </span>Amazon's competitive strategies amidst Prime Week</span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="ss">- </span>Insights from Q2 earnings season and stock performance</span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="ss">- </span>Opportunities in the QQQJ ETF showcasing tech growth</span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="ss">- </span>Implications of potential Fed interest rate cuts </span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="ss">- </span>The UST yield curve and its relevance to rate changes</span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="ss">- </span>The Moat Index's recent findings on market trends</span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="ss">- </span>The benefits of automatic retirement savings </span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="ss">- </span>Recovery signs in the banking sector </span>
+<span id="cb1-25"><a href="#cb1-25"></a><span class="ss">- </span>The complexities of maintaining a balanced investment portfolio:::</span>
+<span id="cb1-26"><a href="#cb1-26"></a>:::</span>
+<span id="cb1-27"><a href="#cb1-27"></a></span>
+<span id="cb1-28"><a href="#cb1-28"></a>:::{#second-column}</span>
+<span id="cb1-29"><a href="#cb1-29"></a><span class="al">![Coffee with daily news](/pictures/mathematics-formulas-on-a-blackboard.png)</span></span>
+<span id="cb1-30"><a href="#cb1-30"></a>:::</span>
+<span id="cb1-31"><a href="#cb1-31"></a></span>
+<span id="cb1-32"><a href="#cb1-32"></a>:::</span>
+<span id="cb1-33"><a href="#cb1-33"></a></span>
+<span id="cb1-34"><a href="#cb1-34"></a></span>
+<span id="cb1-35"><a href="#cb1-35"></a></span>
+<span id="cb1-36"><a href="#cb1-36"></a><span class="fu"># Economics</span></span>
+<span id="cb1-37"><a href="#cb1-37"></a>| Title | Summary |</span>
+<span id="cb1-38"><a href="#cb1-38"></a>|-----|-----------|</span>
+<span id="cb1-39"><a href="#cb1-39"></a>| <span class="co">[</span><span class="ot">Why Inflation is Surging and Growth is Slumping: Key Insights from the New York Fed's Latest Forecast (Federal Reserve Bank of New York, 2024-06-14)</span><span class="co">](https://libertystreeteconomics.newyorkfed.org/2024/06/the-new-york-fed-dsge-model-forecast-june-2024/)</span>   | The New York Fed's DSGE model forecasts higher core PCE inflation at 2.7% and lower output growth at 1.0% for 2024, attributing changes to cost-push shocks and monetary policy. |</span>
+<span id="cb1-40"><a href="#cb1-40"></a>| <span class="co">[</span><span class="ot">Savvy Challenges: How Retailers Leverage Amazon Prime Week to Battle Inflation and Woo Value-Conscious Consumers (LSEG Workspace, 2024-07-15)</span><span class="co">](https://lipperalpha.refinitiv.com/2024/07/savvy-shoppers-await-prime-week-deal-competition/)</span>   | Amazon's Prime Week prompts retailers to offer competitive discounts, aiming to attract value-oriented shoppers while facing inflation, with increased online discount penetration and evolving consumer preferences. |</span>
+<span id="cb1-41"><a href="#cb1-41"></a></span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="fu"># Fundamental Investing</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a>| Title | Summary |</span>
+<span id="cb1-44"><a href="#cb1-44"></a>|-----|-----------|</span>
+<span id="cb1-45"><a href="#cb1-45"></a>| <span class="co">[</span><span class="ot">Earnings Season Q2 2024: Why Most Companies Consistently Surpass Analysts' Expectations (TKer, 2024-07-15)</span><span class="co">](https://www.tker.co/p/earnings-season-q2-24-beat-rates)</span>   | Stocks are at record highs as Q2 earnings season begins, with companies likely to beat estimates by about 5%. Analysts maintain positive outlooks despite recession risks being elevated. |</span>
+<span id="cb1-46"><a href="#cb1-46"></a>| <span class="co">[</span><span class="ot">Discover Hidden Tech Gems: The Invesco NASDAQ Next Gen ETF's Potential in Small-Cap Stocks (ETF Trends, 2024-07-15)</span><span class="co">](https://www.etftrends.com/etf-education-channel/time-different-small-cap-stocks-finally-perking-up/)</span>   | QQQJ ETF, targeting Nasdaq Next Generation 100, includes promising tech stocks like Zoom, NICE, and Paylocity, offering growth opportunities in a market dominated by mega-cap equities. |</span>
+<span id="cb1-47"><a href="#cb1-47"></a></span>
+<span id="cb1-48"><a href="#cb1-48"></a><span class="fu"># Market Pulse &amp; Market News</span></span>
+<span id="cb1-49"><a href="#cb1-49"></a>| Title | Summary |</span>
+<span id="cb1-50"><a href="#cb1-50"></a>|-----|-----------|</span>
+<span id="cb1-51"><a href="#cb1-51"></a>| <span class="co">[</span><span class="ot">Prepare for Market Shake-Up: Key Sectors Poised to Surge as Fed Signals Interest Rate Cuts Before Election (Unknown, 2024-07-15)</span><span class="co">](https://moneymorning.com/2024/07/15/these-three-investment-are-getting-ready-to-be-jerome-powells-favorite/)</span>   | The Fed's potential interest rate cuts may boost small cap stocks, regional banks, and real estate, prompting a significant market shift and attracting investors seeking higher returns. |</span>
+<span id="cb1-52"><a href="#cb1-52"></a>| <span class="co">[</span><span class="ot">Why You Should Care About the Timing of the Yield Curve's Next Move (WisdomTree's website, 2024-07-15)</span><span class="co">](https://www.wisdomtree.com/investments/blog/2024/07/10/when-will-the-yield-curve-uninvert)</span>   | The UST yield curve's potential "un"inversion timing hinges on Fed rate cuts, with the UST 2-Year/10-Year spread likely reversing before the UST 3-Month/10-Year spread. |</span>
+<span id="cb1-53"><a href="#cb1-53"></a>| <span class="co">[</span><span class="ot">Smart Investing: How Quarterly Reviews Shape the Moat Index and Spotlight Top Undervalued Companies (Moat Index Quarterly Review, 2024-07-15)</span><span class="co">](https://www.vaneck.com/us/en/blogs/moat-investing/moat-stocks-steady-amid-techs-market-surge/)</span>   | Moat Index reviews revealed a contrarian bias towards large caps, reduced Financials exposure, and increased allocations in Consumer Staples, Industrials, and Technology, remaining underweight in growth stocks. |</span>
+<span id="cb1-54"><a href="#cb1-54"></a>| <span class="co">[</span><span class="ot">Elevate Your Retirement Savings: How Higher Default Rates and Automatic Investing Are Reshaping Financial Futures (A Wealth of Common Sense, 2024-07-15)</span><span class="co">](https://awealthofcommonsense.com/2024/07/the-automatic-investing-revolution/)</span>   | The shift to automatic retirement savings, like higher default rates, improves participation and investor behavior, positively affecting stock market valuations while highlighting the limitations of defined contribution plans. |</span>
+<span id="cb1-55"><a href="#cb1-55"></a>| <span class="co">[</span><span class="ot">Banking Renaissance: Why Investor Sentiment Shift Signals a Golden Opportunity in Financial Stocks (Unknown, 2024-07-15)</span><span class="co">](https://moneymorning.com/2024/07/15/this-bullish-trend-in-banks-is-just-starting-grab-it-now/)</span>   | The banking sector shows potential recovery as interest rates may soon lower, with investor sentiment shifting and earnings reports exceeding expectations, presenting buying opportunities in ETFs like KBE and KRE. |</span>
+<span id="cb1-56"><a href="#cb1-56"></a></span>
+<span id="cb1-57"><a href="#cb1-57"></a><span class="fu"># Portfolio Construction Techniques</span></span>
+<span id="cb1-58"><a href="#cb1-58"></a>| Title | Summary |</span>
+<span id="cb1-59"><a href="#cb1-59"></a>|-----|-----------|</span>
+<span id="cb1-60"><a href="#cb1-60"></a>| <span class="co">[</span><span class="ot">Balancing Investments: Why Diversification May Seem Boring But Is Actually Smart and Lowers Your Risk (None, 2024-07-14)</span><span class="co">](https://awealthofcommonsense.com/2024/07/a-balanced-portfolio-always-comes-with-regrets/)</span>   | A balanced portfolio, while providing stability, often leads to regrets as market performance varies. Diversification reduces risk but can't predict future outcomes, emphasizing the importance of a long-term strategy. |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

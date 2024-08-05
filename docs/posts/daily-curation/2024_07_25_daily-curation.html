@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -165,7 +199,7 @@ cookieconsent.run({
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page">
-      <div class="quarto-title-block"><div><h1 class="title">Daily Market Insights: Shrink your AI models with Quantization and Climate Progress (25.07.2024)</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/daily-curation/2024_07_25_daily-curation.qmd"><i class="bi"></i> Code</button></div></div>
+      <div class="quarto-title-block"><div><h1 class="title">Daily Market Insights: Shrink your AI models with Quantization and Climate Progress (25.07.2024)</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
                                 <div class="quarto-categories">
                 <div class="quarto-category">climate</div>
                 <div class="quarto-category">coding</div>
@@ -219,7 +253,7 @@ cookieconsent.run({
 <li>Updates on hedge fund negotiations with Ukraine.</li>
 <li>Trends in US Treasury debt and investor sentiment.</li>
 </ul>
-<p>Below is a detailed summary of these topics.:::</p>
+<p>Below is a detailed summary of these topics.</p>
 </div>
 <div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
@@ -303,6 +337,8 @@ cookieconsent.run({
 </tbody>
 </table>
 
+
+<!-- -->
 
 </section>
 
@@ -762,7 +798,62 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Daily Market Insights: Shrink your AI models with Quantization and Climate Progress (25.07.2024)"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="an">date:</span><span class="co"> 07-25-2024</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="an">categories:</span><span class="co"> [climate,coding,economics]</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="an">tags:</span><span class="co"> [climate, emissions, stocks, diversification, bonds, liquidity, markets, quantization, models, debt]</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="an">image:</span><span class="co"> /pictures/morning-news-in-the-office-2023-11-27-04-50-01-utc.jpg</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co">---</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a>::: {layout-ncol=2}</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>:::{#first-column}</span>
+<span id="cb1-14"><a href="#cb1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15"></a>In today's curation, we explore several significant developments impacting financial markets and investment strategies. Key topics include:</span>
+<span id="cb1-16"><a href="#cb1-16"></a></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="ss">- </span>Climate pollution trends and the role of clean energy.</span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="ss">- </span>Innovations in large language models and their applications.</span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="ss">- </span>Updates on hedge fund negotiations with Ukraine.</span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="ss">- </span>Trends in US Treasury debt and investor sentiment.</span>
+<span id="cb1-21"><a href="#cb1-21"></a></span>
+<span id="cb1-22"><a href="#cb1-22"></a>Below is a detailed summary of these topics.</span>
+<span id="cb1-23"><a href="#cb1-23"></a>:::</span>
+<span id="cb1-24"><a href="#cb1-24"></a></span>
+<span id="cb1-25"><a href="#cb1-25"></a>:::{#second-column}</span>
+<span id="cb1-26"><a href="#cb1-26"></a><span class="al">![Coffee with daily news](/pictures/morning-news-in-the-office-2023-11-27-04-50-01-utc.jpg)</span></span>
+<span id="cb1-27"><a href="#cb1-27"></a>:::</span>
+<span id="cb1-28"><a href="#cb1-28"></a></span>
+<span id="cb1-29"><a href="#cb1-29"></a>:::</span>
+<span id="cb1-30"><a href="#cb1-30"></a></span>
+<span id="cb1-31"><a href="#cb1-31"></a></span>
+<span id="cb1-32"><a href="#cb1-32"></a></span>
+<span id="cb1-33"><a href="#cb1-33"></a></span>
+<span id="cb1-34"><a href="#cb1-34"></a><span class="fu"># Climate</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a>| Title | Summary |</span>
+<span id="cb1-36"><a href="#cb1-36"></a>|-----|-----------|</span>
+<span id="cb1-37"><a href="#cb1-37"></a>| <span class="co">[</span><span class="ot">Climate Pollution at a Potential Peak: What It Means and Why It's Crucial for Our Future (Skeptical Science, 2024-07-25)</span><span class="co">](https://skepticalscience.com/climate-pollution-maybe-peaked.html)</span>   | Global climate pollution may have peaked, with slight declines noted in early 2024. Clean energy growth, particularly in China, is crucial for reducing emissions towards net zero by 2050. |</span>
+<span id="cb1-38"><a href="#cb1-38"></a></span>
+<span id="cb1-39"><a href="#cb1-39"></a><span class="fu"># Coding</span></span>
+<span id="cb1-40"><a href="#cb1-40"></a>| Title | Summary |</span>
+<span id="cb1-41"><a href="#cb1-41"></a>|-----|-----------|</span>
+<span id="cb1-42"><a href="#cb1-42"></a>| <span class="co">[</span><span class="ot">How Shrinking AI Models Can Save Space: An Insider's Guide to Quantization Techniques for Optimal Performance (Towards Data Science, 2024-07-24)</span><span class="co">](https://towardsdatascience.com/a-visual-guide-to-quantization-930ebcd9be94?source=rss----7f60cf5620c9---4)</span>   | Large Language Models (LLMs) require vast memory due to billions of parameters. Quantization reduces representation bits, preserving precision while minimising memory usage. Techniques include symmetric and asymmetric quantization, and post-training quantization. |</span>
+<span id="cb1-43"><a href="#cb1-43"></a>| <span class="co">[</span><span class="ot">Unlock AI's Potential with Hugging Face: Simplifying Access to Open-Source Models for NLP, Vision, and Audio Tasks (Real Python 2024-07-25)</span><span class="co">](https://realpython.com/huggingface-transformers/)</span>   | Transformers is a Python library by Hugging Face for utilizing pretrained AI models across various tasks. It supports NLP, computer vision, and audio, and facilitates cost-effective, secure deployments. |</span>
+<span id="cb1-44"><a href="#cb1-44"></a></span>
+<span id="cb1-45"><a href="#cb1-45"></a></span>
+<span id="cb1-46"><a href="#cb1-46"></a><span class="fu"># Finance</span></span>
+<span id="cb1-47"><a href="#cb1-47"></a>| Title | Summary |</span>
+<span id="cb1-48"><a href="#cb1-48"></a>|-----|-----------|</span>
+<span id="cb1-49"><a href="#cb1-49"></a>| <span class="co">[</span><span class="ot">Hedge Funds Prepare for Major Ukraine Debt Talks Amidst Ongoing War and Economic Uncertainty (HedgeWeek, 2024-07-25)</span><span class="co">](https://www.hedgeweek.com/hedge-funds-gear-up-for-2-6bn-ukraine-debt-restructuring/)</span>   | Hedge funds, including Aurelius and VR Capital, prepare for negotiations with Ukraine to restructure $2.6bn in GDP warrants. Payments are due in August, with warrants trading at 58 cents on the dollar. |</span>
+<span id="cb1-50"><a href="#cb1-50"></a></span>
+<span id="cb1-51"><a href="#cb1-51"></a><span class="fu"># Economics</span></span>
+<span id="cb1-52"><a href="#cb1-52"></a>| Title | Summary |</span>
+<span id="cb1-53"><a href="#cb1-53"></a>|-----|-----------|</span>
+<span id="cb1-54"><a href="#cb1-54"></a>| <span class="co">[</span><span class="ot">What Happens if the World Stops Buying US Treasury Bonds? Warning Signs and Economic Implications (Conversable Economist, 2024-07-24)</span><span class="co">](https://conversableeconomist.com/2024/07/24/if-demand-for-us-treasury-bonds-dried-up-what-warning-signs-would-flash/)</span>   | Rising US Treasury debt could deter investors, indicated by primary dealers purchasing larger auction shares, declining bid-to-cover ratios, and foreign holdings decreasing as a share of total debt. |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

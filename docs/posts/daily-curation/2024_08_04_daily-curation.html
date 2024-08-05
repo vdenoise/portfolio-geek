@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -165,7 +199,7 @@ cookieconsent.run({
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page">
-      <div class="quarto-title-block"><div><h1 class="title">Insights from Financial Markets and ETFs: New Bitcoin ETF, Small-Cap Growth, and China’s Decline - Daily Curation for 04.08.2024</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/daily-curation/2024_08_04_daily-curation.qmd"><i class="bi"></i> Code</button></div></div>
+      <div class="quarto-title-block"><div><h1 class="title">Insights from Financial Markets and ETFs: New Bitcoin ETF, Small-Cap Growth, and China’s Decline - Daily Curation for 04.08.2024</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
                                 <div class="quarto-categories">
                 <div class="quarto-category">climate</div>
                 <div class="quarto-category">crypto</div>
@@ -330,6 +364,8 @@ cookieconsent.run({
 </tbody>
 </table>
 
+
+<!-- -->
 
 </section>
 
@@ -789,7 +825,72 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Insights from Financial Markets and ETFs: New Bitcoin ETF, Small-Cap Growth, and China's Decline - Daily Curation for 04.08.2024"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="an">date:</span><span class="co"> 08-04-2024</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="an">categories:</span><span class="co"> [climate,crypto,etf,market-feed,personal-dvpt]</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="an">tags:</span><span class="co"> [climate, bitcoin, etfs, investment, performance, hedge, growth, strategy, maintenance, finance]</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="an">image:</span><span class="co"> /pictures/books-and-a-cup-of-coffee-on-a-wooden-background.jpg</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co">---</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a></span>
+<span id="cb1-12"><a href="#cb1-12"></a>::: {layout-ncol=2}</span>
+<span id="cb1-13"><a href="#cb1-13"></a></span>
+<span id="cb1-14"><a href="#cb1-14"></a>:::{#first-column}</span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a></span>
+<span id="cb1-17"><a href="#cb1-17"></a>In today's curation, we explore a variety of financial topics that reflect current trends and strategies. Key highlights include:</span>
+<span id="cb1-18"><a href="#cb1-18"></a></span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="ss">- </span>Record global temperature anomalies and implications for markets</span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="ss">- </span>Morgan Stanley's Bitcoin ETF offerings for high-net-worth clients</span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="ss">- </span>The TPS strategy for identifying oversold ETFs</span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="ss">- </span>Performance review of small-cap growth ETFs</span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="ss">- </span>Shifts in U.S. equity market dynamics</span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="ss">- </span>Hedge fund allocations in China and their implications</span>
+<span id="cb1-25"><a href="#cb1-25"></a><span class="ss">- </span>The importance of financial discussions in dating</span>
+<span id="cb1-26"><a href="#cb1-26"></a><span class="ss">- </span>August home maintenance tips </span>
+<span id="cb1-27"><a href="#cb1-27"></a></span>
+<span id="cb1-28"><a href="#cb1-28"></a>Please find the details in the table below.</span>
+<span id="cb1-29"><a href="#cb1-29"></a></span>
+<span id="cb1-30"><a href="#cb1-30"></a>:::</span>
+<span id="cb1-31"><a href="#cb1-31"></a></span>
+<span id="cb1-32"><a href="#cb1-32"></a>:::{#second-column}</span>
+<span id="cb1-33"><a href="#cb1-33"></a><span class="al">![Coffee with daily news](/pictures/books-and-a-cup-of-coffee-on-a-wooden-background.jpg)</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a>:::</span>
+<span id="cb1-35"><a href="#cb1-35"></a></span>
+<span id="cb1-36"><a href="#cb1-36"></a>:::</span>
+<span id="cb1-37"><a href="#cb1-37"></a></span>
+<span id="cb1-38"><a href="#cb1-38"></a></span>
+<span id="cb1-39"><a href="#cb1-39"></a><span class="fu"># Climate</span></span>
+<span id="cb1-40"><a href="#cb1-40"></a>| Title | Summary |</span>
+<span id="cb1-41"><a href="#cb1-41"></a>|-----|-----------|</span>
+<span id="cb1-42"><a href="#cb1-42"></a>| <span class="co">[</span><span class="ot">How Antarctica's Unusual Warmth Influenced Global Temperature Trends in 2024: A Closer Look at the Data (Carbon Brief, 2024-08-01)</span><span class="co">](https://www.theclimatebrink.com/p/second-warmest-july-ends-a-13-month)</span>   | Global surface temperatures have reached new records since June 2023, with 13 records set. July 2024 was cooler than July 2023, yet warmer than previous Julys. Antarctic temperatures spiked significantly. |</span>
+<span id="cb1-43"><a href="#cb1-43"></a></span>
+<span id="cb1-44"><a href="#cb1-44"></a><span class="fu"># Crypto News and Analysis</span></span>
+<span id="cb1-45"><a href="#cb1-45"></a>| Title | Summary |</span>
+<span id="cb1-46"><a href="#cb1-46"></a>|-----|-----------|</span>
+<span id="cb1-47"><a href="#cb1-47"></a>| <span class="co">[</span><span class="ot">Wall Street Giant Morgan Stanley Greenlights Bitcoin ETFs, Opening New Doors for High-Net-Worth Investors (Bitcoin Insider, 2024-08-03)</span><span class="co">](https://www.bitcoininsider.org/article/255355/morgan-stanley-allows-advisors-offer-bitcoin-etfs-clients)</span>   | Morgan Stanley permits its advisors to offer Bitcoin ETFs to eligible clients from Aug. 7, 2024, focusing on those with a net worth of $1.5 million or more. |</span>
+<span id="cb1-48"><a href="#cb1-48"></a></span>
+<span id="cb1-49"><a href="#cb1-49"></a><span class="fu"># ETFs and Index Investing</span></span>
+<span id="cb1-50"><a href="#cb1-50"></a>| Title | Summary |</span>
+<span id="cb1-51"><a href="#cb1-51"></a>|-----|-----------|</span>
+<span id="cb1-52"><a href="#cb1-52"></a>| <span class="co">[</span><span class="ot">Master Winning ETF Strategies: Balance Fear and Greed in the Market with the TPS Approach (Quant Trading Rules, 2024-08-04)</span><span class="co">](https://www.quantitativo.com/p/trading-etfs-while-fear-and-greed)</span>   | Richard Feynman's quote advises against self-deception. The TPS strategy, developed by Larry Connors, identifies oversold ETFs to scale positions. Backtesting shows positive returns with enhancements like diversifying and adding a short leg. |</span>
+<span id="cb1-53"><a href="#cb1-53"></a>| <span class="co">[</span><span class="ot">Discover Top 3 Small-Cap Growth ETFs Poised to Thrive with Imminent Rate Cuts for Impressive Long-Term Gains (ETF Trends, 2024-08-03)</span><span class="co">](https://www.etftrends.com/expert-insights-channel/3-small-cap-growth-etfs-standout-long-term-performance/)</span>   | Three small-cap growth ETFs with strong long-term performance are the Invesco Dorsey Wright SmallCap Momentum ETF, Vanguard Russell 2000 Growth ETF, and Motley Fool Small-Cap Growth ETF, each outperforming benchmarks. |</span>
+<span id="cb1-54"><a href="#cb1-54"></a>| <span class="co">[</span><span class="ot">Could July 2024 Be the Turning Point for U.S. Equity Markets? Understanding Diversification and Market Shifts (WisdomTree, 2024-08-02)</span><span class="co">](https://www.wisdomtree.com/investments/blog/2024/08/02/diversification-why-bother)</span>   | The U.S. equity market has favoured large caps and AI, particularly the "Magnificent 7." Recent trends indicate a potential shift towards value investing as growth stocks underperform. |</span>
+<span id="cb1-55"><a href="#cb1-55"></a></span>
+<span id="cb1-56"><a href="#cb1-56"></a><span class="fu"># Market Pulse &amp; Market News</span></span>
+<span id="cb1-57"><a href="#cb1-57"></a>| Title | Summary |</span>
+<span id="cb1-58"><a href="#cb1-58"></a>|-----|-----------|</span>
+<span id="cb1-59"><a href="#cb1-59"></a>| <span class="co">[</span><span class="ot">Hedge Funds Retreat from Chinese Markets Amid Economic Slowdown and Regulatory Hurdles, Reports Goldman Sachs (Reuters, 2024-08-02)</span><span class="co">](https://www.hedgeweek.com/hedge-fund-allocations-to-china-at-five-year-low-says-goldman-sachs/)</span>   | Hedge fund allocations to China are at a five-year low, down 20% over the past year, due to economic slowdown, regulatory issues, and geopolitical tensions affecting investor confidence. |</span>
+<span id="cb1-60"><a href="#cb1-60"></a></span>
+<span id="cb1-61"><a href="#cb1-61"></a><span class="fu"># Personal Development</span></span>
+<span id="cb1-62"><a href="#cb1-62"></a>| Title | Summary |</span>
+<span id="cb1-63"><a href="#cb1-63"></a>|-----|-----------|</span>
+<span id="cb1-64"><a href="#cb1-64"></a>| <span class="co">[</span><span class="ot">Prep Your Home for Fall: Essential August Maintenance Tips to Prevent Future Problems (home maintenance blog, 2024-08-02)</span><span class="co">](https://lifehacker.com/home/august-home-maintenance-checklist)</span>   | August Home Maintenance Checklist  In August, clear downspouts, check HVAC filters, lubricate door hinges, trim dead brush, replace incandescent bulbs with LEDs, and prepare emergency kits for seasonal weather events. |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

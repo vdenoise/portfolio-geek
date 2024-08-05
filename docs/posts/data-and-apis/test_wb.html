@@ -200,7 +200,7 @@ cookieconsent.run({
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><div class="quarto-title-block"><div class="quarto-title-tools-only"><h1></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/data-and-apis/test_wb.md"><i class="bi"></i> Code</button></div></div>
+<main class="content" id="quarto-document-content"><div class="quarto-title-block"><div class="quarto-title-tools-only"><h1></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -290,6 +290,8 @@ cookieconsent.run({
 <p>World Bank data provides invaluable insight into the world’s economic trends, and the WBGAPI library is an incredibly useful tool for extracting this data in an easy and efficient manner. It enables researchers, analysts, and policymakers to gauge economic performance, identify trends, and make evidence-based decisions.</p>
 <p>Whether you are a student, economist, or data enthusiast, the potential of such data is boundless. By coupling World Bank data with Python’s analytical and visualisation capabilities, you can make economic trends come alive, allowing for more profound, insightful analysis and decision-making.</p>
 
+
+<!-- -->
 
 </section>
 </section>
@@ -750,7 +752,99 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb7" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a><span class="co">---</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="an">draft:</span><span class="co"> true</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="co">---</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="fu"># Using WBGAPI: A Step-By-Step Guide to Access World Bank Data</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a></span>
+<span id="cb7-7"><a href="#cb7-7"></a>WBGAPI is an extraordinary tool to gather data directly from the World Bank's vast databases. In this article, we will cover how to harness this tool and use it to study the evolution of various economic indicators. To demonstrate its utility, we will focus on two specific use cases:</span>
+<span id="cb7-8"><a href="#cb7-8"></a></span>
+<span id="cb7-9"><a href="#cb7-9"></a><span class="ss">1. </span>Comparing the evolution of Gross Domestic Product (GDP) in Emerging Markets and Developed Markets.</span>
+<span id="cb7-10"><a href="#cb7-10"></a><span class="ss">2. </span>Analysing the evolution of GDP per capita for several key countries: USA, France, Germany, Japan, China, and India.</span>
+<span id="cb7-11"><a href="#cb7-11"></a></span>
+<span id="cb7-12"><a href="#cb7-12"></a>These examples will provide a flavour of the insights one can derive from World Bank data using WBGAPI.</span>
+<span id="cb7-13"><a href="#cb7-13"></a></span>
+<span id="cb7-14"><a href="#cb7-14"></a><span class="fu">## Installation</span></span>
+<span id="cb7-15"><a href="#cb7-15"></a></span>
+<span id="cb7-16"><a href="#cb7-16"></a>To start, ensure that you have the WBGAPI library installed. If not, you can do so using pip:</span>
+<span id="cb7-17"><a href="#cb7-17"></a></span>
+<span id="cb7-18"><a href="#cb7-18"></a><span class="in">```python</span></span>
+<span id="cb7-19"><a href="#cb7-19"></a>pip install wbgapi</span>
+<span id="cb7-20"><a href="#cb7-20"></a><span class="in">```</span></span>
+<span id="cb7-21"><a href="#cb7-21"></a></span>
+<span id="cb7-22"><a href="#cb7-22"></a><span class="fu">## Setting the Stage</span></span>
+<span id="cb7-23"><a href="#cb7-23"></a></span>
+<span id="cb7-24"><a href="#cb7-24"></a>Firstly, we need to import the necessary libraries. WBGAPI will be used to gather data, pandas for data manipulation, and matplotlib for visualisation.</span>
+<span id="cb7-25"><a href="#cb7-25"></a></span>
+<span id="cb7-26"><a href="#cb7-26"></a><span class="in">```python</span></span>
+<span id="cb7-27"><a href="#cb7-27"></a><span class="im">import</span> wbgapi <span class="im">as</span> wb</span>
+<span id="cb7-28"><a href="#cb7-28"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb7-29"><a href="#cb7-29"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb7-30"><a href="#cb7-30"></a><span class="in">```</span></span>
+<span id="cb7-31"><a href="#cb7-31"></a></span>
+<span id="cb7-32"><a href="#cb7-32"></a><span class="fu">## Use Case 1: GDP Evolution of Emerging vs Developed Markets</span></span>
+<span id="cb7-33"><a href="#cb7-33"></a></span>
+<span id="cb7-34"><a href="#cb7-34"></a>Gross Domestic Product (GDP) serves as a broad measure for a country's overall economic activity. It represents the monetary value of all finished goods and services produced within a country's borders in a specific time period.</span>
+<span id="cb7-35"><a href="#cb7-35"></a></span>
+<span id="cb7-36"><a href="#cb7-36"></a>Here is how we can fetch the data:</span>
+<span id="cb7-37"><a href="#cb7-37"></a></span>
+<span id="cb7-38"><a href="#cb7-38"></a><span class="in">```python</span></span>
+<span id="cb7-39"><a href="#cb7-39"></a><span class="co"># Get income level codes for "High income" (developed markets) and "Lower middle income" and "Upper middle income" (emerging markets)</span></span>
+<span id="cb7-40"><a href="#cb7-40"></a>income_levels <span class="op">=</span> wb.income.<span class="bu">list</span>().set_index(<span class="st">'id'</span>)[<span class="st">'name'</span>]</span>
+<span id="cb7-41"><a href="#cb7-41"></a>developed <span class="op">=</span> [code <span class="cf">for</span> code, name <span class="kw">in</span> income_levels.items() <span class="cf">if</span> <span class="st">'High income'</span> <span class="kw">in</span> name]</span>
+<span id="cb7-42"><a href="#cb7-42"></a>emerging <span class="op">=</span> [code <span class="cf">for</span> code, name <span class="kw">in</span> income_levels.items() <span class="cf">if</span> <span class="st">'middle income'</span> <span class="kw">in</span> name]</span>
+<span id="cb7-43"><a href="#cb7-43"></a></span>
+<span id="cb7-44"><a href="#cb7-44"></a><span class="co"># Fetch GDP data (NY.GDP.MKTP.CD) for the last 30 years</span></span>
+<span id="cb7-45"><a href="#cb7-45"></a>years <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1994</span>, <span class="dv">2024</span>))</span>
+<span id="cb7-46"><a href="#cb7-46"></a>gdp_developed <span class="op">=</span> wb.data.DataFrame(<span class="st">'NY.GDP.MKTP.CD'</span>, country<span class="op">=</span>developed, time<span class="op">=</span>years).mean(axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb7-47"><a href="#cb7-47"></a>gdp_emerging <span class="op">=</span> wb.data.DataFrame(<span class="st">'NY.GDP.MKTP.CD'</span>, country<span class="op">=</span>emerging, time<span class="op">=</span>years).mean(axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb7-48"><a href="#cb7-48"></a></span>
+<span id="cb7-49"><a href="#cb7-49"></a><span class="co"># Create a DataFrame</span></span>
+<span id="cb7-50"><a href="#cb7-50"></a>df_gdp <span class="op">=</span> pd.DataFrame({<span class="st">'Developed Markets'</span>: gdp_developed, <span class="st">'Emerging Markets'</span>: gdp_emerging})</span>
+<span id="cb7-51"><a href="#cb7-51"></a><span class="in">```</span></span>
+<span id="cb7-52"><a href="#cb7-52"></a></span>
+<span id="cb7-53"><a href="#cb7-53"></a>We can now visualise the data:</span>
+<span id="cb7-54"><a href="#cb7-54"></a></span>
+<span id="cb7-55"><a href="#cb7-55"></a><span class="in">```python</span></span>
+<span id="cb7-56"><a href="#cb7-56"></a>df_gdp.plot(kind<span class="op">=</span><span class="st">'line'</span>)</span>
+<span id="cb7-57"><a href="#cb7-57"></a>plt.title(<span class="st">'GDP Evolution: Developed vs Emerging Markets (1994-2024)'</span>)</span>
+<span id="cb7-58"><a href="#cb7-58"></a>plt.xlabel(<span class="st">'Year'</span>)</span>
+<span id="cb7-59"><a href="#cb7-59"></a>plt.ylabel(<span class="st">'GDP (Current US$)'</span>)</span>
+<span id="cb7-60"><a href="#cb7-60"></a>plt.show()</span>
+<span id="cb7-61"><a href="#cb7-61"></a><span class="in">```</span></span>
+<span id="cb7-62"><a href="#cb7-62"></a></span>
+<span id="cb7-63"><a href="#cb7-63"></a><span class="fu">## Use Case 2: GDP per Capita Evolution for Selected Countries</span></span>
+<span id="cb7-64"><a href="#cb7-64"></a></span>
+<span id="cb7-65"><a href="#cb7-65"></a>GDP per capita is a measure of the total output of a country that takes the GDP and divides it by the number of people in that country. The countries we will focus on are the USA, France, Germany, Japan, China, and India.</span>
+<span id="cb7-66"><a href="#cb7-66"></a></span>
+<span id="cb7-67"><a href="#cb7-67"></a>Fetching the data is straightforward:</span>
+<span id="cb7-68"><a href="#cb7-68"></a></span>
+<span id="cb7-69"><a href="#cb7-69"></a><span class="in">```python</span></span>
+<span id="cb7-70"><a href="#cb7-70"></a><span class="co"># Specify countries and fetch data for GDP per capita (NY.GDP.PCAP.CD)</span></span>
+<span id="cb7-71"><a href="#cb7-71"></a>countries <span class="op">=</span> [<span class="st">'USA'</span>, <span class="st">'FRA'</span>, <span class="st">'DEU'</span>, <span class="st">'JPN'</span>, <span class="st">'CHN'</span>, <span class="st">'IND'</span>]</span>
+<span id="cb7-72"><a href="#cb7-72"></a>df_gdp_pc <span class="op">=</span> wb.data.DataFrame(<span class="st">'NY.GDP.PCAP.CD'</span>, country<span class="op">=</span>countries, time<span class="op">=</span>years)</span>
+<span id="cb7-73"><a href="#cb7-73"></a><span class="in">```</span></span>
+<span id="cb7-74"><a href="#cb7-74"></a></span>
+<span id="cb7-75"><a href="#cb7-75"></a>And let's visualise this:</span>
+<span id="cb7-76"><a href="#cb7-76"></a></span>
+<span id="cb7-77"><a href="#cb7-77"></a><span class="in">```python</span></span>
+<span id="cb7-78"><a href="#cb7-78"></a>df_gdp_pc.plot(kind<span class="op">=</span><span class="st">'line'</span>)</span>
+<span id="cb7-79"><a href="#cb7-79"></a>plt.title(<span class="st">'GDP per Capita</span></span>
+<span id="cb7-80"><a href="#cb7-80"></a></span>
+<span id="cb7-81"><a href="#cb7-81"></a><span class="er"> Evolution: USA, France, Germany, Japan, China, India </span>(<span class="dv">1994</span><span class="op">-</span><span class="dv">2024</span>)<span class="st">')</span></span>
+<span id="cb7-82"><a href="#cb7-82"></a><span class="er">plt.xlabel</span>(<span class="st">'Year'</span>)</span>
+<span id="cb7-83"><a href="#cb7-83"></a>plt.ylabel(<span class="st">'GDP per Capita (Current US$)'</span>)</span>
+<span id="cb7-84"><a href="#cb7-84"></a>plt.show()</span>
+<span id="cb7-85"><a href="#cb7-85"></a>```</span>
+<span id="cb7-86"><a href="#cb7-86"></a></span>
+<span id="cb7-87"><a href="#cb7-87"></a><span class="co">## Conclusion</span></span>
+<span id="cb7-88"><a href="#cb7-88"></a></span>
+<span id="cb7-89"><a href="#cb7-89"></a>World Bank data provides invaluable insight into the world<span class="st">'s economic trends, and the WBGAPI library is an incredibly useful tool for extracting this data in an easy and efficient manner. It enables researchers, analysts, and policymakers to gauge economic performance, identify trends, and make evidence-based decisions.</span></span>
+<span id="cb7-90"><a href="#cb7-90"></a></span>
+<span id="cb7-91"><a href="#cb7-91"></a><span class="er">Whether you are a student, economist, or data enthusiast, the potential of such data is boundless. By coupling World Bank data with Python's analytical and visualisation capabilities, you can make economic trends come alive, allowing for more profound, insightful analysis and decision-making.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -167,7 +201,7 @@ cookieconsent.run({
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page">
-      <div class="quarto-title-block"><div><h1 class="title">Today’s Picks (13.07.24): Wind Power Surpasses Coal, EV Savings for Rural Families, Impact Investing, and Shifts in ETF Trends</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/vdenoise/portfolio-geek/blob/master/posts/daily-curation/2024-07-13_daily-curation.qmd"><i class="bi"></i> Code</button></div></div>
+      <div class="quarto-title-block"><div><h1 class="title">Today’s Picks (13.07.24): Wind Power Surpasses Coal, EV Savings for Rural Families, Impact Investing, and Shifts in ETF Trends</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
                                 <div class="quarto-categories">
                 <div class="quarto-category">climate</div>
                 <div class="quarto-category">coding</div>
@@ -330,6 +364,8 @@ cookieconsent.run({
 </tbody>
 </table>
 
+
+<!-- -->
 
 </section>
 
@@ -789,7 +825,66 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Today's Picks (13.07.24): Wind Power Surpasses Coal, EV Savings for Rural Families, Impact Investing, and Shifts in ETF Trends"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="an">date:</span><span class="co"> 07-13-2024</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="an">categories:</span><span class="co"> [climate,coding,economics,etf]</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="an">tags:</span><span class="co"> [evs, impact, renewable, etfs, housing, inflation, tuition, inventory, investing, energy]</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="an">image:</span><span class="co"> /pictures/blog-post.png</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co">---</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a>::: {layout-ncol=2}</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>:::{#first-column}</span>
+<span id="cb1-14"><a href="#cb1-14"></a>As of July 13, 2024, today's curation highlights key developments in finance, energy, and educational initiatives. Below are the summarized topics:</span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="ss">- </span>The financial benefits of electric vehicles for rural families in the US.</span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="ss">- </span>The rise of impact investing amidst ESG skepticism.</span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="ss">- </span>Wind power's dominance over coal in US electricity generation.</span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="ss">- </span>Concerns surrounding BlackRock's climate transition ETFs.</span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="ss">- </span>Introduction of Vectorlite, a new SQLite extension for vector search.</span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="ss">- </span>Trends in the existing home market and housing prices.</span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="ss">- </span>Johns Hopkins Medical School's significant donation for free tuition.</span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="ss">- </span>Recent ETF inflows, particularly in core equity and bonds.</span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="ss">- </span>Insights on the impact of passive investing on market dynamics.</span>
+<span id="cb1-25"><a href="#cb1-25"></a>:::</span>
+<span id="cb1-26"><a href="#cb1-26"></a></span>
+<span id="cb1-27"><a href="#cb1-27"></a>:::{#second-column}</span>
+<span id="cb1-28"><a href="#cb1-28"></a><span class="al">![Coffee with daily news](/pictures/blog-post.png)</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a>:::</span>
+<span id="cb1-30"><a href="#cb1-30"></a></span>
+<span id="cb1-31"><a href="#cb1-31"></a>:::</span>
+<span id="cb1-32"><a href="#cb1-32"></a></span>
+<span id="cb1-33"><a href="#cb1-33"></a></span>
+<span id="cb1-34"><a href="#cb1-34"></a><span class="fu"># Climate</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a>| Title | Summary |</span>
+<span id="cb1-36"><a href="#cb1-36"></a>|-----|-----------|</span>
+<span id="cb1-37"><a href="#cb1-37"></a>| <span class="co">[</span><span class="ot">Electric Vehicles: A Game-Changer for Rural Families Saving Big on Fuel and Maintenance Costs (Skeptical Science, 2024-07-09)</span><span class="co">](https://skepticalscience.com/rural-families-saving-thousands-evs.html)</span>   | Rural families in the US are saving money by switching to electric vehicles (EVs) and avoiding gas expenses. EVs require less maintenance and have financial incentives, making them cost-effective. |</span>
+<span id="cb1-38"><a href="#cb1-38"></a>| <span class="co">[</span><span class="ot">Impact Investing: A Smart Alternative to ESG for Optimized Financial and Social Returns (Forbes Australia, 2024-07-13)</span><span class="co">](https://www.forbes.com.au/brand-voice/brandvoice/rip-esg-how-impact-investing-can-help-save-an-industry-in-crisis/)</span>   | Amidst ESG skepticism, impact investing gains recognition as a credible way to back companies that deliver positive impact and financial returns. Investors prioritize measurable impact activities aligned with the UN Sustainable Development Goals. |</span>
+<span id="cb1-39"><a href="#cb1-39"></a>| <span class="co">[</span><span class="ot">Wind Power Surpasses Coal in US Electricity Production as Renewable Energy Continues to Rise (Sherwood News, 2024-07-13)</span><span class="co">](https://sherwood.news/power/lean-energy-wind-generated-more-electricity-than-coal/)</span>   | Wind power has surpassed coal as a major source of electricity in the US for two consecutive months. Renewable energy accounted for 21% of electricity generation in 2019. |</span>
+<span id="cb1-40"><a href="#cb1-40"></a>| <span class="co">[</span><span class="ot">Are BlackRock's New Climate ETFs Truly Driving Change or Just Ticking Boxes for Sustainable Investment Goals? (ETF Stream, 2024-06-24)</span><span class="co">](https://www.etfstream.com/articles/blackrock-climate-transition-etfs-portfolio-tool-or-tick-box-exercise)</span>   | BlackRock's new climate transition ETFs offer ESG tilting, but concerns remain about their impact. The ETFs may be a useful tool for institutional investors, but lack exposure to key sectors. |</span>
+<span id="cb1-41"><a href="#cb1-41"></a></span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="fu"># Coding</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a>| Title | Summary |</span>
+<span id="cb1-44"><a href="#cb1-44"></a>|-----|-----------|</span>
+<span id="cb1-45"><a href="#cb1-45"></a>| <span class="co">[</span><span class="ot">Make SQLite Smarter and Faster with Vectorlite: Your Go-To Extension for Enhanced Vector Search in AI Applications (Reddit, 2024-07-13)</span><span class="co">](https://www.reddit.com/r/Python/comments/1e26xsm/vectorlite_a_fast_vector_search_extension_for/)</span>   | Vectorlite is a fast and tunable vector search extension for SQLite, offering improved performance, metadata filter support, index serialization, and cross-platform compatibility compared to similar solutions like sqlite-vss. |</span>
+<span id="cb1-46"><a href="#cb1-46"></a></span>
+<span id="cb1-47"><a href="#cb1-47"></a><span class="fu"># Economics</span></span>
+<span id="cb1-48"><a href="#cb1-48"></a>| Title | Summary |</span>
+<span id="cb1-49"><a href="#cb1-49"></a>|-----|-----------|</span>
+<span id="cb1-50"><a href="#cb1-50"></a>| <span class="co">[</span><span class="ot">Home Inventory Grows 34.5% YoY but Still Struggles to Meet Pre-Pandemic Levels: Insight into Current Market Trends (Calculated Risk, 2024-07-11)</span><span class="co">](http://www.calculatedriskblog.com/2024/07/realtorcom-reports-active-inventory-up_01292103715.html)</span>   | Active inventory in the existing home market increased by 34.5% YoY, marking the 35th consecutive week of growth. New listings declined 4.9% YoY. Buyers still face a 30% decrease in homes compared to pre-pandemic levels. |</span>
+<span id="cb1-51"><a href="#cb1-51"></a>| <span class="co">[</span><span class="ot">Navigating Market Peaks: What to Know Before Buying a Home Amidst Soaring Prices and Mortgage Rates (A Wealth of Common Sense, 2024-07-13)</span><span class="co">](https://awealthofcommonsense.com/2024/07/buying-a-house-at-the-top-of-the-market/)</span>   | Housing prices have surged in recent years, but there are concerns about low returns going forward. The impact on homeowners may vary depending on their situation and future plans. |</span>
+<span id="cb1-52"><a href="#cb1-52"></a>| <span class="co">[</span><span class="ot">Bloomberg Donates $1 Billion to Johns Hopkins for Medical School Free Tuition and Comprehensive Student Support (NPR, 2024-07-13)</span><span class="co">](https://www.npr.org/2024/07/09/g-s1-8876/johns-hopkins-medical-school-bloomberg)</span>   | Johns Hopkins Medical School will offer free tuition to most students thanks to a $1 billion donation from Michael Bloomberg's philanthropic organization. |</span>
+<span id="cb1-53"><a href="#cb1-53"></a></span>
+<span id="cb1-54"><a href="#cb1-54"></a><span class="fu"># ETFs and Index Investing</span></span>
+<span id="cb1-55"><a href="#cb1-55"></a>| Title | Summary |</span>
+<span id="cb1-56"><a href="#cb1-56"></a>|-----|-----------|</span>
+<span id="cb1-57"><a href="#cb1-57"></a>| <span class="co">[</span><span class="ot">Investors Flock to Core Equity and Short-Duration Bonds Amid Market Rally and Inflation Concerns: Q2 Insights (ETF Stream, 2024-07-13)</span><span class="co">](https://www.etfstream.com/articles/core-equity-and-short-duration-bond-etfs-capture-most-inflows-in-q2)</span>   | Core equity and short-duration bond ETFs saw the highest inflows in Q2, while ESG ETFs experienced outflows. The iShares Core S&amp;P 500 UCITS ETF (CSPX) and the Xtrackers EUR Overnight Rate Swap UCITS ETF (XEON) were among the popular choices. |</span>
+<span id="cb1-58"><a href="#cb1-58"></a>| <span class="co">[</span><span class="ot">How Passive Investing Subtly Shifts Market Dynamics: A New Perspective from GMO Experts (GMO Quarterly Letter, 2024-07-13)</span><span class="co">](https://www.institutionalinvestor.com/article/2dgy5jctx2rb7g3wv2juo/portfolio/gmo-passive-investings-impact-has-been-overblown-but-its-not-negligible)</span>   | The impact of passive investing on markets is less significant than believed, says GMO. The shift of retirement assets to defined contribution plans is coming to an end, limiting the future impact of passive flows. |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
