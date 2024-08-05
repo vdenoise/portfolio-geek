@@ -1,0 +1,3526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Portfolio Geek</title>
+<link>https://portfolio-geek.com/</link>
+<atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
+<description>Finance, Research and the Tech required to Fuel them</description>
+<generator>quarto-1.4.550</generator>
+<lastBuildDate>Sat, 03 Aug 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Sharpe Ratio: A Must-Know for Every Investor</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="sharpe-ratio-a-must-know-for-every-investor" class="level2">
+<h2 class="anchored" data-anchor-id="sharpe-ratio-a-must-know-for-every-investor">Sharpe Ratio: A Must-Know for Every Investor</h2>
+<div>
+
+</div>
+</section>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<section id="sharpe-ratio-a-must-know-for-every-investor-1" class="level2">
+<h2 class="anchored" data-anchor-id="sharpe-ratio-a-must-know-for-every-investor-1">Sharpe Ratio: A Must-Know for Every Investor</h2>
+<p>As a financial engineer with over 20 years of experience, I understand just how crucial the Sharpe Ratio is for evaluating investments. This essential metric provides a way to measure the risk-adjusted return of a portfolio, enabling smarter investment decisions. Let’s dive into the concept of the Sharpe Ratio and learn how to use Python to analyze and visualize it using real-world examples such as QQQ vs.&nbsp;SPY.</p>
+</section>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/risk-return-concept.jpg" class="img-fluid figure-img"></p>
+<figcaption>Mitigating Risk and Return</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="understanding-the-sharpe-ratio" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-sharpe-ratio">Understanding the Sharpe Ratio</h2>
+<section id="what-is-the-sharpe-ratio" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-sharpe-ratio">What is the Sharpe Ratio?</h3>
+<p>The Sharpe Ratio is a financial measure used to evaluate the return of an investment compared to its risk. The key formula behind this ratio is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0ASharpe%20Ratio%20=%20%5Cfrac%7BR_p%20-%20R_f%7D%7B%5Csigma_p%7D%0A"></p>
+<p>Where:</p>
+<ul>
+<li>(R_p) is the expected return of the portfolio</li>
+<li>(R_f) is the risk-free rate (such as Treasury yield)</li>
+<li>(_p) represents the standard deviation of the portfolio’s excess return, symbolizing the risk</li>
+</ul>
+<p>By defining how much excess return you are achieving for every unit of risk, the Sharpe Ratio helps you make informed investment decisions.</p>
+</section>
+<section id="key-benefits-and-limitations" class="level3">
+<h3 class="anchored" data-anchor-id="key-benefits-and-limitations">Key Benefits and Limitations</h3>
+<p>One cannot ignore the advantages of using Sharpe Ratio:</p>
+<ol type="1">
+<li><strong>Assessing Performance</strong>: Easily compare different investments by their risk-adjusted returns.</li>
+<li><strong>Identifying Efficient Portfolios</strong>: Helps in finding portfolios that offer higher returns for a certain risk level.</li>
+<li><strong>Standardization</strong>: Offers a common measure across various asset classes.</li>
+<li><strong>Risk Management</strong>: Encourages evaluating risk alongside returns.</li>
+</ol>
+<p>However, it’s not without limitations:</p>
+<ol type="1">
+<li><strong>Assumes Normal Distribution</strong>: Returns are assumed to be normally distributed, which is not always the case.</li>
+<li><strong>Single Period Measure</strong>: Does not account for changing risk profiles over multiple periods.</li>
+<li><strong>Sensitivity to Risk-Free Rate</strong>: Results can vary based on the risk-free rate used.</li>
+<li><strong>Risk Measurement</strong>: Standard deviation might not reflect all types of risks.</li>
+</ol>
+</section>
+<section id="how-to-calculate-the-sharpe-ratio" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-calculate-the-sharpe-ratio">How to Calculate the Sharpe Ratio</h3>
+<p>The calculation steps for the Sharpe Ratio involve:</p>
+<ol type="1">
+<li>Gather historical return data over the desired period.</li>
+<li>Determine the risk-free rate (government bonds or Treasury yields).</li>
+<li>Compute the standard deviation of the investment’s excess returns.</li>
+<li>Use the formula to calculate the Sharpe Ratio.</li>
+</ol>
+<p>Let’s move to some Python examples to see this in action.</p>
+</section>
+</section>
+<section id="analising-qqq-vs.-spy-through-a-sharpe-ratio-lens" class="level2">
+<h2 class="anchored" data-anchor-id="analising-qqq-vs.-spy-through-a-sharpe-ratio-lens">Analising QQQ vs.&nbsp;SPY through a Sharpe Ratio lens</h2>
+<section id="historical-price-data-of-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="historical-price-data-of-qqq-and-spy">Historical Price Data of QQQ and SPY</h3>
+<p>Understanding how QQQ (NASDAQ-100) and SPY (S&amp;P 500) performed over the last five years is always a good starting point. This visualization shows their performance trends and helps to lay the groundwork for further analysis.</p>
+<div id="cell-6" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%</span>capture</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> yfinance <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> yf</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb1-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fetch historical price data for QQQ and SPY</span></span>
+<span id="cb1-7">tickers <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"QQQ"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"SPY"</span>]</span>
+<span id="cb1-8">data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.download(tickers, start<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"2018-01-01"</span>, end<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"2023-12-31"</span>)[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Adj Close'</span>]</span>
+<span id="cb1-9"></span>
+<span id="cb1-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot the data</span></span></code></pre></div>
+</details>
+</div>
+<div id="cell-7" class="cell" data-execution="{}" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb2-2">data.plot()</span>
+<span id="cb2-3">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Historical Price Data: QQQ vs. SPY'</span>)</span>
+<span id="cb2-4">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb2-5">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Adjusted Close Price'</span>)</span>
+<span id="cb2-6">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="annualized-returns-of-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="annualized-returns-of-qqq-and-spy">Annualized Returns of QQQ and SPY</h3>
+<p>Now, let’s compare the annualized returns of QQQ and SPY over the same time period. This helps to evaluate the consistency and average performance of each fund on an annual basis.</p>
+<div id="cell-9" class="cell" data-execution="{}" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate annualized returns</span></span>
+<span id="cb3-2">annualized_returns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (((data.iloc[<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> data.iloc[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>)) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span></span>
+<span id="cb3-3"></span>
+<span id="cb3-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot the annualized returns</span></span>
+<span id="cb3-5">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb3-6">annualized_returns.plot(kind<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'bar'</span>)</span>
+<span id="cb3-7">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Annualized Returns: QQQ vs. SPY (in %)'</span>)</span>
+<span id="cb3-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ETF'</span>)</span>
+<span id="cb3-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Annualized Return (in %)'</span>)</span>
+<span id="cb3-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="historical-volatility-of-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="historical-volatility-of-qqq-and-spy">Historical Volatility of QQQ and SPY</h3>
+<p>To understand the risk associated with each ETF, we will plot their historical volatility. This is computed as the standard deviation of returns over the last five years, highlighting periods of higher volatility.</p>
+<div id="cell-11" class="cell" data-execution="{}" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate historical volatility</span></span>
+<span id="cb4-2">volatility <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data.pct_change().std() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Annualized standard deviation</span></span>
+<span id="cb4-3"></span>
+<span id="cb4-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot historical volatility</span></span>
+<span id="cb4-5">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb4-6">volatility.plot(kind<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'bar'</span>)</span>
+<span id="cb4-7">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Historical Volatility: QQQ vs. SPY  (in %)'</span>)</span>
+<span id="cb4-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ETF'</span>)</span>
+<span id="cb4-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Annualized Volatility (in %)'</span>)</span>
+<span id="cb4-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="calculating-excess-returns-of-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="calculating-excess-returns-of-qqq-and-spy">Calculating Excess Returns of QQQ and SPY</h3>
+<p>To move towards the Sharpe Ratio, let’s calculate the excess returns of QQQ and SPY by subtracting the risk-free rate (say, 4% per annum for example) from their respective returns. This sets the stage for understanding how much return is gained relative to a risk-free investment.</p>
+<div id="cell-13" class="cell" data-execution="{}" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1">risk_free_rate <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.04</span></span>
+<span id="cb5-2"></span>
+<span id="cb5-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate excess returns</span></span>
+<span id="cb5-4">excess_returns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data.pct_change() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> risk_free_rate <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span></span>
+<span id="cb5-5"></span>
+<span id="cb5-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot the excess returns</span></span>
+<span id="cb5-7">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb5-8">excess_returns.plot()</span>
+<span id="cb5-9">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Excess Returns: QQQ vs. SPY'</span>)</span>
+<span id="cb5-10">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb5-11">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Excess Return'</span>)</span>
+<span id="cb5-12">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="sharpe-ratios-for-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="sharpe-ratios-for-qqq-and-spy">Sharpe Ratios for QQQ and SPY</h3>
+<p>Now, let’s calculate and display the Sharpe Ratios for QQQ and SPY. This provides a visual representation of their risk-adjusted performance, giving immediate insight into which asset class, fund or ETF has delivered better returns relative to the risks taken.</p>
+<div id="cell-15" class="cell" data-execution="{}" data-execution_count="6">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate Sharpe Ratios</span></span>
+<span id="cb6-2">sharpe_ratio <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> excess_returns.mean() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> excess_returns.std() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>)</span>
+<span id="cb6-3"></span>
+<span id="cb6-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot the Sharpe Ratios</span></span>
+<span id="cb6-5">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb6-6">sharpe_ratio.plot(kind<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'bar'</span>)</span>
+<span id="cb6-7">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sharpe Ratio: QQQ vs. SPY'</span>)</span>
+<span id="cb6-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ETF'</span>)</span>
+<span id="cb6-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sharpe Ratio'</span>)</span>
+<span id="cb6-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="rolling-sharpe-ratios-for-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="rolling-sharpe-ratios-for-qqq-and-spy">Rolling Sharpe Ratios for QQQ and SPY</h3>
+<p>Observing the rolling Sharpe Ratios over a 12-month window provides enhanced insight into how risk-adjusted performance has changed over time under different market conditions.</p>
+<div id="cell-17" class="cell" data-execution="{}" data-execution_count="7">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate rolling Sharpe Ratios</span></span>
+<span id="cb7-2">rolling_sharpe <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (excess_returns.rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span>).mean() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> excess_returns.rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span>).std()) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>)</span>
+<span id="cb7-3"></span>
+<span id="cb7-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot rolling Sharpe Ratios</span></span>
+<span id="cb7-5">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb7-6">rolling_sharpe.plot()</span>
+<span id="cb7-7">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling 12-Month Sharpe Ratio: QQQ vs. SPY'</span>)</span>
+<span id="cb7-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb7-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling Sharpe Ratio'</span>)</span>
+<span id="cb7-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="comparing-cumulative-sharpe-ratios-of-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="comparing-cumulative-sharpe-ratios-of-qqq-and-spy">Comparing Cumulative Sharpe Ratios of QQQ and SPY</h3>
+<p>Lastly, let’s compare the cumulative Sharpe Ratios of QQQ and SPY against a designated benchmark (e.g., a broader market index). This helps to gauge how well each ETF has outperformed relative to overall market trends.</p>
+<div id="cell-19" class="cell" data-execution="{}" data-execution_count="8">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate cumulative Sharpe Ratios</span></span>
+<span id="cb8-2">cumulative_sharpe <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> ((excess_returns.expanding(min_periods<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span>).mean()) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> excess_returns.expanding().std()) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">252</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>)</span>
+<span id="cb8-3"></span>
+<span id="cb8-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot cumulative Sharpe Ratios</span></span>
+<span id="cb8-5">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb8-6">cumulative_sharpe.plot()</span>
+<span id="cb8-7">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Cumulative Sharpe Ratio: QQQ vs. SPY'</span>)</span>
+<span id="cb8-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb8-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Cumulative Sharpe Ratio'</span>)</span>
+<span id="cb8-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="scatter-plot-of-risk-vs.-return" class="level3">
+<h3 class="anchored" data-anchor-id="scatter-plot-of-risk-vs.-return">Scatter Plot of Risk vs.&nbsp;Return</h3>
+<p>Finally, we will create a scatter plot of risk versus return, plotting the expected returns of QQQ and SPY against their respective standard deviations. This visual representation underscores the efficient frontier concept, providing a comprehensive view of optimal risk-return trade-offs.</p>
+<div id="cell-21" class="cell" data-execution="{}" data-execution_count="9">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate expected returns and standard deviations</span></span>
+<span id="cb9-2">expected_returns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> annualized_returns</span>
+<span id="cb9-3">risk <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> volatility</span>
+<span id="cb9-4"></span>
+<span id="cb9-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Scatter plot of risk vs. return</span></span>
+<span id="cb9-6">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb9-7">plt.scatter(risk, expected_returns, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY'</span>])</span>
+<span id="cb9-8"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> i, txt <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">enumerate</span>(risk.index):</span>
+<span id="cb9-9">    plt.annotate(txt, (risk[i], expected_returns[i]))</span>
+<span id="cb9-10">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Risk vs. Return: QQQ vs. SPY'</span>)</span>
+<span id="cb9-11">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Annualized Volatility'</span>)</span>
+<span id="cb9-12">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Annualized Return'</span>)</span>
+<span id="cb9-13">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>We have delved into the Sharpe Ratio, examined its merits and limitations, and visualized its application using real-world datasets of QQQ and SPY. This exploration highlights how investors can leverage this crucial metric for better risk-adjusted decision-making. While the Sharpe Ratio is invaluable, it’s essential to be aware of its limitations, such as the assumption of normally distributed returns and its sensitivity to the chosen risk-free rate.</p>
+<p>For further reading, check out these insightful resources:</p>
+<ul>
+<li><a href="https://www.investopedia.com/terms/s/sharperatio.asp">Investopedia on Sharpe Ratio</a></li>
+<li><a href="https://www.khanacademy.org/economics-finance-domain/core-finance/investment-vehicles-tutorial/capital-asset-pricing-model/v/sharpe-ratio">Khan Academy on CAPM and Sharpe Ratio</a></li>
+</ul>
+<p>Make sure to visit the Data Driven Minutes Youtube channel for a corresponding video on this topic. Happy investing!</p>
+<p><a href="../../../about.html">About us and Disclaimers</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <category>finance</category>
+  <category>risk</category>
+  <category>return</category>
+  <category>sharpe</category>
+  <category>ratio</category>
+  <category>python</category>
+  <guid>https://portfolio-geek.com/posts/tutorials/en/sharpe-ratio.html</guid>
+  <pubDate>Sat, 03 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/risk-return-concept.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Maximum Drawdown: A Practical Approach with Python</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/tutorials/en/max-drawdown.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="maximum-drawdown-a-practical-approach-with-python" class="level1">
+<h1>Maximum Drawdown: A Practical Approach with Python</h1>
+<section id="the-importance-of-maximum-drawdown" class="level2">
+<h2 class="anchored" data-anchor-id="the-importance-of-maximum-drawdown">1: The Importance of Maximum Drawdown</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<section id="significance-of-maximum-drawdown" class="level3">
+<h3 class="anchored" data-anchor-id="significance-of-maximum-drawdown">1.1 Significance of Maximum Drawdown</h3>
+<p>Maximum Drawdown (MDD) is a critical risk metric for investors. It quantifies the largest peak-to-trough decline in an investment’s value over a specified period, providing insights into potential losses during market downturns. Understanding MDD helps investors gauge the risk profile of their investments and make informed decisions.</p>
+</section>
+<section id="contextualizing-mdd-in-financial-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="contextualizing-mdd-in-financial-analysis">1.2 Contextualizing MDD in Financial Analysis</h3>
+<p>In today’s volatile markets, comprehending the MDD of assets like QQQ (a NASDAQ ETF) and SPY (a S&amp;P 500 ETF) can bring some help in grasping the risk of a particular asset. Such analysis provides a comparative view of the resilience of individual stocks versus market indices, aiding in better portfolio management.</p>
+</section>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" class="img-fluid quarto-figure quarto-figure-right figure-img"></p>
+<figcaption>Maximum Drawdown is an important measure of investment risk</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="objective" class="level3">
+<h3 class="anchored" data-anchor-id="objective">1.3 Objective</h3>
+<p>This blog aims to introduce Python enthusiasts and portfolio managers to the concept of Maximum Drawdown, demonstrating how to calculate and visualize it using Python libraries like pandas, yfinance, and matplotlib.</p>
+</section>
+</section>
+<section id="deriving-and-understanding-maximum-drawdown" class="level2">
+<h2 class="anchored" data-anchor-id="deriving-and-understanding-maximum-drawdown">2: Deriving and Understanding Maximum Drawdown</h2>
+<section id="the-mdd-formula" class="level3">
+<h3 class="anchored" data-anchor-id="the-mdd-formula">2.1 The MDD Formula</h3>
+<p>The formula to calculate Maximum Drawdown is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AMDD%20=%20%5Cfrac%7BP_%7B%5Ctext%7Bpeak%7D%7D%20-%20P_%7B%5Ctext%7Btrough%7D%7D%7D%7BP_%7B%5Ctext%7Bpeak%7D%7D%7D%20%5Ctimes%20100%0A"></p>
+<p>Where:</p>
+<ul>
+<li>P_{peak} is the highest portfolio value during the analysis period.</li>
+<li>P_{trough} is the lowest portfolio value following that peak before a new peak is achieved.</li>
+</ul>
+</section>
+<section id="key-benefits-of-mdd" class="level3">
+<h3 class="anchored" data-anchor-id="key-benefits-of-mdd">2.2 Key Benefits of MDD</h3>
+<ul>
+<li><strong>Risk Assessment</strong>: Provides a clear numerical representation of potential losses during downturns.</li>
+<li><strong>Portfolio Management</strong>: Helps in asset allocation and risk management.</li>
+<li><strong>Performance Comparison</strong>: Facilitates comparisons between different investments.</li>
+<li><strong>Emotional Preparedness</strong>: Reduces panic selling by setting realistic expectations.</li>
+</ul>
+</section>
+<section id="limitations-of-mdd" class="level3">
+<h3 class="anchored" data-anchor-id="limitations-of-mdd">2.3 Limitations of MDD</h3>
+<ul>
+<li>Time Frame Dependency</li>
+<li>Ignores Recovery</li>
+<li>Does Not Capture Volatility</li>
+<li>Historical Data Reflection</li>
+</ul>
+</section>
+</section>
+<section id="visualizing-maximum-drawdown" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-maximum-drawdown">3: Visualizing Maximum Drawdown</h2>
+<section id="line-chart-of-daily-closing-prices" class="level3">
+<h3 class="anchored" data-anchor-id="line-chart-of-daily-closing-prices">3.1 Line Chart of Daily Closing Prices</h3>
+<p>When diving into the concept of maximum drawdown, it’s essential to start with the basics and ensure you’re on solid ground. First off, gathering and plotting financial data is the backbone of any credible analysis. By doing so, you avoid the classic pitfalls of using incorrect tickers or dodgy datasets, which can completely skew your findings. Trust me, there’s nothing worse than realising your conclusions are based on faulty data. Proper data handling also helps you spot trends and anomalies right from the start, making your analysis more robust. Plus, it builds a strong foundation for any advanced techniques you want to explore later on. So, take your time, get the basics right, and your insights will be all the more valuable and reliable for it.</p>
+<div id="37429a9c" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%</span>capture</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> yfinance <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> yf</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb1-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Define the style</span></span>
+<span id="cb1-7">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb1-8"></span>
+<span id="cb1-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Download data</span></span>
+<span id="cb1-10">data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.download([<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY'</span>], start<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'2018-01-01'</span>, end<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'2024-08-01'</span>)</span></code></pre></div>
+</details>
+</div>
+<div id="74109035" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1">closing_prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Adj Close'</span>]</span>
+<span id="cb2-2">closing_prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> closing_prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> closing_prices.iloc[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb2-3"></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting the data</span></span>
+<span id="cb2-5">closing_prices.plot(title<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'AAPL and SPY Daily Closing Prices'</span>)</span>
+<span id="cb2-6">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/max-drawdown_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="waterfall-chart-for-drawdown-timeline" class="level3">
+<h3 class="anchored" data-anchor-id="waterfall-chart-for-drawdown-timeline">3.2 Waterfall Chart for Drawdown Timeline</h3>
+<p>Before diving into the chart, let’s break down the calculation of maximum drawdown. Maximum drawdown measures the largest single drop from peak to trough in the value of a financial asset before a new peak is achieved.</p>
+<p>As mentioned above, to calculate it, we track the highest point of the asset’s value over a given period and compare it to the lowest point that follows. By doing this, we get a clear picture of the worst-case scenario in terms of losses. In the chart below, we’ve illustrated the maximum drawdown to visually capture these significant drops, providing a tangible sense of the risk involved.</p>
+<div id="1fcba3a5" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate drawdowns</span></span>
+<span id="cb3-2">closing_prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> closing_prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> closing_prices.iloc[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb3-3">drawdowns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>(closing_prices.cummax() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> closing_prices)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>closing_prices.cummax()</span>
+<span id="cb3-4"></span>
+<span id="cb3-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting drawdown timeline</span></span>
+<span id="cb3-6">drawdowns.plot(title<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
+<span id="cb3-7">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/max-drawdown_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">4: Conclusion</h2>
+<section id="practical-application" class="level3">
+<h3 class="anchored" data-anchor-id="practical-application">Practical Application</h3>
+<p>Investors and portfolio managers use Maximum Drawdown to assess risk, manage portfolios, and compare investment performance. While useful, it should be combined with other metrics for comprehensive risk management.</p>
+</section>
+<section id="explore-more" class="level3">
+<h3 class="anchored" data-anchor-id="explore-more">Explore More</h3>
+<p>Feel free to explore and test the code snippets provided. Check out the corresponding video on the Data Driven Minutes Youtube channel for a step-by-step guide.</p>
+<p>Thanks for popping by and see you in the next article!</p>
+<p>Vincent</p>
+<p><a href="../../../about.html">About us and Disclaimers</a></p>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <category>finance</category>
+  <category>risk</category>
+  <category>python</category>
+  <guid>https://portfolio-geek.com/posts/tutorials/en/max-drawdown.html</guid>
+  <pubDate>Sat, 03 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Insights from Financial Markets and ETFs: New Bitcoin ETF, Small-Cap Growth, and China’s Decline - Daily Curation for 04.08.2024</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_08_04_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore a variety of financial topics that reflect current trends and strategies. Key highlights include:</p>
+<ul>
+<li>Record global temperature anomalies and implications for markets</li>
+<li>Morgan Stanley’s Bitcoin ETF offerings for high-net-worth clients</li>
+<li>The TPS strategy for identifying oversold ETFs</li>
+<li>Performance review of small-cap growth ETFs</li>
+<li>Shifts in U.S. equity market dynamics</li>
+<li>Hedge fund allocations in China and their implications</li>
+<li>The importance of financial discussions in dating</li>
+<li>August home maintenance tips</li>
+</ul>
+<p>Please find the details in the table below.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/books-and-a-cup-of-coffee-on-a-wooden-background.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="climate" class="level1">
+<h1>Climate</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.theclimatebrink.com/p/second-warmest-july-ends-a-13-month">How Antarctica’s Unusual Warmth Influenced Global Temperature Trends in 2024: A Closer Look at the Data (Carbon Brief, 2024-08-01)</a></td>
+<td>Global surface temperatures have reached new records since June 2023, with 13 records set. July 2024 was cooler than July 2023, yet warmer than previous Julys. Antarctic temperatures spiked significantly.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="crypto-news-and-analysis" class="level1">
+<h1>Crypto News and Analysis</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.bitcoininsider.org/article/255355/morgan-stanley-allows-advisors-offer-bitcoin-etfs-clients">Wall Street Giant Morgan Stanley Greenlights Bitcoin ETFs, Opening New Doors for High-Net-Worth Investors (Bitcoin Insider, 2024-08-03)</a></td>
+<td>Morgan Stanley permits its advisors to offer Bitcoin ETFs to eligible clients from Aug.&nbsp;7, 2024, focusing on those with a net worth of $1.5 million or more.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="etfs-and-index-investing" class="level1">
+<h1>ETFs and Index Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.quantitativo.com/p/trading-etfs-while-fear-and-greed">Master Winning ETF Strategies: Balance Fear and Greed in the Market with the TPS Approach (Quant Trading Rules, 2024-08-04)</a></td>
+<td>Richard Feynman’s quote advises against self-deception. The TPS strategy, developed by Larry Connors, identifies oversold ETFs to scale positions. Backtesting shows positive returns with enhancements like diversifying and adding a short leg.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.etftrends.com/expert-insights-channel/3-small-cap-growth-etfs-standout-long-term-performance/">Discover Top 3 Small-Cap Growth ETFs Poised to Thrive with Imminent Rate Cuts for Impressive Long-Term Gains (ETF Trends, 2024-08-03)</a></td>
+<td>Three small-cap growth ETFs with strong long-term performance are the Invesco Dorsey Wright SmallCap Momentum ETF, Vanguard Russell 2000 Growth ETF, and Motley Fool Small-Cap Growth ETF, each outperforming benchmarks.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.wisdomtree.com/investments/blog/2024/08/02/diversification-why-bother">Could July 2024 Be the Turning Point for U.S. Equity Markets? Understanding Diversification and Market Shifts (WisdomTree, 2024-08-02)</a></td>
+<td>The U.S. equity market has favoured large caps and AI, particularly the “Magnificent 7.” Recent trends indicate a potential shift towards value investing as growth stocks underperform.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-pulse-market-news" class="level1">
+<h1>Market Pulse &amp; Market News</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.hedgeweek.com/hedge-fund-allocations-to-china-at-five-year-low-says-goldman-sachs/">Hedge Funds Retreat from Chinese Markets Amid Economic Slowdown and Regulatory Hurdles, Reports Goldman Sachs (Reuters, 2024-08-02)</a></td>
+<td>Hedge fund allocations to China are at a five-year low, down 20% over the past year, due to economic slowdown, regulatory issues, and geopolitical tensions affecting investor confidence.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="personal-development" class="level1">
+<h1>Personal Development</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://lifehacker.com/home/august-home-maintenance-checklist">Prep Your Home for Fall: Essential August Maintenance Tips to Prevent Future Problems (home maintenance blog, 2024-08-02)</a></td>
+<td>August Home Maintenance Checklist In August, clear downspouts, check HVAC filters, lubricate door hinges, trim dead brush, replace incandescent bulbs with LEDs, and prepare emergency kits for seasonal weather events.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>climate</category>
+  <category>crypto</category>
+  <category>etf</category>
+  <category>market-feed</category>
+  <category>personal-dvpt</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_04_daily-curation.html</guid>
+  <pubDate>Sat, 03 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/books-and-a-cup-of-coffee-on-a-wooden-background.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Understanding Historical Volatility</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/tutorials/en/historical-vol.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="understanding-historical-volatility" class="level1">
+<h1>Understanding Historical Volatility</h1>
+<section id="importance-of-grasping-historical-volatility" class="level2">
+<h2 class="anchored" data-anchor-id="importance-of-grasping-historical-volatility">Importance of Grasping Historical Volatility</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<section id="why-grasping-historical-volatility-is-crucial" class="level3">
+<h3 class="anchored" data-anchor-id="why-grasping-historical-volatility-is-crucial">Why Grasping Historical Volatility is Crucial</h3>
+<p>If you’re a budding financial engineer, investor, or market enthusiast, understanding historical volatility is crucial. Historical volatility, by referencing past price data, offers insights into the market’s perception of risk. Not only does it aid in evaluating the riskiness of an asset, but it also assists in crafting strategies to manage portfolios effectively.</p>
+</section>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/diagram-representing-red-crashing-market-volatility.jpg" class="img-fluid quarto-figure quarto-figure-right figure-img" style="width:100.0%"></p>
+<figcaption>Market Volatility</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="relevance-in-finance-and-investing" class="level3">
+<h3 class="anchored" data-anchor-id="relevance-in-finance-and-investing">Relevance in Finance and Investing</h3>
+<ol type="1">
+<li><strong>Finance and Investing</strong>: Historical volatility reflects the risk tied to an asset. A high volatility implies higher risk, which often translates to higher returns.</li>
+<li><strong>Portfolio Management</strong>: Volatility helps in diversification by understanding how volatile an asset is compared to others in the portfolio.</li>
+<li><strong>Derivatives Pricing</strong>: It is indispensable in options pricing. Models like Black-Scholes employ historical volatility to estimate an asset’s future risk.</li>
+</ol>
+</section>
+<section id="why-we-need-this-concept" class="level3">
+<h3 class="anchored" data-anchor-id="why-we-need-this-concept">Why We Need This Concept</h3>
+<ol type="1">
+<li><strong>Risk Assessment</strong>: Enables us to quantify the risk and potential variation in returns for any given asset.</li>
+<li><strong>Investment Decisions</strong>: Guides investors on whether the asset’s risk matches their risk appetite.</li>
+<li><strong>Benchmarking Performance</strong>: Facilitates comparisons with historical norms to identify unusual market behavior.</li>
+</ol>
+</section>
+</section>
+<section id="defining-of-historical-volatility" class="level2">
+<h2 class="anchored" data-anchor-id="defining-of-historical-volatility">Defining of Historical Volatility</h2>
+<section id="breaking-down-the-key-formula" class="level3">
+<h3 class="anchored" data-anchor-id="breaking-down-the-key-formula">Breaking Down the Key Formula</h3>
+<p>Historical volatility measures how much the price of a stock varies over a period. The fundamental formula for historical volatility is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Csigma%20=%20%5Csqrt%7B%5Cfrac%7B1%7D%7BN-1%7D%20%5Csum_%7Bi=1%7D%5E%7BN%7D%20(R_i%20-%20%5Cbar%7BR%7D)%5E2%7D%0A"></p>
+<p>Where: - <img src="https://latex.codecogs.com/png.latex?%5Csigma"> is the historical volatility - <img src="https://latex.codecogs.com/png.latex?N"> is the number of observations - <img src="https://latex.codecogs.com/png.latex?R_i"> represents the logarithmic return of the price at time <img src="https://latex.codecogs.com/png.latex?i"> - <img src="https://latex.codecogs.com/png.latex?%5Cbar%7BR%7D"> is the average of the logarithmic returns</p>
+</section>
+<section id="annualizing-weekly-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="annualizing-weekly-volatility">Annualizing Weekly Volatility</h3>
+<p>To annualize the volatility calculated from weekly data, we use:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Csigma_%7B%5Ctext%7Bannual%7D%7D%20=%20%5Csigma_%7B%5Ctext%7Bweekly%7D%7D%20%5Ctimes%20%5Csqrt%7B52%7D%0A"></p>
+<p>This conversion is necessary as it scales the weekly volatility to an annual level, making comparisons with annualized returns straightforward.</p>
+</section>
+<section id="how-parameters-affect-the-results" class="level3">
+<h3 class="anchored" data-anchor-id="how-parameters-affect-the-results">How Parameters Affect the Results</h3>
+<ol type="1">
+<li><strong>Number of Observations (<img src="https://latex.codecogs.com/png.latex?N">)</strong>: More observations typically lead to a more accurate estimation of volatility.</li>
+<li><strong>Logarithmic Returns (<img src="https://latex.codecogs.com/png.latex?R_i">)</strong>: Captures the continuous compounding of returns, reflecting the actual growth rate better than simple returns.</li>
+<li><strong>Average Logarithmic Return (<img src="https://latex.codecogs.com/png.latex?%5Cbar%7BR%7D">)</strong>: Considering mean return centralizes the volatility measure, giving a base to calculate deviations.</li>
+</ol>
+</section>
+</section>
+<section id="section-3-building-charts-using-python" class="level2">
+<h2 class="anchored" data-anchor-id="section-3-building-charts-using-python">Section 3: Building Charts Using Python</h2>
+<p>In this section, we’ll use <code>pandas</code>, <code>matplotlib</code>, and <code>yfinance</code> to fetch historical data of SPY and calculate its historical volatility.</p>
+<section id="fetching-historical-data" class="level3">
+<h3 class="anchored" data-anchor-id="fetching-historical-data">Fetching Historical Data</h3>
+<p>First, let’s fetch the historical weekly closing prices for SPY using the <code>yfinance</code> library.</p>
+<div id="761039ac" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> yfinance <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> yf</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb1-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb1-5"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span>matplotlib inline</span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fetching SPY historical data</span></span>
+<span id="cb1-8">spy <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.Ticker(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"SPY"</span>)</span>
+<span id="cb1-9">hist <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> spy.history(period<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"5y"</span>, interval<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"1wk"</span>)</span>
+<span id="cb1-10">prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Close"</span>]</span></code></pre></div>
+</details>
+</div>
+</section>
+<section id="calculating-weekly-log-returns" class="level3">
+<h3 class="anchored" data-anchor-id="calculating-weekly-log-returns">Calculating Weekly Log Returns</h3>
+<p>We’ll compute the weekly log returns from the closing prices.</p>
+<div id="c15c1c70" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculating weekly log returns</span></span>
+<span id="cb2-2">log_returns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.log(prices <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> prices.shift(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)).dropna()</span>
+<span id="cb2-3">log_returns_head <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> log_returns.head()</span>
+<span id="cb2-4">log_returns_head</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<pre><code>Date
+2019-08-05   -0.003423
+2019-08-12   -0.009544
+2019-08-19   -0.013944
+2019-08-26    0.026331
+2019-09-02    0.018967
+Name: Close, dtype: float64</code></pre>
+</div>
+</div>
+</section>
+<section id="plotting-the-historical-price-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="plotting-the-historical-price-evolution">Plotting the Historical Price Evolution</h3>
+<p>We’ll now create a line chart displaying the historical price evolution of SPY over the past 5 years.</p>
+<div id="e21a7af3" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb4-2"></span>
+<span id="cb4-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting historical price evolution</span></span>
+<span id="cb4-4">plt.figure()</span>
+<span id="cb4-5">prices.plot()</span>
+<span id="cb4-6">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Historical Price Evolution of SPY'</span>)</span>
+<span id="cb4-7">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb4-8">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Price'</span>)</span>
+<span id="cb4-9">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/historical-vol_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="histogram-of-weekly-return-distributions" class="level3">
+<h3 class="anchored" data-anchor-id="histogram-of-weekly-return-distributions">Histogram of Weekly Return Distributions</h3>
+<p>Next, let’s create a histogram of the weekly return distributions for SPY over the past 5 years.</p>
+<div id="27c7c7b1" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting histogram of weekly log returns</span></span>
+<span id="cb5-2">plt.figure()</span>
+<span id="cb5-3">log_returns.hist(bins<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">50</span>)</span>
+<span id="cb5-4">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Histogram of Weekly Log Returns for SPY'</span>)</span>
+<span id="cb5-5">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Log Return'</span>)</span>
+<span id="cb5-6">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Frequency'</span>)</span>
+<span id="cb5-7">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/historical-vol_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="rolling-annualized-historical-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="rolling-annualized-historical-volatility">Rolling Annualized Historical Volatility</h3>
+<p>We’ll now calculate the rolling annualized historical volatility using a 52-week rolling window and plot it.</p>
+<div id="79724871" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculating rolling annualized volatility</span></span>
+<span id="cb6-2">rolling_vol <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> log_returns.rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>).std() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> np.sqrt(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>)</span>
+<span id="cb6-3"></span>
+<span id="cb6-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting rolling annualized volatility</span></span>
+<span id="cb6-5">plt.figure()</span>
+<span id="cb6-6">rolling_vol.plot()</span>
+<span id="cb6-7">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling Annualized Historical Volatility of SPY'</span>)</span>
+<span id="cb6-8">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb6-9">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Volatility'</span>)</span>
+<span id="cb6-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/historical-vol_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="comparing-2-assets-by-their-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="comparing-2-assets-by-their-volatility">Comparing 2 assets by their volatility</h3>
+<p>Let’s create a scatter plot comparing the annualized historical volatility as derived from weekly SPY returns against the performance of other ETFs.</p>
+<div id="e4472cc8" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fetching historical data for other ETFs</span></span>
+<span id="cb7-2">qqq <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.Ticker(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"QQQ"</span>).history(period<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"5y"</span>, interval<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"1wk"</span>)[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Close"</span>]</span>
+<span id="cb7-3">iwm <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.Ticker(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"IWM"</span>).history(period<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"5y"</span>, interval<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"1wk"</span>)[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Close"</span>]</span>
+<span id="cb7-4"></span>
+<span id="cb7-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculating log returns for other ETFs</span></span>
+<span id="cb7-6">log_returns_qqq <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.log(qqq <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> qqq.shift(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)).dropna()</span>
+<span id="cb7-7">log_returns_iwm <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.log(iwm <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> iwm.shift(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)).dropna()</span>
+<span id="cb7-8"></span>
+<span id="cb7-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculating annualized volatility for other ETFs</span></span>
+<span id="cb7-10">vol_qqq <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> log_returns_qqq.rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>).std() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> np.sqrt(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>)</span>
+<span id="cb7-11">vol_iwm <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> log_returns_iwm.rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>).std() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> np.sqrt(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>)</span>
+<span id="cb7-12"></span>
+<span id="cb7-13"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Creating the scatter plot</span></span>
+<span id="cb7-14">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb7-15">vol_qqq.plot(ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax)</span>
+<span id="cb7-16"></span>
+<span id="cb7-17">vol_iwm.plot(ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax)</span>
+<span id="cb7-18">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Volatility'</span>)</span>
+<span id="cb7-19">plt.legend()</span>
+<span id="cb7-20">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/tutorials/en/historical-vol_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<section id="practical-applications" class="level3">
+<h3 class="anchored" data-anchor-id="practical-applications">Practical Applications</h3>
+<p>Understanding historical volatility allows you to assess the risk and behaviour of assets over time. It is invaluable in portfolio management and derivative pricing.</p>
+</section>
+<section id="limitations" class="level3">
+<h3 class="anchored" data-anchor-id="limitations">Limitations</h3>
+<ul>
+<li><strong>Past vs.&nbsp;Future</strong>: Historical volatility relies on past data and isn’t always indicative of future movements.</li>
+<li><strong>Distribution Assumptions</strong>: It assumes a normal distribution, which may not always be true in real-world markets.</li>
+</ul>
+</section>
+<section id="final-thoughts" class="level3">
+<h3 class="anchored" data-anchor-id="final-thoughts">Final Thoughts</h3>
+<p>By integrating historical volatility into your analysis, you can better navigate the financial markets. Don’t forget, you can always refer to the corresponding video on the Data Driven Minutes Youtube channel for a more visual walkthrough.</p>
+<p><a href="../../../about.html">About us and Disclaimers</a></p>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>data-gathering</category>
+  <category>volatility</category>
+  <category>log-returns</category>
+  <guid>https://portfolio-geek.com/posts/tutorials/en/historical-vol.html</guid>
+  <pubDate>Fri, 02 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/diagram-representing-red-crashing-market-volatility.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Daily Financial Insights 02.08.2024: Generative AI Business Models, Enhanced Data Science Portfolios, and Efficient SQL Optimization Techniques</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_08_02_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore a variety of topics pertinent to the intersection of technology and finance:</p>
+<ul>
+<li>Challenges in the generative AI market regarding business models and costs</li>
+<li>Enhancements made to a data science portfolio using mkdocs and Google Analytics</li>
+<li>Utilizing large language models for efficient parsing of scientific papers</li>
+<li>Building a simple neural network with TensorFlow and PyTorch for revenue prediction</li>
+<li>Six SQL optimization tips for improved performance in Snowflake</li>
+</ul>
+<p>Please find the details in the table below.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="ai-and-gen-ai" class="level1">
+<h1>AI and Gen-AI</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/economics-of-generative-ai-75f550288097">Can Generative AI Sustain Its Costly Growth Without Compromising Innovation and Ethical Standards? (Towards Data Science, 2024-08-01)</a></td>
+<td>The generative AI market faces challenges in defining its business model, balancing between being a product or feature, and sustaining high costs while ensuring meaningful innovation and research.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/full-guide-to-build-a-professionnal-portfolio-with-python-markdown-git-and-github-page-for-66d12f7859f0">Effortlessly Build a Stunning Data Science Portfolio with Python and MkDocs: A Step-by-Step Guide (Medium, 2024-08-02)</a></td>
+<td>In 2024, I revamped my data science portfolio using mkdocs for improved aesthetics and functionality, integrating Google Analytics, with a focus on minimal configuration and free solutions.</td>
+</tr>
+<tr class="even">
+<td><a href="https://towardsdatascience.com/document-parsing-using-large-language-models-with-code-9229fda09cdf">Harnessing the Power of AI for Effortless Scientific Paper Analysis and Metadata Extraction (Medium, 2024-08-02)</a></td>
+<td>This article describes using large language models for parsing scientific research papers. It outlines a structured workflow, metadata extraction process, necessary libraries, and code implementation details for efficient document processing.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/implementing-neural-networks-in-tensorflow-and-pytorch-3c1f097e412a">Effortless Neural Network Building for Beginners: A Practical Guide Using TensorFlow and PyTorch (Deep Learning Illustrated, 2024-08-02)</a></td>
+<td>This guide demonstrates building a simple neural network using TensorFlow and PyTorch to predict ice cream revenue based on temperature and day, emphasising data preparation, model training, and evaluation.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-databases-and-data-science" class="level1">
+<h1>Data, Databases and Data Science</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/mastering-sql-optimization-from-functional-to-efficient-queries-74d8692f10be">Cut Snowflake Query Times by 50 Hours with These Six Simple SQL Hacks for Faster Data Analysis (The name of the blog or website is Snowflake., 2024-08-02)</a></td>
+<td>The author shared six SQL optimisation tips, reducing Snowflake query time by 50 hours daily. Key strategies include selecting necessary columns, analysing query profiles, and utilising Snowflake’s functionality effectively.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>coding</category>
+  <category>data-science</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_02_daily-curation.html</guid>
+  <pubDate>Thu, 01 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Dive into Python Upgrades, ETF Inflows, Hedge Fund Shifts, and Climate Crisis Insights (01.08.2024)</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_08_01_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore a variety of topics that reflect current trends and developments in technology, finance, and environmental concerns. Key highlights include:</p>
+<ul>
+<li>Advances in large language models and their token processing capabilities.</li>
+<li>The impact of climate change on Georgia’s Sea Islands.</li>
+<li>Urgent updates on global warming consequences.</li>
+<li>Enhancements in Python tools for developers.</li>
+<li>Notable trends in ETF inflows and hedge fund strategies.</li>
+<li>New features in navigation apps like Google Maps and Waze.</li>
+<li>The recent challenges faced by cybersecurity firm CrowdStrike.</li>
+</ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/cup-of-coffee-and-a-newspaper.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="ai-and-gen-ai" class="level1">
+<h1>AI and Gen-AI</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/evaluating-long-context-large-language-models-fbd665b3544c">Understanding the Impact of Long Context Windows in Language Models: From 512 Tokens to 2 Million (Towards Data Science, 2024-07-31)</a></td>
+<td>Large language models now process up to 2 million tokens, significantly increasing from 512 tokens in 2018. This capacity can encompass nearly all works of Harry Potter and Lord of the Rings.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="climate" class="level1">
+<h1>Climate</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.nakedcapitalism.com/2024/07/climate-change-can-one-specific-example-counter-the-denialists.html">Sea Level Crisis: The Local Impact of Climate Change on Georgia’s Sea Islands (Naked Capitalism, 2024-07-31)</a></td>
+<td>The Sea Islands of Georgia face accelerating sea level rise, threatening habitation. Historical stability is shifting, and local leaders must act despite scepticism about anthropogenic climate change.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.carbonbrief.org/every-0-1c-of-overshoot-above-1-5c-increases-risk-of-crossing-tipping-points/">Global Warming Overshoots: Every 0.1C Increase Elevates Risk of Irreversible Environmental Tipping Points (Carbon Brief, 2024-08-01)</a></td>
+<td>Every 0.1C overshoot above 1.5C raises the risk of critical ecological tipping points. Global warming beyond 2C significantly accelerates this risk, necessitating urgent emission reductions.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://devblogs.microsoft.com/python/python-in-visual-studio-code-august-2024-release/">Enhance Your Python Coding with New Visual Studio Code Features: Inline Values, Improved Discovery, and Enhanced REPL (Python in Visual Studio Code, 2024-07-31)</a></td>
+<td>The August 2024 release for Python in Visual Studio Code features improved environment discovery, inline variable values in debugging, enhanced REPL UI, and additional user-requested enhancements.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="etfs-and-index-investing" class="level1">
+<h1>ETFs and Index Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.etftrends.com/no-summer-vacation-etfs-flows-near-record-pace-july/">ETFs Defy Summer Slump with Record-Breaking Inflows: What’s Driving the Surge? (ETF Trends, 2024-07-31)</a></td>
+<td>ETFs experienced significant inflows in July, particularly in fixed income and equities, with strategies like USHY and SPY gaining momentum, potentially challenging previous annual records.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hedge-fund-news" class="level1">
+<h1>Hedge Fund News</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.hedgeweek.com/hedge-funds-shift-focus-from-industrials-to-commodities/">Hedge Funds Abandon Industrial Stocks for Lucrative Commodities Amid Economic Concerns and Geopolitical Tensions (Bloomberg, 2024-07-31)</a></td>
+<td>Hedge funds are shifting from industrial stocks to commodity sectors like energy and materials amid geopolitical tensions. Industrial sell-offs are linked to trade concerns; energy and materials see increased investment.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technology" class="level1">
+<h1>Technology</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://lifehacker.com/tech/how-to-track-police-cars-google-maps">Google Maps Enhances Road Safety with Police Alerts, Speed Tracking Traffic Lights, and Event Traffic Guidance (Google Blog, 2024-07-31)</a></td>
+<td>Google Maps and Waze introduce new traffic-tracking features, allowing users to report police locations, traffic events, and enhancing destination guidance with highlighted entrances and nearby parking.</td>
+</tr>
+<tr class="even">
+<td><a href="http://climateerinvest.blogspot.com/2024/07/how-crowdstrike-company-behind-global.html">CrowdStrike: The Cybersecurity Titan’s $30 Billion Misstep and Critical Role in Global Digital Safety (Climateer Investing, 2024-07-31)</a></td>
+<td>CrowdStrike, a $90 billion cybersecurity firm, faced a $30 billion market cap loss after a software update outage affected 8.5 million systems. It was founded in 2011 by George Kurtz and others.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.engadget.com/google-maps-will-show-you-where-to-enter-your-destination-130021496.html?src=rss">Navigate More Efficiently with Google’s Updated Maps and Waze Features (Engadget, 2024-07-31)</a></td>
+<td>Google Maps introduces features like highlighting building entrances and easier incident reporting. Waze adds camera alerts, traffic notifications, and locked navigation guidance, rolling out on iOS and Android.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>climate</category>
+  <category>coding</category>
+  <category>etf</category>
+  <category>hedge-funds</category>
+  <category>tech</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_01_daily-curation.html</guid>
+  <pubDate>Wed, 31 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/cup-of-coffee-and-a-newspaper.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Daily Financial Curations for 31.07.2024: Earth’s Record Heat, PyCharm-Pytest Guide, AI Search Engines, Active ETFs Expansion</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_31_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore various pressing topics currently shaping the financial landscape:</p>
+<ul>
+<li>Record high temperatures and climate change implications</li>
+<li>Practical applications of file testing and simulation</li>
+<li>Utilizing pytest effectively with PyCharm</li>
+<li>Advanced SQL techniques for improved data analysis</li>
+<li>The impact of AI on search engine dynamics</li>
+<li>Key economic questions and Federal Reserve outlook</li>
+<li>Recent US GDP growth insights</li>
+<li>BlackRock’s expansion in active ETFs</li>
+<li>Small-cap stock performance trends and future forecasts</li>
+</ul>
+<p>Happy reading!</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/stack-of-paper.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="climate" class="level1">
+<h1>Climate</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://angrybearblog.com/2024/07/a-jump-in-the-global-temperature">Unprecedented Temperatures: A Glimpse into Earth’s Ancient Climate and Our Near Future (The Atlantic, 2024-07-31)</a></td>
+<td>Scientists report the Earth’s hottest day in record keeping occurred recently, nearing temperatures not seen in 125,000 years, raising concerns about climate change and rising seas.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://realpython.com/courses/simulate-text-file/">Effortlessly Test File-Reading Apps: Discover the Power of Python’s io.StringIO and Mocking Techniques (realpython, 2024-07-30)</a></td>
+<td>Testing applications reading files from disk can be complex. This course teaches simulation of text files with StringIO, file operations, usage considerations, alternatives, and mocking file objects with unittest.mock.</td>
+</tr>
+<tr class="even">
+<td><a href="https://blog.jetbrains.com/pycharm/2024/07/learning-resources-for-pytest/">Master Pytest with PyCharm: Videos, Tutorials, Books and More for testing Proficiency (JetBrains Guide, 2024-07-29)</a></td>
+<td>PyCharm supports pytest with a test runner, code completion, and assert reports. Resources include video tutorials, written guides, books, and official documentation for learning pytest effectively.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-databases-and-data-science" class="level1">
+<h1>Data, Databases and Data Science</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/the-most-useful-advanced-sql-techniques-to-succeed-in-the-tech-industry-0f0690e8386c">Mastering Advanced SQL: Boost Your Data Skills with Window Functions, Subqueries, and Common Table Expressions (Towards Data Science, 2024-07-31)</a></td>
+<td>Advanced SQL techniques include window functions, subqueries, and Common Table Expressions (CTEs). These tools enhance data manipulation capabilities, simplify complex queries, and improve analysis efficiency in the tech industry.</td>
+</tr>
+<tr class="even">
+<td><a href="https://towardsdatascience.com/genai-is-revolutionizing-search-451fdc2f1e57">AI-Driven Search Engines: The Next Evolution in How We Access Information Online (Towards Data Science, 2024-07-30)</a></td>
+<td>Advancements in artificial intelligence are transforming search engines into answer machines. New players like Perplexity and You.com challenge Google’s dominance. These changes influence how users access information globally.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://awealthofcommonsense.com/2024/07/7-questions-im-pondering/">Seven Thought-Provoking Questions on Economy, Happiness, Fireplaces, Stocks, and More: Insights and Musings from a Financial Expert (The name of the blog is not explicitly mentioned in the provided content., 2024-07-31)</a></td>
+<td>Seven questions pondered include Fed rate cuts, Americans’ wage disparity, youth happiness decline, the charm of fireplaces, small-cap stock valuation, hotel steamers’ inefficacy, and stock market return predictions for 2024.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.calculatedriskblog.com/2024/07/fomc-preview-no-change-to-fed-funds-rate.html">Fed Holds Rates Steady: What It Means for Your Money and Economy (Not provided, 2024-07-28)</a></td>
+<td>Most analysts expect no change to the federal funds rate. Future cuts in September, November, and December are likely. Inflation is approaching the 2% target, with unemployment slightly higher.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.nakedcapitalism.com/2024/07/economy-re-accelerates-in-q2-our-drunken-sailors-splurge-on-durable-goods-investment-jumps-federal-gov-undoes-blip.html">Economic Growth Surges in Q2: Consumers, Investments, and Government Spending Propel US Economy Despite Fed Rate Hikes (Naked Capitalism, 2024-07-26)</a></td>
+<td>US real GDP grew by 2.8% in Q2, driven by increased consumer spending (+2.3%) and investment (+8.4%). Government consumption rose +3.1%, while the trade deficit worsened.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="etfs-and-index-investing" class="level1">
+<h1>ETFs and Index Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.ft.com/content/ecc735f0-ebad-43fd-bfd2-7ef750105e28">BlackRock Foresees Explosive Growth in Active ETFs as New Launches Target European Market (ETF Hub, 2024-07-30)</a></td>
+<td>BlackRock launches five active ETFs in Europe, doubling its offerings. Despite slower growth in Europe, active ETFs see rising global interest, particularly in the US, with significant market potential.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.benzinga.com/analyst-ratings/analyst-color/24/07/40049081/small-caps-eyes-strongest-month-against-tech-stocks-in-22-years-why-presidential-el">Small Caps Might Soar: Election Year Trends and Fed Policies Could Propel Russell 2000 to New Heights (Benzinga, 2024-07-30)</a></td>
+<td>In July 2024, small-cap stocks outperformed tech stocks significantly. Predictions of Federal Reserve rate cuts and historical trends in presidential election years suggest potential continued growth for the Russell 2000.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>climate</category>
+  <category>coding</category>
+  <category>data-science</category>
+  <category>economics</category>
+  <category>etf</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_31_daily-curation.html</guid>
+  <pubDate>Tue, 30 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/stack-of-paper.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Daily Curation (29.07.2024): Bitcoin Leaps, Vanguard’s High-Yield ETFs, and S&amp;P Stumbles while SmallCaps Shine</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_29_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore notable developments in financial markets, including:</p>
+<ul>
+<li>Howard Lutnick’s $2 billion Bitcoin financing initiative.</li>
+<li>A surge in Bitcoin’s mining hashrate amidst rising prices.</li>
+<li>Vanguard’s VGSH and VCSH ETFs offering competitive yields.</li>
+<li>Recent declines in the S&amp;P 500 despite strong year-to-date performance.</li>
+<li>Invesco’s XSVM ETF reaching a 52-week high.</li>
+</ul>
+<p>Below is a detailed overview of these topics.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/pile-of-newspapers.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="crypto-news-and-analysis" class="level1">
+<h1>Crypto News and Analysis</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://cointelegraph.com/news/cantor-fitzgerald-announces-2b-bitcoin-financing-business?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound">Cantor Fitzgerald’s $2 Billion Bet: Empowering Bitcoin Holders with Leverage in the Financial Market (Cointelegraph, 2024-07-27)</a></td>
+<td>Howard Lutnick, CEO of Cantor Fitzgerald, announced a $2 billion Bitcoin financing business at the Bitcoin 2024 conference, aiming to leverage Bitcoin ownership and support the cryptocurrency community.</td>
+</tr>
+<tr class="even">
+<td><a href="https://bitcoinist.com/bitcoin-hashrate-all-time-high-btc-price-67000/">Bitcoin Mining Power Nears Peak as BTC Breaks $67K: What It Means for Investors (The name of the blog or website is not explicitly mentioned in the content provided., 2024-07-27)</a></td>
+<td>Bitcoin’s mining hashrate nears an all-time high, recovering as BTC trades above $67,000. After a decline post-April’s Halving, rates improved alongside recent price increases.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="etfs-and-index-investing" class="level1">
+<h1>ETFs and Index Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.etftrends.com/fixed-income-channel/mitigate-default-rate-risk-2-etfs/">Maximize Bond Investments: Mitigate Risks with Vanguard’s Top Short-Term Treasury and Corporate Bond ETFs (ETF Trends, 2024-07-26)</a></td>
+<td>Vanguard offers VGSH and VCSH ETFs to mitigate default and rate risk, featuring yields of 4.70% and 5.13%, respectively, with low expense ratios of 0.04%.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-pulse-market-news" class="level1">
+<h1>Market Pulse &amp; Market News</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.etftrends.com/innovative-etfs-channel/sp-500-snapshot-index-falls-second-straight-week/">Understanding S&amp;P 500: Recent Trends, Volatility, and Insights into Treasury Yields for Savvy Investors (ETF Trends, 2024-07-27)</a></td>
+<td>The S&amp;P 500 fell 0.83% last week, marking its second consecutive decline. It’s up 16.10% year-to-date, achieving 38 record highs. Treasury yields reached 4.20% for the 10-year note.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.benzinga.com/news/24/07/39986277/small-cap-etf-hits-new-52-week-high">Small-Cap ETF Soars: Up 28%, Riding U.S. Economic Boom and Solid Consumer Spending, Is It Worth Your Attention? (Benzinga.com, 2024-07-26)</a></td>
+<td>Invesco S&amp;P SmallCap Value with Momentum ETF (XSVM) recently reached a 52-week high, up 28% from its low. It focuses on small-cap stocks linked to domestic economic growth.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>crypto</category>
+  <category>etf</category>
+  <category>market-feed</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_29_daily-curation.html</guid>
+  <pubDate>Sun, 28 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/pile-of-newspapers.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Daily Curation (26.07.2024): SearchGPT Launch, Bitcoin ETFs, China’s Economic Moves, and Rising Small Cap Investments</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_26_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore a range of important financial and technological developments that may impact various sectors. Key topics include:</p>
+<ul>
+<li>Launch of OpenAI’s SearchGPT for enhanced search experiences</li>
+<li>Microsoft Bing’s Generative Search and its layout changes</li>
+<li>Building a streaming agentic chatbot with Burr and FastAPI</li>
+<li>Jersey City’s pension fund’s investment in Bitcoin ETFs</li>
+<li>China’s central bank’s unexpected lending rate cuts</li>
+<li>Rising domestic food prices amid falling global rates</li>
+<li>Surge in U.S. ETF flows and interest in spot Bitcoin ETFs</li>
+<li>Shift towards small caps with significant inflows into Russell 2000 ETF</li>
+<li>Opportunities in emerging market debt amid volatility</li>
+<li>Financial planning advice for baby boomers on wealth gifting</li>
+</ul>
+<p>Please see the table below for more details on each topic.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/article-in-newspaper.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="ai-and-gen-ai" class="level1">
+<h1>AI and Gen-AI</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.thedrum.com/news/2024/07/25/openai-releases-prototype-searchgpt-generative-ai-powered-search-tool">AI Search Revolution: OpenAI’s SearchGPT Combines Conversational AI with Real-Time Web Info for Smarter Results (The Drum, 2024-07-25)</a></td>
+<td>OpenAI launched SearchGPT, a generative AI search tool that provides up-to-date information, cites sources, and allows publishers to manage their appearances in results, aiming to improve online search experiences.</td>
+</tr>
+<tr class="even">
+<td><a href="https://lifehacker.com/tech/bing-ai-search">Bing’s New AI-Powered Search Will Transform Your Online Experience and Upend Traditional Search Results (theverge, 2024-07-25)</a></td>
+<td>Microsoft’s Bing Generative Search will feature an extensive AI information box, altering the homepage layout. Concerns include misinformation and potential reduction in clickthrough rates. Release details are pending.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/how-to-build-a-streaming-agent-with-burr-fastapi-and-react-e2459ef527a8?source=rss----7f60cf5620c9---4">Create a Dynamic Chatbot with Streaming Text Using Burr, FastAPI, and React: A Beginner’s Guide to Streaming AI (Towards Data Science, 2024-07-25)</a></td>
+<td>This article outlines building a streaming agentic chatbot using Burr, FastAPI, and React. It emphasises the importance of streaming for enhanced interactivity and user experience.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="crypto-news-and-analysis" class="level1">
+<h1>Crypto News and Analysis</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://coinspectator.com/newsbtc/2024/07/26/in-the-works-jersey-city-mayors-plan-to-introduce-bitcoin-etfs-into-pension-funds/">Pension Investments Evolve: Jersey City Fund Ventures into Bitcoin ETFs, Paving Way for Traditional Finance Integration (Bitcoinist, 2024-07-25)</a></td>
+<td>Jersey City pension fund plans to invest in Bitcoin ETFs, updating SEC paperwork, following Wisconsin’s similar move. Mayor Fulop endorses blockchain technology, noting increasing interest in crypto investments.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.reuters.com/world/china/china-central-bank-surprises-by-lending-again-lower-rates-2024-07-25/">China Injects Cash Amid Economic Concerns: Central Bank’s Surprise Rate Cuts to Boost Growth and Confidence (Reuters Econ World, 2024-07-25)</a></td>
+<td>China’s central bank reduced lending rates unexpectedly, injecting liquidity into the market. This aims to counteract deflationary pressures and support a struggling economy amid declining stock market performance.</td>
+</tr>
+<tr class="even">
+<td><a href="https://rwer.wordpress.com/2024/07/25/why-do-domestic-food-prices-keep-going-up-when-global-prices-fall/">Why Your Grocery Bill Keeps Rising Even as Global Food Prices Drop: A Deeper Look at Inflation Triggers (Real-World Economics Review, 2024-07-25)</a></td>
+<td>Domestic food prices rise despite falling global prices due to currency depreciation, debt distress, reliance on global markets, and uneven price transmission, especially in lower-income countries.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="etfs-and-index-investing" class="level1">
+<h1>ETFs and Index Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.etftrends.com/u-s-etf-flows-investors-getting-polarized/">Navigating the Shifting Landscape: Why Investors Are Flocking to Active Management and Bitcoin ETFs in 2024 (ETF Trends, 2024-07-25)</a></td>
+<td>In H1 2024, U.S. ETF flows surged, focusing on core, complex, and active strategies. Spot Bitcoin ETFs attracted significant interest, marking a shift towards higher-cost investments and active management.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.benzinga.com/markets/equities/24/07/39970069/investors-go-all-in-on-small-caps-pour-over-6-billion-into-russell-2000-etf-this-month-they-will">Why Billions Are Flowing into Small-Cap ETFs as Big Tech Falters: What Investors Might Be Missing (Benzinga, 2024-07-25)</a></td>
+<td>Investors are shifting to small caps, with over $6 billion inflows into the Russell 2000 ETF in July 2024, despite caution from experts about long-term prospects compared to larger firms.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fundamental-investing" class="level1">
+<h1>Fundamental Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.institutionalinvestor.com/article/2djkjeoxdz13ar7w9kkxs/innovation/opportunities-in-emerging-markets-amidst-volatility">Unlocking Profitable Opportunities in Emerging Market Debt Despite Global Volatility and Geopolitical Tensions (Institutional Investor, 2024-07-26)</a></td>
+<td>Emerging market debt presents growth potential amidst volatility. Larger economies like Brazil and India show improved fundamentals, with low default rates expected. Opportunities exist in liquid and illiquid strategies.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="personal-development" class="level1">
+<h1>Personal Development</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.businessinsider.com/boomers-who-want-pass-down-wealth-pass-stress-test-advisor-2024-7">Smart Wealth Transfers: Ensure Personal Financial Stability Before Helping Kids with Early Gifting (Business Insider, 2024-07-25)</a></td>
+<td>Financial planners advise baby boomers to ensure financial stability before gifting wealth. They suggest conducting a “stress test” on portfolios to assess sustainability for long-term care and potential market downturns.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>coding</category>
+  <category>crypto</category>
+  <category>economics</category>
+  <category>etf</category>
+  <category>fundamental</category>
+  <category>personal-dvpt</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_26_daily-curation.html</guid>
+  <pubDate>Fri, 26 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/article-in-newspaper.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Daily Market Insights: Shrink your AI models with Quantization and Climate Progress (25.07.2024)</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_25_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore several significant developments impacting financial markets and investment strategies. Key topics include:</p>
+<ul>
+<li>Climate pollution trends and the role of clean energy.</li>
+<li>Innovations in large language models and their applications.</li>
+<li>Updates on hedge fund negotiations with Ukraine.</li>
+<li>Trends in US Treasury debt and investor sentiment.</li>
+</ul>
+<p>Below is a detailed summary of these topics.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/morning-news-in-the-office-2023-11-27-04-50-01-utc.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="climate" class="level1">
+<h1>Climate</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://skepticalscience.com/climate-pollution-maybe-peaked.html">Climate Pollution at a Potential Peak: What It Means and Why It’s Crucial for Our Future (Skeptical Science, 2024-07-25)</a></td>
+<td>Global climate pollution may have peaked, with slight declines noted in early 2024. Clean energy growth, particularly in China, is crucial for reducing emissions towards net zero by 2050.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/a-visual-guide-to-quantization-930ebcd9be94?source=rss----7f60cf5620c9---4">How Shrinking AI Models Can Save Space: An Insider’s Guide to Quantization Techniques for Optimal Performance (Towards Data Science, 2024-07-24)</a></td>
+<td>Large Language Models (LLMs) require vast memory due to billions of parameters. Quantization reduces representation bits, preserving precision while minimising memory usage. Techniques include symmetric and asymmetric quantization, and post-training quantization.</td>
+</tr>
+<tr class="even">
+<td><a href="https://realpython.com/huggingface-transformers/">Unlock AI’s Potential with Hugging Face: Simplifying Access to Open-Source Models for NLP, Vision, and Audio Tasks (Real Python 2024-07-25)</a></td>
+<td>Transformers is a Python library by Hugging Face for utilizing pretrained AI models across various tasks. It supports NLP, computer vision, and audio, and facilitates cost-effective, secure deployments.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="finance" class="level1">
+<h1>Finance</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.hedgeweek.com/hedge-funds-gear-up-for-2-6bn-ukraine-debt-restructuring/">Hedge Funds Prepare for Major Ukraine Debt Talks Amidst Ongoing War and Economic Uncertainty (HedgeWeek, 2024-07-25)</a></td>
+<td>Hedge funds, including Aurelius and VR Capital, prepare for negotiations with Ukraine to restructure $2.6bn in GDP warrants. Payments are due in August, with warrants trading at 58 cents on the dollar.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://conversableeconomist.com/2024/07/24/if-demand-for-us-treasury-bonds-dried-up-what-warning-signs-would-flash/">What Happens if the World Stops Buying US Treasury Bonds? Warning Signs and Economic Implications (Conversable Economist, 2024-07-24)</a></td>
+<td>Rising US Treasury debt could deter investors, indicated by primary dealers purchasing larger auction shares, declining bid-to-cover ratios, and foreign holdings decreasing as a share of total debt.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>climate</category>
+  <category>coding</category>
+  <category>economics</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_25_daily-curation.html</guid>
+  <pubDate>Wed, 24 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/morning-news-in-the-office-2023-11-27-04-50-01-utc.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Daily Financial Insights 24.07.2024: US Economic Growth, ETF Trends, Small-Cap Outperformance, &amp; Inflation Eases</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_24_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore a range of topics relevant to quantitative finance and market insights:</p>
+<ul>
+<li>GroupBy operations in pandas for data analysis</li>
+<li>rnatoolbox for plotting group data</li>
+<li>US economic growth and inflation trends</li>
+<li>Fed rate prediction and implications for small-cap stocks</li>
+<li>Performance of small-cap ETFs and investor sentiment<br>
+</li>
+<li>Market performance under the Biden administration</li>
+</ul>
+<p>Please find further details in the table below.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/news-concept-with-newspapers-2023-11-27-05-32-59-utc.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://realpython.com/courses/pandas-groupby-real-world-data/">Unlocking Data Insights: Master pandas GroupBy Techniques with Real-World Examples (pandas documentation, 2024-07-23)</a></td>
+<td>This course teaches pandas GroupBy operations using real-world datasets. It covers the split-apply-combine process, method categorisation, and practical applications for effective data analysis.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.r-bloggers.com/2024/07/plotting-individual-values-within-multiple-groups-together-with-their-means/">Visualize Data with Ease Using Group Scatter Plots in R (gacatag, 2024-07-23)</a></td>
+<td>The <code>groupScatterPlot()</code> function in the rnatoolbox package plots individual values from multiple groups alongside their means, useful for various data analyses, including gene expression.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.capitalspectator.com/us-q2-gdp-growth-set-for-modest-pickup-in-thursdays-report/">US Economy Shows Resilience: Q2 Growth Set for Improvement, Recession Risk Remains Low (CapitalSpectator.com, 2024-07-23)</a></td>
+<td>US economic growth is expected to rise to 1.9% in Q2, an improvement from Q1’s 1.4%. Recession risk remains low, with estimates around 9% based on recent analytics.</td>
+</tr>
+<tr class="even">
+<td><a href="https://awealthofcommonsense.com/2024/07/are-higher-rates-finally-starting-to-impact-consumer-finances/">How Smart Financial Choices Mitigated Inflation Impact Without Triggering Recession (The name is not explicitly mentioned in the content provided, so I am unable to identify it., 2024-07-24)</a></td>
+<td>Inflation fell to 3% without recession. Consumers remain relatively resilient despite rising interest rates, though some debt types, like credit cards and auto loans, show increasing delinquencies.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://insight.factset.com/the-fed-is-not-cutting-in-september">Why the Fed May Delay Rate Cuts: Data, Market Signals, and Election Timing (FactSet Insight, 2024-07-23)</a></td>
+<td>The Fed is likely not to cut rates in September, anticipating two cuts in November and December instead, citing data dependency, synthetic cuts, and election politicisation as reasons.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fundamental-investing" class="level1">
+<h1>Fundamental Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.etftrends.com/etf-prime/crigger-small-cap-stocks-plus-spot-ether-etfs/">Unlocking Small-Cap Stock Potential and Ether ETF Strategies: Insights from Industry Experts (ETF Trends, 2024-07-23)</a></td>
+<td>Small-cap stocks have recently outperformed large-caps, leading to significant inflows into small-cap ETFs. Spot ether ETFs were approved rapidly, capitalising on changing regulatory attitudes towards cryptocurrencies.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.valuewalk.com/how-the-stock-market-has-fared-under-biden/">Assessing Biden’s Stock Market Legacy: A Comparative Analysis with Past Presidents from Reagan to Trump (ValueWalk, 2024-07-23)</a></td>
+<td>Since Biden took office, the S&amp;P 500 has risen 48%. His administration experienced two bull markets and one bear market, trailing both Trump and Obama’s stock market performances.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://rotationreport.substack.com/p/the-small-cap-snowball">Forecasting the Small Cap Surge: Tom Lee’s Bold Prediction on IWM Reaching 300 (Rotation Report, 2024-07-23)</a></td>
+<td>Tom Lee predicts IWM will reach 300. This speculation raises interesting possibilities for small-cap growth. Full details are exclusive to paid subscribers on a specific platform.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quantitative-investing" class="level1">
+<h1>Quantitative Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.etftrends.com/etf-building-blocks-channel/investing-factor-key-rate-sensitive-small-caps/">Unlock High Returns: Quality Small Cap Stocks to Watch During Upcoming Rate Cuts (ETF Trends, 2024-07-24)</a></td>
+<td>Rate cuts may benefit small-cap quality stocks, particularly through the ALPS O’Shares U.S. Small-Cap Quality Dividend ETF (OUSM), which focuses on dividends and shows strong performance compared to benchmarks.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <category>economics</category>
+  <category>fundamental</category>
+  <category>quant</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_24_daily-curation.html</guid>
+  <pubDate>Tue, 23 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/news-concept-with-newspapers-2023-11-27-05-32-59-utc.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>Daily Links 23.07.2024: Transparent Private Markets, Improved Forecasting Models, and Cutting-Edge Tech News</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_23_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore a diverse range of topics relevant to finance and technology, encompassing:</p>
+<ul>
+<li>Geospatial interpolation methods for EV battery performance analysis</li>
+<li>Transparency in private markets and the need for reliable benchmarks</li>
+<li>Projected returns for pensions driven by stock allocations</li>
+<li>Potential Fed rate cuts and the attractiveness of bonds</li>
+<li>Insights from <em>Confessions of a Wall Street Analyst</em></li>
+<li>Quantifying forecasting uncertainty in time series with Python</li>
+<li>Mathematical concepts from physics applicable to finance</li>
+<li>A personal journey through data science and overfitting</li>
+<li>Current tech developments affecting major companies</li>
+<li>Plum’s recent funding and growth trajectory</li>
+</ul>
+<p>Please see the table below for links and descriptions of each topic.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/newspaper-stack-on-table-2023-11-27-05-14-30-utc.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/temperature-reconstruction-through-geospatial-interpolation-aea34c359207?source=rss----7f60cf5620c9---4">Understanding EV Battery Efficiency: Using Geospatial Interpolation to Reconstruct Historical Temperature Data (Towards Data Science, 2024-07-23)</a></td>
+<td>This article presents a method for reconstructing historical atmospheric temperatures using geospatial interpolation, specifically Inverse Distance Weighting, to improve EV battery performance analysis with reduced data queries.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="portfolio-construction-techniques" class="level1">
+<h1>Portfolio Construction Techniques</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.institutionalinvestor.com/article/2dj2yfmbp85ay1lm1c8ow/opinion/with-20-trillion-in-private-markets-the-lack-of-transparency-is-no-longer-okay">Unveiling Hidden Markets: The Power of Data and Benchmarks in Private Investments (Institutional Investor, 2024-07-23)</a></td>
+<td>Private markets, valued at $20 trillion, face transparency issues. Reliable benchmarks are essential for informed decision-making, investor confidence, and fostering trust among stakeholders in the evolving alternatives landscape.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.institutionalinvestor.com/article/2dj3kro2cg8my5mj198g0/portfolio/stocks-drove-pension-performance-again">Public Pensions Surged in 2024 Thanks to Stock Market Gains: Analysis Predicts Continued Growth (Institutional Investor, 2024-07-23)</a></td>
+<td>MPI predicts higher returns for pensions in fiscal year 2024, driven by stock exposure. Major allocations to public equities led to promising projected returns for funds like Georgia and Kentucky teachers’ systems.</td>
+</tr>
+<tr class="odd">
+<td><a href="http://mrzepczynski.blogspot.com/2024/07/should-you-prefer-stocks-or-bonds-not.html">Understanding Stocks vs.&nbsp;Bonds: Where Should You Invest as Interest Rates Change? (Disciplined Systematic Global Macro Views, 2024-07-23)</a></td>
+<td>Inflation is down, leading to potential Fed rate cuts. Stocks appear expensive relative to bonds, making bonds more attractive. Managed futures offer an alternative for diversifying investments.</td>
+</tr>
+<tr class="even">
+<td><a href="http://mrzepczynski.blogspot.com/2024/07/being-wall-street-analyst-has-lot-of.html">The High-Stakes World of Wall Street Analysts: Pressure, Competition, and the Pursuit of Financial Accuracy (Disciplined Systematic Global Macro Views, 2024-07-23)</a></td>
+<td><em>Confessions of a Wall Street Analyst</em> explores the pressures faced by analysts in the telecom sector during significant changes, highlighting risks, competition, and evolving practices pre-regulation era.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quantitative-investing" class="level1">
+<h1>Quantitative Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.r-bloggers.com/2024/07/forecasting-uncertainty-sequential-split-conformal-prediction-block-bootstrap-web-app/">Mastering Forecasting Uncertainty: Simple Steps for Accurate Time Series Predictions Using Conformal Prediction and Bootstrap (T. Moudiki’s Webpage, 2024-07-22)</a></td>
+<td>This article discusses a method for quantifying forecasting uncertainty in time series using sequential split conformal prediction and block bootstrap, implemented in the Python package nnetsauce.</td>
+</tr>
+<tr class="even">
+<td><a href="https://towardsdatascience.com/three-mind-blowing-ideas-in-physics-the-stationary-action-principle-lorentz-transformations-and-e86977ea86ad?source=rss----7f60cf5620c9---4">Unlocking Physics: Action Principles, Spacetime Transformations, and Curved Geometry Insight for Curious Minds without Math Anxiety (Towards Data Science, 2024-07-23)</a></td>
+<td>The article explores three fundamental concepts in physics: the stationary action principle, Lorentz transformations, and the metric tensor, highlighting their mathematical significance and applications in understanding physical phenomena.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/i-used-to-hate-overfitting-but-now-im-grokking-it-e6e1dcfbdfd8">Mastering Neural Networks: Overcoming Frustration and Embracing the Journey to Understand Overfitting (Data Science, 2024-07-23)</a></td>
+<td>The author reflects on their journey with data science, contrasting early frustrations with sound propagation models to their evolving understanding of overfitting in neural networks and its implications.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technology" class="level1">
+<h1>Technology</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.01net.com/actualites/01net-morning-debrancher-ou-pas-ses-equipements-pendant-les-vacances-un-futur-roadster-chez-smart-panne-crowdstrike-a-qui-la-faute.html">Smart’s Electric Roadster, Vacation Gadget Tips, and Blame Game for CrowdStrike Outage Explored (01net, 2024-07-22)</a></td>
+<td>01net discusses whether to unplug devices during holidays, Microsoft’s blame on the EU for the CrowdStrike outage, and Smart’s future plans for an electric Roadster, while Samsung shifts to Google Messages.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.finextra.com/newsarticle/44488/plum-raises-16-million-in-push-for-profitability">Plum Secures £16M Boost: On Track for Profitability with 2M Users and £1B Assets Under Management (Plum blog, 2024-07-23)</a></td>
+<td>Plum raised £16m, including £13.4m from institutional investors and £2.7m via crowdfunding. The app has over two million customers and aims for profitability by 2025, with assets under management exceeding £1bn.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <category>portfolio-construction</category>
+  <category>quant</category>
+  <category>tech</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_23_daily-curation.html</guid>
+  <pubDate>Mon, 22 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/newspaper-stack-on-table-2023-11-27-05-14-30-utc.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>Daily Finance Insights (22.07.24): Pandas Plot for EDA, Inflation &amp; Geopolitical Shocks, Large-Cap Growth Leads, and Optimizing YouTube Experience</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_22_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we cover a range of topics relevant to financial markets and data analysis:</p>
+<ul>
+<li><strong>Pandas Plot</strong>: Simplifying data visualization with one-line plotting from dataframes.</li>
+<li><strong>Geopolitical Influences</strong>: Effects on inflation and household sentiment.</li>
+<li><strong>US Equity Factors</strong>: Large-cap growth leads, while small-cap value shows potential.</li>
+<li><strong>YouTube Shorts Management</strong>: Tips on disabling Shorts for a cleaner experience.</li>
+</ul>
+<p>Please explore the details in the table below.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/you-dont-need-matplotlib-when-pandas-is-enough-for-data-visualisation-38d5680197a5">Simplify Your Data Visualizations: Leveraging Pandas for Efficient Exploratory Data Analysis (Author, 2024-07-22)</a></td>
+<td>Pandas Plot simplifies data visualisation, allowing one-line plotting from dataframes. While it utilises Matplotlib, it suffices for routine EDA. Limitations exist; it’s best for straightforward tasks only.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://mrzepczynski.blogspot.com/2024/07/geopolitical-risk-is-tied-to-inflation.html">How Geopolitical Events Fuel Inflation and Impact Your Wallet: A Simplified Guide (Geopolitical Shocks and Inflation, 2024-07-22)</a></td>
+<td>Geopolitical shocks contribute to inflation by disrupting trade and increasing public spending. This dynamic influences political change and household sentiment through declining purchasing power and economic impacts.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fundamental-investing" class="level1">
+<h1>Fundamental Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.capitalspectator.com/large-cap-growth-is-still-leading-the-market-will-it-last/">Small-Cap Stocks Suddenly Surge: Will They Outpace Large-Cap Growth and Change Market Dynamics? (CNBC, 2024-07-22)</a></td>
+<td>Large-cap growth leads US equity factors in 2024. Small-cap value lags but shows a potential turnaround amid speculation of Federal Reserve interest rate cuts. Caution advised on small-cap sustainability.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technology" class="level1">
+<h1>Technology</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://sethmlarson.dev/youtube-without-youtube-shorts?date=2024-07-22">Mastering YouTube: How Disabling Watch History Eliminates the Distraction of Shorts and Enhances Viewing Experience (YouTube without YouTube Shorts, 2024-07-22)</a></td>
+<td>The author disabled YouTube Shorts by turning off and deleting their Watch History. This resulted in no Shorts appearing, as well as a simplified home page.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <category>economics</category>
+  <category>fundamental</category>
+  <category>tech</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_22_daily-curation.html</guid>
+  <pubDate>Sun, 21 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Daily Findings (21.07.24): Strava Insights, Key Finance Coding Skills, Data Science Portfolios, and Economic Forecasts</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-21_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore various topics relevant to finance and data analysis, including:</p>
+<ul>
+<li>Analyzing competitive segments on Strava using R</li>
+<li>Essential programming languages for finance careers</li>
+<li>Building a professional data science portfolio with mkdocs</li>
+<li>Trends in real household net worth and its implications</li>
+<li>Economic forecasts indicating a potential U.S. recession</li>
+</ul>
+<p>Please find the detailed articles and resources in the table below.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/laptop-plant-and-stack-of-newspapers-on-wooden-ta-2023-11-27-05-12-11-utc.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.r-bloggers.com/2024/07/king-of-the-mountain-using-r-to-bag-a-strava-kom/">Unlocking Strava Secrets: Using R and Data Science to Dominate Running Segments and Set Course Records (Rstats, 2024-07-20)</a></td>
+<td>Strava allows users to compete for King or Queen of the Mountain titles. Using R and its API, users can analyse segments to identify beatable course records for running.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.techspot.com/news/103878-3-programming-languages-help-you-land-job-finance.html">Unlock Your Finance Career: Master These 3 Programming Languages for Top Job Prospects (TechSpot, 2024-07-20)</a></td>
+<td>Three key programming languages for finance jobs are SQL, Python, and Java. SQL leads with 24.4% demand, followed by Python at 18%, and Java at 14%.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/full-guide-to-build-a-professionnal-portfolio-with-python-markdown-git-and-github-page-for-66d12f7859f0">Create a Stunning Data Science Portfolio Using Python and mkdocs: A Step-by-Step Guide (Towards Data Science, 2024-07-20)</a></td>
+<td>This article details the author’s journey in creating a professional data science portfolio using mkdocs, highlighting environment setup, Git configuration, and iterative improvement based on community standards.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://econbrowser.com/archives/2024/07/can-one-have-a-recession-start-when-real-household-wealth-is-rising">Recession Paradox: Can Rising Household Wealth Signal Economic Downturn? (Apollo, 2024-07-20)</a></td>
+<td>Torsten Slok discusses real household net worth trends around NBER peaks. Historically, net worth decreased before recessions, except in 2020. In 2024Q1, real net worth increased by 10%.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-pulse-market-news" class="level1">
+<h1>Market Pulse &amp; Market News</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://climateerinvest.blogspot.com/2024/07/recession-odds-grow-as-consumers-pull.html">Impending Recession Signals as Consumer Savings Decline and Investment Contributions Waver (Barron’s, 2024-07-20)</a></td>
+<td>BCA Research forecasts a U.S. recession by late 2024 or early 2025, citing dwindling consumer savings, reduced consumption growth, and tight monetary policy impacting capital spending.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <category>economics</category>
+  <category>market-feed</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-21_daily-curation.html</guid>
+  <pubDate>Sat, 20 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/laptop-plant-and-stack-of-newspapers-on-wooden-ta-2023-11-27-05-12-11-utc.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>Daily Insights (20.07.24): GPT-4o Mini Launch, Bitcoin’s Safe-Haven Surge, AI Content Best Practices, Hill Repeats for Runners</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-20_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore several noteworthy topics that highlight recent developments and insights in technology and finance:</p>
+<ul>
+<li>OpenAI’s launch of the more affordable GPT-4o mini.</li>
+<li>Strategies for creating effective content prompts for generative AI.</li>
+<li>The benefits of hill repeats for cardiovascular fitness.</li>
+<li>Bitcoin’s evolving relationship with the S&amp;P 500 and its rising status as a safe-haven asset.</li>
+</ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/blog-post.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="ai-and-gen-ai" class="level1">
+<h1>AI and Gen-AI</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://lifehacker.com/tech/gpt-4o-mini-is-a-cheaper-almost-as-good-gpt-4o">Affordable AI Power: OpenAI’s GPT-4o Mini Brings High-Performance Language Processing at a Lower Cost (OpenAI Blog, 2024-07-19)</a></td>
+<td>OpenAI has launched GPT-4o mini, a cheaper alternative to GPT-4o, lacking audio/video processing. It offers similar performance and safety features but at significantly reduced pricing for developers.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="automation" class="level1">
+<h1>Automation</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://contently.com/2024/07/19/better-content-prompts-for-generative-ai/">Mastering AI Prompts: Elevate Your Content Creation with Precise, Strategic Commands (The Content Strategist, 2024-07-20)</a></td>
+<td>Creating effective content prompts for generative AI involves specificity, choosing the right tools, fact-checking, and navigating copyright issues. Clear guidelines help mitigate risks associated with AI-generated content.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="personal-development" class="level1">
+<h1>Personal Development</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://lifehacker.com/health/how-to-run-hill-repeats">Mastering Your Runs: The Ultimate Guide to Effective Hill Workouts for Peak Cardiovascular Fitness and Strength Training (The blog name is not explicitly mentioned in the provided content., 2024-07-19)</a></td>
+<td>Hill repeats improve cardiovascular fitness and strength. They are low impact, enhance running form, and provide confidence. Use varied inclines and adjust reps as needed, even on flat terrain.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="portfolio-construction-techniques" class="level1">
+<h1>Portfolio Construction Techniques</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.valuewalk.com/bitcoin-sp500-correlation-breaks/">Bitcoin Defies Market Trends: Bullish Surge Amid US Market Decline and Financial Uncertainty (Bloomberg, 2024-07-20)</a></td>
+<td>Bitcoin has broken its correlation with the S&amp;P 500, rising despite market declines. Strong ETF inflows and strategic remarks about Bitcoin boost its potential as a safe-haven asset.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>automation</category>
+  <category>personal-dvpt</category>
+  <category>portfolio-construction</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-20_daily-curation.html</guid>
+  <pubDate>Fri, 19 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/blog-post.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>Daily Market Insights (19.07.24): Fed Influence, Small Cap Squeeze, and Portfolio Risk Reassessment</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-19_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore key trends and insights impacting financial markets:</p>
+<ul>
+<li>Shift in investor sentiment from large-cap to small-cap stocks due to potential Fed interest rate cuts, leading to short squeeze opportunities.</li>
+<li>Analysis of the evolving correlation between stocks and bonds, affecting portfolio risk assessment.</li>
+<li>Insights on private capital valuation and the significance of lagged betas for managing systemic risk.:::</li>
+</ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/portfolio-optimisation.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="market-pulse-market-news" class="level1">
+<h1>Market Pulse &amp; Market News</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://moneymorning.com/2024/07/19/short-sellers-hate-that-these-stocks-are-moving-higher/">Unlock Potential Gains: Top Stocks Benefiting from Potential Fed Rate Cuts and Short Squeeze Opportunities (Traders Reserve, 2024-07-19)</a></td>
+<td>Investors are moving away from large cap stocks as the Fed is likely to drop interest rates, causing a shift in sentiment. This is creating short squeeze opportunities in small cap stocks. Some short squeeze candidates include the S&amp;P Biotech ETF(XBI), Chevron (CVX), and Royal Caribbean Cruise Lines (RCL).</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="portfolio-construction-techniques" class="level1">
+<h1>Portfolio Construction Techniques</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://mrzepczynski.blogspot.com/2024/07/why-is-stock-bond-correlation-important.html">Rethinking Your Portfolio: The Crucial Impact of Changing Stock-Bond Correlations (Unknown, 2024-07-19)</a></td>
+<td>The correlation between stocks and bonds is historically negative, providing diversification. However, this correlation can change over time, leading to increased portfolio risk. Investors should regularly reassess their asset allocation.</td>
+</tr>
+<tr class="even">
+<td><a href="https://alphaarchitect.com/2024/07/amortizing-volatility/">Private Investments: Unveiling Hidden Risks and Smoothing Effects on Volatility (Alpha Architect, 2024-07-19)</a></td>
+<td>Private capital managers have discretion in valuing their portfolios, which results in smoother returns and understated volatility. Failure to consider lagged betas leads to underestimating risk and overestimating alpha. Mark Anson’s study found that private investments exhibit significant serial correlation at the quarterly level and that lagged betas account for a significant amount of returns associated with private capital alpha. Adjusting for lagged betas leads to lower allocations and drops in Sharpe ratios. It is important for investors to properly account for systemic risk in private assets by including estimates of lagged betas.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>market-feed</category>
+  <category>portfolio-construction</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-19_daily-curation.html</guid>
+  <pubDate>Thu, 18 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/portfolio-optimisation.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>18.07.24: Mastering Linux Scripting, Trend-Following Strategies, and Evolution of Large Language Models in Today’s Financial Landscape</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-18_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore several crucial topics in financial technology and market strategies. The highlights include:</p>
+<ul>
+<li>Scripting languages like Bash, Python, and Perl for task automation in Linux.</li>
+<li>A trend-following investment strategy framework by Dobromir Tzotchev focusing on risk management and portfolio diversification.</li>
+<li>An overview of Large Language Models (LLMs) and their evolution in natural language processing.</li>
+</ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/stock-valuation.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="automation" class="level1">
+<h1>Automation</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.linuxjournal.com/content/simple-linux-shell-scripts-bash-python-and-perl-will-get-you-and-running">Unlock Your Linux System’s Potential: Automate Tasks with Bash, Python, and Perl Scripts for Improved Productivity (Linux Journal, 2024-07-18)</a></td>
+<td>Bash, Python, and Perl are powerful Linux scripting languages for task automation, offering unique features like command integration, extensive libraries, and text processing capabilities for efficient system management.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quantitative-investing" class="level1">
+<h1>Quantitative Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://quantpedia.com/">Master Trend-Following Strategies: Learn the Key Tactics for Consistent Market Success (Quantpedia, 2024-07-18)</a></td>
+<td>Dobromir Tzotchev’s framework outlines a robust trend-following strategy emphasizing a clean signal, portfolio diversification, and effective risk management techniques for consistent returns in varying market conditions.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technology" class="level1">
+<h1>Technology</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.datasciencecentral.com/history-and-future-of-llms/">Neural Networks to Modern AI: The Evolution and Future of Large Language Models (Data Science Central, 2024-07-18)</a></td>
+<td>Large Language Models (LLMs) evolved from rule-based NLP to transformers, utilizing attention mechanisms and multimodal inputs, with advancements in hardware, algorithms, and smaller models to enhance efficiency and performance.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>automation</category>
+  <category>quant</category>
+  <category>tech</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-18_daily-curation.html</guid>
+  <pubDate>Wed, 17 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/stock-valuation.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>Today’s Curation (17.07.24): Master Python Trading with Alpaca, Retirement Strategies, &amp; Managing Risks with Options</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-17_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In this curation for 17/07/2024, we explore a range of financial concepts and strategies that can enhance your investment approach:</p>
+<ul>
+<li>Retirement planning frameworks: the 4% and 25x rules</li>
+<li>Trading with Alpaca: setting up Python and executing trades</li>
+<li>Utilizing Pandas for strategy testing in Python</li>
+<li>Portfolio hedging with put options</li>
+<li>Python protocols for improved code structure</li>
+<li>Historical economic perspectives of Carl Linnaeus</li>
+<li>Recession probabilities and economic indicators</li>
+<li>Central banks and yield curve control</li>
+<li>Analysis of China’s real estate market impacts</li>
+<li>Tactical asset allocation strategies</li>
+</ul>
+<p>This selection aims to provide insights into both practical trading techniques and broader economic theories.:::</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/laptop-data.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="asset-management" class="level1">
+<h1>Asset Management</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://awealthofcommonsense.com/2024/07/how-much-money-you-need-for-retirement/">Is 25x Your Annual Spending the Magic Number for a Secure Retirement? (A Wealth of Common Sense, 2024-07-17)</a></td>
+<td>The 4% rule and 25x rule provide retirement planning frameworks, but individual circumstances may necessitate more savings for a greater safety margin against uncertainties.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://pyquantnews.com/the-pyquant-newsletter/how-to-trade-a-covered-call-with-alpaca">Master Covered Calls in a Bullish Market: Simple Python Automation with Alpaca Trading API (Alpaca, 2024-06-21)</a></td>
+<td>Create an Alpaca account, set up Python with the Alpaca library, and use the API to execute trades for covered calls, managing positions effectively.</td>
+</tr>
+<tr class="even">
+<td><a href="https://pyquantnews.com/the-pyquant-newsletter/quickly-make-a-trading-strategy-with-a-82-win-rate">Unlock Trading Secrets: Use Python to Achieve an 82% Win Rate with Simple SPY Strategy (Quantifiable Edges, 2024-06-19)</a></td>
+<td>Pandas in Python enables quick trading strategy testing with an 82% win rate by analyzing historical data, identifying 3-day losing streaks, and calculating future returns.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://robotwealth.com/portfolio-hedging-with-put-options/">Shield Your Investments: Easy Techniques to Protect Your Portfolio with Put Options (Robot Wealth, 2024-07-16)</a></td>
+<td>This post discusses portfolio hedging using put options to limit downside risk, including examples, calculating beta, and considerations of risk tolerance and trading edge when hedging strategies.</td>
+</tr>
+<tr class="even">
+<td><a href="https://realpython.com/python-protocol/">Unlock Dynamic Python Typing: Master Protocols for Robust, Cleaner Code Without Inheritance Constraints (Towards Data Science, 2024-07-17)</a></td>
+<td>Protocols in Python enable structural subtyping, allowing type checking without inheritance. They enhance type hints for static duck typing, improving code flexibility, readability, and reliability.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://conversableeconomist.com/2024/07/16/unexpected-economist-carl-linnaeus-on-economic-theory/">Carl Linnaeus: The Botanist Who Secretly Shaped Economic Theory and Advocated Autarky (Conversable Economist, 2024-07-16)</a></td>
+<td>Carl Linnaeus viewed economics as essential for well-being, favored mercantilism, endorsed self-sufficiency, and believed all nations possessed natural resources for economic flourishing, despite his obsession with gold.</td>
+</tr>
+<tr class="even">
+<td><a href="https://econbrowser.com/archives/2024/07/recession-probabilities-for-june-2025">Recession Risks Explained: Key Metrics to Watch for June 2025 Forecasts (NBER, 2024-07-17)</a></td>
+<td>Recession probabilities for June 2025 indicate varied outcomes based on models, showing 60% likelihood with basic indicators and 20% with additional debt measures, reflecting declining debt-service ratios.</td>
+</tr>
+<tr class="odd">
+<td><a href="http://climateerinvest.blogspot.com/2024/07/yield-curve-control-means-party-can.html">The Hidden Risks of Central Bank Yield Curve Control and Its Impact on Economic Stability (Climateer Investing, 2024-07-17)</a></td>
+<td>Central banks disguise risk through yield curve control, preventing bond yields from rising and perpetuating economic stagnation, resulting in more debt and inefficient allocation of resources.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fundamental-investing" class="level1">
+<h1>Fundamental Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://econbrowser.com/archives/2024/07/china-economic-sentiment">China’s Real Estate Woes: Understanding Economic Sentiment Through Insightful Graphs from Apollo’s Torsten Slok (Econbrowser, 2024-07-17)</a></td>
+<td>Torsten Slok’s China analysis highlights real estate market collapse effects, featuring graphs illustrating economic challenges, emphasizing a constant narrative in interpreting China’s economic statistics.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="portfolio-construction-techniques" class="level1">
+<h1>Portfolio Construction Techniques</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://allocatesmartly.com/pragmatic-asset-allocation-from-vojtko-and-javorska-of-quantpedia/">Optimize Your Investments with Pragmatic Asset Allocation: A Smart, Tax-Efficient Strategy for Every Market Condition (Quantpedia, 2024-07-16)</a></td>
+<td>Pragmatic Asset Allocation is a tactical strategy focusing on tax efficiency, trading based on yield curve inversion, and adjusting asset allocation quarterly for optimal performance.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>asset-management</category>
+  <category>coding</category>
+  <category>economics</category>
+  <category>fundamental</category>
+  <category>portfolio-construction</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-17_daily-curation.html</guid>
+  <pubDate>Tue, 16 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/laptop-data.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Daily Insights (16.07.24): Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-16_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore key developments in finance and investment. The following topics are highlighted:</p>
+<ul>
+<li>Asset managers and declining profit margins</li>
+<li>Evolution of passive investing in fixed income</li>
+<li>Growth of E-mini Nasdaq-100 futures</li>
+<li>Impact of severe weather on shipping near South Africa</li>
+<li>Wage growth trends for low-wage workers</li>
+<li>Benchmarking private capital effectively</li>
+<li>Burberry’s challenging first-quarter results</li>
+<li>Growth in India’s equity market</li>
+<li>S&amp;P 500 earnings growth expectations for Q2</li>
+</ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/time-horizon-paper.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="asset-management" class="level1">
+<h1>Asset Management</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner">Why Asset Managers Struggle Despite Booming Markets: Rising Costs and the Push for Alternative Investments Explained (Casey Quirk, 2024-07-15)</a></td>
+<td>Asset managers face declining profit margins despite rising markets, driven by increased operating costs and weak inflows, prompting a focus on alternative investments for growth and adaptation.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.institutionalinvestor.com/article/2dg5aji7ohkluumcrwy68/innovation/index-investing-as-an-active-decision-implications-for-fixed-income-investors">Unlocking Precision and Efficiency: Why Passive Fixed Income Strategies Are Transforming Modern Investment Portfolios (Northern Trust Asset Management., 2024-07-16)</a></td>
+<td>Passive investing in fixed income has evolved, offering customization, precision, and better risk management, despite challenges like liquidity and replication concerns, attracting more investments than active strategies.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://seekingalpha.com/article/4703878-tech-growth-25-years-nasdaq-futures">Navigating Tech Sector Growth: How E-mini Nasdaq-100 Futures Shape Modern Investment and Risk Management Strategies (Seeking Alpha, 2024-07-16)</a></td>
+<td>E-mini Nasdaq-100 futures, launched in 1999, have grown substantially in volume, reflecting the importance of technology stocks and risk management in today’s market landscape.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://finance.yahoo.com/news/ships-fleeing-red-sea-now-160349344.html">Shipping Chaos: Violent Storms Off South Africa Cause Major Disruptions and Container Losses (Bloomberg, 2024-07-15)</a></td>
+<td>Ships near South Africa face severe weather, causing container losses and delays. Many vessels are diverting routes to avoid risk from Houthi militants in the Red Sea.</td>
+</tr>
+<tr class="even">
+<td><a href="https://angrybearblog.com/2024/06/fastest-wage-growth-over-the-last-four-years">Pandemic Policies Fuel Unprecedented Wage Growth for Low-Wage Workers Over Recent Four-Year Period (Economic Policy Institute, 2024-07-16)</a></td>
+<td>Low-wage workers experienced significant wage growth of 12.1% from 2019 to 2023, driven by policy responses and a tight labor market, marking a departure from historical trends.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="etfs-and-index-investing" class="level1">
+<h1>ETFs and Index Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.msci.com/www/blog-posts/the-cornerstones-of/04783300823">Unlocking the Secrets of Private Capital Performance: A Smart Guide to Benchmarking and Index Creation (MSCI, 2024-07-16)</a></td>
+<td>Benchmarking private capital requires accurate data, defined inclusion criteria, and a strong governance framework to measure performance through various index types and calculations effectively.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fundamental-investing" class="level1">
+<h1>Fundamental Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner">Asset Managers’ Profits Decline Despite Market Growth, Rising Costs and Innovation Needs Challenge Firms (Institutional Investor., 2024-07-15)</a></td>
+<td>Asset managers face declining profit margins due to rising costs, weak inflows, and the need for innovation despite a strong stock market. Strategic adaptation is essential for future success.</td>
+</tr>
+<tr class="even">
+<td><a href="https://sherwood.news/markets/europes-luxury-stocks-have-boomed-burberry-got-left-behind/">Burberry Faces Tough Quarter: Sales Drop, CEO Resigns, and Brand Strategy Questioned (Sherwood, 2024-07-15)</a></td>
+<td>Burberry’s first-quarter results showed a 22% revenue drop, CEO resignation, dividend suspension, and declining sales, prompting challenges for the new CEO amidst declining brand exclusivity and market presence.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.msci.com/www/blog-posts/india-s-changed-and-changing/04777168512">India’s Equity Market Evolution: New Listings, Venture-Backed Firms, and Potential Power Shifts for Global Investors (MSCI, 2024-07-16)</a></td>
+<td>India’s equity market shows significant growth, with over 300 new companies since 2020, highlighting changes in industry profiles and future potential from private market entrants.</td>
+</tr>
+<tr class="even">
+<td><a href="https://insight.factset.com/sp-500-will-likely-report-earnings-growth-of-at-least-12-for-q2">S&amp;P 500 Earnings Surge: Historical Data Predicts Over 12% Growth for Q2, Outperforming Estimates (FactSet, 2024-07-16)</a></td>
+<td>S&amp;P 500 expected to report earnings growth above 12% for Q2, supported by historical trends of exceeding estimates, with 81% of companies reporting higher EPS so far.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>asset-management</category>
+  <category>economics</category>
+  <category>etf</category>
+  <category>fundamental</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-16_daily-curation.html</guid>
+  <pubDate>Mon, 15 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/time-horizon-paper.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Today’s Financial Curation (15.07.24): Fed’s Inflation Forecast, Q2 Earnings Surge, ETF Market Shifts, and Automatic Savings Boost</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-15_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore a range of critical financial topics that impact current market dynamics:</p>
+<ul>
+<li>The New York Fed’s inflation and output growth predictions</li>
+<li>Amazon’s competitive strategies amidst Prime Week</li>
+<li>Insights from Q2 earnings season and stock performance</li>
+<li>Opportunities in the QQQJ ETF showcasing tech growth</li>
+<li>Implications of potential Fed interest rate cuts</li>
+<li>The UST yield curve and its relevance to rate changes</li>
+<li>The Moat Index’s recent findings on market trends</li>
+<li>The benefits of automatic retirement savings</li>
+<li>Recovery signs in the banking sector</li>
+<li>The complexities of maintaining a balanced investment portfolio:::</li>
+</ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/mathematics-formulas-on-a-blackboard.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://libertystreeteconomics.newyorkfed.org/2024/06/the-new-york-fed-dsge-model-forecast-june-2024/">Why Inflation is Surging and Growth is Slumping: Key Insights from the New York Fed’s Latest Forecast (Federal Reserve Bank of New York, 2024-06-14)</a></td>
+<td>The New York Fed’s DSGE model forecasts higher core PCE inflation at 2.7% and lower output growth at 1.0% for 2024, attributing changes to cost-push shocks and monetary policy.</td>
+</tr>
+<tr class="even">
+<td><a href="https://lipperalpha.refinitiv.com/2024/07/savvy-shoppers-await-prime-week-deal-competition/">Savvy Challenges: How Retailers Leverage Amazon Prime Week to Battle Inflation and Woo Value-Conscious Consumers (LSEG Workspace, 2024-07-15)</a></td>
+<td>Amazon’s Prime Week prompts retailers to offer competitive discounts, aiming to attract value-oriented shoppers while facing inflation, with increased online discount penetration and evolving consumer preferences.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fundamental-investing" class="level1">
+<h1>Fundamental Investing</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.tker.co/p/earnings-season-q2-24-beat-rates">Earnings Season Q2 2024: Why Most Companies Consistently Surpass Analysts’ Expectations (TKer, 2024-07-15)</a></td>
+<td>Stocks are at record highs as Q2 earnings season begins, with companies likely to beat estimates by about 5%. Analysts maintain positive outlooks despite recession risks being elevated.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.etftrends.com/etf-education-channel/time-different-small-cap-stocks-finally-perking-up/">Discover Hidden Tech Gems: The Invesco NASDAQ Next Gen ETF’s Potential in Small-Cap Stocks (ETF Trends, 2024-07-15)</a></td>
+<td>QQQJ ETF, targeting Nasdaq Next Generation 100, includes promising tech stocks like Zoom, NICE, and Paylocity, offering growth opportunities in a market dominated by mega-cap equities.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-pulse-market-news" class="level1">
+<h1>Market Pulse &amp; Market News</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://moneymorning.com/2024/07/15/these-three-investment-are-getting-ready-to-be-jerome-powells-favorite/">Prepare for Market Shake-Up: Key Sectors Poised to Surge as Fed Signals Interest Rate Cuts Before Election (Unknown, 2024-07-15)</a></td>
+<td>The Fed’s potential interest rate cuts may boost small cap stocks, regional banks, and real estate, prompting a significant market shift and attracting investors seeking higher returns.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.wisdomtree.com/investments/blog/2024/07/10/when-will-the-yield-curve-uninvert">Why You Should Care About the Timing of the Yield Curve’s Next Move (WisdomTree’s website, 2024-07-15)</a></td>
+<td>The UST yield curve’s potential “un”inversion timing hinges on Fed rate cuts, with the UST 2-Year/10-Year spread likely reversing before the UST 3-Month/10-Year spread.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.vaneck.com/us/en/blogs/moat-investing/moat-stocks-steady-amid-techs-market-surge/">Smart Investing: How Quarterly Reviews Shape the Moat Index and Spotlight Top Undervalued Companies (Moat Index Quarterly Review, 2024-07-15)</a></td>
+<td>Moat Index reviews revealed a contrarian bias towards large caps, reduced Financials exposure, and increased allocations in Consumer Staples, Industrials, and Technology, remaining underweight in growth stocks.</td>
+</tr>
+<tr class="even">
+<td><a href="https://awealthofcommonsense.com/2024/07/the-automatic-investing-revolution/">Elevate Your Retirement Savings: How Higher Default Rates and Automatic Investing Are Reshaping Financial Futures (A Wealth of Common Sense, 2024-07-15)</a></td>
+<td>The shift to automatic retirement savings, like higher default rates, improves participation and investor behavior, positively affecting stock market valuations while highlighting the limitations of defined contribution plans.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://moneymorning.com/2024/07/15/this-bullish-trend-in-banks-is-just-starting-grab-it-now/">Banking Renaissance: Why Investor Sentiment Shift Signals a Golden Opportunity in Financial Stocks (Unknown, 2024-07-15)</a></td>
+<td>The banking sector shows potential recovery as interest rates may soon lower, with investor sentiment shifting and earnings reports exceeding expectations, presenting buying opportunities in ETFs like KBE and KRE.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="portfolio-construction-techniques" class="level1">
+<h1>Portfolio Construction Techniques</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://awealthofcommonsense.com/2024/07/a-balanced-portfolio-always-comes-with-regrets/">Balancing Investments: Why Diversification May Seem Boring But Is Actually Smart and Lowers Your Risk (None, 2024-07-14)</a></td>
+<td>A balanced portfolio, while providing stability, often leads to regrets as market performance varies. Diversification reduces risk but can’t predict future outcomes, emphasizing the importance of a long-term strategy.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>economics</category>
+  <category>fundamental</category>
+  <category>market-feed</category>
+  <category>portfolio-construction</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-15_daily-curation.html</guid>
+  <pubDate>Sun, 14 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/mathematics-formulas-on-a-blackboard.png" medium="image" type="image/png" height="95" width="144"/>
+</item>
+</channel>
+</rss>
