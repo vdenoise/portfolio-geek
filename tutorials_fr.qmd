@@ -1,5 +1,5 @@
 ---
-title: "Démarrer: Finance Quantitative avec Python"
+title: "Démarrer en Finance Quantitative avec Python"
 listing:
   contents: 
     - /posts/articles/tutorials/
