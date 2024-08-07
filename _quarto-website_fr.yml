@@ -1,0 +1,69 @@
+project:
+  type: website
+  output-dir: ./_site/fr
+  resources:
+  - "pictures/*"
+ 
+lang: fr
+
+format:
+  html:
+    author: Vincent D.
+    theme: yeti
+    css: styles.css
+    execute: True
+    freeze: False
+    code-fold: true
+    link-external-newwindow: true
+    code-line-numbers: true
+    highlight-style: dracula
+    code-tools:
+      source: true
+      toggle: false
+      caption: none
+
+website:
+  title: "Portfolio Geek"
+  open-graph: true
+  site-url: "https://portfolio-geek.com"
+  site-path: "/"
+
+  google-analytics: 
+    tracking-id: "G-CJ2CMCX5LZ"
+    anonymize-ip: true
+  cookie-consent:
+    type: express
+    style: headline
+    palette: light
+  repo-url: "https://github.com/vdenoise/portfolio-geek/"
+
+  description: "Finance, Research and the Tech required to Fuel them"
+  repo-branch: "master"
+  navbar:
+    left:
+      - text: Revue de Web
+        href: daily-curation_fr.qmd
+      - text: Apprendre et Progresser
+        href: tutorials_fr.qmd
+      - text: A Propos
+        href: about.qmd
+
+    right:
+      - href: ../fr
+        text: Français
+      - href: ../
+        text: English
+      - icon: rss
+        href: index.xml
+      - icon: linkedin
+        href: https://www.linkedin.com/in/vdenoiseux/
+      - icon: github
+        href: https://github.com/vdenoise 
+      - icon: twitter
+        href: https://twitter.com
+  page-footer:
+    left: |
+      Fièrement propulsé par [Quarto](https://quarto.org/)
+    center:
+      - text: "A Propos | Mentions légales | Disclaimer"
+        href: about.qmd

@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
 <meta name="dcterms.date" content="2024-07-13">
 
-<title>Portfolio Geek - Today’s Picks (13.07.24): Wind Power Surpasses Coal, EV Savings for Rural Families, Impact Investing, and Shifts in ETF Trends</title>
+<title>Today’s Picks (13.07.24): Wind Power Surpasses Coal, EV Savings for Rural Families, Impact Investing, and Shifts in ETF Trends – Portfolio Geek</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,7 +35,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -134,7 +134,7 @@ cookieconsent.run({
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Portfolio Geek - Today’s Picks (13.07.24): Wind Power Surpasses Coal, EV Savings for Rural Families, Impact Investing, and Shifts in ETF Trends">
+<meta property="og:title" content="Today’s Picks (13.07.24): Wind Power Surpasses Coal, EV Savings for Rural Families, Impact Investing, and Shifts in ETF Trends – Portfolio Geek">
 <meta property="og:image" content="https://portfolio-geek.com/pictures/blog-post.png">
 <meta property="og:site_name" content="Portfolio Geek">
 <meta property="og:image:height" content="534">
@@ -153,22 +153,32 @@ cookieconsent.run({
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../daily-curation.html"> 
 <span class="menu-text">Daily Findings</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../tutorials_en.html"> 
+    <a class="nav-link" href="../../tutorials.html"> 
 <span class="menu-text">Getting Started</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../fr"> 
+<span class="menu-text">Français</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../"> 
+<span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
@@ -192,7 +202,7 @@ cookieconsent.run({
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -274,7 +284,7 @@ cookieconsent.run({
 </div>
 <section id="climate" class="level1">
 <h1>Climate</h1>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -303,7 +313,7 @@ cookieconsent.run({
 </section>
 <section id="coding" class="level1">
 <h1>Coding</h1>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -320,7 +330,7 @@ cookieconsent.run({
 </section>
 <section id="economics" class="level1">
 <h1>Economics</h1>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -345,7 +355,7 @@ cookieconsent.run({
 </section>
 <section id="etfs-and-index-investing" class="level1">
 <h1>ETFs and Index Investing</h1>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -405,18 +415,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -448,7 +447,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -507,10 +528,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -552,7 +578,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -883,7 +913,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-55"><a href="#cb1-55"></a>| Title | Summary |</span>
 <span id="cb1-56"><a href="#cb1-56"></a>|-----|-----------|</span>
 <span id="cb1-57"><a href="#cb1-57"></a>| <span class="co">[</span><span class="ot">Investors Flock to Core Equity and Short-Duration Bonds Amid Market Rally and Inflation Concerns: Q2 Insights (ETF Stream, 2024-07-13)</span><span class="co">](https://www.etfstream.com/articles/core-equity-and-short-duration-bond-etfs-capture-most-inflows-in-q2)</span>   | Core equity and short-duration bond ETFs saw the highest inflows in Q2, while ESG ETFs experienced outflows. The iShares Core S&amp;P 500 UCITS ETF (CSPX) and the Xtrackers EUR Overnight Rate Swap UCITS ETF (XEON) were among the popular choices. |</span>
-<span id="cb1-58"><a href="#cb1-58"></a>| <span class="co">[</span><span class="ot">How Passive Investing Subtly Shifts Market Dynamics: A New Perspective from GMO Experts (GMO Quarterly Letter, 2024-07-13)</span><span class="co">](https://www.institutionalinvestor.com/article/2dgy5jctx2rb7g3wv2juo/portfolio/gmo-passive-investings-impact-has-been-overblown-but-its-not-negligible)</span>   | The impact of passive investing on markets is less significant than believed, says GMO. The shift of retirement assets to defined contribution plans is coming to an end, limiting the future impact of passive flows. |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-58"><a href="#cb1-58"></a>| <span class="co">[</span><span class="ot">How Passive Investing Subtly Shifts Market Dynamics: A New Perspective from GMO Experts (GMO Quarterly Letter, 2024-07-13)</span><span class="co">](https://www.institutionalinvestor.com/article/2dgy5jctx2rb7g3wv2juo/portfolio/gmo-passive-investings-impact-has-been-overblown-but-its-not-negligible)</span>   | The impact of passive investing on markets is less significant than believed, says GMO. The shift of retirement assets to defined contribution plans is coming to an end, limiting the future impact of passive flows. |</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

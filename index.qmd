@@ -2,39 +2,61 @@
 page-layout: full
 code-tools: false
 listing:
-  contents: posts/
-  sort: "date desc"
-  type: grid
-  fields: [date, title, image]
-  feed:   
-    type: full
+  - id: posts
+    contents: /posts/articles/
+    max-items: 3
+    sort: "date desc"
+    type: grid
+    fields: [date, title, image, reading-time]
+    feed: true
+
+  - id: curation
+    contents: /posts/daily-curation/
+    max-items: 6
+    sort: "date desc"
+    type: grid
+    fields: [date, title, image, reading-time]
+    feed: true
 
 ---
- 
+
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6}
 ![](laptop.png)
 :::
 
-::: {.g-col-12 .g-col-md-6}
-## Welcome to Portfolio Geek
 
+
+::: {.g-col-12 .g-col-md-6}
+
+::: {.content-visible when-profile="website_en"}
+
+## Welcome to Portfolio Geek
 With 20+ years of experience in **portfolio construction, asset allocation and quantitative research**, I have worked across the entire **asset management** and **financial markets** value chain.  
 
 In this blog, I document my findings and experiments, notably in **Python**, **Jupyter** and along themes like **portfolio optimisation** and **reproducible research**.
-
 :::
 
 
-::: {.g-col-12 .g-col-md-5}
+::: {.content-visible when-profile="website_fr"}
 
-::: {#sample-listings}
+## Bienvenue sur Portfolio Geek
+
+Avec plus de plus de 20 ans d'expérience dans la **construction de portefeuilles, l'allocation d'actifs et la recherche quantitative**, j'ai travaillé tout au long de la chaîne de valeur de la **gestion d'actifs** et des **marchés financiers**.
+
+Dans ce blog, je documente mes découvertes et mes essais, notamment en **Python**, **Jupyter**, et autour de thèmes comme l'**optimisation de portefeuille** et la **recherche reproductible**.
 :::
 
 :::
 
+:::
 
+## Latest Articles
+::: {#posts}
+:::
 
+## Daily Findings
+::: {#curation}
 :::
 

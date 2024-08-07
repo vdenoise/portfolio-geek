@@ -1,0 +1,4 @@
+FIGSIZE_WIDTH="6"
+FIGSIZE_HEIGHT="4"
+CURATION_LOCATION=/posts/fr/daily-curation/*.qmd
+MPL_STYLE="pacoty"

@@ -1,5 +1,6 @@
 profile:
-  default: website
+  default: website_en
+  group: [website_en, website_fr, presentation]
 
 execute:
   cache: false

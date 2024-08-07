@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -74,21 +74,49 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-posts .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-image','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts'] = new List('listing-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-curation .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-image','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       page: 18,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-curation'] = new List('listing-curation', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -129,7 +157,7 @@ cookieconsent.run({
 </script> 
   
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -176,22 +204,32 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./daily-curation.html"> 
 <span class="menu-text">Daily Findings</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorials_en.html"> 
+    <a class="nav-link" href="./tutorials.html"> 
 <span class="menu-text">Getting Started</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./../fr"> 
+<span class="menu-text">Français</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./../"> 
+<span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
@@ -215,7 +253,7 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -261,28 +299,24 @@ window.Quarto = {
 <p>With 20+ years of experience in <strong>portfolio construction, asset allocation and quantitative research</strong>, I have worked across the entire <strong>asset management</strong> and <strong>financial markets</strong> value chain.</p>
 <p>In this blog, I document my findings and experiments, notably in <strong>Python</strong>, <strong>Jupyter</strong> and along themes like <strong>portfolio optimisation</strong> and <strong>reproducible research</strong>.</p>
 </section>
-<div class="g-col-12 g-col-md-5">
-<div id="sample-listings">
-
 </div>
-</div>
-</div>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<section id="latest-articles" class="level2">
+<h2 class="anchored" data-anchor-id="latest-articles">Latest Articles</h2>
+<div id="listing-posts" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="coding,finance,risk,return,sharpe,ratio,python" data-listing-date-sort="1722722400000" data-listing-file-modified-sort="1722844157610" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="783">
-<a href="./posts/tutorials/en/sharpe-ratio.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="coding,finance,risk,return,sharpe,ratio,python" data-listing-date-sort="1722722400000" data-listing-file-modified-sort="1723048507273" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="783">
+<a href="./posts/articles/tutorials/sharpe-ratio.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./pictures/risk-return-concept.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./pictures/risk-return-concept.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Sharpe Ratio: A Must-Know for Every Investor
 </h5>
+<div class="listing-reading-time card-text text-muted">
+4 min
+</div>
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
 Aug 4, 2024
@@ -292,16 +326,19 @@ Aug 4, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="coding,finance,risk,python" data-listing-date-sort="1722722400000" data-listing-file-modified-sort="1722844200599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="578">
-<a href="./posts/tutorials/en/max-drawdown.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="coding,finance,risk,python" data-listing-date-sort="1722722400000" data-listing-file-modified-sort="1723048654905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="578">
+<a href="./posts/articles/tutorials/max-drawdown.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Maximum Drawdown: A Practical Approach with Python
 </h5>
+<div class="listing-reading-time card-text text-muted">
+3 min
+</div>
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
 Aug 4, 2024
@@ -311,471 +348,22 @@ Aug 4, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="climate,crypto,etf,market-feed,personal-dvpt" data-listing-date-sort="1722722400000" data-listing-file-modified-sort="1722845328635" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481">
-<a href="./posts/daily-curation/2024_08_04_daily-curation.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="data-gathering,volatility,log-returns" data-listing-date-sort="1722636000000" data-listing-file-modified-sort="1723048649705" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="579">
+<a href="./posts/articles/tutorials/historical-vol.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./pictures/books-and-a-cup-of-coffee-on-a-wooden-background.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Insights from Financial Markets and ETFs: New Bitcoin ETF, Small-Cap Growth, and China’s Decline - Daily Curation for 04.08.2024
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Aug 4, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="data-gathering,volatility,log-returns" data-listing-date-sort="1722636000000" data-listing-file-modified-sort="1722844216381" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="579">
-<a href="./posts/tutorials/en/historical-vol.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/diagram-representing-red-crashing-market-volatility.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./pictures/diagram-representing-red-crashing-market-volatility.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Understanding Historical Volatility
 </h5>
+<div class="listing-reading-time card-text text-muted">
+3 min
+</div>
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
 Aug 3, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="ai,coding,data-science" data-listing-date-sort="1722549600000" data-listing-file-modified-sort="1722846045386" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
-<a href="./posts/daily-curation/2024_08_02_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daily Financial Insights 02.08.2024: Generative AI Business Models, Enhanced Data Science Portfolios, and Efficient SQL Optimization Techniques
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="ai,climate,coding,etf,hedge-funds,tech" data-listing-date-sort="1722463200000" data-listing-file-modified-sort="1722846036255" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="560">
-<a href="./posts/daily-curation/2024_08_01_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/cup-of-coffee-and-a-newspaper.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Dive into Python Upgrades, ETF Inflows, Hedge Fund Shifts, and Climate Crisis Insights (01.08.2024)
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Aug 1, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="climate,coding,data-science,economics,etf" data-listing-date-sort="1722376800000" data-listing-file-modified-sort="1722846019950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="610">
-<a href="./posts/daily-curation/2024_07_31_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/stack-of-paper.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daily Financial Curations for 31.07.2024: Earth’s Record Heat, PyCharm-Pytest Guide, AI Search Engines, Active ETFs Expansion
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 31, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="crypto,etf,market-feed" data-listing-date-sort="1722204000000" data-listing-file-modified-sort="1722846003997" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="337">
-<a href="./posts/daily-curation/2024_07_29_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/pile-of-newspapers.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daily Curation (29.07.2024): Bitcoin Leaps, Vanguard’s High-Yield ETFs, and S&amp;P Stumbles while SmallCaps Shine
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 29, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="ai,coding,crypto,economics,etf,fundamental,personal-dvpt" data-listing-date-sort="1722031200000" data-listing-file-modified-sort="1722845983734" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="670">
-<a href="./posts/daily-curation/2024_07_26_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/article-in-newspaper.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daily Curation (26.07.2024): SearchGPT Launch, Bitcoin ETFs, China’s Economic Moves, and Rising Small Cap Investments
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 27, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="9" data-categories="climate,coding,economics" data-listing-date-sort="1721858400000" data-listing-file-modified-sort="1722846599445" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
-<a href="./posts/daily-curation/2024_07_25_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/morning-news-in-the-office-2023-11-27-04-50-01-utc.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daily Market Insights: Shrink your AI models with Quantization and Climate Progress (25.07.2024)
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 25, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="10" data-categories="coding,economics,fundamental,quant" data-listing-date-sort="1721772000000" data-listing-file-modified-sort="1722845947530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="512">
-<a href="./posts/daily-curation/2024_07_24_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/news-concept-with-newspapers-2023-11-27-05-32-59-utc.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daily Financial Insights 24.07.2024: US Economic Growth, ETF Trends, Small-Cap Outperformance, &amp; Inflation Eases
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 24, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="11" data-categories="coding,portfolio-construction,quant,tech" data-listing-date-sort="1721685600000" data-listing-file-modified-sort="1722845929867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="631">
-<a href="./posts/daily-curation/2024_07_23_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/newspaper-stack-on-table-2023-11-27-05-14-30-utc.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daily Links 23.07.2024: Transparent Private Markets, Improved Forecasting Models, and Cutting-Edge Tech News
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 23, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="12" data-categories="coding,economics,fundamental,tech" data-listing-date-sort="1721599200000" data-listing-file-modified-sort="1722845892485" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
-<a href="./posts/daily-curation/2024_07_22_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daily Finance Insights (22.07.24): Pandas Plot for EDA, Inflation &amp; Geopolitical Shocks, Large-Cap Growth Leads, and Optimizing YouTube Experience
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 22, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="13" data-categories="coding,economics,market-feed" data-listing-date-sort="1721512800000" data-listing-file-modified-sort="1722845722880" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="313">
-<a href="./posts/daily-curation/2024-07-21_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/laptop-plant-and-stack-of-newspapers-on-wooden-ta-2023-11-27-05-12-11-utc.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daily Findings (21.07.24): Strava Insights, Key Finance Coding Skills, Data Science Portfolios, and Economic Forecasts
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 21, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="14" data-categories="ai,automation,personal-dvpt,portfolio-construction" data-listing-date-sort="1721426400000" data-listing-file-modified-sort="1722845743933" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
-<a href="./posts/daily-curation/2024-07-20_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/blog-post.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daily Insights (20.07.24): GPT-4o Mini Launch, Bitcoin’s Safe-Haven Surge, AI Content Best Practices, Hill Repeats for Runners
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 20, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="15" data-categories="market-feed,portfolio-construction" data-listing-date-sort="1721340000000" data-listing-file-modified-sort="1722860971755" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
-<a href="./posts/daily-curation/2024-07-19_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/portfolio-optimisation.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daily Market Insights (19.07.24): Fed Influence, Small Cap Squeeze, and Portfolio Risk Reassessment
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 19, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="16" data-categories="automation,quant,tech" data-listing-date-sort="1721253600000" data-listing-file-modified-sort="1722845785026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="221">
-<a href="./posts/daily-curation/2024-07-18_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/stock-valuation.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-18.07.24: Mastering Linux Scripting, Trend-Following Strategies, and Evolution of Large Language Models in Today’s Financial Landscape
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 18, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="17" data-categories="asset-management,coding,economics,fundamental,portfolio-construction" data-listing-date-sort="1721167200000" data-listing-file-modified-sort="1722846262279" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="592">
-<a href="./posts/daily-curation/2024-07-17_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./pictures/laptop-data.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Today’s Curation (17.07.24): Master Python Trading with Alpaca, Retirement Strategies, &amp; Managing Risks with Options
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 17, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="18" data-categories="asset-management,economics,etf,fundamental" data-listing-date-sort="1721080800000" data-listing-file-modified-sort="1722845819362" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="570">
-<a href="./posts/daily-curation/2024-07-16_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img data-src="./pictures/time-horizon-paper.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daily Insights (16.07.24): Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 16, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="19" data-categories="economics,fundamental,market-feed,portfolio-construction" data-listing-date-sort="1720994400000" data-listing-file-modified-sort="1722846217601" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="618">
-<a href="./posts/daily-curation/2024-07-15_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img data-src="./pictures/mathematics-formulas-on-a-blackboard.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Today’s Financial Curation (15.07.24): Fed’s Inflation Forecast, Q2 Earnings Surge, ETF Market Shifts, and Automatic Savings Boost
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 15, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="20" data-categories="automation,climate,market-feed" data-listing-date-sort="1720908000000" data-listing-file-modified-sort="1722845854585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="560">
-<a href="./posts/daily-curation/2024-07-14_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img data-src="./pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Welcome to Your Daily Financial Curation (14.07.24): Python Automation, Climate Action, ECB Policy Signals, and US Heatwave Insights
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 14, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="21" data-categories="climate,coding,economics,etf" data-listing-date-sort="1720821600000" data-listing-file-modified-sort="1722845870326" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="662">
-<a href="./posts/daily-curation/2024-07-13_daily-curation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img data-src="./pictures/blog-post.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Today’s Picks (13.07.24): Wind Power Surpasses Coal, EV Savings for Rural Families, Impact Investing, and Shifts in ETF Trends
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 13, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="22" data-categories="portfolio-construction" data-listing-date-sort="1714514400000" data-listing-file-modified-sort="1721720331839" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1454">
-<a href="./posts/portfolio-construction/optimise-portfolios-with-python.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img data-src="pictures/portfolio-optimisation.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Portfolio Optimisation with Python
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 1, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="23" data-categories="101,en,setup,bash,python,windows,matplotlib" data-listing-date-sort="1708556400000" data-listing-file-modified-sort="1721720369067" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="561">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-windows.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img data-src="./posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Setting up a Python Development Workstation (Windows)
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Feb 22, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="24" data-categories="101,en,setup,python,bash,macos,matplotlib" data-listing-date-sort="1708383600000" data-listing-file-modified-sort="1721720364082" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="735">
-<a href="./posts/tutorials/en/setting-up-a-python-workstation-macos.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img data-src="./posts/tutorials/en/pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Setting up a Python Development Workstation (MacOs)
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Feb 20, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="25" data-categories="tutorial,data,matplotlib,en" data-listing-date-sort="1706137200000" data-listing-file-modified-sort="1721720381505" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="410">
-<a href="./posts/tutorials/en/spy-and-matplotlib.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img data-src="./posts/tutorials/en/chart_spy.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Getting and charting data with Matplotlib
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jan 25, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="26" data-categories="publication-workflow" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1721494736662" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="892">
-<a href="./posts/publication-workflow/visualizing-historical-data.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img data-src="pictures/chart-preview.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Visualising Historical Data
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Mar 3, 2023
 </div>
 </div>
 </div>
@@ -786,10 +374,155 @@ Mar 3, 2023
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
-</div></main> <!-- /main -->
+</div>
+</section>
+<section id="daily-findings" class="level2">
+<h2 class="anchored" data-anchor-id="daily-findings">Daily Findings</h2>
+<div id="listing-curation" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="climate,crypto,etf,market-feed,personal-dvpt" data-listing-date-sort="1722722400000" data-listing-file-modified-sort="1722845328635" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481">
+<a href="./posts/daily-curation/2024_08_04_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pictures/books-and-a-cup-of-coffee-on-a-wooden-background.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Insights from Financial Markets and ETFs: New Bitcoin ETF, Small-Cap Growth, and China’s Decline - Daily Curation for 04.08.2024
+</h5>
+<div class="listing-reading-time card-text text-muted">
+3 min
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Aug 4, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="ai,coding,data-science" data-listing-date-sort="1722549600000" data-listing-file-modified-sort="1722846045386" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<a href="./posts/daily-curation/2024_08_02_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Daily Financial Insights 02.08.2024: Generative AI Business Models, Enhanced Data Science Portfolios, and Efficient SQL Optimization Techniques
+</h5>
+<div class="listing-reading-time card-text text-muted">
+2 min
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Aug 2, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="ai,climate,coding,etf,hedge-funds,tech" data-listing-date-sort="1722463200000" data-listing-file-modified-sort="1722846036255" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="560">
+<a href="./posts/daily-curation/2024_08_01_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pictures/cup-of-coffee-and-a-newspaper.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Dive into Python Upgrades, ETF Inflows, Hedge Fund Shifts, and Climate Crisis Insights (01.08.2024)
+</h5>
+<div class="listing-reading-time card-text text-muted">
+3 min
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Aug 1, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="climate,coding,data-science,economics,etf" data-listing-date-sort="1722376800000" data-listing-file-modified-sort="1722846019950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="610">
+<a href="./posts/daily-curation/2024_07_31_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pictures/stack-of-paper.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Daily Financial Curations for 31.07.2024: Earth’s Record Heat, PyCharm-Pytest Guide, AI Search Engines, Active ETFs Expansion
+</h5>
+<div class="listing-reading-time card-text text-muted">
+4 min
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 31, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="crypto,etf,market-feed" data-listing-date-sort="1722204000000" data-listing-file-modified-sort="1722846003997" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="337">
+<a href="./posts/daily-curation/2024_07_29_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pictures/pile-of-newspapers.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Daily Curation (29.07.2024): Bitcoin Leaps, Vanguard’s High-Yield ETFs, and S&amp;P Stumbles while SmallCaps Shine
+</h5>
+<div class="listing-reading-time card-text text-muted">
+2 min
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 29, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="ai,coding,crypto,economics,etf,fundamental,personal-dvpt" data-listing-date-sort="1722031200000" data-listing-file-modified-sort="1722845983734" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="670">
+<a href="./posts/daily-curation/2024_07_26_daily-curation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pictures/article-in-newspaper.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Daily Curation (26.07.2024): SearchGPT Launch, Bitcoin ETFs, China’s Economic Moves, and Rising Small Cap Investments
+</h5>
+<div class="listing-reading-time card-text text-muted">
+4 min
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul 27, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -825,18 +558,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -868,7 +590,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/portfolio-geek\.com");
@@ -876,10 +620,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -921,7 +670,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

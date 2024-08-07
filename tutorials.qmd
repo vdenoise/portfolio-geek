@@ -1,0 +1,12 @@
+---
+title: "Getting Started: Quantitative Finance with Python"
+listing:
+  contents: 
+    - /posts/articles/tutorials/
+  sort: "date desc"
+  type: grid
+  fields: [author, date, description, title, image]
+page-layout: full
+title-block-banner: true
+---
+
