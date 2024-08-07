@@ -51,18 +51,18 @@ All content on this blog is copyrighted and may not be reproduced without permis
 ::: {.content-visible when-profile="website_fr"}
 
 
-Avec 20 ans d'expérience dans **la construction de portefeuilles, l'allocation d'actifs et la recherche quantitative**, j'ai travaillé à travers la chaîne de valeur de l'industrie de la **gestion d'actifs** et des **marchés de capitaux**.
+Avec 20 ans d'expérience dans **la construction de portefeuilles, l'allocation d'actifs et la recherche quantitative**, j'ai travaillé à travers l'ensemble de la chaîne de valeur de l'industrie de la **gestion d'actifs** et des **marchés de capitaux**.
 
-Dans mes différents rôles, j'ai développé et déployé une large gamme de solutions d'investissement, allant des **fonds négociés en bourse (ETF)**, **dérivés** et **mandats d'investissement** à travers la plupart des classes d'actifs : Actions, Revenus Fixes, Matières Premières, Actifs Alternatifs, Portefeuilles Multi-Actifs.
+Dans mes différents rôles, j'ai développé et déployé une large gamme de solutions d'investissement, allant des **fonds négociés en bourse ("ETFs")**, **dérivés** et **mandats de gestion** à travers la plupart des classes d'actifs : Actions, Obligations, Matières Premières, Actifs Alternatifs, Portefeuilles Multi-Actifs.
 
 **[Trouvez-moi sur LinkedIn](https://www.linkedin.com/in/vdenoiseux/)**
 
 # Pourquoi ce blog ?
-Ce qui m'a le plus frappé lorsque j'ai commencé ma carrière dans la finance, c'était **l'asymétrie des connaissances** entre les professionnels de la finance et les clients finaux. Bien que cet écart se soit considérablement réduit depuis, grâce à Internet et à une meilleure information fournie, de nombreux concepts semblent encore assez exotiques ou techniques pour de nombreux investisseurs.
+Ce qui m'a le plus frappé lorsque j'ai commencé ma carrière dans la finance, c'était **l'asymétrie des connaissances** entre les professionnels de la finance et de nombreux clients finaux. Bien que cet écart se soit considérablement réduit depuis, grâce à Internet et à une meilleure information disponible en quasi temps réels, de nombreux concepts semblent encore trop techniques pour de nombreux investisseurs.
 
 Ici, je vais essayer de **démystifier** l'analyse financière et de **fournir des idées et des points de départ** afin de mettre **la théorie en pratique**.
 
-Dans la plupart des articles, vous devriez être en mesure de **copier, exécuter et modifier** le code derrière l'analyse. Cela devrait vous aider à utiliser directement bon nombre des outils présentés. L'ensemble du code source est disponible sur [Github](https://github.com/vdenoise/portfolio-geek)
+Dans la plupart des articles, vous devriez être en mesure de **copier, exécuter et modifier** le code derrière l'analyse. Cela devrait vous aider à utiliser directement bon nombre des outils présentés. L'ensemble du code source est disponible sur [Github](https://github.com/vdenoise/portfolio-geek).
 
 # Avertissement
 Encore une fois, bienvenue sur portfolio-geek.com !
