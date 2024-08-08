@@ -1,5 +1,6 @@
 ---
 title: "Daily Financial Insights: Assessing Small Models, Rest API Mastery, Market Volatility, and Value Stocks Shift (07.08.2024)"
+title_fr: "Revue de Web: Assessing Small Models, Rest API Mastery, Market Volatility, and Value Stocks Shift (07.08.2024)"
 page-layout: full
 title-block-banner: true
 date: 08-07-2024
