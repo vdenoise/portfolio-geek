@@ -12,5 +12,11 @@ page-layout: full
 title-block-banner: true
 ---
 
+Every day or so, I aim to compile the key links and articles I found insightgul. Below, you will find my most recent compilations. This covers themes like tech, finance, markets, cryptos, etc.
+
+Happy reading!
+
+Vincent
+
 ::: {#sample-listings}
 :::
