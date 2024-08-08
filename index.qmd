@@ -54,17 +54,22 @@ Dans ce blog, je documente mes découvertes et mes essais, notamment en **Python
 
 
 ::: {.content-visible when-profile="website_en"}
-Below, my most recent compilations of the article I found interesting (covering themes like tech, finance, markets, cryptos, etc.)
+
+## Daily Findings
+
+Below, my most recent compilations of the articles I found interesting (covering themes like tech, finance, markets, cryptos, etc.)
 
 [Full list here](/daily-curation.qmd)
-## Daily Findings
+
 :::
 
 ::: {.content-visible when-profile="website_fr"}
+
 ## Revue de Web
-Ci-dessous, mes dernières compilations d'articles qui méritent une lecture (thèmes: tech, finance, marchés, cryptos, etc.)
+Ci-dessous, mes dernières compilations d'articles trouvés sur internet (blogs, etc.) et qui méritent une lecture (thèmes: tech, finance, marchés, cryptos, etc.)
 
 [Liste complète ici](/daily-curation_fr.qmd)
+
 :::
 
 
@@ -72,16 +77,16 @@ Ci-dessous, mes dernières compilations d'articles qui méritent une lecture (th
 :::
 
 ::: {.content-visible when-profile="website_en"}
-Below, my last 3 posts:
 
 ## Latest Articles
+
+Below, my latest posts:
 :::
 
 ::: {.content-visible when-profile="website_fr"}
 ## Derniers Articles (Anglais / Francais)
 
-Ci-dessous, mes 3 derniers articles:
-
+Ci-dessous, les articles les plus récents:
 :::
 
 ::: {#posts}
