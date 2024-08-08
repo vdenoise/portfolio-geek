@@ -6,7 +6,7 @@ title-block-banner: true
 date: 08-07-2024
 categories: [ai,coding,economics,hedge-funds,market-feed]
 tags: [models, python, rest, growth, hedge, value, stocks, volatility, recession, interest]
-image: /pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg
+image: /pictures/corporate-businessman-coffee-working-journal.jpg
 ---
 
 ::: {layout-ncol=2}
