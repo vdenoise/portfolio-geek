@@ -5,6 +5,7 @@ project:
   - "pictures/*"
  
 lang: fr
+language: _language_fr.yml
 
 format:
   html:

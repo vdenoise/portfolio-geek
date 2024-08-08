@@ -12,7 +12,7 @@ listing:
 
   - id: curation
     contents: /posts/daily-curation/
-    max-items: 6
+    max-items: 3
     sort: "date desc"
     type: grid
     fields: [date, title, image, reading-time]
@@ -52,11 +52,11 @@ Dans ce blog, je documente mes découvertes et mes essais, notamment en **Python
 
 :::
 
-## Latest Articles
-::: {#posts}
-:::
-
 ## Daily Findings
 ::: {#curation}
 :::
 
+
+## Latest Articles
+::: {#posts}
+:::
