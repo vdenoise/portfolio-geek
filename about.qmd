@@ -50,7 +50,7 @@ All content on this blog is copyrighted and may not be reproduced without permis
 
 ::: {.content-visible when-profile="website_fr"}
 
-Avec 20 ans d'expérience dans **la construction de portefeuilles, l'allocation d'actifs et la recherche quantitative**, j'ai eu la chance de travailler sur tout la chaîne de valeur de l'industrie de la **gestion d'actifs** et des **marchés de capitaux**.
+Avec 20 ans d'expérience dans **la construction de portefeuilles, l'allocation d'actifs et la recherche quantitative**, j'ai eu la chance de travailler sur toute la chaîne de valeur de l'industrie de la **gestion d'actifs** et des **marchés de capitaux**.
 
 Dans le cadre de mes différents postes, j'ai développé et déployé une large gamme de solutions d'investissement, allant des **fonds négociés en bourse ("ETFs")**, **dérivés** et **mandats de gestion** à travers la plupart des classes d'actifs : Actions, Obligations, Matières Premières, Actifs Alternatifs, Portefeuilles Multi-Actifs.
 
