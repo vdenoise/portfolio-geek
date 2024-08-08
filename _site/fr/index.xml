@@ -10,7 +10,168 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Sat, 03 Aug 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 06 Aug 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Daily Financial Insights: Assessing Small Models, Rest API Mastery, Market Volatility, and Value Stocks Shift (07.08.2024)</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_08_07_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Aujourd’hui, une analyse de plusieurs sujets en lien avec les marchés financiers.</p>
+<p>Voici un aperçu des sujets intéressants abordés :</p>
+<ul>
+<li>Évaluation comparative des modèles de langage et introduction d’un nouveau modèle par Apple.</li>
+<li>Cours sur l’architecture REST et utilisation des API en Python.</li>
+<li>Optimisation du parsing d’AST en Python à l’aide d’une extension Rust.</li>
+<li>Indications de croissance économique aux États-Unis malgré l’augmentation du chômage.</li>
+<li>Tendance décroissante des investisseurs envers les fonds de couverture à frais élevés.</li>
+<li>Opportunités d’investissement dans les actions de valeur après la vente massive des marchés.</li>
+<li>Baisse significative de l’indice Nikkei 225 amid des craintes de récession aux U.S.</li>
+<li>Volatilité du marché avec une montée des secteurs défensifs.</li>
+<li>Augmentation des risques de récession après le dernier rapport sur l’emploi et impact sur les ETFs.</li>
+</ul>
+<p>La suite plus bas.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/corporate-businessman-coffee-working-journal.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="ai-et-gen-ai" class="level1">
+<h1>AI et Gen-AI</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/gemma-vs-llama-vs-mistral-exploring-smaller-ai-models-672a95f4b9b7?source=rss----7f60cf5620c9---4">Comprendre les petites IA : Comparaison de Gemma, Llama 3 et Mistral pour les tâches de compréhension reading quotidienne (Towards Data Science, 2024-08-06)</a></td>
+<td>Une étude comparative évalue des modèles de langage à petite échelle : Gemma, Llama 3 et Mistral. Apple a introduit un modèle à code source fermé, d’environ 3 milliards de paramètres, comparable aux versions 7b de ces modèles.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="code" class="level1">
+<h1>Code</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://realpython.com/courses/interacting-rest-apis-python/">Débloquez les données Web : Maîtrisez les API REST en Python pour l’accès aux données et le développement d’API personnalisées (Aucun nom de blog ou site Web spécifique mentionné dans le contenu fourni., 2024-08-06)</a></td>
+<td>Ce cours couvre l’architecture REST, l’accès aux données web via des API REST, l’utilisation de la bibliothèque requests, et des outils Python populaires pour construire des API REST. Accédez à l’article complet <a href="https://realpython.com/courses/interacting-rest-apis-python/">ici</a>.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.gauge.sh/blog/python-extensions-should-be-lazy">Accélérez considérablement votre code Python : Découvrez comment l’évaluation paresseuse peut optimiser les performances (Gauge Technologies, 2024-08-07)</a></td>
+<td>L’optimisation de l’analyse ast de Python a révélé des problèmes d’allocation de mémoire significatifs. Une extension Rust a réduit le temps d’exécution de 8.7s à 530ms en évitant la création inutile d’objets Python et en utilisant la gestion des données paresseuses.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="économie" class="level1">
+<h1>Économie</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.capitalspectator.com/us-isnt-in-recession-now-but-downturn-risk-may-be-rising/">La croissance américaine survivra-t-elle à la montée du chômage ? Exploration des indicateurs économiques clés et des prévisions de récession (The US Business Cycle Risk Report, 2024-08-06)</a></td>
+<td>L’indice PMI composite des États-Unis pour juillet indique une poursuite de la croissance économique. Malgré l’augmentation du chômage, les modèles suggèrent que le risque de récession est faible, avec des indicateurs favorables à la croissance jusqu’en septembre.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hedge-funds" class="level1">
+<h1>Hedge Funds</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.hedgeweek.com/investors-losing-appetite-for-high-fee-hedge-funds-and-private-credit/">Pourquoi les investisseurs s’éloignent des fonds spéculatifs à frais élevés et explorent des stratégies d’investissement alternatives (Reuters, 2024-08-06)</a></td>
+<td>L’intérêt mondial pour les fonds spéculatifs multi-stratégies à frais élevés est en déclin. Seuls 15 % des investisseurs prévoient d’augmenter leur exposition. Les fonds spéculatifs sont désormais privilégiés par rapport au crédit privé, avec un optimisme croissant des investisseurs.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="actualités-du-marché" class="level1">
+<h1>Actualités du marché</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.valuewalk.com/stock-selloff-is-now-the-right-time-to-buy-value-stocks/">Naviguer dans des marchés volatils : Pourquoi les investisseurs avisés se tournent vers les actions de valeur en pleine vente (ValueWalk, 2024-08-06)</a></td>
+<td>La vente d’actions de lundi a créé des opportunités pour les actions de valeur. Warren Buffett a averti des valorisations élevées. L’indice de valeur S&amp;P 500 a surperformé les actions de croissance, indiquant un potentiel changement vers les investissements de valeur.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.capitalspectator.com/will-global-market-sell-off-dethrone-us-stocks-2024-leadership/">Les marchés continuent de chuter : Ce que des données sur l’emploi américaines plus faibles signifient pour les actions et les obligations (CapitalSpectator.com, 2024-08-05)</a></td>
+<td>Les marchés mondiaux font face à une vente continue, alimentée par des préoccupations concernant le marché du travail américain. Les actions américaines demeurent solides mais montrent des signes de normalisation, avec un resserrement des écarts par rapport aux obligations au milieu de la baisse des rendements du Trésor.</td>
+</tr>
+<tr class="odd">
+<td><a href="http://climateerinvest.blogspot.com/2024/08/lets-see-what-nikkei-asia-has-to-say.html">Les marchés japonais touchés durement par les craintes de récession aux États-Unis : le Nikkei 225 s’effondre avec les principaux titres bancaires en chute libre (CLIMATEER INVESTING, 2024-08-05)</a></td>
+<td>L’indice Nikkei 225 du Japon a chuté de 4 451,28 points, clôturant à -12,4 %, au milieu des craintes de récession aux États-Unis. Les grandes banques ont également chuté, avec Mizuho en baisse de 19,7 %.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.etftrends.com/etf-strategist-channel/why-did-market-drop-fast-making-rational-sense-irrational-market/">Comprendre la chute rapide du marché : Actions technologiques, préoccupations mondiales et sentiment des investisseurs expliqués (ETF Trends, 2024-08-07)</a></td>
+<td>Le marché a connu une volatilité en raison des baisses des actions technologiques, des préoccupations mondiales et des mauvais rapports d’emploi aux États-Unis. Les secteurs défensifs comme les produits de consommation de base et les services publics ont augmenté au milieu de l’instabilité du marché.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.etftrends.com/great-rotation-just-getting-started/">Naviguer dans les changements du marché : Pourquoi les actions de valeur des petites capitalisations attirent l’attention dans une économie turbulente (ETF Trends, 2024-08-07)</a></td>
+<td>Le rapport sur l’emploi de vendredi a augmenté les probabilités de récession à 25 %. Les ETF de valeur des petites capitalisations ont explosé pendant que la croissance des méga-capitalisations chutait. Les préoccupations concernant les évaluations technologiques et les risques géopolitiques favorisent les stratégies des petites capitalisations au milieu des potentielles baisses de taux de la Fed.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>coding</category>
+  <category>economics</category>
+  <category>hedge-funds</category>
+  <category>market-feed</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_07_daily-curation.html</guid>
+  <pubDate>Tue, 06 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Sharpe Ratio: A Must-Know for Every Investor</title>
   <dc:creator>Vincent D.</dc:creator>
@@ -3377,152 +3538,6 @@ font-style: inherit;">'Volatility'</span>)</span>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-16_daily-curation.html</guid>
   <pubDate>Mon, 15 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/time-horizon-paper.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Today’s Financial Curation (15.07.24): Fed’s Inflation Forecast, Q2 Earnings Surge, ETF Market Shifts, and Automatic Savings Boost</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-15_daily-curation.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>In today’s curation, we explore a range of critical financial topics that impact current market dynamics:</p>
-<ul>
-<li>The New York Fed’s inflation and output growth predictions</li>
-<li>Amazon’s competitive strategies amidst Prime Week</li>
-<li>Insights from Q2 earnings season and stock performance</li>
-<li>Opportunities in the QQQJ ETF showcasing tech growth</li>
-<li>Implications of potential Fed interest rate cuts</li>
-<li>The UST yield curve and its relevance to rate changes</li>
-<li>The Moat Index’s recent findings on market trends</li>
-<li>The benefits of automatic retirement savings</li>
-<li>Recovery signs in the banking sector</li>
-<li>The complexities of maintaining a balanced investment portfolio:::</li>
-</ul>
-</div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/pictures/mathematics-formulas-on-a-blackboard.png" class="img-fluid figure-img"></p>
-<figcaption>Coffee with daily news</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<section id="economics" class="level1">
-<h1>Economics</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://libertystreeteconomics.newyorkfed.org/2024/06/the-new-york-fed-dsge-model-forecast-june-2024/">Why Inflation is Surging and Growth is Slumping: Key Insights from the New York Fed’s Latest Forecast (Federal Reserve Bank of New York, 2024-06-14)</a></td>
-<td>The New York Fed’s DSGE model forecasts higher core PCE inflation at 2.7% and lower output growth at 1.0% for 2024, attributing changes to cost-push shocks and monetary policy.</td>
-</tr>
-<tr class="even">
-<td><a href="https://lipperalpha.refinitiv.com/2024/07/savvy-shoppers-await-prime-week-deal-competition/">Savvy Challenges: How Retailers Leverage Amazon Prime Week to Battle Inflation and Woo Value-Conscious Consumers (LSEG Workspace, 2024-07-15)</a></td>
-<td>Amazon’s Prime Week prompts retailers to offer competitive discounts, aiming to attract value-oriented shoppers while facing inflation, with increased online discount penetration and evolving consumer preferences.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="fundamental-investing" class="level1">
-<h1>Fundamental Investing</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.tker.co/p/earnings-season-q2-24-beat-rates">Earnings Season Q2 2024: Why Most Companies Consistently Surpass Analysts’ Expectations (TKer, 2024-07-15)</a></td>
-<td>Stocks are at record highs as Q2 earnings season begins, with companies likely to beat estimates by about 5%. Analysts maintain positive outlooks despite recession risks being elevated.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.etftrends.com/etf-education-channel/time-different-small-cap-stocks-finally-perking-up/">Discover Hidden Tech Gems: The Invesco NASDAQ Next Gen ETF’s Potential in Small-Cap Stocks (ETF Trends, 2024-07-15)</a></td>
-<td>QQQJ ETF, targeting Nasdaq Next Generation 100, includes promising tech stocks like Zoom, NICE, and Paylocity, offering growth opportunities in a market dominated by mega-cap equities.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="market-pulse-market-news" class="level1">
-<h1>Market Pulse &amp; Market News</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://moneymorning.com/2024/07/15/these-three-investment-are-getting-ready-to-be-jerome-powells-favorite/">Prepare for Market Shake-Up: Key Sectors Poised to Surge as Fed Signals Interest Rate Cuts Before Election (Unknown, 2024-07-15)</a></td>
-<td>The Fed’s potential interest rate cuts may boost small cap stocks, regional banks, and real estate, prompting a significant market shift and attracting investors seeking higher returns.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.wisdomtree.com/investments/blog/2024/07/10/when-will-the-yield-curve-uninvert">Why You Should Care About the Timing of the Yield Curve’s Next Move (WisdomTree’s website, 2024-07-15)</a></td>
-<td>The UST yield curve’s potential “un”inversion timing hinges on Fed rate cuts, with the UST 2-Year/10-Year spread likely reversing before the UST 3-Month/10-Year spread.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://www.vaneck.com/us/en/blogs/moat-investing/moat-stocks-steady-amid-techs-market-surge/">Smart Investing: How Quarterly Reviews Shape the Moat Index and Spotlight Top Undervalued Companies (Moat Index Quarterly Review, 2024-07-15)</a></td>
-<td>Moat Index reviews revealed a contrarian bias towards large caps, reduced Financials exposure, and increased allocations in Consumer Staples, Industrials, and Technology, remaining underweight in growth stocks.</td>
-</tr>
-<tr class="even">
-<td><a href="https://awealthofcommonsense.com/2024/07/the-automatic-investing-revolution/">Elevate Your Retirement Savings: How Higher Default Rates and Automatic Investing Are Reshaping Financial Futures (A Wealth of Common Sense, 2024-07-15)</a></td>
-<td>The shift to automatic retirement savings, like higher default rates, improves participation and investor behavior, positively affecting stock market valuations while highlighting the limitations of defined contribution plans.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://moneymorning.com/2024/07/15/this-bullish-trend-in-banks-is-just-starting-grab-it-now/">Banking Renaissance: Why Investor Sentiment Shift Signals a Golden Opportunity in Financial Stocks (Unknown, 2024-07-15)</a></td>
-<td>The banking sector shows potential recovery as interest rates may soon lower, with investor sentiment shifting and earnings reports exceeding expectations, presenting buying opportunities in ETFs like KBE and KRE.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="portfolio-construction-techniques" class="level1">
-<h1>Portfolio Construction Techniques</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://awealthofcommonsense.com/2024/07/a-balanced-portfolio-always-comes-with-regrets/">Balancing Investments: Why Diversification May Seem Boring But Is Actually Smart and Lowers Your Risk (None, 2024-07-14)</a></td>
-<td>A balanced portfolio, while providing stability, often leads to regrets as market performance varies. Diversification reduces risk but can’t predict future outcomes, emphasizing the importance of a long-term strategy.</td>
-</tr>
-</tbody>
-</table>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>economics</category>
-  <category>fundamental</category>
-  <category>market-feed</category>
-  <category>portfolio-construction</category>
-  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-15_daily-curation.html</guid>
-  <pubDate>Sun, 14 Jul 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/mathematics-formulas-on-a-blackboard.png" medium="image" type="image/png" height="95" width="144"/>
 </item>
 </channel>
 </rss>

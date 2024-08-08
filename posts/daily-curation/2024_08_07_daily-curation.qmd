@@ -1,0 +1,123 @@
+---
+title: "Daily Financial Insights: Assessing Small Models, Rest API Mastery, Market Volatility, and Value Stocks Shift (07.08.2024)"
+page-layout: full
+title-block-banner: true
+date: 08-07-2024
+categories: [ai,coding,economics,hedge-funds,market-feed]
+tags: [models, python, rest, growth, hedge, value, stocks, volatility, recession, interest]
+image: /pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg
+---
+
+::: {layout-ncol=2}
+
+:::{#first-column}
+
+::: {.content-visible when-profile="website_en"}
+In today's curation, we explore various developments across financial markets and technology. The topics include:
+
+- A comparative study of emerging language models.
+- An introduction to REST APIs in Python.
+- Optimization strategies for Python's AST parsing.
+- Insights from the US Composite PMI Output Index.
+- Declining interest in high-fee hedge funds.
+- Recent market dynamics favoring value stocks.
+- Japan's Nikkei index reaction to US economic fears.
+- Volatility stemming from job reports and sector performances.
+- Trends in small-cap value ETFs amidst macroeconomic concerns.
+:::
+
+::: {.content-visible when-profile="website_fr"}
+Aujourd'hui, une analyse de plusieurs sujets en lien avec les marchés financiers. 
+
+Voici un aperçu des sujets intéressants abordés :
+
+- Évaluation comparative des modèles de langage et introduction d'un nouveau modèle par Apple.
+- Cours sur l'architecture REST et utilisation des API en Python.
+- Optimisation du parsing d'AST en Python à l'aide d'une extension Rust.
+- Indications de croissance économique aux États-Unis malgré l'augmentation du chômage.
+- Tendance décroissante des investisseurs envers les fonds de couverture à frais élevés.
+- Opportunités d'investissement dans les actions de valeur après la vente massive des marchés.
+- Baisse significative de l'indice Nikkei 225 amid des craintes de récession aux U.S.
+- Volatilité du marché avec une montée des secteurs défensifs.
+- Augmentation des risques de récession après le dernier rapport sur l'emploi et impact sur les ETFs. 
+
+La suite plus bas.
+
+:::
+
+
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/corporate-businessman-coffee-working-journal.jpg)
+:::
+
+:::
+
+::: {.content-visible when-profile="website_en"}
+
+
+# AI and Gen-AI
+| Title | Summary |
+|-----|-----------|
+| [Understanding Smaller AI: Comparing Gemma, Llama 3, and Mistral for Everyday Reading Comprehension Tasks (Towards Data Science, 2024-08-06)](https://towardsdatascience.com/gemma-vs-llama-vs-mistral-exploring-smaller-ai-models-672a95f4b9b7?source=rss----7f60cf5620c9---4)   | A comparative study evaluates small-scale language models: Gemma, Llama 3, and Mistral. Apple introduced a closed-source, ~3 billion parameter model, comparable to 7b versions of these models. |
+
+# Coding
+| Title | Summary |
+|-----|-----------|
+| [Unlock Web Data: Master REST APIs in Python for Data Access and Custom API Development (There is no specific blog or website name mentioned in the provided content., 2024-08-06)](https://realpython.com/courses/interacting-rest-apis-python/)   | This course covers REST architecture, access to web data via REST APIs, using the requests library, and popular Python tools for building REST APIs. Access the full article [here](https://realpython.com/courses/interacting-rest-apis-python/). |
+| [Speed Up Your Python Code Dramatically: Discover How Lazy Evaluation Can Optimize Performance (Gauge Technologies, 2024-08-07)](https://www.gauge.sh/blog/python-extensions-should-be-lazy)   | Optimising Python's ast parsing revealed significant memory allocation issues. A Rust extension reduced runtime from 8.7s to 530ms by avoiding unnecessary Python object creation and utilising lazy data handling. |
+
+# Economics
+| Title | Summary |
+|-----|-----------|
+| [Will US Growth Outlast Rising Unemployment? Exploring Key Economic Indicators and Recession Predictions (The US Business Cycle Risk Report, 2024-08-06)](https://www.capitalspectator.com/us-isnt-in-recession-now-but-downturn-risk-may-be-rising/)   | The US Composite PMI Output Index for July indicates continued economic growth. Despite rising unemployment, models suggest recession risk is weak, with indicators favouring growth through September. |
+
+# Hedge Fund News
+| Title | Summary |
+|-----|-----------|
+| [Why Investors Are Moving Away from High-Fee Hedge Funds and Exploring Alternative Investment Strategies (Reuters, 2024-08-06)](https://www.hedgeweek.com/investors-losing-appetite-for-high-fee-hedge-funds-and-private-credit/)   | Global interest in high-fee multi-strategy hedge funds is declining. Only 15% of investors plan to increase exposure. Hedge funds are now favoured over private credit, with rising investor optimism noted. |
+
+# Market Pulse & Market News
+| Title | Summary |
+|-----|-----------|
+| [Navigating Volatile Markets: Why Savvy Investors Are Eyeing Value Stocks Amid Recent Selloff (ValueWalk, 2024-08-06)](https://www.valuewalk.com/stock-selloff-is-now-the-right-time-to-buy-value-stocks/)   | Monday's stock selloff created opportunities for value stocks. Warren Buffett warned of high valuations. The S&P 500 Value Index outperformed growth stocks, indicating a potential shift towards value investments. |
+| [Markets Continue to Tumble: What Weaker US Labor Data Means for Stocks and Bonds (CapitalSpectator.com, 2024-08-05)](https://www.capitalspectator.com/will-global-market-sell-off-dethrone-us-stocks-2024-leadership/)   | Global markets face continued selling, driven by US labour market concerns. US stocks remain strong but are showing signs of normalisation, with narrowing gaps against bonds amid falling Treasury yields. |
+| [Japan's Markets Hit Hard by U.S. Recession Fears: Nikkei 225 Plummets with Major Bank Stocks in Freefall (CLIMATEER INVESTING, 2024-08-05)](http://climateerinvest.blogspot.com/2024/08/lets-see-what-nikkei-asia-has-to-say.html)   | Japan's Nikkei 225 index fell 4,451.28 points, closing down 12.4%, amid U.S. recession fears. Megabanks also plummeted, with Mizuho down 19.7%. |
+| [Understanding the Rapid Market Drop: Tech Stocks, Global Concerns, and Investor Sentiment Explained (ETF Trends, 2024-08-07)](https://www.etftrends.com/etf-strategist-channel/why-did-market-drop-fast-making-rational-sense-irrational-market/)   | The market experienced volatility due to declines in technology stocks, global concerns, and poor US job reports. Defensive sectors like Consumer Staples and Utilities rose amidst market instability. |
+| [Navigating Market Shifts: Why Small-Cap Value Stocks are Stealing the Spotlight in a Turbulent Economy (ETF Trends, 2024-08-07)](https://www.etftrends.com/great-rotation-just-getting-started/)   | Friday's jobs report increased recession odds to 25%. Small-cap value ETFs surged while mega-cap growth fell. Concerns over tech valuations and geopolitical risks favour small-cap strategies amid potential Fed rate cuts. |
+:::
+
+::: {.content-visible when-profile="website_fr"}
+# AI et Gen-AI
+| Titre | Résumé |
+|-----|-----------|
+| [Comprendre les petites IA : Comparaison de Gemma, Llama 3 et Mistral pour les tâches de compréhension reading quotidienne (Towards Data Science, 2024-08-06)](https://towardsdatascience.com/gemma-vs-llama-vs-mistral-exploring-smaller-ai-models-672a95f4b9b7?source=rss----7f60cf5620c9---4)   | Une étude comparative évalue des modèles de langage à petite échelle : Gemma, Llama 3 et Mistral. Apple a introduit un modèle à code source fermé, d'environ 3 milliards de paramètres, comparable aux versions 7b de ces modèles. |
+
+# Code
+| Titre | Résumé |
+|-----|-----------|
+| [Débloquez les données Web : Maîtrisez les API REST en Python pour l'accès aux données et le développement d'API personnalisées (Aucun nom de blog ou site Web spécifique mentionné dans le contenu fourni., 2024-08-06)](https://realpython.com/courses/interacting-rest-apis-python/)   | Ce cours couvre l'architecture REST, l'accès aux données web via des API REST, l'utilisation de la bibliothèque requests, et des outils Python populaires pour construire des API REST. Accédez à l'article complet [ici](https://realpython.com/courses/interacting-rest-apis-python/). |
+| [Accélérez considérablement votre code Python : Découvrez comment l'évaluation paresseuse peut optimiser les performances (Gauge Technologies, 2024-08-07)](https://www.gauge.sh/blog/python-extensions-should-be-lazy)   | L'optimisation de l'analyse ast de Python a révélé des problèmes d'allocation de mémoire significatifs. Une extension Rust a réduit le temps d'exécution de 8.7s à 530ms en évitant la création inutile d'objets Python et en utilisant la gestion des données paresseuses. |
+
+# Économie
+| Titre | Résumé |
+|-----|-----------|
+| [La croissance américaine survivra-t-elle à la montée du chômage ? Exploration des indicateurs économiques clés et des prévisions de récession (The US Business Cycle Risk Report, 2024-08-06)](https://www.capitalspectator.com/us-isnt-in-recession-now-but-downturn-risk-may-be-rising/)   | L'indice PMI composite des États-Unis pour juillet indique une poursuite de la croissance économique. Malgré l'augmentation du chômage, les modèles suggèrent que le risque de récession est faible, avec des indicateurs favorables à la croissance jusqu'en septembre. |
+
+# Hedge Funds
+| Titre | Résumé |
+|-----|-----------|
+| [Pourquoi les investisseurs s'éloignent des fonds spéculatifs à frais élevés et explorent des stratégies d'investissement alternatives (Reuters, 2024-08-06)](https://www.hedgeweek.com/investors-losing-appetite-for-high-fee-hedge-funds-and-private-credit/)   | L'intérêt mondial pour les fonds spéculatifs multi-stratégies à frais élevés est en déclin. Seuls 15 % des investisseurs prévoient d'augmenter leur exposition. Les fonds spéculatifs sont désormais privilégiés par rapport au crédit privé, avec un optimisme croissant des investisseurs. |
+
+# Actualités du marché
+| Titre | Résumé |
+|-----|-----------|
+| [Naviguer dans des marchés volatils : Pourquoi les investisseurs avisés se tournent vers les actions de valeur en pleine vente (ValueWalk, 2024-08-06)](https://www.valuewalk.com/stock-selloff-is-now-the-right-time-to-buy-value-stocks/)   | La vente d'actions de lundi a créé des opportunités pour les actions de valeur. Warren Buffett a averti des valorisations élevées. L'indice de valeur S&P 500 a surperformé les actions de croissance, indiquant un potentiel changement vers les investissements de valeur. |
+| [Les marchés continuent de chuter : Ce que des données sur l'emploi américaines plus faibles signifient pour les actions et les obligations (CapitalSpectator.com, 2024-08-05)](https://www.capitalspectator.com/will-global-market-sell-off-dethrone-us-stocks-2024-leadership/)   | Les marchés mondiaux font face à une vente continue, alimentée par des préoccupations concernant le marché du travail américain. Les actions américaines demeurent solides mais montrent des signes de normalisation, avec un resserrement des écarts par rapport aux obligations au milieu de la baisse des rendements du Trésor. |
+| [Les marchés japonais touchés durement par les craintes de récession aux États-Unis : le Nikkei 225 s'effondre avec les principaux titres bancaires en chute libre (CLIMATEER INVESTING, 2024-08-05)](http://climateerinvest.blogspot.com/2024/08/lets-see-what-nikkei-asia-has-to-say.html)   | L'indice Nikkei 225 du Japon a chuté de 4 451,28 points, clôturant à -12,4 %, au milieu des craintes de récession aux États-Unis. Les grandes banques ont également chuté, avec Mizuho en baisse de 19,7 %. |
+| [Comprendre la chute rapide du marché : Actions technologiques, préoccupations mondiales et sentiment des investisseurs expliqués (ETF Trends, 2024-08-07)](https://www.etftrends.com/etf-strategist-channel/why-did-market-drop-fast-making-rational-sense-irrational-market/)   | Le marché a connu une volatilité en raison des baisses des actions technologiques, des préoccupations mondiales et des mauvais rapports d'emploi aux États-Unis. Les secteurs défensifs comme les produits de consommation de base et les services publics ont augmenté au milieu de l'instabilité du marché. |
+| [Naviguer dans les changements du marché : Pourquoi les actions de valeur des petites capitalisations attirent l'attention dans une économie turbulente (ETF Trends, 2024-08-07)](https://www.etftrends.com/great-rotation-just-getting-started/)   | Le rapport sur l'emploi de vendredi a augmenté les probabilités de récession à 25 %. Les ETF de valeur des petites capitalisations ont explosé pendant que la croissance des méga-capitalisations chutait. Les préoccupations concernant les évaluations technologiques et les risques géopolitiques favorisent les stratégies des petites capitalisations au milieu des potentielles baisses de taux de la Fed. |
+:::
+
+
