@@ -3,6 +3,8 @@ title: "Daily Financial Insights: Assessing Small Models, Rest API Mastery, Mark
 title_fr: "Revue de Web: Assessing Small Models, Rest API Mastery, Market Volatility, and Value Stocks Shift (07.08.2024)"
 page-layout: full
 title-block-banner: true
+code-tools:
+    source: false
 date: 08-07-2024
 categories: [ai,coding,economics,hedge-funds,market-feed]
 tags: [models, python, rest, growth, hedge, value, stocks, volatility, recession, interest]

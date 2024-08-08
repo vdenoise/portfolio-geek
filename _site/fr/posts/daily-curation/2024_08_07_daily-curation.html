@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -208,7 +174,7 @@ cookieconsent.run({
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page">
-      <div class="quarto-title-block"><div><h1 class="title">Daily Financial Insights: Assessing Small Models, Rest API Mastery, Market Volatility, and Value Stocks Shift (07.08.2024)</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
+      <h1 class="title">Daily Financial Insights: Assessing Small Models, Rest API Mastery, Market Volatility, and Value Stocks Shift (07.08.2024)</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">ai</div>
                 <div class="quarto-category">coding</div>
@@ -387,8 +353,6 @@ cookieconsent.run({
 </tbody>
 </table>
 
-
-<!-- -->
 
 </section>
 
@@ -868,131 +832,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Code source</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Daily Financial Insights: Assessing Small Models, Rest API Mastery, Market Volatility, and Value Stocks Shift (07.08.2024)"</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="an">title_fr:</span><span class="co"> "Revue de Web: Assessing Small Models, Rest API Mastery, Market Volatility, and Value Stocks Shift (07.08.2024)"</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="an">date:</span><span class="co"> 08-07-2024</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a><span class="an">categories:</span><span class="co"> [ai,coding,economics,hedge-funds,market-feed]</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="an">tags:</span><span class="co"> [models, python, rest, growth, hedge, value, stocks, volatility, recession, interest]</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="an">image:</span><span class="co"> /pictures/corporate-businessman-coffee-working-journal.jpg</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="co">---</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a></span>
-<span id="cb1-12"><a href="#cb1-12"></a>::: {layout-ncol=2}</span>
-<span id="cb1-13"><a href="#cb1-13"></a></span>
-<span id="cb1-14"><a href="#cb1-14"></a>:::{#first-column}</span>
-<span id="cb1-15"><a href="#cb1-15"></a></span>
-<span id="cb1-16"><a href="#cb1-16"></a>::: {.content-visible when-profile="website_en"}</span>
-<span id="cb1-17"><a href="#cb1-17"></a>In today's curation, we explore various developments across financial markets and technology. The topics include:</span>
-<span id="cb1-18"><a href="#cb1-18"></a></span>
-<span id="cb1-19"><a href="#cb1-19"></a><span class="ss">- </span>A comparative study of emerging language models.</span>
-<span id="cb1-20"><a href="#cb1-20"></a><span class="ss">- </span>An introduction to REST APIs in Python.</span>
-<span id="cb1-21"><a href="#cb1-21"></a><span class="ss">- </span>Optimization strategies for Python's AST parsing.</span>
-<span id="cb1-22"><a href="#cb1-22"></a><span class="ss">- </span>Insights from the US Composite PMI Output Index.</span>
-<span id="cb1-23"><a href="#cb1-23"></a><span class="ss">- </span>Declining interest in high-fee hedge funds.</span>
-<span id="cb1-24"><a href="#cb1-24"></a><span class="ss">- </span>Recent market dynamics favoring value stocks.</span>
-<span id="cb1-25"><a href="#cb1-25"></a><span class="ss">- </span>Japan's Nikkei index reaction to US economic fears.</span>
-<span id="cb1-26"><a href="#cb1-26"></a><span class="ss">- </span>Volatility stemming from job reports and sector performances.</span>
-<span id="cb1-27"><a href="#cb1-27"></a><span class="ss">- </span>Trends in small-cap value ETFs amidst macroeconomic concerns.</span>
-<span id="cb1-28"><a href="#cb1-28"></a>:::</span>
-<span id="cb1-29"><a href="#cb1-29"></a></span>
-<span id="cb1-30"><a href="#cb1-30"></a>::: {.content-visible when-profile="website_fr"}</span>
-<span id="cb1-31"><a href="#cb1-31"></a>Aujourd'hui, une analyse de plusieurs sujets en lien avec les marchés financiers. </span>
-<span id="cb1-32"><a href="#cb1-32"></a></span>
-<span id="cb1-33"><a href="#cb1-33"></a>Voici un aperçu des sujets intéressants abordés :</span>
-<span id="cb1-34"><a href="#cb1-34"></a></span>
-<span id="cb1-35"><a href="#cb1-35"></a><span class="ss">- </span>Évaluation comparative des modèles de langage et introduction d'un nouveau modèle par Apple.</span>
-<span id="cb1-36"><a href="#cb1-36"></a><span class="ss">- </span>Cours sur l'architecture REST et utilisation des API en Python.</span>
-<span id="cb1-37"><a href="#cb1-37"></a><span class="ss">- </span>Optimisation du parsing d'AST en Python à l'aide d'une extension Rust.</span>
-<span id="cb1-38"><a href="#cb1-38"></a><span class="ss">- </span>Indications de croissance économique aux États-Unis malgré l'augmentation du chômage.</span>
-<span id="cb1-39"><a href="#cb1-39"></a><span class="ss">- </span>Tendance décroissante des investisseurs envers les fonds de couverture à frais élevés.</span>
-<span id="cb1-40"><a href="#cb1-40"></a><span class="ss">- </span>Opportunités d'investissement dans les actions de valeur après la vente massive des marchés.</span>
-<span id="cb1-41"><a href="#cb1-41"></a><span class="ss">- </span>Baisse significative de l'indice Nikkei 225 amid des craintes de récession aux U.S.</span>
-<span id="cb1-42"><a href="#cb1-42"></a><span class="ss">- </span>Volatilité du marché avec une montée des secteurs défensifs.</span>
-<span id="cb1-43"><a href="#cb1-43"></a><span class="ss">- </span>Augmentation des risques de récession après le dernier rapport sur l'emploi et impact sur les ETFs. </span>
-<span id="cb1-44"><a href="#cb1-44"></a></span>
-<span id="cb1-45"><a href="#cb1-45"></a>La suite plus bas.</span>
-<span id="cb1-46"><a href="#cb1-46"></a></span>
-<span id="cb1-47"><a href="#cb1-47"></a>:::</span>
-<span id="cb1-48"><a href="#cb1-48"></a></span>
-<span id="cb1-49"><a href="#cb1-49"></a></span>
-<span id="cb1-50"><a href="#cb1-50"></a>:::</span>
-<span id="cb1-51"><a href="#cb1-51"></a></span>
-<span id="cb1-52"><a href="#cb1-52"></a>:::{#second-column}</span>
-<span id="cb1-53"><a href="#cb1-53"></a><span class="al">![Coffee with daily news](/pictures/corporate-businessman-coffee-working-journal.jpg)</span></span>
-<span id="cb1-54"><a href="#cb1-54"></a>:::</span>
-<span id="cb1-55"><a href="#cb1-55"></a></span>
-<span id="cb1-56"><a href="#cb1-56"></a>:::</span>
-<span id="cb1-57"><a href="#cb1-57"></a></span>
-<span id="cb1-58"><a href="#cb1-58"></a>::: {.content-visible when-profile="website_en"}</span>
-<span id="cb1-59"><a href="#cb1-59"></a></span>
-<span id="cb1-60"><a href="#cb1-60"></a></span>
-<span id="cb1-61"><a href="#cb1-61"></a><span class="fu"># AI and Gen-AI</span></span>
-<span id="cb1-62"><a href="#cb1-62"></a>| Title | Summary |</span>
-<span id="cb1-63"><a href="#cb1-63"></a>|-----|-----------|</span>
-<span id="cb1-64"><a href="#cb1-64"></a>| <span class="co">[</span><span class="ot">Understanding Smaller AI: Comparing Gemma, Llama 3, and Mistral for Everyday Reading Comprehension Tasks (Towards Data Science, 2024-08-06)</span><span class="co">](https://towardsdatascience.com/gemma-vs-llama-vs-mistral-exploring-smaller-ai-models-672a95f4b9b7?source=rss----7f60cf5620c9---4)</span>   | A comparative study evaluates small-scale language models: Gemma, Llama 3, and Mistral. Apple introduced a closed-source, ~3 billion parameter model, comparable to 7b versions of these models. |</span>
-<span id="cb1-65"><a href="#cb1-65"></a></span>
-<span id="cb1-66"><a href="#cb1-66"></a><span class="fu"># Coding</span></span>
-<span id="cb1-67"><a href="#cb1-67"></a>| Title | Summary |</span>
-<span id="cb1-68"><a href="#cb1-68"></a>|-----|-----------|</span>
-<span id="cb1-69"><a href="#cb1-69"></a>| <span class="co">[</span><span class="ot">Unlock Web Data: Master REST APIs in Python for Data Access and Custom API Development (There is no specific blog or website name mentioned in the provided content., 2024-08-06)</span><span class="co">](https://realpython.com/courses/interacting-rest-apis-python/)</span>   | This course covers REST architecture, access to web data via REST APIs, using the requests library, and popular Python tools for building REST APIs. Access the full article <span class="co">[</span><span class="ot">here</span><span class="co">](https://realpython.com/courses/interacting-rest-apis-python/)</span>. |</span>
-<span id="cb1-70"><a href="#cb1-70"></a>| <span class="co">[</span><span class="ot">Speed Up Your Python Code Dramatically: Discover How Lazy Evaluation Can Optimize Performance (Gauge Technologies, 2024-08-07)</span><span class="co">](https://www.gauge.sh/blog/python-extensions-should-be-lazy)</span>   | Optimising Python's ast parsing revealed significant memory allocation issues. A Rust extension reduced runtime from 8.7s to 530ms by avoiding unnecessary Python object creation and utilising lazy data handling. |</span>
-<span id="cb1-71"><a href="#cb1-71"></a></span>
-<span id="cb1-72"><a href="#cb1-72"></a><span class="fu"># Economics</span></span>
-<span id="cb1-73"><a href="#cb1-73"></a>| Title | Summary |</span>
-<span id="cb1-74"><a href="#cb1-74"></a>|-----|-----------|</span>
-<span id="cb1-75"><a href="#cb1-75"></a>| <span class="co">[</span><span class="ot">Will US Growth Outlast Rising Unemployment? Exploring Key Economic Indicators and Recession Predictions (The US Business Cycle Risk Report, 2024-08-06)</span><span class="co">](https://www.capitalspectator.com/us-isnt-in-recession-now-but-downturn-risk-may-be-rising/)</span>   | The US Composite PMI Output Index for July indicates continued economic growth. Despite rising unemployment, models suggest recession risk is weak, with indicators favouring growth through September. |</span>
-<span id="cb1-76"><a href="#cb1-76"></a></span>
-<span id="cb1-77"><a href="#cb1-77"></a><span class="fu"># Hedge Fund News</span></span>
-<span id="cb1-78"><a href="#cb1-78"></a>| Title | Summary |</span>
-<span id="cb1-79"><a href="#cb1-79"></a>|-----|-----------|</span>
-<span id="cb1-80"><a href="#cb1-80"></a>| <span class="co">[</span><span class="ot">Why Investors Are Moving Away from High-Fee Hedge Funds and Exploring Alternative Investment Strategies (Reuters, 2024-08-06)</span><span class="co">](https://www.hedgeweek.com/investors-losing-appetite-for-high-fee-hedge-funds-and-private-credit/)</span>   | Global interest in high-fee multi-strategy hedge funds is declining. Only 15% of investors plan to increase exposure. Hedge funds are now favoured over private credit, with rising investor optimism noted. |</span>
-<span id="cb1-81"><a href="#cb1-81"></a></span>
-<span id="cb1-82"><a href="#cb1-82"></a><span class="fu"># Market Pulse &amp; Market News</span></span>
-<span id="cb1-83"><a href="#cb1-83"></a>| Title | Summary |</span>
-<span id="cb1-84"><a href="#cb1-84"></a>|-----|-----------|</span>
-<span id="cb1-85"><a href="#cb1-85"></a>| <span class="co">[</span><span class="ot">Navigating Volatile Markets: Why Savvy Investors Are Eyeing Value Stocks Amid Recent Selloff (ValueWalk, 2024-08-06)</span><span class="co">](https://www.valuewalk.com/stock-selloff-is-now-the-right-time-to-buy-value-stocks/)</span>   | Monday's stock selloff created opportunities for value stocks. Warren Buffett warned of high valuations. The S&amp;P 500 Value Index outperformed growth stocks, indicating a potential shift towards value investments. |</span>
-<span id="cb1-86"><a href="#cb1-86"></a>| <span class="co">[</span><span class="ot">Markets Continue to Tumble: What Weaker US Labor Data Means for Stocks and Bonds (CapitalSpectator.com, 2024-08-05)</span><span class="co">](https://www.capitalspectator.com/will-global-market-sell-off-dethrone-us-stocks-2024-leadership/)</span>   | Global markets face continued selling, driven by US labour market concerns. US stocks remain strong but are showing signs of normalisation, with narrowing gaps against bonds amid falling Treasury yields. |</span>
-<span id="cb1-87"><a href="#cb1-87"></a>| <span class="co">[</span><span class="ot">Japan's Markets Hit Hard by U.S. Recession Fears: Nikkei 225 Plummets with Major Bank Stocks in Freefall (CLIMATEER INVESTING, 2024-08-05)</span><span class="co">](http://climateerinvest.blogspot.com/2024/08/lets-see-what-nikkei-asia-has-to-say.html)</span>   | Japan's Nikkei 225 index fell 4,451.28 points, closing down 12.4%, amid U.S. recession fears. Megabanks also plummeted, with Mizuho down 19.7%. |</span>
-<span id="cb1-88"><a href="#cb1-88"></a>| <span class="co">[</span><span class="ot">Understanding the Rapid Market Drop: Tech Stocks, Global Concerns, and Investor Sentiment Explained (ETF Trends, 2024-08-07)</span><span class="co">](https://www.etftrends.com/etf-strategist-channel/why-did-market-drop-fast-making-rational-sense-irrational-market/)</span>   | The market experienced volatility due to declines in technology stocks, global concerns, and poor US job reports. Defensive sectors like Consumer Staples and Utilities rose amidst market instability. |</span>
-<span id="cb1-89"><a href="#cb1-89"></a>| <span class="co">[</span><span class="ot">Navigating Market Shifts: Why Small-Cap Value Stocks are Stealing the Spotlight in a Turbulent Economy (ETF Trends, 2024-08-07)</span><span class="co">](https://www.etftrends.com/great-rotation-just-getting-started/)</span>   | Friday's jobs report increased recession odds to 25%. Small-cap value ETFs surged while mega-cap growth fell. Concerns over tech valuations and geopolitical risks favour small-cap strategies amid potential Fed rate cuts. |</span>
-<span id="cb1-90"><a href="#cb1-90"></a>:::</span>
-<span id="cb1-91"><a href="#cb1-91"></a></span>
-<span id="cb1-92"><a href="#cb1-92"></a>::: {.content-visible when-profile="website_fr"}</span>
-<span id="cb1-93"><a href="#cb1-93"></a><span class="fu"># AI et Gen-AI</span></span>
-<span id="cb1-94"><a href="#cb1-94"></a>| Titre | Résumé |</span>
-<span id="cb1-95"><a href="#cb1-95"></a>|-----|-----------|</span>
-<span id="cb1-96"><a href="#cb1-96"></a>| <span class="co">[</span><span class="ot">Comprendre les petites IA : Comparaison de Gemma, Llama 3 et Mistral pour les tâches de compréhension reading quotidienne (Towards Data Science, 2024-08-06)</span><span class="co">](https://towardsdatascience.com/gemma-vs-llama-vs-mistral-exploring-smaller-ai-models-672a95f4b9b7?source=rss----7f60cf5620c9---4)</span>   | Une étude comparative évalue des modèles de langage à petite échelle : Gemma, Llama 3 et Mistral. Apple a introduit un modèle à code source fermé, d'environ 3 milliards de paramètres, comparable aux versions 7b de ces modèles. |</span>
-<span id="cb1-97"><a href="#cb1-97"></a></span>
-<span id="cb1-98"><a href="#cb1-98"></a><span class="fu"># Code</span></span>
-<span id="cb1-99"><a href="#cb1-99"></a>| Titre | Résumé |</span>
-<span id="cb1-100"><a href="#cb1-100"></a>|-----|-----------|</span>
-<span id="cb1-101"><a href="#cb1-101"></a>| <span class="co">[</span><span class="ot">Débloquez les données Web : Maîtrisez les API REST en Python pour l'accès aux données et le développement d'API personnalisées (Aucun nom de blog ou site Web spécifique mentionné dans le contenu fourni., 2024-08-06)</span><span class="co">](https://realpython.com/courses/interacting-rest-apis-python/)</span>   | Ce cours couvre l'architecture REST, l'accès aux données web via des API REST, l'utilisation de la bibliothèque requests, et des outils Python populaires pour construire des API REST. Accédez à l'article complet <span class="co">[</span><span class="ot">ici</span><span class="co">](https://realpython.com/courses/interacting-rest-apis-python/)</span>. |</span>
-<span id="cb1-102"><a href="#cb1-102"></a>| <span class="co">[</span><span class="ot">Accélérez considérablement votre code Python : Découvrez comment l'évaluation paresseuse peut optimiser les performances (Gauge Technologies, 2024-08-07)</span><span class="co">](https://www.gauge.sh/blog/python-extensions-should-be-lazy)</span>   | L'optimisation de l'analyse ast de Python a révélé des problèmes d'allocation de mémoire significatifs. Une extension Rust a réduit le temps d'exécution de 8.7s à 530ms en évitant la création inutile d'objets Python et en utilisant la gestion des données paresseuses. |</span>
-<span id="cb1-103"><a href="#cb1-103"></a></span>
-<span id="cb1-104"><a href="#cb1-104"></a><span class="fu"># Économie</span></span>
-<span id="cb1-105"><a href="#cb1-105"></a>| Titre | Résumé |</span>
-<span id="cb1-106"><a href="#cb1-106"></a>|-----|-----------|</span>
-<span id="cb1-107"><a href="#cb1-107"></a>| <span class="co">[</span><span class="ot">La croissance américaine survivra-t-elle à la montée du chômage ? Exploration des indicateurs économiques clés et des prévisions de récession (The US Business Cycle Risk Report, 2024-08-06)</span><span class="co">](https://www.capitalspectator.com/us-isnt-in-recession-now-but-downturn-risk-may-be-rising/)</span>   | L'indice PMI composite des États-Unis pour juillet indique une poursuite de la croissance économique. Malgré l'augmentation du chômage, les modèles suggèrent que le risque de récession est faible, avec des indicateurs favorables à la croissance jusqu'en septembre. |</span>
-<span id="cb1-108"><a href="#cb1-108"></a></span>
-<span id="cb1-109"><a href="#cb1-109"></a><span class="fu"># Hedge Funds</span></span>
-<span id="cb1-110"><a href="#cb1-110"></a>| Titre | Résumé |</span>
-<span id="cb1-111"><a href="#cb1-111"></a>|-----|-----------|</span>
-<span id="cb1-112"><a href="#cb1-112"></a>| <span class="co">[</span><span class="ot">Pourquoi les investisseurs s'éloignent des fonds spéculatifs à frais élevés et explorent des stratégies d'investissement alternatives (Reuters, 2024-08-06)</span><span class="co">](https://www.hedgeweek.com/investors-losing-appetite-for-high-fee-hedge-funds-and-private-credit/)</span>   | L'intérêt mondial pour les fonds spéculatifs multi-stratégies à frais élevés est en déclin. Seuls 15 % des investisseurs prévoient d'augmenter leur exposition. Les fonds spéculatifs sont désormais privilégiés par rapport au crédit privé, avec un optimisme croissant des investisseurs. |</span>
-<span id="cb1-113"><a href="#cb1-113"></a></span>
-<span id="cb1-114"><a href="#cb1-114"></a><span class="fu"># Actualités du marché</span></span>
-<span id="cb1-115"><a href="#cb1-115"></a>| Titre | Résumé |</span>
-<span id="cb1-116"><a href="#cb1-116"></a>|-----|-----------|</span>
-<span id="cb1-117"><a href="#cb1-117"></a>| <span class="co">[</span><span class="ot">Naviguer dans des marchés volatils : Pourquoi les investisseurs avisés se tournent vers les actions de valeur en pleine vente (ValueWalk, 2024-08-06)</span><span class="co">](https://www.valuewalk.com/stock-selloff-is-now-the-right-time-to-buy-value-stocks/)</span>   | La vente d'actions de lundi a créé des opportunités pour les actions de valeur. Warren Buffett a averti des valorisations élevées. L'indice de valeur S&amp;P 500 a surperformé les actions de croissance, indiquant un potentiel changement vers les investissements de valeur. |</span>
-<span id="cb1-118"><a href="#cb1-118"></a>| <span class="co">[</span><span class="ot">Les marchés continuent de chuter : Ce que des données sur l'emploi américaines plus faibles signifient pour les actions et les obligations (CapitalSpectator.com, 2024-08-05)</span><span class="co">](https://www.capitalspectator.com/will-global-market-sell-off-dethrone-us-stocks-2024-leadership/)</span>   | Les marchés mondiaux font face à une vente continue, alimentée par des préoccupations concernant le marché du travail américain. Les actions américaines demeurent solides mais montrent des signes de normalisation, avec un resserrement des écarts par rapport aux obligations au milieu de la baisse des rendements du Trésor. |</span>
-<span id="cb1-119"><a href="#cb1-119"></a>| <span class="co">[</span><span class="ot">Les marchés japonais touchés durement par les craintes de récession aux États-Unis : le Nikkei 225 s'effondre avec les principaux titres bancaires en chute libre (CLIMATEER INVESTING, 2024-08-05)</span><span class="co">](http://climateerinvest.blogspot.com/2024/08/lets-see-what-nikkei-asia-has-to-say.html)</span>   | L'indice Nikkei 225 du Japon a chuté de 4 451,28 points, clôturant à -12,4 %, au milieu des craintes de récession aux États-Unis. Les grandes banques ont également chuté, avec Mizuho en baisse de 19,7 %. |</span>
-<span id="cb1-120"><a href="#cb1-120"></a>| <span class="co">[</span><span class="ot">Comprendre la chute rapide du marché : Actions technologiques, préoccupations mondiales et sentiment des investisseurs expliqués (ETF Trends, 2024-08-07)</span><span class="co">](https://www.etftrends.com/etf-strategist-channel/why-did-market-drop-fast-making-rational-sense-irrational-market/)</span>   | Le marché a connu une volatilité en raison des baisses des actions technologiques, des préoccupations mondiales et des mauvais rapports d'emploi aux États-Unis. Les secteurs défensifs comme les produits de consommation de base et les services publics ont augmenté au milieu de l'instabilité du marché. |</span>
-<span id="cb1-121"><a href="#cb1-121"></a>| <span class="co">[</span><span class="ot">Naviguer dans les changements du marché : Pourquoi les actions de valeur des petites capitalisations attirent l'attention dans une économie turbulente (ETF Trends, 2024-08-07)</span><span class="co">](https://www.etftrends.com/great-rotation-just-getting-started/)</span>   | Le rapport sur l'emploi de vendredi a augmenté les probabilités de récession à 25 %. Les ETF de valeur des petites capitalisations ont explosé pendant que la croissance des méga-capitalisations chutait. Les préoccupations concernant les évaluations technologiques et les risques géopolitiques favorisent les stratégies des petites capitalisations au milieu des potentielles baisses de taux de la Fed. |</span>
-<span id="cb1-122"><a href="#cb1-122"></a>:::</span>
-<span id="cb1-123"><a href="#cb1-123"></a></span></code><button title="Copier vers le presse-papier" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

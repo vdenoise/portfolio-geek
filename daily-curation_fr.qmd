@@ -7,6 +7,8 @@ listing:
   categories: true
   fields: [author, date, description, title, image]
 page-layout: full
+code-tools:
+  source: false
 title-block-banner: true
 ---
 
