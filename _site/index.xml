@@ -10,7 +10,105 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Tue, 06 Aug 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 07 Aug 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Stay Updated on Market Shifts &amp; Leadership Changes: Key Highlights for 08.08.2024</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_08_08_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore 3 themes:</p>
+<ul>
+<li>Leadership changes at OpenAI with the departure of top figures, including Greg Brockman and Peter Deng.</li>
+<li>A guide on using VBA to check if an Excel workbook is open from R.</li>
+<li>Analysis of current market volatility and the implications of risk-off sentiment.</li>
+</ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures.png" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="ai-and-gen-ai" class="level1">
+<h1>AI and Gen-AI</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://climateerinvest.blogspot.com/2024/08/openai-is-rapidly-losing-senior-members.html">Leadership Exodus at OpenAI: Key Figures Depart as Company Faces Uncertain Future (CLIMATEER INVESTING, 2024-08-08)</a></td>
+<td>OpenAI has lost three top leaders, including Greg Brockman, who is on sabbatical, John Schulman, and Peter Deng. Only two founding team members remain active at the company.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coding" class="level1">
+<h1>Coding</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.r-bloggers.com/2024/08/checking-if-a-workbook-is-open-using-vba-and-executing-from-r/">Seamlessly Integrate R and Excel: Master Automating Workbook Checks with VBA (Steve’s Data Tips and Tricks, 2024-08-08)</a></td>
+<td>This guide demonstrates how to check if an Excel workbook is open using VBA, then execute the check from R with the RDCOMClient package.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-news" class="level1">
+<h1>Market News</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.capitalspectator.com/markets-take-a-hit-but-a-clear-risk-off-signal-is-still-in-dispute/">Navigating Market Waves: Understanding Recent Volatility and What It Means for Your Investment Strategy (James Picerno, 2024-08-08)</a></td>
+<td>Market volatility raises concerns of a risk-off sentiment. While some indicators show signs of shifting, longer-term trends remain uncertain, warranting further observation before drawing conclusions.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>coding</category>
+  <category>crypto</category>
+  <category>market-feed</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_08_daily-curation.html</guid>
+  <pubDate>Wed, 07 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Daily Financial Insights: Assessing Small Models, Rest API Mastery, Market Volatility, and Value Stocks Shift (07.08.2024)</title>
   <dc:creator>Vincent D.</dc:creator>
@@ -3389,151 +3487,6 @@ font-style: inherit;">'Volatility'</span>)</span>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-17_daily-curation.html</guid>
   <pubDate>Tue, 16 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/laptop-data.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Daily Insights (16.07.24): Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-16_daily-curation.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>In today’s curation, we explore key developments in finance and investment. The following topics are highlighted:</p>
-<ul>
-<li>Asset managers and declining profit margins</li>
-<li>Evolution of passive investing in fixed income</li>
-<li>Growth of E-mini Nasdaq-100 futures</li>
-<li>Impact of severe weather on shipping near South Africa</li>
-<li>Wage growth trends for low-wage workers</li>
-<li>Benchmarking private capital effectively</li>
-<li>Burberry’s challenging first-quarter results</li>
-<li>Growth in India’s equity market</li>
-<li>S&amp;P 500 earnings growth expectations for Q2</li>
-</ul>
-</div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/pictures/time-horizon-paper.png" class="img-fluid figure-img"></p>
-<figcaption>Coffee with daily news</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<section id="asset-management" class="level1">
-<h1>Asset Management</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner">Why Asset Managers Struggle Despite Booming Markets: Rising Costs and the Push for Alternative Investments Explained (Casey Quirk, 2024-07-15)</a></td>
-<td>Asset managers face declining profit margins despite rising markets, driven by increased operating costs and weak inflows, prompting a focus on alternative investments for growth and adaptation.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.institutionalinvestor.com/article/2dg5aji7ohkluumcrwy68/innovation/index-investing-as-an-active-decision-implications-for-fixed-income-investors">Unlocking Precision and Efficiency: Why Passive Fixed Income Strategies Are Transforming Modern Investment Portfolios (Northern Trust Asset Management., 2024-07-16)</a></td>
-<td>Passive investing in fixed income has evolved, offering customization, precision, and better risk management, despite challenges like liquidity and replication concerns, attracting more investments than active strategies.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://seekingalpha.com/article/4703878-tech-growth-25-years-nasdaq-futures">Navigating Tech Sector Growth: How E-mini Nasdaq-100 Futures Shape Modern Investment and Risk Management Strategies (Seeking Alpha, 2024-07-16)</a></td>
-<td>E-mini Nasdaq-100 futures, launched in 1999, have grown substantially in volume, reflecting the importance of technology stocks and risk management in today’s market landscape.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="economics" class="level1">
-<h1>Economics</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://finance.yahoo.com/news/ships-fleeing-red-sea-now-160349344.html">Shipping Chaos: Violent Storms Off South Africa Cause Major Disruptions and Container Losses (Bloomberg, 2024-07-15)</a></td>
-<td>Ships near South Africa face severe weather, causing container losses and delays. Many vessels are diverting routes to avoid risk from Houthi militants in the Red Sea.</td>
-</tr>
-<tr class="even">
-<td><a href="https://angrybearblog.com/2024/06/fastest-wage-growth-over-the-last-four-years">Pandemic Policies Fuel Unprecedented Wage Growth for Low-Wage Workers Over Recent Four-Year Period (Economic Policy Institute, 2024-07-16)</a></td>
-<td>Low-wage workers experienced significant wage growth of 12.1% from 2019 to 2023, driven by policy responses and a tight labor market, marking a departure from historical trends.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="etfs-and-index-investing" class="level1">
-<h1>ETFs and Index Investing</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.msci.com/www/blog-posts/the-cornerstones-of/04783300823">Unlocking the Secrets of Private Capital Performance: A Smart Guide to Benchmarking and Index Creation (MSCI, 2024-07-16)</a></td>
-<td>Benchmarking private capital requires accurate data, defined inclusion criteria, and a strong governance framework to measure performance through various index types and calculations effectively.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="fundamental-investing" class="level1">
-<h1>Fundamental Investing</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner">Asset Managers’ Profits Decline Despite Market Growth, Rising Costs and Innovation Needs Challenge Firms (Institutional Investor., 2024-07-15)</a></td>
-<td>Asset managers face declining profit margins due to rising costs, weak inflows, and the need for innovation despite a strong stock market. Strategic adaptation is essential for future success.</td>
-</tr>
-<tr class="even">
-<td><a href="https://sherwood.news/markets/europes-luxury-stocks-have-boomed-burberry-got-left-behind/">Burberry Faces Tough Quarter: Sales Drop, CEO Resigns, and Brand Strategy Questioned (Sherwood, 2024-07-15)</a></td>
-<td>Burberry’s first-quarter results showed a 22% revenue drop, CEO resignation, dividend suspension, and declining sales, prompting challenges for the new CEO amidst declining brand exclusivity and market presence.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://www.msci.com/www/blog-posts/india-s-changed-and-changing/04777168512">India’s Equity Market Evolution: New Listings, Venture-Backed Firms, and Potential Power Shifts for Global Investors (MSCI, 2024-07-16)</a></td>
-<td>India’s equity market shows significant growth, with over 300 new companies since 2020, highlighting changes in industry profiles and future potential from private market entrants.</td>
-</tr>
-<tr class="even">
-<td><a href="https://insight.factset.com/sp-500-will-likely-report-earnings-growth-of-at-least-12-for-q2">S&amp;P 500 Earnings Surge: Historical Data Predicts Over 12% Growth for Q2, Outperforming Estimates (FactSet, 2024-07-16)</a></td>
-<td>S&amp;P 500 expected to report earnings growth above 12% for Q2, supported by historical trends of exceeding estimates, with 81% of companies reporting higher EPS so far.</td>
-</tr>
-</tbody>
-</table>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>asset-management</category>
-  <category>economics</category>
-  <category>etf</category>
-  <category>fundamental</category>
-  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-16_daily-curation.html</guid>
-  <pubDate>Mon, 15 Jul 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/time-horizon-paper.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>

@@ -1,0 +1,77 @@
+---
+title: "Stay Updated on Market Shifts & Leadership Changes: Key Highlights for 08.08.2024"
+page-layout: full
+title-block-banner: true
+date: 08-08-2024
+categories: [ai,coding,crypto,market-feed]
+tags: [openai, leadership, volatility, excel, vba, r, management, uncertainty, markets, trends]
+image: /pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg
+---
+
+::: {layout-ncol=2}
+
+:::{#first-column}
+
+::: {.content-visible when-profile="website_en"}
+In today's curation, we explore 3 themes:
+
+- Leadership changes at OpenAI with the departure of top figures, including Greg Brockman and Peter Deng.
+- A guide on using VBA to check if an Excel workbook is open from R.
+- Analysis of current market volatility and the implications of risk-off sentiment.
+:::
+
+::: {.content-visible when-profile="website_fr"}
+
+Aujourd'hui:
+- Départs d'OpenAI : analyse des impacts sur l'entreprise (anglais).
+- Guide pratique pour vérifier si un classeur Excel est ouvert via VBA et R (anglais).
+- Volatilité des marchés : évaluation du sentiment risk-off et de ses implications (anglais).
+
+:::
+
+
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures)
+:::
+
+:::
+
+::: {.content-visible when-profile="website_en"}
+
+
+# AI and Gen-AI
+| Title | Summary |
+|-----|-----------|
+| [Leadership Exodus at OpenAI: Key Figures Depart as Company Faces Uncertain Future (CLIMATEER INVESTING, 2024-08-08)](http://climateerinvest.blogspot.com/2024/08/openai-is-rapidly-losing-senior-members.html)   | OpenAI has lost three top leaders, including Greg Brockman, who is on sabbatical, John Schulman, and Peter Deng. Only two founding team members remain active at the company. |
+
+# Coding
+| Title | Summary |
+|-----|-----------|
+| [Seamlessly Integrate R and Excel: Master Automating Workbook Checks with VBA (Steve's Data Tips and Tricks, 2024-08-08)](https://www.r-bloggers.com/2024/08/checking-if-a-workbook-is-open-using-vba-and-executing-from-r/)   | This guide demonstrates how to check if an Excel workbook is open using VBA, then execute the check from R with the RDCOMClient package. |
+
+# Market News
+| Title | Summary |
+|-----|-----------|
+| [Navigating Market Waves: Understanding Recent Volatility and What It Means for Your Investment Strategy (James Picerno, 2024-08-08)](https://www.capitalspectator.com/markets-take-a-hit-but-a-clear-risk-off-signal-is-still-in-dispute/)   | Market volatility raises concerns of a risk-off sentiment. While some indicators show signs of shifting, longer-term trends remain uncertain, warranting further observation before drawing conclusions. |
+:::
+
+::: {.content-visible when-profile="website_fr"}
+# IA et Gen-AI
+| Titre | Résumé |
+|-----|-----------|
+| [Exode de Leadership chez OpenAI : Des Figures Clés Partent alors que l'Entreprise Affronte un Avenir Incertain (CLIMATEER INVESTING, 2024-08-08)](http://climateerinvest.blogspot.com/2024/08/openai-is-rapidly-losing-senior-members.html)   | OpenAI a perdu trois leaders de haut niveau, dont Greg Brockman, qui est en congé sabbatique, John Schulman et Peter Deng. Seules deux membres de l'équipe fondatrice restent actifs dans l'entreprise. |
+
+# Codage
+| Titre | Résumé |
+|-----|-----------|
+| [Intégrer R et Excel sans Couture : Maîtriser l'Automatisation des Vérifications de Classeur avec VBA (Conseils et Astuces de Steve, 2024-08-08)](https://www.r-bloggers.com/2024/08/checking-if-a-workbook-is-open-using-vba-and-executing-from-r/)   | Ce guide démontre comment vérifier si un classeur Excel est ouvert en utilisant VBA, puis exécuter la vérification depuis R avec le paquet RDCOMClient. |
+
+# Actualités du Marché
+| Titre | Résumé |
+|-----|-----------|
+| [Naviguer dans les Marchés : Comprendre la Volatilité Récente et ce qu'elle Signifie pour votre Stratégie d'Investissement (James Picerno, 2024-08-08)](https://www.capitalspectator.com/markets-take-a-hit-but-a-clear-risk-off-signal-is-still-in-dispute/)   | La volatilité du marché soulève des préoccupations concernant un sentiment de fuite devant le risque. Bien que certains indicateurs montrent des signes de changement, les tendances à plus long terme restent incertaines, nécessitant une observation plus approfondie avant de tirer des conclusions. |
+:::
+
+
