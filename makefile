@@ -10,10 +10,10 @@ build:
 	git commit -m "new content ready"
 
 	echo "Pushing"
-	git commit -m "new content ready"
+	git push
 
-preview_fr:
-
-
+fr:
+	quarto render --profile website_fr 
+	quarto render --profile website_fr 
 
 

@@ -27,12 +27,19 @@
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>Aujourd’hui: - Départs d’OpenAI : analyse des impacts sur l’entreprise (anglais). - Guide pratique pour vérifier si un classeur Excel est ouvert via VBA et R (anglais). - Volatilité des marchés : évaluation du sentiment risk-off et de ses implications (anglais).</p>
+<p>Aujourd’hui:</p>
+<ul>
+<li>Départs d’OpenAI : analyse des impacts sur l’entreprise (anglais).</li>
+<li>Guide pratique pour vérifier si un classeur Excel est ouvert via VBA et R (anglais).</li>
+<li>Volatilité des marchés : évaluation du sentiment risk-off et de ses implications (anglais).</li>
+</ul>
+<p>Bonne lecture,</p>
+<p>Vincent</p>
 </div>
 <div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/pictures.png" class="img-fluid figure-img"></p>
+<p><img src="https://portfolio-geek.com/pictures/coffee-over-newspaper.jpg" class="img-fluid figure-img"></p>
 <figcaption>Coffee with daily news</figcaption>
 </figure>
 </div>
@@ -102,7 +109,7 @@
   <category>market-feed</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_08_daily-curation.html</guid>
   <pubDate>Wed, 07 Aug 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://portfolio-geek.com/pictures/coffee-over-newspaper.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Daily Financial Insights: Assessing Small Models, Rest API Mastery, Market Volatility, and Value Stocks Shift (07.08.2024)</title>

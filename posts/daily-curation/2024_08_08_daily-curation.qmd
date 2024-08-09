@@ -5,7 +5,7 @@ title-block-banner: true
 date: 08-08-2024
 categories: [ai,coding,crypto,market-feed]
 tags: [openai, leadership, volatility, excel, vba, r, management, uncertainty, markets, trends]
-image: /pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg
+image: /pictures/coffee-over-newspaper.jpg
 ---
 
 ::: {layout-ncol=2}
@@ -18,14 +18,23 @@ In today's curation, we explore 3 themes:
 - Leadership changes at OpenAI with the departure of top figures, including Greg Brockman and Peter Deng.
 - A guide on using VBA to check if an Excel workbook is open from R.
 - Analysis of current market volatility and the implications of risk-off sentiment.
+
+Happy reading,
+
+Vincent
 :::
 
 ::: {.content-visible when-profile="website_fr"}
 
 Aujourd'hui:
+
 - Départs d'OpenAI : analyse des impacts sur l'entreprise (anglais).
 - Guide pratique pour vérifier si un classeur Excel est ouvert via VBA et R (anglais).
 - Volatilité des marchés : évaluation du sentiment risk-off et de ses implications (anglais).
+
+Bonne lecture,
+
+Vincent
 
 :::
 
@@ -33,7 +42,7 @@ Aujourd'hui:
 :::
 
 :::{#second-column}
-![Coffee with daily news](/pictures)
+![Coffee with daily news](/pictures/coffee-over-newspaper.jpg)
 :::
 
 :::
