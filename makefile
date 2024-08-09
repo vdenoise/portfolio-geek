@@ -13,7 +13,9 @@ build:
 	git push
 
 fr:
-	quarto render --profile website_fr 
-	quarto render --profile website_fr 
+	quarto preview --profile website_fr 
+
+en:
+	quarto preview --profile website_en
 
 
