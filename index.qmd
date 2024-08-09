@@ -72,6 +72,7 @@ Vincent
 Chaque jour ou presque, je partage dans ce blog les liens vers les articles que j'ai trouvés les plus intéressants. Mes thèmes de prédilection sont les suivants: tech, finance, marchés, cryptos, etc.
 
 Ci-dessous, vous trouverez les compilations les plus récentes. 
+
 Bonne lecture,
 
 Vincent
@@ -96,13 +97,14 @@ Vincent
 
 ## Latest Articles
 
-Below, my latest posts:
+Below, my latest analysis and posts, published in Quarto (ie, each is a Jupyter Notebook, with full source code available).
 :::
 
 ::: {.content-visible when-profile="website_fr"}
 ## Derniers Articles (Anglais / Francais)
 
-Ci-dessous, mes derniers articles:
+Ci-dessous, mes derniers articles, publiés avec Quarto. Plus cconcrètement, cela signifie que chaque article est écrit sous la forme d'un Notebook Jupyter, et l'ensemble du code source est disponible.
+
 :::
 
 ::: {#posts}
