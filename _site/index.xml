@@ -10,7 +10,177 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Wed, 07 Aug 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 08 Aug 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Catch Up on Market Movers, Bitcoin Woes, and Innovative Homes – 09.08.2024</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_08_09_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In today’s curation, we explore various finance and economics topics:</p>
+<ul>
+<li>JPMorgan remains cautious on bitcoin due to miner production costs.</li>
+<li>Vice President Harris and Gov.&nbsp;Walz address Sen.&nbsp;Baldwin’s performance.</li>
+<li>Steven Kopits raises concerns over 2022 employment data accuracy.</li>
+<li>Managed futures reveal low correlation with several risk premiums.</li>
+<li>Tech stocks rebound with notable gains in chipmakers.</li>
+<li>Covered call ETFs experience losses amid market volatility.</li>
+<li>Cathie Wood’s recent trades in Robinhood and Zoom.</li>
+<li>Investment strategies performance in Western Europe during the Olympics.</li>
+<li>A Texas community nears completion of 3D-printed homes.</li>
+</ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/article-in-newspaper.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="crypto-news-and-analysis" class="level1">
+<h1>Crypto News and Analysis</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.coindesk.com/business/2024/08/08/jpmorgan-remains-cautious-on-bitcoin-as-positive-catalysts-mostly-priced-in/">Bitcoin Faces Uncertainty: JPMorgan Highlights Limited Upward Potential Amid Market Stabilization and Production Cost Pressures (CoinDesk, 2024-08-08)</a></td>
+<td>JPMorgan remains cautious on bitcoin due to limited catalysts. Bitcoin’s price is too high relative to production costs, suggesting pressures on miners and potential long-term declines.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="economics" class="level1">
+<h1>Economics</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://econbrowser.com/archives/2024/08/hovde-predicts-recession">Political Power Play: Harris, Walz, and the Future of Baldwin’s Controversial Policies in Wisconsin (WisPolitics, 2024-08-08)</a></td>
+<td>Vice President Harris and Gov.&nbsp;Walz visited Sen.&nbsp;Baldwin, highlighting criticisms of her performance. Concerns include crime, agriculture, border policy, and potential recession, with calls for change.</td>
+</tr>
+<tr class="even">
+<td><a href="https://econbrowser.com/archives/2024/08/revisiting-the-recession-call-of-2022h1">When Jobs Disagree with GDP: Revisiting the Recession Debate and Data Revisions of 2022 (econbrowser.com, 2024-08-07)</a></td>
+<td>Steven Kopits questioned employment data accuracy in 2022, highlighting discrepancies between job growth and economic metrics. The Philadelphia Fed revised job estimates significantly, supporting Kopits’ concerns.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hedge-fund-news" class="level1">
+<h1>Hedge Fund News</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://mrzepczynski.blogspot.com/2024/08/managed-futures-and-other-hedge-fund.html">Understanding Managed Futures: How They Compare to Other Hedge Fund Strategies (What Equity Factor Is Best Combined with Managed Futures, 2024-08-08)</a></td>
+<td>Managed futures show low correlation with many risk premiums, particularly with carry and value, but a stronger relationship with momentum. They are closely related to market-neutral multi-factor funds.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-news" class="level1">
+<h1>Market News</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.benzinga.com/markets/equities/24/08/40259139/tech-stocks-rally-after-5-day-slump-as-recession-panic-eases-nasdaq-100-movers-to-watch-thursday">Tech Stock Comeback: Key Players Surge as Jobless Claims Drop, Easing Recession Fears (Benzinga.com, 2024-08-08)</a></td>
+<td>Tech stocks rebounded, led by the Nasdaq 100’s 2.4% rise after jobless claims fell to 233,000. Chipmakers excelled; significant gains noted for ON Semiconductor and NVIDIA.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="portfolio-construction-techniques" class="level1">
+<h1>Portfolio Construction Techniques</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.ft.com/content/2d2ce18b-f842-4912-babf-f4b8c1190c0d">Market Turbulence Exposes Hidden Risks in Popular Covered Call ETFs, Despite Promised Low Volatility and Income Stability (Financial Times, 2024-08-08)</a></td>
+<td>Investors in covered call ETFs suffered losses amid market volatility. These strategies underperformed during the stock sell-off, highlighting risks for retail traders seeking stability. Year-to-date returns fell compared to benchmarks.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.benzinga.com/markets/cryptocurrency/24/08/40274766/cathie-woods-ark-invest-continues-loads-up-on-6-05m-worth-of-robinhood-shares-amid-bitcoin">Cathie Wood’s Ark Invest Shakes Up Portfolio: Buys Robinhood, Sells Zoom Amid Crypto Market Recovery (Benzinga, 2024-08-08)</a></td>
+<td>Cathie Wood’s Ark Invest purchased $6.05 million in Robinhood shares, citing revenue growth, while selling $9.1 million in Zoom stock. Other trades included Amazon and Guardant Health shares.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://insight.factset.com/going-for-gold-assessing-the-strongest-investment-strategies-in-western-europe">Winning Investment Strategies in Western Europe: A Deep Dive into Top-Performing Styles and Key Benchmarks (Investment Strategies France, 2024-08-08)</a></td>
+<td>This article assesses top-performing investment strategies in Western Europe, focusing on France during the Olympic Games. It evaluates performance and downside across seven investment styles using quartile benchmarks.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technology" class="level1">
+<h1>Technology</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.engadget.com/home/a-3d-printer-is-building-homes-for-a-texas-community-225830280.html?src=rss">Revolutionizing Housing: How 3D Printing Technology is Transforming Home Construction in Texas (Engadget, 2024-08-08)</a></td>
+<td>A Texas community, Wolf Ranch, nears completion of 100 homes using a 3D printer. Prices range from $450,000 to $600,000. Walls are thick, affecting WiFi signals.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>crypto</category>
+  <category>economics</category>
+  <category>hedge-funds</category>
+  <category>market-feed</category>
+  <category>portfolio-construction</category>
+  <category>tech</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_09_daily-curation.html</guid>
+  <pubDate>Thu, 08 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/article-in-newspaper.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Stay Updated on Market Shifts &amp; OpenAI Leadership Changes: Key Highlights for 08.08.2024</title>
   <dc:creator>Vincent D.</dc:creator>
@@ -3328,167 +3498,6 @@ font-style: inherit;">'Volatility'</span>)</span>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-18_daily-curation.html</guid>
   <pubDate>Wed, 17 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/stock-valuation.png" medium="image" type="image/png" height="96" width="144"/>
-</item>
-<item>
-  <title>Today’s Curation (17.07.24): Master Python Trading with Alpaca, Retirement Strategies, &amp; Managing Risks with Options</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-17_daily-curation.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>In this curation for 17/07/2024, we explore a range of financial concepts and strategies that can enhance your investment approach:</p>
-<ul>
-<li>Retirement planning frameworks: the 4% and 25x rules</li>
-<li>Trading with Alpaca: setting up Python and executing trades</li>
-<li>Utilizing Pandas for strategy testing in Python</li>
-<li>Portfolio hedging with put options</li>
-<li>Python protocols for improved code structure</li>
-<li>Historical economic perspectives of Carl Linnaeus</li>
-<li>Recession probabilities and economic indicators</li>
-<li>Central banks and yield curve control</li>
-<li>Analysis of China’s real estate market impacts</li>
-<li>Tactical asset allocation strategies</li>
-</ul>
-<p>This selection aims to provide insights into both practical trading techniques and broader economic theories.:::</p>
-</div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/pictures/laptop-data.png" class="img-fluid figure-img"></p>
-<figcaption>Coffee with daily news</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<section id="asset-management" class="level1">
-<h1>Asset Management</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://awealthofcommonsense.com/2024/07/how-much-money-you-need-for-retirement/">Is 25x Your Annual Spending the Magic Number for a Secure Retirement? (A Wealth of Common Sense, 2024-07-17)</a></td>
-<td>The 4% rule and 25x rule provide retirement planning frameworks, but individual circumstances may necessitate more savings for a greater safety margin against uncertainties.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="coding" class="level1">
-<h1>Coding</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://pyquantnews.com/the-pyquant-newsletter/how-to-trade-a-covered-call-with-alpaca">Master Covered Calls in a Bullish Market: Simple Python Automation with Alpaca Trading API (Alpaca, 2024-06-21)</a></td>
-<td>Create an Alpaca account, set up Python with the Alpaca library, and use the API to execute trades for covered calls, managing positions effectively.</td>
-</tr>
-<tr class="even">
-<td><a href="https://pyquantnews.com/the-pyquant-newsletter/quickly-make-a-trading-strategy-with-a-82-win-rate">Unlock Trading Secrets: Use Python to Achieve an 82% Win Rate with Simple SPY Strategy (Quantifiable Edges, 2024-06-19)</a></td>
-<td>Pandas in Python enables quick trading strategy testing with an 82% win rate by analyzing historical data, identifying 3-day losing streaks, and calculating future returns.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://robotwealth.com/portfolio-hedging-with-put-options/">Shield Your Investments: Easy Techniques to Protect Your Portfolio with Put Options (Robot Wealth, 2024-07-16)</a></td>
-<td>This post discusses portfolio hedging using put options to limit downside risk, including examples, calculating beta, and considerations of risk tolerance and trading edge when hedging strategies.</td>
-</tr>
-<tr class="even">
-<td><a href="https://realpython.com/python-protocol/">Unlock Dynamic Python Typing: Master Protocols for Robust, Cleaner Code Without Inheritance Constraints (Towards Data Science, 2024-07-17)</a></td>
-<td>Protocols in Python enable structural subtyping, allowing type checking without inheritance. They enhance type hints for static duck typing, improving code flexibility, readability, and reliability.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="economics" class="level1">
-<h1>Economics</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://conversableeconomist.com/2024/07/16/unexpected-economist-carl-linnaeus-on-economic-theory/">Carl Linnaeus: The Botanist Who Secretly Shaped Economic Theory and Advocated Autarky (Conversable Economist, 2024-07-16)</a></td>
-<td>Carl Linnaeus viewed economics as essential for well-being, favored mercantilism, endorsed self-sufficiency, and believed all nations possessed natural resources for economic flourishing, despite his obsession with gold.</td>
-</tr>
-<tr class="even">
-<td><a href="https://econbrowser.com/archives/2024/07/recession-probabilities-for-june-2025">Recession Risks Explained: Key Metrics to Watch for June 2025 Forecasts (NBER, 2024-07-17)</a></td>
-<td>Recession probabilities for June 2025 indicate varied outcomes based on models, showing 60% likelihood with basic indicators and 20% with additional debt measures, reflecting declining debt-service ratios.</td>
-</tr>
-<tr class="odd">
-<td><a href="http://climateerinvest.blogspot.com/2024/07/yield-curve-control-means-party-can.html">The Hidden Risks of Central Bank Yield Curve Control and Its Impact on Economic Stability (Climateer Investing, 2024-07-17)</a></td>
-<td>Central banks disguise risk through yield curve control, preventing bond yields from rising and perpetuating economic stagnation, resulting in more debt and inefficient allocation of resources.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="fundamental-investing" class="level1">
-<h1>Fundamental Investing</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://econbrowser.com/archives/2024/07/china-economic-sentiment">China’s Real Estate Woes: Understanding Economic Sentiment Through Insightful Graphs from Apollo’s Torsten Slok (Econbrowser, 2024-07-17)</a></td>
-<td>Torsten Slok’s China analysis highlights real estate market collapse effects, featuring graphs illustrating economic challenges, emphasizing a constant narrative in interpreting China’s economic statistics.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="portfolio-construction-techniques" class="level1">
-<h1>Portfolio Construction Techniques</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://allocatesmartly.com/pragmatic-asset-allocation-from-vojtko-and-javorska-of-quantpedia/">Optimize Your Investments with Pragmatic Asset Allocation: A Smart, Tax-Efficient Strategy for Every Market Condition (Quantpedia, 2024-07-16)</a></td>
-<td>Pragmatic Asset Allocation is a tactical strategy focusing on tax efficiency, trading based on yield curve inversion, and adjusting asset allocation quarterly for optimal performance.</td>
-</tr>
-</tbody>
-</table>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>asset-management</category>
-  <category>coding</category>
-  <category>economics</category>
-  <category>fundamental</category>
-  <category>portfolio-construction</category>
-  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-17_daily-curation.html</guid>
-  <pubDate>Tue, 16 Jul 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/laptop-data.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>

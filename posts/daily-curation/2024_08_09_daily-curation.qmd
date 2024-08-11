@@ -1,0 +1,123 @@
+---
+title: "Catch Up on Market Movers, Bitcoin Woes, and Innovative Homes – 09.08.2024"
+page-layout: full
+title-block-banner: true
+date: 08-09-2024
+categories: [ai,crypto,economics,hedge-funds,market-feed,portfolio-construction,tech]
+tags: [bitcoin, volatility, employment, technology, investment, housing, criticism, futures, performance, markets]
+image: /pictures/article-in-newspaper.jpg
+---
+
+::: {layout-ncol=2}
+
+:::{#first-column}
+
+::: {.content-visible when-profile="website_en"}
+In today's curation, we explore various finance and economics topics:
+
+- JPMorgan remains cautious on bitcoin due to miner production costs.
+- Vice President Harris and Gov. Walz address Sen. Baldwin's performance.
+- Steven Kopits raises concerns over 2022 employment data accuracy.
+- Managed futures reveal low correlation with several risk premiums.
+- Tech stocks rebound with notable gains in chipmakers.
+- Covered call ETFs experience losses amid market volatility.
+- Cathie Wood's recent trades in Robinhood and Zoom.
+- Investment strategies performance in Western Europe during the Olympics.
+- A Texas community nears completion of 3D-printed homes.
+:::
+
+::: {.content-visible when-profile="website_fr"}
+Aujourd'hui une sélection d'articles et d'analyse, voici les thèmes abordés :
+
+- La position prudente de JPMorgan sur le bitcoin
+- Les critiques concernant la performance de la sénatrice Baldwin
+- Les interrogations sur l'exactitude des données d'emploi
+- Les corrélations des futures gérés avec les primes de risque
+- La reprise des actions technologiques
+- Les défis des ETF d’options couvertes
+- Les transactions récentes d'Ark Invest
+- Les stratégies d'investissement lors des Jeux Olympiques en France
+- Un projet de logements imprimés en 3D au Texas
+:::
+
+
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/article-in-newspaper.jpg)
+:::
+
+:::
+
+::: {.content-visible when-profile="website_en"}
+
+# Crypto News and Analysis
+| Title | Summary |
+|-----|-----------|
+| [Bitcoin Faces Uncertainty: JPMorgan Highlights Limited Upward Potential Amid Market Stabilization and Production Cost Pressures (CoinDesk, 2024-08-08)](https://www.coindesk.com/business/2024/08/08/jpmorgan-remains-cautious-on-bitcoin-as-positive-catalysts-mostly-priced-in/)   | JPMorgan remains cautious on bitcoin due to limited catalysts. Bitcoin's price is too high relative to production costs, suggesting pressures on miners and potential long-term declines. |
+
+# Economics
+| Title | Summary |
+|-----|-----------|
+| [Political Power Play: Harris, Walz, and the Future of Baldwin's Controversial Policies in Wisconsin (WisPolitics, 2024-08-08)](https://econbrowser.com/archives/2024/08/hovde-predicts-recession)   | Vice President Harris and Gov. Walz visited Sen. Baldwin, highlighting criticisms of her performance. Concerns include crime, agriculture, border policy, and potential recession, with calls for change. |
+| [When Jobs Disagree with GDP: Revisiting the Recession Debate and Data Revisions of 2022 (econbrowser.com, 2024-08-07)](https://econbrowser.com/archives/2024/08/revisiting-the-recession-call-of-2022h1)   | Steven Kopits questioned employment data accuracy in 2022, highlighting discrepancies between job growth and economic metrics. The Philadelphia Fed revised job estimates significantly, supporting Kopits' concerns. |
+
+# Hedge Fund News
+| Title | Summary |
+|-----|-----------|
+| [Understanding Managed Futures: How They Compare to Other Hedge Fund Strategies (What Equity Factor Is Best Combined with Managed Futures, 2024-08-08)](http://mrzepczynski.blogspot.com/2024/08/managed-futures-and-other-hedge-fund.html)   | Managed futures show low correlation with many risk premiums, particularly with carry and value, but a stronger relationship with momentum. They are closely related to market-neutral multi-factor funds. |
+
+# Market News
+| Title | Summary |
+|-----|-----------|
+| [Tech Stock Comeback: Key Players Surge as Jobless Claims Drop, Easing Recession Fears (Benzinga.com, 2024-08-08)](https://www.benzinga.com/markets/equities/24/08/40259139/tech-stocks-rally-after-5-day-slump-as-recession-panic-eases-nasdaq-100-movers-to-watch-thursday)   | Tech stocks rebounded, led by the Nasdaq 100's 2.4% rise after jobless claims fell to 233,000. Chipmakers excelled; significant gains noted for ON Semiconductor and NVIDIA. |
+
+# Portfolio Construction Techniques
+| Title | Summary |
+|-----|-----------|
+| [Market Turbulence Exposes Hidden Risks in Popular Covered Call ETFs, Despite Promised Low Volatility and Income Stability (Financial Times, 2024-08-08)](https://www.ft.com/content/2d2ce18b-f842-4912-babf-f4b8c1190c0d)   | Investors in covered call ETFs suffered losses amid market volatility. These strategies underperformed during the stock sell-off, highlighting risks for retail traders seeking stability. Year-to-date returns fell compared to benchmarks. |
+| [Cathie Wood's Ark Invest Shakes Up Portfolio: Buys Robinhood, Sells Zoom Amid Crypto Market Recovery (Benzinga, 2024-08-08)](https://www.benzinga.com/markets/cryptocurrency/24/08/40274766/cathie-woods-ark-invest-continues-loads-up-on-6-05m-worth-of-robinhood-shares-amid-bitcoin)   | Cathie Wood's Ark Invest purchased $6.05 million in Robinhood shares, citing revenue growth, while selling $9.1 million in Zoom stock. Other trades included Amazon and Guardant Health shares. |
+| [Winning Investment Strategies in Western Europe: A Deep Dive into Top-Performing Styles and Key Benchmarks (Investment Strategies France, 2024-08-08)](https://insight.factset.com/going-for-gold-assessing-the-strongest-investment-strategies-in-western-europe)   | This article assesses top-performing investment strategies in Western Europe, focusing on France during the Olympic Games. It evaluates performance and downside across seven investment styles using quartile benchmarks. |
+
+# Technology
+| Title | Summary |
+|-----|-----------|
+| [Revolutionizing Housing: How 3D Printing Technology is Transforming Home Construction in Texas (Engadget, 2024-08-08)](https://www.engadget.com/home/a-3d-printer-is-building-homes-for-a-texas-community-225830280.html?src=rss)   | A Texas community, Wolf Ranch, nears completion of 100 homes using a 3D printer. Prices range from $450,000 to $600,000. Walls are thick, affecting WiFi signals. |
+:::
+
+::: {.content-visible when-profile="website_fr"}
+
+# Actualité Crypto
+| Titre | Résumé |
+|-----|-----------|
+| [Le Bitcoin fait face à l'incertitude : JPMorgan souligne le potentiel limité à la hausse au milieu de la stabilisation du marché et des pressions sur les coûts de production (CoinDesk, 2024-08-08)](https://www.coindesk.com/business/2024/08/08/jpmorgan-remains-cautious-on-bitcoin-as-positive-catalysts-mostly-priced-in/)   | JPMorgan reste prudent sur le bitcoin en raison des catalyseurs limités. Le prix du bitcoin est trop élevé par rapport aux coûts de production, suggérant des pressions sur les mineurs et des déclins potentiels à long terme. |
+
+# Économie
+| Titre | Résumé |
+|-----|-----------|
+| [Lutte de pouvoir politique : Harris, Walz, et l'avenir des politiques controversées de Baldwin dans le Wisconsin (WisPolitics, 2024-08-08)](https://econbrowser.com/archives/2024/08/hovde-predicts-recession)   | La vice-présidente Harris et le gouverneur Walz ont rendu visite à la sénatrice Baldwin, soulignant les critiques de sa performance. Les préoccupations incluent la criminalité, l'agriculture, la politique frontalière et une éventuelle récession, avec des appels au changement. |
+| [Quand les emplois divergent du PIB : Réexaminer le débat sur la récession et les révisions des données de 2022 (econbrowser.com, 2024-08-07)](https://econbrowser.com/archives/2024/08/revisiting-the-recession-call-of-2022h1)   | Steven Kopits a remis en question l'exactitude des données sur l'emploi en 2022, mettant en lumière les divergences entre la croissance des emplois et les indicateurs économiques. La Banque fédérale de Philadelphie a considérablement révisé les estimations d'emplois, soutenant les préoccupations de Kopits. |
+
+# Actualités des Fonds d'Investissement
+| Titre | Résumé |
+|-----|-----------|
+| [Comprendre les contrats à terme gérés : Comment ils se comparent aux autres stratégies de fonds d'investissement (Quelle Facteur d'Équité Est Mieux Associé aux Contrats à Terme Gérés, 2024-08-08)](http://mrzepczynski.blogspot.com/2024/08/managed-futures-and-other-hedge-fund.html)   | Les contrats à terme gérés montrent une faible corrélation avec de nombreux primes de risque, en particulier avec le carry et la valeur, mais une relation plus forte avec le momentum. Ils sont étroitement liés aux fonds multi-facteurs neutres au marché. |
+
+# Actualités du Marché
+| Titre | Résumé |
+|-----|-----------|
+| [Retour des actions technologiques : Les acteurs clés bondissent alors que les demandes d'indemnité chômage chutent, apaisant les craintes de récession (Benzinga.com, 2024-08-08)](https://www.benzinga.com/markets/equities/24/08/40259139/tech-stocks-rally-after-5-day-slump-as-recession-panic-eases-nasdaq-100-movers-to-watch-thursday)   | Les actions technologiques ont rebondi, menées par la hausse de 2,4 % du Nasdaq 100 après que les demandes d'indemnité chômage aient chuté à 233 000. Les fabricants de puces ont excellé ; des gains significatifs ont été notés pour ON Semiconductor et NVIDIA. |
+
+# Construction de Portefeuille
+| Titre | Résumé |
+|-----|-----------|
+| [La turbulence du marché expose des risques cachés dans les ETF de call couvert populaires, malgré la promesse de faible volatilité et de stabilité des revenus (Financial Times, 2024-08-08)](https://www.ft.com/content/2d2ce18b-f842-4912-babf-f4b8c1190c0d)   | Les investisseurs dans les ETF de call couvert ont subi des pertes au milieu de la volatilité du marché. Ces stratégies ont sous-performé lors de la vente d'actions, mettant en évidence les risques pour les traders de détail recherchant la stabilité. Les rendements depuis le début de l'année ont chuté par rapport aux repères. |
+| [Les stratégies d'investissement gagnantes: Une plongée approfondie dans les styles les plus performants et les repères clés (Stratégies d'investissement France, 2024-08-08)](https://insight.factset.com/going-for-gold-assessing-the-strongest-investment-strategies-in-western-europe)   | Cet article évalue les stratégies d'investissement les plus performantes, en se concentrant sur la France pendant les Jeux Olympiques. Il évalue la performance et le potentiel de baisse à travers sept styles d'investissement en utilisant des repères de quartiles. |
+
+# Technologie
+| Titre | Résumé |
+|-----|-----------|
+| [Révolutionner le logement : Comment la technologie d'impression 3D transforme la construction de maisons au Texas (Engadget, 2024-08-08)](https://www.engadget.com/home/a-3d-printer-is-building-homes-for-a-texas-community-225830280.html?src=rss)   | Une communauté texane, Wolf Ranch, est proche de l'achèvement de 100 maisons utilisant une imprimante 3D. Les prix varient de 450 000 à 600 000 dollars. Les murs sont épais, affectant les signaux WiFi. |
+:::
+
+
