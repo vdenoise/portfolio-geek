@@ -10,7 +10,571 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Thu, 08 Aug 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 12 Aug 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Correlation of returns: why it matters, and how to analyse it with Python</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/articles/tutorials/correlation-returns.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="correlation-of-returns-why-it-matters-and-how-to-analyse-it-with-python" class="level1">
+<h1>Correlation of returns: why it matters, and how to analyse it with Python</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
+<p>Understanding the correlation of returns between different asset classes is a key concept in finance and investment. For instance, analysing the correlation between QQQ (Nasdaq-100 ETF) and SPY (S&amp;P 500 ETF), 2 US Equity assets, can provide critical insights into market behavior, risk assessment, and portfolio diversification. By examining their correlation, investors can make informed decisions that balance risk and return effectively.</p>
+<p>In this blog post, we’ll explore the importance of correlation of returns, particularly focusing on QQQ and SPY using for this example weekly returns spanning 52 observations. Empirically, I found weekly returns to be an useful sweet spot between data quality, stability and number of estimation points.</p>
+<p>We’ll also delve into the core concepts, key formulas, and provide a comprehensive set of Python examples using various libraries. Let’s get started!</p>
+</section>
+<section id="concept-and-key-formula" class="level2">
+<h2 class="anchored" data-anchor-id="concept-and-key-formula">2. Concept and Key Formula</h2>
+<p>The correlation of returns measures the degree to which two securities move in relation to one another.</p>
+<p>There are different approaches to estimate it, but one usually relies on the so-called Spearman correlation coefficient. Its fundamental formula for correlation is:</p>
+<p><strong>Correlation Formula</strong> <img src="https://latex.codecogs.com/png.latex?%0A%5Crho(X%5C,Y)=%5Cfrac%7BCov(X,%20Y)%7D%7B%5Csigma_X%5C,%5Csigma_Y%7D%0A"></p>
+<p>Where:</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%5Crho(X,%20Y)"> is the correlation coefficient between asset X and asset Y.</li>
+<li><img src="https://latex.codecogs.com/png.latex?Cov(X,%20Y)"> is the covariance between the returns of assets X and Y.</li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Csigma_X"> is the standard deviation of asset X’s returns.</li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Csigma_Y"> is the standard deviation of asset Y’s returns.</li>
+</ul>
+<section id="parameters-breakdown" class="level4">
+<h4 class="anchored" data-anchor-id="parameters-breakdown">Parameters Breakdown:</h4>
+<ul>
+<li><strong>Covariance (<img src="https://latex.codecogs.com/png.latex?Cov(X,%20Y)">)</strong>: Indicates how two variables move together.</li>
+<li><strong>Standard Deviation (<img src="https://latex.codecogs.com/png.latex?%5Csigma">)</strong>: Measures the volatility or risk associated with a given security.</li>
+</ul>
+</section>
+<section id="expected-results" class="level4">
+<h4 class="anchored" data-anchor-id="expected-results">Expected Results:</h4>
+<p>This formula results in a correlation coefficient ranging from -1 to 1.</p>
+<p>There are 3 idealized values:</p>
+<ul>
+<li><strong>+1</strong>: Perfect positive correlation</li>
+<li><strong>-1</strong>: Perfect negative correlation</li>
+<li><strong>0</strong>: No correlation</li>
+</ul>
+<p>Understanding these parameters helps us derive insightful conclusions on the correlation of returns.</p>
+</section>
+</section>
+<section id="visualization-and-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-and-analysis">3. Visualization and Analysis</h2>
+<section id="chart-1-price-history-of-qqq-and-spy" class="level3">
+<h3 class="anchored" data-anchor-id="chart-1-price-history-of-qqq-and-spy">Chart 1: Price History of QQQ and SPY</h3>
+<p>Visualizing the price history over the long term can help identify trends and significant events impacting both QQQ and SPY ETFs. We’ll use the yfinance library to fetch historical data and matplotlib for plotting.</p>
+<div id="cell-4" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> yfinance <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> yf</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fetch data</span></span>
+<span id="cb1-6">qqq <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.Ticker(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ'</span>)</span>
+<span id="cb1-7">spy <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.Ticker(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY'</span>)</span>
+<span id="cb1-8"></span>
+<span id="cb1-9">qqq_hist <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> qqq.history(period<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'max'</span>, interval<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'1wk'</span>)</span>
+<span id="cb1-10">spy_hist <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> spy.history(period<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'max'</span>, interval<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'1wk'</span>)</span>
+<span id="cb1-11"></span>
+<span id="cb1-12">spy_hist <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> spy_hist.reindex(qqq_hist.index)</span>
+<span id="cb1-13"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting price history</span></span>
+<span id="cb1-14">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb1-15">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb1-16">ax.plot(qqq_hist.index, qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Close'</span>], label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ'</span>)</span>
+<span id="cb1-17">ax.plot(spy_hist.index, spy_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Close'</span>], label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY'</span>)</span>
+<span id="cb1-18">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Price History of QQQ and SPY"</span>)</span>
+<span id="cb1-19">ax.set_xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Date"</span>)</span>
+<span id="cb1-20">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Price"</span>)</span>
+<span id="cb1-21">ax.legend()</span>
+<span id="cb1-22">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-2-output-1.png" width="494" height="218" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="chart-2-weekly-returns" class="level3">
+<h3 class="anchored" data-anchor-id="chart-2-weekly-returns">Chart 2: Weekly Returns</h3>
+<p>Having retrieved uncharted the price of QQQ SPY, it’s now time to look at their returns. There is a very handy function <strong>pct_change()</strong> in the pandas library That enables us to convert directly price time series 2 return <em>timeseries</em>.</p>
+<p>As our price <em>timeseries</em> is already in weekly frequency, we can directly use <strong>pct_change()</strong> to get the weekly returns and plot them using matplotlib.</p>
+<div id="cell-7" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1">qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Close'</span>].pct_change()</span>
+<span id="cb2-2">spy_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> spy_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Close'</span>].pct_change()</span>
+<span id="cb2-3"></span>
+<span id="cb2-4">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb2-5">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb2-6">ax.bar(qqq_hist.tail(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">104</span>).index, qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>].tail(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">104</span>), label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ'</span>)</span>
+<span id="cb2-7">ax.bar(spy_hist.tail(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">104</span>).index, spy_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>].tail(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">104</span>), label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY'</span>)</span>
+<span id="cb2-8">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Weekly Returns for QQQ and SPY"</span>)</span>
+<span id="cb2-9">ax.set_xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Date"</span>)</span>
+<span id="cb2-10">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Weekly Return"</span>)</span>
+<span id="cb2-11">ax.legend()</span>
+<span id="cb2-12">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-3-output-1.png" width="508" height="218" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>From the chart above, we can see that the QQQ ETF delivers much higher returns, on the upside and on the downside. From a correlation perspective we can see that when spy is up, QQQ is up to often higher, but overall, they typically evolve in the same direction. As you can guess, this probably indicates a high level of coalition between these two assets. .</p>
+<p>It’s time to look at a more precise way to analyse every returns.</p>
+</section>
+<section id="chart-3-distribution-of-weekly-returns" class="level3">
+<h3 class="anchored" data-anchor-id="chart-3-distribution-of-weekly-returns">Chart 3: Distribution of Weekly Returns</h3>
+<p>Indeed, the histogram is an excellent tool to visualize the distribution of weekly returns for each ETF. It aids in understanding the frequency and volatility associated with the returns. Went to distribution are plotted one on top of the other, it becomes very easy to compare the two distributions.</p>
+<p>As you can see below, The distribution of the spy etf is much more narrow compared to QQQ which is a confirmation of the quick insights which caome from the previous chart.</p>
+<div id="cell-10" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb3-2">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb3-3">ax.hist(qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>].dropna(), bins<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">30</span>, alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ'</span>)</span>
+<span id="cb3-4">ax.hist(spy_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>].dropna(), bins<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">30</span>, alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY'</span>)</span>
+<span id="cb3-5">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Distribution of Weekly Returns"</span>)</span>
+<span id="cb3-6">ax.set_xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Weekly Return"</span>)</span>
+<span id="cb3-7">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Frequency"</span>)</span>
+<span id="cb3-8">ax.legend()</span>
+<span id="cb3-9">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-4-output-1.png" width="494" height="218" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="chart-4-rolling-volatility" class="level3">
+<h3 class="anchored" data-anchor-id="chart-4-rolling-volatility">Chart 4: Rolling Volatility</h3>
+<p>Calculating rolling volatility (standard deviation of returns) over a specified period (e.g., 52 weeks) assists in identifying periods of high or low market uncertainty for both ETFs.</p>
+<div id="cell-12" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1">qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling_Vol'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>].rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>).std() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span></span>
+<span id="cb4-2">spy_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling_Vol'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> spy_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>].rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>).std()<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span></span>
+<span id="cb4-3"></span>
+<span id="cb4-4">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb4-5">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb4-6">ax.plot(qqq_hist.index, qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling_Vol'</span>], label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ Volatility'</span>)</span>
+<span id="cb4-7">ax.plot(spy_hist.index, spy_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling_Vol'</span>], label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY Volatility'</span>)</span>
+<span id="cb4-8">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Rolling Volatility of QQQ and SPY (annualised, in %)"</span>)</span>
+<span id="cb4-9">ax.set_xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Date"</span>)</span>
+<span id="cb4-10">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Volatility (in %)"</span>)</span>
+<span id="cb4-11">ax.legend()</span>
+<span id="cb4-12">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-5-output-1.png" width="488" height="218" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="chart-5-scatter-plot-of-weekly-returns-with-correlation" class="level3">
+<h3 class="anchored" data-anchor-id="chart-5-scatter-plot-of-weekly-returns-with-correlation">Chart 5: Scatter Plot of Weekly Returns with Correlation</h3>
+<p>To visually understand the relationship between the weekly returns of QQQ and SPY, a scatter plot is effective. We’ll add a best-fit line to see the correlation.</p>
+<div id="cell-14" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> scipy.stats <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> linregress</span>
+<span id="cb5-2"></span>
+<span id="cb5-3">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb5-4">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb5-5">ax.scatter(qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>], spy_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>], alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Weekly Returns'</span>)</span>
+<span id="cb5-6"></span>
+<span id="cb5-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Best fit line</span></span>
+<span id="cb5-8">slope, intercept, r_value, p_value, std_err <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> linregress(qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>].dropna(), spy_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>].dropna())</span>
+<span id="cb5-9">ax.plot(qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>], intercept <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> slope<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>], <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'r'</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'Best fit line (R^2=</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>r_value<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:.2f}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">)'</span>)</span>
+<span id="cb5-10"></span>
+<span id="cb5-11">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Scatter Plot of Weekly Returns"</span>)</span>
+<span id="cb5-12">ax.set_xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"QQQ Weekly Returns"</span>)</span>
+<span id="cb5-13">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"SPY Weekly Returns"</span>)</span>
+<span id="cb5-14">ax.legend()</span>
+<span id="cb5-15">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-6-output-1.png" width="503" height="218" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="chart-6-rolling-window-correlation" class="level3">
+<h3 class="anchored" data-anchor-id="chart-6-rolling-window-correlation">Chart 6: Rolling Window Correlation</h3>
+<p>To visually understand the relationship between the weekly returns of QQQ and SPY, it might be useful to look at how the correlation itself evolves across time. That’s where a rolling window correlation might help.</p>
+<div id="cell-16" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1">qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling_Vol'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>].rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>).corr(other<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>spy_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Return'</span>])</span>
+<span id="cb6-2"></span>
+<span id="cb6-3">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb6-4">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb6-5">ax.plot(qqq_hist.index, qqq_hist[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling_Vol'</span>], label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ vs SPY Correlation (52 Weeks)'</span>)</span>
+<span id="cb6-6">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Rolling Correlation of QQQ and SPY"</span>)</span>
+<span id="cb6-7">ax.set_xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Date"</span>)</span>
+<span id="cb6-8">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Correlation"</span>)</span>
+<span id="cb6-9">ax.legend()</span>
+<span id="cb6-10">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-7-output-1.png" width="497" height="218" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Understanding the correlation between QQQ and SPY is valuable for making informed portfolio decisions. It aids in the diversification, risk management, and insight into market trends.</p>
+<p>While correlation is a powerful tool, it comes with limitations:</p>
+<ul>
+<li>It relies on historical data which may not reflect future market conditions,</li>
+<li>It assumes a linear relationship,</li>
+<li>It sometimes oversimplifies the relationship between assets.</li>
+</ul>
+<p>Nevertheless, calculating and visualising correlation helps in understanding market dynamics and improving investment strategies.</p>
+<p>If you are curious to learn more, check out these resources:</p>
+<ul>
+<li><a href="https://www.investopedia.com/terms/c/correlation.asp">Investopedia on Correlation</a></li>
+<li><a href="https://www.quantstart.com/articles/Using-Python-and-Pandas-for-Analyzing-Financial-Data">QuantStart on Financial Time Series</a></li>
+</ul>
+<p>To see this tutorial in action, don’t miss the video on our Data Driven Minutes Youtube channel. Happy coding!</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>data</category>
+  <category>correlation</category>
+  <category>relationship</category>
+  <category>analytics</category>
+  <category>statistics</category>
+  <guid>https://portfolio-geek.com/posts/articles/tutorials/correlation-returns.html</guid>
+  <pubDate>Mon, 12 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/green-cutting-mat-with-geometric-patterns.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Catch Up on Market Movers, Bitcoin Woes, and Innovative Homes – 09.08.2024</title>
   <dc:creator>Vincent D.</dc:creator>
@@ -3399,103 +3963,6 @@ font-style: inherit;">'Volatility'</span>)</span>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-19_daily-curation.html</guid>
   <pubDate>Thu, 18 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/portfolio-optimisation.png" medium="image" type="image/png" height="96" width="144"/>
-</item>
-<item>
-  <title>18.07.24: Mastering Linux Scripting, Trend-Following Strategies, and Evolution of Large Language Models in Today’s Financial Landscape</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-18_daily-curation.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>In today’s curation, we explore several crucial topics in financial technology and market strategies. The highlights include:</p>
-<ul>
-<li>Scripting languages like Bash, Python, and Perl for task automation in Linux.</li>
-<li>A trend-following investment strategy framework by Dobromir Tzotchev focusing on risk management and portfolio diversification.</li>
-<li>An overview of Large Language Models (LLMs) and their evolution in natural language processing.</li>
-</ul>
-</div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/pictures/stock-valuation.png" class="img-fluid figure-img"></p>
-<figcaption>Coffee with daily news</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<section id="automation" class="level1">
-<h1>Automation</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.linuxjournal.com/content/simple-linux-shell-scripts-bash-python-and-perl-will-get-you-and-running">Unlock Your Linux System’s Potential: Automate Tasks with Bash, Python, and Perl Scripts for Improved Productivity (Linux Journal, 2024-07-18)</a></td>
-<td>Bash, Python, and Perl are powerful Linux scripting languages for task automation, offering unique features like command integration, extensive libraries, and text processing capabilities for efficient system management.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="quantitative-investing" class="level1">
-<h1>Quantitative Investing</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://quantpedia.com/">Master Trend-Following Strategies: Learn the Key Tactics for Consistent Market Success (Quantpedia, 2024-07-18)</a></td>
-<td>Dobromir Tzotchev’s framework outlines a robust trend-following strategy emphasizing a clean signal, portfolio diversification, and effective risk management techniques for consistent returns in varying market conditions.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="technology" class="level1">
-<h1>Technology</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.datasciencecentral.com/history-and-future-of-llms/">Neural Networks to Modern AI: The Evolution and Future of Large Language Models (Data Science Central, 2024-07-18)</a></td>
-<td>Large Language Models (LLMs) evolved from rule-based NLP to transformers, utilizing attention mechanisms and multimodal inputs, with advancements in hardware, algorithms, and smaller models to enhance efficiency and performance.</td>
-</tr>
-</tbody>
-</table>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>automation</category>
-  <category>quant</category>
-  <category>tech</category>
-  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-18_daily-curation.html</guid>
-  <pubDate>Wed, 17 Jul 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/stock-valuation.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 </channel>
 </rss>

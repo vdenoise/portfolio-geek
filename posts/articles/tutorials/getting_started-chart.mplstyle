@@ -35,6 +35,7 @@ ytick.major.size: 0
 xtick.minor.size: 0
 ytick.minor.size: 0
 
-date.autoformatter.month: %y-%b
+date.autoformatter.month: %b %Y 
+date.autoformatter.day: %b %d
 yaxis.labellocation: top
 xaxis.labellocation: right

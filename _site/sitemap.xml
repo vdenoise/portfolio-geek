@@ -65,14 +65,6 @@
     <lastmod>2024-08-05T08:24:22.279Z</lastmod>
   </url>
   <url>
-    <loc>https://portfolio-geek.com/posts/articles/tutorials/setting-up-a-python-workstation-macos.html</loc>
-    <lastmod>2024-08-08T05:44:05.371Z</lastmod>
-  </url>
-  <url>
-    <loc>https://portfolio-geek.com/posts/articles/tutorials/max-drawdown.html</loc>
-    <lastmod>2024-08-07T16:37:34.905Z</lastmod>
-  </url>
-  <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/spy-and-matplotlib.html</loc>
     <lastmod>2024-08-08T10:02:57.843Z</lastmod>
   </url>
@@ -81,12 +73,16 @@
     <lastmod>2024-08-07T16:35:07.273Z</lastmod>
   </url>
   <url>
+    <loc>https://portfolio-geek.com/posts/articles/tutorials/setting-up-a-python-workstation-windows.html</loc>
+    <lastmod>2024-08-07T16:50:05.404Z</lastmod>
+  </url>
+  <url>
     <loc>https://portfolio-geek.com/posts/articles/visualizing-historical-data.html</loc>
     <lastmod>2024-08-07T16:32:19.728Z</lastmod>
   </url>
   <url>
-    <loc>https://portfolio-geek.com/posts/articles/tutorials/setting-up-a-python-workstation-windows.html</loc>
-    <lastmod>2024-08-07T16:50:05.404Z</lastmod>
+    <loc>https://portfolio-geek.com/posts/articles/tutorials/correlation-returns.html</loc>
+    <lastmod>2024-08-13T09:39:41.693Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/optimise-portfolios-with-python.html</loc>
@@ -94,7 +90,15 @@
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/historical-vol.html</loc>
-    <lastmod>2024-08-07T16:37:29.705Z</lastmod>
+    <lastmod>2024-08-11T05:58:40.318Z</lastmod>
+  </url>
+  <url>
+    <loc>https://portfolio-geek.com/posts/articles/tutorials/max-drawdown.html</loc>
+    <lastmod>2024-08-07T16:37:34.905Z</lastmod>
+  </url>
+  <url>
+    <loc>https://portfolio-geek.com/posts/articles/tutorials/setting-up-a-python-workstation-macos.html</loc>
+    <lastmod>2024-08-08T05:44:05.371Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-14_daily-curation.html</loc>

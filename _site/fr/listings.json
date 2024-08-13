@@ -2,6 +2,7 @@
   {
     "listing": "/tutorials_fr.html",
     "items": [
+      "/posts/articles/tutorials/correlation-returns.html",
       "/posts/articles/tutorials/sharpe-ratio.html",
       "/posts/articles/tutorials/max-drawdown.html",
       "/posts/articles/tutorials/historical-vol.html",
@@ -16,6 +17,7 @@
     "items": [
       "/posts/daily-curation/2024-07-18_daily-curation.html",
       "/posts/daily-curation/2024_08_09_daily-curation.html",
+      "/posts/articles/tutorials/correlation-returns.html",
       "/posts/daily-curation/2024_07_26_daily-curation.html",
       "/posts/daily-curation/2024_07_29_daily-curation.html",
       "/posts/daily-curation/2024_07_22_daily-curation.html",
@@ -49,6 +51,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/articles/tutorials/correlation-returns.html",
       "/posts/articles/tutorials/sharpe-ratio.html",
       "/posts/articles/tutorials/max-drawdown.html",
       "/posts/articles/tutorials/historical-vol.html",
@@ -142,6 +145,7 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/articles/tutorials/correlation-returns.html",
       "/posts/articles/tutorials/max-drawdown.html",
       "/posts/articles/tutorials/sharpe-ratio.html",
       "/posts/articles/tutorials/historical-vol.html",
@@ -155,6 +159,7 @@
   {
     "listing": "/tutorials.html",
     "items": [
+      "/posts/articles/tutorials/correlation-returns.html",
       "/posts/articles/tutorials/sharpe-ratio.html",
       "/posts/articles/tutorials/max-drawdown.html",
       "/posts/articles/tutorials/historical-vol.html",
