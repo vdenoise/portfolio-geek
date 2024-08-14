@@ -14,7 +14,7 @@ title-block-banner: true
 
 Chaque jour ou presque, je partage dans ce blog les liens vers les articles que j'ai trouvés les plus intéressants. Mes thèmes de prédilection sont les suivants: tech, finance, marchés, cryptos, etc.
 
-Ci-dessous, vous trouverez les compilations les plus récentes. 
+Ci-dessous, vous trouverez les compilations les plus récentes.  Note: la plupart des articles sont en anglais.
 
 Bonne lecture,
 
