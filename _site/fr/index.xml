@@ -576,6 +576,158 @@ font-style: inherit;">"Correlation"</span>)</span>
   <media:content url="https://portfolio-geek.com/pictures/green-cutting-mat-with-geometric-patterns.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
+  <title>Daily Curation (13.08.2024): Time Series Analysis, Recession Insights, Essential ML Tools, and Active ETFs Trends</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_08_13_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Dans cette curation du 13 août 2024, nous explorons plusieurs sujets d’actualité dans le domaine de la finance et des marchés.</p>
+<p>Voici un aperçu des thèmes abordés :</p>
+<ul>
+<li>Analyse des séries temporelles et son utilisation dans divers secteurs.</li>
+<li>Évaluation de la situation économique américaine depuis 2009.</li>
+<li>Outils essentiels pour les débutants en machine learning.</li>
+<li>Discussion sur les indicateurs économiques aux États-Unis et au Wisconsin.</li>
+<li>Analyse critique des prédictions sur la dette fédérale.</li>
+<li>Rapport d’Oxford Economics sur les signaux de récession.</li>
+<li>Croissance des ETFs actifs en Europe.</li>
+<li>Annonce des publications économiques imminentes.</li>
+<li>Perspectives sur le marché immobilier pour la prochaine décennie.</li>
+</ul>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/coffee-and-newspapers-on-wooden-floor.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="ia-et-gen-ai" class="level1">
+<h1>IA et Gen-AI</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/9-essential-prompts-for-time-series-analysis-with-chatgpt-meticulously-detailed-9baa268cd773">Analyse Avancée des Séries Temporelles avec ChatGPT : 9 prompts pour etre efficace (Towards Data Science, 2024-08-13)</a></td>
+<td>L’analyse des séries temporelles implique l’étude des événements au fil du temps, comme les ventes quotidiennes. Elle examine les relations de données et nécessite une manipulation soigneuse des prompts. Les approches présentées aident à résoudre des problèmes dans divers secteurs.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="données-bases-de-données-et-science-des-données" class="level1">
+<h1>Données, Bases de Données et Science des Données</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://machinelearningmastery.com/free-tools-every-ml-beginner-should-use/">Outils Essentiels pour Débutants pour Aborder l’Apprentissage Automatique en 2024 : Commencez Malin avec Ces Ressources Gratuites (Machine Learning Mastery, 2024-08-13)</a></td>
+<td>Les outils gratuits essentiels pour les débutants en ML incluent Jupyter Notebook pour le codage interactif, Hugging Face pour le NLP, LangChain pour l’intégration de modèles de langage, Scikit-learn pour les algorithmes, et Kaggle pour les ensembles de données et les compétitions.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="économie" class="level1">
+<h1>Économie</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://econbrowser.com/archives/2024/08/podcast-on-the-macroeconomy-and-on-wisconsin">Déchiffrer les Indicateurs Économiques : Insights sur l’Emploi, la Production et le Revenu à Partir d’Analyses de Données Récentes (BadgerTalks, 2024-08-12)</a></td>
+<td>L’interview mentionné dans le post discute des indicateurs économiques pour les États-Unis et le Wisconsin, y compris l’emploi, le revenu, la production, les ventes au détail et le PIB, tous normalisés à mars 2024.</td>
+</tr>
+<tr class="even">
+<td><a href="https://ritholtz.com/2024/08/catastrophizing-debt/">Réévaluer les Peurs de la Dette Fédérale : Pourquoi des Décennies de Prédictions Sombres ne se Sont Jamais Matérialisées (The Big Picture, 2024-08-12)</a></td>
+<td>L’auteur critique les prédictions de désastre liées à l’excès de dette fédérale, affirmant que les avertissements passés ne se sont pas matérialisés. Il souligne la croissance économique et les changements démographiques au fil du temps, remettant en question le contexte des discussions sur la dette.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://econbrowser.com/archives/2024/08/oxford-economics-recession-at-3-6-months-horizons">Récession Peu Probable Avant les Élections : Les Données d’Oxford Economics Dessinent un Tableau Optimiste (Oxford Economics, 2024-08-12)</a></td>
+<td>Oxford Economics rapporte qu’il n’y a aucun signe de récession, s’appuyant sur des modèles probit multivariés. Leur analyse met en lumière une divergence des indicateurs économiques, excluant les données sur le chômage et la règle de Sahm.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="etfs-et-investissement-indiciel" class="level1">
+<h1>ETFs et Investissement Indiciel</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.ft.com/content/0ccb1dd3-3734-407e-87e7-ff203ac80582">La Montée Rapide des ETFs Actifs en Europe : Ce que les Investisseurs Doivent Savoir Maintenant (Ignites Europe, 2024-08-12)</a></td>
+<td>Les ETFs actifs en Europe gagnent en traction, avec 35 lancés récemment. Cependant, ils gèrent seulement 45,5 milliards d’euros, représentant 2 % du marché européen des ETFs, beaucoup moins que les stratégies passives.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="investissement-fondamental" class="level1">
+<h1>Investissement Fondamental</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://fundamentalis.com/?p=16495">Comprendre les Principaux Indicateurs Économiques de cette Semaine : CPI de Juillet, Ventes au Détail, et Impact sur les Tendances du Marché (Bespoke Report, 2024-08-10)</a></td>
+<td>Le CPI de juillet et le CPI de base seront publiés le 14 août, suivis des ventes au détail le 15 août. Walmart annonce ses résultats du deuxième trimestre, avec des estimations de bénéfices montrant des variations sectorielles.</td>
+</tr>
+<tr class="even">
+<td><a href="https://awealthofcommonsense.com/2024/08/whats-the-bull-case-for-housing/">Pourquoi les Experts Prédissent que le Secteur de l’Habitat Va Retarder par Rapport à Autres Investissements au Cours de la Prochaine Décennie (2024-08-09)</a></td>
+<td>Cullen Roche et Nick Maggiulli prédisent que le secteur de l’habitat sous-performera au cours de la prochaine décennie en raison de prix élevés et de taux hypothécaires élevés, suggérant que les gains antérieurs ne sont pas durables.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>data-science</category>
+  <category>economics</category>
+  <category>etf</category>
+  <category>fundamental</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_13_daily-curation.html</guid>
+  <pubDate>Mon, 12 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/coffee-and-newspapers-on-wooden-floor.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>Catch Up on Market Movers, Bitcoin Woes, and Innovative Homes – 09.08.2024</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/daily-curation/2024_08_09_daily-curation.html</link>
@@ -3880,89 +4032,6 @@ font-style: inherit;">'Volatility'</span>)</span>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-20_daily-curation.html</guid>
   <pubDate>Fri, 19 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/blog-post.png" medium="image" type="image/png" height="96" width="144"/>
-</item>
-<item>
-  <title>Daily Market Insights (19.07.24): Fed Influence, Small Cap Squeeze, and Portfolio Risk Reassessment</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/daily-curation/2024-07-19_daily-curation.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>In today’s curation, we explore key trends and insights impacting financial markets:</p>
-<ul>
-<li>Shift in investor sentiment from large-cap to small-cap stocks due to potential Fed interest rate cuts, leading to short squeeze opportunities.</li>
-<li>Analysis of the evolving correlation between stocks and bonds, affecting portfolio risk assessment.</li>
-<li>Insights on private capital valuation and the significance of lagged betas for managing systemic risk.:::</li>
-</ul>
-</div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/pictures/portfolio-optimisation.png" class="img-fluid figure-img"></p>
-<figcaption>Coffee with daily news</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<section id="market-pulse-market-news" class="level1">
-<h1>Market Pulse &amp; Market News</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://moneymorning.com/2024/07/19/short-sellers-hate-that-these-stocks-are-moving-higher/">Unlock Potential Gains: Top Stocks Benefiting from Potential Fed Rate Cuts and Short Squeeze Opportunities (Traders Reserve, 2024-07-19)</a></td>
-<td>Investors are moving away from large cap stocks as the Fed is likely to drop interest rates, causing a shift in sentiment. This is creating short squeeze opportunities in small cap stocks. Some short squeeze candidates include the S&amp;P Biotech ETF(XBI), Chevron (CVX), and Royal Caribbean Cruise Lines (RCL).</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="portfolio-construction-techniques" class="level1">
-<h1>Portfolio Construction Techniques</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="http://mrzepczynski.blogspot.com/2024/07/why-is-stock-bond-correlation-important.html">Rethinking Your Portfolio: The Crucial Impact of Changing Stock-Bond Correlations (Unknown, 2024-07-19)</a></td>
-<td>The correlation between stocks and bonds is historically negative, providing diversification. However, this correlation can change over time, leading to increased portfolio risk. Investors should regularly reassess their asset allocation.</td>
-</tr>
-<tr class="even">
-<td><a href="https://alphaarchitect.com/2024/07/amortizing-volatility/">Private Investments: Unveiling Hidden Risks and Smoothing Effects on Volatility (Alpha Architect, 2024-07-19)</a></td>
-<td>Private capital managers have discretion in valuing their portfolios, which results in smoother returns and understated volatility. Failure to consider lagged betas leads to underestimating risk and overestimating alpha. Mark Anson’s study found that private investments exhibit significant serial correlation at the quarterly level and that lagged betas account for a significant amount of returns associated with private capital alpha. Adjusting for lagged betas leads to lower allocations and drops in Sharpe ratios. It is important for investors to properly account for systemic risk in private assets by including estimates of lagged betas.</td>
-</tr>
-</tbody>
-</table>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>market-feed</category>
-  <category>portfolio-construction</category>
-  <guid>https://portfolio-geek.com/posts/daily-curation/2024-07-19_daily-curation.html</guid>
-  <pubDate>Thu, 18 Jul 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/portfolio-optimisation.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 </channel>
 </rss>

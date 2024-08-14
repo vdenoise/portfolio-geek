@@ -1,0 +1,119 @@
+---
+title: "Daily Curation (13.08.2024): Time Series Analysis, Recession Insights, Essential ML Tools, and Active ETFs Trends"
+page-layout: full
+title-block-banner: true
+date: 08-13-2024
+categories: [ai,data-science,economics,etf,fundamental]
+tags: [time, analysis, recession, tools, indicators, debt, economy, etfs, cpi, housing]
+image: /pictures/coffee-and-newspapers-on-wooden-floor.jpg
+---
+
+::: {layout-ncol=2}
+
+:::{#first-column}
+
+::: {.content-visible when-profile="website_en"}
+Today's curation features a selection of topics relevant to our financial landscape:
+
+- Time series analysis techniques for business problem-solving
+- US economic stability with historical recession data
+- Free tools for machine learning beginners
+- Discussion of economic indicators in the US
+- Critique of federal debt predictions
+- Oxford Economics' recession outlook
+- Growth of active ETFs in Europe
+- Upcoming economic data releases
+- Housing market predictions for the next decade
+
+Please find the details in the table below.
+:::
+
+::: {.content-visible when-profile="website_fr"}
+Dans cette curation du 13 août 2024, nous explorons plusieurs sujets d'actualité dans le domaine de la finance et des marchés.
+
+Voici un aperçu des thèmes abordés :
+
+- Analyse des séries temporelles et son utilisation dans divers secteurs.
+- Évaluation de la situation économique américaine depuis 2009.
+- Outils essentiels pour les débutants en machine learning.
+- Discussion sur les indicateurs économiques aux États-Unis et au Wisconsin.
+- Analyse critique des prédictions sur la dette fédérale.
+- Rapport d'Oxford Economics sur les signaux de récession.
+- Croissance des ETFs actifs en Europe.
+- Annonce des publications économiques imminentes.
+- Perspectives sur le marché immobilier pour la prochaine décennie.
+:::
+
+
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/coffee-and-newspapers-on-wooden-floor.jpg)
+:::
+
+:::
+
+::: {.content-visible when-profile="website_en"}
+
+
+# AI and Gen-AI
+| Title | Summary |
+|-----|-----------|
+| [Mastering Time Series Analysis: Unlocking Insights through Advanced Techniques and ChatGPT (DetailedMeticulously Explained, 2024-08-13)](https://towardsdatascience.com/9-essential-prompts-for-time-series-analysis-with-chatgpt-meticulously-detailed-9baa268cd773)   | Time series analysis involves examining events over time, like daily sales. It requires techniques for data manipulation and understanding influences, often using lag and moving data concepts. |
+
+# Data, Databases and Data Science
+| Title | Summary |
+|-----|-----------|
+| [Essential Beginner Tools for Tackling Machine Learning in 2024: Start Smart with These Game-Changing Resources (Machine Learning Mastery, 2024-08-13)](https://machinelearningmastery.com/free-tools-every-ml-beginner-should-use/)   | Essential free tools for ML beginners include Jupyter Notebook for interactive coding, Hugging Face for NLP, LangChain for language model integration, Scikit-learn for algorithms, and Kaggle for datasets and competitions. |
+
+# Economics
+| Title | Summary |
+|-----|-----------|
+| [Unraveling Economic Indicators: Insights on Employment, Production, and Income from Recent Data Analysis (BadgerTalks, 2024-08-12)](https://econbrowser.com/archives/2024/08/podcast-on-the-macroeconomy-and-on-wisconsin)   | The interview discusses economic indicators for the US and Wisconsin, including employment, income, production, retail sales, and GDP, all normalised to March 2024. |
+| [Reevaluating Federal Debt Fears: Why Decades of Dire Predictions Have Never Materialized (The Big Picture, 2024-08-12)](https://ritholtz.com/2024/08/catastrophizing-debt/)   | The author critiques predictions of doom from excess federal debt, arguing past warnings haven’t materialised. They highlight economic growth and demographic changes over time, questioning the context of debt discussions. |
+| [Recession Unlikely Before Election: Oxford Economics' Data Paints Optimistic Picture (Oxford Economics, 2024-08-12)](https://econbrowser.com/archives/2024/08/oxford-economics-recession-at-3-6-months-horizons)   | Oxford Economics reports no signs of a recession, relying on multivariate probit models. Their analysis highlights a divergence in economic indicators, excluding unemployment and Sahm rule data. |
+
+# ETFs and Index Investing
+| Title | Summary |
+|-----|-----------|
+| [The Fast-Rising Wave of Active ETFs in Europe: What Investors Need to Know Now (Ignites Europe, 2024-08-12)](https://www.ft.com/content/0ccb1dd3-3734-407e-87e7-ff203ac80582)   | Active ETFs in Europe are gaining traction, with 35 launched recently. However, they manage only €45.5bn, representing 2% of the European ETF market, significantly less than passive strategies. |
+
+# Fundamental Investing
+| Title | Summary |
+|-----|-----------|
+| [Understanding This Week's Key Economic Indicators: July CPI, Retail Sales, and Impact on Market Trends (Bespoke Report, 2024-08-10)](https://fundamentalis.com/?p=16495)   | The July CPI and Core CPI will be released on August 14th, followed by Retail Sales on August 15th. Walmart reports Q2 earnings, with earnings estimates showing sector variances. |
+| [Why Experts Predict Housing Will Lag Behind Other Investments Over the Next Decade (Not provided in the content (2024-08-09)](https://awealthofcommonsense.com/2024/08/whats-the-bull-case-for-housing/)   | Cullen Roche and Nick Maggiulli predict housing will underperform over the next decade due to high prices and elevated mortgage rates, suggesting previous gains are unsustainable. |
+:::
+
+::: {.content-visible when-profile="website_fr"}
+# IA et Gen-AI
+| Titre | Résumé |
+|-----|-----------|
+| [Analyse Avancée des Séries Temporelles avec ChatGPT : 9 prompts pour etre efficace (Towards Data Science, 2024-08-13)](https://towardsdatascience.com/9-essential-prompts-for-time-series-analysis-with-chatgpt-meticulously-detailed-9baa268cd773)   | L'analyse des séries temporelles implique l'étude des événements au fil du temps, comme les ventes quotidiennes. Elle examine les relations de données et nécessite une manipulation soigneuse des prompts. Les approches présentées aident à résoudre des problèmes dans divers secteurs. |
+
+
+# Données, Bases de Données et Science des Données
+| Titre | Résumé |
+|-----|-----------|
+| [Outils Essentiels pour Débutants pour Aborder l'Apprentissage Automatique en 2024 : Commencez Malin avec Ces Ressources Gratuites (Machine Learning Mastery, 2024-08-13)](https://machinelearningmastery.com/free-tools-every-ml-beginner-should-use/)   | Les outils gratuits essentiels pour les débutants en ML incluent Jupyter Notebook pour le codage interactif, Hugging Face pour le NLP, LangChain pour l'intégration de modèles de langage, Scikit-learn pour les algorithmes, et Kaggle pour les ensembles de données et les compétitions. |
+
+# Économie
+| Titre | Résumé |
+|-----|-----------|
+| [Déchiffrer les Indicateurs Économiques : Insights sur l'Emploi, la Production et le Revenu à Partir d'Analyses de Données Récentes (BadgerTalks, 2024-08-12)](https://econbrowser.com/archives/2024/08/podcast-on-the-macroeconomy-and-on-wisconsin)   | L'interview mentionné dans le post discute des indicateurs économiques pour les États-Unis et le Wisconsin, y compris l'emploi, le revenu, la production, les ventes au détail et le PIB, tous normalisés à mars 2024. |
+| [Réévaluer les Peurs de la Dette Fédérale : Pourquoi des Décennies de Prédictions Sombres ne se Sont Jamais Matérialisées (The Big Picture, 2024-08-12)](https://ritholtz.com/2024/08/catastrophizing-debt/)   | L'auteur critique les prédictions de désastre liées à l'excès de dette fédérale, affirmant que les avertissements passés ne se sont pas matérialisés. Il souligne la croissance économique et les changements démographiques au fil du temps, remettant en question le contexte des discussions sur la dette. |
+| [Récession Peu Probable Avant les Élections : Les Données d'Oxford Economics Dessinent un Tableau Optimiste (Oxford Economics, 2024-08-12)](https://econbrowser.com/archives/2024/08/oxford-economics-recession-at-3-6-months-horizons)   | Oxford Economics rapporte qu'il n'y a aucun signe de récession, s'appuyant sur des modèles probit multivariés. Leur analyse met en lumière une divergence des indicateurs économiques, excluant les données sur le chômage et la règle de Sahm. |
+
+# ETFs et Investissement Indiciel
+| Titre | Résumé |
+|-----|-----------|
+| [La Montée Rapide des ETFs Actifs en Europe : Ce que les Investisseurs Doivent Savoir Maintenant (Ignites Europe, 2024-08-12)](https://www.ft.com/content/0ccb1dd3-3734-407e-87e7-ff203ac80582)   | Les ETFs actifs en Europe gagnent en traction, avec 35 lancés récemment. Cependant, ils gèrent seulement 45,5 milliards d'euros, représentant 2 % du marché européen des ETFs, beaucoup moins que les stratégies passives. |
+
+# Investissement Fondamental
+| Titre | Résumé |
+|-----|-----------|
+| [Comprendre les Principaux Indicateurs Économiques de cette Semaine : CPI de Juillet, Ventes au Détail, et Impact sur les Tendances du Marché (Bespoke Report, 2024-08-10)](https://fundamentalis.com/?p=16495)   | Le CPI de juillet et le CPI de base seront publiés le 14 août, suivis des ventes au détail le 15 août. Walmart annonce ses résultats du deuxième trimestre, avec des estimations de bénéfices montrant des variations sectorielles. |
+| [Pourquoi les Experts Prédissent que le Secteur de l'Habitat Va Retarder par Rapport à Autres Investissements au Cours de la Prochaine Décennie (2024-08-09)](https://awealthofcommonsense.com/2024/08/whats-the-bull-case-for-housing/)   | Cullen Roche et Nick Maggiulli prédisent que le secteur de l'habitat sous-performera au cours de la prochaine décennie en raison de prix élevés et de taux hypothécaires élevés, suggérant que les gains antérieurs ne sont pas durables. |
+:::
+
+
