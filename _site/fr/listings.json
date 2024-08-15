@@ -3,6 +3,7 @@
     "listing": "/tutorials_fr.html",
     "items": [
       "/posts/articles/tutorials/correlation-returns.html",
+      "/posts/articles/tutorials/tracking-error.html",
       "/posts/articles/tutorials/sharpe-ratio.html",
       "/posts/articles/tutorials/max-drawdown.html",
       "/posts/articles/tutorials/historical-vol.html",
@@ -15,9 +16,11 @@
   {
     "listing": "/all_posts.html",
     "items": [
+      "/posts/daily-curation/2024_08_14_daily-curation.html",
       "/posts/daily-curation/2024-07-18_daily-curation.html",
       "/posts/daily-curation/2024_08_09_daily-curation.html",
       "/posts/articles/tutorials/correlation-returns.html",
+      "/posts/articles/tutorials/tracking-error.html",
       "/posts/daily-curation/2024_08_13_daily-curation.html",
       "/posts/daily-curation/2024_07_26_daily-curation.html",
       "/posts/daily-curation/2024_07_29_daily-curation.html",
@@ -53,6 +56,7 @@
     "listing": "/index.html",
     "items": [
       "/posts/articles/tutorials/correlation-returns.html",
+      "/posts/articles/tutorials/tracking-error.html",
       "/posts/articles/tutorials/sharpe-ratio.html",
       "/posts/articles/tutorials/max-drawdown.html",
       "/posts/articles/tutorials/historical-vol.html",
@@ -61,6 +65,7 @@
       "/posts/articles/tutorials/setting-up-a-python-workstation-macos.html",
       "/posts/articles/tutorials/spy-and-matplotlib.html",
       "/posts/articles/visualizing-historical-data.html",
+      "/posts/daily-curation/2024_08_14_daily-curation.html",
       "/posts/daily-curation/2024_08_13_daily-curation.html",
       "/posts/daily-curation/2024_08_09_daily-curation.html",
       "/posts/daily-curation/2024_08_08_daily-curation.html",
@@ -93,6 +98,7 @@
   {
     "listing": "/daily-curation.html",
     "items": [
+      "/posts/daily-curation/2024_08_14_daily-curation.html",
       "/posts/daily-curation/2024_08_13_daily-curation.html",
       "/posts/daily-curation/2024_08_09_daily-curation.html",
       "/posts/daily-curation/2024_08_08_daily-curation.html",
@@ -121,6 +127,7 @@
   {
     "listing": "/daily-curation_fr.html",
     "items": [
+      "/posts/daily-curation/2024_08_14_daily-curation.html",
       "/posts/daily-curation/2024_08_13_daily-curation.html",
       "/posts/daily-curation/2024_08_09_daily-curation.html",
       "/posts/daily-curation/2024_08_08_daily-curation.html",
@@ -150,6 +157,7 @@
     "listing": "/archive.html",
     "items": [
       "/posts/articles/tutorials/correlation-returns.html",
+      "/posts/articles/tutorials/tracking-error.html",
       "/posts/articles/tutorials/max-drawdown.html",
       "/posts/articles/tutorials/sharpe-ratio.html",
       "/posts/articles/tutorials/historical-vol.html",
@@ -164,6 +172,7 @@
     "listing": "/tutorials.html",
     "items": [
       "/posts/articles/tutorials/correlation-returns.html",
+      "/posts/articles/tutorials/tracking-error.html",
       "/posts/articles/tutorials/sharpe-ratio.html",
       "/posts/articles/tutorials/max-drawdown.html",
       "/posts/articles/tutorials/historical-vol.html",

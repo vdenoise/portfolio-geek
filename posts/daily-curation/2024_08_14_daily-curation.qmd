@@ -1,0 +1,57 @@
+---
+title: "14.08.2024: Exploring the Link Between Declining Manufacturing Wages and Unionization - A Critical Insight"
+page-layout: full
+title-block-banner: true
+date: 08-14-2024
+categories: [economics]
+tags: [manufacturing, wages, unionisation, jobs, support, decline, beneficial, correlation, rates, labour]
+image: /pictures/cup-of-coffee-and-a-newspaper.jpg
+---
+
+::: {layout-ncol=2}
+
+:::{#first-column}
+
+::: {.content-visible when-profile="website_en"}
+Today's curation focuses on the relationship between manufacturing wages and unionization rates, highlighting key findings on how increased manufacturing jobs do not necessarily lead to better pay without union support. The topics discussed include:
+
+- Decline in manufacturing wages
+- Impact of falling unionization rates
+- Role of unions in ensuring fair pay
+:::
+
+::: {.content-visible when-profile="website_fr"}
+Aujourd'hui, nous explorons plusieurs sujets pertinents pour les investisseurs et les passionnés des marchés financiers :
+
+- L'impact de la diminution des salaires dans le secteur manufacturier sur les taux de syndicalisation.
+- L'importance des syndicats dans la création d'emplois bien rémunérés, au-delà de la simple augmentation des postes.
+
+Ces informations fournissent un éclairage intéressant sur l'évolution actuelle du marché du travail.
+:::
+
+
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/cup-of-coffee-and-a-newspaper.jpg)
+:::
+
+:::
+
+::: {.content-visible when-profile="website_en"}
+
+
+# Economics
+| Title | Summary |
+|-----|-----------|
+| [How Unions, Not Factories, Made Manufacturing Jobs Desirable and Why Their Decline Matters Today (Real-World Economics Review, 2024-08-13)](https://rwer.wordpress.com/2024/08/13/manufacturing-jobs-unions-made-them-good-not-the-factories/)   | The decline in manufacturing wages correlates with falling unionisation rates. Increased manufacturing jobs alone won’t ensure good pay without union support. Unions made such jobs beneficial, not factories. |
+:::
+
+::: {.content-visible when-profile="website_fr"}
+# Économie
+| Titre | Résumé |
+|-----|-----------|
+| [Comment les syndicats, et non les usines, ont rendu les emplois manufacturiers attrayants et pourquoi leur déclin est important aujourd'hui (Revue d'Économie du Monde Réel, 2024-08-13)](https://rwer.wordpress.com/2024/08/13/manufacturing-jobs-unions-made-them-good-not-the-factories/)   | Le déclin des salaires manufacturiers est corrélé à la baisse des taux de syndicalisation. L'augmentation des emplois manufacturiers seule ne garantira pas de bons salaires sans le soutien des syndicats. Les syndicats ont rendu ces emplois bénéfiques, pas les usines. |
+:::
+
+
