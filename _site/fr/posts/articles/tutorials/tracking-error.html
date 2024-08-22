@@ -8,7 +8,7 @@
 
 <meta name="author" content="Vincent D.">
 
-<title>Correlation of returns: why it matters, and how to analyse it with Python – Portfolio Geek</title>
+<title>Tracking Error of QQQ vs SPY: A Practical Guide with Python – Portfolio Geek</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -162,9 +162,9 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../../../styles.css">
-<meta property="og:title" content="Correlation of returns: why it matters, and how to analyse it with Python – Portfolio Geek">
+<meta property="og:title" content="Tracking Error of QQQ vs SPY: A Practical Guide with Python – Portfolio Geek">
 <meta property="og:description" content="Finance, Research and the Tech required to Fuel them">
-<meta property="og:image" content="https://portfolio-geek.com/pictures/green-cutting-mat-with-geometric-patterns.jpg">
+<meta property="og:image" content="https://portfolio-geek.com/pictures/lection-on-stock-market-trading.jpg">
 <meta property="og:site_name" content="Portfolio Geek">
 </head>
 
@@ -244,12 +244,12 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Correlation of returns: why it matters, and how to analyse it with Python</h1>
+<h1 class="title">Tracking Error of QQQ vs SPY: A Practical Guide with Python</h1>
   <div class="quarto-categories">
     <div class="quarto-category">data</div>
     <div class="quarto-category">correlation</div>
     <div class="quarto-category">relationship</div>
-    <div class="quarto-category">analytics</div>
+    <div class="quarto-category">tracking-error</div>
     <div class="quarto-category">statistics</div>
   </div>
   </div>
@@ -268,7 +268,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Date de publication</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">13 août 2024</p>
+      <p class="date">18 août 2024</p>
     </div>
   </div>
   
@@ -280,12 +280,12 @@ window.Quarto = {
 </header>
 
 
-<section id="tracking-error-of-qqq-vs-spy-a-practical-guide-with-python" class="level1">
-<h1>Tracking Error of QQQ vs SPY: A Practical Guide with Python</h1>
+<section id="measuring-tracking-error-a-practical-guide-with-python" class="level1">
+<h1>Measuring Tracking Error: A Practical Guide with Python</h1>
 <p>In the world of finance and investing, understanding how closely an investment tracks its benchmark index is crucial for evaluating performance and risk. This concept is known as tracking error. In this blog post, we’ll delve into the tracking error of QQQ and SPY using weekly returns. We’ll discuss why this metric matters, how it’s calculated, and provide you with a full suite of examples using Python to analyze these ETFs.</p>
 <section id="what-is-tracking-error-and-why-it-matters" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-tracking-error-and-why-it-matters">What is Tracking Error and Why It Matters</h2>
-<p>Tracking error is a measure of how closely a fund follows its benchmark index. For investors and portfolio managers, this metric is crucial as it helps in assessing the risk associated with a fund’s performance relative to its benchmark. If you’re using index funds or ETFs like QQQ and SPY, tracking error gives you insights into how accurately these funds replicate their respective indices. ### Performance Evaluation</p>
+<p>Tracking error is a measure of how closely a fund follows its benchmark index. For investors and portfolio managers, this metric is crucial as it helps in assessing the risk associated with a fund’s performance relative to its benchmark. If you’re using index funds or ETFs like QQQ and SPY, tracking error gives you insights into how accurately these funds replicate their respective indices. For this article we will use the same metric to compare 2 ETFs, with a ### Performance Evaluation</p>
 <p>Tracking error provides a clear picture of how well a fund replicates its benchmark. If the tracking error is low, the fund closely follows the index, making it a reliable choice for passive investors. ### Risk Assessment</p>
 <p>It helps investors understand the consistency of a fund’s returns relative to its benchmark. A high tracking error indicates higher risk and volatility, signaling investors to tread with caution. ### Portfolio Management</p>
 <p>Fund managers use tracking error to make informed decisions about rebalancing their portfolios. By minimizing tracking error, they can align their funds more closely with the benchmark, offering stable returns.</p>
@@ -314,23 +314,20 @@ window.Quarto = {
 <div id="cell-5" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb2-5"><a href="#cb2-5"></a></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co"># Download historical data for QQQ and SPY</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a>qqq <span class="op">=</span> yf.download(<span class="st">'QQQ'</span>, start<span class="op">=</span><span class="st">'2015-01-01'</span>, end<span class="op">=</span><span class="st">'2020-12-31'</span>, interval<span class="op">=</span><span class="st">'1wk'</span>)</span>
-<span id="cb2-8"><a href="#cb2-8"></a>spy <span class="op">=</span> yf.download(<span class="st">'SPY'</span>, start<span class="op">=</span><span class="st">'2015-01-01'</span>, end<span class="op">=</span><span class="st">'2020-12-31'</span>, interval<span class="op">=</span><span class="st">'1wk'</span>)</span>
-<span id="cb2-9"><a href="#cb2-9"></a></span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="co"># Calculate weekly returns</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a>qqq[<span class="st">'Weekly Return'</span>] <span class="op">=</span> qqq[<span class="st">'Adj Close'</span>].pct_change().dropna()</span>
-<span id="cb2-12"><a href="#cb2-12"></a>spy[<span class="st">'Weekly Return'</span>] <span class="op">=</span> spy[<span class="st">'Adj Close'</span>].pct_change().dropna()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="op">%%</span>capture</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="co"># Download historical data for QQQ and SPY</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>qqq <span class="op">=</span> yf.download(<span class="st">'QQQ'</span>, start<span class="op">=</span><span class="st">'2015-01-01'</span>, end<span class="op">=</span><span class="st">'2024-06-30'</span>, interval<span class="op">=</span><span class="st">'1wk'</span>)</span>
+<span id="cb2-9"><a href="#cb2-9"></a>spy <span class="op">=</span> yf.download(<span class="st">'SPY'</span>, start<span class="op">=</span><span class="st">'2015-01-01'</span>, end<span class="op">=</span><span class="st">'2024-06-30'</span>, interval<span class="op">=</span><span class="st">'1wk'</span>)</span>
+<span id="cb2-10"><a href="#cb2-10"></a></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="co"># Calculate weekly returns</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>qqq[<span class="st">'Weekly Return'</span>] <span class="op">=</span> qqq[<span class="st">'Adj Close'</span>].pct_change().dropna()</span>
+<span id="cb2-13"><a href="#cb2-13"></a>spy[<span class="st">'Weekly Return'</span>] <span class="op">=</span> spy[<span class="st">'Adj Close'</span>].pct_change().dropna()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stderr">
-<pre><code>[*********************100%%**********************]  1 of 1 completed
-[*********************100%%**********************]  1 of 1 completed</code></pre>
-</div>
 </div>
 </section>
 <section id="calculate-tracking-error" class="level3">
@@ -339,13 +336,14 @@ window.Quarto = {
 <div id="cell-7" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Align the indexes of QQQ and SPY weekly returns</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>combined <span class="op">=</span> pd.concat([qqq[<span class="st">'Weekly Return'</span>], spy[<span class="st">'Weekly Return'</span>]], axis<span class="op">=</span><span class="dv">1</span>, join<span class="op">=</span><span class="st">'inner'</span>)</span>
-<span id="cb4-3"><a href="#cb4-3"></a>combined.columns <span class="op">=</span> [<span class="st">'QQQ Return'</span>, <span class="st">'SPY Return'</span>]</span>
-<span id="cb4-4"><a href="#cb4-4"></a></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="co"># Calculate tracking error</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a>combined[<span class="st">'Tracking Error'</span>] <span class="op">=</span> combined[<span class="st">'QQQ Return'</span>] <span class="op">-</span> combined[<span class="st">'SPY Return'</span>]</span>
-<span id="cb4-7"><a href="#cb4-7"></a>tracking_error <span class="op">=</span> np.std(combined[<span class="st">'Tracking Error'</span>]) <span class="op">*</span> np.sqrt(<span class="dv">52</span>)  <span class="co"># Annualize the tracking error</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Align the indexes of QQQ and SPY weekly returns</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>plt.style.use(<span class="st">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb3-3"><a href="#cb3-3"></a>combined <span class="op">=</span> pd.concat([qqq[<span class="st">'Weekly Return'</span>], spy[<span class="st">'Weekly Return'</span>]], axis<span class="op">=</span><span class="dv">1</span>, join<span class="op">=</span><span class="st">'inner'</span>)</span>
+<span id="cb3-4"><a href="#cb3-4"></a>combined.columns <span class="op">=</span> [<span class="st">'QQQ Return'</span>, <span class="st">'SPY Return'</span>]</span>
+<span id="cb3-5"><a href="#cb3-5"></a></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="co"># Calculate tracking error</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>combined[<span class="st">'Tracking Error'</span>] <span class="op">=</span> combined[<span class="st">'QQQ Return'</span>] <span class="op">-</span> combined[<span class="st">'SPY Return'</span>]</span>
+<span id="cb3-8"><a href="#cb3-8"></a>tracking_error <span class="op">=</span> np.std(combined[<span class="st">'Tracking Error'</span>]) <span class="op">*</span> np.sqrt(<span class="dv">52</span>)  <span class="co"># Annualize the tracking error</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -359,22 +357,22 @@ window.Quarto = {
 <div id="cell-9" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>plt.style.use(<span class="st">'ggplot'</span>)</span>
-<span id="cb5-2"><a href="#cb5-2"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb5-3"><a href="#cb5-3"></a></span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="co"># Plot weekly closing prices</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a>ax.plot(qqq[<span class="st">'Adj Close'</span>], label<span class="op">=</span><span class="st">'QQQ'</span>)</span>
-<span id="cb5-6"><a href="#cb5-6"></a>ax.plot(spy[<span class="st">'Adj Close'</span>], label<span class="op">=</span><span class="st">'SPY'</span>)</span>
-<span id="cb5-7"><a href="#cb5-7"></a>ax.set_title(<span class="st">'Weekly Closing Prices (QQQ vs. SPY)'</span>)</span>
-<span id="cb5-8"><a href="#cb5-8"></a>ax.set_xlabel(<span class="st">'Date'</span>)</span>
-<span id="cb5-9"><a href="#cb5-9"></a>ax.set_ylabel(<span class="st">'Price ($)'</span>)</span>
-<span id="cb5-10"><a href="#cb5-10"></a>ax.legend()</span>
-<span id="cb5-11"><a href="#cb5-11"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co"># Plot weekly closing prices</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>ax.plot(qqq[<span class="st">'Adj Close'</span>], label<span class="op">=</span><span class="st">'QQQ'</span>)</span>
+<span id="cb4-6"><a href="#cb4-6"></a>ax.plot(spy[<span class="st">'Adj Close'</span>], label<span class="op">=</span><span class="st">'SPY'</span>)</span>
+<span id="cb4-7"><a href="#cb4-7"></a>ax.set_title(<span class="st">'Weekly Closing Prices (QQQ vs. SPY)'</span>)</span>
+<span id="cb4-8"><a href="#cb4-8"></a>ax.set_xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb4-9"><a href="#cb4-9"></a>ax.set_ylabel(<span class="st">'Price ($)'</span>)</span>
+<span id="cb4-10"><a href="#cb4-10"></a>ax.legend()</span>
+<span id="cb4-11"><a href="#cb4-11"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="tracking-error_files/figure-html/cell-4-output-1.png" width="391" height="281" class="figure-img"></p>
+<p><img src="tracking-error_files/figure-html/cell-4-output-1.png" width="495" height="218" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -386,19 +384,23 @@ window.Quarto = {
 <div id="cell-11" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb6-2"><a href="#cb6-2"></a></span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="co"># Plot weekly returns</span></span>
-<span id="cb6-4"><a href="#cb6-4"></a>combined[[<span class="st">'QQQ Return'</span>, <span class="st">'SPY Return'</span>]].plot(kind<span class="op">=</span><span class="st">'bar'</span>, ax<span class="op">=</span>ax, width<span class="op">=</span><span class="fl">0.8</span>)</span>
-<span id="cb6-5"><a href="#cb6-5"></a>ax.set_title(<span class="st">'Weekly Returns (QQQ vs. SPY)'</span>)</span>
-<span id="cb6-6"><a href="#cb6-6"></a>ax.set_xlabel(<span class="st">'Date'</span>)</span>
-<span id="cb6-7"><a href="#cb6-7"></a>ax.set_ylabel(<span class="st">'Weekly Return'</span>)</span>
-<span id="cb6-8"><a href="#cb6-8"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">import</span> matplotlib.dates <span class="im">as</span> mdates</span>
+<span id="cb5-2"><a href="#cb5-2"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb5-3"><a href="#cb5-3"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb5-4"><a href="#cb5-4"></a></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="co"># Plot weekly returns</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a>combined[[<span class="st">'QQQ Return'</span>, <span class="st">'SPY Return'</span>]].tail(<span class="dv">104</span>).multiply(<span class="dv">100</span>).plot(kind<span class="op">=</span><span class="st">'bar'</span>, ax<span class="op">=</span>ax, width<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb5-7"><a href="#cb5-7"></a>ax.set_title(<span class="st">'Weekly Returns (QQQ vs. SPY, in %)'</span>)</span>
+<span id="cb5-8"><a href="#cb5-8"></a>ax.set_xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb5-9"><a href="#cb5-9"></a>ax.xaxis.set_major_locator(mdates.MonthLocator(interval<span class="op">=</span><span class="dv">1</span>)) </span>
+<span id="cb5-10"><a href="#cb5-10"></a></span>
+<span id="cb5-11"><a href="#cb5-11"></a>ax.set_ylabel(<span class="st">'Weekly Return'</span>)</span>
+<span id="cb5-12"><a href="#cb5-12"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="tracking-error_files/figure-html/cell-5-output-1.png" width="406" height="378" class="figure-img"></p>
+<p><img src="tracking-error_files/figure-html/cell-5-output-1.png" width="497" height="302" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -410,19 +412,20 @@ window.Quarto = {
 <div id="cell-13" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb7-2"><a href="#cb7-2"></a></span>
-<span id="cb7-3"><a href="#cb7-3"></a><span class="co"># Scatter plot of weekly returns</span></span>
-<span id="cb7-4"><a href="#cb7-4"></a>ax.scatter(combined[<span class="st">'QQQ Return'</span>], combined[<span class="st">'SPY Return'</span>])</span>
-<span id="cb7-5"><a href="#cb7-5"></a>ax.set_title(<span class="st">'Scatter Plot of Weekly Returns (QQQ vs. SPY)'</span>)</span>
-<span id="cb7-6"><a href="#cb7-6"></a>ax.set_xlabel(<span class="st">'QQQ Weekly Return'</span>)</span>
-<span id="cb7-7"><a href="#cb7-7"></a>ax.set_ylabel(<span class="st">'SPY Weekly Return'</span>)</span>
-<span id="cb7-8"><a href="#cb7-8"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb6-2"><a href="#cb6-2"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb6-3"><a href="#cb6-3"></a></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="co"># Scatter plot of weekly returns</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a>ax.scatter(combined[<span class="st">'QQQ Return'</span>], combined[<span class="st">'SPY Return'</span>])</span>
+<span id="cb6-6"><a href="#cb6-6"></a>ax.set_title(<span class="st">'Scatter Plot of Weekly Returns (QQQ vs. SPY)'</span>)</span>
+<span id="cb6-7"><a href="#cb6-7"></a>ax.set_xlabel(<span class="st">'QQQ Weekly Return'</span>)</span>
+<span id="cb6-8"><a href="#cb6-8"></a>ax.set_ylabel(<span class="st">'SPY Weekly Return'</span>)</span>
+<span id="cb6-9"><a href="#cb6-9"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="tracking-error_files/figure-html/cell-6-output-1.png" width="402" height="281" class="figure-img"></p>
+<p><img src="tracking-error_files/figure-html/cell-6-output-1.png" width="503" height="218" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -434,44 +437,22 @@ window.Quarto = {
 <div id="cell-15" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb8-2"><a href="#cb8-2"></a></span>
-<span id="cb8-3"><a href="#cb8-3"></a><span class="co"># Histogram of weekly returns</span></span>
-<span id="cb8-4"><a href="#cb8-4"></a>combined[<span class="st">'QQQ Return'</span>].hist(ax<span class="op">=</span>ax, alpha<span class="op">=</span><span class="fl">0.5</span>, bins<span class="op">=</span><span class="dv">50</span>, label<span class="op">=</span><span class="st">'QQQ'</span>)</span>
-<span id="cb8-5"><a href="#cb8-5"></a>combined[<span class="st">'SPY Return'</span>].hist(ax<span class="op">=</span>ax, alpha<span class="op">=</span><span class="fl">0.5</span>, bins<span class="op">=</span><span class="dv">50</span>, label<span class="op">=</span><span class="st">'SPY'</span>)</span>
-<span id="cb8-6"><a href="#cb8-6"></a>ax.set_title(<span class="st">'Histogram of Weekly Returns (QQQ vs. SPY)'</span>)</span>
-<span id="cb8-7"><a href="#cb8-7"></a>ax.set_xlabel(<span class="st">'Weekly Return'</span>)</span>
-<span id="cb8-8"><a href="#cb8-8"></a>ax.set_ylabel(<span class="st">'Frequency'</span>)</span>
-<span id="cb8-9"><a href="#cb8-9"></a>ax.legend()</span>
-<span id="cb8-10"><a href="#cb8-10"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb7-2"><a href="#cb7-2"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb7-3"><a href="#cb7-3"></a></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="co"># Histogram of weekly returns</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a>combined[<span class="st">'QQQ Return'</span>].hist(ax<span class="op">=</span>ax, alpha<span class="op">=</span><span class="fl">0.5</span>, bins<span class="op">=</span><span class="dv">50</span>, label<span class="op">=</span><span class="st">'QQQ'</span>)</span>
+<span id="cb7-6"><a href="#cb7-6"></a>combined[<span class="st">'SPY Return'</span>].hist(ax<span class="op">=</span>ax, alpha<span class="op">=</span><span class="fl">0.5</span>, bins<span class="op">=</span><span class="dv">50</span>, label<span class="op">=</span><span class="st">'SPY'</span>)</span>
+<span id="cb7-7"><a href="#cb7-7"></a>ax.set_title(<span class="st">'Histogram of Weekly Returns (QQQ vs. SPY)'</span>)</span>
+<span id="cb7-8"><a href="#cb7-8"></a>ax.set_xlabel(<span class="st">'Weekly Return'</span>)</span>
+<span id="cb7-9"><a href="#cb7-9"></a>ax.set_ylabel(<span class="st">'Frequency'</span>)</span>
+<span id="cb7-10"><a href="#cb7-10"></a>ax.legend()</span>
+<span id="cb7-11"><a href="#cb7-11"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="tracking-error_files/figure-html/cell-7-output-1.png" width="384" height="281" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="box-plot-comparing-weekly-returns" class="level3">
-<h3 class="anchored" data-anchor-id="box-plot-comparing-weekly-returns">Box Plot Comparing Weekly Returns</h3>
-<p>A box plot comparing the weekly returns of QQQ and SPY illustrates the central tendency and dispersion of returns. This visualization quickly highlights medians, quartiles, and outliers, highlighting the potential performance risks.</p>
-<div id="cell-17" class="cell" data-execution_count="7">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb9-2"><a href="#cb9-2"></a></span>
-<span id="cb9-3"><a href="#cb9-3"></a><span class="co"># Box plot of weekly returns</span></span>
-<span id="cb9-4"><a href="#cb9-4"></a>combined[[<span class="st">'QQQ Return'</span>, <span class="st">'SPY Return'</span>]].plot(kind<span class="op">=</span><span class="st">'box'</span>, ax<span class="op">=</span>ax)</span>
-<span id="cb9-5"><a href="#cb9-5"></a>ax.set_title(<span class="st">'Box Plot of Weekly Returns (QQQ vs. SPY)'</span>)</span>
-<span id="cb9-6"><a href="#cb9-6"></a>ax.set_ylabel(<span class="st">'Weekly Return'</span>)</span>
-<span id="cb9-7"><a href="#cb9-7"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="tracking-error_files/figure-html/cell-8-output-1.png" width="402" height="265" class="figure-img"></p>
+<p><img src="tracking-error_files/figure-html/cell-7-output-1.png" width="488" height="218" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -480,25 +461,26 @@ window.Quarto = {
 <section id="rolling-standard-deviation-of-weekly-returns" class="level3">
 <h3 class="anchored" data-anchor-id="rolling-standard-deviation-of-weekly-returns">Rolling Standard Deviation of Weekly Returns</h3>
 <p>A chart showing the rolling standard deviation of weekly returns for QQQ and SPY illustrates the volatility of each ETF over time. This visualization highlights periods of high and low volatility, essential for understanding risk dynamics and how closely funds track their benchmarks.</p>
-<div id="cell-19" class="cell" data-execution_count="8">
+<div id="cell-17" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb10-2"><a href="#cb10-2"></a></span>
-<span id="cb10-3"><a href="#cb10-3"></a><span class="co"># Calculate rolling standard deviation</span></span>
-<span id="cb10-4"><a href="#cb10-4"></a>rolling_std_dev <span class="op">=</span> combined[[<span class="st">'QQQ Return'</span>, <span class="st">'SPY Return'</span>]].rolling(window<span class="op">=</span><span class="dv">26</span>).std()</span>
-<span id="cb10-5"><a href="#cb10-5"></a></span>
-<span id="cb10-6"><a href="#cb10-6"></a><span class="co"># Plot rolling standard deviation</span></span>
-<span id="cb10-7"><a href="#cb10-7"></a>rolling_std_dev.plot(ax<span class="op">=</span>ax)</span>
-<span id="cb10-8"><a href="#cb10-8"></a>ax.set_title(<span class="st">'Rolling Standard Deviation of Weekly Returns (QQQ vs. SPY)'</span>)</span>
-<span id="cb10-9"><a href="#cb10-9"></a>ax.set_xlabel(<span class="st">'Date'</span>)</span>
-<span id="cb10-10"><a href="#cb10-10"></a>ax.set_ylabel(<span class="st">'Rolling Standard Deviation'</span>)</span>
-<span id="cb10-11"><a href="#cb10-11"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb8-2"><a href="#cb8-2"></a>plt.style.use(<span class="st">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb8-3"><a href="#cb8-3"></a></span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="co"># Calculate rolling standard deviation</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a>rolling_std_dev <span class="op">=</span> (combined[<span class="st">'QQQ Return'</span>] <span class="op">-</span> combined[<span class="st">'SPY Return'</span>]).rolling(window<span class="op">=</span><span class="dv">52</span>).std().multiply(<span class="dv">52</span><span class="op">**</span><span class="fl">0.5</span>).multiply(<span class="dv">100</span>)</span>
+<span id="cb8-6"><a href="#cb8-6"></a></span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="co"># Plot rolling standard deviation</span></span>
+<span id="cb8-8"><a href="#cb8-8"></a>rolling_std_dev.plot(ax<span class="op">=</span>ax)</span>
+<span id="cb8-9"><a href="#cb8-9"></a>ax.set_title(<span class="st">'Rolling Tracking Error observed on Weekly Returns (QQQ vs. SPY)'</span>)</span>
+<span id="cb8-10"><a href="#cb8-10"></a>ax.set_xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb8-11"><a href="#cb8-11"></a>ax.set_ylabel(<span class="st">'Rolling TE (52 Weeks)'</span>)</span>
+<span id="cb8-12"><a href="#cb8-12"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="tracking-error_files/figure-html/cell-9-output-1.png" width="448" height="281" class="figure-img"></p>
+<p><img src="tracking-error_files/figure-html/cell-8-output-1.png" width="488" height="218" class="figure-img"></p>
 </figure>
 </div>
 </div>

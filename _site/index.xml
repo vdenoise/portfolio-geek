@@ -10,7 +10,715 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Tue, 13 Aug 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 21 Aug 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Must Read Papers Series #1: Review of Portfolio Selection (Harry Markowitz)</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/papers-reviews/Portfolio_Selection.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="review-of-portfolio-selection-by-harry-markowitz" class="level1">
+<h1>Review of: “Portfolio Selection” by Harry Markowitz</h1>
+<section id="where-to-find-this-paper" class="level2">
+<h2 class="anchored" data-anchor-id="where-to-find-this-paper">Where to find this paper</h2>
+<p><a href="https://www.jstor.org/stable/2975974">You can find the full paper here</a></p>
+</section>
+<section id="why-this-is-an-key-paper-for-the-finance-industry-and-finance-professionals" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-is-an-key-paper-for-the-finance-industry-and-finance-professionals">Why This is an Key Paper for the Finance Industry and Finance Professionals 🚀</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Imagine trying to navigate a vast ocean without a map. In the finance world, Markowitz’s is one of the few commonly agreed maps, guiding investors through portfolio selection. Originally published in 1952, this research introduced the brand new concept of modern portfolio theory (MPT), which fundamentally transformed how we think about investment strategies. It highlights that risk and return are not mere afterthoughts but the two sides of the same coin in investment decision-making.</p>
+<p>Investors used to focus primarily on individual stocks, often leading to risk-laden portfolios. However, Markowitz urged us to look at the bigger picture: how assets work together, or rather, how their values interact. By advocating for diversification, he demonstrated that combining a variety of investments can significantly reduce risk without sacrificing returns. This insight is invaluable! It means that financiers can target greater predictability and stability in uncertain markets.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/business-graphs-and-magnifying-glass-on-table.jpg" class="img-fluid figure-img"></p>
+<figcaption>Selecting and weighting assets into portfolio is a complex and ambitious task.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Moreover, his mathematical models for calculating the optimal mix of assets have become fundamental in finance education and practice. Even today, Markowitz’s principles underpin the analytical tools that wealth managers and hedge fund strategists use to optimise portfolios.</p>
+<p>In essence, Markowitz’s work gave us a new lens to view investments, creating a safer, more systematic approach for finance professionals and thereby establishing standards that define today’s investment strategies. His research is not merely of historical significance; its principles continue to shape our everyday financial decisions. Understanding this paper is a stepping stone for anyone committed to excelling in finance.</p>
+</section>
+<section id="starting-point-and-key-assumptions" class="level2">
+<h2 class="anchored" data-anchor-id="starting-point-and-key-assumptions">Starting Point and Key Assumptions</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In ‘Portfolio Selection’, Harry Markowitz establishes several key assumptions essential for his framework, which includes:</p>
+<ol type="1">
+<li><strong>Investor Rationality</strong>: It is assumed that investors are rational and make decisions based on expected return and risk potential rather than emotional or speculative trends.</li>
+<li><strong>Markets are Efficient</strong>: The paper posits that all investors have access to the same information. Therefore, prices reflect all available information at any given time, making it impossible to consistently achieve excess returns.</li>
+<li><strong>Normal Distribution of Returns</strong>: Markowitz assumes asset returns follow a normal distribution whereby the mean and variance can sufficiently represent the performance of the assets.</li>
+<li><strong>Static Investors’ Horizon</strong>: The analysis assumes a single, unchanged investment period. Investors are seen as making decisions based on a fixed time frame, lacking any allowance for dynamics beyond this scope.</li>
+</ol>
+<p>These critical assumptions underpin the modern portfolio theory, reflecting a systematic approach to optimise investment portfolios. Understanding these assumptions is paramount for finance professionals as it captures the theoretical essence that shapes investment strategies.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/cropped-view-of-woman-pinning-paper-craft-decorati.jpg" class="img-fluid figure-img"></p>
+<figcaption>Sélectionner a attributer un poids aux actifs, dans un environnement incertain est un exercice difficile et ambitieux.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="key-formulas" class="level2">
+<h2 class="anchored" data-anchor-id="key-formulas">Key Formulas</h2>
+<section id="expected-return" class="level3">
+<h3 class="anchored" data-anchor-id="expected-return">Expected Return</h3>
+<p><img src="https://latex.codecogs.com/png.latex?%20E(R)%20=%20w_1%20E(R_1)%20+%20w_2%20E(R_2)%20+%20...%20+%20w_n%20E(R_n)%20"> This formula calculates the expected return of a portfolio where:</p>
+<ul>
+<li>E(R): expected return of the portfolio</li>
+<li>w_i: weight of asset i in the portfolio</li>
+<li>E(R_i): expected return of asset i</li>
+</ul>
+</section>
+<section id="portfolio-expected-variance-2-assets" class="level3">
+<h3 class="anchored" data-anchor-id="portfolio-expected-variance-2-assets">Portfolio Expected Variance (2 assets)</h3>
+<p><img src="https://latex.codecogs.com/png.latex?%20%5Csigma_p%5E2%20=%20w_1%5E2%20%5Csigma_1%5E2%20+%20w_2%5E2%20%5Csigma_2%5E2%20+%202%20w_1%20w_2%20%5Csigma_%7B1,2%7D%20"> This represents the variance of portfolio returns:</p>
+<ul>
+<li>sigma_p^2: variance of the portfolio</li>
+<li>sigma_i^2: variance of asset i</li>
+<li>sigma_{i,j}: covariance between assets i and j</li>
+</ul>
+</section>
+<section id="portfolio-expected-variance-n-assets" class="level3">
+<h3 class="anchored" data-anchor-id="portfolio-expected-variance-n-assets">Portfolio Expected Variance (n assets)</h3>
+<p><img src="https://latex.codecogs.com/png.latex?%20V(w)%20=%20%5Csum_%7Bi=1%7D%5E%7Bn%7D%20w_i%5E2%20V_i%20+%202%20%5Csum_%7Bi%20%5Cneq%20j%7D%20w_i%20w_j%20Cov_%7Bij%7D%20"> This expression calculates the variance of the portfolio:</p>
+<ul>
+<li>V(w): variance of the portfolio</li>
+<li>V_i: variance of asset i</li>
+<li>w_i: weight of asset i</li>
+<li>Cov_{ij}: covariance between assets i and j</li>
+</ul>
+</section>
+<section id="portfolio-expected-return" class="level3">
+<h3 class="anchored" data-anchor-id="portfolio-expected-return">Portfolio Expected Return</h3>
+<p><img src="https://latex.codecogs.com/png.latex?%20R(w)%20=%20%5Csum_%7Bi=1%7D%5E%7Bn%7D%20w_i%20R_i%20"> This calculates the weighted return for each asset in a portfolio:</p>
+<ul>
+<li>R(w): portfolio return</li>
+<li>w_i: weight of the asset</li>
+<li>R_i: return of the asset</li>
+</ul>
+</section>
+<section id="efficient-frontier" class="level3">
+<h3 class="anchored" data-anchor-id="efficient-frontier">Efficient Frontier</h3>
+<p>To find the efficient frontier, we aim to minimize the portfolio’s variance <img src="https://latex.codecogs.com/png.latex?%5Csigma_p%5E2"> for a given level of expected return <img src="https://latex.codecogs.com/png.latex?E(R_p)">. This leads to the following constrained optimization problem:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7BMinimize:%20%7D%20%5Csigma_p%5E2%20=%20%5Csum_%7Bi=1%7D%5E%7Bn%7D%20%5Csum_%7Bj=1%7D%5E%7Bn%7D%20w_i%20w_j%20%5Csigma_%7Bij%7D%0A"></p>
+<p>Subject to: <img src="https://latex.codecogs.com/png.latex?%0A%5Csum_%7Bi=1%7D%5E%7Bn%7D%20w_i%20E(R_i)%20=%20E(R_p)%20%5Cquad%20%5Ctext%7B(target%20expected%20return)%7D%0A"> <img src="https://latex.codecogs.com/png.latex?%0A%5Csum_%7Bi=1%7D%5E%7Bn%7D%20w_i%20=%201%20%5Cquad%20%5Ctext%7B(sum%20of%20portfolio%20weights%20equals%201)%7D%0A"></p>
+</section>
+</section>
+<section id="key-outcomes-and-academic-impact" class="level2">
+<h2 class="anchored" data-anchor-id="key-outcomes-and-academic-impact">Key Outcomes and Academic Impact</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Markowitz’s seminal work in ‘Portfolio Selection’ introduces critical intuitions that shaped investment strategies. By integrating the notions of risk and return into a unified framework, he emphasized that:</p>
+<ul>
+<li><strong>Risk Is Manageable</strong>: Instead of being perceived as a threat, risk can be managed through diversification. The paper laid the foundation for Investors can reduce unsystematic risk by strategically combining assets.</li>
+<li><strong>The Significance of Correlation</strong>: The relationships between asset returns play a vital role in portfolio performance. Markowitz illustrated how combining negatively correlated assets could lower overall risk, leading to the practice of diversification.</li>
+<li><strong>Expected Returns vs.&nbsp;Actual Returns</strong>: The concept of expected return establishes that investors must look at potential returns instead of relying on historic performance alone. It emphasises forward thinking.</li>
+<li><strong>The Efficient Frontier</strong>: A groundbreaking visual representation of optimal portfolios, this concept allows investors to see the balance of risk and returns. This enables the selection of portfolios that maximizes returns for a given risk level.</li>
+<li><strong>Broadening Investment Perspectives</strong>: The framework encourages investment beyond individual assets; portfolio selection thereby becomes a comprehensive exercise in combining different assets based on their projected performance and risk rarities.</li>
+</ul>
+<p>These insights have had lasting implications and have become principles that underpin many modern investment strategies and theories.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://portfolio-geek.com/pictures/startup-diversity-teamwork-brainstorming-business.jpg" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="key-takeaways-for-you-as-an-investor" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways-for-you-as-an-investor">Key Takeaways for you as an Investor</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<ul>
+<li><strong>Short-Term Strategy</strong>: Investors focusing on the short term should familiarize themselves with the risk-return relationship, ensuring they seek diversification across sectors and asset classes. Strategies like sector rotation could leverage Markowitz’s theories while managing risk through varied exposure.</li>
+<li><strong>Medium-Term Strategy</strong>: Medium-term investors should leverage anticipation of market cycles by strategically adapting their portfolios to capture growth phases. They should continuously adjust their asset allocation based on evolving market conditions while aiming to stay on the efficient frontier.</li>
+<li><strong>Long-Term Strategy</strong>: For long-term investors, the emphasis should remain on maintaining a balanced and diversified portfolio. Incorporating periodic reviews helps ensure expectations of risk and return align with ongoing investment goals. Adopting an indexed or passively managed portfolio strategy can support steady growth over time, rooted in the principles established in the body of work by Markowitz.</li>
+</ul>
+<p>Markowitz’s insights create a framework that empowers investors to make informed decisions, naturally adapting strategies to evolving market environments while managing their risk.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://portfolio-geek.com/pictures/glad-adult-japanese-male-working-with-charts-and.jpg" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="article-summary" class="level2">
+<h2 class="anchored" data-anchor-id="article-summary">Article Summary</h2>
+</section>
+</section>
+<section id="summary-of-portfolio-selection" class="level1">
+<h1>Summary of Portfolio Selection</h1>
+<p>In ‘Portfolio Selection’, Harry Markowitz introduces an innovative framework that fundamentally transforms how we think about investing. Before this work, most investors viewed stocks in isolation. However, Markowitz presents a compelling argument for aggregation, or portfolio construction, viewing each investment not just by its individual performance, but by how it contributes to the risk-reward profile of the overall portfolio.</p>
+<section id="the-core-of-the-theory" class="level2">
+<h2 class="anchored" data-anchor-id="the-core-of-the-theory">The Core of the Theory</h2>
+<p>Markowitz’s central thesis centers around the concept of modern portfolio theory (MPT), which asserts that an investor can construct a portfolio of assets in such a way as to maximize expected return for a given level of risk. This practical yet theoretical approach emphasises diversification as a key strategy in risk management. By combining a variety of assets whose returns do not correlate perfectly, the investor can reduce volatility and enhance returns, given that risk is not merely considered on standalone investments.</p>
+<section id="key-elements-of-the-framework" class="level3">
+<h3 class="anchored" data-anchor-id="key-elements-of-the-framework">Key Elements of the Framework</h3>
+<ol type="1">
+<li><strong>Expected Returns</strong>: Investors need to focus on theoretical returns, which are calculated based on an asset’s historical performance and future projections.</li>
+<li><strong>Risk Assessment</strong>: Defining risk as the variance of asset returns, Markowitz employs mathematical tools to assess potential risk across multiple investment options instead of simplifying it merely to volatility.</li>
+<li><strong>Efficient Frontier</strong>: One of Markowitz’s most revolutionary concepts is the efficient frontier, a graphical representation of the optimal portfolios offering the highest return for a given level of risk. It illustrates the trade-off between risk and return and exemplifies the benefits of diversification.</li>
+</ol>
+</section>
+<section id="mathematical-model" class="level3">
+<h3 class="anchored" data-anchor-id="mathematical-model">Mathematical Model</h3>
+<p>Utilising quadratic programming, Markowitz provides a mathematical formulation to derive the weights of various assets within a portfolio, thus enabling investors to pinpoint the maximum expected return relative to their risk tolerance. This mathematical model laid the groundwork for later developments in finance, including the Capital Asset Pricing Model (CAPM).</p>
+</section>
+<section id="implications-for-investors" class="level3">
+<h3 class="anchored" data-anchor-id="implications-for-investors">Implications for Investors</h3>
+<p>Markowitz’s model has indeed redefined asset allocation. It underscores that the correlation between different assets plays a crucial role in overall portfolio risk. Investors are thus encouraged to seek a diversified strategy, reducing unsystematic risk significantly. Furthermore, it powers the discourse on active vs passive management, with passive management promoting the ideas inherent in Markowitz’s findings.</p>
+</section>
+<section id="continuing-influence" class="level3">
+<h3 class="anchored" data-anchor-id="continuing-influence">Continuing Influence</h3>
+<p>Markowitz’s framework not only influenced subsequent investment strategies but also reshaped the very fabric of portfolio management. His theories continue to inform modern financial practices, prompting wealth managers, hedge funds, and retail investors to adopt diversified strategies founded on robust mathematical analysis.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Overall, Harry Markowitz’s ‘Portfolio Selection’ is more than just an academic paper; it is a seminal work that continues to resonate within both academic and practical applications of finance today. The implications of risk management and optimization laid out in the paper serve as a crucial foundation for investors looking to navigate the complex landscape of financial markets.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>paper</category>
+  <category>academic</category>
+  <category>research</category>
+  <category>review</category>
+  <category>portfolio-construction</category>
+  <guid>https://portfolio-geek.com/posts/papers-reviews/Portfolio_Selection.html</guid>
+  <pubDate>Wed, 21 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/business-graphs-and-magnifying-glass-on-table.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Tracking Error of QQQ vs SPY: A Practical Guide with Python</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/articles/tutorials/tracking-error.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="measuring-tracking-error-a-practical-guide-with-python" class="level1">
+<h1>Measuring Tracking Error: A Practical Guide with Python</h1>
+<p>In the world of finance and investing, understanding how closely an investment tracks its benchmark index is crucial for evaluating performance and risk. This concept is known as tracking error. In this blog post, we’ll delve into the tracking error of QQQ and SPY using weekly returns. We’ll discuss why this metric matters, how it’s calculated, and provide you with a full suite of examples using Python to analyze these ETFs.</p>
+<section id="what-is-tracking-error-and-why-it-matters" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-tracking-error-and-why-it-matters">What is Tracking Error and Why It Matters</h2>
+<p>Tracking error is a measure of how closely a fund follows its benchmark index. For investors and portfolio managers, this metric is crucial as it helps in assessing the risk associated with a fund’s performance relative to its benchmark. If you’re using index funds or ETFs like QQQ and SPY, tracking error gives you insights into how accurately these funds replicate their respective indices. For this article we will use the same metric to compare 2 ETFs, with a ### Performance Evaluation</p>
+<p>Tracking error provides a clear picture of how well a fund replicates its benchmark. If the tracking error is low, the fund closely follows the index, making it a reliable choice for passive investors. ### Risk Assessment</p>
+<p>It helps investors understand the consistency of a fund’s returns relative to its benchmark. A high tracking error indicates higher risk and volatility, signaling investors to tread with caution. ### Portfolio Management</p>
+<p>Fund managers use tracking error to make informed decisions about rebalancing their portfolios. By minimizing tracking error, they can align their funds more closely with the benchmark, offering stable returns.</p>
+</section>
+<section id="key-formula-and-parameters" class="level2">
+<h2 class="anchored" data-anchor-id="key-formula-and-parameters">Key Formula and Parameters</h2>
+<p>Tracking error is essentially the standard deviation of the difference between the portfolio returns and the benchmark returns over a specified period. The formula for tracking error is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7BTracking%20Error%7D%20=%20%5Csqrt%7B%20%5Cfrac%7B1%7D%7BN-1%7D%20%5Csum_%7Bi=1%7D%5E%7BN%7D%20(R_%7Bp,i%7D%20-%20R_%7Bb,i%7D)%5E2%20%7D%0A"></p>
+<p>Where:</p>
+<ul>
+<li>(R_{p,i}) = Return of the portfolio (e.g., QQQ) for period (i)</li>
+<li>(R_{b,i}) = Return of the benchmark index (e.g., SPY) for period (i)</li>
+<li>(N) = Total number of periods (weekly returns in our case)</li>
+</ul>
+<p>This formula calculates the standard deviation of the difference between portfolio returns and benchmark returns. A lower tracking error indicates closer alignment, whereas a higher tracking error indicates greater deviation.</p>
+</section>
+<section id="calculating-weekly-returns-and-tracking-error" class="level2">
+<h2 class="anchored" data-anchor-id="calculating-weekly-returns-and-tracking-error">Calculating Weekly Returns and Tracking Error</h2>
+<p>To get started, make sure you have the following Python libraries installed:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">pip</span> install yfinance pandas numpy matplotlib</span></code></pre></div>
+<section id="download-historical-data" class="level3">
+<h3 class="anchored" data-anchor-id="download-historical-data">Download Historical Data</h3>
+<p>We’ll use the <code>yfinance</code> library to download the historical weekly data for QQQ and SPY.</p>
+<div id="cell-5" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%</span>capture</span>
+<span id="cb2-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> yfinance <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> yf</span>
+<span id="cb2-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb2-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb2-5"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb2-6"></span>
+<span id="cb2-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Download historical data for QQQ and SPY</span></span>
+<span id="cb2-8">qqq <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.download(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ'</span>, start<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'2015-01-01'</span>, end<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'2024-06-30'</span>, interval<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'1wk'</span>)</span>
+<span id="cb2-9">spy <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yf.download(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY'</span>, start<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'2015-01-01'</span>, end<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'2024-06-30'</span>, interval<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'1wk'</span>)</span>
+<span id="cb2-10"></span>
+<span id="cb2-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate weekly returns</span></span>
+<span id="cb2-12">qqq[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Weekly Return'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> qqq[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Adj Close'</span>].pct_change().dropna()</span>
+<span id="cb2-13">spy[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Weekly Return'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> spy[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Adj Close'</span>].pct_change().dropna()</span></code></pre></div>
+</details>
+</div>
+</section>
+<section id="calculate-tracking-error" class="level3">
+<h3 class="anchored" data-anchor-id="calculate-tracking-error">Calculate Tracking Error</h3>
+<p>With our weekly returns calculated, we can now compute the tracking error.</p>
+<div id="cell-7" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Align the indexes of QQQ and SPY weekly returns</span></span>
+<span id="cb3-2">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ddm-chart.mplstyle'</span>)</span>
+<span id="cb3-3">combined <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> pd.concat([qqq[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Weekly Return'</span>], spy[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Weekly Return'</span>]], axis<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, join<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'inner'</span>)</span>
+<span id="cb3-4">combined.columns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ Return'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY Return'</span>]</span>
+<span id="cb3-5"></span>
+<span id="cb3-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate tracking error</span></span>
+<span id="cb3-7">combined[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Tracking Error'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> combined[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ Return'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> combined[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY Return'</span>]</span>
+<span id="cb3-8">tracking_error <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.std(combined[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Tracking Error'</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> np.sqrt(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>)  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Annualize the tracking error</span></span></code></pre></div>
+</details>
+</div>
+</section>
+</section>
+<section id="visualizing-historical-performance-and-tracking-error" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-historical-performance-and-tracking-error">Visualizing Historical Performance and Tracking Error</h2>
+<p>Visuals often provide the best insight into data trends and relationships. Let’s create various charts to help us understand the performance, volatility, and tracking error of QQQ and SPY.</p>
+<section id="historical-weekly-prices" class="level3">
+<h3 class="anchored" data-anchor-id="historical-weekly-prices">Historical Weekly Prices</h3>
+<p>A line chart showcasing the historical weekly closing prices of QQQ and SPY over the past five years provides a visual representation of performance trends. This chart allows investors to quickly identify trends, correlations, and divergence periods between the two funds.</p>
+<div id="cell-9" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb4-2">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb4-3"></span>
+<span id="cb4-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot weekly closing prices</span></span>
+<span id="cb4-5">ax.plot(qqq[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Adj Close'</span>], label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ'</span>)</span>
+<span id="cb4-6">ax.plot(spy[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Adj Close'</span>], label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY'</span>)</span>
+<span id="cb4-7">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Weekly Closing Prices (QQQ vs. SPY)'</span>)</span>
+<span id="cb4-8">ax.set_xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb4-9">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Price ($)'</span>)</span>
+<span id="cb4-10">ax.legend()</span>
+<span id="cb4-11">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-4-output-1.png" width="495" height="218" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="weekly-returns-bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="weekly-returns-bar-chart">Weekly Returns Bar Chart</h3>
+<p>A bar chart displaying the weekly returns of QQQ and SPY side-by-side for the same five-year period illustrates the short-term performance comparison. This view makes it easier to observe how often QQQ’s returns outperformed or underperformed SPY during the specified timeframe.</p>
+<div id="cell-11" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.dates <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> mdates</span>
+<span id="cb5-2">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb5-3">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb5-4"></span>
+<span id="cb5-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot weekly returns</span></span>
+<span id="cb5-6">combined[[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ Return'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY Return'</span>]].tail(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">104</span>).multiply(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>).plot(kind<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'bar'</span>, ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax, width<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.8</span>)</span>
+<span id="cb5-7">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Weekly Returns (QQQ vs. SPY, in %)'</span>)</span>
+<span id="cb5-8">ax.set_xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb5-9">ax.xaxis.set_major_locator(mdates.MonthLocator(interval<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)) </span>
+<span id="cb5-10"></span>
+<span id="cb5-11">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Weekly Return'</span>)</span>
+<span id="cb5-12">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-5-output-1.png" width="497" height="302" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="scatter-plot-of-weekly-returns" class="level3">
+<h3 class="anchored" data-anchor-id="scatter-plot-of-weekly-returns">Scatter Plot of Weekly Returns</h3>
+<p>A scatter plot of weekly returns for QQQ against SPY helps depict the relationship between the returns of these two ETFs. By analyzing the data points’ distribution, investors can assess the levels of correlation and volatility between the two funds.</p>
+<div id="cell-13" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb6-2">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb6-3"></span>
+<span id="cb6-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Scatter plot of weekly returns</span></span>
+<span id="cb6-5">ax.scatter(combined[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ Return'</span>], combined[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY Return'</span>])</span>
+<span id="cb6-6">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Scatter Plot of Weekly Returns (QQQ vs. SPY)'</span>)</span>
+<span id="cb6-7">ax.set_xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ Weekly Return'</span>)</span>
+<span id="cb6-8">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY Weekly Return'</span>)</span>
+<span id="cb6-9">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-6-output-1.png" width="503" height="218" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="histogram-of-weekly-returns" class="level3">
+<h3 class="anchored" data-anchor-id="histogram-of-weekly-returns">Histogram of Weekly Returns</h3>
+<p>A histogram of the weekly returns for QQQ and SPY provides insights into the distribution of returns over the displayed five-year period. This visualization helps highlight the frequency of different return sizes and indicates whether one ETF exhibited more consistent performance.</p>
+<div id="cell-15" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb7-2">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb7-3"></span>
+<span id="cb7-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Histogram of weekly returns</span></span>
+<span id="cb7-5">combined[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ Return'</span>].hist(ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax, alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>, bins<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">50</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ'</span>)</span>
+<span id="cb7-6">combined[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY Return'</span>].hist(ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax, alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>, bins<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">50</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY'</span>)</span>
+<span id="cb7-7">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Histogram of Weekly Returns (QQQ vs. SPY)'</span>)</span>
+<span id="cb7-8">ax.set_xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Weekly Return'</span>)</span>
+<span id="cb7-9">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Frequency'</span>)</span>
+<span id="cb7-10">ax.legend()</span>
+<span id="cb7-11">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-7-output-1.png" width="488" height="218" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="rolling-standard-deviation-of-weekly-returns" class="level3">
+<h3 class="anchored" data-anchor-id="rolling-standard-deviation-of-weekly-returns">Rolling Standard Deviation of Weekly Returns</h3>
+<p>A chart showing the rolling standard deviation of weekly returns for QQQ and SPY illustrates the volatility of each ETF over time. This visualization highlights periods of high and low volatility, essential for understanding risk dynamics and how closely funds track their benchmarks.</p>
+<div id="cell-17" class="cell" data-execution_count="7">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb8-2">plt.style.use(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'getting_started-chart.mplstyle'</span>)</span>
+<span id="cb8-3"></span>
+<span id="cb8-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate rolling standard deviation</span></span>
+<span id="cb8-5">rolling_std_dev <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (combined[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'QQQ Return'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> combined[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SPY Return'</span>]).rolling(window<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span>).std().multiply(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">52</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>).multiply(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>)</span>
+<span id="cb8-6"></span>
+<span id="cb8-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot rolling standard deviation</span></span>
+<span id="cb8-8">rolling_std_dev.plot(ax<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ax)</span>
+<span id="cb8-9">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling Tracking Error observed on Weekly Returns (QQQ vs. SPY)'</span>)</span>
+<span id="cb8-10">ax.set_xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Date'</span>)</span>
+<span id="cb8-11">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Rolling TE (52 Weeks)'</span>)</span>
+<span id="cb8-12">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-8-output-1.png" width="488" height="218" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>data</category>
+  <category>correlation</category>
+  <category>relationship</category>
+  <category>tracking-error</category>
+  <category>statistics</category>
+  <guid>https://portfolio-geek.com/posts/articles/tutorials/tracking-error.html</guid>
+  <pubDate>Sat, 17 Aug 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/lection-on-stock-market-trading.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>14.08.2024: Exploring the Link Between Declining Manufacturing Wages and Unionization - A Critical Insight</title>
   <dc:creator>Vincent D.</dc:creator>
@@ -633,508 +1341,6 @@ font-style: inherit;">"Correlation"</span>)</span>
   <category>analytics</category>
   <category>statistics</category>
   <guid>https://portfolio-geek.com/posts/articles/tutorials/correlation-returns.html</guid>
-  <pubDate>Mon, 12 Aug 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/green-cutting-mat-with-geometric-patterns.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Correlation of returns: why it matters, and how to analyse it with Python</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/articles/tutorials/tracking-error.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="tracking-error-of-qqq-vs-spy-a-practical-guide-with-python" class="level1">
-<h1>Tracking Error of QQQ vs SPY: A Practical Guide with Python</h1>
-<p>In the world of finance and investing, understanding how closely an investment tracks its benchmark index is crucial for evaluating performance and risk. This concept is known as tracking error. In this blog post, we’ll delve into the tracking error of QQQ and SPY using weekly returns. We’ll discuss why this metric matters, how it’s calculated, and provide you with a full suite of examples using Python to analyze these ETFs.</p>
-<section id="what-is-tracking-error-and-why-it-matters" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-tracking-error-and-why-it-matters">What is Tracking Error and Why It Matters</h2>
-<p>Tracking error is a measure of how closely a fund follows its benchmark index. For investors and portfolio managers, this metric is crucial as it helps in assessing the risk associated with a fund’s performance relative to its benchmark. If you’re using index funds or ETFs like QQQ and SPY, tracking error gives you insights into how accurately these funds replicate their respective indices. ### Performance Evaluation</p>
-<p>Tracking error provides a clear picture of how well a fund replicates its benchmark. If the tracking error is low, the fund closely follows the index, making it a reliable choice for passive investors. ### Risk Assessment</p>
-<p>It helps investors understand the consistency of a fund’s returns relative to its benchmark. A high tracking error indicates higher risk and volatility, signaling investors to tread with caution. ### Portfolio Management</p>
-<p>Fund managers use tracking error to make informed decisions about rebalancing their portfolios. By minimizing tracking error, they can align their funds more closely with the benchmark, offering stable returns.</p>
-</section>
-<section id="key-formula-and-parameters" class="level2">
-<h2 class="anchored" data-anchor-id="key-formula-and-parameters">Key Formula and Parameters</h2>
-<p>Tracking error is essentially the standard deviation of the difference between the portfolio returns and the benchmark returns over a specified period. The formula for tracking error is:</p>
-<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7BTracking%20Error%7D%20=%20%5Csqrt%7B%20%5Cfrac%7B1%7D%7BN-1%7D%20%5Csum_%7Bi=1%7D%5E%7BN%7D%20(R_%7Bp,i%7D%20-%20R_%7Bb,i%7D)%5E2%20%7D%0A"></p>
-<p>Where:</p>
-<ul>
-<li>(R_{p,i}) = Return of the portfolio (e.g., QQQ) for period (i)</li>
-<li>(R_{b,i}) = Return of the benchmark index (e.g., SPY) for period (i)</li>
-<li>(N) = Total number of periods (weekly returns in our case)</li>
-</ul>
-<p>This formula calculates the standard deviation of the difference between portfolio returns and benchmark returns. A lower tracking error indicates closer alignment, whereas a higher tracking error indicates greater deviation.</p>
-</section>
-<section id="calculating-weekly-returns-and-tracking-error" class="level2">
-<h2 class="anchored" data-anchor-id="calculating-weekly-returns-and-tracking-error">Calculating Weekly Returns and Tracking Error</h2>
-<p>To get started, make sure you have the following Python libraries installed:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">pip</span> install yfinance pandas numpy matplotlib</span></code></pre></div>
-<section id="download-historical-data" class="level3">
-<h3 class="anchored" data-anchor-id="download-historical-data">Download Historical Data</h3>
-<p>We’ll use the <code>yfinance</code> library to download the historical weekly data for QQQ and SPY.</p>
-<div id="cell-5" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> yfinance <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> yf</span>
-<span id="cb2-2"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> pd</span>
-<span id="cb2-3"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> np</span>
-<span id="cb2-4"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> plt</span>
-<span id="cb2-5"></span>
-<span id="cb2-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Download historical data for QQQ and SPY</span></span>
-<span id="cb2-7">qqq <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> yf.download(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'QQQ'</span>, start<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'2015-01-01'</span>, end<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'2020-12-31'</span>, interval<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'1wk'</span>)</span>
-<span id="cb2-8">spy <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> yf.download(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SPY'</span>, start<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'2015-01-01'</span>, end<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'2020-12-31'</span>, interval<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'1wk'</span>)</span>
-<span id="cb2-9"></span>
-<span id="cb2-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Calculate weekly returns</span></span>
-<span id="cb2-11">qqq[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Weekly Return'</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> qqq[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Adj Close'</span>].pct_change().dropna()</span>
-<span id="cb2-12">spy[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Weekly Return'</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> spy[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Adj Close'</span>].pct_change().dropna()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-stderr">
-<pre><code>[*********************100%%**********************]  1 of 1 completed
-[*********************100%%**********************]  1 of 1 completed</code></pre>
-</div>
-</div>
-</section>
-<section id="calculate-tracking-error" class="level3">
-<h3 class="anchored" data-anchor-id="calculate-tracking-error">Calculate Tracking Error</h3>
-<p>With our weekly returns calculated, we can now compute the tracking error.</p>
-<div id="cell-7" class="cell" data-execution_count="2">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Align the indexes of QQQ and SPY weekly returns</span></span>
-<span id="cb4-2">combined <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> pd.concat([qqq[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Weekly Return'</span>], spy[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Weekly Return'</span>]], axis<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, join<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'inner'</span>)</span>
-<span id="cb4-3">combined.columns <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'QQQ Return'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SPY Return'</span>]</span>
-<span id="cb4-4"></span>
-<span id="cb4-5"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Calculate tracking error</span></span>
-<span id="cb4-6">combined[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Tracking Error'</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> combined[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'QQQ Return'</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span> combined[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SPY Return'</span>]</span>
-<span id="cb4-7">tracking_error <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.std(combined[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Tracking Error'</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span> np.sqrt(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">52</span>)  <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Annualize the tracking error</span></span></code></pre></div>
-</details>
-</div>
-</section>
-</section>
-<section id="visualizing-historical-performance-and-tracking-error" class="level2">
-<h2 class="anchored" data-anchor-id="visualizing-historical-performance-and-tracking-error">Visualizing Historical Performance and Tracking Error</h2>
-<p>Visuals often provide the best insight into data trends and relationships. Let’s create various charts to help us understand the performance, volatility, and tracking error of QQQ and SPY.</p>
-<section id="historical-weekly-prices" class="level3">
-<h3 class="anchored" data-anchor-id="historical-weekly-prices">Historical Weekly Prices</h3>
-<p>A line chart showcasing the historical weekly closing prices of QQQ and SPY over the past five years provides a visual representation of performance trends. This chart allows investors to quickly identify trends, correlations, and divergence periods between the two funds.</p>
-<div id="cell-9" class="cell" data-execution_count="3">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1">plt.style.use(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'ggplot'</span>)</span>
-<span id="cb5-2">fig, ax <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> plt.subplots()</span>
-<span id="cb5-3"></span>
-<span id="cb5-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Plot weekly closing prices</span></span>
-<span id="cb5-5">ax.plot(qqq[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Adj Close'</span>], label<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'QQQ'</span>)</span>
-<span id="cb5-6">ax.plot(spy[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Adj Close'</span>], label<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SPY'</span>)</span>
-<span id="cb5-7">ax.set_title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Weekly Closing Prices (QQQ vs. SPY)'</span>)</span>
-<span id="cb5-8">ax.set_xlabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Date'</span>)</span>
-<span id="cb5-9">ax.set_ylabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Price ($)'</span>)</span>
-<span id="cb5-10">ax.legend()</span>
-<span id="cb5-11">plt.show()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-4-output-1.png" width="391" height="281" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="weekly-returns-bar-chart" class="level3">
-<h3 class="anchored" data-anchor-id="weekly-returns-bar-chart">Weekly Returns Bar Chart</h3>
-<p>A bar chart displaying the weekly returns of QQQ and SPY side-by-side for the same five-year period illustrates the short-term performance comparison. This view makes it easier to observe how often QQQ’s returns outperformed or underperformed SPY during the specified timeframe.</p>
-<div id="cell-11" class="cell" data-execution_count="4">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1">fig, ax <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> plt.subplots()</span>
-<span id="cb6-2"></span>
-<span id="cb6-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Plot weekly returns</span></span>
-<span id="cb6-4">combined[[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'QQQ Return'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SPY Return'</span>]].plot(kind<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'bar'</span>, ax<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>ax, width<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.8</span>)</span>
-<span id="cb6-5">ax.set_title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Weekly Returns (QQQ vs. SPY)'</span>)</span>
-<span id="cb6-6">ax.set_xlabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Date'</span>)</span>
-<span id="cb6-7">ax.set_ylabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Weekly Return'</span>)</span>
-<span id="cb6-8">plt.show()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-5-output-1.png" width="406" height="378" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="scatter-plot-of-weekly-returns" class="level3">
-<h3 class="anchored" data-anchor-id="scatter-plot-of-weekly-returns">Scatter Plot of Weekly Returns</h3>
-<p>A scatter plot of weekly returns for QQQ against SPY helps depict the relationship between the returns of these two ETFs. By analyzing the data points’ distribution, investors can assess the levels of correlation and volatility between the two funds.</p>
-<div id="cell-13" class="cell" data-execution_count="5">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1">fig, ax <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> plt.subplots()</span>
-<span id="cb7-2"></span>
-<span id="cb7-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Scatter plot of weekly returns</span></span>
-<span id="cb7-4">ax.scatter(combined[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'QQQ Return'</span>], combined[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SPY Return'</span>])</span>
-<span id="cb7-5">ax.set_title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Scatter Plot of Weekly Returns (QQQ vs. SPY)'</span>)</span>
-<span id="cb7-6">ax.set_xlabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'QQQ Weekly Return'</span>)</span>
-<span id="cb7-7">ax.set_ylabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SPY Weekly Return'</span>)</span>
-<span id="cb7-8">plt.show()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-6-output-1.png" width="402" height="281" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="histogram-of-weekly-returns" class="level3">
-<h3 class="anchored" data-anchor-id="histogram-of-weekly-returns">Histogram of Weekly Returns</h3>
-<p>A histogram of the weekly returns for QQQ and SPY provides insights into the distribution of returns over the displayed five-year period. This visualization helps highlight the frequency of different return sizes and indicates whether one ETF exhibited more consistent performance.</p>
-<div id="cell-15" class="cell" data-execution_count="6">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1">fig, ax <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> plt.subplots()</span>
-<span id="cb8-2"></span>
-<span id="cb8-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Histogram of weekly returns</span></span>
-<span id="cb8-4">combined[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'QQQ Return'</span>].hist(ax<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>ax, alpha<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.5</span>, bins<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">50</span>, label<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'QQQ'</span>)</span>
-<span id="cb8-5">combined[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SPY Return'</span>].hist(ax<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>ax, alpha<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.5</span>, bins<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">50</span>, label<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SPY'</span>)</span>
-<span id="cb8-6">ax.set_title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Histogram of Weekly Returns (QQQ vs. SPY)'</span>)</span>
-<span id="cb8-7">ax.set_xlabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Weekly Return'</span>)</span>
-<span id="cb8-8">ax.set_ylabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Frequency'</span>)</span>
-<span id="cb8-9">ax.legend()</span>
-<span id="cb8-10">plt.show()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-7-output-1.png" width="384" height="281" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="box-plot-comparing-weekly-returns" class="level3">
-<h3 class="anchored" data-anchor-id="box-plot-comparing-weekly-returns">Box Plot Comparing Weekly Returns</h3>
-<p>A box plot comparing the weekly returns of QQQ and SPY illustrates the central tendency and dispersion of returns. This visualization quickly highlights medians, quartiles, and outliers, highlighting the potential performance risks.</p>
-<div id="cell-17" class="cell" data-execution_count="7">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1">fig, ax <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> plt.subplots()</span>
-<span id="cb9-2"></span>
-<span id="cb9-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Box plot of weekly returns</span></span>
-<span id="cb9-4">combined[[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'QQQ Return'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SPY Return'</span>]].plot(kind<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'box'</span>, ax<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>ax)</span>
-<span id="cb9-5">ax.set_title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Box Plot of Weekly Returns (QQQ vs. SPY)'</span>)</span>
-<span id="cb9-6">ax.set_ylabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Weekly Return'</span>)</span>
-<span id="cb9-7">plt.show()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-8-output-1.png" width="402" height="265" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="rolling-standard-deviation-of-weekly-returns" class="level3">
-<h3 class="anchored" data-anchor-id="rolling-standard-deviation-of-weekly-returns">Rolling Standard Deviation of Weekly Returns</h3>
-<p>A chart showing the rolling standard deviation of weekly returns for QQQ and SPY illustrates the volatility of each ETF over time. This visualization highlights periods of high and low volatility, essential for understanding risk dynamics and how closely funds track their benchmarks.</p>
-<div id="cell-19" class="cell" data-execution_count="8">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1">fig, ax <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> plt.subplots()</span>
-<span id="cb10-2"></span>
-<span id="cb10-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Calculate rolling standard deviation</span></span>
-<span id="cb10-4">rolling_std_dev <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> combined[[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'QQQ Return'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'SPY Return'</span>]].rolling(window<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">26</span>).std()</span>
-<span id="cb10-5"></span>
-<span id="cb10-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Plot rolling standard deviation</span></span>
-<span id="cb10-7">rolling_std_dev.plot(ax<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>ax)</span>
-<span id="cb10-8">ax.set_title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Rolling Standard Deviation of Weekly Returns (QQQ vs. SPY)'</span>)</span>
-<span id="cb10-9">ax.set_xlabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Date'</span>)</span>
-<span id="cb10-10">ax.set_ylabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Rolling Standard Deviation'</span>)</span>
-<span id="cb10-11">plt.show()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-9-output-1.png" width="448" height="281" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-
-
-</section>
-</section>
-</section>
-
- ]]></description>
-  <category>data</category>
-  <category>correlation</category>
-  <category>relationship</category>
-  <category>analytics</category>
-  <category>statistics</category>
-  <guid>https://portfolio-geek.com/posts/articles/tutorials/tracking-error.html</guid>
   <pubDate>Mon, 12 Aug 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/green-cutting-mat-with-geometric-patterns.jpg" medium="image" type="image/jpeg"/>
 </item>
@@ -4256,123 +4462,6 @@ font-style: inherit;">'Volatility'</span>)</span>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_23_daily-curation.html</guid>
   <pubDate>Mon, 22 Jul 2024 22:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/newspaper-stack-on-table-2023-11-27-05-14-30-utc.png" medium="image" type="image/png" height="96" width="144"/>
-</item>
-<item>
-  <title>Daily Finance Insights (22.07.24): Pandas Plot for EDA, Inflation &amp; Geopolitical Shocks, Large-Cap Growth Leads, and Optimizing YouTube Experience</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_22_daily-curation.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>In today’s curation, we cover a range of topics relevant to financial markets and data analysis:</p>
-<ul>
-<li><strong>Pandas Plot</strong>: Simplifying data visualization with one-line plotting from dataframes.</li>
-<li><strong>Geopolitical Influences</strong>: Effects on inflation and household sentiment.</li>
-<li><strong>US Equity Factors</strong>: Large-cap growth leads, while small-cap value shows potential.</li>
-<li><strong>YouTube Shorts Management</strong>: Tips on disabling Shorts for a cleaner experience.</li>
-</ul>
-<p>Please explore the details in the table below.</p>
-</div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" class="img-fluid figure-img"></p>
-<figcaption>Coffee with daily news</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<section id="coding" class="level1">
-<h1>Coding</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://towardsdatascience.com/you-dont-need-matplotlib-when-pandas-is-enough-for-data-visualisation-38d5680197a5">Simplify Your Data Visualizations: Leveraging Pandas for Efficient Exploratory Data Analysis (Author, 2024-07-22)</a></td>
-<td>Pandas Plot simplifies data visualisation, allowing one-line plotting from dataframes. While it utilises Matplotlib, it suffices for routine EDA. Limitations exist; it’s best for straightforward tasks only.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="economics" class="level1">
-<h1>Economics</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="http://mrzepczynski.blogspot.com/2024/07/geopolitical-risk-is-tied-to-inflation.html">How Geopolitical Events Fuel Inflation and Impact Your Wallet: A Simplified Guide (Geopolitical Shocks and Inflation, 2024-07-22)</a></td>
-<td>Geopolitical shocks contribute to inflation by disrupting trade and increasing public spending. This dynamic influences political change and household sentiment through declining purchasing power and economic impacts.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="fundamental-investing" class="level1">
-<h1>Fundamental Investing</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.capitalspectator.com/large-cap-growth-is-still-leading-the-market-will-it-last/">Small-Cap Stocks Suddenly Surge: Will They Outpace Large-Cap Growth and Change Market Dynamics? (CNBC, 2024-07-22)</a></td>
-<td>Large-cap growth leads US equity factors in 2024. Small-cap value lags but shows a potential turnaround amid speculation of Federal Reserve interest rate cuts. Caution advised on small-cap sustainability.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="technology" class="level1">
-<h1>Technology</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="http://sethmlarson.dev/youtube-without-youtube-shorts?date=2024-07-22">Mastering YouTube: How Disabling Watch History Eliminates the Distraction of Shorts and Enhances Viewing Experience (YouTube without YouTube Shorts, 2024-07-22)</a></td>
-<td>The author disabled YouTube Shorts by turning off and deleting their Watch History. This resulted in no Shorts appearing, as well as a simplified home page.</td>
-</tr>
-</tbody>
-</table>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>coding</category>
-  <category>economics</category>
-  <category>fundamental</category>
-  <category>tech</category>
-  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_22_daily-curation.html</guid>
-  <pubDate>Sun, 21 Jul 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

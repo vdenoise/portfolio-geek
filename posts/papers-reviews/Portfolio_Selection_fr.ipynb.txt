@@ -1,0 +1,169 @@
+{
+ "cells": [
+  {
+   "cell_type": "raw",
+   "metadata": {},
+   "source": [
+    "auteur : Vincent D.\n",
+    "titre : Revue de la sélection de portefeuille par Harry Markowitz"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Pourquoi cet article est-il important pour l'industrie financière et les professionnels de la finance 🚀\n",
+    "Imaginez essayer de naviguer dans un vaste océan sans carte. Dans le monde de la finance, l'article de Markowitz sert de cette carte cruciale, guidant les investisseurs à travers les eaux turbulentes de la sélection de portefeuille. Publié à l'origine en 1952, cette recherche a introduit le concept révolutionnaire de la théorie moderne du portefeuille (MPT), qui a fondamentalement transformé notre façon de penser aux stratégies d'investissement. Elle souligne que le risque et le rendement ne sont pas de simples pensées après coup, mais les deux faces de la même pièce dans la prise de décision d'investissement.\n",
+    "\n",
+    "Les investisseurs avaient l'habitude de se concentrer principalement sur des actions individuelles, ce qui menait souvent à des portefeuilles chargés de risques. Cependant, Markowitz nous a incités à voir le tableau d'ensemble : comment les actifs fonctionnent ensemble, ou plutôt, comment leurs valeurs interagissent. En plaidant pour la diversification, il a démontré que combiner une variété d'investissements peut réduire significativement le risque sans sacrifier les rendements. Cette perspective est inestimable ! Cela signifie que les financiers peuvent atteindre une plus grande prévisibilité et une stabilité dans des marchés incertains.\n",
+    "\n",
+    "De plus, ses modèles mathématiques pour calculer le mélange optimal d'actifs sont devenus fondamentaux dans l'éducation et la pratique financières. Même aujourd'hui, les principes de Markowitz sous-tendent les outils analytiques que les gestionnaires de patrimoine et les stratèges de fonds spéculatifs utilisent pour optimiser les portefeuilles. Avec les cadres établis dans cet article, les professionnels de la finance peuvent gérer plus efficacement les investissements de leurs clients, les guidant loin des pièges dangereux vers des voies plus calmes et plus rentables.\n",
+    "\n",
+    "En essence, le travail de Markowitz nous a donné une nouvelle lentille pour voir les investissements, créant une approche plus sûre et systématique pour les professionnels de la finance et établissant ainsi des normes qui définissent les stratégies d'investissement d'aujourd'hui. Sa recherche n'est pas simplement d'une importance historique ; ses principes continuent de façonner nos décisions financières quotidiennes. Comprendre cet article est une étape essentielle pour quiconque s'engage à exceller dans la finance."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Point de départ et hypothèses clés\n",
+    "Dans 'Sélection de portefeuille', Harry Markowitz établit plusieurs hypothèses clés essentielles à son cadre, qui incluent :\n",
+    "1. **Rationalité de l'investisseur** : On suppose que les investisseurs sont rationnels et prennent des décisions en fonction du rendement attendu et du potentiel de risque plutôt que des tendances émotionnelles ou spéculatives.\n",
+    "2. **Les marchés sont efficaces** : L'article postule que tous les investisseurs ont accès aux mêmes informations. Par conséquent, les prix reflètent toutes les informations disponibles à tout moment donné, ce qui rend impossible d'atteindre régulièrement des rendements excessifs.\n",
+    "3. **Distribution normale des rendements** : Markowitz suppose que les rendements des actifs suivent une distribution normale, où la moyenne et la variance peuvent représenter suffisamment la performance des actifs.\n",
+    "4. **Horizon statique des investisseurs** : L'analyse suppose une période d'investissement unique et inchangée. Les investisseurs sont vus comme prenant des décisions sur la base d'un cadre temporel fixe, sans tenir compte des dynamiques au-delà de cette portée.\n",
+    "5. **Mesure du risque** : Le degré de risque est décrit par la variance ou l'écart type des rendements du portefeuille. Cette mesure standard souligne la variance des prix des actifs, qui est critique pour évaluer la volatilité et la stabilité du portefeuille.\n",
+    "6. **Relation linéaire** : Le modèle de Markowitz suppose un compromis linéaire entre le risque et le rendement, indiquant que l'augmentation du rendement attendu s'accompagne d'une augmentation proportionnelle du risque, ce qui le rend prévisible.\n",
+    "\n",
+    "Ces hypothèses critiques sous-tendent la théorie moderne du portefeuille, reflétant une approche systématique pour optimiser les portefeuilles d'investissement. Comprendre ces hypothèses est primordial pour les professionnels de la finance car cela capture l'essence théorique qui façonne les stratégies d'investissement."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Formule clé\n",
+    "$$ E(R) = w_1 E(R_1) + w_2 E(R_2) + ... + w_n E(R_n) $$\n",
+    "Cette formule calcule le rendement attendu d'un portefeuille où :\n",
+    "- E(R) : rendement attendu du portefeuille\n",
+    "- w_i : poids de l'actif i dans le portefeuille\n",
+    "- E(R_i) : rendement attendu de l'actif i\n",
+    "\n",
+    "$$ \\sigma_p^2 = w_1^2 \\sigma_1^2 + w_2^2 \\sigma_2^2 + 2 w_1 w_2 \\sigma_{1,2} $$\n",
+    "Cela représente la variance des rendements du portefeuille :\n",
+    "- sigma_p^2 : variance du portefeuille\n",
+    "- sigma_i^2 : variance de l'actif i\n",
+    "- sigma_{i,j} : covariance entre les actifs i et j\n",
+    "\n",
+    "$$ R(w) = \\sum_{i=1}^{n} w_i R_i $$\n",
+    "Cela calcule le rendement pondéré pour chaque actif dans un portefeuille :\n",
+    "- R(w) : rendement du portefeuille\n",
+    "- w_i : poids de l'actif\n",
+    "- R_i : rendement de l'actif\n",
+    "\n",
+    "$$ V(w) = \\sum_{i=1}^{n} w_i^2 V_i + 2 \\sum_{i \\neq j} w_i w_j Cov_{ij} $$\n",
+    "Cette expression calcule la variance du portefeuille :\n",
+    "- V(w) : variance du portefeuille\n",
+    "- V_i : variance de l'actif i\n",
+    "- w_i : poids de l'actif i\n",
+    "- Cov_{ij} : covariance entre les actifs i et j\n",
+    "\n",
+    "$$ \\text{Frontière Efficiente} : \\quad \\mu = w^T \\mu $$\n",
+    "Ce concept mathématique de décision identifie les portefeuilles qui offrent le rendement attendu le plus élevé pour un niveau de risque défini, où :\n",
+    "- \\mu : vecteur de rendement attendu\n",
+    "- w : vecteur de poids de chaque actif dans le portefeuille."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Résultats clés et impact académique\n",
+    "L'œuvre séminale de Markowitz dans 'Sélection de portefeuille' introduit des intuitions critiques qui ont façonné les stratégies d'investissement. En intégrant les notions de risque et de rendement dans un cadre unifié, il a souligné que :\n",
+    "- **Le risque est gérable** : Au lieu d'être perçu comme une menace, le risque peut être géré par la diversification. L'article a jeté les bases pour que les investisseurs réduisent le risque non systématique en combinant stratégiquement des actifs.\n",
+    "- **La signification de la corrélation** : Les relations entre les rendements des actifs jouent un rôle vital dans la performance du portefeuille. Markowitz a illustré comment combiner des actifs négativement corrélés pourrait réduire le risque global, menant à la pratique de la diversification.\n",
+    "- **Rendements attendus vs. rendements réels** : Le concept de rendement attendu établit que les investisseurs doivent examiner les rendements potentiels plutôt que de se fier uniquement à la performance historique. Cela souligne l'importance d'une pensée tournée vers l'avenir.\n",
+    "- **La frontière efficace** : Une représentation visuelle révolutionnaire des portefeuilles optimaux, ce concept permet aux investisseurs de voir l'équilibre entre risque et rendements. Cela permet de sélectionner des portefeuilles qui maximisent les rendements pour un niveau de risque donné.\n",
+    "- **Élargir les perspectives d'investissement** : Le cadre encourage l'investissement au-delà des actifs individuels ; la sélection de portefeuille devenant ainsi un exercice complet combinant différents actifs en fonction de leurs performances projetées et de leurs raretés de risque.\n",
+    "\n",
+    "Ces idées ont eu des implications durables et sont devenues des principes qui sous-tendent les stratégies et théories d'investissement modernes."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Principaux enseignements pour vous en tant qu'investisseur\n",
+    "### Principaux enseignements pour un investisseur à court, moyen et long terme\n",
+    "- **Stratégie à court terme** : Les investisseurs se concentrant sur le court terme devraient se familiariser avec la relation risque-rendement, en s'assurant de rechercher la diversification entre les secteurs et les classes d'actifs. Des stratégies comme la rotation sectorielle pourraient tirer parti des théories de Markowitz tout en gérant le risque par une exposition variée.\n",
+    "- **Stratégie à moyen terme** : Les investisseurs à moyen terme devraient tirer parti de l'anticipation des cycles de marché en adaptant stratégiquement leurs portefeuilles pour saisir les phases de croissance. Ils devraient ajuster en continu leur allocation d'actifs en fonction des conditions de marché en évolution tout en visant à rester sur la frontière efficace.\n",
+    "- **Stratégie à long terme** : Pour les investisseurs à long terme, l'accent devrait rester sur le maintien d'un portefeuille équilibré et diversifié. Incorporer des examens périodiques aide à garantir que les attentes de risque et de rendement s'alignent sur les objectifs d'investissement en cours. Adopter une stratégie de portefeuille indexé ou géré passivement peut soutenir une croissance régulière au fil du temps, ancrée dans les principes établis dans l'œuvre de Markowitz.\n",
+    "\n",
+    "Les idées de Markowitz créent un cadre qui permet aux investisseurs de prendre des décisions éclairées, adaptant naturellement les stratégies aux environnements de marché en évolution tout en gérant leur risque."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Résumé\n",
+    "# Résumé de la sélection de portefeuille\n",
+    "Dans 'Sélection de portefeuille', Harry Markowitz introduit un cadre innovant qui transforme fondamentalement notre façon de penser à l'investissement. Avant ce travail, la plupart des investisseurs considéraient les actions de manière isolée. Cependant, Markowitz présente un argument convaincant en faveur de l'agrégation, ou de la construction de portefeuille, considérant chaque investissement non pas uniquement par sa performance individuelle, mais par la manière dont il contribue au profil risque-rendement de l'ensemble du portefeuille.\n",
+    "\n",
+    "## Le cœur de la théorie\n",
+    "La thèse centrale de Markowitz tourne autour du concept de théorie moderne du portefeuille (MPT), qui affirme qu'un investisseur peut construire un portefeuille d'actifs de manière à maximiser le rendement attendu pour un niveau de risque donné. Cette approche pratique mais théorique souligne la diversification comme stratégie clé dans la gestion des risques. En combinant une variété d'actifs dont les rendements ne sont pas parfaitement corrélés, l'investisseur peut réduire la volatilité et améliorer les rendements, étant donné que le risque n'est pas considéré uniquement sur des investissements isolés.\n",
+    "\n",
+    "### Éléments clés du cadre\n",
+    "1. **Rendements attendus** : Les investisseurs doivent se concentrer sur les rendements théoriques, qui sont calculés en fonction de la performance historique d'un actif et des projections futures.\n",
+    "2. **Évaluation du risque** : Définissant le risque comme la variance des rendements des actifs, Markowitz utilise des outils mathématiques pour évaluer le potentiel de risque à travers plusieurs options d'investissement au lieu de le simplifier uniquement à la volatilité.\n",
+    "3. **Frontière efficace** : L'un des concepts les plus révolutionnaires de Markowitz est la frontière efficace, une représentation graphique des portefeuilles optimaux offrant le rendement le plus élevé pour un niveau de risque donné. Elle illustre le compromis entre risque et rendement et exemplifie les avantages de la diversification.\n",
+    "\n",
+    "### Modèle mathématique\n",
+    "Utilisant la programmation quadratique, Markowitz fournit une formulation mathématique pour dériver les poids de divers actifs au sein d'un portefeuille, permettant ainsi aux investisseurs de cibler le rendement attendu maximal par rapport à leur tolérance au risque. Ce modèle mathématique a jeté les bases des développements ultérieurs en finance, y compris le modèle d'évaluation des actifs financiers (CAPM).\n",
+    "\n",
+    "### Implications pour les investisseurs\n",
+    "Le modèle de Markowitz a en effet redéfini l'allocation d'actifs. Il souligne que la corrélation entre différents actifs joue un rôle crucial dans le risque global du portefeuille. Les investisseurs sont donc encouragés à adopter une stratégie diversifiée, réduisant de manière significative le risque non systématique. De plus, il alimente le discours sur la gestion active contre passive, la gestion passive promouvant les idées inhérentes aux conclusions de Markowitz.\n",
+    "\n",
+    "### Influence continue\n",
+    "Le cadre de Markowitz a non seulement influencé les stratégies d'investissement subséquentes, mais il a aussi remodelé le tissu même de la gestion de portefeuille. Ses théories continuent d'informer les pratiques financières modernes, incitant les gestionnaires de patrimoine, les fonds spéculatifs et les investisseurs particuliers à adopter des stratégies diversifiées fondées sur une analyse mathématique robuste."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Conclusion\n",
+    "En résumé, 'Sélection de portefeuille' de Harry Markowitz est plus qu'un simple article académique ; c'est une œuvre séminale qui continue de résonner tant dans les applications académiques que pratiques de la finance aujourd'hui. Les implications de la gestion du risque et de l'optimisation exposées dans cet article servent de fondement crucial pour les investisseurs cherchant à naviguer dans le paysage complexe des marchés financiers."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Résumé\n",
+    "Ce document classique de Markowitz introduit un cadre révolutionnaire pour comprendre les décisions d'investissement à travers le prisme de la théorie du portefeuille. Il combine de manière unique les concepts de risque et de rendement, fournissant une base mathématique pour sélectionner un portefeuille optimal. En utilisant les rendements et variances attendus, il déplace le focus des titres individuels vers des portefeuilles, changeant fondamentalement l'approche de la diversification des investissements. Le programme académique entourant ce sujet met généralement l'accent sur l'importance d'équilibrer le risque avec le rendement attendu ; cependant, le travail de Markowitz illumine comment le risque peut être quantifié et géré via la diversification. Cette perspective pionnière a jeté les bases de la gestion de portefeuille moderne et a des implications qui s'étendent à la finance empirique, à l'économie comportementale et à la microstructure de marché. La signification du travail de Markowitz est attestée par sa pertinence durable, étant une pierre angulaire dans les cours de finance et la recherche même des décennies après sa publication initiale."
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.10"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

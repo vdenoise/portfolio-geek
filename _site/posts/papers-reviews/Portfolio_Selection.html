@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Vincent D.">
+<meta name="dcterms.date" content="2024-08-22">
+
+<title>Must Read Papers Series #1: Review of Portfolio Selection (Harry Markowitz) – Portfolio Geek</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CJ2CMCX5LZ"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CJ2CMCX5LZ', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"headline",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Must Read Papers Series #1: Review of Portfolio Selection (Harry Markowitz) – Portfolio Geek">
+<meta property="og:description" content="Finance, Research and the Tech required to Fuel them">
+<meta property="og:image" content="https://portfolio-geek.com/pictures/business-graphs-and-magnifying-glass-on-table.jpg">
+<meta property="og:site_name" content="Portfolio Geek">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Portfolio Geek</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../daily-curation.html"> 
+<span class="menu-text">Daily Findings</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tutorials.html"> 
+<span class="menu-text">Getting Started</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../fr"> 
+<span class="menu-text">Français</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/vdenoiseux/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/vdenoise"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
+      <h1 class="title">Must Read Papers Series #1: Review of Portfolio Selection (Harry Markowitz)</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">paper</div>
+                <div class="quarto-category">academic</div>
+                <div class="quarto-category">research</div>
+                <div class="quarto-category">review</div>
+                <div class="quarto-category">portfolio-construction</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Vincent D. </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 22, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+
+
+
+
+
+<section id="review-of-portfolio-selection-by-harry-markowitz" class="level1">
+<h1>Review of: “Portfolio Selection” by Harry Markowitz</h1>
+<section id="where-to-find-this-paper" class="level2">
+<h2 class="anchored" data-anchor-id="where-to-find-this-paper">Where to find this paper</h2>
+<p><a href="https://www.jstor.org/stable/2975974">You can find the full paper here</a></p>
+</section>
+<section id="why-this-is-an-key-paper-for-the-finance-industry-and-finance-professionals" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-is-an-key-paper-for-the-finance-industry-and-finance-professionals">Why This is an Key Paper for the Finance Industry and Finance Professionals 🚀</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Imagine trying to navigate a vast ocean without a map. In the finance world, Markowitz’s is one of the few commonly agreed maps, guiding investors through portfolio selection. Originally published in 1952, this research introduced the brand new concept of modern portfolio theory (MPT), which fundamentally transformed how we think about investment strategies. It highlights that risk and return are not mere afterthoughts but the two sides of the same coin in investment decision-making.</p>
+<p>Investors used to focus primarily on individual stocks, often leading to risk-laden portfolios. However, Markowitz urged us to look at the bigger picture: how assets work together, or rather, how their values interact. By advocating for diversification, he demonstrated that combining a variety of investments can significantly reduce risk without sacrificing returns. This insight is invaluable! It means that financiers can target greater predictability and stability in uncertain markets.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../pictures/business-graphs-and-magnifying-glass-on-table.jpg" class="img-fluid figure-img"></p>
+<figcaption>Selecting and weighting assets into portfolio is a complex and ambitious task.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Moreover, his mathematical models for calculating the optimal mix of assets have become fundamental in finance education and practice. Even today, Markowitz’s principles underpin the analytical tools that wealth managers and hedge fund strategists use to optimise portfolios.</p>
+<p>In essence, Markowitz’s work gave us a new lens to view investments, creating a safer, more systematic approach for finance professionals and thereby establishing standards that define today’s investment strategies. His research is not merely of historical significance; its principles continue to shape our everyday financial decisions. Understanding this paper is a stepping stone for anyone committed to excelling in finance.</p>
+</section>
+<section id="starting-point-and-key-assumptions" class="level2">
+<h2 class="anchored" data-anchor-id="starting-point-and-key-assumptions">Starting Point and Key Assumptions</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>In ‘Portfolio Selection’, Harry Markowitz establishes several key assumptions essential for his framework, which includes:</p>
+<ol type="1">
+<li><strong>Investor Rationality</strong>: It is assumed that investors are rational and make decisions based on expected return and risk potential rather than emotional or speculative trends.</li>
+<li><strong>Markets are Efficient</strong>: The paper posits that all investors have access to the same information. Therefore, prices reflect all available information at any given time, making it impossible to consistently achieve excess returns.</li>
+<li><strong>Normal Distribution of Returns</strong>: Markowitz assumes asset returns follow a normal distribution whereby the mean and variance can sufficiently represent the performance of the assets.</li>
+<li><strong>Static Investors’ Horizon</strong>: The analysis assumes a single, unchanged investment period. Investors are seen as making decisions based on a fixed time frame, lacking any allowance for dynamics beyond this scope.</li>
+</ol>
+<p>These critical assumptions underpin the modern portfolio theory, reflecting a systematic approach to optimise investment portfolios. Understanding these assumptions is paramount for finance professionals as it captures the theoretical essence that shapes investment strategies.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../pictures/cropped-view-of-woman-pinning-paper-craft-decorati.jpg" class="img-fluid figure-img"></p>
+<figcaption>Sélectionner a attributer un poids aux actifs, dans un environnement incertain est un exercice difficile et ambitieux.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="key-formulas" class="level2">
+<h2 class="anchored" data-anchor-id="key-formulas">Key Formulas</h2>
+<section id="expected-return" class="level3">
+<h3 class="anchored" data-anchor-id="expected-return">Expected Return</h3>
+<p><span class="math display">\[ E(R) = w_1 E(R_1) + w_2 E(R_2) + ... + w_n E(R_n) \]</span> This formula calculates the expected return of a portfolio where:</p>
+<ul>
+<li>E(R): expected return of the portfolio</li>
+<li>w_i: weight of asset i in the portfolio</li>
+<li>E(R_i): expected return of asset i</li>
+</ul>
+</section>
+<section id="portfolio-expected-variance-2-assets" class="level3">
+<h3 class="anchored" data-anchor-id="portfolio-expected-variance-2-assets">Portfolio Expected Variance (2 assets)</h3>
+<p><span class="math display">\[ \sigma_p^2 = w_1^2 \sigma_1^2 + w_2^2 \sigma_2^2 + 2 w_1 w_2 \sigma_{1,2} \]</span> This represents the variance of portfolio returns:</p>
+<ul>
+<li>sigma_p^2: variance of the portfolio</li>
+<li>sigma_i^2: variance of asset i</li>
+<li>sigma_{i,j}: covariance between assets i and j</li>
+</ul>
+</section>
+<section id="portfolio-expected-variance-n-assets" class="level3">
+<h3 class="anchored" data-anchor-id="portfolio-expected-variance-n-assets">Portfolio Expected Variance (n assets)</h3>
+<p><span class="math display">\[ V(w) = \sum_{i=1}^{n} w_i^2 V_i + 2 \sum_{i \neq j} w_i w_j Cov_{ij} \]</span> This expression calculates the variance of the portfolio:</p>
+<ul>
+<li>V(w): variance of the portfolio</li>
+<li>V_i: variance of asset i</li>
+<li>w_i: weight of asset i</li>
+<li>Cov_{ij}: covariance between assets i and j</li>
+</ul>
+</section>
+<section id="portfolio-expected-return" class="level3">
+<h3 class="anchored" data-anchor-id="portfolio-expected-return">Portfolio Expected Return</h3>
+<p><span class="math display">\[ R(w) = \sum_{i=1}^{n} w_i R_i \]</span> This calculates the weighted return for each asset in a portfolio:</p>
+<ul>
+<li>R(w): portfolio return</li>
+<li>w_i: weight of the asset</li>
+<li>R_i: return of the asset</li>
+</ul>
+</section>
+<section id="efficient-frontier" class="level3">
+<h3 class="anchored" data-anchor-id="efficient-frontier">Efficient Frontier</h3>
+<p>To find the efficient frontier, we aim to minimize the portfolio’s variance <span class="math inline">\(\sigma_p^2\)</span> for a given level of expected return <span class="math inline">\(E(R_p)\)</span>. This leads to the following constrained optimization problem:</p>
+<p><span class="math display">\[
+\text{Minimize: } \sigma_p^2 = \sum_{i=1}^{n} \sum_{j=1}^{n} w_i w_j \sigma_{ij}
+\]</span></p>
+<p>Subject to: <span class="math display">\[
+\sum_{i=1}^{n} w_i E(R_i) = E(R_p) \quad \text{(target expected return)}
+\]</span> <span class="math display">\[
+\sum_{i=1}^{n} w_i = 1 \quad \text{(sum of portfolio weights equals 1)}
+\]</span></p>
+</section>
+</section>
+<section id="key-outcomes-and-academic-impact" class="level2">
+<h2 class="anchored" data-anchor-id="key-outcomes-and-academic-impact">Key Outcomes and Academic Impact</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Markowitz’s seminal work in ‘Portfolio Selection’ introduces critical intuitions that shaped investment strategies. By integrating the notions of risk and return into a unified framework, he emphasized that:</p>
+<ul>
+<li><strong>Risk Is Manageable</strong>: Instead of being perceived as a threat, risk can be managed through diversification. The paper laid the foundation for Investors can reduce unsystematic risk by strategically combining assets.</li>
+<li><strong>The Significance of Correlation</strong>: The relationships between asset returns play a vital role in portfolio performance. Markowitz illustrated how combining negatively correlated assets could lower overall risk, leading to the practice of diversification.</li>
+<li><strong>Expected Returns vs.&nbsp;Actual Returns</strong>: The concept of expected return establishes that investors must look at potential returns instead of relying on historic performance alone. It emphasises forward thinking.</li>
+<li><strong>The Efficient Frontier</strong>: A groundbreaking visual representation of optimal portfolios, this concept allows investors to see the balance of risk and returns. This enables the selection of portfolios that maximizes returns for a given risk level.</li>
+<li><strong>Broadening Investment Perspectives</strong>: The framework encourages investment beyond individual assets; portfolio selection thereby becomes a comprehensive exercise in combining different assets based on their projected performance and risk rarities.</li>
+</ul>
+<p>These insights have had lasting implications and have become principles that underpin many modern investment strategies and theories.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../pictures/startup-diversity-teamwork-brainstorming-business.jpg" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="key-takeaways-for-you-as-an-investor" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways-for-you-as-an-investor">Key Takeaways for you as an Investor</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<ul>
+<li><strong>Short-Term Strategy</strong>: Investors focusing on the short term should familiarize themselves with the risk-return relationship, ensuring they seek diversification across sectors and asset classes. Strategies like sector rotation could leverage Markowitz’s theories while managing risk through varied exposure.</li>
+<li><strong>Medium-Term Strategy</strong>: Medium-term investors should leverage anticipation of market cycles by strategically adapting their portfolios to capture growth phases. They should continuously adjust their asset allocation based on evolving market conditions while aiming to stay on the efficient frontier.</li>
+<li><strong>Long-Term Strategy</strong>: For long-term investors, the emphasis should remain on maintaining a balanced and diversified portfolio. Incorporating periodic reviews helps ensure expectations of risk and return align with ongoing investment goals. Adopting an indexed or passively managed portfolio strategy can support steady growth over time, rooted in the principles established in the body of work by Markowitz.</li>
+</ul>
+<p>Markowitz’s insights create a framework that empowers investors to make informed decisions, naturally adapting strategies to evolving market environments while managing their risk.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../pictures/glad-adult-japanese-male-working-with-charts-and.jpg" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="article-summary" class="level2">
+<h2 class="anchored" data-anchor-id="article-summary">Article Summary</h2>
+</section>
+</section>
+<section id="summary-of-portfolio-selection" class="level1">
+<h1>Summary of Portfolio Selection</h1>
+<p>In ‘Portfolio Selection’, Harry Markowitz introduces an innovative framework that fundamentally transforms how we think about investing. Before this work, most investors viewed stocks in isolation. However, Markowitz presents a compelling argument for aggregation, or portfolio construction, viewing each investment not just by its individual performance, but by how it contributes to the risk-reward profile of the overall portfolio.</p>
+<section id="the-core-of-the-theory" class="level2">
+<h2 class="anchored" data-anchor-id="the-core-of-the-theory">The Core of the Theory</h2>
+<p>Markowitz’s central thesis centers around the concept of modern portfolio theory (MPT), which asserts that an investor can construct a portfolio of assets in such a way as to maximize expected return for a given level of risk. This practical yet theoretical approach emphasises diversification as a key strategy in risk management. By combining a variety of assets whose returns do not correlate perfectly, the investor can reduce volatility and enhance returns, given that risk is not merely considered on standalone investments.</p>
+<section id="key-elements-of-the-framework" class="level3">
+<h3 class="anchored" data-anchor-id="key-elements-of-the-framework">Key Elements of the Framework</h3>
+<ol type="1">
+<li><strong>Expected Returns</strong>: Investors need to focus on theoretical returns, which are calculated based on an asset’s historical performance and future projections.</li>
+<li><strong>Risk Assessment</strong>: Defining risk as the variance of asset returns, Markowitz employs mathematical tools to assess potential risk across multiple investment options instead of simplifying it merely to volatility.</li>
+<li><strong>Efficient Frontier</strong>: One of Markowitz’s most revolutionary concepts is the efficient frontier, a graphical representation of the optimal portfolios offering the highest return for a given level of risk. It illustrates the trade-off between risk and return and exemplifies the benefits of diversification.</li>
+</ol>
+</section>
+<section id="mathematical-model" class="level3">
+<h3 class="anchored" data-anchor-id="mathematical-model">Mathematical Model</h3>
+<p>Utilising quadratic programming, Markowitz provides a mathematical formulation to derive the weights of various assets within a portfolio, thus enabling investors to pinpoint the maximum expected return relative to their risk tolerance. This mathematical model laid the groundwork for later developments in finance, including the Capital Asset Pricing Model (CAPM).</p>
+</section>
+<section id="implications-for-investors" class="level3">
+<h3 class="anchored" data-anchor-id="implications-for-investors">Implications for Investors</h3>
+<p>Markowitz’s model has indeed redefined asset allocation. It underscores that the correlation between different assets plays a crucial role in overall portfolio risk. Investors are thus encouraged to seek a diversified strategy, reducing unsystematic risk significantly. Furthermore, it powers the discourse on active vs passive management, with passive management promoting the ideas inherent in Markowitz’s findings.</p>
+</section>
+<section id="continuing-influence" class="level3">
+<h3 class="anchored" data-anchor-id="continuing-influence">Continuing Influence</h3>
+<p>Markowitz’s framework not only influenced subsequent investment strategies but also reshaped the very fabric of portfolio management. His theories continue to inform modern financial practices, prompting wealth managers, hedge funds, and retail investors to adopt diversified strategies founded on robust mathematical analysis.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Overall, Harry Markowitz’s ‘Portfolio Selection’ is more than just an academic paper; it is a seminal work that continues to resonate within both academic and practical applications of finance today. The implications of risk management and optimization laid out in the paper serve as a crucial foundation for investors looking to navigate the complex landscape of financial markets.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/portfolio-geek\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Proudly propelled by <a href="https://quarto.org/">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+<p>About | Copyright | Disclaimer</p>
+</a>
+  </li>  
+</ul>
+    <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
