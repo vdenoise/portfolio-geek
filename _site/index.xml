@@ -23,10 +23,6 @@
 
 <section id="review-of-portfolio-selection-by-harry-markowitz" class="level1">
 <h1>Review of: ‘Portfolio Selection’ by Harry Markowitz</h1>
-<section id="where-to-find-this-paper" class="level2">
-<h2 class="anchored" data-anchor-id="where-to-find-this-paper">Where to find this paper</h2>
-<p><a href="https://www.jstor.org/stable/2975974">You can find the full paper here</a></p>
-</section>
 <section id="why-this-is-an-key-paper-for-the-finance-industry-and-finance-professionals" class="level2">
 <h2 class="anchored" data-anchor-id="why-this-is-an-key-paper-for-the-finance-industry-and-finance-professionals">Why This is an Key Paper for the Finance Industry and Finance Professionals 🚀</h2>
 <div>
@@ -47,12 +43,6 @@
 <h3 class="anchored" data-anchor-id="a-solid-theory-to-support-investors-intuitions">A solid theory to support investors’ intuitions</h3>
 <p>Investors used to focus primarily on individual stocks, often leading to risk-laden portfolios. However, Markowitz urged us to look at the bigger picture: how assets work together, or rather, how their values interact. By advocating for diversification, he demonstrated that combining a variety of investments can significantly reduce risk without sacrificing returns. This insight is invaluable! It means that financiers can target greater predictability and stability in uncertain markets.</p>
 </section>
-</div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="https://portfolio-geek.com/pictures/business-graphs-and-magnifying-glass-on-table.jpg" class="img-fluid"></p>
-</div>
-</div>
-</div>
 <section id="a-starting-point-to-build-more-sophisticated-models" class="level3">
 <h3 class="anchored" data-anchor-id="a-starting-point-to-build-more-sophisticated-models">A starting point to build more sophisticated models</h3>
 <p>Moreover, his mathematical models for calculating the optimal mix of assets have become fundamental in finance education and practice. Even today, Markowitz’s principles underpin the analytical tools that wealth managers and hedge fund strategists use to optimise portfolios.</p>
@@ -61,6 +51,17 @@
 <h3 class="anchored" data-anchor-id="a-new-lens-for-investors">A new lens for investors</h3>
 <p>In essence, Markowitz’s work gave us a new lens to view investments, creating a safer, more systematic approach for finance professionals and thereby establishing standards that define today’s investment strategies. His research is not merely of historical significance; its principles continue to shape our everyday financial decisions. Understanding this paper is a stepping stone for anyone committed to excelling in finance.</p>
 </section>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><a href="https://www.jstor.org/stable/2975974"><img src="https://portfolio-geek.com/pictures/portfolio_selection_thumbnail.jpg" class="img-fluid quarto-figure quarto-figure-right figure-img"></a></p>
+</figure>
+</div>
+<p><img src="https://portfolio-geek.com/pictures/business-graphs-and-magnifying-glass-on-table.jpg" class="img-fluid"></p>
+</div>
+</div>
+</div>
 </section>
 <section id="starting-point-and-key-assumptions" class="level2">
 <h2 class="anchored" data-anchor-id="starting-point-and-key-assumptions">Starting Point and Key Assumptions</h2>

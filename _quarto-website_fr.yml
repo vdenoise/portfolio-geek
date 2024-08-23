@@ -54,14 +54,11 @@ website:
         text: Français
       - href: ../
         text: English
-      - icon: rss
-        href: index.xml
       - icon: linkedin
         href: https://www.linkedin.com/in/vdenoiseux/
       - icon: github
         href: https://github.com/vdenoise 
-      - icon: twitter
-        href: https://twitter.com
+
   page-footer:
     left: |
       Fièrement propulsé par [Quarto](https://quarto.org/)
