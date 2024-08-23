@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://portfolio-geek.com/index.html</loc>
-    <lastmod>2024-08-23T09:35:36.083Z</lastmod>
+    <lastmod>2024-08-23T16:37:50.595Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/data-driven-minute.html</loc>
@@ -73,40 +73,44 @@
     <lastmod>2024-08-08T05:44:05.371Z</lastmod>
   </url>
   <url>
-    <loc>https://portfolio-geek.com/posts/articles/tutorials/max-drawdown.html</loc>
-    <lastmod>2024-08-07T16:37:34.905Z</lastmod>
-  </url>
-  <url>
-    <loc>https://portfolio-geek.com/posts/articles/tutorials/historical-vol.html</loc>
-    <lastmod>2024-08-11T05:58:40.318Z</lastmod>
-  </url>
-  <url>
-    <loc>https://portfolio-geek.com/posts/articles/tutorials/optimise-portfolios-with-python.html</loc>
-    <lastmod>2024-08-08T05:44:30.043Z</lastmod>
-  </url>
-  <url>
-    <loc>https://portfolio-geek.com/posts/articles/tutorials/correlation-returns.html</loc>
-    <lastmod>2024-08-13T09:53:16.396Z</lastmod>
-  </url>
-  <url>
-    <loc>https://portfolio-geek.com/posts/articles/visualizing-historical-data.html</loc>
-    <lastmod>2024-08-07T16:32:19.728Z</lastmod>
-  </url>
-  <url>
-    <loc>https://portfolio-geek.com/posts/articles/tutorials/setting-up-a-python-workstation-windows.html</loc>
-    <lastmod>2024-08-07T16:50:05.404Z</lastmod>
-  </url>
-  <url>
-    <loc>https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio.html</loc>
-    <lastmod>2024-08-07T16:35:07.273Z</lastmod>
+    <loc>https://portfolio-geek.com/posts/articles/tutorials/tracking-error.html</loc>
+    <lastmod>2024-08-22T06:11:09.493Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/spy-and-matplotlib.html</loc>
     <lastmod>2024-08-08T10:02:57.843Z</lastmod>
   </url>
   <url>
-    <loc>https://portfolio-geek.com/posts/articles/tutorials/tracking-error.html</loc>
-    <lastmod>2024-08-22T06:11:09.493Z</lastmod>
+    <loc>https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio.html</loc>
+    <lastmod>2024-08-07T16:35:07.273Z</lastmod>
+  </url>
+  <url>
+    <loc>https://portfolio-geek.com/posts/articles/tutorials/setting-up-a-python-workstation-windows.html</loc>
+    <lastmod>2024-08-07T16:50:05.404Z</lastmod>
+  </url>
+  <url>
+    <loc>https://portfolio-geek.com/posts/quotes/10-insightful-quotes-about-portfolio-construction.html</loc>
+    <lastmod>2024-08-23T16:38:03.338Z</lastmod>
+  </url>
+  <url>
+    <loc>https://portfolio-geek.com/posts/articles/tutorials/correlation-returns.html</loc>
+    <lastmod>2024-08-13T09:53:16.396Z</lastmod>
+  </url>
+  <url>
+    <loc>https://portfolio-geek.com/posts/articles/tutorials/optimise-portfolios-with-python.html</loc>
+    <lastmod>2024-08-08T05:44:30.043Z</lastmod>
+  </url>
+  <url>
+    <loc>https://portfolio-geek.com/posts/articles/tutorials/historical-vol.html</loc>
+    <lastmod>2024-08-11T05:58:40.318Z</lastmod>
+  </url>
+  <url>
+    <loc>https://portfolio-geek.com/posts/articles/tutorials/max-drawdown.html</loc>
+    <lastmod>2024-08-07T16:37:34.905Z</lastmod>
+  </url>
+  <url>
+    <loc>https://portfolio-geek.com/posts/articles/tutorials/visualizing-historical-data.html</loc>
+    <lastmod>2024-08-23T16:38:22.540Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/papers-reviews/Portfolio_Selection.html</loc>

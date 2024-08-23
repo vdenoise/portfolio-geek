@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
+<meta name="dcterms.date" content="2024-08-23">
 
-<title>Démarrer en Finance Quantitative avec Python – Portfolio Geek</title>
+<title>10 good-to-know quotes about portfolio construction – Portfolio Geek</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,26 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-author','listing-date','listing-description','listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CJ2CMCX5LZ"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -128,49 +98,24 @@ cookieconsent.run({
 </script> 
   
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Démarrer en Finance Quantitative avec Python – Portfolio Geek">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="10 good-to-know quotes about portfolio construction – Portfolio Geek">
+<meta property="og:description" content="Finance, Research and the Tech required to Fuel them">
+<meta property="og:image" content="https://portfolio-geek.com/pictures/portfolio-optimisation.png">
 <meta property="og:site_name" content="Portfolio Geek">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:width" content="1800">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Portfolio Geek</span>
     </a>
   </div>
@@ -181,25 +126,25 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./daily-curation.html"> 
+    <a class="nav-link" href="../../daily-curation.html"> 
 <span class="menu-text">Daily Findings</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorials.html"> 
+    <a class="nav-link" href="../../tutorials.html"> 
 <span class="menu-text">Getting Started</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./../fr"> 
+    <a class="nav-link" href="../../../fr"> 
 <span class="menu-text">Français</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./../"> 
+    <a class="nav-link" href="../../../"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item compact">
@@ -220,294 +165,116 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Démarrer en Finance Quantitative avec Python</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Vincent D. </p>
-            </div>
-    </div>
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">10 good-to-know quotes about portfolio construction</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">data</div>
+    <div class="quarto-category">quotes</div>
+    <div class="quarto-category">portfolio</div>
+    <div class="quarto-category">inspiration</div>
+    <div class="quarto-category">consutruction</div>
+  </div>
+  </div>
 
 
 
+<div class="quarto-title-meta column-page">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Vincent D. </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 23, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<blockquote class="blockquote">
+<p>Diversification is the only free lunch in investing. – <cite>Harry Markowitz</cite></p>
+</blockquote>
+<p>Harry Markowitz, the father of modern portfolio theory, revolutionized investing with the idea of diversification. By spreading investments across various asset classes—such as stocks, bonds, and real estate—investors can reduce risk without sacrificing returns. This “free lunch” refers to the ability to minimize risk by not putting all your eggs in one basket, thereby mitigating the impact of any single investment’s poor performance. Diversification works because different assets often move in opposite directions under varying market conditions, balancing the overall portfolio performance and enhancing the chances of stable returns over time.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../pictures/portfolio-optimisation.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<hr>
+<blockquote class="blockquote">
+<p>The essence of investment management is the management of risks, not the management of returns. – <cite>Benjamin Graham</cite></p>
+</blockquote>
+<p>Benjamin Graham, known as the father of value investing, believed that focusing on risk management is paramount. Returns are uncertain and largely dependent on market conditions, but risk is something investors can control by carefully selecting assets, diversifying, and being cautious of overpaying for securities. Managing risk ensures that the portfolio can withstand market downturns and avoid catastrophic losses. By prioritizing risk management, investors protect their capital, making it possible to achieve long-term investment goals even if short-term returns are unpredictable or lower than expected.</p>
+<hr>
+<blockquote class="blockquote">
+<p>The goal of a successful portfolio is to have a balance of risk and return, tailored to your unique goals and risk tolerance. – <cite>Suze Orman</cite></p>
+</blockquote>
+<p>Suze Orman emphasizes the importance of aligning your investment strategy with personal financial goals and risk tolerance. A well-constructed portfolio balances growth potential and safety, ensuring that the investor can achieve their objectives—be it retirement, purchasing a home, or funding education—without taking on more risk than they are comfortable with. This balance requires understanding both the time horizon for each goal and the investor’s emotional capacity to handle market volatility. By customizing the portfolio to reflect these factors, investors can maintain confidence and stay the course through market ups and downs.</p>
+<hr>
+<blockquote class="blockquote">
+<p>A portfolio that is not well-diversified exposes you to unnecessary risks and limits your potential for growth. – <cite>David Swensen</cite></p>
+</blockquote>
+<p>David Swensen, renowned for managing Yale’s endowment, advocated for diversification as a key strategy in reducing risk. A concentrated portfolio—where investments are limited to a few assets or sectors—can suffer severe losses if those areas underperform. By diversifying across asset classes, sectors, and geographic regions, investors can mitigate the risk of any single investment causing significant harm to their portfolio. This broader exposure not only protects against downside risk but also captures opportunities for growth across different areas, enhancing overall portfolio performance in various market conditions.</p>
+<hr>
+<blockquote class="blockquote">
+<p>Don’t look for the needle in the haystack. Just buy the haystack! – <cite>John C. Bogle</cite></p>
+</blockquote>
+<p>John C. Bogle, founder of Vanguard and the pioneer of index funds, advocated for broad market exposure through index investing rather than trying to pick individual stocks (the needle). Index funds represent the “haystack,” capturing the performance of entire markets or sectors, thus reducing the risk associated with selecting individual winners. This approach is rooted in the belief that it’s nearly impossible to consistently outperform the market through stock picking. By buying the haystack, investors can benefit from the overall growth of the market, ensuring a diversified and low-cost investment approach with steady long-term returns.</p>
+<hr>
+<blockquote class="blockquote">
+<p>Your portfolio should be like a well-balanced meal, with a mix of growth, income, and stability to sustain you over the long term. – <cite>Christine Benz</cite></p>
+</blockquote>
+<p>Christine Benz uses the metaphor of a well-balanced meal to describe a diversified portfolio. Just as a nutritious diet includes a variety of food groups, a robust portfolio should contain different types of investments to meet long-term financial needs. Growth assets (like stocks) offer the potential for capital appreciation, income assets (such as bonds) provide regular interest payments, and stability-focused investments (like cash or conservative bonds) offer protection against volatility. This mix helps investors achieve a balanced approach that supports sustained growth while managing risk, much like how a balanced diet promotes long-term health.</p>
+<hr>
+<blockquote class="blockquote">
+<p>Successful investing is about managing risk, not avoiding it. – <cite>Benjamin Graham</cite></p>
+</blockquote>
+<p>Benjamin Graham’s wisdom highlights the importance of acknowledging and managing risk rather than attempting to avoid it altogether, which is often unrealistic in investing. All investments carry some degree of risk, but by understanding and controlling that risk—through diversification, proper asset allocation, and thorough analysis—investors can protect themselves from significant losses. This approach allows investors to stay invested through market fluctuations and capitalize on opportunities without being derailed by fear or volatility, thereby increasing the likelihood of long-term success and reaching their financial goals.</p>
+<hr>
+<blockquote class="blockquote">
+<p>In portfolio construction, the objective is not to maximize returns, but to maximize the likelihood of achieving your long-term goals. – <cite>William Bernstein</cite></p>
+</blockquote>
+<p>William Bernstein, a financial theorist and author, stresses that portfolio construction should focus on achieving long-term financial goals rather than chasing maximum returns. This involves designing a portfolio that balances growth potential with risk management, ensuring that it aligns with the investor’s specific objectives, such as retirement or education funding. By focusing on goals rather than returns, investors are more likely to adopt a disciplined, patient approach, avoiding the pitfalls of speculative investing or market timing. This strategy increases the likelihood of reaching financial targets without unnecessary exposure to risk.</p>
+<hr>
+<blockquote class="blockquote">
+<p>By accepting the reality of market uncertainty, a diversified portfolio allows you to weather storms and benefit from long-term growth. – <cite>Meb Faber</cite></p>
+</blockquote>
+<p>Meb Faber, an investment strategist, emphasizes the importance of accepting market uncertainty as a constant and using diversification as a strategy to manage it. Markets are inherently unpredictable, and trying to time them can lead to poor decisions. A diversified portfolio, however, spreads investments across different assets, reducing the impact of any one market downturn. This approach not only protects the portfolio during volatile periods but also positions it to benefit from long-term growth as markets recover and different assets perform well at different times, leading to more stable overall returns.</p>
+<hr>
+<blockquote class="blockquote">
+<p>Constructing a portfolio is like building a house; you need a solid foundation to weather any storm. – <cite>Unknown</cite></p>
+</blockquote>
+<p>This analogy likens portfolio construction to building a house, where the foundation must be strong enough to support the structure during any storm. In the context of investing, this foundation is built through careful asset allocation, diversification, and risk management. Just as a house with a weak foundation might collapse during a storm, a poorly constructed portfolio may suffer significant losses during market downturns. A solid foundation in investing means having a well-thought-out strategy that can withstand market volatility, ensuring the portfolio remains resilient and capable of achieving long-term financial objectives.</p>
 
 
 
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="data,correlation,relationship,tracking-error,statistics" data-listing-date-sort="1723932000000" data-listing-file-modified-sort="1724307069493" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="669">
-<a href="./posts/articles/tutorials/tracking-error.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./pictures/lection-on-stock-market-trading.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Tracking Error of QQQ vs SPY: A Practical Guide with Python
-</h5>
-<div class="card-text listing-description">
-In the world of finance and investing, understanding how closely an investment tracks its benchmark index is crucial for evaluating performance and risk. This concept is…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Vincent D.
-</div>
-<div class="listing-date">
-Aug 18, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="data,correlation,relationship,analytics,statistics" data-listing-date-sort="1723500000000" data-listing-file-modified-sort="1723542796396" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="777">
-<a href="./posts/articles/tutorials/correlation-returns.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./pictures/green-cutting-mat-with-geometric-patterns.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Correlation of returns: why it matters, and how to analyse it with Python
-</h5>
-<div class="card-text listing-description">
-Understanding the correlation of returns between different asset classes is a key concept in finance and investment. For instance, analysing the correlation between QQQ…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Vincent D.
-</div>
-<div class="listing-date">
-Aug 13, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="coding,finance,risk,return,sharpe,ratio,python" data-listing-date-sort="1722722400000" data-listing-file-modified-sort="1723048507273" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="783">
-<a href="./posts/articles/tutorials/sharpe-ratio.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./pictures/risk-return-concept.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Sharpe Ratio: A Must-Know for Every Investor
-</h5>
-<div class="card-text listing-description">
-As a financial engineer with over 20 years of experience, I understand just how crucial the Sharpe Ratio is for evaluating investments. This essential metric provides a way…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Vincent D.
-</div>
-<div class="listing-date">
-Aug 4, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="coding,finance,risk,python" data-listing-date-sort="1722722400000" data-listing-file-modified-sort="1723048654905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="578">
-<a href="./posts/articles/tutorials/max-drawdown.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Maximum Drawdown: A Practical Approach with Python
-</h5>
-<div class="card-text listing-description">
-Maximum Drawdown (MDD) is a critical risk metric for investors. It quantifies the largest peak-to-trough decline in an investment’s value over a specified period, providing…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Vincent D.
-</div>
-<div class="listing-date">
-Aug 4, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="data-gathering,volatility,log-returns" data-listing-date-sort="1722636000000" data-listing-file-modified-sort="1723355920318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="579">
-<a href="./posts/articles/tutorials/historical-vol.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./pictures/diagram-representing-red-crashing-market-volatility.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Understanding Historical Volatility
-</h5>
-<div class="card-text listing-description">
-If you’re a budding financial engineer, investor, or market enthusiast, understanding historical volatility is crucial. Historical volatility, by referencing past price…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Vincent D.
-</div>
-<div class="listing-date">
-Aug 3, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="portfolio-construction" data-listing-date-sort="1714514400000" data-listing-file-modified-sort="1723095870043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1454">
-<a href="./posts/articles/tutorials/optimise-portfolios-with-python.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="pictures/portfolio-optimisation.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Portfolio Optimisation with Python
-</h5>
-<div class="card-text listing-description">
-Thanks for popping by; please note that this article is still in construction.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Vincent D.
-</div>
-<div class="listing-date">
-May 1, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="101,en,setup,bash,python,windows,matplotlib" data-listing-date-sort="1708556400000" data-listing-file-modified-sort="1723049405404" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="561">
-<a href="./posts/articles/tutorials/setting-up-a-python-workstation-windows.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Setting up a Python Development Workstation (Windows)
-</h5>
-<div class="card-text listing-description">
-In this article we set up our Windows workstation and install all the relevant tools to be efficient in coding in Python.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Vincent D.
-</div>
-<div class="listing-date">
-Feb 22, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="101,en,setup,python,bash,macos,matplotlib" data-listing-date-sort="1708383600000" data-listing-file-modified-sort="1723095845371" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="733">
-<a href="./posts/articles/tutorials/setting-up-a-python-workstation-macos.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./pictures/high-tech-programming-office-with-workstations.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Setting up a Python Development Workstation (MacOs)
-</h5>
-<div class="card-text listing-description">
-In this article, we start our journey into Finance and Python coding. Let’s set up our MacOs Workstation and install a few key tools to code efficiently.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Vincent D.
-</div>
-<div class="listing-date">
-Feb 20, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="tutorial,data,matplotlib,en" data-listing-date-sort="1706137200000" data-listing-file-modified-sort="1723111377843" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="410">
-<a href="./posts/articles/tutorials/spy-and-matplotlib.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/articles/tutorials/spy-and-matplotlib_files/figure-html/cell-5-output-1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Getting and charting data with Matplotlib
-</h5>
-<div class="card-text listing-description">
-In this article, we start our data analysis journey with Python by getting and charting data, in this case the performance of an ETF using freely available data.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Vincent D.
-</div>
-<div class="listing-date">
-Jan 25, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="9" data-categories="publication-workflow" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1724431102540" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="892">
-<a href="./posts/articles/tutorials/visualizing-historical-data.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="pictures/chart-preview.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Visualising Historical Data
-</h5>
-<div class="card-text listing-description">
-“A quick introduction on how to gather data using Python, Pandas and Pandas_DataReader in order to easily gather historical times from Yahoo Finance.”
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Vincent D.
-</div>
-<div class="listing-date">
-Mar 3, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -993,7 +760,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../../about.html">
 <p>About | Copyright | Disclaimer</p>
 </a>
   </li>  
