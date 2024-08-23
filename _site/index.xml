@@ -12,7 +12,7 @@
 <generator>quarto-1.5.56</generator>
 <lastBuildDate>Wed, 21 Aug 2024 22:00:00 GMT</lastBuildDate>
 <item>
-  <title>Must Read Papers Series #1: Review of Portfolio Selection (Harry Markowitz)</title>
+  <title>Must Read Papers Series #1: Review of ‘Portfolio Selection’ (Harry Markowitz)</title>
   <dc:creator>Vincent D.</dc:creator>
   <link>https://portfolio-geek.com/posts/papers-reviews/Portfolio_Selection.html</link>
   <description><![CDATA[ 
@@ -22,7 +22,7 @@
 
 
 <section id="review-of-portfolio-selection-by-harry-markowitz" class="level1">
-<h1>Review of: “Portfolio Selection” by Harry Markowitz</h1>
+<h1>Review of: ‘Portfolio Selection’ by Harry Markowitz</h1>
 <section id="where-to-find-this-paper" class="level2">
 <h2 class="anchored" data-anchor-id="where-to-find-this-paper">Where to find this paper</h2>
 <p><a href="https://www.jstor.org/stable/2975974">You can find the full paper here</a></p>
@@ -35,21 +35,32 @@
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>Imagine trying to navigate a vast ocean without a map. In the finance world, Markowitz’s is one of the few commonly agreed maps, guiding investors through portfolio selection. Originally published in 1952, this research introduced the brand new concept of modern portfolio theory (MPT), which fundamentally transformed how we think about investment strategies. It highlights that risk and return are not mere afterthoughts but the two sides of the same coin in investment decision-making.</p>
+<section id="a-solid-map-to-navigate-portfolio-construction" class="level3">
+<h3 class="anchored" data-anchor-id="a-solid-map-to-navigate-portfolio-construction">A solid map to navigate portfolio construction</h3>
+<p>Imagine trying to navigate a vast ocean without a map. In the finance world, Markowitz’s is one of the few commonly agreed maps, guiding investors through portfolio selection.</p>
+</section>
+<section id="a-new-approach-to-asset-allocation" class="level3">
+<h3 class="anchored" data-anchor-id="a-new-approach-to-asset-allocation">A new approach to asset allocation</h3>
+<p>Originally published in 1952, this research introduced the brand new concept of modern portfolio theory (MPT), which fundamentally transformed how we think about investment strategies. It highlights that risk and return are not mere afterthoughts but the two sides of the same coin in investment decision-making.</p>
+</section>
+<section id="a-solid-theory-to-support-investors-intuitions" class="level3">
+<h3 class="anchored" data-anchor-id="a-solid-theory-to-support-investors-intuitions">A solid theory to support investors’ intuitions</h3>
 <p>Investors used to focus primarily on individual stocks, often leading to risk-laden portfolios. However, Markowitz urged us to look at the bigger picture: how assets work together, or rather, how their values interact. By advocating for diversification, he demonstrated that combining a variety of investments can significantly reduce risk without sacrificing returns. This insight is invaluable! It means that financiers can target greater predictability and stability in uncertain markets.</p>
+</section>
 </div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/pictures/business-graphs-and-magnifying-glass-on-table.jpg" class="img-fluid figure-img"></p>
-<figcaption>Selecting and weighting assets into portfolio is a complex and ambitious task.</figcaption>
-</figure>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://portfolio-geek.com/pictures/business-graphs-and-magnifying-glass-on-table.jpg" class="img-fluid"></p>
 </div>
 </div>
 </div>
-</div>
+<section id="a-starting-point-to-build-more-sophisticated-models" class="level3">
+<h3 class="anchored" data-anchor-id="a-starting-point-to-build-more-sophisticated-models">A starting point to build more sophisticated models</h3>
 <p>Moreover, his mathematical models for calculating the optimal mix of assets have become fundamental in finance education and practice. Even today, Markowitz’s principles underpin the analytical tools that wealth managers and hedge fund strategists use to optimise portfolios.</p>
+</section>
+<section id="a-new-lens-for-investors" class="level3">
+<h3 class="anchored" data-anchor-id="a-new-lens-for-investors">A new lens for investors</h3>
 <p>In essence, Markowitz’s work gave us a new lens to view investments, creating a safer, more systematic approach for finance professionals and thereby establishing standards that define today’s investment strategies. His research is not merely of historical significance; its principles continue to shape our everyday financial decisions. Understanding this paper is a stepping stone for anyone committed to excelling in finance.</p>
+</section>
 </section>
 <section id="starting-point-and-key-assumptions" class="level2">
 <h2 class="anchored" data-anchor-id="starting-point-and-key-assumptions">Starting Point and Key Assumptions</h2>
@@ -170,40 +181,9 @@
 </div>
 </div>
 </section>
-<section id="article-summary" class="level2">
-<h2 class="anchored" data-anchor-id="article-summary">Article Summary</h2>
-</section>
-</section>
-<section id="summary-of-portfolio-selection" class="level1">
-<h1>Summary of Portfolio Selection</h1>
-<p>In ‘Portfolio Selection’, Harry Markowitz introduces an innovative framework that fundamentally transforms how we think about investing. Before this work, most investors viewed stocks in isolation. However, Markowitz presents a compelling argument for aggregation, or portfolio construction, viewing each investment not just by its individual performance, but by how it contributes to the risk-reward profile of the overall portfolio.</p>
-<section id="the-core-of-the-theory" class="level2">
-<h2 class="anchored" data-anchor-id="the-core-of-the-theory">The Core of the Theory</h2>
-<p>Markowitz’s central thesis centers around the concept of modern portfolio theory (MPT), which asserts that an investor can construct a portfolio of assets in such a way as to maximize expected return for a given level of risk. This practical yet theoretical approach emphasises diversification as a key strategy in risk management. By combining a variety of assets whose returns do not correlate perfectly, the investor can reduce volatility and enhance returns, given that risk is not merely considered on standalone investments.</p>
-<section id="key-elements-of-the-framework" class="level3">
-<h3 class="anchored" data-anchor-id="key-elements-of-the-framework">Key Elements of the Framework</h3>
-<ol type="1">
-<li><strong>Expected Returns</strong>: Investors need to focus on theoretical returns, which are calculated based on an asset’s historical performance and future projections.</li>
-<li><strong>Risk Assessment</strong>: Defining risk as the variance of asset returns, Markowitz employs mathematical tools to assess potential risk across multiple investment options instead of simplifying it merely to volatility.</li>
-<li><strong>Efficient Frontier</strong>: One of Markowitz’s most revolutionary concepts is the efficient frontier, a graphical representation of the optimal portfolios offering the highest return for a given level of risk. It illustrates the trade-off between risk and return and exemplifies the benefits of diversification.</li>
-</ol>
-</section>
-<section id="mathematical-model" class="level3">
-<h3 class="anchored" data-anchor-id="mathematical-model">Mathematical Model</h3>
-<p>Utilising quadratic programming, Markowitz provides a mathematical formulation to derive the weights of various assets within a portfolio, thus enabling investors to pinpoint the maximum expected return relative to their risk tolerance. This mathematical model laid the groundwork for later developments in finance, including the Capital Asset Pricing Model (CAPM).</p>
-</section>
-<section id="implications-for-investors" class="level3">
-<h3 class="anchored" data-anchor-id="implications-for-investors">Implications for Investors</h3>
-<p>Markowitz’s model has indeed redefined asset allocation. It underscores that the correlation between different assets plays a crucial role in overall portfolio risk. Investors are thus encouraged to seek a diversified strategy, reducing unsystematic risk significantly. Furthermore, it powers the discourse on active vs passive management, with passive management promoting the ideas inherent in Markowitz’s findings.</p>
-</section>
-<section id="continuing-influence" class="level3">
-<h3 class="anchored" data-anchor-id="continuing-influence">Continuing Influence</h3>
-<p>Markowitz’s framework not only influenced subsequent investment strategies but also reshaped the very fabric of portfolio management. His theories continue to inform modern financial practices, prompting wealth managers, hedge funds, and retail investors to adopt diversified strategies founded on robust mathematical analysis.</p>
-</section>
-</section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Overall, Harry Markowitz’s ‘Portfolio Selection’ is more than just an academic paper; it is a seminal work that continues to resonate within both academic and practical applications of finance today. The implications of risk management and optimization laid out in the paper serve as a crucial foundation for investors looking to navigate the complex landscape of financial markets.</p>
+<p>Overall, Harry Markowitz’s ‘Portfolio Selection’ is more than just an academic paper; it is a seminal work that continues to resonate within both academic and practical applications of finance today. The implications of risk management and optimization laid out in the paper serve as a foundation for investors looking to navigate financial markets.</p>
 
 
 </section>

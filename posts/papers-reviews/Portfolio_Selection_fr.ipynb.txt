@@ -25,18 +25,7 @@
   {
    "cell_type": "markdown",
    "metadata": {},
-   "source": [
-    "## Point de départ et hypothèses clés\n",
-    "Dans 'Sélection de portefeuille', Harry Markowitz établit plusieurs hypothèses clés essentielles à son cadre, qui incluent :\n",
-    "1. **Rationalité de l'investisseur** : On suppose que les investisseurs sont rationnels et prennent des décisions en fonction du rendement attendu et du potentiel de risque plutôt que des tendances émotionnelles ou spéculatives.\n",
-    "2. **Les marchés sont efficaces** : L'article postule que tous les investisseurs ont accès aux mêmes informations. Par conséquent, les prix reflètent toutes les informations disponibles à tout moment donné, ce qui rend impossible d'atteindre régulièrement des rendements excessifs.\n",
-    "3. **Distribution normale des rendements** : Markowitz suppose que les rendements des actifs suivent une distribution normale, où la moyenne et la variance peuvent représenter suffisamment la performance des actifs.\n",
-    "4. **Horizon statique des investisseurs** : L'analyse suppose une période d'investissement unique et inchangée. Les investisseurs sont vus comme prenant des décisions sur la base d'un cadre temporel fixe, sans tenir compte des dynamiques au-delà de cette portée.\n",
-    "5. **Mesure du risque** : Le degré de risque est décrit par la variance ou l'écart type des rendements du portefeuille. Cette mesure standard souligne la variance des prix des actifs, qui est critique pour évaluer la volatilité et la stabilité du portefeuille.\n",
-    "6. **Relation linéaire** : Le modèle de Markowitz suppose un compromis linéaire entre le risque et le rendement, indiquant que l'augmentation du rendement attendu s'accompagne d'une augmentation proportionnelle du risque, ce qui le rend prévisible.\n",
-    "\n",
-    "Ces hypothèses critiques sous-tendent la théorie moderne du portefeuille, reflétant une approche systématique pour optimiser les portefeuilles d'investissement. Comprendre ces hypothèses est primordial pour les professionnels de la finance car cela capture l'essence théorique qui façonne les stratégies d'investissement."
-   ]
+   "source": []
   },
   {
    "cell_type": "markdown",
@@ -140,7 +129,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "## Résumé\n",
+    "## Résumé Académique\n",
     "Ce document classique de Markowitz introduit un cadre révolutionnaire pour comprendre les décisions d'investissement à travers le prisme de la théorie du portefeuille. Il combine de manière unique les concepts de risque et de rendement, fournissant une base mathématique pour sélectionner un portefeuille optimal. En utilisant les rendements et variances attendus, il déplace le focus des titres individuels vers des portefeuilles, changeant fondamentalement l'approche de la diversification des investissements. Le programme académique entourant ce sujet met généralement l'accent sur l'importance d'équilibrer le risque avec le rendement attendu ; cependant, le travail de Markowitz illumine comment le risque peut être quantifié et géré via la diversification. Cette perspective pionnière a jeté les bases de la gestion de portefeuille moderne et a des implications qui s'étendent à la finance empirique, à l'économie comportementale et à la microstructure de marché. La signification du travail de Markowitz est attestée par sa pertinence durable, étant une pierre angulaire dans les cours de finance et la recherche même des décennies après sa publication initiale."
    ]
   }
