@@ -10,7 +10,7 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Thu, 22 Aug 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 22 Aug 2024 23:00:00 GMT</lastBuildDate>
 <item>
   <title>10 good-to-know quotes about portfolio construction</title>
   <dc:creator>Vincent D.</dc:creator>
@@ -91,7 +91,7 @@
   <category>inspiration</category>
   <category>consutruction</category>
   <guid>https://portfolio-geek.com/posts/quotes/10-insightful-quotes-about-portfolio-construction.html</guid>
-  <pubDate>Thu, 22 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Thu, 22 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/portfolio-optimisation.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
@@ -282,7 +282,7 @@
   <category>review</category>
   <category>portfolio-construction</category>
   <guid>https://portfolio-geek.com/posts/papers-reviews/Portfolio_Selection.html</guid>
-  <pubDate>Wed, 21 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Wed, 21 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/business-graphs-and-magnifying-glass-on-table.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -782,7 +782,7 @@ font-style: inherit;">'Rolling TE (52 Weeks)'</span>)</span>
   <category>tracking-error</category>
   <category>statistics</category>
   <guid>https://portfolio-geek.com/posts/articles/tutorials/tracking-error.html</guid>
-  <pubDate>Sat, 17 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Sat, 17 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/lection-on-stock-market-trading.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -843,7 +843,7 @@ font-style: inherit;">'Rolling TE (52 Weeks)'</span>)</span>
  ]]></description>
   <category>economics</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_14_daily-curation.html</guid>
-  <pubDate>Tue, 13 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Tue, 13 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/cup-of-coffee-and-a-newspaper.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -1407,7 +1407,7 @@ font-style: inherit;">"Correlation"</span>)</span>
   <category>analytics</category>
   <category>statistics</category>
   <guid>https://portfolio-geek.com/posts/articles/tutorials/correlation-returns.html</guid>
-  <pubDate>Mon, 12 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Mon, 12 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/green-cutting-mat-with-geometric-patterns.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -1559,7 +1559,7 @@ font-style: inherit;">"Correlation"</span>)</span>
   <category>etf</category>
   <category>fundamental</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_13_daily-curation.html</guid>
-  <pubDate>Mon, 12 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Mon, 12 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/coffee-and-newspapers-on-wooden-floor.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -1725,7 +1725,7 @@ font-style: inherit;">"Correlation"</span>)</span>
   <category>portfolio-construction</category>
   <category>tech</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_09_daily-curation.html</guid>
-  <pubDate>Thu, 08 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Thu, 08 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/article-in-newspaper.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -1825,7 +1825,7 @@ font-style: inherit;">"Correlation"</span>)</span>
   <category>crypto</category>
   <category>market-feed</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_08_daily-curation.html</guid>
-  <pubDate>Wed, 07 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Wed, 07 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/coffee-over-newspaper.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -1984,7 +1984,7 @@ font-style: inherit;">"Correlation"</span>)</span>
   <category>hedge-funds</category>
   <category>market-feed</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_07_daily-curation.html</guid>
-  <pubDate>Tue, 06 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Tue, 06 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/corporate-businessman-coffee-working-journal.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -2574,7 +2574,7 @@ font-style: inherit;">'Annualized Return'</span>)</span>
   <category>ratio</category>
   <category>python</category>
   <guid>https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio.html</guid>
-  <pubDate>Sat, 03 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Sat, 03 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/risk-return-concept.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -2812,7 +2812,7 @@ font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
   <category>risk</category>
   <category>python</category>
   <guid>https://portfolio-geek.com/posts/articles/tutorials/max-drawdown.html</guid>
-  <pubDate>Sat, 03 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Sat, 03 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -2959,7 +2959,7 @@ font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
   <category>market-feed</category>
   <category>personal-dvpt</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_04_daily-curation.html</guid>
-  <pubDate>Sat, 03 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Sat, 03 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/books-and-a-cup-of-coffee-on-a-wooden-background.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -3385,7 +3385,7 @@ font-style: inherit;">'Volatility'</span>)</span>
   <category>volatility</category>
   <category>log-returns</category>
   <guid>https://portfolio-geek.com/posts/articles/tutorials/historical-vol.html</guid>
-  <pubDate>Fri, 02 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Fri, 02 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/diagram-representing-red-crashing-market-volatility.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -3493,7 +3493,7 @@ font-style: inherit;">'Volatility'</span>)</span>
   <category>coding</category>
   <category>data-science</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_02_daily-curation.html</guid>
-  <pubDate>Thu, 01 Aug 2024 22:00:00 GMT</pubDate>
+  <pubDate>Thu, 01 Aug 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/flat-lay-office-desk-with-laptop-notebook-pencil.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -3660,7 +3660,7 @@ font-style: inherit;">'Volatility'</span>)</span>
   <category>hedge-funds</category>
   <category>tech</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_01_daily-curation.html</guid>
-  <pubDate>Wed, 31 Jul 2024 22:00:00 GMT</pubDate>
+  <pubDate>Wed, 31 Jul 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/cup-of-coffee-and-a-newspaper.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -3820,7 +3820,7 @@ font-style: inherit;">'Volatility'</span>)</span>
   <category>economics</category>
   <category>etf</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_31_daily-curation.html</guid>
-  <pubDate>Tue, 30 Jul 2024 22:00:00 GMT</pubDate>
+  <pubDate>Tue, 30 Jul 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/stack-of-paper.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -3928,7 +3928,7 @@ font-style: inherit;">'Volatility'</span>)</span>
   <category>etf</category>
   <category>market-feed</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_29_daily-curation.html</guid>
-  <pubDate>Sun, 28 Jul 2024 22:00:00 GMT</pubDate>
+  <pubDate>Sun, 28 Jul 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/pile-of-newspapers.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -4117,7 +4117,7 @@ font-style: inherit;">'Volatility'</span>)</span>
   <category>fundamental</category>
   <category>personal-dvpt</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_26_daily-curation.html</guid>
-  <pubDate>Fri, 26 Jul 2024 22:00:00 GMT</pubDate>
+  <pubDate>Fri, 26 Jul 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/article-in-newspaper.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -4237,7 +4237,7 @@ font-style: inherit;">'Volatility'</span>)</span>
   <category>coding</category>
   <category>economics</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_25_daily-curation.html</guid>
-  <pubDate>Wed, 24 Jul 2024 22:00:00 GMT</pubDate>
+  <pubDate>Wed, 24 Jul 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/morning-news-in-the-office-2023-11-27-04-50-01-utc.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -4377,7 +4377,7 @@ font-style: inherit;">'Volatility'</span>)</span>
   <category>fundamental</category>
   <category>quant</category>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_24_daily-curation.html</guid>
-  <pubDate>Tue, 23 Jul 2024 22:00:00 GMT</pubDate>
+  <pubDate>Tue, 23 Jul 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/news-concept-with-newspapers-2023-11-27-05-32-59-utc.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 </channel>

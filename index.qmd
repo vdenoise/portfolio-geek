@@ -31,27 +31,25 @@ listing:
 
 ::: {.g-col-12 .g-col-md-6}
 
-> Without data, you're just another person with an opinion.
-
-> -- <cite>W. Edwards Deming </cite>
-
 ::: {.content-visible when-profile="website_en"}
 
-## Welcome to Portfolio Geek
-With 20+ years of experience in **portfolio construction, asset allocation and quantitative research**, I have worked across the entire **asset management** and **financial markets** value chain.  
-
+## Portfolio Geek
+### Finance & Portfolio Construction, Fuelled by Tech
 In this blog, I document my findings and experiments, notably in **Python**, **Jupyter** and along themes like **portfolio optimisation** and **reproducible research**.
 :::
 
 
 ::: {.content-visible when-profile="website_fr"}
 
-## Bienvenue sur Portfolio Geek
-
-Avec plus de plus de 20 ans d'expérience dans la **construction de portefeuilles, l'allocation d'actifs et la recherche quantitative**, j'ai travaillé tout au long de la chaîne de valeur de la **gestion d'actifs** et des **marchés financiers**.
-
+## Portfolio Geek
+### Finance et Construction de Portefeuille, Alimentés par la Tech
 Dans ce blog, je documente mes découvertes et mes essais, notamment en **Python**, **Jupyter**, et autour de thèmes comme l'**optimisation de portefeuille** et la **recherche reproductible**.
 :::
+
+> Without data, you're just another person with an opinion.
+
+> -- <cite>W. Edwards Deming </cite>
+
 
 :::
 

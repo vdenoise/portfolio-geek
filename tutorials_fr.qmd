@@ -2,7 +2,7 @@
 title: "Démarrer en Finance Quantitative avec Python"
 listing:
   contents: 
-    - /posts/articles/tutorials/
+    - /posts/articles/tutorials/*.ipynb
   sort: "date desc"
   type: grid
   fields: [author, date, description, title, image]
