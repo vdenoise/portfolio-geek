@@ -1,0 +1,115 @@
+---
+title: "Daily Curation (27.08.2024): Generative AI, Rising Food Prices, Small Caps Surge, and Python Innovations"
+page-layout: full
+title-block-banner: true
+date: 08-27-2024
+categories: [ai,climate,coding,economics,etf,fundamental]
+tags: [ai, climate, food, astronomy, python, recession, investment, liquidity, small-caps, performance]
+---
+
+::: {layout-ncol=2}
+
+:::{#first-column}
+
+::: {.content-visible when-profile="website_en"}
+In today's curation, we explore various topics impacting finance and technology:
+
+- Clara Shih on generative AI in business efficiency
+- The influence of climate change on food prices
+- An astronomy course utilizing Python libraries
+- Uv, a rapid Python installer written in Rust
+- US recession risk analysis and economic outlook
+- Jerome Powell's potential policy shifts
+- Bill Ackman's plans for a new ETF
+- Small-cap performance and insights from Brandon Nelson 
+
+Please see the table below for further details.
+:::
+
+::: {.content-visible when-profile="website_fr"}
+Voici notre curation quotidienne, mettant en lumière plusieurs sujets :
+
+- L'impact de l'IA générative sur l'efficacité et l'expérience client dans les entreprises.
+- Un cours d'astronomie utilisant des outils modernes pour l'analyse de données.
+- Présentation d'Uv, un nouvel installateur Python qui révolutionne la gestion des dépendances.
+- Analyse du risque de récession aux États-Unis et prévisions économiques.
+- Les intentions de Bill Ackman concernant un nouvel ETF et son accessibilité.
+- La performance impressionnante des small caps et leurs perspectives pour 2024.
+- Un aperçu d'une discussion sur l'investissement dans des actions de petite capitalisation. 
+
+Bonne lecture
+:::
+
+
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/high-angle-view-of-cup-of-coffee-on-papers-on-table.jpg)
+:::
+
+:::
+
+::: {.content-visible when-profile="website_en"}
+
+
+# AI and Gen-AI
+| Title | Summary |
+|-----|-----------|
+| [Revolutionary AI: Unlocking Business Potential and Transforming Workflows with Simplicity and Efficiency (McKinsery / At the Edge, 2024-08-27)](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/approaching-generative-ai-with-a-beginners-mindset)   | Clara Shih discusses the transformative potential of generative AI in business, particularly through large language models. Simplified workflows and data management can significantly improve efficiency and customer experience. |
+
+# Coding
+| Title | Summary |
+|-----|-----------|
+| [Transform Your Python Workflow: Meet UV, the Blazing-Fast Dependency Installer Made with Rust (Korben, 2024-08-26)](https://korben.info/uv-installateur-python-ultra-rapide-revolutionne-projets.html)   | Uv is a super-fast Python installer and dependency resolver written in Rust. It offers performance up to 100 times quicker than pip, supports multiple install methods, and manages dependencies efficiently. |
+
+# Economics
+| Title | Summary |
+|-----|-----------|
+| [Q3 GDP Nowcasts Show Steady Growth: Recession Risks Remain Low Despite Slightly Softer Jobs Data (CapitalSpectator.com, 2024-08-27)](https://www.capitalspectator.com/us-recession-risk-is-still-low-via-q3-gdp-nowcasts/)   | Recession risk in the US remains low, with Q3 GDP growth nowcast at 2.0%, indicating stability. UBS raises recession odds to 25% but maintains a soft landing outlook. |
+| [Fed Signals Potential Rate Cuts Amid Rising Unemployment and Cooling Economy at Jackson Hole Symposium (Kansas City Fed, 2024-08-23)](https://www.tker.co/p/fed-chair-powell-jackson-hole-2024)   | Fed Chair Jerome Powell indicated a policy shift to prevent rising unemployment, suggesting potential rate cuts in September amid a cooling economy and diminishing inflation risks. |
+
+# ETFs and Index Investing
+| Title | Summary |
+|-----|-----------|
+| [Bill Ackman's Bold Move: From Closed-End Fund IPO to Modern ETF for Greater Investor Access and Efficiency (Benzinga, 2024-08-27)](https://www.benzinga.com/trading-ideas/long-ideas/24/08/40582288/bill-ackman-weighs-pivot-to-etf-after-abandoning-closed-end-fund-ipo-report)   | Bill Ackman is considering launching a Pershing Square ETF instead of a closed-end fund IPO, focusing on increased accessibility, liquidity, cost efficiency, and aligning with modern investment trends. |
+| [Top Fund Manager Shares Secrets: Avoid These Common Mistakes to Outperform the Market in 2024 (2024-08-23)](https://awealthofcommonsense.com/2024/08/chasing-star-fund-manager-performance/)   | In December 2020, Cathie Wood's ARK Innovation fund was outperforming the market, making her a prominent figure in finance and attracting significant media attention and investor interest. |
+
+# Fundamental Investing
+| Title | Summary |
+|-----|-----------|
+| [Small Caps Set to Outshine Big Tech in 2024: Key Insights for Savvy Investors (Benzinga, 2024-08-23)](https://www.benzinga.com/news/24/08/40535630/small-caps-set-to-lead-their-large-cap-brothers-for-rest-of-2024-says-market-strategist)   | Small caps are up 18% over 12 months, outperforming large caps. ETFs IJR, IWM, and VB show strong performance. Analysts predict small caps may lead in 2024. |
+| [Unveiling Small-Cap Investment Strategies: Insights from Calamos' Expert Portfolio Manager (2024-08-26)](https://awealthofcommonsense.com/2024/08/talk-your-book-19/)   | Today's talk featured Brandon Nelson from Calamos Investments, discussing small-cap stock investing, including profitable sectors, macro challenges, and why small-caps often go unnoticed. Access the full article [here](https://awealthofcommonsense.com/2024/08/talk-your-book-19/). |
+:::
+
+::: {.content-visible when-profile="website_fr"}
+# IA et IA Générative
+| Titre | Résumé |
+|-----|-----------|
+| [IA Révolutionnaire : Débloquer le Potentiel Commercial et Transformer les Flux de Travail avec Simplicité et Efficacité (Mc Kinsey / At the Edge, 2024-08-27)](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/approaching-generative-ai-with-a-beginners-mindset)   | Clara Shih discute du potentiel transformateur de l'IA générative dans les affaires, notamment à travers de grands modèles de langage. Des flux de travail et une gestion des données simplifiés peuvent améliorer considérablement l'efficacité et l'expérience client. |
+
+
+# Code
+| Titre | Résumé |
+|-----|-----------|
+| [Transformez Votre Flux de Travail Python : Rencontrez UV, l'Installateur de Dépendances Ultra-Rapide Fabriqué avec Rust (Korben, 2024-08-26)](https://korben.info/uv-installateur-python-ultra-rapide-revolutionne-projets.html)   | Uv est un installateur Python super rapide et un résolveur de dépendances écrit en Rust. Il offre des performances jusqu'à 100 fois plus rapides que pip, prend en charge plusieurs méthodes d'installation et gère les dépendances de manière efficace. |
+
+# Économie
+| Titre | Résumé |
+|-----|-----------|
+| [Les Prévisions de PIB du T3 Montrent une Croissance Stable : Les Risques de Récession Restent Faibles Malgré des Données d'Emploi Légèrement Plus Faibles (CapitalSpectator, 2024-08-27)](https://www.capitalspectator.com/us-recession-risk-is-still-low-via-q3-gdp-nowcasts/)   | Le risque de récession aux États-Unis reste faible, avec une prévision de croissance du PIB du T3 à 2.0%, indiquant une stabilité. UBS augmente les chances de récession à 25% mais maintient une perspective de douceur. |
+| [La Réserve Fédérale Signe des Coupures de Taux Potentielles au Milieu de la Croissance du Chômage et d'une Économie au Refroidissement au Symposium de Jackson Hole (2024-08-23)](https://www.tker.co/p/fed-chair-powell-jackson-hole-2024)   | Le président de la Réserve fédérale, Jerome Powell, a indiqué un changement de politique pour prévenir la hausse du chômage, suggérant des coupures potentielles de taux en septembre au milieu d'une économie en refroidissement et de risques d'inflation diminués. |
+
+# ETFs et Investissement Indiciel
+| Titre | Résumé |
+|-----|-----------|
+| [Le Coup Osé de Bill Ackman : D'un IPO de Fonds Fermé à un ETF Moderne pour un Accès et une Efficacité Accrues pour les Investisseurs (Benzinga, 2024-08-27)](https://www.benzinga.com/trading-ideas/long-ideas/24/08/40582288/bill-ackman-weighs-pivot-to-etf-after-abandoning-closed-end-fund-ipo-report)   | Bill Ackman envisage de lancer un ETF Pershing Square au lieu d'un IPO de fonds fermé, en se concentrant sur un accès accru, la liquidité, l'efficacité des coûts et en s'alignant sur les tendances d'investissement modernes. |
+| [Les Secrets d'un Meilleur Gestionnaire de Fonds : Évitez Ces Erreurs Courantes pour Surperformer le Marché en 2024 (2024-08-23)](https://awealthofcommonsense.com/2024/08/chasing-star-fund-manager-performance/)   | En décembre 2020, le fonds ARK Innovation de Cathie Wood surperformait le marché, ce qui faisait d'elle une figure de proue dans la finance, attirant une attention médiatique importante et l'intérêt des investisseurs. |
+
+# Investissement Fondamental
+| Titre | Résumé |
+|-----|-----------|
+| [Les Petites Capitalisations Prêtes à Éclipser les Big Caps en 2024 (Benzinga, 2024-08-23)](https://www.benzinga.com/news/24/08/40535630/small-caps-set-to-lead-their-large-cap-brothers-for-rest-of-2024-says-market-strategist)   | Les petites capitalisations ont augmenté de 18% au cours des 12 derniers mois, surpassant les grandes capitalisations. Les ETFs IJR, IWM et VB montrent de solides performances. Les analystes prévoient que les petites capitalisations pourraient mener en 2024. |
+
+:::
+
+

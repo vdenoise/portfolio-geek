@@ -10,7 +10,153 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Thu, 22 Aug 2024 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 26 Aug 2024 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Daily Curation (27.08.2024): Generative AI, Rising Food Prices, Small Caps Surge, and Python Innovations</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2024_08_27_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Voici notre curation quotidienne, mettant en lumière plusieurs sujets :</p>
+<ul>
+<li>L’impact de l’IA générative sur l’efficacité et l’expérience client dans les entreprises.</li>
+<li>Un cours d’astronomie utilisant des outils modernes pour l’analyse de données.</li>
+<li>Présentation d’Uv, un nouvel installateur Python qui révolutionne la gestion des dépendances.</li>
+<li>Analyse du risque de récession aux États-Unis et prévisions économiques.</li>
+<li>Les intentions de Bill Ackman concernant un nouvel ETF et son accessibilité.</li>
+<li>La performance impressionnante des small caps et leurs perspectives pour 2024.</li>
+<li>Un aperçu d’une discussion sur l’investissement dans des actions de petite capitalisation.</li>
+</ul>
+<p>Bonne lecture</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/high-angle-view-of-cup-of-coffee-on-papers-on-table.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="ia-et-ia-générative" class="level1">
+<h1>IA et IA Générative</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/approaching-generative-ai-with-a-beginners-mindset">IA Révolutionnaire : Débloquer le Potentiel Commercial et Transformer les Flux de Travail avec Simplicité et Efficacité (Mc Kinsey / At the Edge, 2024-08-27)</a></td>
+<td>Clara Shih discute du potentiel transformateur de l’IA générative dans les affaires, notamment à travers de grands modèles de langage. Des flux de travail et une gestion des données simplifiés peuvent améliorer considérablement l’efficacité et l’expérience client.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="code" class="level1">
+<h1>Code</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://korben.info/uv-installateur-python-ultra-rapide-revolutionne-projets.html">Transformez Votre Flux de Travail Python : Rencontrez UV, l’Installateur de Dépendances Ultra-Rapide Fabriqué avec Rust (Korben, 2024-08-26)</a></td>
+<td>Uv est un installateur Python super rapide et un résolveur de dépendances écrit en Rust. Il offre des performances jusqu’à 100 fois plus rapides que pip, prend en charge plusieurs méthodes d’installation et gère les dépendances de manière efficace.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="économie" class="level1">
+<h1>Économie</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.capitalspectator.com/us-recession-risk-is-still-low-via-q3-gdp-nowcasts/">Les Prévisions de PIB du T3 Montrent une Croissance Stable : Les Risques de Récession Restent Faibles Malgré des Données d’Emploi Légèrement Plus Faibles (CapitalSpectator, 2024-08-27)</a></td>
+<td>Le risque de récession aux États-Unis reste faible, avec une prévision de croissance du PIB du T3 à 2.0%, indiquant une stabilité. UBS augmente les chances de récession à 25% mais maintient une perspective de douceur.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.tker.co/p/fed-chair-powell-jackson-hole-2024">La Réserve Fédérale Signe des Coupures de Taux Potentielles au Milieu de la Croissance du Chômage et d’une Économie au Refroidissement au Symposium de Jackson Hole (2024-08-23)</a></td>
+<td>Le président de la Réserve fédérale, Jerome Powell, a indiqué un changement de politique pour prévenir la hausse du chômage, suggérant des coupures potentielles de taux en septembre au milieu d’une économie en refroidissement et de risques d’inflation diminués.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="etfs-et-investissement-indiciel" class="level1">
+<h1>ETFs et Investissement Indiciel</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.benzinga.com/trading-ideas/long-ideas/24/08/40582288/bill-ackman-weighs-pivot-to-etf-after-abandoning-closed-end-fund-ipo-report">Le Coup Osé de Bill Ackman : D’un IPO de Fonds Fermé à un ETF Moderne pour un Accès et une Efficacité Accrues pour les Investisseurs (Benzinga, 2024-08-27)</a></td>
+<td>Bill Ackman envisage de lancer un ETF Pershing Square au lieu d’un IPO de fonds fermé, en se concentrant sur un accès accru, la liquidité, l’efficacité des coûts et en s’alignant sur les tendances d’investissement modernes.</td>
+</tr>
+<tr class="even">
+<td><a href="https://awealthofcommonsense.com/2024/08/chasing-star-fund-manager-performance/">Les Secrets d’un Meilleur Gestionnaire de Fonds : Évitez Ces Erreurs Courantes pour Surperformer le Marché en 2024 (2024-08-23)</a></td>
+<td>En décembre 2020, le fonds ARK Innovation de Cathie Wood surperformait le marché, ce qui faisait d’elle une figure de proue dans la finance, attirant une attention médiatique importante et l’intérêt des investisseurs.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="investissement-fondamental" class="level1">
+<h1>Investissement Fondamental</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Titre</th>
+<th>Résumé</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.benzinga.com/news/24/08/40535630/small-caps-set-to-lead-their-large-cap-brothers-for-rest-of-2024-says-market-strategist">Les Petites Capitalisations Prêtes à Éclipser les Big Caps en 2024 (Benzinga, 2024-08-23)</a></td>
+<td>Les petites capitalisations ont augmenté de 18% au cours des 12 derniers mois, surpassant les grandes capitalisations. Les ETFs IJR, IWM et VB montrent de solides performances. Les analystes prévoient que les petites capitalisations pourraient mener en 2024.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>climate</category>
+  <category>coding</category>
+  <category>economics</category>
+  <category>etf</category>
+  <category>fundamental</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2024_08_27_daily-curation.html</guid>
+  <pubDate>Mon, 26 Aug 2024 23:00:00 GMT</pubDate>
+</item>
 <item>
   <title>10 good-to-know quotes about portfolio construction</title>
   <dc:creator>Vincent D.</dc:creator>
@@ -4239,146 +4385,6 @@ font-style: inherit;">'Volatility'</span>)</span>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_25_daily-curation.html</guid>
   <pubDate>Wed, 24 Jul 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/morning-news-in-the-office-2023-11-27-04-50-01-utc.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Daily Financial Insights 24.07.2024: US Economic Growth, ETF Trends, Small-Cap Outperformance, &amp; Inflation Eases</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_24_daily-curation.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>In today’s curation, we explore a range of topics relevant to quantitative finance and market insights:</p>
-<ul>
-<li>GroupBy operations in pandas for data analysis</li>
-<li>rnatoolbox for plotting group data</li>
-<li>US economic growth and inflation trends</li>
-<li>Fed rate prediction and implications for small-cap stocks</li>
-<li>Performance of small-cap ETFs and investor sentiment<br>
-</li>
-<li>Market performance under the Biden administration</li>
-</ul>
-<p>Please find further details in the table below.</p>
-</div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/pictures/news-concept-with-newspapers-2023-11-27-05-32-59-utc.png" class="img-fluid figure-img"></p>
-<figcaption>Coffee with daily news</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<section id="coding" class="level1">
-<h1>Coding</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://realpython.com/courses/pandas-groupby-real-world-data/">Unlocking Data Insights: Master pandas GroupBy Techniques with Real-World Examples (pandas documentation, 2024-07-23)</a></td>
-<td>This course teaches pandas GroupBy operations using real-world datasets. It covers the split-apply-combine process, method categorisation, and practical applications for effective data analysis.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.r-bloggers.com/2024/07/plotting-individual-values-within-multiple-groups-together-with-their-means/">Visualize Data with Ease Using Group Scatter Plots in R (gacatag, 2024-07-23)</a></td>
-<td>The <code>groupScatterPlot()</code> function in the rnatoolbox package plots individual values from multiple groups alongside their means, useful for various data analyses, including gene expression.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="economics" class="level1">
-<h1>Economics</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.capitalspectator.com/us-q2-gdp-growth-set-for-modest-pickup-in-thursdays-report/">US Economy Shows Resilience: Q2 Growth Set for Improvement, Recession Risk Remains Low (CapitalSpectator.com, 2024-07-23)</a></td>
-<td>US economic growth is expected to rise to 1.9% in Q2, an improvement from Q1’s 1.4%. Recession risk remains low, with estimates around 9% based on recent analytics.</td>
-</tr>
-<tr class="even">
-<td><a href="https://awealthofcommonsense.com/2024/07/are-higher-rates-finally-starting-to-impact-consumer-finances/">How Smart Financial Choices Mitigated Inflation Impact Without Triggering Recession (The name is not explicitly mentioned in the content provided, so I am unable to identify it., 2024-07-24)</a></td>
-<td>Inflation fell to 3% without recession. Consumers remain relatively resilient despite rising interest rates, though some debt types, like credit cards and auto loans, show increasing delinquencies.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://insight.factset.com/the-fed-is-not-cutting-in-september">Why the Fed May Delay Rate Cuts: Data, Market Signals, and Election Timing (FactSet Insight, 2024-07-23)</a></td>
-<td>The Fed is likely not to cut rates in September, anticipating two cuts in November and December instead, citing data dependency, synthetic cuts, and election politicisation as reasons.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="fundamental-investing" class="level1">
-<h1>Fundamental Investing</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.etftrends.com/etf-prime/crigger-small-cap-stocks-plus-spot-ether-etfs/">Unlocking Small-Cap Stock Potential and Ether ETF Strategies: Insights from Industry Experts (ETF Trends, 2024-07-23)</a></td>
-<td>Small-cap stocks have recently outperformed large-caps, leading to significant inflows into small-cap ETFs. Spot ether ETFs were approved rapidly, capitalising on changing regulatory attitudes towards cryptocurrencies.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.valuewalk.com/how-the-stock-market-has-fared-under-biden/">Assessing Biden’s Stock Market Legacy: A Comparative Analysis with Past Presidents from Reagan to Trump (ValueWalk, 2024-07-23)</a></td>
-<td>Since Biden took office, the S&amp;P 500 has risen 48%. His administration experienced two bull markets and one bear market, trailing both Trump and Obama’s stock market performances.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://rotationreport.substack.com/p/the-small-cap-snowball">Forecasting the Small Cap Surge: Tom Lee’s Bold Prediction on IWM Reaching 300 (Rotation Report, 2024-07-23)</a></td>
-<td>Tom Lee predicts IWM will reach 300. This speculation raises interesting possibilities for small-cap growth. Full details are exclusive to paid subscribers on a specific platform.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="quantitative-investing" class="level1">
-<h1>Quantitative Investing</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.etftrends.com/etf-building-blocks-channel/investing-factor-key-rate-sensitive-small-caps/">Unlock High Returns: Quality Small Cap Stocks to Watch During Upcoming Rate Cuts (ETF Trends, 2024-07-24)</a></td>
-<td>Rate cuts may benefit small-cap quality stocks, particularly through the ALPS O’Shares U.S. Small-Cap Quality Dividend ETF (OUSM), which focuses on dividends and shows strong performance compared to benchmarks.</td>
-</tr>
-</tbody>
-</table>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>coding</category>
-  <category>economics</category>
-  <category>fundamental</category>
-  <category>quant</category>
-  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_24_daily-curation.html</guid>
-  <pubDate>Tue, 23 Jul 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/news-concept-with-newspapers-2023-11-27-05-32-59-utc.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 </channel>
 </rss>
