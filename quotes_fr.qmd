@@ -13,7 +13,8 @@ title-block-banner: true
 ---
 
 Quelques citations pour votre quotidien d'investisseur ou de codeur.
-Note: quand les citations sont en anglais, l'explication est en francais.
+
+Note: quand les citations sont en anglais, une explication est fournie en francais.
 
 Bonne lecture,
 
