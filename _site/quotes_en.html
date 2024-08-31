@@ -8,7 +8,7 @@
 
 <meta name="author" content="Vincent D.">
 
-<title>10 powerful quotes about data – Portfolio Geek</title>
+<title>Revue de Web – Portfolio Geek</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +24,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-author','listing-date','listing-description','listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CJ2CMCX5LZ"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -97,20 +128,50 @@ cookieconsent.run({
 </script> 
   
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="10 powerful quotes about data – Portfolio Geek">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Revue de Web – Portfolio Geek">
+<meta property="og:description" content="Finance, Research and the Tech required to Fuel them">
 <meta property="og:site_name" content="Portfolio Geek">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Portfolio Geek</span>
     </a>
   </div>
@@ -121,29 +182,29 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../daily-curation.html"> 
+    <a class="nav-link" href="./daily-curation.html"> 
 <span class="menu-text">Daily Findings</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../tutorials.html"> 
+    <a class="nav-link" href="./tutorials.html"> 
 <span class="menu-text">Getting Started</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../quotes_en.html"> 
+    <a class="nav-link active" href="./quotes_en.html" aria-current="page"> 
 <span class="menu-text">Quotes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../fr"> 
+    <a class="nav-link" href="./../fr"> 
 <span class="menu-text">Français</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../"> 
+    <a class="nav-link" href="./../"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item compact">
@@ -164,92 +225,121 @@ cookieconsent.run({
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Revue de Web</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Vincent D. </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="coding">coding <span class="quarto-category-count">(1)</span></div><div class="category" data-category="construction">construction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="data">data <span class="quarto-category-count">(4)</span></div><div class="category" data-category="inspiration">inspiration <span class="quarto-category-count">(2)</span></div><div class="category" data-category="portfolio">portfolio <span class="quarto-category-count">(2)</span></div><div class="category" data-category="quotes">quotes <span class="quarto-category-count">(3)</span></div><div class="category" data-category="value">value <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">10 powerful quotes about data</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">data</div>
-    <div class="quarto-category">quotes</div>
-    <div class="quarto-category">portfolio</div>
-    <div class="quarto-category">inspiration</div>
-    <div class="quarto-category">consutruction</div>
-  </div>
-  </div>
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta column-page">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Vincent D. </p>
-          </div>
-  </div>
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<div>
+<p>Useful quotes for you coding and investment day to day.</p>
+<div id="sample-listings">
 
 </div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<blockquote class="blockquote">
-<p>In God we trust. All others must bring data. – <cite>W. Edwards Deming</cite></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Data is a precious thing and will last longer than the systems themselves. – <cite>Tim Berners-Lee</cite></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Without big data, you are blind and deaf and in the middle of a freeway. – <cite>Geoffrey Moore</cite></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>The goal is to turn data into information, and information into insight. – <cite>Carly Fiorina</cite></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Data is not information, information is not knowledge, knowledge is not understanding, understanding is not wisdom. – <cite>Clifford Stoll</cite></p>
-</blockquote>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="data,quotes,data,coding" data-listing-file-modified-sort="1725097640185" data-listing-reading-time-sort="1" data-listing-word-count-sort="165">
+<a href="./posts/quotes/10-insightful-quotes-about-data.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="pictures/binary-numbers-data-matrix.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+10 powerful quotes about data
+</h5>
+<div class="card-text listing-description">
+In God we trust. All others must bring data. – <cite>W. Edwards Deming</cite>
 </div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../../pictures/binary-numbers-data-matrix.jpg" class="img-fluid"></p>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Vincent D.
 </div>
 </div>
 </div>
-<hr>
-<blockquote class="blockquote">
-<p>Data beats emotions. – <cite>Sean Rad</cite></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>The world is now awash in data and we can see consumers in a lot clearer ways. – <cite>Max Levchin</cite></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Torture the data, and it will confess to anything. – <cite>Ronald Coase</cite></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Data are just summaries of thousands of stories—tell a few of those stories to help make the data meaningful. – <cite>Chip &amp; Dan Heath</cite></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>We are moving slowly into an era where big data is the starting point, not the end. – <cite>Pearl Zhu</cite></p>
-</blockquote>
-
-
-
-</main> <!-- /main -->
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="data,quotes,value,portfolio,inspiration" data-listing-file-modified-sort="1725099117098" data-listing-reading-time-sort="9" data-listing-word-count-sort="1688">
+<a href="./posts/quotes/10-insightful-quotes-about-value-investing.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="pictures/binary-numbers-data-matrix.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+10 powerful quotes about Value Investing
+</h5>
+<div class="card-text listing-description">
+Value investing is an art that combines patience, wisdom, and a deep understanding of financial fundamentals. This investment philosophy, popularised by legends like Warren…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Vincent D.
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="data,quotes,portfolio,inspiration,construction" data-listing-date-sort="1724367600000" data-listing-file-modified-sort="1725103167045" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2234">
+<a href="./posts/quotes/10-insightful-quotes-about-portfolio-construction.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pictures/portfolio-optimisation.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+10 good-to-know quotes about portfolio construction
+</h5>
+<div class="card-text listing-description">
+Diversification is the only free lunch in investing. – <cite>Harry Markowitz</cite>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Vincent D.
+</div>
+<div class="listing-date">
+Aug 23, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -735,7 +825,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
+    <a class="nav-link" href="./about.html">
 <p>About | Copyright | Disclaimer</p>
 </a>
   </li>  

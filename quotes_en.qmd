@@ -1,0 +1,18 @@
+---
+title: "Revue de Web"
+listing:
+  contents: /posts/quotes/*.ipynb
+  sort: "date desc"
+  type: grid
+  categories: true
+  fields: [author, date, description, title, image]
+page-layout: full
+code-tools:
+  source: false
+title-block-banner: true
+---
+
+Useful quotes for you coding and investment day to day.
+
+::: {#sample-listings}
+:::

@@ -46,6 +46,8 @@ website:
         href: daily-curation_fr.qmd
       - text: Apprendre et Progresser
         href: tutorials_fr.qmd
+      - text: Citations
+        href: quotes_fr.qmd
       - text: A Propos
         href: about.qmd
 
