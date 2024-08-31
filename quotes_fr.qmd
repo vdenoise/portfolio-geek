@@ -1,0 +1,23 @@
+---
+title: "Revue de Web"
+listing:
+  contents: /posts/quotes/*.ipynb
+  sort: "date desc"
+  type: grid
+  categories: true
+  fields: [author, date, description, title, image]
+page-layout: full
+code-tools:
+  source: false
+title-block-banner: true
+---
+
+Quelques citations pour votre quotidien d'investisseur ou de codeur.
+Note: quand les citations sont en anglais, l'explication est en francais.
+
+Bonne lecture,
+
+Vincent
+
+::: {#sample-listings}
+:::

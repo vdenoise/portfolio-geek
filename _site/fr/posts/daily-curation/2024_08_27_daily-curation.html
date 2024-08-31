@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
 
-<title>Daily Curation (27.08.2024): Generative AI, Rising Food Prices, Small Caps Surge, and Python Innovations – Portfolio Geek</title>
+<title>Portfolio Geek - Daily Curation (27.08.2024): Generative AI, Rising Food Prices, Small Caps Surge, and Python Innovations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -133,7 +133,7 @@ cookieconsent.run({
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Daily Curation (27.08.2024): Generative AI, Rising Food Prices, Small Caps Surge, and Python Innovations – Portfolio Geek">
+<meta property="og:title" content="Portfolio Geek - Daily Curation (27.08.2024): Generative AI, Rising Food Prices, Small Caps Surge, and Python Innovations">
 <meta property="og:site_name" content="Portfolio Geek">
 </head>
 
@@ -149,7 +149,7 @@ cookieconsent.run({
     </a>
   </div>
             <div id="quarto-search" class="" title="Recherche"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -161,6 +161,10 @@ cookieconsent.run({
   <li class="nav-item">
     <a class="nav-link" href="../../tutorials_fr.html"> 
 <span class="menu-text">Apprendre et Progresser</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../quotes_fr.html"> 
+<span class="menu-text">Citations</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
@@ -188,7 +192,7 @@ cookieconsent.run({
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -271,7 +275,7 @@ cookieconsent.run({
 </div>
 <section id="ia-et-ia-générative" class="level1">
 <h1>IA et IA Générative</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Titre</th>
@@ -288,7 +292,7 @@ cookieconsent.run({
 </section>
 <section id="code" class="level1">
 <h1>Code</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Titre</th>
@@ -305,7 +309,7 @@ cookieconsent.run({
 </section>
 <section id="économie" class="level1">
 <h1>Économie</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Titre</th>
@@ -326,7 +330,7 @@ cookieconsent.run({
 </section>
 <section id="etfs-et-investissement-indiciel" class="level1">
 <h1>ETFs et Investissement Indiciel</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Titre</th>
@@ -347,7 +351,7 @@ cookieconsent.run({
 </section>
 <section id="investissement-fondamental" class="level1">
 <h1>Investissement Fondamental</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Titre</th>
@@ -403,7 +407,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -435,29 +450,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -516,15 +509,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -566,11 +554,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -957,7 +941,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-111"><a href="#cb1-111"></a>| <span class="co">[</span><span class="ot">Les Petites Capitalisations Prêtes à Éclipser les Big Caps en 2024 (Benzinga, 2024-08-23)</span><span class="co">](https://www.benzinga.com/news/24/08/40535630/small-caps-set-to-lead-their-large-cap-brothers-for-rest-of-2024-says-market-strategist)</span>   | Les petites capitalisations ont augmenté de 18% au cours des 12 derniers mois, surpassant les grandes capitalisations. Les ETFs IJR, IWM et VB montrent de solides performances. Les analystes prévoient que les petites capitalisations pourraient mener en 2024. |</span>
 <span id="cb1-112"><a href="#cb1-112"></a></span>
 <span id="cb1-113"><a href="#cb1-113"></a>:::</span>
-<span id="cb1-114"><a href="#cb1-114"></a></span></code><button title="Copier vers le presse-papier" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-114"><a href="#cb1-114"></a></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

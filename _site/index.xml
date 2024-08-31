@@ -9,7 +9,7 @@
 <link>https://portfolio-geek.com/</link>
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
-<generator>quarto-1.5.56</generator>
+<generator>quarto-1.4.550</generator>
 <lastBuildDate>Mon, 26 Aug 2024 23:00:00 GMT</lastBuildDate>
 <item>
   <title>Daily Curation (27.08.2024): Generative AI, Rising Food Prices, Small Caps Surge, and Python Innovations</title>
@@ -52,7 +52,7 @@
 </div>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -69,7 +69,7 @@
 </section>
 <section id="coding" class="level1">
 <h1>Coding</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -86,7 +86,7 @@
 </section>
 <section id="economics" class="level1">
 <h1>Economics</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -107,7 +107,7 @@
 </section>
 <section id="etfs-and-index-investing" class="level1">
 <h1>ETFs and Index Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -128,7 +128,7 @@
 </section>
 <section id="fundamental-investing" class="level1">
 <h1>Fundamental Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -289,7 +289,7 @@
 <div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-right">
 <figure class="figure">
-<p><a href="https://www.jstor.org/stable/2975974"><img src="https://portfolio-geek.com/pictures/portfolio_selection_thumbnail.jpg" class="img-fluid quarto-figure quarto-figure-right figure-img"></a></p>
+<p><a href="https://www.jstor.org/stable/2975974"><img src="https://portfolio-geek.com/pictures/portfolio_selection_thumbnail.jpg" class="img-fluid quarto-figure quarto-figure-right figure-img" style="width:20.0%"></a></p>
 </figure>
 </div>
 <p><img src="https://portfolio-geek.com/pictures/business-graphs-and-magnifying-glass-on-table.jpg" class="img-fluid"></p>
@@ -671,7 +671,7 @@ font-style: inherit;">'Price ($)'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-4-output-1.png" width="495" height="218" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-4-output-1.png" width="660" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -737,7 +737,7 @@ font-style: inherit;">'Weekly Return'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-5-output-1.png" width="497" height="302" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-5-output-1.png" width="663" height="406" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -778,7 +778,7 @@ font-style: inherit;">'SPY Weekly Return'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-6-output-1.png" width="503" height="218" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-6-output-1.png" width="670" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -849,7 +849,7 @@ font-style: inherit;">'Frequency'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-7-output-1.png" width="488" height="218" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-7-output-1.png" width="651" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -913,7 +913,7 @@ font-style: inherit;">'Rolling TE (52 Weeks)'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-8-output-1.png" width="488" height="218" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/tracking-error_files/figure-html/cell-8-output-1.png" width="651" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -969,7 +969,7 @@ font-style: inherit;">'Rolling TE (52 Weeks)'</span>)</span>
 </div>
 <section id="economics" class="level1">
 <h1>Economics</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1004,8 +1004,6 @@ font-style: inherit;">'Rolling TE (52 Weeks)'</span>)</span>
 
 
 
-<section id="correlation-of-returns-why-it-matters-and-how-to-analyse-it-with-python" class="level1">
-<h1>Correlation of returns: why it matters, and how to analyse it with Python</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
 <p>Understanding the correlation of returns between different asset classes is a key concept in finance and investment. For instance, analysing the correlation between QQQ (Nasdaq-100 ETF) and SPY (S&amp;P 500 ETF), 2 US Equity assets, can provide critical insights into market behavior, risk assessment, and portfolio diversification. By examining their correlation, investors can make informed decisions that balance risk and return effectively.</p>
@@ -1145,7 +1143,7 @@ font-style: inherit;">"Price"</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-2-output-1.png" width="494" height="218" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-2-output-1.png" width="659" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1216,7 +1214,7 @@ font-style: inherit;">"Weekly Return"</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-3-output-1.png" width="508" height="218" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-3-output-1.png" width="704" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1282,7 +1280,7 @@ font-style: inherit;">"Frequency"</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-4-output-1.png" width="494" height="218" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-4-output-1.png" width="659" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1376,7 +1374,7 @@ font-style: inherit;">"Volatility (in %)"</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-5-output-1.png" width="488" height="218" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-5-output-1.png" width="651" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1465,7 +1463,7 @@ font-style: inherit;">"SPY Weekly Returns"</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-6-output-1.png" width="503" height="218" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-6-output-1.png" width="670" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1521,7 +1519,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-7-output-1.png" width="497" height="218" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/correlation-returns_files/figure-html/cell-7-output-1.png" width="662" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1546,7 +1544,6 @@ font-style: inherit;">"Correlation"</span>)</span>
 <p>To see this tutorial in action, don’t miss the video on our Data Driven Minutes Youtube channel. Happy coding!</p>
 
 
-</section>
 </section>
 
  ]]></description>
@@ -1601,7 +1598,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </div>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1618,7 +1615,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="data-databases-and-data-science" class="level1">
 <h1>Data, Databases and Data Science</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1635,7 +1632,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="economics" class="level1">
 <h1>Economics</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1660,7 +1657,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="etfs-and-index-investing" class="level1">
 <h1>ETFs and Index Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1677,7 +1674,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="fundamental-investing" class="level1">
 <h1>Fundamental Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1752,7 +1749,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </div>
 <section id="crypto-news-and-analysis" class="level1">
 <h1>Crypto News and Analysis</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1769,7 +1766,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="economics" class="level1">
 <h1>Economics</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1790,7 +1787,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="hedge-fund-news" class="level1">
 <h1>Hedge Fund News</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1807,7 +1804,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="market-news" class="level1">
 <h1>Market News</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1824,7 +1821,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="portfolio-construction-techniques" class="level1">
 <h1>Portfolio Construction Techniques</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1849,7 +1846,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="technology" class="level1">
 <h1>Technology</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1918,7 +1915,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </div>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1935,7 +1932,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="coding" class="level1">
 <h1>Coding</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -1952,7 +1949,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="market-news" class="level1">
 <h1>Market News</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -2022,7 +2019,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </div>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -2039,7 +2036,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="coding" class="level1">
 <h1>Coding</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -2060,7 +2057,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="economics" class="level1">
 <h1>Economics</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -2077,7 +2074,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="hedge-fund-news" class="level1">
 <h1>Hedge Fund News</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -2094,7 +2091,7 @@ font-style: inherit;">"Correlation"</span>)</span>
 </section>
 <section id="market-pulse-market-news" class="level1">
 <h1>Market Pulse &amp; Market News</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -2292,7 +2289,7 @@ font-style: inherit;">'Adjusted Close Price'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-3-output-1.png" width="659" height="282" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2360,7 +2357,7 @@ font-style: inherit;">'Annualized Return (in %)'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-4-output-1.png" width="651" height="314" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2418,7 +2415,7 @@ font-style: inherit;">'Annualized Volatility (in %)'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-5-output-1.png" width="651" height="314" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2470,7 +2467,7 @@ font-style: inherit;">'Excess Return'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-6-output-1.png" width="670" height="282" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2524,7 +2521,7 @@ font-style: inherit;">'Sharpe Ratio'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-7-output-1.png" width="655" height="314" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2582,7 +2579,7 @@ font-style: inherit;">'Rolling Sharpe Ratio'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-8-output-1.png" width="652" height="282" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2636,7 +2633,7 @@ font-style: inherit;">'Cumulative Sharpe Ratio'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-9-output-1.png" width="670" height="282" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2673,10 +2670,8 @@ background-color: null;
 font-style: inherit;">'SPY'</span>])</span>
 <span id="cb9-8"><span class="cf" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">for</span> i, txt <span class="kw" style="color: #003B4F;
 background-color: null;
-font-weight: bold;
 font-style: inherit;">in</span> <span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">enumerate</span>(risk.index):</span>
@@ -2695,7 +2690,7 @@ font-style: inherit;">'Annualized Return'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio_files/figure-html/cell-10-output-1.png" width="655" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2760,7 +2755,7 @@ font-style: inherit;">'Annualized Return'</span>)</span>
 <div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-right">
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://portfolio-geek.com/pictures/bitcoin-investment-stockbroker-risk-analysis-trend.jpg" class="img-fluid quarto-figure quarto-figure-right figure-img"></p>
 <figcaption>Maximum Drawdown is an important measure of investment risk</figcaption>
 </figure>
 </div>
@@ -2886,7 +2881,7 @@ font-style: inherit;">'AAPL and SPY Daily Closing Prices'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/max-drawdown_files/figure-html/cell-3-output-1.png" width="478" height="212" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/max-drawdown_files/figure-html/cell-3-output-1.png" width="638" height="282" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2932,7 +2927,7 @@ font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/max-drawdown_files/figure-html/cell-4-output-1.png" width="484" height="212" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/max-drawdown_files/figure-html/cell-4-output-1.png" width="645" height="282" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -3007,7 +3002,7 @@ font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
 </div>
 <section id="climate" class="level1">
 <h1>Climate</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3024,7 +3019,7 @@ font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
 </section>
 <section id="crypto-news-and-analysis" class="level1">
 <h1>Crypto News and Analysis</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3041,7 +3036,7 @@ font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
 </section>
 <section id="etfs-and-index-investing" class="level1">
 <h1>ETFs and Index Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3066,7 +3061,7 @@ font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
 </section>
 <section id="market-pulse-market-news" class="level1">
 <h1>Market Pulse &amp; Market News</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3083,7 +3078,7 @@ font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
 </section>
 <section id="personal-development" class="level1">
 <h1>Personal Development</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3140,7 +3135,7 @@ font-style: inherit;">'Drawdown Timeline for AAPL and SPY'</span>)</span>
 <div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-right">
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/pictures/diagram-representing-red-crashing-market-volatility.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p><img src="https://portfolio-geek.com/pictures/diagram-representing-red-crashing-market-volatility.jpg" class="img-fluid quarto-figure quarto-figure-right figure-img" style="width:100.0%"></p>
 <figcaption>Market Volatility</figcaption>
 </figure>
 </div>
@@ -3270,11 +3265,11 @@ font-style: inherit;">=</span> log_returns.head()</span>
 </details>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>Date
-2019-08-12   -0.009544
-2019-08-19   -0.013945
-2019-08-26    0.026331
-2019-09-02    0.018967
-2019-09-09    0.010148
+2019-09-02 00:00:00-04:00    0.018968
+2019-09-09 00:00:00-04:00    0.010148
+2019-09-16 00:00:00-04:00   -0.009377
+2019-09-23 00:00:00-04:00   -0.005095
+2019-09-30 00:00:00-04:00   -0.003561
 Name: Close, dtype: float64</code></pre>
 </div>
 </div>
@@ -3308,7 +3303,7 @@ font-style: inherit;">'Price'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/historical-vol_files/figure-html/cell-4-output-1.png" width="494" height="212" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/historical-vol_files/figure-html/cell-4-output-1.png" width="659" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -3343,7 +3338,7 @@ font-style: inherit;">'Frequency'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/historical-vol_files/figure-html/cell-5-output-1.png" width="488" height="218" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/historical-vol_files/figure-html/cell-5-output-1.png" width="651" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -3389,7 +3384,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/historical-vol_files/figure-html/cell-6-output-1.png" width="497" height="216" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/historical-vol_files/figure-html/cell-6-output-1.png" width="662" height="294" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -3501,7 +3496,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://portfolio-geek.com/posts/articles/tutorials/historical-vol_files/figure-html/cell-7-output-1.png" width="497" height="203" class="figure-img"></p>
+<p><img src="https://portfolio-geek.com/posts/articles/tutorials/historical-vol_files/figure-html/cell-7-output-1.png" width="662" height="275" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -3577,7 +3572,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </div>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3594,7 +3589,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="coding" class="level1">
 <h1>Coding</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3619,7 +3614,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="data-databases-and-data-science" class="level1">
 <h1>Data, Databases and Data Science</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3686,7 +3681,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </div>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3703,7 +3698,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="climate" class="level1">
 <h1>Climate</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3724,7 +3719,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="coding" class="level1">
 <h1>Coding</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3741,7 +3736,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="etfs-and-index-investing" class="level1">
 <h1>ETFs and Index Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3758,7 +3753,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="hedge-fund-news" class="level1">
 <h1>Hedge Fund News</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3775,7 +3770,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="technology" class="level1">
 <h1>Technology</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3856,7 +3851,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </div>
 <section id="climate" class="level1">
 <h1>Climate</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3873,7 +3868,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="coding" class="level1">
 <h1>Coding</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3894,7 +3889,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="data-databases-and-data-science" class="level1">
 <h1>Data, Databases and Data Science</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3915,7 +3910,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="economics" class="level1">
 <h1>Economics</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -3940,7 +3935,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="etfs-and-index-investing" class="level1">
 <h1>ETFs and Index Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4012,7 +4007,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </div>
 <section id="crypto-news-and-analysis" class="level1">
 <h1>Crypto News and Analysis</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4033,7 +4028,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="etfs-and-index-investing" class="level1">
 <h1>ETFs and Index Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4050,7 +4045,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="market-pulse-market-news" class="level1">
 <h1>Market Pulse &amp; Market News</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4125,7 +4120,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </div>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4146,7 +4141,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="coding" class="level1">
 <h1>Coding</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4163,7 +4158,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="crypto-news-and-analysis" class="level1">
 <h1>Crypto News and Analysis</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4180,7 +4175,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="economics" class="level1">
 <h1>Economics</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4201,7 +4196,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="etfs-and-index-investing" class="level1">
 <h1>ETFs and Index Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4222,7 +4217,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="fundamental-investing" class="level1">
 <h1>Fundamental Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4239,7 +4234,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="personal-development" class="level1">
 <h1>Personal Development</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4308,7 +4303,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </div>
 <section id="climate" class="level1">
 <h1>Climate</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4325,7 +4320,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="coding" class="level1">
 <h1>Coding</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4346,7 +4341,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="finance" class="level1">
 <h1>Finance</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -4363,7 +4358,7 @@ font-style: inherit;">'Volatility'</span>)</span>
 </section>
 <section id="economics" class="level1">
 <h1>Economics</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>

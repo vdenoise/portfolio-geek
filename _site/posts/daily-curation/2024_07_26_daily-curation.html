@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
 <meta name="dcterms.date" content="2024-07-27">
 
-<title>Daily Curation (26.07.2024): SearchGPT Launch, Bitcoin ETFs, China’s Economic Moves, and Rising Small Cap Investments – Portfolio Geek</title>
+<title>Portfolio Geek - Daily Curation (26.07.2024): SearchGPT Launch, Bitcoin ETFs, China’s Economic Moves, and Rising Small Cap Investments</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,7 +35,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -134,7 +134,7 @@ cookieconsent.run({
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Daily Curation (26.07.2024): SearchGPT Launch, Bitcoin ETFs, China’s Economic Moves, and Rising Small Cap Investments – Portfolio Geek">
+<meta property="og:title" content="Portfolio Geek - Daily Curation (26.07.2024): SearchGPT Launch, Bitcoin ETFs, China’s Economic Moves, and Rising Small Cap Investments">
 <meta property="og:image" content="https://portfolio-geek.com/pictures/article-in-newspaper.jpg">
 <meta property="og:site_name" content="Portfolio Geek">
 </head>
@@ -151,7 +151,7 @@ cookieconsent.run({
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -163,6 +163,10 @@ cookieconsent.run({
   <li class="nav-item">
     <a class="nav-link" href="../../tutorials.html"> 
 <span class="menu-text">Getting Started</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../quotes_en.html"> 
+<span class="menu-text">Quotes</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
@@ -190,7 +194,7 @@ cookieconsent.run({
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -277,7 +281,7 @@ cookieconsent.run({
 </div>
 <section id="ai-and-gen-ai" class="level1">
 <h1>AI and Gen-AI</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -298,7 +302,7 @@ cookieconsent.run({
 </section>
 <section id="coding" class="level1">
 <h1>Coding</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -315,7 +319,7 @@ cookieconsent.run({
 </section>
 <section id="crypto-news-and-analysis" class="level1">
 <h1>Crypto News and Analysis</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -332,7 +336,7 @@ cookieconsent.run({
 </section>
 <section id="economics" class="level1">
 <h1>Economics</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -353,7 +357,7 @@ cookieconsent.run({
 </section>
 <section id="etfs-and-index-investing" class="level1">
 <h1>ETFs and Index Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -374,7 +378,7 @@ cookieconsent.run({
 </section>
 <section id="fundamental-investing" class="level1">
 <h1>Fundamental Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -391,7 +395,7 @@ cookieconsent.run({
 </section>
 <section id="personal-development" class="level1">
 <h1>Personal Development</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -447,7 +451,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -479,29 +494,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -560,15 +553,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -610,11 +598,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -963,7 +947,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-73"><a href="#cb1-73"></a><span class="fu"># Personal Development</span></span>
 <span id="cb1-74"><a href="#cb1-74"></a>| Title | Summary |</span>
 <span id="cb1-75"><a href="#cb1-75"></a>|-----|-----------|</span>
-<span id="cb1-76"><a href="#cb1-76"></a>| <span class="co">[</span><span class="ot">Smart Wealth Transfers: Ensure Personal Financial Stability Before Helping Kids with Early Gifting (Business Insider, 2024-07-25)</span><span class="co">](https://www.businessinsider.com/boomers-who-want-pass-down-wealth-pass-stress-test-advisor-2024-7)</span>   | Financial planners advise baby boomers to ensure financial stability before gifting wealth. They suggest conducting a "stress test" on portfolios to assess sustainability for long-term care and potential market downturns. |</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-76"><a href="#cb1-76"></a>| <span class="co">[</span><span class="ot">Smart Wealth Transfers: Ensure Personal Financial Stability Before Helping Kids with Early Gifting (Business Insider, 2024-07-25)</span><span class="co">](https://www.businessinsider.com/boomers-who-want-pass-down-wealth-pass-stress-test-advisor-2024-7)</span>   | Financial planners advise baby boomers to ensure financial stability before gifting wealth. They suggest conducting a "stress test" on portfolios to assess sustainability for long-term care and potential market downturns. |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

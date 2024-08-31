@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/quotes_en.html",
+    "items": [
+      "/posts/quotes/10-insightful-quotes-about-portfolio-construction.html"
+    ]
+  },
+  {
     "listing": "/tutorials_fr.html",
     "items": [
       "/posts/articles/tutorials/tracking-error.html",
@@ -192,6 +198,12 @@
       "/posts/articles/tutorials/setting-up-a-python-workstation-macos.html",
       "/posts/articles/tutorials/spy-and-matplotlib.html",
       "/posts/articles/tutorials/visualizing-historical-data.html"
+    ]
+  },
+  {
+    "listing": "/quotes_fr.html",
+    "items": [
+      "/posts/quotes/10-insightful-quotes-about-portfolio-construction.html"
     ]
   }
 ]

@@ -1,2 +1,1074 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"></html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Vincent D.">
+
+<title>Portfolio Geek - Analyzing Equity long Term Returns with Python</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CJ2CMCX5LZ"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CJ2CMCX5LZ', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"headline",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="Portfolio Geek - Analyzing Equity long Term Returns with Python">
+<meta property="og:site_name" content="Portfolio Geek">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Portfolio Geek</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../daily-curation.html"> 
+<span class="menu-text">Daily Findings</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../tutorials.html"> 
+<span class="menu-text">Getting Started</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../quotes_en.html"> 
+<span class="menu-text">Quotes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../fr"> 
+<span class="menu-text">Français</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/vdenoiseux/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/vdenoise"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analyzing Equity long Term Returns with Python</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">tutorial</div>
+    <div class="quarto-category">long term investing</div>
+    <div class="quarto-category">en</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Vincent D. </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="cell-3" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="im">from</span> io <span class="im">import</span> BytesIO</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="im">import</span> dataframe_image <span class="im">as</span> dfi</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a>url <span class="op">=</span> <span class="st">"http://www.econ.yale.edu/~shiller/data/ie_data.xls"</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a>response <span class="op">=</span> requests.get(url)</span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="kw">def</span> make_pretty(styler):</span>
+<span id="cb1-11"><a href="#cb1-11"></a>    styler.<span class="bu">format</span>(precision<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb1-12"><a href="#cb1-12"></a>    <span class="cf">return</span> styler</span>
+<span id="cb1-13"><a href="#cb1-13"></a></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="co"># Check if the request was successful</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
+<span id="cb1-16"><a href="#cb1-16"></a>    data <span class="op">=</span> pd.read_excel(BytesIO(response.content), sheet_name<span class="op">=</span><span class="st">'Data'</span>, header<span class="op">=</span><span class="dv">7</span>)</span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="cf">else</span>:</span>
+<span id="cb1-18"><a href="#cb1-18"></a>    <span class="bu">print</span>(<span class="st">"Failed to download the data"</span>)</span>
+<span id="cb1-19"><a href="#cb1-19"></a></span>
+<span id="cb1-20"><a href="#cb1-20"></a>data.iloc[<span class="dv">1</span>:<span class="dv">10</span>, <span class="dv">1</span>:<span class="dv">5</span>].style.pipe(make_pretty)</span>
+<span id="cb1-21"><a href="#cb1-21"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+<style type="text/css">
+</style>
+
+<table id="T_9d6b5" data-quarto-postprocess="true" class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th class="blank level0" data-quarto-table-cell-role="th">&nbsp;</th>
+<th id="T_9d6b5_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">P</th>
+<th id="T_9d6b5_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">D</th>
+<th id="T_9d6b5_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">E</th>
+<th id="T_9d6b5_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">CPI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td id="T_9d6b5_level0_row0" class="row_heading level0 row0" data-quarto-table-cell-role="th">1</td>
+<td id="T_9d6b5_row0_col0" class="data row0 col0">4.50</td>
+<td id="T_9d6b5_row0_col1" class="data row0 col1">0.26</td>
+<td id="T_9d6b5_row0_col2" class="data row0 col2">0.40</td>
+<td id="T_9d6b5_row0_col3" class="data row0 col3">12.84</td>
+</tr>
+<tr class="even">
+<td id="T_9d6b5_level0_row1" class="row_heading level0 row1" data-quarto-table-cell-role="th">2</td>
+<td id="T_9d6b5_row1_col0" class="data row1 col0">4.61</td>
+<td id="T_9d6b5_row1_col1" class="data row1 col1">0.26</td>
+<td id="T_9d6b5_row1_col2" class="data row1 col2">0.40</td>
+<td id="T_9d6b5_row1_col3" class="data row1 col3">13.03</td>
+</tr>
+<tr class="odd">
+<td id="T_9d6b5_level0_row2" class="row_heading level0 row2" data-quarto-table-cell-role="th">3</td>
+<td id="T_9d6b5_row2_col0" class="data row2 col0">4.74</td>
+<td id="T_9d6b5_row2_col1" class="data row2 col1">0.26</td>
+<td id="T_9d6b5_row2_col2" class="data row2 col2">0.40</td>
+<td id="T_9d6b5_row2_col3" class="data row2 col3">12.56</td>
+</tr>
+<tr class="even">
+<td id="T_9d6b5_level0_row3" class="row_heading level0 row3" data-quarto-table-cell-role="th">4</td>
+<td id="T_9d6b5_row3_col0" class="data row3 col0">4.86</td>
+<td id="T_9d6b5_row3_col1" class="data row3 col1">0.26</td>
+<td id="T_9d6b5_row3_col2" class="data row3 col2">0.40</td>
+<td id="T_9d6b5_row3_col3" class="data row3 col3">12.27</td>
+</tr>
+<tr class="odd">
+<td id="T_9d6b5_level0_row4" class="row_heading level0 row4" data-quarto-table-cell-role="th">5</td>
+<td id="T_9d6b5_row4_col0" class="data row4 col0">4.82</td>
+<td id="T_9d6b5_row4_col1" class="data row4 col1">0.26</td>
+<td id="T_9d6b5_row4_col2" class="data row4 col2">0.40</td>
+<td id="T_9d6b5_row4_col3" class="data row4 col3">12.08</td>
+</tr>
+<tr class="even">
+<td id="T_9d6b5_level0_row5" class="row_heading level0 row5" data-quarto-table-cell-role="th">6</td>
+<td id="T_9d6b5_row5_col0" class="data row5 col0">4.73</td>
+<td id="T_9d6b5_row5_col1" class="data row5 col1">0.26</td>
+<td id="T_9d6b5_row5_col2" class="data row5 col2">0.40</td>
+<td id="T_9d6b5_row5_col3" class="data row5 col3">12.08</td>
+</tr>
+<tr class="odd">
+<td id="T_9d6b5_level0_row6" class="row_heading level0 row6" data-quarto-table-cell-role="th">7</td>
+<td id="T_9d6b5_row6_col0" class="data row6 col0">4.79</td>
+<td id="T_9d6b5_row6_col1" class="data row6 col1">0.26</td>
+<td id="T_9d6b5_row6_col2" class="data row6 col2">0.40</td>
+<td id="T_9d6b5_row6_col3" class="data row6 col3">11.89</td>
+</tr>
+<tr class="even">
+<td id="T_9d6b5_level0_row7" class="row_heading level0 row7" data-quarto-table-cell-role="th">8</td>
+<td id="T_9d6b5_row7_col0" class="data row7 col0">4.84</td>
+<td id="T_9d6b5_row7_col1" class="data row7 col1">0.26</td>
+<td id="T_9d6b5_row7_col2" class="data row7 col2">0.40</td>
+<td id="T_9d6b5_row7_col3" class="data row7 col3">12.18</td>
+</tr>
+<tr class="odd">
+<td id="T_9d6b5_level0_row8" class="row_heading level0 row8" data-quarto-table-cell-role="th">9</td>
+<td id="T_9d6b5_row8_col0" class="data row8 col0">4.59</td>
+<td id="T_9d6b5_row8_col1" class="data row8 col1">0.26</td>
+<td id="T_9d6b5_row8_col2" class="data row8 col2">0.40</td>
+<td id="T_9d6b5_row8_col3" class="data row8 col3">12.37</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="downloading-maddison-project-gdp-data" class="level2">
+<h2 class="anchored" data-anchor-id="downloading-maddison-project-gdp-data">Downloading Maddison Project GDP Data</h2>
+<div id="cell-5" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>url <span class="op">=</span> <span class="st">"https://www.rug.nl/ggdc/historicaldevelopment/maddison/data/mpd2020.xlsx"</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>response <span class="op">=</span> requests.get(url)</span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="kw">def</span> make_pretty(styler):</span>
+<span id="cb2-6"><a href="#cb2-6"></a>    styler.<span class="bu">format</span>(precision<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb2-7"><a href="#cb2-7"></a>    <span class="cf">return</span> styler</span>
+<span id="cb2-8"><a href="#cb2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="co"># Check if the request was successful</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
+<span id="cb2-11"><a href="#cb2-11"></a>    data_gdp<span class="op">=</span> pd.read_excel(BytesIO(response.content),sheet_name<span class="op">=</span><span class="st">"Full data"</span>, header<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="cf">else</span>:</span>
+<span id="cb2-13"><a href="#cb2-13"></a>    <span class="bu">print</span>(<span class="st">"Failed to download the data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="cell-6" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="im">import</span> numpy.ma <span class="im">as</span> ma</span>
+<span id="cb3-2"><a href="#cb3-2"></a>data_gdp[<span class="st">"gdp"</span>] <span class="op">=</span> data_gdp.gdppc <span class="op">*</span> data_gdp[<span class="st">"pop"</span>]</span>
+<span id="cb3-3"><a href="#cb3-3"></a>dates <span class="op">=</span> ma.array(</span>
+<span id="cb3-4"><a href="#cb3-4"></a>    [<span class="ss">f'</span><span class="sc">{</span>y<span class="sc">}</span><span class="ss">-</span><span class="sc">{</span><span class="dv">12</span><span class="sc">}</span><span class="ss">-</span><span class="sc">{</span><span class="dv">31</span><span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> y <span class="kw">in</span> data_gdp.year.to_list()],</span>
+<span id="cb3-5"><a href="#cb3-5"></a>    dtype<span class="op">=</span><span class="st">'datetime64[D]'</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>    )</span>
+<span id="cb3-7"><a href="#cb3-7"></a></span>
+<span id="cb3-8"><a href="#cb3-8"></a>data_gdp[<span class="st">"date"</span>] <span class="op">=</span> dates.tolist()</span>
+<span id="cb3-9"><a href="#cb3-9"></a>data_gdp.set_index(<span class="st">"date"</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb3-10"><a href="#cb3-10"></a>data_gdp.iloc[<span class="dv">1</span>:<span class="dv">10</span>, <span class="dv">1</span>:<span class="dv">5</span>].style.pipe(make_pretty)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+<style type="text/css">
+</style>
+
+<table id="T_cc77e" data-quarto-postprocess="true" class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th class="blank level0" data-quarto-table-cell-role="th">&nbsp;</th>
+<th id="T_cc77e_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">country</th>
+<th id="T_cc77e_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">year</th>
+<th id="T_cc77e_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">gdppc</th>
+<th id="T_cc77e_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">pop</th>
+</tr>
+<tr class="odd">
+<th class="index_name level0" data-quarto-table-cell-role="th">date</th>
+<th class="blank col0" data-quarto-table-cell-role="th">&nbsp;</th>
+<th class="blank col1" data-quarto-table-cell-role="th">&nbsp;</th>
+<th class="blank col2" data-quarto-table-cell-role="th">&nbsp;</th>
+<th class="blank col3" data-quarto-table-cell-role="th">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td id="T_cc77e_level0_row0" class="row_heading level0 row0" data-quarto-table-cell-role="th">1870-12-31</td>
+<td id="T_cc77e_row0_col0" class="data row0 col0">Afghanistan</td>
+<td id="T_cc77e_row0_col1" class="data row0 col1">1870</td>
+<td id="T_cc77e_row0_col2" class="data row0 col2">nan</td>
+<td id="T_cc77e_row0_col3" class="data row0 col3">4207.00</td>
+</tr>
+<tr class="even">
+<td id="T_cc77e_level0_row1" class="row_heading level0 row1" data-quarto-table-cell-role="th">1913-12-31</td>
+<td id="T_cc77e_row1_col0" class="data row1 col0">Afghanistan</td>
+<td id="T_cc77e_row1_col1" class="data row1 col1">1913</td>
+<td id="T_cc77e_row1_col2" class="data row1 col2">nan</td>
+<td id="T_cc77e_row1_col3" class="data row1 col3">5730.00</td>
+</tr>
+<tr class="odd">
+<td id="T_cc77e_level0_row2" class="row_heading level0 row2" data-quarto-table-cell-role="th">1950-12-31</td>
+<td id="T_cc77e_row2_col0" class="data row2 col0">Afghanistan</td>
+<td id="T_cc77e_row2_col1" class="data row2 col1">1950</td>
+<td id="T_cc77e_row2_col2" class="data row2 col2">1156.00</td>
+<td id="T_cc77e_row2_col3" class="data row2 col3">8150.00</td>
+</tr>
+<tr class="even">
+<td id="T_cc77e_level0_row3" class="row_heading level0 row3" data-quarto-table-cell-role="th">1951-12-31</td>
+<td id="T_cc77e_row3_col0" class="data row3 col0">Afghanistan</td>
+<td id="T_cc77e_row3_col1" class="data row3 col1">1951</td>
+<td id="T_cc77e_row3_col2" class="data row3 col2">1170.00</td>
+<td id="T_cc77e_row3_col3" class="data row3 col3">8284.00</td>
+</tr>
+<tr class="odd">
+<td id="T_cc77e_level0_row4" class="row_heading level0 row4" data-quarto-table-cell-role="th">1952-12-31</td>
+<td id="T_cc77e_row4_col0" class="data row4 col0">Afghanistan</td>
+<td id="T_cc77e_row4_col1" class="data row4 col1">1952</td>
+<td id="T_cc77e_row4_col2" class="data row4 col2">1189.00</td>
+<td id="T_cc77e_row4_col3" class="data row4 col3">8425.00</td>
+</tr>
+<tr class="even">
+<td id="T_cc77e_level0_row5" class="row_heading level0 row5" data-quarto-table-cell-role="th">1953-12-31</td>
+<td id="T_cc77e_row5_col0" class="data row5 col0">Afghanistan</td>
+<td id="T_cc77e_row5_col1" class="data row5 col1">1953</td>
+<td id="T_cc77e_row5_col2" class="data row5 col2">1240.00</td>
+<td id="T_cc77e_row5_col3" class="data row5 col3">8573.00</td>
+</tr>
+<tr class="odd">
+<td id="T_cc77e_level0_row6" class="row_heading level0 row6" data-quarto-table-cell-role="th">1954-12-31</td>
+<td id="T_cc77e_row6_col0" class="data row6 col0">Afghanistan</td>
+<td id="T_cc77e_row6_col1" class="data row6 col1">1954</td>
+<td id="T_cc77e_row6_col2" class="data row6 col2">1245.00</td>
+<td id="T_cc77e_row6_col3" class="data row6 col3">8728.00</td>
+</tr>
+<tr class="even">
+<td id="T_cc77e_level0_row7" class="row_heading level0 row7" data-quarto-table-cell-role="th">1955-12-31</td>
+<td id="T_cc77e_row7_col0" class="data row7 col0">Afghanistan</td>
+<td id="T_cc77e_row7_col1" class="data row7 col1">1955</td>
+<td id="T_cc77e_row7_col2" class="data row7 col2">1246.00</td>
+<td id="T_cc77e_row7_col3" class="data row7 col3">8891.00</td>
+</tr>
+<tr class="odd">
+<td id="T_cc77e_level0_row8" class="row_heading level0 row8" data-quarto-table-cell-role="th">1956-12-31</td>
+<td id="T_cc77e_row8_col0" class="data row8 col0">Afghanistan</td>
+<td id="T_cc77e_row8_col1" class="data row8 col1">1956</td>
+<td id="T_cc77e_row8_col2" class="data row8 col2">1278.00</td>
+<td id="T_cc77e_row8_col3" class="data row8 col3">9062.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="cleanup-and-columns-renaming" class="level2">
+<h2 class="anchored" data-anchor-id="cleanup-and-columns-renaming">Cleanup and Columns Renaming</h2>
+<div id="cell-8" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">#Excel Import is mixing up columns, re-titling them</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>data.columns <span class="op">=</span> [<span class="st">"Date"</span>, <span class="st">"S&amp;P Composite"</span>, <span class="st">"Dividend (D)"</span>, <span class="st">"Earnings (E)"</span>, <span class="st">"Consumer Price Index (CPI)"</span>, <span class="st">"Date Fraction"</span>, <span class="st">"Long Interest Rate (I)"</span>, <span class="st">"Real Price"</span>, <span class="st">"Real Dividend"</span>, <span class="st">"Real Total Return Price"</span>, <span class="st">"Real Earnings"</span>, <span class="st">"Real TR Scaled Earnings"</span>, <span class="st">"CAPE"</span>, <span class="st">""</span>, <span class="st">"TR CAPE"</span>, <span class="st">""</span>, <span class="st">"Excess CAPE Yield"</span>, <span class="st">"Monthly Total Bond Returns"</span>, <span class="st">"Real Total Bond Returns"</span>, <span class="st">"10Y Ann Stock Real Return"</span>, <span class="st">"10Y Ann Bon Real Return"</span>, <span class="st">"Real 10Y Ann Excess Return"</span>]</span>
+<span id="cb4-3"><a href="#cb4-3"></a>data <span class="op">=</span> data[:<span class="op">-</span><span class="dv">2</span>]</span>
+<span id="cb4-4"><a href="#cb4-4"></a>data[<span class="st">"date"</span>] <span class="op">=</span> pd.to_datetime(data[<span class="st">'Date'</span>].<span class="bu">map</span>(<span class="st">'</span><span class="sc">{:.2f}</span><span class="st">'</span>.<span class="bu">format</span>), <span class="bu">format</span><span class="op">=</span><span class="st">'%Y.%m'</span>)</span>
+<span id="cb4-5"><a href="#cb4-5"></a>data.set_index(<span class="st">"date"</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb4-6"><a href="#cb4-6"></a>data[<span class="st">"Price Return"</span>] <span class="op">=</span> data[<span class="st">"Real Price"</span>].div(data[<span class="st">"Real Price"</span>].iloc[<span class="dv">0</span>])</span>
+<span id="cb4-7"><a href="#cb4-7"></a>data[<span class="st">"Total Return"</span>] <span class="op">=</span> data.loc[:, <span class="st">"Real Total Return Price"</span>].div(data[<span class="st">"Real Total Return Price"</span>].iloc[<span class="dv">0</span>])</span>
+<span id="cb4-8"><a href="#cb4-8"></a>data[<span class="st">"CPI"</span>] <span class="op">=</span> data.loc[:, <span class="st">"Consumer Price Index (CPI)"</span>].div(data[<span class="st">"Consumer Price Index (CPI)"</span>].iloc[<span class="dv">0</span>])</span>
+<span id="cb4-9"><a href="#cb4-9"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="visualizing-the-data-with-matplotlib-and-pacoty" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-the-data-with-matplotlib-and-pacoty">Visualizing the Data with Matplotlib and Pacoty</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="shiller-data.png" class="img-fluid figure-img"></p>
+<figcaption>Dataframe</figcaption>
+</figure>
+</div>
+</section>
+<section id="long-term-equity-returns" class="level2">
+<h2 class="anchored" data-anchor-id="long-term-equity-returns">Long Term Equity Returns</h2>
+<div id="cell-long-term-return" class="cell" data-execution_count="7">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="im">from</span> scipy.ndimage <span class="im">import</span> gaussian_filter1d</span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="im">from</span> scipy <span class="im">import</span> interpolate</span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="im">import</span> highlight_text <span class="im">as</span> ht</span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="im">from</span> highlight_text <span class="im">import</span> HighlightText, ax_text, fig_text</span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="im">import</span> matplotlib.dates <span class="im">as</span> mdates</span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb5-10"><a href="#cb5-10"></a></span>
+<span id="cb5-11"><a href="#cb5-11"></a></span>
+<span id="cb5-12"><a href="#cb5-12"></a><span class="kw">def</span> decyear4(year, month, day, h<span class="op">=</span><span class="dv">0</span>, m<span class="op">=</span><span class="dv">0</span>, s<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb5-13"><a href="#cb5-13"></a>    <span class="cf">return</span> year <span class="op">+</span> ((<span class="fl">30.4375</span><span class="op">*</span>(month<span class="op">-</span><span class="dv">1</span>) <span class="op">+</span> day<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="dv">24</span><span class="op">+</span>h)<span class="op">*</span><span class="dv">3600</span><span class="op">/</span><span class="fl">31557600.0</span> </span>
+<span id="cb5-14"><a href="#cb5-14"></a></span>
+<span id="cb5-15"><a href="#cb5-15"></a><span class="co"># Set the Pacoty stylesheet</span></span>
+<span id="cb5-16"><a href="#cb5-16"></a>mpl_style <span class="op">=</span> <span class="st">"revealjs_whiteboard"</span></span>
+<span id="cb5-17"><a href="#cb5-17"></a>plt.style.use(<span class="ss">f'./stylesheets/</span><span class="sc">{</span>mpl_style<span class="sc">}</span><span class="ss">.mplstyle'</span>)</span>
+<span id="cb5-18"><a href="#cb5-18"></a></span>
+<span id="cb5-19"><a href="#cb5-19"></a><span class="co"># Create a figure and axis</span></span>
+<span id="cb5-20"><a href="#cb5-20"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb5-21"><a href="#cb5-21"></a> </span>
+<span id="cb5-22"><a href="#cb5-22"></a><span class="co"># Extract the data we need</span></span>
+<span id="cb5-23"><a href="#cb5-23"></a>us_gdp <span class="op">=</span> data_gdp[data_gdp.countrycode <span class="op">==</span> <span class="st">"USA"</span>].gdp</span>
+<span id="cb5-24"><a href="#cb5-24"></a>dates <span class="op">=</span> data[[<span class="st">"Real Price"</span>]].resample(<span class="st">"Y"</span>).last().index</span>
+<span id="cb5-25"><a href="#cb5-25"></a>us_gdp.index <span class="op">=</span> [dt.datetime.combine(dat, dt.time()) <span class="cf">for</span> dat <span class="kw">in</span> us_gdp.index]</span>
+<span id="cb5-26"><a href="#cb5-26"></a>us_gdp <span class="op">=</span> us_gdp[us_gdp.index <span class="op">&gt;=</span> dates.<span class="bu">min</span>()]</span>
+<span id="cb5-27"><a href="#cb5-27"></a>us_gdp <span class="op">=</span> us_gdp <span class="op">/</span> us_gdp.iloc[<span class="dv">0</span>]</span>
+<span id="cb5-28"><a href="#cb5-28"></a>real_tr <span class="op">=</span> <span class="bu">list</span>(data[<span class="st">'Price Return'</span>].resample(<span class="st">"Y"</span>).last().values)</span>
+<span id="cb5-29"><a href="#cb5-29"></a>real_pr <span class="op">=</span> <span class="bu">list</span>(data[<span class="st">"Total Return"</span>].resample(<span class="st">"Y"</span>).last().values)</span>
+<span id="cb5-30"><a href="#cb5-30"></a>cpi <span class="op">=</span> <span class="bu">list</span>(data[<span class="st">"CPI"</span>].resample(<span class="st">"Y"</span>).last().values)</span>
+<span id="cb5-31"><a href="#cb5-31"></a></span>
+<span id="cb5-32"><a href="#cb5-32"></a><span class="co">#gdp_growth = data['Real GDP Growth']</span></span>
+<span id="cb5-33"><a href="#cb5-33"></a></span>
+<span id="cb5-34"><a href="#cb5-34"></a><span class="co"># Plot the data on a logarithmic scale</span></span>
+<span id="cb5-35"><a href="#cb5-35"></a></span>
+<span id="cb5-36"><a href="#cb5-36"></a>f_real_tr<span class="op">=</span> interpolate.interp1d(dates.year, real_tr, <span class="st">'cubic'</span>)</span>
+<span id="cb5-37"><a href="#cb5-37"></a>f_real_pr <span class="op">=</span> interpolate.interp1d(dates.year, real_pr, <span class="st">'cubic'</span>)</span>
+<span id="cb5-38"><a href="#cb5-38"></a></span>
+<span id="cb5-39"><a href="#cb5-39"></a>real_tr_interpol <span class="op">=</span> f_real_tr(dates.year)</span>
+<span id="cb5-40"><a href="#cb5-40"></a>real_pr_interpol <span class="op">=</span> f_real_pr(dates.year)</span>
+<span id="cb5-41"><a href="#cb5-41"></a></span>
+<span id="cb5-42"><a href="#cb5-42"></a>stats.linregress(dates.year, real_tr)</span>
+<span id="cb5-43"><a href="#cb5-43"></a></span>
+<span id="cb5-44"><a href="#cb5-44"></a>ax.semilogy(dates, real_pr_interpol)</span>
+<span id="cb5-45"><a href="#cb5-45"></a>ax.semilogy(dates, real_tr_interpol)</span>
+<span id="cb5-46"><a href="#cb5-46"></a>ax.semilogy(us_gdp.index, us_gdp)</span>
+<span id="cb5-47"><a href="#cb5-47"></a><span class="co">#ax.semilogy(dates, cpi)</span></span>
+<span id="cb5-48"><a href="#cb5-48"></a></span>
+<span id="cb5-49"><a href="#cb5-49"></a><span class="co">#ax.semilogy(years, data[])</span></span>
+<span id="cb5-50"><a href="#cb5-50"></a></span>
+<span id="cb5-51"><a href="#cb5-51"></a>size <span class="op">=</span> plt.rcParams[<span class="st">'font.size'</span>]</span>
+<span id="cb5-52"><a href="#cb5-52"></a>highlight_textprops <span class="op">=</span>[{<span class="st">"fontsize"</span>: size <span class="op">+</span> <span class="dv">4</span>},</span>
+<span id="cb5-53"><a href="#cb5-53"></a>                      {<span class="st">"fontsize"</span>: size}]</span>
+<span id="cb5-54"><a href="#cb5-54"></a></span>
+<span id="cb5-55"><a href="#cb5-55"></a>HighlightText(x<span class="op">=</span><span class="fl">0.5</span>, y<span class="op">=</span><span class="fl">0.98</span>, ha<span class="op">=</span><span class="st">'center'</span>, </span>
+<span id="cb5-56"><a href="#cb5-56"></a>              s<span class="op">=</span><span class="st">'&lt;Long Term Equity Returns&gt;</span><span class="ch">\n</span><span class="st">&lt;Equity vs GDP Growth and Inflation&gt;'</span>,</span>
+<span id="cb5-57"><a href="#cb5-57"></a>              highlight_textprops<span class="op">=</span>highlight_textprops,</span>
+<span id="cb5-58"><a href="#cb5-58"></a>              annotationbbox_kw<span class="op">=</span>{<span class="st">'boxcoords'</span>: fig.transFigure}, textalign<span class="op">=</span><span class="st">"center"</span>)</span>
+<span id="cb5-59"><a href="#cb5-59"></a></span>
+<span id="cb5-60"><a href="#cb5-60"></a><span class="co"># Customize the chart</span></span>
+<span id="cb5-61"><a href="#cb5-61"></a>ax.set_xlabel(<span class="st">'Years'</span>)</span>
+<span id="cb5-62"><a href="#cb5-62"></a>ax.set_ylabel(<span class="ss">f'Value, basis 1 in </span><span class="sc">{</span>(data.index.<span class="bu">min</span>().strftime(<span class="st">"</span><span class="sc">%d</span><span class="st">.%m.%Y"</span>))<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb5-63"><a href="#cb5-63"></a><span class="co">#ax.set_title('Long Term Equity Returns')</span></span>
+<span id="cb5-64"><a href="#cb5-64"></a>fig.legend(labels <span class="op">=</span> [<span class="st">"US Equity: Price (Real)"</span>, <span class="st">"US Equity: Price &amp; Divs (Real)"</span>, <span class="st">"US GDP (Real)"</span>], loc<span class="op">=</span><span class="st">"lower left"</span>, ncol<span class="op">=</span><span class="dv">2</span>, bbox_to_anchor<span class="op">=</span>(<span class="fl">0.05</span>, <span class="op">-</span><span class="fl">0.075</span>, <span class="fl">0.5</span>, <span class="fl">0.5</span>))</span>
+<span id="cb5-65"><a href="#cb5-65"></a>ax.xaxis.set_major_locator(mdates.YearLocator(<span class="dv">30</span>))</span>
+<span id="cb5-66"><a href="#cb5-66"></a>ax.xaxis.set_major_formatter(</span>
+<span id="cb5-67"><a href="#cb5-67"></a>    mdates.ConciseDateFormatter(ax.xaxis.get_major_locator()))</span>
+<span id="cb5-68"><a href="#cb5-68"></a></span>
+<span id="cb5-69"><a href="#cb5-69"></a><span class="co"># Show the chart</span></span>
+<span id="cb5-70"><a href="#cb5-70"></a>plt.show()</span>
+<span id="cb5-71"><a href="#cb5-71"></a>plt.close()</span>
+<span id="cb5-72"><a href="#cb5-72"></a><span class="co">#fig.savefig("shiller-returns.png")  </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="shiller-data-python_files/figure-html/long-term-return-output-1.png" class="img-fluid figure-img"></p>
+<figcaption>Long term equity returns vs CPI</figcaption>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/portfolio-geek\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Proudly propelled by <a href="https://quarto.org/">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../../about.html">
+<p>About | Copyright | Disclaimer</p>
+</a>
+  </li>  
+</ul>
+    <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

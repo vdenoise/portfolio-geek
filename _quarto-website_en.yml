@@ -45,6 +45,8 @@ website:
         href: daily-curation.qmd
       - text: Getting Started
         href: tutorials.qmd
+      - text: Quotes
+        href: quotes_en.qmd        
       - text: About
         href: about.qmd
 

@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
 
-<title>Portfolio Optimisation with Python – Portfolio Geek</title>
+<title>Portfolio Geek - Portfolio Optimisation with Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -136,7 +136,7 @@ cookieconsent.run({
 
 
 <link rel="stylesheet" href="../../../styles.css">
-<meta property="og:title" content="Portfolio Optimisation with Python – Portfolio Geek">
+<meta property="og:title" content="Portfolio Geek - Portfolio Optimisation with Python">
 <meta property="og:description" content="Finance, Research and the Tech required to Fuel them">
 <meta property="og:site_name" content="Portfolio Geek">
 </head>
@@ -153,7 +153,7 @@ cookieconsent.run({
     </a>
   </div>
             <div id="quarto-search" class="" title="Recherche"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -165,6 +165,10 @@ cookieconsent.run({
   <li class="nav-item">
     <a class="nav-link" href="../../../tutorials_fr.html"> 
 <span class="menu-text">Apprendre et Progresser</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../quotes_fr.html"> 
+<span class="menu-text">Citations</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../about.html"> 
@@ -192,7 +196,7 @@ cookieconsent.run({
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -379,9 +383,10 @@ In Construction
 </details>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <div>
+<div>
 
 
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -466,6 +471,7 @@ In Construction
 </div>
 </div>
 </div>
+</div>
 </section>
 <section id="normalisation" class="level3">
 <h3 class="anchored" data-anchor-id="normalisation">Normalisation</h3>
@@ -480,9 +486,10 @@ In Construction
 </details>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <div>
+<div>
 
 
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -520,50 +527,51 @@ In Construction
 <td data-quarto-table-cell-role="th">2023-02-24</td>
 <td>102.4</td>
 <td>88.9</td>
-<td>134.7</td>
-<td>100.9</td>
-<td>150.3</td>
-<td>159.4</td>
-<td>146.2</td>
-<td>136.6</td>
-<td>174.6</td>
-<td>101.9</td>
-<td>156.2</td>
-<td>109.1</td>
+<td>135.0</td>
+<td>100.5</td>
+<td>150.7</td>
+<td>161.5</td>
+<td>144.7</td>
+<td>137.1</td>
+<td>176.8</td>
+<td>102.2</td>
+<td>158.2</td>
+<td>110.3</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2023-02-27</td>
 <td>102.7</td>
 <td>89.4</td>
-<td>135.2</td>
-<td>101.4</td>
-<td>150.6</td>
-<td>160.0</td>
-<td>146.2</td>
-<td>136.9</td>
-<td>174.6</td>
-<td>101.7</td>
-<td>156.8</td>
-<td>110.2</td>
+<td>135.5</td>
+<td>100.9</td>
+<td>151.0</td>
+<td>162.1</td>
+<td>144.7</td>
+<td>137.4</td>
+<td>176.8</td>
+<td>102.0</td>
+<td>158.7</td>
+<td>111.4</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2023-02-28</td>
 <td>102.7</td>
 <td>88.9</td>
-<td>135.8</td>
-<td>101.4</td>
-<td>150.3</td>
-<td>159.4</td>
-<td>147.3</td>
-<td>136.9</td>
-<td>173.9</td>
-<td>101.7</td>
-<td>156.2</td>
-<td>109.4</td>
+<td>136.2</td>
+<td>100.9</td>
+<td>150.7</td>
+<td>161.5</td>
+<td>145.7</td>
+<td>137.4</td>
+<td>176.1</td>
+<td>102.0</td>
+<td>158.2</td>
+<td>110.5</td>
 </tr>
 </tbody>
 </table>
 
+</div>
 </div>
 </div>
 </div>
@@ -599,7 +607,7 @@ In Construction
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-7-output-1.png" width="600" height="381" class="figure-img"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-7-output-1.png" width="800" height="517" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -629,7 +637,7 @@ In Construction
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-8-output-1.png" width="727" height="375" class="figure-img"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-8-output-1.png" width="969" height="509" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -655,7 +663,7 @@ In Construction
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-9-output-1.png" width="370" height="272" class="figure-img"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-9-output-1.png" width="569" height="443" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -673,7 +681,7 @@ In Construction
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-10-output-1.png" width="375" height="276" class="figure-img"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-10-output-1.png" width="568" height="449" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -712,10 +720,19 @@ In Construction
 <span id="cb11-8"><a href="#cb11-8"></a></span>
 <span id="cb11-9"><a href="#cb11-9"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
+<div class="cell-output cell-output-stderr">
+<pre><code>/opt/homebrew/Caskroom/miniconda/base/envs/portfolio-geek/lib/python3.10/site-packages/cvxpy/reductions/solvers/solving_chain.py:336: FutureWarning: 
+    Your problem is being solved with the ECOS solver by default. Starting in 
+    CVXPY 1.5.0, Clarabel will be used as the default solver instead. To continue 
+    using ECOS, specify the ECOS solver explicitly using the ``solver=cp.ECOS`` 
+    argument to the ``problem.solve`` method.
+    
+  warnings.warn(ECOS_DEPRECATION_MSG, FutureWarning)</code></pre>
+</div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-12-output-1.png" width="421" height="292" class="figure-img"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-12-output-2.png" width="656" height="484" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -726,25 +743,25 @@ In Construction
 <div id="cell-28" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a></span>
-<span id="cb12-3"><a href="#cb12-3"></a><span class="co"># Find and plot the tangency portfolio</span></span>
-<span id="cb12-4"><a href="#cb12-4"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb12-5"><a href="#cb12-5"></a>ef2 <span class="op">=</span> EfficientFrontier(mu, S) </span>
-<span id="cb12-6"><a href="#cb12-6"></a>plotting.plot_efficient_frontier(ef2, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb12-7"><a href="#cb12-7"></a></span>
-<span id="cb12-8"><a href="#cb12-8"></a>ef3 <span class="op">=</span> EfficientFrontier(mu, S) </span>
-<span id="cb12-9"><a href="#cb12-9"></a></span>
-<span id="cb12-10"><a href="#cb12-10"></a>ef3.max_sharpe()</span>
-<span id="cb12-11"><a href="#cb12-11"></a>ret_tangent, std_tangent, _ <span class="op">=</span> ef3.portfolio_performance()</span>
-<span id="cb12-12"><a href="#cb12-12"></a>ax.scatter(std_tangent, ret_tangent, marker<span class="op">=</span><span class="st">"*"</span>, s<span class="op">=</span><span class="dv">100</span>, c<span class="op">=</span><span class="st">"r"</span>, label<span class="op">=</span><span class="st">"Max Sharpe"</span>)</span>
-<span id="cb12-13"><a href="#cb12-13"></a>ax.set_title(<span class="st">"Asset Classes, Efficient Frontier &amp; Max Sharpe portfolio"</span>)</span>
-<span id="cb12-14"><a href="#cb12-14"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a></span>
+<span id="cb13-3"><a href="#cb13-3"></a><span class="co"># Find and plot the tangency portfolio</span></span>
+<span id="cb13-4"><a href="#cb13-4"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb13-5"><a href="#cb13-5"></a>ef2 <span class="op">=</span> EfficientFrontier(mu, S) </span>
+<span id="cb13-6"><a href="#cb13-6"></a>plotting.plot_efficient_frontier(ef2, ax<span class="op">=</span>ax, show_assets<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb13-7"><a href="#cb13-7"></a></span>
+<span id="cb13-8"><a href="#cb13-8"></a>ef3 <span class="op">=</span> EfficientFrontier(mu, S) </span>
+<span id="cb13-9"><a href="#cb13-9"></a></span>
+<span id="cb13-10"><a href="#cb13-10"></a>ef3.max_sharpe()</span>
+<span id="cb13-11"><a href="#cb13-11"></a>ret_tangent, std_tangent, _ <span class="op">=</span> ef3.portfolio_performance()</span>
+<span id="cb13-12"><a href="#cb13-12"></a>ax.scatter(std_tangent, ret_tangent, marker<span class="op">=</span><span class="st">"*"</span>, s<span class="op">=</span><span class="dv">100</span>, c<span class="op">=</span><span class="st">"r"</span>, label<span class="op">=</span><span class="st">"Max Sharpe"</span>)</span>
+<span id="cb13-13"><a href="#cb13-13"></a>ax.set_title(<span class="st">"Asset Classes, Efficient Frontier &amp; Max Sharpe portfolio"</span>)</span>
+<span id="cb13-14"><a href="#cb13-14"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-13-output-1.png" width="421" height="292" class="figure-img"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-13-output-1.png" width="656" height="484" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -755,27 +772,27 @@ In Construction
 <div id="cell-30" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">#collapse-hide</span></span>
-<span id="cb13-2"><a href="#cb13-2"></a></span>
-<span id="cb13-3"><a href="#cb13-3"></a><span class="co"># Plot random portfolios</span></span>
-<span id="cb13-4"><a href="#cb13-4"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb13-5"><a href="#cb13-5"></a>n_samples <span class="op">=</span> <span class="dv">10000</span></span>
-<span id="cb13-6"><a href="#cb13-6"></a>w <span class="op">=</span> np.random.dirichlet(np.ones(<span class="bu">len</span>(mu)), n_samples)</span>
-<span id="cb13-7"><a href="#cb13-7"></a>rets <span class="op">=</span> w.dot(mu)</span>
-<span id="cb13-8"><a href="#cb13-8"></a>stds <span class="op">=</span> np.sqrt((w.T <span class="op">*</span> (S <span class="op">@</span> w.T)).<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>))</span>
-<span id="cb13-9"><a href="#cb13-9"></a>sharpes <span class="op">=</span> rets <span class="op">/</span> stds</span>
-<span id="cb13-10"><a href="#cb13-10"></a>ax.scatter(stds, rets, marker<span class="op">=</span><span class="st">"."</span>, c<span class="op">=</span>sharpes, cmap<span class="op">=</span><span class="st">"viridis_r"</span>)</span>
-<span id="cb13-11"><a href="#cb13-11"></a></span>
-<span id="cb13-12"><a href="#cb13-12"></a><span class="co"># Format</span></span>
-<span id="cb13-13"><a href="#cb13-13"></a>ax.set_title(<span class="st">"Random portfolios, based on the same asset classes"</span>)</span>
-<span id="cb13-14"><a href="#cb13-14"></a><span class="co">#ax.legend()</span></span>
-<span id="cb13-15"><a href="#cb13-15"></a>plt.tight_layout()</span>
-<span id="cb13-16"><a href="#cb13-16"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">#collapse-hide</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a></span>
+<span id="cb14-3"><a href="#cb14-3"></a><span class="co"># Plot random portfolios</span></span>
+<span id="cb14-4"><a href="#cb14-4"></a>fig2, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb14-5"><a href="#cb14-5"></a>n_samples <span class="op">=</span> <span class="dv">10000</span></span>
+<span id="cb14-6"><a href="#cb14-6"></a>w <span class="op">=</span> np.random.dirichlet(np.ones(<span class="bu">len</span>(mu)), n_samples)</span>
+<span id="cb14-7"><a href="#cb14-7"></a>rets <span class="op">=</span> w.dot(mu)</span>
+<span id="cb14-8"><a href="#cb14-8"></a>stds <span class="op">=</span> np.sqrt((w.T <span class="op">*</span> (S <span class="op">@</span> w.T)).<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>))</span>
+<span id="cb14-9"><a href="#cb14-9"></a>sharpes <span class="op">=</span> rets <span class="op">/</span> stds</span>
+<span id="cb14-10"><a href="#cb14-10"></a>ax.scatter(stds, rets, marker<span class="op">=</span><span class="st">"."</span>, c<span class="op">=</span>sharpes, cmap<span class="op">=</span><span class="st">"viridis_r"</span>)</span>
+<span id="cb14-11"><a href="#cb14-11"></a></span>
+<span id="cb14-12"><a href="#cb14-12"></a><span class="co"># Format</span></span>
+<span id="cb14-13"><a href="#cb14-13"></a>ax.set_title(<span class="st">"Random portfolios, based on the same asset classes"</span>)</span>
+<span id="cb14-14"><a href="#cb14-14"></a><span class="co">#ax.legend()</span></span>
+<span id="cb14-15"><a href="#cb14-15"></a>plt.tight_layout()</span>
+<span id="cb14-16"><a href="#cb14-16"></a>plt.show()</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="optimise-portfolios-with-python_files/figure-html/cell-14-output-1.png" width="420" height="277" class="figure-img"></p>
+<p><img src="optimise-portfolios-with-python_files/figure-html/cell-14-output-1.png" width="656" height="464" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -837,7 +854,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -869,29 +897,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -950,15 +956,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -1000,11 +1001,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent D.">
 
-<title>Daily Insights (16.07.24): Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market – Portfolio Geek</title>
+<title>Portfolio Geek - Daily Insights (16.07.24): Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -133,7 +133,7 @@ cookieconsent.run({
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Daily Insights (16.07.24): Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market – Portfolio Geek">
+<meta property="og:title" content="Portfolio Geek - Daily Insights (16.07.24): Declining Asset Manager Margins, Fixed Income Trends, Nasdaq-100 Futures Growth, and Surging India Equity Market">
 <meta property="og:image" content="https://portfolio-geek.com/pictures/time-horizon-paper.png">
 <meta property="og:site_name" content="Portfolio Geek">
 <meta property="og:image:height" content="448">
@@ -152,7 +152,7 @@ cookieconsent.run({
     </a>
   </div>
             <div id="quarto-search" class="" title="Recherche"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -164,6 +164,10 @@ cookieconsent.run({
   <li class="nav-item">
     <a class="nav-link" href="../../tutorials_fr.html"> 
 <span class="menu-text">Apprendre et Progresser</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../quotes_fr.html"> 
+<span class="menu-text">Citations</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
@@ -191,7 +195,7 @@ cookieconsent.run({
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -273,7 +277,7 @@ cookieconsent.run({
 </div>
 <section id="asset-management" class="level1">
 <h1>Asset Management</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -298,7 +302,7 @@ cookieconsent.run({
 </section>
 <section id="economics" class="level1">
 <h1>Economics</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -319,7 +323,7 @@ cookieconsent.run({
 </section>
 <section id="etfs-and-index-investing" class="level1">
 <h1>ETFs and Index Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -336,7 +340,7 @@ cookieconsent.run({
 </section>
 <section id="fundamental-investing" class="level1">
 <h1>Fundamental Investing</h1>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>Title</th>
@@ -404,7 +408,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -436,29 +451,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
   const viewSource = window.document.getElementById('quarto-view-source') ||
                      window.document.getElementById('quarto-code-tools-source');
   if (viewSource) {
@@ -517,15 +510,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -567,11 +555,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -904,7 +888,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-57"><a href="#cb1-57"></a>| <span class="co">[</span><span class="ot">Asset Managers' Profits Decline Despite Market Growth, Rising Costs and Innovation Needs Challenge Firms (Institutional Investor., 2024-07-15)</span><span class="co">](https://www.institutionalinvestor.com/article/2dhfi05x8k2pr2loq4v0g/corner-office/asset-manager-profit-margins-get-thinner)</span>   | Asset managers face declining profit margins due to rising costs, weak inflows, and the need for innovation despite a strong stock market. Strategic adaptation is essential for future success. |</span>
 <span id="cb1-58"><a href="#cb1-58"></a>| <span class="co">[</span><span class="ot">Burberry Faces Tough Quarter: Sales Drop, CEO Resigns, and Brand Strategy Questioned (Sherwood, 2024-07-15)</span><span class="co">](https://sherwood.news/markets/europes-luxury-stocks-have-boomed-burberry-got-left-behind/)</span>   | Burberry's first-quarter results showed a 22% revenue drop, CEO resignation, dividend suspension, and declining sales, prompting challenges for the new CEO amidst declining brand exclusivity and market presence. |</span>
 <span id="cb1-59"><a href="#cb1-59"></a>| <span class="co">[</span><span class="ot">India's Equity Market Evolution: New Listings, Venture-Backed Firms, and Potential Power Shifts for Global Investors (MSCI, 2024-07-16)</span><span class="co">](https://www.msci.com/www/blog-posts/india-s-changed-and-changing/04777168512)</span>   | India's equity market shows significant growth, with over 300 new companies since 2020, highlighting changes in industry profiles and future potential from private market entrants. |</span>
-<span id="cb1-60"><a href="#cb1-60"></a>| <span class="co">[</span><span class="ot">S&amp;P 500 Earnings Surge: Historical Data Predicts Over 12% Growth for Q2, Outperforming Estimates (FactSet, 2024-07-16)</span><span class="co">](https://insight.factset.com/sp-500-will-likely-report-earnings-growth-of-at-least-12-for-q2)</span>   | S&amp;P 500 expected to report earnings growth above 12% for Q2, supported by historical trends of exceeding estimates, with 81% of companies reporting higher EPS so far. |</span></code><button title="Copier vers le presse-papier" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-60"><a href="#cb1-60"></a>| <span class="co">[</span><span class="ot">S&amp;P 500 Earnings Surge: Historical Data Predicts Over 12% Growth for Q2, Outperforming Estimates (FactSet, 2024-07-16)</span><span class="co">](https://insight.factset.com/sp-500-will-likely-report-earnings-growth-of-at-least-12-for-q2)</span>   | S&amp;P 500 expected to report earnings growth above 12% for Q2, supported by historical trends of exceeding estimates, with 81% of companies reporting higher EPS so far. |</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

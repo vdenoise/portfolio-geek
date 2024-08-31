@@ -1,187 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://portfolio-geek.com/quotes_en.html</loc>
+    <lastmod>2024-08-31T10:54:46.668Z</lastmod>
+  </url>
+  <url>
     <loc>https://portfolio-geek.com/tutorials_fr.html</loc>
-    <lastmod>2024-08-27T18:34:22.995Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.629Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/all_posts.html</loc>
-    <lastmod>2023-05-02T05:34:22.768Z</lastmod>
+    <lastmod>2023-11-05T21:32:31.114Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/index.html</loc>
-    <lastmod>2024-08-27T18:32:31.244Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.467Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/data-driven-minute.html</loc>
-    <lastmod>2024-07-20T08:02:02.099Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.467Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/daily-curation.html</loc>
-    <lastmod>2024-08-08T19:03:46.699Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.466Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_08_07_daily-curation.html</loc>
-    <lastmod>2024-08-08T09:59:50.353Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.627Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_08_27_daily-curation.html</loc>
-    <lastmod>2024-08-28T05:22:20.656Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.628Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-15_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:23:37.601Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.625Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_07_25_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:29:59.445Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.626Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_08_09_daily-curation.html</loc>
-    <lastmod>2024-08-11T05:36:22.132Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.628Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_08_02_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:20:45.386Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.627Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-20_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:15:43.933Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.626Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-21_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:15:22.880Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.626Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_07_22_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:18:12.485Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.626Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_07_29_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:20:03.997Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.626Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_08_08_daily-curation.html</loc>
-    <lastmod>2024-08-09T06:16:36.463Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.627Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-14_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:17:34.585Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.623Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/papers-reviews/Portfolio_Selection.html</loc>
-    <lastmod>2024-08-23T09:33:42.754Z</lastmod>
+    <lastmod>2024-08-30T16:15:44.732Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/visualizing-historical-data.html</loc>
-    <lastmod>2024-08-23T16:38:22.540Z</lastmod>
+    <lastmod>2024-08-30T15:41:24.647Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/max-drawdown.html</loc>
-    <lastmod>2024-08-07T16:37:34.905Z</lastmod>
+    <lastmod>2024-08-30T15:41:11.156Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/historical-vol.html</loc>
-    <lastmod>2024-08-11T05:58:40.318Z</lastmod>
+    <lastmod>2024-08-30T15:41:04.608Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/optimise-portfolios-with-python.html</loc>
-    <lastmod>2024-08-08T05:44:30.043Z</lastmod>
+    <lastmod>2024-08-30T15:40:57.084Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/correlation-returns.html</loc>
-    <lastmod>2024-08-13T09:53:16.396Z</lastmod>
+    <lastmod>2024-08-30T15:40:38.797Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/quotes/10-insightful-quotes-about-portfolio-construction.html</loc>
-    <lastmod>2024-08-23T16:38:03.338Z</lastmod>
+    <lastmod>2024-08-30T15:40:09.235Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/setting-up-a-python-workstation-windows.html</loc>
-    <lastmod>2024-08-07T16:50:05.404Z</lastmod>
+    <lastmod>2024-08-30T15:40:30.329Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/sharpe-ratio.html</loc>
-    <lastmod>2024-08-07T16:35:07.273Z</lastmod>
+    <lastmod>2024-08-30T15:40:43.855Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/spy-and-matplotlib.html</loc>
-    <lastmod>2024-08-08T10:02:57.843Z</lastmod>
+    <lastmod>2024-08-30T15:40:49.925Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/tracking-error.html</loc>
-    <lastmod>2024-08-22T06:11:09.493Z</lastmod>
+    <lastmod>2024-08-30T15:41:08.275Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/articles/tutorials/setting-up-a-python-workstation-macos.html</loc>
-    <lastmod>2024-08-08T05:44:05.371Z</lastmod>
+    <lastmod>2024-08-30T15:41:29.801Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-17_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:24:22.279Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.625Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-19_daily-curation.html</loc>
-    <lastmod>2024-08-05T12:29:31.755Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.626Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_07_24_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:19:07.530Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.626Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_08_13_daily-curation.html</loc>
-    <lastmod>2024-08-14T05:43:11.894Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.628Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_07_31_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:20:19.950Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.626Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_08_01_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:20:36.255Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.626Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_07_23_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:18:49.867Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.626Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-13_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:17:50.326Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.623Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_08_04_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:08:48.635Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.627Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_08_14_daily-curation.html</loc>
-    <lastmod>2024-08-15T08:28:20.208Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.628Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-18_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:16:25.026Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.626Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024-07-16_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:16:59.362Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.625Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/posts/daily-curation/2024_07_26_daily-curation.html</loc>
-    <lastmod>2024-08-05T08:19:43.734Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.626Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/daily-curation_fr.html</loc>
-    <lastmod>2024-08-14T05:58:13.405Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.466Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/archive.html</loc>
-    <lastmod>2024-02-25T19:07:09.335Z</lastmod>
+    <lastmod>2024-02-26T18:32:32.896Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/about.html</loc>
-    <lastmod>2024-08-08T09:13:06.089Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.465Z</lastmod>
   </url>
   <url>
     <loc>https://portfolio-geek.com/tutorials.html</loc>
-    <lastmod>2024-08-27T18:33:36.401Z</lastmod>
+    <lastmod>2024-08-30T15:39:39.629Z</lastmod>
+  </url>
+  <url>
+    <loc>https://portfolio-geek.com/quotes_fr.html</loc>
+    <lastmod>2024-08-31T10:55:15.312Z</lastmod>
   </url>
 </urlset>
