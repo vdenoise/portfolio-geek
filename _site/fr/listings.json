@@ -18,6 +18,8 @@
     "listing": "/all_posts.html",
     "items": [
       "/posts/quotes/10-insightful-quotes-about-portfolio-construction.html",
+      "/posts/quotes/10-insightful-quotes-about-value-investing.html",
+      "/posts/quotes/10-insightful-quotes-about-data.html",
       "/posts/daily-curation/2024_08_14_daily-curation.html",
       "/posts/daily-curation/2024-07-18_daily-curation.html",
       "/posts/daily-curation/2024_08_09_daily-curation.html",
@@ -59,6 +61,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/quotes/10-insightful-quotes-about-value-investing.html",
+      "/posts/quotes/10-insightful-quotes-about-data.html",
       "/posts/quotes/10-insightful-quotes-about-portfolio-construction.html",
       "/posts/papers-reviews/Portfolio_Selection.html",
       "/posts/articles/tutorials/tracking-error.html",
@@ -165,6 +169,8 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/quotes/10-insightful-quotes-about-data.html",
+      "/posts/quotes/10-insightful-quotes-about-value-investing.html",
       "/posts/quotes/10-insightful-quotes-about-portfolio-construction.html",
       "/posts/papers-reviews/Portfolio_Selection.html",
       "/posts/articles/tutorials/tracking-error.html",
