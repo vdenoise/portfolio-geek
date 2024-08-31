@@ -1,5 +1,5 @@
 ---
-title: "Revue de Web"
+title: "Citations"
 listing:
   contents: /posts/quotes/*.ipynb
   sort: "date desc"
