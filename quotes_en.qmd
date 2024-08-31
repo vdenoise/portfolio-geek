@@ -12,7 +12,7 @@ code-tools:
 title-block-banner: true
 ---
 
-Quotes are a good way to convey a powerful mnessage in a few words. 
+Quotes are often a good way to convey a powerful message in a few words. 
 
 You will find below different selections of quotes to feed and inspire you coding and investment day to day.
 
