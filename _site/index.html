@@ -82,8 +82,7 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-image','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 18,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
@@ -118,6 +117,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-curation'] = new List('listing-curation', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-quotes .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-image','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-quotes'] = new List('listing-quotes', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -309,6 +336,7 @@ window.Quarto = {
 <p>Every day or so, I aim to compile the key links and articles I found insightgul. Below, you will find my most recent compilations. This covers themes like tech, finance, markets, cryptos, etc.</p>
 <p>Happy reading!</p>
 <p>Vincent</p>
+<p><a href="./daily-curation.html">Full list here</a></p>
 <div id="listing-curation" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
 <div class="g-col-1" data-index="0" data-categories="ai,climate,coding,economics,etf,fundamental" data-listing-date-sort="1724713200000" data-listing-file-modified-sort="1724822540656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1064">
@@ -380,29 +408,92 @@ Aug 13, 2024
 No matching items
 </div>
 </div>
-<p><a href="./daily-curation.html">Full list here</a></p>
 </section>
 <section id="latest-articles" class="level2">
 <h2 class="anchored" data-anchor-id="latest-articles">Latest Articles</h2>
 <p>Below, my latest analysis and posts, published in Quarto (ie, each is a Jupyter Notebook, with full source code available).</p>
 <div id="listing-posts" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="data,quotes,value,portfolio,inspiration" data-listing-file-modified-sort="1725570002310" data-listing-reading-time-sort="2" data-listing-word-count-sort="264">
-<a href="./posts/quotes/10-quotes-to-grasp-reproducible-research.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="paper,academic,research,review,portfolio-construction" data-listing-date-sort="1724281200000" data-listing-file-modified-sort="1725103167043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2530">
+<a href="./posts/papers-reviews/Portfolio_Selection.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="pictures/close-up-led-charts-and-summary-info-for-making-st.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img loading="lazy" src="./pictures/business-graphs-and-magnifying-glass-on-table.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-10 Quotes to Grasp Reproducible Research
+Must Read Papers Series #1: Review of ‘Portfolio Selection’ (Harry Markowitz)
 </h5>
 <div class="listing-reading-time card-text text-muted">
-2 min
+13 min
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Aug 22, 2024
+</div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="data,quotes,value,portfolio,inspiration" data-listing-file-modified-sort="1725570238799" data-listing-reading-time-sort="12" data-listing-word-count-sort="2379">
+<div class="g-col-1" data-index="1" data-categories="data,correlation,relationship,tracking-error,statistics" data-listing-date-sort="1723935600000" data-listing-file-modified-sort="1725103166868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="669">
+<a href="./posts/articles/tutorials/tracking-error.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pictures/lection-on-stock-market-trading.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Tracking Error of QQQ vs SPY: A Practical Guide with Python
+</h5>
+<div class="listing-reading-time card-text text-muted">
+4 min
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Aug 18, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="data,correlation,relationship,analytics,statistics" data-listing-date-sort="1723503600000" data-listing-file-modified-sort="1725103166786" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="777">
+<a href="./posts/articles/tutorials/correlation-returns.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pictures/green-cutting-mat-with-geometric-patterns.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Correlation of returns: why it matters, and how to analyse it with Python
+</h5>
+<div class="listing-reading-time card-text text-muted">
+4 min
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Aug 13, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="quotes-for-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="quotes-for-thoughts">Quotes for Thoughts</h2>
+<p>Quotes are often a good way to convey a powerful message in a few words.</p>
+<p>You will find below different selections of quotes to feed and inspire you coding and investment day to day.</p>
+<p><a href="./quotes_en.html">Full list here</a></p>
+<div id="listing-quotes" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="data,quotes,value,portfolio,inspiration" data-listing-file-modified-sort="1725570238799" data-listing-reading-time-sort="12" data-listing-word-count-sort="2379">
 <a href="./posts/quotes/10-quotes-to-grasp-fixed-income-investing.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="pictures/interest-rate-growth-and-business-concept.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -417,13 +508,30 @@ No matching items
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="data,quotes,value,factor investing,portfolio,inspiration" data-listing-file-modified-sort="1725646299345" data-listing-reading-time-sort="14" data-listing-word-count-sort="2680">
+<div class="g-col-1" data-index="1" data-categories="data,quotes,value,factor investing,portfolio,inspiration" data-listing-file-modified-sort="1725646299345" data-listing-reading-time-sort="14" data-listing-word-count-sort="2680">
 <a href="./posts/quotes/10-quotes-to-grasp-value-investing.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="pictures/coin-tree-cultivation-businessman-planting-a-mone.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 10 Quotes to Grasp Value Investing
+</h5>
+<div class="listing-reading-time card-text text-muted">
+14 min
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="data,quotes,portfolio,inspiration,construction" data-listing-file-modified-sort="1725105100471" data-listing-reading-time-sort="14" data-listing-word-count-sort="2774">
+<a href="./posts/quotes/10-insightful-quotes-about-portfolio-construction.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./pictures/portfolio-optimisation.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+10 good-to-know quotes about portfolio construction
 </h5>
 <div class="listing-reading-time card-text text-muted">
 14 min

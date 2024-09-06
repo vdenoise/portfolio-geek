@@ -6,7 +6,6 @@ listing:
     contents: 
       - /posts/articles/
       - /posts/papers-reviews/
-      - /posts/quotes/
     max-items: 3
     sort: "date desc"
     type: grid
@@ -21,6 +20,13 @@ listing:
     fields: [date, title, image, reading-time]
     feed: true
 
+  - id: quotes
+    contents: /posts/quotes/
+    max-items: 3
+    sort: "date desc"
+    type: grid
+    fields: [date, title, image, reading-time]
+    feed: true
 ---
 
 ::: {.grid}
@@ -80,10 +86,6 @@ Vincent
 :::
 
 
-::: {#curation}
-:::
-
-
 ::: {.content-visible when-profile="website_en"}
 [Full list here](/daily-curation.qmd)
 :::
@@ -91,6 +93,12 @@ Vincent
 ::: {.content-visible when-profile="website_fr"}
 [Liste complète ici](/daily-curation_fr.qmd)
 :::
+
+::: {#curation}
+:::
+
+
+
 
 
 
@@ -109,4 +117,31 @@ Ci-dessous, mes derniers articles, publiés avec Quarto. Plus cconcrètement, ce
 :::
 
 ::: {#posts}
+:::
+
+
+::: {.content-visible when-profile="website_en"}
+
+## Quotes for Thoughts
+
+Quotes are often a good way to convey a powerful message in a few words.
+
+You will find below different selections of quotes to feed and inspire you coding and investment day to day.
+
+[Full list here](/quotes_en.qmd)
+:::
+
+::: {.content-visible when-profile="website_fr"}
+
+## Citations Utiles
+
+Quelques citations pour votre quotidien d’investisseur ou de codeur.
+
+Note: quand les citations sont en anglais, une explication est fournie en francais.
+
+[Liste complète ici](/quotes_fr.qmd)
+
+:::
+
+::: {#quotes}
 :::

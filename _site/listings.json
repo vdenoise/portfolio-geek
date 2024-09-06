@@ -9,7 +9,6 @@
       "/posts/quotes/10-quotes-to-grasp-long-term-investing.html",
       "/posts/quotes/10-quotes-to-grasp-markowitz-legacy-portfolio-construction.html",
       "/posts/quotes/10-quotes-to-grasp-momentum-investing.html",
-      "/posts/quotes/10-quotes-to-grasp-reproducible-research.html",
       "/posts/quotes/10-quotes-to-grasp-small-caps.html",
       "/posts/quotes/10-quotes-to-grasp-value-investing.html"
     ]
@@ -35,7 +34,6 @@
       "/posts/quotes/10-quotes-to-grasp-fixed-income-investing.html",
       "/posts/quotes/10-quotes-to-grasp-long-term-investing.html",
       "/posts/quotes/10-quotes-to-grasp-momentum-investing.html",
-      "/posts/quotes/10-quotes-to-grasp-reproducible-research.html",
       "/posts/quotes/10-quotes-to-grasp-small-caps.html",
       "/posts/quotes/10-quotes-to-grasp-value-investing.html",
       "/posts/quotes/10-quotes-to-grasp-markowitz-legacy-portfolio-construction.html",
@@ -83,16 +81,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/quotes/10-quotes-to-grasp-reproducible-research.html",
-      "/posts/quotes/10-quotes-to-grasp-fixed-income-investing.html",
-      "/posts/quotes/10-quotes-to-grasp-value-investing.html",
-      "/posts/quotes/10-insightful-quotes-about-portfolio-construction.html",
-      "/posts/quotes/10-powerful-quotes-about-data.html",
-      "/posts/quotes/10-quotes-to-grasp-small-caps.html",
-      "/posts/quotes/10-quotes-to-grasp-long-term-investing.html",
-      "/posts/quotes/10-quotes-to-grasp-markowitz-legacy-portfolio-construction.html",
-      "/posts/quotes/10-quotes-about-volatilty.html",
-      "/posts/quotes/10-quotes-to-grasp-momentum-investing.html",
       "/posts/papers-reviews/Portfolio_Selection.html",
       "/posts/articles/tutorials/tracking-error.html",
       "/posts/articles/tutorials/correlation-returns.html",
@@ -128,7 +116,16 @@
       "/posts/daily-curation/2024-07-16_daily-curation.html",
       "/posts/daily-curation/2024-07-15_daily-curation.html",
       "/posts/daily-curation/2024-07-14_daily-curation.html",
-      "/posts/daily-curation/2024-07-13_daily-curation.html"
+      "/posts/daily-curation/2024-07-13_daily-curation.html",
+      "/posts/quotes/10-quotes-to-grasp-fixed-income-investing.html",
+      "/posts/quotes/10-quotes-to-grasp-value-investing.html",
+      "/posts/quotes/10-insightful-quotes-about-portfolio-construction.html",
+      "/posts/quotes/10-powerful-quotes-about-data.html",
+      "/posts/quotes/10-quotes-to-grasp-small-caps.html",
+      "/posts/quotes/10-quotes-to-grasp-long-term-investing.html",
+      "/posts/quotes/10-quotes-to-grasp-markowitz-legacy-portfolio-construction.html",
+      "/posts/quotes/10-quotes-about-volatilty.html",
+      "/posts/quotes/10-quotes-to-grasp-momentum-investing.html"
     ]
   },
   {
@@ -205,7 +202,6 @@
       "/posts/quotes/10-quotes-to-grasp-long-term-investing.html",
       "/posts/quotes/10-quotes-to-grasp-markowitz-legacy-portfolio-construction.html",
       "/posts/quotes/10-quotes-to-grasp-momentum-investing.html",
-      "/posts/quotes/10-quotes-to-grasp-reproducible-research.html",
       "/posts/quotes/10-quotes-to-grasp-small-caps.html",
       "/posts/quotes/10-quotes-to-grasp-value-investing.html",
       "/posts/papers-reviews/Portfolio_Selection.html",
@@ -246,7 +242,6 @@
       "/posts/quotes/10-quotes-to-grasp-long-term-investing.html",
       "/posts/quotes/10-quotes-to-grasp-markowitz-legacy-portfolio-construction.html",
       "/posts/quotes/10-quotes-to-grasp-momentum-investing.html",
-      "/posts/quotes/10-quotes-to-grasp-reproducible-research.html",
       "/posts/quotes/10-quotes-to-grasp-small-caps.html",
       "/posts/quotes/10-quotes-to-grasp-value-investing.html"
     ]
