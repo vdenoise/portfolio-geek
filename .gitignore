@@ -3,3 +3,4 @@
 /_freeze
 /.vscode
 /admin/build/*
+.env

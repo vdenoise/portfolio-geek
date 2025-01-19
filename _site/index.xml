@@ -10,7 +10,158 @@
 <atom:link href="https://portfolio-geek.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Finance, Research and the Tech required to Fuel them</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Mon, 26 Aug 2024 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 18 Jan 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>AI’s Role in 2025, Time-Series Forecasting Innovations &amp; Passive Investing’s Future Impact (18.01.2025)</title>
+  <dc:creator>Vincent D.</dc:creator>
+  <link>https://portfolio-geek.com/posts/daily-curation/2025_01_18_daily-curation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Happy 2025! I know, it has been a long time. Today’s curation explores a variety of key topics shaping our financial landscape:</p>
+<ul>
+<li>The role of generative AI in enhancing job satisfaction and potential applications in law firms.</li>
+<li>Noteworthy advancements in time-series forecasting techniques and research.</li>
+<li>The impact of passive investing on market dynamics and opportunities in mega cap stocks.</li>
+<li>Insights into market valuations through the lens of the CAPE ratio.</li>
+</ul>
+<p>For detailed discussions on these topics, see the table below.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://portfolio-geek.com/pictures/cup-of-coffee-and-a-newspaper.jpg" class="img-fluid figure-img"></p>
+<figcaption>Coffee with daily news</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="ai-and-gen-ai" class="level1">
+<h1>AI and Gen-AI</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.forbes.com/sites/joemckendrick/2025/01/18/time-to-take-the-low-expectations-out-of-genai/">Empowering Human Potential: How Generative AI Enhances Skills and Fuels Career Growth Beyond Simple Task Automation (Forbes, 2025-01-18)</a></td>
+<td>Generative AI should amplify human work, enhancing job satisfaction. Employers often focus on automation, leading to distrust. Three key areas for success are accessibility, agentic workflows, and physical copilots.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.abajournal.com/legalrebels/article/rebels-podcast-episode-108">Generative AI in 2025: How It Will Transform Law Schools, Firms, and Regulations Alike (ABA Journal, 2025-01-18)</a></td>
+<td>In 2025, generative AI is expected to dominate like in 2024. More adoption in law firms, potential regulations, and increased education on AI in law schools are anticipated.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-databases-and-data-science" class="level1">
+<h1>Data, Databases and Data Science</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://towardsdatascience.com/influential-time-series-forecasting-papers-of-2023-2024-part-1-1b3d2e10a5b3">Mastering Future Trends: Unveiling the Top Time-Series Forecasting Papers Reshaping 2023-2024 Dynamics (Towards Data Science, 2025-01-17)</a></td>
+<td>The article reviews notable time-series forecasting papers from 2023-2024, highlighting advancements such as deep learning applications, reconciliation methods, and innovative architectures like TSMixer and CARD.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hedge-fund-news" class="level1">
+<h1>Hedge Fund News</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://mrzepczynski.blogspot.com/2025/01/the-great-volatility-adjustment-in-cta.html">Understanding the Strategic Shift in Commodity Trading: Why Lower Volatility May Not Be Ideal for Investors (The Great Volatility Adjustment, 2025-01-18)</a></td>
+<td>The “Great Volatility Adjustment” sees CTA volatility drop below 10%. While Sharpe ratios slightly increase, lower volatility may not benefit investors seeking trend diversification and higher exposure.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="portfolio-construction-techniques" class="level1">
+<h1>Portfolio Construction Techniques</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://ofdollarsanddata.com/is-there-a-problem-with-passive-investing/">Are Passive Investment Funds Healthy for the Market? (of Dollars and Data, 2025-01-18)</a></td>
+<td>Passive investing has transformed asset ownership, but critiques include price distortion, market instability, and corporate governance issues. Concerns persist, yet benefits currently outweigh risks for individual investors.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.capitalspectator.com/research-review-17-january-2025-risk-premia/">Decoding Risk Premia: Insights on Stock, Cryptocurrency, and Treasury Markets for Informed Portfolio Decisions (Capital Spectator, 2025-01-17)</a></td>
+<td>Recent research explores stock market return deviations, monetary policy impact, risk factors, cryptocurrency premiums, Treasuries risk, and long-term asset returns, highlighting significant influences on equity premium estimation.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://awealthofcommonsense.com/2025/01/mega-cap-world-domination/">Navigating Tech Giants’ Market Dominance Uncertainty With Diversified Investing and Historical Capital Spending Insights (Wealth of Common Sense, 2025-01-18)</a></td>
+<td>Investors face uncertainty in mega cap stocks. Concentration raises concerns, but companies like Nvidia and Apple thrive. High expectations may risk future performance; diversification in index funds offers a balanced approach.</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.ft.com/content/260079a7-9b08-4dbd-909f-08c2407d1912">Market Turmoil Looms: Are Index Funds Fueling Stock Valuation Imbalances and Threatening Traditional Investors? (FT Alphaville, 2025-01-18)</a></td>
+<td>David Einhorn asserts that passive investing has led to a broken market structure, causing overvaluation and undervaluation. Traditional stockpickers face challenges as flows into index funds increase, reducing market efficiency.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quantitative-investing" class="level1">
+<h1>Quantitative Investing</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.theirrelevantinvestor.com/p/stocks-are-more-expensive-than-they-used-to-be">Why High Stock Prices Might Not Mean Doom: Unpacking the Evolving CAPE Ratios and Modern Market Dynamics (Irrelevant Investor, 2025-01-18)</a></td>
+<td>The CAPE ratio, once high, has justified higher valuations due to improved companies. The S&amp;P 500 has risen nearly 100% since early 2018, despite a current CAPE of 37x.</td>
+</tr>
+</tbody>
+</table>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>data-science</category>
+  <category>hedge-funds</category>
+  <category>portfolio-construction</category>
+  <category>quant</category>
+  <guid>https://portfolio-geek.com/posts/daily-curation/2025_01_18_daily-curation.html</guid>
+  <pubDate>Sat, 18 Jan 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://portfolio-geek.com/pictures/cup-of-coffee-and-a-newspaper.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Daily Curation (27.08.2024): Generative AI, Rising Food Prices, Small Caps Surge, and Python Innovations</title>
   <dc:creator>Vincent D.</dc:creator>
@@ -4307,146 +4458,6 @@ font-style: inherit;">'Volatility'</span>)</span>
   <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_25_daily-curation.html</guid>
   <pubDate>Wed, 24 Jul 2024 23:00:00 GMT</pubDate>
   <media:content url="https://portfolio-geek.com/pictures/morning-news-in-the-office-2023-11-27-04-50-01-utc.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Daily Financial Insights 24.07.2024: US Economic Growth, ETF Trends, Small-Cap Outperformance, &amp; Inflation Eases</title>
-  <dc:creator>Vincent D.</dc:creator>
-  <link>https://portfolio-geek.com/posts/daily-curation/2024_07_24_daily-curation.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>In today’s curation, we explore a range of topics relevant to quantitative finance and market insights:</p>
-<ul>
-<li>GroupBy operations in pandas for data analysis</li>
-<li>rnatoolbox for plotting group data</li>
-<li>US economic growth and inflation trends</li>
-<li>Fed rate prediction and implications for small-cap stocks</li>
-<li>Performance of small-cap ETFs and investor sentiment<br>
-</li>
-<li>Market performance under the Biden administration</li>
-</ul>
-<p>Please find further details in the table below.</p>
-</div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://portfolio-geek.com/pictures/news-concept-with-newspapers-2023-11-27-05-32-59-utc.png" class="img-fluid figure-img"></p>
-<figcaption>Coffee with daily news</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<section id="coding" class="level1">
-<h1>Coding</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://realpython.com/courses/pandas-groupby-real-world-data/">Unlocking Data Insights: Master pandas GroupBy Techniques with Real-World Examples (pandas documentation, 2024-07-23)</a></td>
-<td>This course teaches pandas GroupBy operations using real-world datasets. It covers the split-apply-combine process, method categorisation, and practical applications for effective data analysis.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.r-bloggers.com/2024/07/plotting-individual-values-within-multiple-groups-together-with-their-means/">Visualize Data with Ease Using Group Scatter Plots in R (gacatag, 2024-07-23)</a></td>
-<td>The <code>groupScatterPlot()</code> function in the rnatoolbox package plots individual values from multiple groups alongside their means, useful for various data analyses, including gene expression.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="economics" class="level1">
-<h1>Economics</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.capitalspectator.com/us-q2-gdp-growth-set-for-modest-pickup-in-thursdays-report/">US Economy Shows Resilience: Q2 Growth Set for Improvement, Recession Risk Remains Low (CapitalSpectator.com, 2024-07-23)</a></td>
-<td>US economic growth is expected to rise to 1.9% in Q2, an improvement from Q1’s 1.4%. Recession risk remains low, with estimates around 9% based on recent analytics.</td>
-</tr>
-<tr class="even">
-<td><a href="https://awealthofcommonsense.com/2024/07/are-higher-rates-finally-starting-to-impact-consumer-finances/">How Smart Financial Choices Mitigated Inflation Impact Without Triggering Recession (The name is not explicitly mentioned in the content provided, so I am unable to identify it., 2024-07-24)</a></td>
-<td>Inflation fell to 3% without recession. Consumers remain relatively resilient despite rising interest rates, though some debt types, like credit cards and auto loans, show increasing delinquencies.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://insight.factset.com/the-fed-is-not-cutting-in-september">Why the Fed May Delay Rate Cuts: Data, Market Signals, and Election Timing (FactSet Insight, 2024-07-23)</a></td>
-<td>The Fed is likely not to cut rates in September, anticipating two cuts in November and December instead, citing data dependency, synthetic cuts, and election politicisation as reasons.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="fundamental-investing" class="level1">
-<h1>Fundamental Investing</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.etftrends.com/etf-prime/crigger-small-cap-stocks-plus-spot-ether-etfs/">Unlocking Small-Cap Stock Potential and Ether ETF Strategies: Insights from Industry Experts (ETF Trends, 2024-07-23)</a></td>
-<td>Small-cap stocks have recently outperformed large-caps, leading to significant inflows into small-cap ETFs. Spot ether ETFs were approved rapidly, capitalising on changing regulatory attitudes towards cryptocurrencies.</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.valuewalk.com/how-the-stock-market-has-fared-under-biden/">Assessing Biden’s Stock Market Legacy: A Comparative Analysis with Past Presidents from Reagan to Trump (ValueWalk, 2024-07-23)</a></td>
-<td>Since Biden took office, the S&amp;P 500 has risen 48%. His administration experienced two bull markets and one bear market, trailing both Trump and Obama’s stock market performances.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://rotationreport.substack.com/p/the-small-cap-snowball">Forecasting the Small Cap Surge: Tom Lee’s Bold Prediction on IWM Reaching 300 (Rotation Report, 2024-07-23)</a></td>
-<td>Tom Lee predicts IWM will reach 300. This speculation raises interesting possibilities for small-cap growth. Full details are exclusive to paid subscribers on a specific platform.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="quantitative-investing" class="level1">
-<h1>Quantitative Investing</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.etftrends.com/etf-building-blocks-channel/investing-factor-key-rate-sensitive-small-caps/">Unlock High Returns: Quality Small Cap Stocks to Watch During Upcoming Rate Cuts (ETF Trends, 2024-07-24)</a></td>
-<td>Rate cuts may benefit small-cap quality stocks, particularly through the ALPS O’Shares U.S. Small-Cap Quality Dividend ETF (OUSM), which focuses on dividends and shows strong performance compared to benchmarks.</td>
-</tr>
-</tbody>
-</table>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>coding</category>
-  <category>economics</category>
-  <category>fundamental</category>
-  <category>quant</category>
-  <guid>https://portfolio-geek.com/posts/daily-curation/2024_07_24_daily-curation.html</guid>
-  <pubDate>Tue, 23 Jul 2024 23:00:00 GMT</pubDate>
-  <media:content url="https://portfolio-geek.com/pictures/news-concept-with-newspapers-2023-11-27-05-32-59-utc.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 </channel>
 </rss>

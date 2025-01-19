@@ -1,0 +1,115 @@
+---
+title: "AI's Role in 2025, Time-Series Forecasting Innovations & Passive Investing's Future Impact (18.01.2025)"
+page-layout: full
+title-block-banner: true
+date: 01-18-2025
+categories: [ai,data-science,hedge-funds,portfolio-construction,quant]
+tags: [ai, investing, volatility, forecasting, regulation, diversification, optimization, valuation, governance, returns]
+image: /pictures/cup-of-coffee-and-a-newspaper.jpg
+---
+
+::: {layout-ncol=2}
+
+:::{#first-column}
+
+::: {.content-visible when-profile="website_en"}
+Happy 2025!
+I know, it has been a long time.
+Today’s curation explores a variety of key topics shaping our financial landscape:
+
+- The role of generative AI in enhancing job satisfaction and potential applications in law firms.
+- Noteworthy advancements in time-series forecasting techniques and research.
+- The impact of passive investing on market dynamics and opportunities in mega cap stocks.
+- Insights into market valuations through the lens of the CAPE ratio.
+
+For detailed discussions on these topics, see the table below.
+:::
+
+::: {.content-visible when-profile="website_fr"}
+Bonne année 2025!
+Dans cette curation du 18 janvier 2025, nous explorons des sujets essentiels touchant à l'intelligence artificielle, la prévision des séries temporelles, et l'impact de l'investissement passif. Voici les principaux thèmes abordés aujourd'hui :
+
+- Rôle de l'intelligence artificielle générative
+- Évolutions en prévision de séries temporelles
+- Impact de la volatilité des CTA 
+- Effectifs et critiques de l'investissement passif
+- Déviations des rendements boursiers
+- Incertitudes autour des actions mega cap
+- Problématiques soulevées par David Einhorn sur l'investissement passif
+- Analyse du ratio CAPE et performances du S&P 500
+:::
+
+
+:::
+
+:::{#second-column}
+![Coffee with daily news](/pictures/cup-of-coffee-and-a-newspaper.jpg)
+:::
+
+:::
+
+::: {.content-visible when-profile="website_en"}
+
+
+# AI and Gen-AI
+| Title | Summary |
+|-----|-----------|
+| [Empowering Human Potential: How Generative AI Enhances Skills and Fuels Career Growth Beyond Simple Task Automation (Forbes, 2025-01-18)](https://www.forbes.com/sites/joemckendrick/2025/01/18/time-to-take-the-low-expectations-out-of-genai/)   | Generative AI should amplify human work, enhancing job satisfaction. Employers often focus on automation, leading to distrust. Three key areas for success are accessibility, agentic workflows, and physical copilots. |
+| [Generative AI in 2025: How It Will Transform Law Schools, Firms, and Regulations Alike (ABA Journal, 2025-01-18)](https://www.abajournal.com/legalrebels/article/rebels-podcast-episode-108)   | In 2025, generative AI is expected to dominate like in 2024. More adoption in law firms, potential regulations, and increased education on AI in law schools are anticipated. |
+
+# Data, Databases and Data Science
+| Title | Summary |
+|-----|-----------|
+| [Mastering Future Trends: Unveiling the Top Time-Series Forecasting Papers Reshaping 2023-2024 Dynamics (Towards Data Science, 2025-01-17)](https://towardsdatascience.com/influential-time-series-forecasting-papers-of-2023-2024-part-1-1b3d2e10a5b3)   | The article reviews notable time-series forecasting papers from 2023-2024, highlighting advancements such as deep learning applications, reconciliation methods, and innovative architectures like TSMixer and CARD. |
+
+# Hedge Fund News
+| Title | Summary |
+|-----|-----------|
+| [Understanding the Strategic Shift in Commodity Trading: Why Lower Volatility May Not Be Ideal for Investors (The Great Volatility Adjustment, 2025-01-18)](http://mrzepczynski.blogspot.com/2025/01/the-great-volatility-adjustment-in-cta.html)   | The "Great Volatility Adjustment" sees CTA volatility drop below 10%. While Sharpe ratios slightly increase, lower volatility may not benefit investors seeking trend diversification and higher exposure. |
+
+# Portfolio Construction Techniques
+| Title | Summary |
+|-----|-----------|
+| [Are Passive Investment Funds Healthy for the Market? (of Dollars and Data, 2025-01-18)](https://ofdollarsanddata.com/is-there-a-problem-with-passive-investing/)   | Passive investing has transformed asset ownership, but critiques include price distortion, market instability, and corporate governance issues. Concerns persist, yet benefits currently outweigh risks for individual investors. |
+| [Decoding Risk Premia: Insights on Stock, Cryptocurrency, and Treasury Markets for Informed Portfolio Decisions (Capital Spectator, 2025-01-17)](https://www.capitalspectator.com/research-review-17-january-2025-risk-premia/)   | Recent research explores stock market return deviations, monetary policy impact, risk factors, cryptocurrency premiums, Treasuries risk, and long-term asset returns, highlighting significant influences on equity premium estimation. |
+| [Navigating Tech Giants' Market Dominance Uncertainty With Diversified Investing and Historical Capital Spending Insights (Wealth of Common Sense, 2025-01-18)](https://awealthofcommonsense.com/2025/01/mega-cap-world-domination/)   | Investors face uncertainty in mega cap stocks. Concentration raises concerns, but companies like Nvidia and Apple thrive. High expectations may risk future performance; diversification in index funds offers a balanced approach. |
+| [Market Turmoil Looms: Are Index Funds Fueling Stock Valuation Imbalances and Threatening Traditional Investors? (FT Alphaville, 2025-01-18)](https://www.ft.com/content/260079a7-9b08-4dbd-909f-08c2407d1912)   | David Einhorn asserts that passive investing has led to a broken market structure, causing overvaluation and undervaluation. Traditional stockpickers face challenges as flows into index funds increase, reducing market efficiency. |
+
+# Quantitative Investing
+| Title | Summary |
+|-----|-----------|
+| [Why High Stock Prices Might Not Mean Doom: Unpacking the Evolving CAPE Ratios and Modern Market Dynamics (Irrelevant Investor, 2025-01-18)](https://www.theirrelevantinvestor.com/p/stocks-are-more-expensive-than-they-used-to-be)   | The CAPE ratio, once high, has justified higher valuations due to improved companies. The S&P 500 has risen nearly 100% since early 2018, despite a current CAPE of 37x. |
+:::
+
+::: {.content-visible when-profile="website_fr"}
+# IA et Gen-AI
+| Titre | Résumé |
+|-----|-----------|
+| [Autonomiser le potentiel humain : comment l'IA générative améliore les compétences et stimule la croissance de carrière au-delà de l'automatisation des tâches simples (getty, 2025-01-18)](https://www.forbes.com/sites/joemckendrick/2025/01/18/time-to-take-the-low-expectations-out-of-genai/)   | L'IA générative devrait amplifier le travail humain, améliorant la satisfaction au travail. Les employeurs se concentrent souvent sur l'automatisation, ce qui entraîne une méfiance. Trois domaines clés pour réussir sont l'accessibilité, les flux de travail agents et les copilotes physiques. |
+| [IA générative en 2025 : comment elle transformera les facultés de droit, les cabinets et les réglementations (ABA Journal, 2025-01-18)](https://www.abajournal.com/legalrebels/article/rebels-podcast-episode-108)   | En 2025, l'IA générative devrait dominer comme en 2024. Une adoption accrue dans les cabinets juridiques, de potentielles réglementations et une éducation accrue sur l'IA dans les facultés de droit sont attendues. |
+
+# Données, Bases de données et Science des données
+| Titre | Résumé |
+|-----|-----------|
+| [Maîtriser les tendances futures : dévoiler les principales publications sur les prévisions de séries chronologiques qui redéfinissent la dynamique 2023-2024 (Towards Data Science, 2025-01-17)](https://towardsdatascience.com/influential-time-series-forecasting-papers-of-2023-2024-part-1-1b3d2e10a5b3)   | L'article passe en revue des publications notables sur les prévisions de séries chronologiques de 2023-2024, mettant en avant des avancées telles que des applications d'apprentissage profond, des méthodes de réconciliation et des architectures innovantes comme TSMixer et CARD. |
+
+# Nouvelles des Hedge Funds
+| Titre | Résumé |
+|-----|-----------|
+| [Comprendre le changement stratégique dans le commerce des matières premières : pourquoi une plus faible volatilité peut ne pas être idéale pour les investisseurs (The Great Volatility Adjustment, 2025-01-18)](http://mrzepczynski.blogspot.com/2025/01/the-great-volatility-adjustment-in-cta.html)   | Le "Great Volatility Adjustment" voit la volatilité des CTA tomber en dessous de 10 %. Bien que les ratios de Sharpe augmentent légèrement, une volatilité plus faible peut ne pas être bénéfique pour les investisseurs cherchant à diversifier les tendances et à accroître leur exposition. |
+
+# Techniques de construction de portefeuille
+| Titre | Résumé |
+|-----|-----------|
+| [Les fonds d'investissement passifs sont-ils sains pour le marché ? (of Dollars and Data, 2025-01-18)](https://ofdollarsanddata.com/is-there-a-problem-with-passive-investing/)   | L'investissement passif a transformé la propriété d'actifs, mais les critiques soulignent la distorsion des prix, l'instabilité du marché et des problèmes de gouvernance d'entreprise. Les préoccupations persistent, mais les avantages l'emportent actuellement sur les risques pour les investisseurs individuels. |
+| [Décoder les primes de risque : aperçus sur les marchés boursiers, des cryptomonnaies et des Trésors pour des décisions de portefeuille éclairées (Capital Spectator, 2025-01-17)](https://www.capitalspectator.com/research-review-17-january-2025-risk-premia/)   | Des recherches récentes explorent les écarts de rendement du marché boursier, l'impact de la politique monétaire, les facteurs de risque, les primes de cryptomonnaies, les risques des Trésors et les rendements des actifs à long terme, mettant en lumière des influences significatives sur l'estimation de la prime de risque des actions. |
+| [Naviguer dans l'incertitude de la domination des géants technologiques sur le marché grâce à des investissements diversifiés et des aperçus historiques sur les dépenses en capital (Wealth of Common Sense, 2025-01-18)](https://awealthofcommonsense.com/2025/01/mega-cap-world-domination/)   | Les investisseurs font face à une incertitude dans les actions des grandes capitalisations. La concentration suscite des préoccupations, mais des entreprises comme Nvidia et Apple prospèrent. Des attentes élevées peuvent risquer la performance future ; la diversification dans des fonds indiciels offre une approche équilibrée. |
+| [Des bouleversements sur le marché se profilent : les fonds indiciels alimentent-ils des déséquilibres dans l'évaluation des actions et menacent-ils les investisseurs traditionnels ? (FT Alphaville, 2025-01-18)](https://www.ft.com/content/260079a7-9b08-4dbd-909f-08c2407d1912)   | David Einhorn affirme que l'investissement passif a conduit à une structure de marché défectueuse, causant une surévaluation et une sous-évaluation. Les sélectionneurs d'actions traditionnels font face à des défis alors que les flux vers les fonds indiciels augmentent, réduisant l'efficacité du marché. |
+
+# Investissement quantitatif
+| Titre | Résumé |
+|-----|-----------|
+| [Pourquoi des prix d'actions élevés pourraient ne pas signifier la fin : déballer l'évolution des ratios CAPE et les dynamiques du marché moderne (Irrelevant Investor, 2025-01-18)](https://www.theirrelevantinvestor.com/p/stocks-are-more-expensive-than-they-used-to-be)   | Le ratio CAPE, autrefois élevé, a justifié des évaluations plus élevées en raison de l'amélioration des entreprises. Le S&P 500 a presque doublé depuis début 2018, malgré un CAPE actuel de 37x. |
+:::
+
+
