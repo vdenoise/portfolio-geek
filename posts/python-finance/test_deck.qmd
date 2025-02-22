@@ -1,0 +1,34 @@
+---
+title: "My Presentation"
+format: revealjs
+---
+
+## Slide 1
+
+- Bullet point 1
+- Bullet point 2
+- Bullet point 3
+
+---
+
+## Slide 2
+
+- Bullet point 1
+- Bullet point 2
+- Bullet point 3
+
+---
+
+## Slide 3
+
+- Bullet point 1
+- Bullet point 2
+- Bullet point 3
+
+---
+
+## Slide 4
+
+- Bullet point 1
+- Bullet point 2
+- Bullet point 3
